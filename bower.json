@@ -1,0 +1,29 @@
+{
+  "name": "rjnet",
+  "version": "0.0.1",
+  "authors": [
+    "Ryan Jennings <info@ryan-jennings.net>"
+  ],
+  "description": "personal blog",
+  "keywords": [
+    "blog",
+    "music",
+    "software"
+  ],
+  "moduleType": [
+    "es6"
+  ],
+  "private": true,
+  "license": "MIT",
+  "homepage": "http://ryan-jennings.net",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
