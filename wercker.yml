@@ -4,12 +4,12 @@ build:
     - npm-install
     - plasticine/bower-install@0.0.4
     - script:
-            name: Build assets
-            code: ./node_modules/.bin/brunch build
+        name: Build assets
+        code: ./node_modules/.bin/brunch build
     - arjen/hugo-build:
         version: "0.14"
         theme: icarus
-    - gekkie/dokku-deploy@0.0.9
+    - gekkie/dokku-deploy@0.0.9:
         app-name: blog
         host: beamer.arg3.com
         key-name: dokku
