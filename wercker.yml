@@ -9,7 +9,15 @@ build:
     - arjen/hugo-build:
         version: "0.14"
         theme: icarus
-    - gekkie/dokku-deploy@0.0.9:
-        app-name: blog
-        host: beamer.arg3.com
-        key-name: dokku
+deploy:
+  steps:
+    - add-to-known_hosts:
+        hostname: $GIT_DEPLOY_HOST
+    - add-ssh-key:
+        keyname: dokku
+    - script:
+        name: push to dokku
+        code: |
+          echo "Pushing to: $GIT_DEPLOY_USER@$GIT_DEPLOY_HOST:$GIT_DEPLOY_APP"
+          git remote add dokku $GIT_DEPLOY_USER@$GIT_DEPLOY_HOST:$GIT_DEPLOY_APP
+          git push dokku HEAD:master -f
