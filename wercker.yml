@@ -1,4 +1,4 @@
-box: wercker/nodejs
+box: nodesource/node
 build:
   steps:
     - wercker/npm-install@1.1.4
