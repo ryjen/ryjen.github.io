@@ -1,7 +1,7 @@
 box: debian
 build:
   steps:
-    - npm-install
+    - wercker/npm-install@1.1.4
     - plasticine/bower-install@0.0.4
     - script:
         name: Build assets
