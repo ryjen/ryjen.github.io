@@ -1,4 +1,4 @@
-box: dockerfile/nodejs-bower-grunt
+box: digitallyseamless/nodejs-bower-grunt
 build:
   steps:
     - wercker/npm-install@1.1.4
