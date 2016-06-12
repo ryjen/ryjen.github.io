@@ -1,4 +1,4 @@
-box: nodesource/node
+box: dockerfile/nodejs-bower-grunt
 build:
   steps:
     - wercker/npm-install@1.1.4
