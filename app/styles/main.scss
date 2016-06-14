@@ -96,6 +96,9 @@
 				vertical-align: top;
 				border: none;
 			}
+			td + td {
+				padding-left: 1em;
+			}
 		}
 	}
 	img {

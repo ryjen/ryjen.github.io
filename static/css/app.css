@@ -84,50 +84,53 @@
     #things table tr td {
       vertical-align: top;
       border: none; }
+    /* line 99, /Users/ryan/Devel/blog/app/styles/main.scss */
+    #things table tr td + td {
+      padding-left: 1em; }
 
-/* line 101, /Users/ryan/Devel/blog/app/styles/main.scss */
+/* line 104, /Users/ryan/Devel/blog/app/styles/main.scss */
 #things img {
   height: 180px;
   width: 140px; }
 
-/* line 105, /Users/ryan/Devel/blog/app/styles/main.scss */
+/* line 108, /Users/ryan/Devel/blog/app/styles/main.scss */
 #things .fancybox + .caption {
   display: none; }
 
-/* line 112, /Users/ryan/Devel/blog/app/styles/main.scss */
+/* line 115, /Users/ryan/Devel/blog/app/styles/main.scss */
 #page-resume h1 {
   margin: 1em 0 0 0; }
 
-/* line 115, /Users/ryan/Devel/blog/app/styles/main.scss */
+/* line 118, /Users/ryan/Devel/blog/app/styles/main.scss */
 #page-resume table {
   margin: 1em 0 1em 0;
   width: initial; }
 
-/* line 120, /Users/ryan/Devel/blog/app/styles/main.scss */
+/* line 123, /Users/ryan/Devel/blog/app/styles/main.scss */
 #page-resume #contact-info td {
   text-align: left;
   margin: 0;
   padding: 0;
   border: none;
   padding-right: 0.5em; }
-  /* line 125, /Users/ryan/Devel/blog/app/styles/main.scss */
+  /* line 128, /Users/ryan/Devel/blog/app/styles/main.scss */
   #page-resume #contact-info td i {
     font-size: 1.4em; }
 
-/* line 130, /Users/ryan/Devel/blog/app/styles/main.scss */
+/* line 133, /Users/ryan/Devel/blog/app/styles/main.scss */
 #page-resume #contact-info img {
   border-radius: 50%;
   margin-right: 1em; }
 
-/* line 135, /Users/ryan/Devel/blog/app/styles/main.scss */
+/* line 138, /Users/ryan/Devel/blog/app/styles/main.scss */
 #page-resume .caption {
   display: none; }
 
-/* line 138, /Users/ryan/Devel/blog/app/styles/main.scss */
+/* line 141, /Users/ryan/Devel/blog/app/styles/main.scss */
 #page-resume blockquote {
   font-family: "Titillium Web", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
   margin: 0; }
-  /* line 141, /Users/ryan/Devel/blog/app/styles/main.scss */
+  /* line 144, /Users/ryan/Devel/blog/app/styles/main.scss */
   #page-resume blockquote p {
     font-size: 0.7em;
     font-decoration: italic;
@@ -135,38 +138,38 @@
     text-align: left;
     margin: 0 0 0 2em; }
 
-/* line 149, /Users/ryan/Devel/blog/app/styles/main.scss */
+/* line 152, /Users/ryan/Devel/blog/app/styles/main.scss */
 #page-resume li {
   list-style-image: url("/images/bullet.gif"); }
 
-/* line 152, /Users/ryan/Devel/blog/app/styles/main.scss */
+/* line 155, /Users/ryan/Devel/blog/app/styles/main.scss */
 #page-resume .well {
   background-color: #f9f9f9;
   border-radius: 0.5em;
   padding: 0.5em;
   margin: 1em 0 1em 0; }
-  /* line 157, /Users/ryan/Devel/blog/app/styles/main.scss */
+  /* line 160, /Users/ryan/Devel/blog/app/styles/main.scss */
   #page-resume .well h2 {
     margin: 0; }
-  /* line 160, /Users/ryan/Devel/blog/app/styles/main.scss */
+  /* line 163, /Users/ryan/Devel/blog/app/styles/main.scss */
   #page-resume .well h3 {
     font-size: 1em;
     margin: 1em 0 0.4em 0.8em; }
-  /* line 164, /Users/ryan/Devel/blog/app/styles/main.scss */
+  /* line 167, /Users/ryan/Devel/blog/app/styles/main.scss */
   #page-resume .well h4 {
     font-size: 0.9em;
     font-style: italic;
     margin: 0.4em 0 .4em 1.3em; }
-  /* line 169, /Users/ryan/Devel/blog/app/styles/main.scss */
+  /* line 172, /Users/ryan/Devel/blog/app/styles/main.scss */
   #page-resume .well h3 + ul, #page-resume .well h4 + ul {
     margin: 0 0 0 1.5em; }
-  /* line 172, /Users/ryan/Devel/blog/app/styles/main.scss */
+  /* line 175, /Users/ryan/Devel/blog/app/styles/main.scss */
   #page-resume .well blockquote + h4 {
     font-size: 1em;
     margin: 6px 0 3px 1em;
     color: #666; }
 
-/* line 180, /Users/ryan/Devel/blog/app/styles/main.scss */
+/* line 183, /Users/ryan/Devel/blog/app/styles/main.scss */
 #page-resume .article-header {
   display: none; }
 
