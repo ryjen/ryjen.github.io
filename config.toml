@@ -1,4 +1,4 @@
-baseurl = "http://ryan-jennings.net/"
+baseurl = "https://ryan-jennings.net/"
 languageCode = "en-us"
 title = "rj::net"
 
@@ -24,7 +24,7 @@ theme = "icarus"
     location = "Vancouver, Canada"
     site_description = "namespace for technical and musical musings"
     copyright  = "Powered by [Hugo](//gohugo.io). Theme by [PPOffice](http://github.com/ppoffice)."
-    avatar = "/images/profile.jpeg"
+    avatar = "images/profile.jpeg"
 
     # Format dates with Go's time formatting
     date_format = "2006-01-02"
