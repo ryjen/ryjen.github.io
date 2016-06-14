@@ -52,6 +52,11 @@ theme = "icarus"
 
 [[params.menu]]
     before = false
+    label  = "Things"
+    link   = "things/"
+
+[[params.menu]]
+    before = false
     label  = "About"
     link   = "about/"
 

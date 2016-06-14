@@ -86,6 +86,28 @@
 	}
 }
 
+#things {
+	table {
+		border: none;
+		tr {
+			border: none;
+
+			td {
+				vertical-align: top;
+				border: none;
+			}
+		}
+	}
+	img {
+		height: 180px;
+		width: 140px;
+	}
+	.fancybox + .caption {
+		display: none;
+	}
+
+}
+
 #page-resume {
 	h1 {
 		margin: 1em 0 0 0;
