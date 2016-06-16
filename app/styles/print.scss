@@ -1,0 +1,25 @@
+@media only print {
+	#comments {
+		display: none;
+	}
+	#header-main {
+		display: none;
+	}
+	#sidebar {
+		display: none;
+	}
+	#main-nav-mobile {
+		display: none;
+	}
+	#footer {
+		display: none;
+	}
+	.article-inner {
+		.article-footer {
+			display: none;
+		}
+	}
+	#contact-info {
+		display: block;
+	}
+}

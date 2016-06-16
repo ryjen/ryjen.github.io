@@ -2,179 +2,210 @@
 title: Resume
 ---
 
+<div id="page-resume">
+
 <table id="contact-info">
 <tr><td>
-![ryan jennings](http://www.gravatar.com/avatar/c14843499bbd6c7d0c6a483854245f7c.jpg?s=150)
+<img id="avatar" alt="ryan jennings" src="/images/profile.jpeg" />
 </td><td>
-|	|	|
-|--------------|---------|
-| <i class="fa fa-phone"></i> | <a href="tel:1-778-240-3248">778-240-3248</a> |
-| <i class="fa fa-envelope"></i> | <a href="mailto:info@ryan-jennings.net?subject=Your%20resume">info@ryan-jennings.net</a> |
-| <i class="fa fa-github"></i> | [github.com/ryjen](https://github.com/ryjen?tab=repositories) |
-| <i class="fa fa-linkedin"></i> | [ca.linkedin.com/in/ryjen](http://ca.linkedin.com/in/ryjen) |
-| <i class="fa fa-globe"></i> | [ryan-jennings.net](http://ryan-jennings.net) |
+
+<table class="borderless">
+<tr><td> <i class="fa fa-phone"></i> </td><td> <a href="tel:1-778-240-3248">778-240-3248</a> </td></tr>
+<tr><td> <i class="fa fa-envelope"></i> </td><td> <a href="mailto:info@ryan-jennings.net">info@ryan-jennings.net</a> </td></tr>
+<tr><td> <i class="fa fa-github"></i> </td><td> <a href="https://github.com/ryjen?tab=repositories">github.com/ryjen</a> </td></tr>
+<tr><td> <i class="fa fa-linkedin"></i> </td><td> <a href="http://ca.linkedin.com/in/ryjen">ca.linkedin.com/in/ryjen</a></td></tr>
+<tr><td> <i class="fa fa-globe"></i> </td><td> <a href="http://ryan-jennings.net">ryan-jennings.net</td></tr>
+</table>
 
 </td></tr></table>
 
-# Ryan Jennings
+<div class="well">
+<h1> Robert Ryan Jennings </h1>
 
-Programming enthusiast since 2000 with industry experience since 2008. Graduated from the [Computer Systems](http://www.bcit.ca/study/programs/5500certt#courses) program with distinction at the British Columbia Institute of Technology. Talented problem finder and solver with a passion for creating clean, robust and reliable solutions.
+<p>
+Programming enthusiast since 2000 with industry experience since 2008. Graduated from the <a href="http://www.bcit.ca/study/programs/5500certt#courses">Computer Systems</a> program with distinction at the British Columbia Institute of Technology. Talented problem finder and solver with a passion for creating clean, robust and reliable solutions.</p>
+</div>
 
-# Work Experience
+<h1> Work Experience </h1>
 
 <div class="well">
 
-## [Quickmobile](http://quickmobile.com/)
+<h2> <a href="http://quickmobile.com/">Quickmobile</a> </h2>
 
-### Mobile Application Developer July 2015 - Present
+<h3> Mobile Application Developer July 2015 - Present </h3>
 
-- general mobile programming and support on iOS, Android, Windows Phone and Blackberry
-- assisted in code quality with code reviews
-- prototyped android tablet version
+<ul>
+<li>general mobile programming and support on iOS, Android, Windows Phone and Blackberry</li>
+<li>assisted in code quality with code reviews</li>
+<li>prototyped android tablet version</li>
+</ul>
 
 </div>
 
 <div class="well">
 
-## [Linux Magic](http://linuxmagic.com/)
+<h2> <a href="http://linuxmagic.com/">Linux Magic</a> </h2>
 
-### Linux Engineer April 2015 - July 2015
+<h3> Linux Engineer April 2015 - July 2015 </h3>
 
-- General bug fixing and implementations to current product
-- Ported Perl prototypes for next generation product to native C
-- Improved knowledge of VIM, Linux, Perl, C and the SMTP protocol
-- Improved habits of time tracking, planning, documenting and communicating
-- Participated in Pi-Quake tournament and new projects discussions
-
-</div>
-
-<div class="well">
-
-## [ePACT](http://epactnetwork.com/)
-
-### Lead Mobile Developer / Java Engineer, July 3 2013 - Current
-
-- Developed [Android](https://play.google.com/store/apps/details?id=com.epactnetwork.droid&hl=en), [iPhone](http://appstore.com/epactemergencynetwork) and [Blackberry](http://appworld.blackberry.com/webstore/content/59939372) apps
-- Implemented synchronization/offline viewing, dynamic data display
-- Provided bug fixes, new features and mobile API for main web site in JavaEE/Servlets
-- Initiated an automation framework for web (selenium webdriver) and mobile (appium), increasing testing efficiency greatly
-- scripted build processes and documented work
-- made proof of concept shared mobile library in C
+<ul>
+<li>General bug fixing and implementations to current product</li>
+<li>Ported Perl prototypes for next generation product to native C</li>
+<li>Improved knowledge of VIM, Linux, Perl, C and the SMTP protocol</li>
+<li>Improved habits of time tracking, planning, documenting and communicating</li>
+<li>Participated in Pi-Quake tournament and new projects discussions</li>
+</ul>
 
 </div>
 
 <div class="well">
 
-## [QuickMobile](http://www.quickmobile.com/)
+<h2> <a href="http://epactnetwork.com/">ePACT</a>
 
-### Mobile Application Developer, Apr 2011 - July 3 2013
+<h3> Lead Mobile Developer / Java Engineer, July 3 2013 - Current </h3>
 
-#### Product Team
-
-- Participated in developing a next generation mobile application framework
-- Contributed in the company winning the [BCTIA emerging company](http://www.quickmobile.com/blog/quickmobile-is-the-2013-bctia-emerging-company-of-the-year) award
-- Developed an internationalization solution for mobile framework
-- Worked on general new features and fixes for mobile frameworks (iOS, Android, Blackberry)
-- Contributed in achieving a goal of a mobile framework capable of producing custom apps without intervention
-
-#### Client Delivery Team
-
-- Developed client facing applications across mobile platforms (iOS, Blackberry)
-- Helped develop unit tests for mobile platforms
-- Ensured timely and quality applications with 100% delivery success rate
-- Provided maintanence fixes and reported changes to product team
-- Participated with teammates in a *machine learning* online stanford course (to apply to analytics)
+<ul>
+<li>Developed <a href="https://play.google.com/store/apps/details?id=com.epactnetwork.droid&hl=en">Android</a>, <a href="http://appstore.com/epactemergencynetwork">iPhone</a> and <a href="http://appworld.blackberry.com/webstore/content/59939372">Blackberry</a> apps</li>
+<li>Implemented synchronization/offline viewing, dynamic data display</li>
+<li>Provided bug fixes, new features and mobile API for main web site in JavaEE/Servlets</li>
+<li>Initiated an automation framework for web (selenium webdriver) and mobile (appium), increasing testing efficiency greatly</li>
+<li>scripted build processes and documented work</li>
+<li>made proof of concept shared mobile library in C</li>
+</ul>
 
 </div>
 
 <div class="well">
 
-## [Panoramic Software](http://www.panoramicsoft.com/)
+<h2> <a href="http://www.quickmobile.com/">QuickMobile</a>
 
-### Contract Developer, Sep 2011 - Apr 2012
+<h3> Mobile Application Developer, Apr 2011 - July 3 2013 </h3>
 
-- Helped port *GuitarSuite* to iphone in C#/Monotouch.  Features included a metronome, scales/chord charts, tuner, etc
-- Successfuly implemented a forwarded contract to develop an iPhone application in native Objective-C
+<h4> Product Team </h4>
 
-### Software Developer, Nov 2010 - Apr 2011
+<ul>
+<li>Participated in developing a next generation mobile application framework</li>
+<li>Contributed in the company winning the <a href="http://www.quickmobile.com/blog/quickmobile-is-the-2013-bctia-emerging-company-of-the-year">BCTIA emerging company</a> award</li>
+<li>Developed an internationalization solution for mobile framework</li>
+<li>Worked on general new features and fixes for mobile frameworks (iOS, Android, Blackberry)</li>
+<li>Contributed in achieving a goal of a mobile framework capable of producing custom apps without intervention</li>
+</ul>
 
-- Successfuly completed milestone applications for Windows Phone 7 and iPhone marketplace
-- Adopted MonoTouch for iOS and the WP7 platform utilizing existing C# skills
-- Learnt new skills such as XAML and Silverlight
-- Utilized C++ knowledge to port Windows Mobile applications to WP7 in a very timely manner
-- Attended the Silverlight conference at Microsoft in Redmond
-- Gained experienced creating iPhone applications using MonoTouch (C#)
-- Gained experience consuming REST/SOAP services like Twitter/Bing Maps/Translate
+<h4> Client Delivery Team </h4>
+<ul>
+<li>Developed client facing applications across mobile platforms (iOS, Blackberry)</li>
+<li>Helped develop unit tests for mobile platforms</li>
+<li>Ensured timely and quality applications with 100% delivery success rate</li>
+<li>Provided maintenance fixes and reported changes to product team</li>
+<li>Participated with teammates in a <b>machine learning</b> online stanford course (to apply to analytics)</li>
+</ul>
 
 </div>
 
 <div class="well">
 
-## [Novax Industries Corporation](http://www.novax.com/)
+<h2> <a href="http://www.panoramicsoft.com/">Panoramic Software</a> </h2>
 
-### Software Developer, Apr 2008 - 2010
+<h3> Contract Developer, Sep 2011 - Apr 2012 </h3>
+<ul>
+<li>Helped port <b>GuitarSuite</b> to iphone in C#/Monotouch.  Features included a metronome, scales/chord charts, tuner, etc</li>
+<li>Successfully implemented a forwarded contract to develop an iPhone application in native Objective-C</li>
+</ul>
 
-#### Project 1: SoundSafe Advanced Pedestrain Control
+<h3> Software Developer, Nov 2010 - Apr 2011 </h3>
 
-- Developed a Windows Mobile application to configure the next generation pedestrian control buttons (using power line communication)
-- Worked in an agile team of 4-6, coordinating project progress
-- Improved knowledge of C#/.NET Compact/Windows Mobile, Power Line Communication, token ring network architecture and ZigBee protocol
-- Contributed small code changes to the audio pedestrian signal firmware using C and MPLAB while coordinating with mobile application
-- Assisted in testing and integration of system components
-- Documented installation and usage procedures
-- Gained experience implementing and optimizing custom network protocols
-
-#### Project 2: TransPOD Public Transit Optimizer
-
-- Implement new features for a traffic light priority request generator/receiver
-- Gained experience maintaining a complex multithreaded codebase
-- Successfully met deadlines and improved experience managing development time
-- Gained additional experience using Linux, C, C++, Shell Scripting, SQL, multithreading, and distributed/embedded systems
-- Documented changes for release notes and internal docs on a team wiki
-- Researched GPS algorithms, specific to prediction of moving targets
-- Assisted with product configuration and networking
-- Succesfully released software and hardware for Translink, Edmonton and Chicago transit authorities
-
-### Quality Assurance Engineer, Dec 2007 - Apr 2008
-
-- Ensured the quality of TransPOD software testing hardware and software
-- Used positive and negative blackbox testing for test cases to meet project requirements
-- Implemented a virtual environment for stress testing
-- Developed C# tools and Linux shell scripts to aid in performing and automation of tests
-- Performed detailed analysis of tests results with SQL queries
-- Maintained detailed bug reports and performed regression testing for major releases
-- Incorporated tools like selinium to perform web interface testing
-- Recorded learned information on a team wiki
-- Complete system analysis and testing for release with Translink
+<ul>
+<li>Successfully completed milestone applications for Windows Phone 7 and iPhone marketplace</li>
+<li>Adopted MonoTouch for iOS and the WP7 platform utilizing existing C# skills</li>
+<li>Learnt new skills such as XAML and Silverlight</li>
+<li>Utilized C++ knowledge to port Windows Mobile applications to WP7 in a very timely manner</li>
+<li>Attended the Silverlight conference at Microsoft in Redmond</li>
+<li>Gained experienced creating iPhone applications using MonoTouch (C#)</li>
+<li>Gained experience consuming REST/SOAP services like Twitter/Bing Maps/Translate</li>
+</ul>
 
 </div>
 
-# Other
+<div class="well">
 
-A sample of my pet projects:
+<h2> <a href="http://www.novax.com/">Novax Industries Corporation</a>
 
-- [Testmanship](http://testmanship.com): A ruby project to provide management and historical data for manual testing
-- [arg3db](http://github.com/ryjen/libarg3): my c++11 database library
-- [cparse](https://github.com/ryjen/cparse): a C library for [parse.com](http://parse.com)
-- [yahtsee](http://github.com/ryjen/yahtsee): a multiplayer online game of yahtsee for the terminal command prompt
-- [DroidFortunes](https://github.com/ryjen/Droid-Fortunes): an Android version of the UNIX 'fortunes' application
-- [p0ng](https://github.com/ryjen/p0ng): a retro pong game for iOS
+<h3> Software Developer, Apr 2008 - 2010 </h3>
 
-# Education
+<h4> Project 1: SoundSafe Advanced Pedestrian Control </h4>
 
-### [British Columbia Institute of Technology](http://www.bcit.ca/), (89% GPA)
+<ul>
+<li>Developed a Windows Mobile application to configure the next generation pedestrian control buttons (using power line communication)</li>
+<li>Worked in an agile team of 4-6, coordinating project progress</li>
+<li>Improved knowledge of C#/.NET Compact/Windows Mobile, Power Line Communication, token ring network architecture and ZigBee protocol</li>
+<li>Contributed small code changes to the audio pedestrian signal firmware using C and MPLAB while coordinating with mobile application</li>
+<li>Assisted in testing and integration of system components</li>
+<li>Documented installation and usage procedures</li>
+<li>Gained experience implementing and optimizing custom network protocols</li>
+</ul>
 
-- [Certificate of Technology in Computer Systems](http://www.bcit.ca/study/programs/5500certt#courses), 2007-2010
-- [Associate in Applied Software Development](http://www.bcit.ca/study/programs/6958acert#courses), 2006-2007
-- [Associate in Computer Information Systems](http://www.bcit.ca/study/programs/6992acert#courses), 2005-2006
+<h4> Project 2: TransPOD Public Transit Optimizer </h4>
 
-### [Sun Microsystems Certified Java Programmer](http://en.wikipedia.org/wiki/Sun_Certified_Professional#Sun_Certified_Java_Programmer_.28SCJP.29)
-- JDK 6, 2009
+<ul>
+<li>Implement new features for a traffic light priority request generator/receiver</li>
+<li>Gained experience maintaining a complex multithreaded codebase</li>
+<li>Successfully met deadlines and improved experience managing development time</li>
+<li>Gained additional experience using Linux, C, C++, Shell Scripting, SQL, multithreading, and distributed/embedded systems</li>
+<li>Documented changes for release notes and internal docs on a team wiki</li>
+<li>Researched GPS algorithms, specific to prediction of moving targets</li>
+<li>Assisted with product configuration and networking</li>
+<li>Successfully released software and hardware for Translink, Edmonton and Chicago transit authorities</li>
+</ul>
 
-# Volunteering
+<h3> Quality Assurance Engineer, Dec 2007 - Apr 2008 </h3>
 
-### Java Tutor, BCIT, Sep-Dec 2009
+<ul>
+<li>Ensured the quality of TransPOD software testing hardware and software</li>
+<li>Used positive and negative blackbox testing for test cases to meet project requirements</li>
+<li>Implemented a virtual environment for stress testing</li>
+<li>Developed C# tools and Linux shell scripts to aid in performing and automation of tests</li>
+<li>Performed detailed analysis of tests results with SQL queries</li>
+<li>Maintained detailed bug reports and performed regression testing for major releases</li>
+<li>Incorporated tools like selenium to perform web interface testing</li>
+<li>Recorded learned information on a team wiki</li>
+<li>Complete system analysis and testing for release with Translink</li>
+<ul>
 
-<hr/>
+</div>
+
+<h1> Education </h1>
+
+<div class="well">
+<h3> <a href="http://www.bcit.ca/">British Columbia Institute of Technology</a>, (89% GPA) </h3>
+
+<ul>
+<li><a href="http://www.bcit.ca/study/programs/5500certt#courses">Certificate of Technology in Computer Systems</a>, 2007-2010</li>
+<li><a href="http://www.bcit.ca/study/programs/6958acert#courses">Associate in Applied Software Development</a>, 2006-2007</li>
+<li><a href="http://www.bcit.ca/study/programs/6992acert#courses">Associate in Computer Information Systems</a>, 2005-2006</li>
+</ul>
+</div>
+
+<div class="well">
+<h3> <a href="http://en.wikipedia.org/wiki/Sun_Certified_Professional#Sun_Certified_Java_Programmer_.28SCJP.29">Sun Microsystems Certified Java Programmer</a> </h3>
+
+<ul>
+<li>JDK 6, 2009</li>
+</ul>
+</div>
+
+<h1> Other </h1>
+
+<div class="well">
+<ul>
+<li><a href="http://testmanship.com">Testmanship</a>: A ruby project to provide management and historical data for manual testing</li>
+<li><a href="http://github.com/ryjen/libarg3">arg3db</a>: my c++11 database library</li>
+<li><a href="https://github.com/ryjen/cparse">cparse</a>: a C library for <a href="http://parse.com">parse.com</a></li>
+<li><a href="http://github.com/ryjen/yahtsee">yahtsee</a>: a multiplayer online game of yahtzee for the terminal command prompt</li>
+<li><a href="https://github.com/ryjen/Droid-Fortunes">DroidFortunes</a>: an Android version of the UNIX 'fortunes' application</li>
+<li><a href="https://github.com/ryjen/p0ng">p0ng</a>: a retro pong game for iOS</li>
+</ul>
+</div>
 
 References available upon request.
+
+</div>

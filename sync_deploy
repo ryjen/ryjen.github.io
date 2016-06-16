@@ -1,4 +1,4 @@
 #!/bin/sh
-rsync -rtvu --delete ./public/ ./deploy/public/
+rsync -rtvu --delete --exclude=.git --exclude=.gitignore ./public/ ./deploy/public/
 
 
