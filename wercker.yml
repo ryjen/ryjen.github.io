@@ -32,6 +32,8 @@ deploy:
         name: push to dokku
         code: |
           cd ./deploy
+          git config user.email "info@ryan-jennings.net"
+          git config user.name "$WERCKER_STARTED_BY"
           git add -A .
           git commit -m "deploy from wercker ($WERCKER_BUILD_URL)"
           git push
