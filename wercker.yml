@@ -3,6 +3,9 @@ build:
   steps:
     - wercker/npm-install@1.1.4
     - plasticine/bower-install@0.0.4
+    - add-ssh-key:
+        keyname: dokku
+        host: beamer.arg3.com
     - script:
         name: Initialize git submodules
         code: |
@@ -22,9 +25,6 @@ deploy:
         name: Synchronize deploy files
         code: |
           ./sync_deploy
-    - add-ssh-key:
-        keyname: dokku
-        host: beamer.arg3.com
     - script:
         name: push to dokku
         code: |
