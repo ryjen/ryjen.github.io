@@ -4,11 +4,14 @@ build:
     - wercker/npm-install@1.1.4
     - plasticine/bower-install@0.0.4
     - script:
+        name: Initialize git submodules
+        code: |
+            git submodule update --init --recursive
+    - script:
         name: Build assets
         code: ./node_modules/.bin/brunch build
     - arjen/hugo-build:
-        version: "0.14"
-        theme: hugo-icarus-theme
+        version: "0.15"
 deploy:
   steps:
     - add-to-known_hosts:
@@ -16,11 +19,13 @@ deploy:
     - add-ssh-key:
         keyname: dokku
     - script:
+        name: Synchronize deploy files
+        code: |
+          ./sync_deploy
+    - script:
         name: push to dokku
         code: |
-          git submodule update --init --recursive
-          rsync -rtvu --delete ./public/ ./deploy/public/
           cd ./deploy
           git add -A .
-          git commit -m "deploy from wercker"
+          git commit -m "deploy from wercker ($WERCKER_BUILD_URL)"
           git push
