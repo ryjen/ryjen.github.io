@@ -22,6 +22,9 @@ deploy:
         name: Synchronize deploy files
         code: |
           ./sync_deploy
+    - add-ssh-key:
+        keyname: dokku
+        host: beamer.arg3.com
     - script:
         name: push to dokku
         code: |
