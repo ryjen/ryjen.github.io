@@ -1,4 +1,12 @@
 #!/bin/sh
-rsync -rtvu --delete --exclude=.git --exclude=.gitignore ./public/ ./deploy/public/
 
+rsync=$(which rsync)
 
+if [ -z "$rsync" ]; then
+    echo "rysync not available";
+    exit 1;
+fi
+
+$rsync -rtvu --delete --exclude=.git --exclude=.gitignore ./public/ ./deploy/public/
+
+exit 0;
