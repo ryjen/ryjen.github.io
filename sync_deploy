@@ -7,6 +7,6 @@ if [ -z "$rsync" ]; then
     exit 1;
 fi
 
-$rsync -rtvu --delete --exclude=.git --exclude=.gitignore ./public/ ./deploy/public/
+$rsync -rtvu --delete --exclude=.git* ./public/ ./deploy/public/
 
 exit 0;

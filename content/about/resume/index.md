@@ -23,7 +23,7 @@ title: Resume
 <h1> Robert Ryan Jennings </h1>
 
 <p>
-Programming enthusiast since 2000 with industry experience since 2008. Graduated from the <a href="http://www.bcit.ca/study/programs/5500certt#courses">Computer Systems</a> program with distinction at the British Columbia Institute of Technology. Talented problem finder and solver with a passion for creating clean, robust and reliable solutions.</p>
+Programming enthusiast since 2000 with industry experience since 2008. Graduated from the <a href="http://www.bcit.ca/study/programs/5500certt#courses">Computer Systems</a> program with distinction at the British Columbia Institute of Technology. Talented problem solver (and finder) with a passion for creating clean, robust and reliable solutions.</p>
 </div>
 
 <h1> Work Experience </h1>
@@ -35,9 +35,11 @@ Programming enthusiast since 2000 with industry experience since 2008. Graduated
 <h3> Mobile Application Developer July 2015 - Present </h3>
 
 <ul>
-<li>general mobile programming and support on iOS, Android, Windows Phone and Blackberry</li>
-<li>assisted in code quality with code reviews</li>
-<li>prototyped android tablet version</li>
+<li>Mobile programming and support on iOS, Android, Windows Phone and Blackberry</li>
+<li>Assisted in code quality with code reviews in bitbucket</li>
+<li>Created stories, bugs and managed sprints in JIRA</li>
+<li>Prototyped 3-column android tablet version by refactoring layouts and fragment usage</li>
+<li>Participated in sprint planning and team meetings</li>
 </ul>
 
 </div>
@@ -49,11 +51,11 @@ Programming enthusiast since 2000 with industry experience since 2008. Graduated
 <h3> Linux Engineer April 2015 - July 2015 </h3>
 
 <ul>
-<li>General bug fixing and implementations to current product</li>
-<li>Ported Perl prototypes for next generation product to native C</li>
-<li>Improved knowledge of VIM, Linux, Perl, C and the SMTP protocol</li>
+<li>Bug fixing and implementations to current SPAM product in C and Linux</li>
+<li>Ported perl prototypes for next generation product to native C</li>
+<li>Improved knowledge of VIM, Linux, Perl, C and SMTP protocol</li>
 <li>Improved habits of time tracking, planning, documenting and communicating</li>
-<li>Participated in Pi-Quake tournament and new projects discussions</li>
+<li>Participated in standups, new project planning and a raspberry pi quake tournament</li>
 </ul>
 
 </div>
@@ -66,11 +68,15 @@ Programming enthusiast since 2000 with industry experience since 2008. Graduated
 
 <ul>
 <li>Developed <a href="https://play.google.com/store/apps/details?id=com.epactnetwork.droid&hl=en">Android</a>, <a href="http://appstore.com/epactemergencynetwork">iPhone</a> and <a href="http://appworld.blackberry.com/webstore/content/59939372">Blackberry</a> apps</li>
-<li>Implemented synchronization/offline viewing, dynamic data display</li>
-<li>Provided bug fixes, new features and mobile API for main web site in JavaEE/Servlets</li>
+<li>Implemented secure synchronization of data for offline viewing across both iOS and Android</li>
+<li>Implement dynamic data display for different types of forms across both iOS and Android</li>
+<li>Provided bug fixes, new features and mobile API for JavaEE/Servlets web site</li>
 <li>Initiated an automation framework for web (selenium webdriver) and mobile (appium), increasing testing efficiency greatly</li>
-<li>scripted build processes and documented work</li>
-<li>made proof of concept shared mobile library in C</li>
+<li>Scripted build processes and documented work for both iOS and Android</li>
+<li>Participated in SCRUM using Agile and Kanban</li>
+<li>Made proof of concept library in C that shares code between mobile platforms automatically</li>
+<li>Designed UI and UX according to specifications and wireframes supporting material design</li>
+<li>Made use of android libraries like fontawesome, sqlcipher, merge adapters, dagger, butterknife, picasso</li>
 </ul>
 
 </div>
@@ -84,18 +90,18 @@ Programming enthusiast since 2000 with industry experience since 2008. Graduated
 <h4> Product Team </h4>
 
 <ul>
-<li>Participated in developing a next generation mobile application framework</li>
-<li>Contributed in the company winning the <a href="http://www.quickmobile.com/blog/quickmobile-is-the-2013-bctia-emerging-company-of-the-year">BCTIA emerging company</a> award</li>
-<li>Developed an internationalization solution for mobile framework</li>
-<li>Worked on general new features and fixes for mobile frameworks (iOS, Android, Blackberry)</li>
-<li>Contributed in achieving a goal of a mobile framework capable of producing custom apps without intervention</li>
+<li>Participated in developing a second generation mobile application framework</li>
+<li>Played a role in the company winning the <a href="http://www.quickmobile.com/blog/quickmobile-is-the-2013-bctia-emerging-company-of-the-year">BCTIA emerging company</a> award</li>
+<li>Helped develop an internationalization solution for mobile framework</li>
+<li>Worked cross platform mobile frameworks (Blackberry, iOS, Android)</li>
+<li>Developed new features like Gamification (Android), Multi-Database support (Blackberry), Messaging (Blackberry) and more</li>
 </ul>
 
 <h4> Client Delivery Team </h4>
 <ul>
-<li>Developed client facing applications across mobile platforms (iOS, Blackberry)</li>
+<li>Developed client customizations across mobile platforms (iOS, Blackberry)</li>
 <li>Helped develop unit tests for mobile platforms</li>
-<li>Ensured timely and quality applications with 100% delivery success rate</li>
+<li>Ensured timely and quality applications, always putting in the extra effort</li>
 <li>Provided maintenance fixes and reported changes to product team</li>
 <li>Participated with teammates in a <b>machine learning</b> online stanford course (to apply to analytics)</li>
 </ul>
@@ -108,7 +114,7 @@ Programming enthusiast since 2000 with industry experience since 2008. Graduated
 
 <h3> Contract Developer, Sep 2011 - Apr 2012 </h3>
 <ul>
-<li>Helped port <b>GuitarSuite</b> to iphone in C#/Monotouch.  Features included a metronome, scales/chord charts, tuner, etc</li>
+<li>Helped port <b>GuitarSuite</b> to iPhone in C#/Monotouch.  Features included a metronome, scales/chord charts, tuner, etc</li>
 <li>Successfully implemented a forwarded contract to develop an iPhone application in native Objective-C</li>
 </ul>
 
@@ -177,12 +183,14 @@ Programming enthusiast since 2000 with industry experience since 2008. Graduated
 
 <div class="well">
 <h3> <a href="http://www.bcit.ca/">British Columbia Institute of Technology</a>, (89% GPA) </h3>
-
 <ul>
 <li><a href="http://www.bcit.ca/study/programs/5500certt#courses">Certificate of Technology in Computer Systems</a>, 2007-2010</li>
 <li><a href="http://www.bcit.ca/study/programs/6958acert#courses">Associate in Applied Software Development</a>, 2006-2007</li>
 <li><a href="http://www.bcit.ca/study/programs/6992acert#courses">Associate in Computer Information Systems</a>, 2005-2006</li>
 </ul>
+
+<p>I excelled in most programming courses having prior knowledge, while still learning a few things.  Earned many additional skills such communication, computer architecture, testing, algorithms, and security</p>
+
 </div>
 
 <div class="well">
@@ -193,7 +201,7 @@ Programming enthusiast since 2000 with industry experience since 2008. Graduated
 </ul>
 </div>
 
-<h1> Other </h1>
+<h1> Other / Hobby </h1>
 
 <div class="well">
 <ul>
