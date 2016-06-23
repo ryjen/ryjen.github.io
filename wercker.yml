@@ -34,6 +34,6 @@ deploy:
           git config user.name "$WERCKER_STARTED_BY"
           git config push.default simple
           git pull
-	  git add -A .
+          git add -A .
           git commit -m "deploy from wercker ($WERCKER_BUILD_URL)"
           git push origin HEAD:master
