@@ -3,7 +3,7 @@ build:
   steps:
     - wercker/npm-install@1.1.4
     - plasticine/bower-install@0.0.4
-    - add-to-known_hosts:
+    - add-to-known-hosts:
         hostname: $GIT_DEPLOY_HOST
     - add-ssh-key:
         keyname: dokku
@@ -13,23 +13,20 @@ build:
             git submodule update --init --recursive
     - script:
         name: Build assets
-        code: |
-            ./node_modules/.bin/bower install
-            ./node_modules/.bin/brunch build
+        code: ./node_modules/.bin/brunch build
     - arjen/hugo-build:
         version: "0.15"
 deploy:
   steps:
     - install-packages:
         packages: rsync
-    - add-to-known_hosts:
+    - add-to-known-hosts:
         hostname: $GIT_DEPLOY_HOST
     - add-ssh-key:
         keyname: dokku
     - script:
         name: Synchronize deploy files
-        code: |
-          ./sync_deploy
+        code: ./sync_deploy
     - script:
         name: push to dokku
         code: |

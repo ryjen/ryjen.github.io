@@ -1,5 +1,6 @@
 ---
-title: c polymorphing 2
+title: "c hacking: polymorphing 2"
+slug: c-hacking-polymoriphing-2
 date: 2015-12-02
 tags:
    - c
