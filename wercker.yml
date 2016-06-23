@@ -9,7 +9,10 @@ build:
         keyname: dokku
     - script:
         name: Initialize git submodules
-        code: git submodule update --init --recursive
+        code: |
+          git submodule update --init --recursive
+          cd deploy
+          git pull origin master
     - script:
         name: Build assets
         code: ./node_modules/.bin/brunch build
@@ -33,7 +36,6 @@ deploy:
           git config user.email "info@ryan-jennings.net"
           git config user.name "$WERCKER_STARTED_BY"
           git config push.default simple
-          git pull origin master
           git add -A .
           git commit -m "deploy from wercker ($WERCKER_BUILD_URL)"
           git push origin HEAD:master
