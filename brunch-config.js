@@ -12,7 +12,6 @@ exports.config = {
     }
   },
 
-  // Phoenix paths configuration
   paths: {
     // Where to compile files to
     public: "static",

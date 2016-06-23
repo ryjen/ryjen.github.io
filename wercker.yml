@@ -13,7 +13,9 @@ build:
             git submodule update --init --recursive
     - script:
         name: Build assets
-        code: ./node_modules/.bin/brunch build
+        code: |
+            ./node_modules/.bin/bower install
+            ./node_modules/.bin/brunch build
     - arjen/hugo-build:
         version: "0.15"
 deploy:

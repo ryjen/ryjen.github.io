@@ -40,6 +40,7 @@ Programming enthusiast since 2000 with industry experience since 2008. Graduated
 <li>Created stories, bugs and managed sprints in JIRA</li>
 <li>Prototyped 3-column android tablet version by refactoring layouts and fragment usage</li>
 <li>Participated in sprint planning and team meetings</li>
+<li>Delivered a client delivery framework revision for Android which included several bugs and security patches</li>
 </ul>
 
 </div>
@@ -188,8 +189,6 @@ Programming enthusiast since 2000 with industry experience since 2008. Graduated
 <li><a href="http://www.bcit.ca/study/programs/6958acert#courses">Associate in Applied Software Development</a>, 2006-2007</li>
 <li><a href="http://www.bcit.ca/study/programs/6992acert#courses">Associate in Computer Information Systems</a>, 2005-2006</li>
 </ul>
-
-<p>I excelled in most programming courses having prior knowledge, while still learning a few things.  Earned many additional skills such communication, computer architecture, testing, algorithms, and security</p>
 
 </div>
 
