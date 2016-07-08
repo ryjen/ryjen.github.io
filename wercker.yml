@@ -3,14 +3,16 @@ build:
   steps:
     - wercker/npm-install@1.1.4
     - plasticine/bower-install@0.0.4
-    - add-to-known-hosts:
+    - add-to-known_hosts:
         hostname: $GIT_DEPLOY_HOST
     - add-ssh-key:
         keyname: dokku
     - script:
         name: Initialize git submodules
         code: |
-            git submodule update --init --recursive
+          git submodule update --init --recursive
+          cd deploy
+          git pull origin master
     - script:
         name: Build assets
         code: ./node_modules/.bin/brunch build
@@ -20,7 +22,7 @@ deploy:
   steps:
     - install-packages:
         packages: rsync
-    - add-to-known-hosts:
+    - add-to-known_hosts:
         hostname: $GIT_DEPLOY_HOST
     - add-ssh-key:
         keyname: dokku
