@@ -1,6 +1,6 @@
 [submodule "deploy"]
 	path = deploy
-	url = dokku@beamer.arg3.com:blog
+	url = dokku@strontium.arg3.com:blog
 [submodule "themes/icarus"]
 	path = themes/icarus
 	url = https://github.com/digitalcraftsman/hugo-icarus-theme.git
