@@ -37,12 +37,17 @@ Programming enthusiast since 2000 with industry experience since 2008. Graduated
 <ul>
 <li>Mobile programming and support on iOS, Android, Windows Phone and Blackberry</li>
 <li>Assisted in code quality with code reviews in bitbucket</li>
+<li>Resolved several hardware/software rendering issues on Android</li>
 <li>Created stories, bugs and managed sprints in JIRA</li>
 <li>Prototyped 3-column android tablet version by refactoring layouts and fragment usage</li>
 <li>Participated in sprint planning and team meetings</li>
 <li>Delivered a client delivery framework revision for Android which included several bugs and security patches</li>
 </ul>
 
+<h5>Technology:</h5>
+<dl><dt>Windows</dt><dd>Visual Studio 15, C#, SourceSafe, Windows Mobile 8+, Windows 10</dd>
+<dt>Android</dt><dd>Android Studio, Java, Ant, Gimbal, Proximity5, Gradle, Memory Analyzer, expresso, Mockito</dd>
+<dt>Misc</dt><dd>Bash/Shell Scripting, JIRA, Confluence, GIT, Subversion, XML</dd>
 </div>
 
 <div class="well">
@@ -53,12 +58,17 @@ Programming enthusiast since 2000 with industry experience since 2008. Graduated
 
 <ul>
 <li>Bug fixing and implementations to current SPAM product in C and Linux</li>
-<li>Ported perl prototypes for next generation product to native C</li>
-<li>Improved knowledge of VIM, Linux, Perl, C and SMTP protocol</li>
+<li>Ported perl prototypes for next generation product to binary C</li>
+<li>Successfully performed all development in VIM</li>
 <li>Improved habits of time tracking, planning, documenting and communicating</li>
 <li>Participated in standups, new project planning and a raspberry pi quake tournament</li>
+<li>Learned more about packaging software in linux</li>
 </ul>
 
+<h5>Technology:</h5>
+<ul>
+    <li>C, SMTP, Perl, VIM, Linux, Ubuntu, Make, Apt, Crontab, PHP, Trac, Subversion</li>
+</ul>
 </div>
 
 <div class="well">
@@ -69,16 +79,25 @@ Programming enthusiast since 2000 with industry experience since 2008. Graduated
 
 <ul>
 <li>Developed <a href="https://play.google.com/store/apps/details?id=com.epactnetwork.droid&hl=en">Android</a>, <a href="http://appstore.com/epactemergencynetwork">iPhone</a> and <a href="http://appworld.blackberry.com/webstore/content/59939372">Blackberry</a> apps</li>
+<li>Researched cross platform solution like [tabris](http://developer.eclipsesource.com/tabris/) and [Xamarin Platform](https://www.xamarin.com/platform)
 <li>Implemented secure synchronization of data for offline viewing across both iOS and Android</li>
 <li>Implement dynamic data display for different types of forms across both iOS and Android</li>
-<li>Provided bug fixes, new features and mobile API for JavaEE/Servlets web site</li>
-<li>Initiated an automation framework for web (selenium webdriver) and mobile (appium), increasing testing efficiency greatly</li>
+<li>Provided bug fixes and new features on main web site. Worked with existing API infrastructure for a mobile API</li>
+<li>Initiated an automation framework for web and mobile, increasing testing efficiency greatly</li>
 <li>Scripted build processes and documented work for both iOS and Android</li>
 <li>Participated in SCRUM using Agile and Kanban</li>
 <li>Made proof of concept library in C that shares code between mobile platforms automatically</li>
-<li>Designed UI and UX according to specifications and wireframes supporting material design</li>
-<li>Made use of android libraries like fontawesome, sqlcipher, merge adapters, dagger, butterknife, picasso</li>
+<li>Designed UI and UX according to specifications and wireframe</li>
 </ul>
+
+<h5>Technology:</h5>
+<dl>
+<dt>iOS</dt><dd>Storyboards, CocoaPods, Sqlcipher, UICollectionView, HealthKit, JSON, Objective-C, Swift</dd>
+<dt>Android</dt><dd>Material Design, Sqlcipher, merge adapters, Dagger, Butterknife, Picasso, JNI/NDK, Gradle, tablet, Java</dd>
+<dt>Web</dt><dd>Apache Tomcat, Java Enterprise Servlets (custom framework), Freemarker, PDF rendering, XSS and CSRF prevention, CSS, HTML5, MySQL</dd>
+<dt>Testing</dt><dd>Selenium in Java, Appium, JUnit</dd>
+<dt>Misc</dt><dd>GIT, JIRA, Trello</dd>
+</dl>
 
 </div>
 
@@ -104,9 +123,13 @@ Programming enthusiast since 2000 with industry experience since 2008. Graduated
 <li>Helped develop unit tests for mobile platforms</li>
 <li>Ensured timely and quality applications, always putting in the extra effort</li>
 <li>Provided maintenance fixes and reported changes to product team</li>
-<li>Participated with teammates in a <b>machine learning</b> online stanford course (to apply to analytics)</li>
+<li>Participated with teammates in a machine learning online stanford course (to apply to analytics)</li>
 </ul>
 
+<h5>Technology:</h5>
+<ul>
+    <li>Eclipse, Java, Objective-C, XML, Subversion, Trac</li>
+</ul>
 </div>
 
 <div class="well">
@@ -127,9 +150,13 @@ Programming enthusiast since 2000 with industry experience since 2008. Graduated
 <li>Learnt new skills such as XAML and Silverlight</li>
 <li>Utilized C++ knowledge to port Windows Mobile applications to WP7 in a very timely manner</li>
 <li>Attended the Silverlight conference at Microsoft in Redmond</li>
-<li>Gained experienced creating iPhone applications using MonoTouch (C#)</li>
+<li>Gained experienced creating iPhone applications using Xamarin Platform (C#)</li>
 <li>Gained experience consuming REST/SOAP services like Twitter/Bing Maps/Translate</li>
 </ul>
+
+<h5>Technology:</h5>
+
+<ul><li>Windows Mobile, C++, Windows Phone 7, C#, Silverlight, XAML, Xamarin Platform</li></ul>
 
 </div>
 
@@ -204,10 +231,10 @@ Programming enthusiast since 2000 with industry experience since 2008. Graduated
 
 <div class="well">
 <ul>
-<li><a href="http://testmanship.com">Testmanship</a>: A ruby project to provide management and historical data for manual testing</li>
+<li><a href="http://testmanship.com">Testmanship</a>: a ruby project to provide management and historical data for manual testing</li>
 <li><a href="http://github.com/ryjen/libarg3">arg3db</a>: my c++11 database library</li>
-<li><a href="https://github.com/ryjen/cparse">cparse</a>: a C library for <a href="http://parse.com">parse.com</a></li>
-<li><a href="http://github.com/ryjen/yahtsee">yahtsee</a>: a multiplayer online game of yahtzee for the terminal command prompt</li>
+<li><a href="https://github.com/ryjen/cparse">cparse</a>: a C library for <a href="http://parse.com">parse.com</a> and embedded systems</li>
+<li><a href="http://github.com/ryjen/yahtsee">yahtsee</a>: a multiplayer online game of yahtzee for the command line</li>
 <li><a href="https://github.com/ryjen/Droid-Fortunes">DroidFortunes</a>: an Android version of the UNIX 'fortunes' application</li>
 <li><a href="https://github.com/ryjen/p0ng">p0ng</a>: a retro pong game for iOS</li>
 </ul>
