@@ -39,9 +39,10 @@ Programming enthusiast since 2000 with industry experience since 2008. Graduated
 <li>Assisted in code quality with code reviews in bitbucket</li>
 <li>Resolved several hardware/software rendering issues on Android</li>
 <li>Created stories, bugs and managed sprints in JIRA</li>
-<li>Prototyped 3-column android tablet version by refactoring layouts and fragment usage</li>
+<li>Prototyped android tablet version by refactoring layouts and fragment usage</li>
 <li>Participated in sprint planning and team meetings</li>
-<li>Delivered a client delivery framework revision for Android which included several bugs and security patches</li>
+<li>Delivered a client delivery framework revision for Android</li>
+<li>Worked with VISA and Veracode for Android security enhancements and fixes</li>
 </ul>
 
 <h5>Technology:</h5>
@@ -138,7 +139,7 @@ Programming enthusiast since 2000 with industry experience since 2008. Graduated
 
 <h3> Contract Developer, Sep 2011 - Apr 2012 </h3>
 <ul>
-<li>Helped port <b>GuitarSuite</b> to iPhone in C#/Monotouch.  Features included a metronome, scales/chord charts, tuner, etc</li>
+<li>Helped port <b>GuitarSuite</b> to iPhone in C#/Xamarin.  Features included a metronome, scales/chord charts, tuner, etc</li>
 <li>Successfully implemented a forwarded contract to develop an iPhone application in native Objective-C</li>
 </ul>
 
@@ -205,6 +206,11 @@ Programming enthusiast since 2000 with industry experience since 2008. Graduated
 <li>Complete system analysis and testing for release with Translink</li>
 <ul>
 
+<h5>Technology:</h5>
+<ul>
+    <li>C++, Linux, Embedded, C#, Windows PDA, SQL, Power Line Communication, Multithreading
+</ul>
+
 </div>
 
 <h1> Education </h1>
@@ -231,8 +237,8 @@ Programming enthusiast since 2000 with industry experience since 2008. Graduated
 
 <div class="well">
 <ul>
-<li><a href="http://testmanship.com">Testmanship</a>: a ruby project to provide management and historical data for manual testing</li>
 <li><a href="http://github.com/ryjen/libarg3">arg3db</a>: my c++11 database library</li>
+<li><a href="http://testmanship.com">Testmanship</a>: a ruby project to provide management and historical data for manual testing</li>
 <li><a href="https://github.com/ryjen/cparse">cparse</a>: a C library for <a href="http://parse.com">parse.com</a> and embedded systems</li>
 <li><a href="http://github.com/ryjen/yahtsee">yahtsee</a>: a multiplayer online game of yahtzee for the command line</li>
 <li><a href="https://github.com/ryjen/Droid-Fortunes">DroidFortunes</a>: an Android version of the UNIX 'fortunes' application</li>
