@@ -204,7 +204,7 @@ Programming enthusiast since 2000 with industry experience since 2008. Graduated
 <li>Incorporated tools like selenium to perform web interface testing</li>
 <li>Recorded learned information on a team wiki</li>
 <li>Complete system analysis and testing for release with Translink</li>
-<ul>
+</ul>
 
 <h5>Technology:</h5>
 <ul>

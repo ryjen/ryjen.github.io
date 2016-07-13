@@ -1,3 +1,4 @@
+
 #header-title {
   padding: 10px 10px 0 10px;
 
@@ -35,60 +36,6 @@
   width: 128px;
 }
 
-#projects {
-  .tabs {
-    padding: 0 0 0 2em;
-    margin: 0;
-
-    li {
-      list-style-type: none;
-      display: inline-block;
-      padding: 0.4em;
-      margin-left: 0.4em;
-      border-bottom: none;
-      background-color: #f0f0f0;
-      border-top-left-radius: 0.5em;
-      border-top-right-radius: 0.5em;
-    }
-
-    .active {
-      background-color: #fff;
-
-      a {
-        font-weight: bold;
-      }
-    }
-  }
-
-  #open-source, #closed-source {
-    .panel-heading {
-      display: none;
-    }
-
-    .list-group-item {
-      list-style-type: none;
-      margin-bottom: 0.4em;
-
-      a {
-        font-size: 1.5em;
-      }
-    }
-  }
-
-  .tab-content {
-    background: #fff;
-    padding: 0.25em 0.5em 0 0.5em;
-    margin: 0;
-
-    .tab-pane {
-      display: none;
-    }
-
-    .active {
-      display: block;
-    }
-  }
-}
 
 .credit {
   .logo-wrap {
@@ -100,84 +47,5 @@
     .logo {
       background: none;
     }
-  }
-}
-
-#things {
-  table {
-    border: none;
-
-    tr {
-      border: none;
-
-      td {
-        vertical-align: top;
-        border: none;
-      }
-
-      td + td {
-        padding-left: 1em;
-      }
-    }
-  }
-
-  img {
-    height: 180px;
-    width: 140px;
-  }
-
-  .fancybox + .caption {
-    display: none;
-  }
-}
-
-#page-resume {
-  #contact-info {
-    display: none;
-  }
-
-  dl {
-     dt {
-        display: list-item;
-        list-style-image: url("/images/bullet.gif");
-        margin-left: 0;
-        margin-right: 8px;
-     }
-  }
-  table {
-    margin: 1em 0 1em 0;
-    width: initial;
-
-    td {
-      text-align: left;
-      margin: 0;
-      padding: 0;
-      border: none;
-
-      i {
-        font-size: 1.4em;
-      }
-
-      padding-right: 0.5em;
-    }
-
-    img {
-      border-radius: 50%;
-      margin-right: 1em;
-    }
-  }
-
-  .caption {
-    display: none;
-  }
-
-  li {
-    list-style-image: url("/images/bullet.gif");
-  }
-
-  .well {
-    background-color: #fff;
-    padding: 0.5em;
-    margin: 1em 0 1em 0;
   }
 }

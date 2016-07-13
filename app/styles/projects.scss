@@ -1,0 +1,58 @@
+
+#projects {
+  .tabs {
+    padding: 0 0 0 2em;
+    margin: 0;
+
+    li {
+      list-style-type: none;
+      display: inline-block;
+      padding: 0.4em;
+      margin-left: 0.4em;
+      border-bottom: none;
+      background-color: #f0f0f0;
+      border-top-left-radius: 0.5em;
+      border-top-right-radius: 0.5em;
+    }
+
+    .active {
+      background-color: #fff;
+
+      a {
+        font-weight: bold;
+      }
+    }
+  }
+
+  #open-source, #closed-source {
+    .panel-heading {
+      display: none;
+    }
+
+    .list-group-item {
+      list-style-type: none;
+      margin-bottom: 0.4em;
+
+      a {
+        font-size: 1.5em;
+      }
+    }
+  }
+
+  .tab-content {
+    background: #fff;
+    padding: 0.25em 0.5em 0 0.5em;
+    margin: 0;
+    position: relative;
+    top: 0;
+    left: 0;
+
+    .tab-pane {
+      display: none;
+    }
+
+    .active {
+      display: block;
+    }
+  }
+}

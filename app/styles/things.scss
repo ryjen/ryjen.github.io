@@ -1,0 +1,28 @@
+
+#things {
+  table {
+    border: none;
+
+    tr {
+      border: none;
+
+      td {
+        vertical-align: top;
+        border: none;
+      }
+
+      td + td {
+        padding-left: 1em;
+      }
+    }
+  }
+
+  img {
+    height: 180px;
+    width: 140px;
+  }
+
+  .fancybox + .caption {
+    display: none;
+  }
+}
