@@ -76,7 +76,7 @@ Programming enthusiast since 2000 with industry experience since 2008. Graduated
 
 <h2> <a href="http://epactnetwork.com/">ePACT</a>
 
-<h3> Lead Mobile Developer / Java Engineer, July 3 2013 - Current </h3>
+<h3> Lead Mobile Developer / Java Engineer, July 3 2013 - March 2015 </h3>
 
 <ul>
 <li>Developed <a href="https://play.google.com/store/apps/details?id=com.epactnetwork.droid&hl=en">Android</a>, <a href="http://appstore.com/epactemergencynetwork">iPhone</a> and <a href="http://appworld.blackberry.com/webstore/content/59939372">Blackberry</a> apps</li>
