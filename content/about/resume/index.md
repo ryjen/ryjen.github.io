@@ -47,7 +47,7 @@ Programming enthusiast since 2000 with industry experience since 2008. Graduated
 </ul>
 
 <h5>Technology:</h5>
-<dl><dt>Android</dt><dd>Android Studio, Java, Ant, Gimbal, Beacons, Gradle, Memory Analyzer, Expresso, Mockito</dd>
+<dl><dt>Android</dt><dd>Android Studio and SDK, Java, Beacons, Gradle, Memory Analyzer, Expresso, Mockito</dd>
 <dt>Windows</dt><dd>Visual Studio 15, C#, SourceSafe, Windows Phone 8+, Windows 10</dd>
 <dt>Misc</dt><dd>Bash/Shell Scripting, JIRA, Confluence, GIT, Subversion, XML</dd>
 </div>
