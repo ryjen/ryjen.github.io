@@ -35,19 +35,20 @@ Programming enthusiast since 2000 with industry experience since 2008. Graduated
 <h3> Mobile Application Developer July 2015 - Present </h3>
 
 <ul>
-<li>Mobile programming and support on iOS, Android, Windows Phone and Blackberry</li>
+<li>Mobile programming and support on Android, Windows Phone, iOS and Blackberry</li>
 <li>Assisted in code quality with code reviews in bitbucket</li>
-<li>Resolved several hardware/software rendering issues on Android</li>
 <li>Created stories, bugs and managed sprints in JIRA</li>
 <li>Prototyped android tablet version by refactoring layouts and fragment usage</li>
-<li>Participated in sprint planning and team meetings</li>
+<li>Participated in sprint planning, review and team meetings</li>
 <li>Delivered a client delivery framework revision for Android</li>
+<li>Resolved several hardware/software rendering issues on Android</li>
 <li>Worked with VISA and Veracode for Android security enhancements and fixes</li>
+<li>Implemented activity feed and other components for windows phone 8 framework</li>
 </ul>
 
 <h5>Technology:</h5>
-<dl><dt>Windows</dt><dd>Visual Studio 15, C#, SourceSafe, Windows Mobile 8+, Windows 10</dd>
-<dt>Android</dt><dd>Android Studio, Java, Ant, Gimbal, Proximity5, Gradle, Memory Analyzer, expresso, Mockito</dd>
+<dl><dt>Android</dt><dd>Android Studio, Java, Ant, Gimbal, Beacons, Gradle, Memory Analyzer, Expresso, Mockito</dd>
+<dt>Windows</dt><dd>Visual Studio 15, C#, SourceSafe, Windows Phone 8+, Windows 10</dd>
 <dt>Misc</dt><dd>Bash/Shell Scripting, JIRA, Confluence, GIT, Subversion, XML</dd>
 </div>
 
