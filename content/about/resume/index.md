@@ -217,11 +217,11 @@ Programming enthusiast since 2000 with industry experience since 2008. Graduated
 <h1> Education </h1>
 
 <div class="well">
-<h3> <a href="http://www.bcit.ca/">British Columbia Institute of Technology</a>, (89% GPA) </h3>
+<h3> <a href="http://www.bcit.ca/">British Columbia Institute of Technology</a>, (84% GPA) </h3>
 <ul>
-<li><a href="http://www.bcit.ca/study/programs/5500certt#courses">Certificate of Technology in Computer Systems</a>, 2007-2010</li>
-<li><a href="http://www.bcit.ca/study/programs/6958acert#courses">Associate in Applied Software Development</a>, 2006-2007</li>
-<li><a href="http://www.bcit.ca/study/programs/6992acert#courses">Associate in Computer Information Systems</a>, 2005-2006</li>
+<li><a href="http://www.bcit.ca/study/programs/5500certt#courses">Certificate of Technology in Computer Systems</a>, 2013-2015</li>
+<li><a href="http://www.bcit.ca/study/programs/6958acert#courses">Associate in Applied Software Development</a>, 2005-2007</li>
+<li><a href="http://www.bcit.ca/study/programs/6992acert#courses">Associate in Computer Information Systems</a>, 2005-2007</li>
 </ul>
 
 </div>
