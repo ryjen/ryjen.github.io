@@ -35,10 +35,11 @@ Programming enthusiast since 2000 with industry experience since 2008. Graduated
 <h3> Mobile Application Developer July 2015 - Present </h3>
 
 <ul>
+<li>Brought a beacon experience for android to production</li>
+<li>Brought a self-prototyped android tablet version to production</li>
 <li>Mobile programming and support on Android, Windows Phone, iOS and Blackberry</li>
 <li>Assisted in code quality with code reviews in bitbucket</li>
 <li>Created stories, bugs and managed sprints in JIRA</li>
-<li>Prototyped android tablet version by refactoring layouts and fragment usage</li>
 <li>Participated in sprint planning, review and team meetings</li>
 <li>Delivered a client delivery framework revision for Android</li>
 <li>Resolved several hardware/software rendering issues on Android</li>
