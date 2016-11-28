@@ -23,12 +23,12 @@ Development Env
 - Android SDK
 - [Dotnet core](https://blogs.msdn.microsoft.com/dotnet/2014/12/04/introducing-net-core/)
 - [Visual Studio for macOS](https://www.visualstudio.com/vs/visual-studio-mac/)
-- [Dotnet core on Docker](https://hub.docker.com/r/microsoft/dotnet/)
 - [nuget](https://www.nuget.org)
 
 Web ASP.NET Production Env
 --------------
 - [Digital Ocean](http://digitalocean.com)
+- [Dotnet core on Docker](https://hub.docker.com/r/microsoft/dotnet/)
 - [Dokku](https://github.com/dokku/dokku), docker based heroku
 
 Platforms Targeted
