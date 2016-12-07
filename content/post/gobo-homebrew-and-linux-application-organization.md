@@ -21,5 +21,3 @@ This is also not unlike Apple applications themselves, which if you open up are 
 This means that **uninstalling** something is pretty trivial and you feel organized with all application files in their own directory instead of spread out across the filesystem.
 
 I hope that package manager systems will continue to go this route in the future of *NIX.
-
-![Gobo Logo](http://www.gobolinux.org/images/gobonew.png)
