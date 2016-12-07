@@ -78,19 +78,31 @@ Programming enthusiast since 2000 with industry experience since 2008. Graduated
 
 <h2> <a href="http://epactnetwork.com/">ePACT</a>
 
-<h3> Lead Mobile Developer / Java Engineer, July 3 2013 - March 2015 </h3>
+<h3> Lead Mobile Developer, July 3 2014 - March 2015 </h3>
 
 <ul>
 <li>Developed <a href="https://play.google.com/store/apps/details?id=com.epactnetwork.droid&hl=en">Android</a>, <a href="http://appstore.com/epactemergencynetwork">iPhone</a> and <a href="http://appworld.blackberry.com/webstore/content/59939372">Blackberry</a> apps</li>
-<li>Researched cross platform solution like [tabris](http://developer.eclipsesource.com/tabris/) and [Xamarin Platform](https://www.xamarin.com/platform)
+<li>Researched cross platform solution like <a href="http://developer.eclipsesource.com/tabris/">Tabris</a> and <a href="https://www.xamarin.com/platform">Xamarin Platform</a></li>
 <li>Implemented secure synchronization of data for offline viewing across both iOS and Android</li>
 <li>Implement dynamic data display for different types of forms across both iOS and Android</li>
-<li>Provided bug fixes and new features on main web site. Worked with existing API infrastructure for a mobile API</li>
-<li>Initiated an automation framework for web and mobile, increasing testing efficiency greatly</li>
 <li>Scripted build processes and documented work for both iOS and Android</li>
-<li>Participated in SCRUM using Agile and Kanban</li>
 <li>Made proof of concept library in C that shares code between mobile platforms automatically</li>
-<li>Designed UI and UX according to specifications and wireframe</li>
+</ul>
+
+<h3> Backend Java Engineer, July 3 2013 - July 3 2014 </h3>
+
+<ul>
+<li>Provided bug fixes and new features on main web site.</li>
+<li>Reduced complexity in PDF generation by using templating</li>
+<li>Initiated an implemented XSS and CSRF security fixes</li>
+<li>Extended API features for mobile development</li>
+</ul>
+
+<h3> General </h3>
+<ul>
+<li>Initiated an automation framework for web and mobile, increasing testing efficiency greatly</li>
+<li>Participated in SCRUM using Agile and Kanban</li>
+<li>Implemented UI and UX according to specifications and wireframe</li>
 </ul>
 
 <h5>Technology:</h5>
