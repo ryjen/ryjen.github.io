@@ -23,7 +23,7 @@ title: Resume
 <h1> Robert Ryan Jennings </h1>
 
 <p>
-Programming enthusiast since 2000 with industry experience since 2008. Graduated from the <a href="http://www.bcit.ca/study/programs/5500certt#courses">Computer Systems</a> program with distinction at the British Columbia Institute of Technology. Talented problem solver (and finder) with a passion for creating clean, robust and reliable solutions.</p>
+Programming enthusiast since 2000 with industry experience since 2008. Graduated from the <a href="http://www.bcit.ca/study/programs/5500certt#courses">Computer Systems</a> program with distinction at the British Columbia Institute of Technology.</p>
 </div>
 
 <h1> Work Experience </h1>
@@ -35,22 +35,14 @@ Programming enthusiast since 2000 with industry experience since 2008. Graduated
 <h3> Mobile Application Developer July 2015 - Present </h3>
 
 <ul>
-<li>Brought a beacon experience for android to production</li>
-<li>Brought a self-prototyped android tablet version to production</li>
-<li>Mobile programming and support on Android, Windows Phone, iOS and Blackberry</li>
+<li>Implemented beacon notifications for conferences on Android</li>
+<li>Self-started tablet support for Android/li>
+<li>General mobile programming and support on Android, Windows Phone, iOS</li>
 <li>Assisted in code quality with code reviews in bitbucket</li>
-<li>Created stories, bugs and managed sprints in JIRA</li>
-<li>Participated in sprint planning, review and team meetings</li>
+<li>Participated in SCRUM sprint planning, review and standups</li>
 <li>Delivered a client delivery framework revision for Android</li>
-<li>Resolved several hardware/software rendering issues on Android</li>
-<li>Worked with VISA and Veracode for Android security enhancements and fixes</li>
-<li>Implemented activity feed and other components for windows phone 8 framework</li>
+<li>Implemented new component for Windows Phone 8 framework</li>
 </ul>
-
-<h5>Technology:</h5>
-<dl><dt>Android</dt><dd>Android Studio and SDK, Java, Beacons, Gradle, Memory Analyzer, Expresso, Mockito</dd>
-<dt>Windows</dt><dd>Visual Studio 15, C#, SourceSafe, Windows Phone 8+, Windows 10</dd>
-<dt>Misc</dt><dd>Bash/Shell Scripting, JIRA, Confluence, GIT, Subversion, XML</dd>
 </div>
 
 <div class="well">
@@ -61,17 +53,13 @@ Programming enthusiast since 2000 with industry experience since 2008. Graduated
 
 <ul>
 <li>Bug fixing and implementations to current SPAM product in C and Linux</li>
-<li>Ported perl prototypes for next generation product to binary C</li>
+<li>Ported perl prototypes binary C for production implementation</li>
 <li>Successfully performed all development in VIM</li>
 <li>Improved habits of time tracking, planning, documenting and communicating</li>
 <li>Participated in standups, new project planning and a raspberry pi quake tournament</li>
 <li>Learned more about packaging software in linux</li>
 </ul>
 
-<h5>Technology:</h5>
-<ul>
-    <li>C, SMTP, Perl, VIM, Linux, Ubuntu, Make, Apt, Crontab, PHP, Trac, Subversion</li>
-</ul>
 </div>
 
 <div class="well">
@@ -81,38 +69,29 @@ Programming enthusiast since 2000 with industry experience since 2008. Graduated
 <h3> Lead Mobile Developer, July 3 2014 - March 2015 </h3>
 
 <ul>
-<li>Developed <a href="https://play.google.com/store/apps/details?id=com.epactnetwork.droid&hl=en">Android</a>, <a href="http://appstore.com/epactemergencynetwork">iPhone</a> and <a href="http://appworld.blackberry.com/webstore/content/59939372">Blackberry</a> apps</li>
-<li>Researched cross platform solution like <a href="http://developer.eclipsesource.com/tabris/">Tabris</a> and <a href="https://www.xamarin.com/platform">Xamarin Platform</a></li>
-<li>Implemented secure synchronization of data for offline viewing across both iOS and Android</li>
-<li>Implement dynamic data display for different types of forms across both iOS and Android</li>
+<li>Developed Android, iPhone and Blackberry apps</li>
+<li>Implemented secure synchronization of data for offline viewing across mobile platforms (sqlcipher, json)</li>
+<li>Implement dynamic data display for different forms across mobile platforms</li>
 <li>Scripted build processes and documented work for both iOS and Android</li>
 <li>Made proof of concept library in C that shares code between mobile platforms automatically</li>
+<li>Implemented UI and UX according to specifications and wireframe</li>
 </ul>
 
 <h3> Backend Java Engineer, July 3 2013 - July 3 2014 </h3>
 
 <ul>
-<li>Provided bug fixes and new features on main web site.</li>
-<li>Reduced complexity in PDF generation by using templating</li>
+<li>Provided bug fixes and new features on main web site (J2EE, Tomcat, HTML5, MySQL, JS)</li>
+<li>Reduced complexity in PDF generation</li>
+<li>Implemented features for adult sports client</li>
 <li>Initiated an implemented XSS and CSRF security fixes</li>
 <li>Extended API features for mobile development</li>
 </ul>
 
 <h3> General </h3>
 <ul>
-<li>Initiated an automation framework for web and mobile, increasing testing efficiency greatly</li>
+<li>Increased testing efficiency by initiating an automation framework for web and mobile (Selenium, Appium)</li>
 <li>Participated in SCRUM using Agile and Kanban</li>
-<li>Implemented UI and UX according to specifications and wireframe</li>
 </ul>
-
-<h5>Technology:</h5>
-<dl>
-<dt>iOS</dt><dd>Storyboards, CocoaPods, Sqlcipher, UICollectionView, HealthKit, JSON, Objective-C, Swift</dd>
-<dt>Android</dt><dd>Material Design, Sqlcipher, merge adapters, Dagger, Butterknife, Picasso, JNI/NDK, Gradle, tablet, Java</dd>
-<dt>Web</dt><dd>Apache Tomcat, Java Enterprise Servlets (custom framework), Freemarker, PDF rendering, XSS and CSRF prevention, CSS, HTML5, MySQL</dd>
-<dt>Testing</dt><dd>Selenium in Java, Appium, JUnit</dd>
-<dt>Misc</dt><dd>GIT, JIRA, Trello</dd>
-</dl>
 
 </div>
 
@@ -125,26 +104,21 @@ Programming enthusiast since 2000 with industry experience since 2008. Graduated
 <h4> Product Team </h4>
 
 <ul>
-<li>Participated in developing a second generation mobile application framework</li>
-<li>Played a role in the company winning the <a href="http://www.quickmobile.com/blog/quickmobile-is-the-2013-bctia-emerging-company-of-the-year">BCTIA emerging company</a> award</li>
-<li>Helped develop an internationalization solution for mobile framework</li>
-<li>Worked cross platform mobile frameworks (Blackberry, iOS, Android)</li>
-<li>Developed new features like Gamification (Android), Multi-Database support (Blackberry), Messaging (Blackberry) and more</li>
+<li>Participated in developing mobile application framework</li>
+<li>Played a role in the company winning the BCTIA emerging company award</li>
+<li>Participated in a custom internationalization solution for mobile framework</li>
+<li>Participated in new features like Gamification (Android), Multi-Database support (Blackberry), Messaging (Blackberry) and more</li>
+
 </ul>
 
 <h4> Client Delivery Team </h4>
 <ul>
-<li>Developed client customizations across mobile platforms (iOS, Blackberry)</li>
-<li>Helped develop unit tests for mobile platforms</li>
-<li>Ensured timely and quality applications, always putting in the extra effort</li>
+<li>Developed client customizations on mobile platforms</li>
+<li>Ensured timely and quality applications</li>
 <li>Provided maintenance fixes and reported changes to product team</li>
-<li>Participated with teammates in a machine learning online stanford course (to apply to analytics)</li>
+<li>Participated with teammates in a machine learning online stanford course</li>
 </ul>
 
-<h5>Technology:</h5>
-<ul>
-    <li>Eclipse, Java, Objective-C, XML, Subversion, Trac</li>
-</ul>
 </div>
 
 <div class="well">
@@ -153,8 +127,7 @@ Programming enthusiast since 2000 with industry experience since 2008. Graduated
 
 <h3> Contract Developer, Sep 2011 - Apr 2012 </h3>
 <ul>
-<li>Helped port <b>GuitarSuite</b> to iPhone in C#/Xamarin.  Features included a metronome, scales/chord charts, tuner, etc</li>
-<li>Successfully implemented a forwarded contract to develop an iPhone application in native Objective-C</li>
+<li>Helped port GuitarSuite to iPhone in C#/Xamarin. Features included a metronome, scales/chord charts, tuner, etc</li>
 </ul>
 
 <h3> Software Developer, Nov 2010 - Apr 2011 </h3>
@@ -167,11 +140,8 @@ Programming enthusiast since 2000 with industry experience since 2008. Graduated
 <li>Attended the Silverlight conference at Microsoft in Redmond</li>
 <li>Gained experienced creating iPhone applications using Xamarin Platform (C#)</li>
 <li>Gained experience consuming REST/SOAP services like Twitter/Bing Maps/Translate</li>
+
 </ul>
-
-<h5>Technology:</h5>
-
-<ul><li>Windows Mobile, C++, Windows Phone 7, C#, Silverlight, XAML, Xamarin Platform</li></ul>
 
 </div>
 
@@ -184,13 +154,12 @@ Programming enthusiast since 2000 with industry experience since 2008. Graduated
 <h4> Project 1: SoundSafe Advanced Pedestrian Control </h4>
 
 <ul>
-<li>Developed a Windows Mobile application to configure the next generation pedestrian control buttons (using power line communication)</li>
+<li>Developed a Windows Mobile application to configure pedestrian control buttons</li>
 <li>Worked in an agile team of 4-6, coordinating project progress</li>
 <li>Improved knowledge of C#/.NET Compact/Windows Mobile, Power Line Communication, token ring network architecture and ZigBee protocol</li>
-<li>Contributed small code changes to the audio pedestrian signal firmware using C and MPLAB while coordinating with mobile application</li>
 <li>Assisted in testing and integration of system components</li>
 <li>Documented installation and usage procedures</li>
-<li>Gained experience implementing and optimizing custom network protocols</li>
+<li>Gained experience implementing, debugging and optimizing custom network protocols</li>
 </ul>
 
 <h4> Project 2: TransPOD Public Transit Optimizer </h4>
@@ -204,6 +173,7 @@ Programming enthusiast since 2000 with industry experience since 2008. Graduated
 <li>Researched GPS algorithms, specific to prediction of moving targets</li>
 <li>Assisted with product configuration and networking</li>
 <li>Successfully released software and hardware for Translink, Edmonton and Chicago transit authorities</li>
+
 </ul>
 
 <h3> Quality Assurance Engineer, Dec 2007 - Apr 2008 </h3>
@@ -218,11 +188,7 @@ Programming enthusiast since 2000 with industry experience since 2008. Graduated
 <li>Incorporated tools like selenium to perform web interface testing</li>
 <li>Recorded learned information on a team wiki</li>
 <li>Complete system analysis and testing for release with Translink</li>
-</ul>
 
-<h5>Technology:</h5>
-<ul>
-    <li>C++, Linux, Embedded, C#, Windows PDA, SQL, Power Line Communication, Multithreading
 </ul>
 
 </div>
@@ -251,12 +217,11 @@ Programming enthusiast since 2000 with industry experience since 2008. Graduated
 
 <div class="well">
 <ul>
-<li><a href="http://github.com/ryjen/libarg3">arg3db</a>: my c++11 database library</li>
-<li><a href="http://testmanship.com">Testmanship</a>: a ruby project to provide management and historical data for manual testing</li>
-<li><a href="https://github.com/ryjen/cparse">cparse</a>: a C library for <a href="http://parse.com">parse.com</a> and embedded systems</li>
+<li><a href="http://github.com/ryjen/db">rjdb</a> &amp; <a href="http://github.com/ryjen/net">rjnet</a>: my c++11 libraries</li>
+<li><a href="http://testmanship.com">testmanship</a>: a ruby project to provide management and historical data for manual testing</li>
 <li><a href="http://github.com/ryjen/yahtsee">yahtsee</a>: a multiplayer online game of yahtzee for the command line</li>
 <li><a href="https://github.com/ryjen/Droid-Fortunes">DroidFortunes</a>: an Android version of the UNIX 'fortunes' application</li>
-<li><a href="https://github.com/ryjen/p0ng">p0ng</a>: a retro pong game for iOS</li>
+<li><a href="https://github.com/ryjen/p0ng">p0ng</a>: an unreleased retro pong game for iOS</li>
 </ul>
 </div>
 

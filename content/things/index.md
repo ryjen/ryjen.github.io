@@ -48,7 +48,7 @@ title: Things
 <hr>
 
 <h4><a href="http://ipfs.org">Interplanetary File System</a></h4>
-<p>Peer-to-peer for the web.  No more central servers dictating uptime and other security features.  View on <a href="https://github.com/ipfs">github</a>.</p>
+<p>Peer-to-peer for the web.  No more central servers dictating uptime. More security features.  View on <a href="https://github.com/ipfs">github</a>.</p>
 
 <h4><a href="https://www.docker.com">Docker and Containerization</a></h4>
 <p>
@@ -56,13 +56,16 @@ While less secure than virtualization, it is fantastic for reproducible build en
 </p>
 
 <h4><a href="http://nanomsg.org">Nanomsg and Scalability Protocols</a></h4>
-<p>Scalable protocols for sockets.  Nuff said, very useful.</p>
+<p>Scalable protocols for sockets, pretty interesting.</p>
 
 <h4><a href="http://lcamtuf.coredump.cx/afl/">American Fuzzy Lop and Fuzz Testing</a></h4>
 <p>The surge of security patches over the last few years to several mainstay open-source projects are due to this project from a google employee.</p>
 
 <h4><a href="http://www.phoenixframework.org">Phoenix Framework and Elixir/Erlang</a></h4>
 <p>This promises to be a modern, ruby-like, easy to use web framework that delivers the supreme scalability and stability of the erlang virtual machine.</p>
+
+<h4><a href="http://keybase.io">Keybase and End-To-End Encryption</a></h4>
+<p>A nice little solution for encrypting and managing keys.  Looks like some sort encrypted file system coming?  Its not quite an end-to-end provider but I feel like it could easily be used for an end-to-end solution</p>
 
 <h2>Favourite Bag</h2>
 
