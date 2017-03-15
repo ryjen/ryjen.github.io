@@ -112,41 +112,46 @@
 #page-resume #contact-info {
   display: none; }
 
-/* line 8, /Users/ryan/Devel/blog/app/styles/resume.scss */
+/* line 7, /Users/ryan/Devel/blog/app/styles/resume.scss */
+#page-resume span.keywords {
+  font-size: smaller;
+  margin-left: 1em; }
+
+/* line 13, /Users/ryan/Devel/blog/app/styles/resume.scss */
 #page-resume dl dt {
   display: list-item;
   list-style-image: url("/images/bullet.gif");
   margin-left: 0;
   margin-right: 8px; }
 
-/* line 15, /Users/ryan/Devel/blog/app/styles/resume.scss */
+/* line 20, /Users/ryan/Devel/blog/app/styles/resume.scss */
 #page-resume table {
   margin: 1em 0 1em 0;
   width: initial; }
-  /* line 19, /Users/ryan/Devel/blog/app/styles/resume.scss */
+  /* line 24, /Users/ryan/Devel/blog/app/styles/resume.scss */
   #page-resume table td {
     text-align: left;
     margin: 0;
     padding: 0;
     border: none;
     padding-right: 0.5em; }
-    /* line 25, /Users/ryan/Devel/blog/app/styles/resume.scss */
+    /* line 30, /Users/ryan/Devel/blog/app/styles/resume.scss */
     #page-resume table td i {
       font-size: 1.4em; }
-  /* line 32, /Users/ryan/Devel/blog/app/styles/resume.scss */
+  /* line 37, /Users/ryan/Devel/blog/app/styles/resume.scss */
   #page-resume table img {
     border-radius: 50%;
     margin-right: 1em; }
 
-/* line 38, /Users/ryan/Devel/blog/app/styles/resume.scss */
+/* line 43, /Users/ryan/Devel/blog/app/styles/resume.scss */
 #page-resume .caption {
   display: none; }
 
-/* line 42, /Users/ryan/Devel/blog/app/styles/resume.scss */
+/* line 47, /Users/ryan/Devel/blog/app/styles/resume.scss */
 #page-resume li {
   list-style-image: url("/images/bullet.gif"); }
 
-/* line 46, /Users/ryan/Devel/blog/app/styles/resume.scss */
+/* line 51, /Users/ryan/Devel/blog/app/styles/resume.scss */
 #page-resume .well {
   background-color: #fff;
   padding: 0.5em;
