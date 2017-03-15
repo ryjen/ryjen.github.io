@@ -77,7 +77,7 @@ Android, Beacons, Tablet, Windows Phone, JIRA, Agile, SCRUM, BitBucket, Git, Gra
 
 <h2> <a href="http://epactnetwork.com/">ePACT</a>
 
-<h3> Lead Mobile Developer, July 3 2014 - March 2015 </h3>
+<h3> (Lead) Mobile Developer, July 3 2014 - March 2015 </h3>
 
 <ul>
 <li>Implemented version 1.0 of native Android &amp; iPhone apps</li>
