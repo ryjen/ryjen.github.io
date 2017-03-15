@@ -162,10 +162,12 @@ Java, J2EE, JavaScript, CSS, HTML5, CSRF, XSS, MySQL, Tomcat, Agile, SCRUM, JIRA
 <h3> Software Developer, Nov 2010 - Apr 2011 </h3>
 
 <ul>
-<li>Responsible for porting several C++ (Palm) applications to Windows Phone (C#)</li>
-<li>Shared C# code with Xamarin cross platform for iOS/Android</li>
+<li>Responsible for porting several C++ (Palm) applications to Windows Phone (C#) and iOS/Android (Xamarin)</li>
 </ul>
 
+<span class="keywords">
+	Xamarin, C++, Windows Phone, Android, iPhone, C#, XAML, SIlverlight, REST/SOAP
+</span>
 <!--
 <ul>
 <li>Successfully completed milestone applications for Windows Phone 7 and iPhone marketplace</li>
