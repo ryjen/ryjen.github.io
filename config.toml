@@ -1,8 +1,6 @@
-baseurl = "https://ryan-jennings.net/"
+baseurl = "https://coda.life/"
 languageCode = "en-us"
-title = "rj::net"
-
-
+title = "coda.life"
 
 #Icarus theme
 ## Enable comments by entering your Disqus shortname
@@ -25,6 +23,7 @@ theme = "icarus"
     site_description = "namespace for technical and musical musings"
     copyright  = "Powered by [Hugo](//gohugo.io). Theme by [PPOffice](http://github.com/ppoffice)."
     avatar = "images/profile.jpeg"
+    logo = "images/logo.png"
 
     # Format dates with Go's time formatting
     date_format = "2006-01-02"
