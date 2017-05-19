@@ -19,7 +19,7 @@ title: Things
 </td>
 <td>
 <h4><a href="https://www.amazon.ca/Clean-Coder-Conduct-Professional-Programmers/dp/0137081073?ie=UTF8&psc=1&redirect=true&redirect=true&ref_=ox_sc_sfl_title_&smid=A3DWYIK6Y9EEQB">The Clean Coder</a></h4>
-<p>So much good advice in here from a veteran of the industry.</p>
+<p>Much good advice in here.</p>
 </td>
 </tr>
 <tr>
@@ -28,7 +28,7 @@ title: Things
 </td>
 <td>
 <h4><a href="https://www.amazon.ca/Pragmatic-Programmer-Journeyman-Master/dp/020161622X/ref=sr_1_1?s=books&ie=UTF8&qid=1465884768&sr=1-1&keywords=pragmatic+programmer">The Pragmatic Programmer</a></h4>
-<p>More pearls of wisdom, this one get into a little more detail but still high level.</p>
+<p>More pearls of wisdom.</p>
 </td>
 </tr>
 <tr>
@@ -52,7 +52,7 @@ title: Things
 
 <h4><a href="https://www.docker.com">Docker and Containerization</a></h4>
 <p>
-While less secure than virtualization, it is fantastic for reproducible build environments
+While less secure than virtualization, it is good for testing on difference environments and simplifies builds/deployment.
 </p>
 
 <h4><a href="http://nanomsg.org">Nanomsg and Scalability Protocols</a></h4>

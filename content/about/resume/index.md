@@ -11,10 +11,10 @@ title: Resume
 
 <table class="borderless">
 <tr><td> <i class="fa fa-phone"></i> </td><td> <a href="tel:1-778-240-3248">778-240-3248</a> </td></tr>
-<tr><td> <i class="fa fa-envelope"></i> </td><td> <a href="mailto:info@ryan-jennings.net">info@ryan-jennings.net</a> </td></tr>
+<tr><td> <i class="fa fa-envelope"></i> </td><td> <a href="mailto:ryan@coda.life">ryan@coda.life</a> </td></tr>
 <tr><td> <i class="fa fa-github"></i> </td><td> <a href="https://github.com/ryjen?tab=repositories">github.com/ryjen</a> </td></tr>
 <tr><td> <i class="fa fa-linkedin"></i> </td><td> <a href="http://ca.linkedin.com/in/ryjen">ca.linkedin.com/in/ryjen</a></td></tr>
-<tr><td> <i class="fa fa-globe"></i> </td><td> <a href="http://ryan-jennings.net">ryan-jennings.net</td></tr>
+<tr><td> <i class="fa fa-globe"></i> </td><td> <a href="https://coda.life">https://coda.life</td></tr>
 </table>
 
 </td></tr></table>
@@ -23,7 +23,8 @@ title: Resume
 <h1> Robert Ryan Jennings </h1>
 
 <p>
-Programming enthusiast since 2000 with industry experience since 2008. Graduated from the <a href="http://www.bcit.ca/study/programs/5500certt#courses">Computer Systems</a> program with distinction at the British Columbia Institute of Technology.</p>
+Programming enthusiast since 2000 with industry experience since 2007. Graduated from the <a href="http://www.bcit.ca/study/programs/5500certt#courses">Computer Systems</a> program with distinction at the British Columbia Institute of Technology.</p>
+
 </div>
 
 <h1> Work Experience </h1>
@@ -35,13 +36,14 @@ Programming enthusiast since 2000 with industry experience since 2008. Graduated
 <h3> Mobile Application Developer July 2015 - Present </h3>
 
 <ul>
-<li>Responsible for delivery customizations on Android and Windows Phone</li>
-<li>Implemented Android beacon component for platform</li>
-<li>Implemented Android tablet support for platform</li>
+<li>Responsible for delivery customizations and components on Android and Windows Phone</li>
+<li>Implemented beacon component for android platform.  Notification based UX with availability management.  Efficient use of background scanning.</li>
+<li>Improved android UX and performance with smarter resource management, animations and tablet layouts</li>
+<li>Gained experience in iterative development methodology, sprint reviews and planning.</li>
 </ul>
 
 <span class="keywords">
-Android, Beacons, Tablet, Windows Phone, JIRA, Agile, SCRUM, BitBucket, Git, Gradle, XCode
+Android, Beacons, Tablet, BLE, Notifications, Windows Phone, JIRA, Agile, SCRUM, BitBucket, Git, Gradle, XCode
 </span>
 <!--
 <ul>
@@ -81,6 +83,10 @@ Android, Beacons, Tablet, Windows Phone, JIRA, Agile, SCRUM, BitBucket, Git, Gra
 
 <ul>
 <li>Implemented version 1.0 of native Android &amp; iPhone apps</li>
+<li>Initiated UX test automation of mobile apps (Appium)</li>
+<li>Implemented dynamically customizable forms and data synchronization</li>
+<li>Implemented support for a shared library between platforms in C with scripted build processes</li>
+<li>Implemented push notifications</li>
 </ul>
 <!--
 <ul>
@@ -100,7 +106,11 @@ Android, iPhone, SQLCipher, JSON, Web Service, PDF, Scripting, Shared Library, U
 <h3> Backend Java Engineer, July 3 2013 - July 3 2014 </h3>
 
 <ul>
-<li>Responsible for developing and maintaining website framework (Custom Java Enterprise)</li>
+<li>Successfully developed new features for and maintained website framework (Custom Java Enterprise, Servlets)</li>
+<li>Improved efficiency of PDF rendering for various dynamic forms</li>
+<li>Extended API for mobile development</li>
+<li>Participated in implementation of push notifications for mobile devices</li>
+<li>Provided some web security and performance enhancements on own initiative</li>
 
 
 <!--</ul>
@@ -113,7 +123,7 @@ Extended API features for mobile development
 <ul>
 -->
 
-<li>Initiated an automation framework for web and mobile (Selenium, Appium)</li>
+<li>Initiated an automation framework for web (Selenium)</li>
 </ul>
 
 <span class="keywords">
@@ -130,6 +140,8 @@ Java, J2EE, JavaScript, CSS, HTML5, CSRF, XSS, MySQL, Tomcat, Agile, SCRUM, JIRA
 
 <ul>
 <li>Responsible for developing and maintaining mobile framework in Java (Android, Blackberry)</li>
+<li>Successfully and consistently met all client deadlines, often being able to exceede client expectations</li>
+<li>Participated in stanford machine learning online course</li>
 </ul>
 <!--
 <ul>
@@ -162,7 +174,9 @@ Java, J2EE, JavaScript, CSS, HTML5, CSRF, XSS, MySQL, Tomcat, Agile, SCRUM, JIRA
 <h3> Software Developer, Nov 2010 - Apr 2011 </h3>
 
 <ul>
-<li>Responsible for porting several C++ (Palm) applications to Windows Phone (C#) and iOS/Android (Xamarin)</li>
+<li>Successfully ported several C++ (Palm) applications to Windows Phone (C#/XAML) and iOS/Android (Xamarin)</li>
+<li>Completed milestones ahead of schedule</li>
+<li>Attended Microsoft campus for a conference</li>
 </ul>
 
 <span class="keywords">
@@ -190,7 +204,11 @@ Java, J2EE, JavaScript, CSS, HTML5, CSRF, XSS, MySQL, Tomcat, Agile, SCRUM, JIRA
 <h4> Project 1: SoundSafe Advanced Pedestrian Control </h4>
 
 <ul>
-<li>Responsible for developing a Windows Mobile configuration application for a power line communication pedestrian control unit over ZigBee wireless.</li>
+<li>Successfully delivered a Windows Mobile application for configuring a power line communication pedestrian control unit over ZigBee wireless.</li>
+<li>Improved knowledge of C#/.NET Compact/Windows Mobile, Power Line Communication, token ring network architecture and ZigBee protocol</li>
+<li>Provided installation documentation and usage procedures</li>
+<li>Provided additional testing and integration of system components</li>
+<li>Worked effectively in an agile team of 4-6, coordinating project progress</li>
 </ul>
 
 <span class="keywords">
@@ -210,11 +228,16 @@ C#, .Net Compact, Windows Mobile, Power Line Communication (PLC), Token Ring, Zi
 <h4> Project 2: TransPOD Public Transit Optimizer </h4>
 
 <ul>
-<li>Responsible for features and maintaining C++ code for a public transit traffic light priority request generator and receiver</li>
-<li>Successfully implemented GPIO based bus interface for Chicago Transit pilot project</li>
+<li>Responsible for new features and maintaining C++ code for a public transit traffic light priority request generator and receiver</li>
+<li>Successfully implemented a GPIO interface for Chicago Transit pilot project</li>
+<li>Gained experience maintaining a complex and multithreaded codebase</li>
+<li>Researched GPS algorithms, specific to prediction of moving targets</li>
+<li>Provided additional product configuration and testing</li>
+<li>Documented changes for release notes and internal docs on a team wiki</li>
+<li>Improved experience managing development time and met deadlines effectively</li>
 </ul>
 
-<span class="keywords">C, C++, GPS, Linux, Embedded, Shell Scripting, SQL, Multithreading, GPIO, Networking</span>
+<span class="keywords">C, C++, GPS, Linux, Embedded Systems, Distributed Systems, Shell Scripting, SQL, GPS, Multithreading, GPIO, Networking</span>
 
 <!--
 <ul>

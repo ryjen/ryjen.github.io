@@ -1,6 +1,6 @@
 [submodule "deploy"]
 	path = deploy
-	url = dokku@strontium.micrantha.com:blog
+	url = dokku@micrantha.com:blog
 [submodule "themes/icarus"]
 	path = themes/icarus
 	url = https://github.com/digitalcraftsman/hugo-icarus-theme.git
