@@ -9,19 +9,21 @@
       td {
         vertical-align: top;
         border: none;
+			  width: 140px;
+
+				img {
+    			height: 180px;
+    			width: 140px;
+					border: 1px solid #000;
+  			}
       }
 
       td + td {
         padding-left: 1em;
+				width: auto;
       }
     }
   }
-
-  img {
-    height: 180px;
-    width: 140px;
-  }
-
   .fancybox + .caption {
     display: none;
   }

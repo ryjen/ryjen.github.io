@@ -1,8 +1,8 @@
 {
-  "name": "rjnet",
+  "name": "coda.life",
   "version": "0.0.1",
   "authors": [
-    "Ryan Jennings <info@ryan-jennings.net>"
+    "Ryan Jennings <ryan@coda.life>"
   ],
   "description": "personal blog",
   "keywords": [
@@ -15,7 +15,7 @@
   ],
   "private": true,
   "license": "MIT",
-  "homepage": "http://ryan-jennings.net",
+  "homepage": "https://coda.life",
   "ignore": [
     "**/.*",
     "node_modules",

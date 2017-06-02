@@ -32,4 +32,5 @@ $('a[data-toggle="tab"]').click(function (e) {
     $(this).parent().addClass('active');
 });
 
+
 //# sourceMappingURL=app.js.map
