@@ -23,10 +23,10 @@ layout: plain
 <div class="well">
 <h1> Robert Ryan Jennings </h1>
 
-<p>Entered software engineering at the bottom with embedded systems in 2007. The early days of mobile quickly became my niche.  Worked on many mobile platforms and languages, including Windows Mobile (PALM) (C++/C#), Windows Phone (C#), iOS (ObjC), Android and Blackberry (Java).  Have also worked in backend web development (JavaEE).</p>
+<p>Entered software engineering at the bottom with embedded systems in 2007. The early days of mobile quickly became a niche.  Worked on many mobile platforms and languages, including Windows Mobile (PALM) (C++/C#), Windows Phone (C#), iOS (ObjC), Android and Blackberry (Java).  Have also worked in backend web development (JavaEE).</p>
 
 <p>
-Originally a hobbiest programmer and student of random internet developers after the millenium, pragmatism has been a guiding philosophy during education and professional life.  My other hobby is guitar and music, which I continue to challenge myself in technique, theory, song writing and incorporating technology.
+Originally a hobbiest programmer and student of random internet developers since 2001. Pragmatism has been a guiding philosophy during education and professional life.  My other hobby is guitar where I can express myself in technique, theory, song writing and incorporating technology.
 </p>
 
 </div>
@@ -40,9 +40,9 @@ Originally a hobbiest programmer and student of random internet developers after
 <h3> Mobile Application Developer, July 2015 - Present </h3>
 
 <ul>
-<li>Successfuly implemented beacons component for the Android product</li>
-<li>Improved android UX and performance with smarter resource management, animations and tablet layouts</li>
 <li>Responsible for delivery customizations and components on Android</li>
+<li>Successfuly implemented beacons feature for Android, allowing for an interactive experience at conferences</li>
+<li>Improved android UX and performance with smarter resource management, animations and tablet layouts</li>
 <li>Gained experience in iterative development methodology, sprint reviews and planning</li>
 <li>Implemented chat and social integration UX for Android</li>
 <li>Gained experience and knowledge of RxJava for Android</li>
@@ -87,7 +87,7 @@ Android, Beacons, SQL, Tablet, BLE, Notifications, JIRA, UX, Agile, SCRUM, Git, 
 
 <h2> <a href="http://epactnetwork.com/">ePACT</a>
 
-<h3> (Lead) Mobile Developer, July 3 2014 - March 2015 </h3>
+<h3> Lead Mobile Developer, July 3 2014 - March 2015 </h3>
 
 <ul>
 <li>Implemented version 1.0 of native Android &amp; iPhone apps</li>
@@ -148,7 +148,7 @@ Java, J2EE, JavaScript, CSS, HTML5, CSRF, XSS, MySQL, Tomcat, Agile, SCRUM, JIRA
 
 <ul>
 <li>Responsible for developing and maintaining mobile framework in Java (Android, Blackberry)</li>
-<li>Successfully and consistently met all client deadlines, often being able to exceede client expectations</li>
+<li>Successfully and consistently met or exceeded all client deadlines</li>
 <li>Participated in stanford machine learning online course</li>
 </ul>
 <!--
@@ -208,8 +208,7 @@ Java, J2EE, JavaScript, CSS, HTML5, CSRF, XSS, MySQL, Tomcat, Agile, SCRUM, JIRA
 <h2> <a href="http://www.novax.com/">Novax Industries Corporation</a>
 
 <h3> Software Developer, Apr 2008 - 2010 </h3>
-
-<h4> Project 1: SoundSafe Advanced Pedestrian Control </h4>
+<h5> Pilot Project 1: SoundSafe Advanced Pedestrian Control </h5>
 
 <ul>
 <li>Delivered a Windows Mobile application for configuring a power line communication pedestrian control unit over ZigBee wireless</li>
@@ -233,7 +232,7 @@ C#, .Net Compact, Windows Mobile, Power Line Communication (PLC), Token Ring, Zi
 <li>Gained experience implementing, debugging and optimizing custom network protocols</li>
 </ul>
 -->
-<h4> Project 2: TransPOD Public Transit Optimizer </h4>
+<h5> Pilot Project 2: TransPOD Public Transit Optimizer </h5>
 
 <ul>
 <li>Responsible for new features and maintaining C++ code for a public transit traffic light priority request generator and receiver</li>
@@ -311,10 +310,10 @@ C#, .Net Compact, Windows Mobile, Power Line Communication (PLC), Token Ring, Zi
 <div class="well">
 <ul>
 <li>Currently working on an Augmented Reality app to solve a Scrabble Board</li>
-<li><a href="https://github.com/ryjen/prep">prep</a>: a dependency manager (and build tool) for c++ projects</li>
-<li><a href="https://github.com/ryjen/p0ng">p0ng</a>: an unreleased retro pong game for iOS</li>
-<li><a href="https://github.com/ryjen/Droid-Fortunes">DroidFortunes</a>: the original Android version of the UNIX 'fortunes' application</li>
-<li><a href="https://github.com/ryjen/db">rjdb</a> &amp; <a href="http://github.com/ryjen/net">rjnet</a>: some c++11 libraries</li>
+<li><a href="https://github.com/ryjen/prep">prep</a> - a dependency manager (and build tool) for c++ projects</li>
+<li><a href="https://github.com/ryjen/p0ng">p0ng</a> - an unreleased retro pong game for iOS</li>
+<li><a href="https://github.com/ryjen/Droid-Fortunes">DroidFortunes</a> - the original Android version of the UNIX 'fortunes' application</li>
+<li><a href="https://github.com/ryjen/db">rjdb</a> &amp; <a href="http://github.com/ryjen/net">rjnet</a> - some c++11 libraries</li>
 </ul>
 </div>
 
