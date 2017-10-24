@@ -2,7 +2,6 @@ baseurl = "https://coda.life/"
 languageCode = "en-us"
 title = "coda.life"
 
-#Icarus theme
 ## Enable comments by entering your Disqus shortname
 disqusShortname = "arg3"
 # Enable Google Analytics by entering your tracking code
@@ -10,23 +9,37 @@ googleAnalytics = "UA-79203430-1"
 # Define the number of posts per page
 paginate = 10
 footnotereturnlinkcontents = "↩"
-theme = "icarus"
+theme = "minimal"
 
 [permalinks]
     post = "/:year/:month/:day/:slug"
 
-[params]
+#[params]
     # Tell me who you are
-    author = "Ryan Jennings"
-    bio = "Programmer - Musician"
-    location = "Vancouver, Canada"
-    site_description = "namespace for technical and musical musings"
-    copyright  = "Powered by [Hugo](//gohugo.io). Theme by [PPOffice](http://github.com/ppoffice)."
-    avatar = "images/profile.jpeg"
-    logo = "images/logo.png"
+    #author = "Ryan Jennings"
+    #bio = "Programmer - Musician"
+    #location = "Vancouver, Canada"
+    #site_description = "namespace for technical and musical musings"
+    #copyright  = "Powered by [Hugo](//gohugo.io). Theme by [PPOffice](http://github.com/ppoffice)."
+    #avatar = "images/profile.jpeg"
+    #logo = "images/logo.png"
 
     # Format dates with Go's time formatting
-    date_format = "2006-01-02"
+    #date_format = "2006-01-02"
+
+[params]
+    author = "Ryan Jennings"
+    description = "Technical and musical musings"
+    githubUsername = "ryjen"
+    accent = "#006a4e"
+    showBorder = true
+    backgroundColor = "white"
+    font = "Raleway" # should match the name on Google Fonts!
+    css = ["/css/app.css"]
+    highlight = true
+    highlightStyle = "solarized-dark"
+    #highlightLanguages = ["go", "c++", "kotlin", "scala", "swift", "java"]
+
 
 # Create custom menu entries by defining a label and a link for
 # them. Since you can also link posts, you've the option the
@@ -34,30 +47,54 @@ theme = "icarus"
 #
 # E.g.: "Home" appears before all linked posts in the menu
 # and "Tags" / "Categories" after them.
-[[params.menu]]
-    before = true
-    label  = "Home"
-    link   = "/"
 
-[[params.menu]]
-    before = false
-    label  = "Music"
-    link   = "music/"
+[[menu.main]]
+    name  = "blog"
+    url   = "/post"
+    weight = 2
 
-[[params.menu]]
-    before = false
-    label  = "Projects"
-    link   = "projects/"
+[[menu.main]]
+    name  = "music"
+    url   = "/music"
+    weight = 3
 
-[[params.menu]]
-    before = false
-    label  = "Things"
-    link   = "things/"
+#[[menu.main]]
+#    name  = "Projects"
+#    url   = "/projects"
 
-[[params.menu]]
-    before = false
-    label  = "About"
-    link   = "about/"
+[[menu.main]]
+    name  = "things"
+    url   = "/things"
+
+#[[menu.main]]
+#    name  = "About"
+#    url   = "/about"
+
+
+[[menu.icon]]
+    url = "mailto:ryan@coda.life"
+    name = "envelope-o"
+    weight = 1
+
+[[menu.icon]]
+    url = "https://github.com/ryjen/"
+    name = "github"
+    weight = 2
+
+[[menu.icon]]
+    url = "https://twitter.com/ryjen78/"
+    name = "twitter"
+    weight = 3
+
+[[menu.icon]]
+    url = "https://www.linkedin.com/in/ryjen/"
+    name = "linkedin"
+    weight = 4
+
+#[[menu.icon]]
+#    url = "https://www.stackoverflow.com/username/"
+#    name = "stack-overflow"
+#    weight = 5
 
 # Enter a link for the follow button on the left
 [params.profile]

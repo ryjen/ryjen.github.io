@@ -14,6 +14,7 @@ tags:
 date: 2015-04-12
 description: "sillyness"
 banner: https://raw.githubusercontent.com/ryjen/yahtsee/master/yahtsee3.png
+draft: true
 ---
 
 Introducing an unabashedly self-indulgent project [Yahtsee](http://github.com/ryjen/yahtsee).  Play the classic dice game from your terminal.  It's even multiplayer online! Strategically not named Yahtzee to avoid lawsuits!

@@ -7,6 +7,7 @@ tags:
   - story telling
 date: 2012-12-30
 description: "social app"
+draft: true
 ---
 
 Do you remember that game you played when you were young? The one where one person would say something, and it gets passed around until its a completely new story?  Over the holidays, I came up with an idea for a web app that essentially does the same thing but in the context of creating a story.

@@ -1,5 +1,6 @@
 ---
 title: Resume
+layout: plain
 ---
 
 <div id="page-resume">
@@ -23,7 +24,7 @@ title: Resume
 <h1> Robert Ryan Jennings </h1>
 
 <p>
-Programming enthusiast since 2000 with industry experience since 2007. Graduated from the <a href="http://www.bcit.ca/study/programs/5500certt#courses">Computer Systems</a> program with distinction at the British Columbia Institute of Technology.</p>
+Software enthusiast with industry experience since 2007. Graduated from the <a href="http://www.bcit.ca/study/programs/5500certt#courses">Computer Systems</a> program with distinction at the British Columbia Institute of Technology.</p>
 
 </div>
 
@@ -33,18 +34,19 @@ Programming enthusiast since 2000 with industry experience since 2007. Graduated
 
 <h2> <a href="http://quickmobile.com/">Quickmobile</a> </h2>
 
-<h3> Mobile Application Developer July 2015 - Present </h3>
+<h3> Mobile Application Developer, July 2015 - Present </h3>
 
 <ul>
-<li>Responsible for delivery customizations and components on Android and Windows Phone</li>
-<li>Implemented beacon component for android platform.  Notification based UX with availability management.  Efficient use of background scanning.</li>
-<li>Improved android UX and performance with smarter resource management, animations and tablet layouts</li>
-<li>Gained experience in iterative development methodology, sprint reviews and planning.</li>
+<li>Responsible for delivery customizations and components on Android and Windows Phone.</li>
+<li>Implemented beacons component for android platform.  Notification based UX with availability management.</li>
+<li>Improved android UX with animations, better tablet support, less resource consumption.</li>
+<li>Worked in iterative development methodology, sprint reviews and planning.</li>
 </ul>
 
 <span class="keywords">
 Android, Beacons, Tablet, BLE, Notifications, Windows Phone, JIRA, Agile, SCRUM, BitBucket, Git, Gradle, XCode
 </span>
+</div>
 <!--
 <ul>
 <li>Implemented beacon notifications for conferences on Android</li>
@@ -282,15 +284,16 @@ C#, .Net Compact, Windows Mobile, Power Line Communication (PLC), Token Ring, Zi
 <div class="well">
 <h3> <a href="http://www.bcit.ca/">British Columbia Institute of Technology</a>, (84% GPA) </h3>
 <ul>
-<li><a href="http://www.bcit.ca/study/programs/5500certt#courses">Certificate of Technology in Computer Systems</a>, 2013-2015</li>
-<li><a href="http://www.bcit.ca/study/programs/6958acert#courses">Associate in Applied Software Development</a>, 2005-2007</li>
-<li><a href="http://www.bcit.ca/study/programs/6992acert#courses">Associate in Computer Information Systems</a>, 2005-2007</li>
+<li>Currently nearing completion of Diploma in Computer Systems</li>
+<li>Certificate of Technology in Computer Systems, 2012-2015</li>
+<li>Associate in Applied Software Development, 2005-2007</li>
+<li>Associate in Computer Information Systems, 2005-2007</li>
 </ul>
 
 </div>
 
 <div class="well">
-<h3> <a href="http://en.wikipedia.org/wiki/Sun_Certified_Professional#Sun_Certified_Java_Programmer_.28SCJP.29">Sun Microsystems Certified Java Programmer</a> </h3>
+<h3>Sun Microsystems Certified Java Programmer</h3>
 
 <ul>
 <li>JDK 6, 2009</li>
@@ -301,8 +304,7 @@ C#, .Net Compact, Windows Mobile, Power Line Communication (PLC), Token Ring, Zi
 
 <div class="well">
 <ul>
-<li><a href="http://github.com/ryjen/db">rjdb</a> &amp; <a href="http://github.com/ryjen/net">rjnet</a>: my c++11 libraries</li>
-<li><a href="http://testmanship.com">testmanship</a>: a ruby project to provide management and historical data for manual testing</li>
+<li><a href="http://github.com/ryjen/db">rjdb</a> &amp; <a href="http://github.com/ryjen/net">rjnet</a>: c++11 libraries</li>
 <li><a href="http://github.com/ryjen/yahtsee">yahtsee</a>: a multiplayer online game of yahtzee for the command line</li>
 <li><a href="https://github.com/ryjen/Droid-Fortunes">DroidFortunes</a>: an Android version of the UNIX 'fortunes' application</li>
 <li><a href="https://github.com/ryjen/p0ng">p0ng</a>: an unreleased retro pong game for iOS</li>

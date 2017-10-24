@@ -8,6 +8,7 @@ tags:
   - headerdoc
 date: 2012-09-16
 description: "development issue"
+draft: true
 ---
 
 HeaderDoc is a tool to generate source code documentation for many languages. Recently, I noticed that one of the command line tools 'gatherheaderdoc' was producing a blank output file.  Wasn't sure why at first, but since its just a perl script I delved a little deeper to find the bug.

@@ -12,6 +12,7 @@ tags:
   - push messaging
 date: 2014-09-14
 description: "hacking push messaging on android on blackberry"
+draft: true
 ---
 
 I would like to track my experience with setting up push messaging for blackberry using an android application.

@@ -6,6 +6,7 @@ tags:
   - services
 date: 2012-03-07
 description: "os addition"
+draft: true
 ---
 
 I recently tried to merge folders in OSX Lion using copy/paste in finder.  To my surprise, the only action I could perform was to _replace_ the folder.

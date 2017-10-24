@@ -1,29 +1,17 @@
 
 #things {
-  table {
-    border: none;
 
-    tr {
-      border: none;
-
-      td {
-        vertical-align: top;
-        border: none;
-			  width: 140px;
-
-				img {
-    			height: 180px;
-    			width: 140px;
-					border: 1px solid #000;
-  			}
-      }
-
-      td + td {
-        padding-left: 1em;
-				width: auto;
-      }
+  .well {
+    background-color: #fefefe;
+    padding: 0.7em;
+    img {
+      width: 140px;
+      height: 180px;
+      float: left;
+      margin-right: 30px;
     }
   }
+
   .fancybox + .caption {
     display: none;
   }

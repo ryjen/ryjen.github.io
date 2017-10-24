@@ -10,6 +10,7 @@ tags:
     - curses
     - c++
 description: "sillyness"
+draft: true
 ---
 
 a ascii art hero, who has amazing adventures and solves interesting problems.

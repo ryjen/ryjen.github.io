@@ -7,6 +7,7 @@ tags:
 date: 2014-07-08
 description: "web application prototype"
 banner: /images/blog/testmanship.png
+draft: true
 ---
 
 [![Testmanship](/images/blog/testmanship.png)](http://testmanship.com)

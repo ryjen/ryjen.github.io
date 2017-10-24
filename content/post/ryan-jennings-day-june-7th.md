@@ -6,6 +6,7 @@ tags:
 date: 2012-11-20
 description: "sillyness"
 banner: /images/blog/ryan_jennings_day.png
+draft: true
 ---
 
 Today something interesting started on Facebook: Ryan Jennings Day.  (Only geniuses named Ryan Jennings could conceive of something this awesome - har har)

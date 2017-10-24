@@ -7,6 +7,7 @@ tags:
   - version control
 date: 2012-04-28
 description: "sillyness"
+draft: true
 ---
 
 Ran across this absurd version control [commit message generator](http://whatthecommit.com) message generator.  Even has

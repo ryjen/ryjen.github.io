@@ -10,6 +10,7 @@ tags:
 date: 2013-08-10
 description: "websocket app"
 banner: /images/blog/mudharbour_terminal.png
+draft: true
 ---
 
 Well I spent some time put a web front end to some java code I made a long time ago for a [MUD](http://en.wikipedia.org/wiki/MUD)
