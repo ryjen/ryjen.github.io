@@ -23,8 +23,11 @@ layout: plain
 <div class="well">
 <h1> Robert Ryan Jennings </h1>
 
+<p>Entered software engineering at the bottom with embedded systems in 2007. The early days of mobile quickly became my niche.  Worked on many mobile platforms and languages, including Windows Mobile (PALM) (C++/C#), Windows Phone (C#), iOS (ObjC), Android and Blackberry (Java).  Have also worked in backend web development (JavaEE).</p>
+
 <p>
-Software enthusiast with industry experience since 2007. Graduated from the <a href="http://www.bcit.ca/study/programs/5500certt#courses">Computer Systems</a> program with distinction at the British Columbia Institute of Technology.</p>
+Originally a hobbiest programmer and student of random internet developers after the millenium, pragmatism has been a guiding philosophy during education and professional life.  My other hobby is guitar and music, which I continue to challenge myself in technique, theory, song writing and incorporating technology.
+</p>
 
 </div>
 
@@ -37,14 +40,17 @@ Software enthusiast with industry experience since 2007. Graduated from the <a h
 <h3> Mobile Application Developer, July 2015 - Present </h3>
 
 <ul>
-<li>Responsible for delivery customizations and components on Android and Windows Phone.</li>
-<li>Implemented beacons component for android platform.  Notification based UX with availability management.</li>
-<li>Improved android UX with animations, better tablet support, less resource consumption.</li>
-<li>Worked in iterative development methodology, sprint reviews and planning.</li>
+<li>Successfuly implemented beacons component for the Android product</li>
+<li>Improved android UX and performance with smarter resource management, animations and tablet layouts</li>
+<li>Responsible for delivery customizations and components on Android</li>
+<li>Gained experience in iterative development methodology, sprint reviews and planning</li>
+<li>Implemented chat and social integration UX for Android</li>
+<li>Gained experience and knowledge of RxJava for Android</li>
+<li>General scripting for processes and crossplatform work on iOS</li>
 </ul>
 
 <span class="keywords">
-Android, Beacons, Tablet, BLE, Notifications, Windows Phone, JIRA, Agile, SCRUM, BitBucket, Git, Gradle, XCode
+Android, Beacons, SQL, Tablet, BLE, Notifications, JIRA, UX, Agile, SCRUM, Git, Gradle
 </span>
 </div>
 <!--
@@ -85,10 +91,10 @@ Android, Beacons, Tablet, BLE, Notifications, Windows Phone, JIRA, Agile, SCRUM,
 
 <ul>
 <li>Implemented version 1.0 of native Android &amp; iPhone apps</li>
-<li>Initiated UX test automation of mobile apps (Appium)</li>
-<li>Implemented dynamically customizable forms and data synchronization</li>
-<li>Implemented support for a shared library between platforms in C with scripted build processes</li>
-<li>Implemented push notifications</li>
+<li>Initiated UX test automation framework for mobile apps (Appium)</li>
+<li>Implemented dynamic customizable views and data synchronization</li>
+<li>Implemented prototype for a shared library between platforms in C with automated build processes</li>
+<li>Implemented push notifications for platforms</li>
 </ul>
 <!--
 <ul>
@@ -102,17 +108,17 @@ Android, Beacons, Tablet, BLE, Notifications, Windows Phone, JIRA, Agile, SCRUM,
 -->
 
 <span class="keywords">
-Android, iPhone, SQLCipher, JSON, Web Service, PDF, Scripting, Shared Library, UX, Agile, JIRA, Git
+Android, iPhone, SQL, JSON, Web Service, REST, PDF, Scripting, Shared Library, UX, Agile, JIRA, Git, Appium
 </span>
 
 <h3> Backend Java Engineer, July 3 2013 - July 3 2014 </h3>
 
 <ul>
 <li>Successfully developed new features for and maintained website framework (Custom Java Enterprise, Servlets)</li>
-<li>Improved efficiency of PDF rendering for various dynamic forms</li>
-<li>Extended API for mobile development</li>
+<li>Improved development efficiency of PDF rendering for dynamic views</li>
+<li>Extended REST API for mobile development</li>
 <li>Participated in implementation of push notifications for mobile devices</li>
-<li>Provided some web security and performance enhancements on own initiative</li>
+<li>Provided some web security and performance (compression) enhancements on own initiative</li>
 
 
 <!--</ul>
@@ -129,7 +135,7 @@ Extended API features for mobile development
 </ul>
 
 <span class="keywords">
-Java, J2EE, JavaScript, CSS, HTML5, CSRF, XSS, MySQL, Tomcat, Agile, SCRUM, JIRA, Git, Appium, Selenium
+Java, J2EE, JavaScript, CSS, HTML5, CSRF, XSS, MySQL, Tomcat, Agile, SCRUM, JIRA, Git, Selenium
 </span>
 
 </div>
@@ -182,7 +188,7 @@ Java, J2EE, JavaScript, CSS, HTML5, CSRF, XSS, MySQL, Tomcat, Agile, SCRUM, JIRA
 </ul>
 
 <span class="keywords">
-	Xamarin, C++, Windows Phone, Android, iPhone, C#, XAML, SIlverlight, REST/SOAP
+	Xamarin, C++, Windows Phone, iPhone, C#, XAML, SIlverlight, REST/SOAP
 </span>
 <!--
 <ul>
@@ -206,7 +212,7 @@ Java, J2EE, JavaScript, CSS, HTML5, CSRF, XSS, MySQL, Tomcat, Agile, SCRUM, JIRA
 <h4> Project 1: SoundSafe Advanced Pedestrian Control </h4>
 
 <ul>
-<li>Successfully delivered a Windows Mobile application for configuring a power line communication pedestrian control unit over ZigBee wireless.</li>
+<li>Delivered a Windows Mobile application for configuring a power line communication pedestrian control unit over ZigBee wireless</li>
 <li>Improved knowledge of C#/.NET Compact/Windows Mobile, Power Line Communication, token ring network architecture and ZigBee protocol</li>
 <li>Provided installation documentation and usage procedures</li>
 <li>Provided additional testing and integration of system components</li>
@@ -284,7 +290,7 @@ C#, .Net Compact, Windows Mobile, Power Line Communication (PLC), Token Ring, Zi
 <div class="well">
 <h3> <a href="http://www.bcit.ca/">British Columbia Institute of Technology</a>, (84% GPA) </h3>
 <ul>
-<li>Currently nearing completion of Diploma in Computer Systems</li>
+<li>Diploma in Computer Systems, nearing completion</li>
 <li>Certificate of Technology in Computer Systems, 2012-2015</li>
 <li>Associate in Applied Software Development, 2005-2007</li>
 <li>Associate in Computer Information Systems, 2005-2007</li>
@@ -304,10 +310,11 @@ C#, .Net Compact, Windows Mobile, Power Line Communication (PLC), Token Ring, Zi
 
 <div class="well">
 <ul>
-<li><a href="http://github.com/ryjen/db">rjdb</a> &amp; <a href="http://github.com/ryjen/net">rjnet</a>: c++11 libraries</li>
-<li><a href="http://github.com/ryjen/yahtsee">yahtsee</a>: a multiplayer online game of yahtzee for the command line</li>
-<li><a href="https://github.com/ryjen/Droid-Fortunes">DroidFortunes</a>: an Android version of the UNIX 'fortunes' application</li>
+<li>Currently working on an Augmented Reality app to solve a Scrabble Board</li>
+<li><a href="https://github.com/ryjen/prep">prep</a>: a dependency manager (and build tool) for c++ projects</li>
 <li><a href="https://github.com/ryjen/p0ng">p0ng</a>: an unreleased retro pong game for iOS</li>
+<li><a href="https://github.com/ryjen/Droid-Fortunes">DroidFortunes</a>: the original Android version of the UNIX 'fortunes' application</li>
+<li><a href="https://github.com/ryjen/db">rjdb</a> &amp; <a href="http://github.com/ryjen/net">rjnet</a>: some c++11 libraries</li>
 </ul>
 </div>
 
