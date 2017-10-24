@@ -46,12 +46,16 @@ img.intro {
     display: none; }
   #main-nav-mobile {
     display: none; }
-  #footer {
+  #footer, body > footer {
     display: none; }
   .article-inner .article-footer {
     display: none; }
   #contact-info {
-    display: block; } }
+    display: block; }
+  p.copyright {
+    display: none; }
+  a[href]:after {
+    content: "" !important; } }
 
 
 #projects .tabs {

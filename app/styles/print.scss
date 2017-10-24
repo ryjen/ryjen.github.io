@@ -11,7 +11,7 @@
 	#main-nav-mobile {
 		display: none;
 	}
-	#footer {
+	#footer, body > footer {
 		display: none;
 	}
 	.article-inner {
@@ -21,5 +21,13 @@
 	}
 	#contact-info {
 		display: block;
+	}
+
+	p.copyright {
+		display: none;
+	}
+
+	a[href]:after {
+		content: "" !important;
 	}
 }
