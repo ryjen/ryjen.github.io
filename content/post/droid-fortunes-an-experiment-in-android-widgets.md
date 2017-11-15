@@ -29,8 +29,6 @@ My second prototype used the raw data files and this was a problem as well becau
 
 At this point, its obvious a database is needed.  I wrote a very simple '[fortune2sqlite](git://gist.github.com/3051477.git)' converter utility to create and populate a sqlite database. After some attempts at importing a sql script, I finally ended up copying the pre-generated database from resources into user-space for use.
 
-![very simple database diagram](/images/blog/droidfortunes_db.png)
-
 ## UI
 
 ### Widget Layout
