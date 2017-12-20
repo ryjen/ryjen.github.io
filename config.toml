@@ -82,15 +82,15 @@ theme = "minimal"
     name = "github"
     weight = 2
 
-[[menu.icon]]
-    url = "https://twitter.com/ryjen78/"
-    name = "twitter"
-    weight = 3
+#[[menu.icon]]
+#    url = "https://twitter.com/ryjen78/"
+#    name = "twitter"
+#    weight = 3
 
-[[menu.icon]]
-    url = "https://www.linkedin.com/in/ryjen/"
-    name = "linkedin"
-    weight = 4
+#[[menu.icon]]
+#    url = "https://www.linkedin.com/in/ryjen/"
+#    name = "linkedin"
+#    weight = 4
 
 #[[menu.icon]]
 #    url = "https://www.stackoverflow.com/username/"
