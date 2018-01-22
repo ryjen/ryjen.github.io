@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>C Sqlite Tricks</title>
+
+        <style>
+
+    html body {
+        font-family: Raleway, sans-serif;
+        background-color: white;
+    }
+
+    :root {
+        --accent: #006a4e;
+        --border-width:  5px ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+ <link rel="stylesheet" href="/css/app.css"> 
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+
+ <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ 
+
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+    
+
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+ <meta name="generator" content="Hugo 0.33" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="technical and musical musings">
+        
+        <link href="/css/app.css" type="text/css" rel="stylesheet" />
+
+        
+<link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="manifest" href="/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#006a4e">
+<meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#006a4e">
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28532156-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-28532156-1');
+</script>
+
+
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+
+            <div class="container">
+
+                <div class="navbar-header">
+
+                    <a class="navbar-brand" href="/">
+                        <img src="/images/coda.svg" alt="logo" />
+                    </a>
+                    <a class="navbar-brand" href="/">coda.life</a>
+
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+
+                <div class="collapse navbar-collapse">
+
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/post">blog</a></li>
+                            
+                                <li><a href="/music">music</a></li>
+                            
+                                <li><a href="/things">things</a></li>
+                            
+                        </ul>
+                    
+
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="mailto:ryan@coda.life"><i class="fa fa-envelope-o"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://github.com/ryjen/"><i class="fa fa-github"></i></a></li>
+                            
+                        </ul>
+                    
+
+                </div>
+
+            </div>
+
+        </nav>
+
+<main>
+
+    <h2><a href="/2012/05/15/c-sqlite-tricks/">C Sqlite Tricks</a></h2>
+
+    <br> <div class="text-justify"><p>Well, I thought I would share some tricks I use for easy data CRUD&rsquo;s in C (potentially C++/ObjC but its lacking typesafety).  I&rsquo;m using sqlite here, but could apply to any database.</p>
+
+<p>This is how my data access works - I&rsquo;m not saying its the best approach, its just how its evolved for me.</p>
+
+<pre><code class="language-c">    /* The account table name */
+    #define ACCOUNT_TABLE &quot;account&quot;
+
+    /* a structure representing the account fields */
+    field_map account_values[] = {
+      {&quot;login&quot;, &amp;acc-&gt;login, SQL_TEXT},
+      {&quot;email&quot;, &amp;acc-&gt;email, SQL_TEXT},
+      {&quot;password&quot;, &amp;acc-&gt;password, SQL_TEXT},
+      {&quot;timezone&quot;, &amp;acc-&gt;timezone, SQL_INT},
+      {0}
+    };
+
+    /* saves the fields to the database */
+    acc-&gt;id = db_save(account_values, ACCOUNT_TABLE, acc-&gt;id);
+</code></pre>
+
+<p>As you can see, saving a structure is as simple as creating a field_map table and calling db_save.</p>
+
+<pre><code class="language-c">   /* loads one account by id
+    * the query results are assigned to the pointers in the table
+    */
+    if(db_load_by_id(account_values, ACCOUNT_TABLE, acc-&gt;id) != SQL_OK)
+      fprintf(stderr, &quot;could not load account&quot;);
+
+    /* a callback method */
+    void load_account_callback(sql_stmt *stmt);
+
+    /* load all accounts using the callback method
+     * query results are sent to the callback
+     */
+    if(db_load_all(ACCOUNT_TABLE, load_account_callback) != SQL_OK)
+      fprintf(stderr, &quot;could not load accounts&quot;);
+</code></pre>
+
+<p>Loading is the same for single instances, but I use a callback method to load multiple instances.</p>
+
+<p>The core of my data access is the field_map structure, which determines how to save each field to the database.</p>
+
+<pre><code class="language-c">    /*
+     * this is the magical table used to communicate between memory and the database
+     */
+    typedef struct field_map {
+      const char   *name;        /* name of the field */
+      void        *value;        /* a pointer to the value of the field */
+      int         type;          /* type of value */
+      const void   *arg1;        /* additional argument */
+      const void   *arg2;        /* additional argument */
+      int         flags;         /* usage flags */
+    } field_map;
+
+    /* callback for custom field types */
+    typedef int (*custom_field_t) (sql_stmt *, int column, field_map *field);
+
+    typedef void (*sql_callback_t) (sql_stmt *);
+</code></pre>
+
+<p>The implementations for save/load are basically just wrappers for the actual insert/update/select query methods.</p>
+
+<pre><code class="language-c">    /**
+     * saves a field_map.  does an insert/update based on id == 0
+     */
+    sql_int64 db_save(field_map * table, const char *tableName, sql_int64 id)
+    {
+      if (id == 0) {
+        if (sql_insert_query(table, tableName) != SQL_OK)
+            fprintf(stderr, &quot;could not insert to %s&quot;, tableName);
+        return db_last_insert_rowid();
+      } else {
+        if (sql_update_query(table, tableName, id) != SQL_OK)
+            fprintf(stderr, &quot;could not update %s&quot;, tableName);
+
+        return id;
+      }
+    }
+
+    /**
+    * loads a field_map.
+    * @param baseData is the base structure used in the field_map
+    * @param table the field_map
+    * @param tableName the name of the table
+    * @param alloc the callacbk to create a new instance of data structure
+    * @param on_load callback when a row has been loaded
+    * @param constraints contraints for the sql query
+    */
+    int db_load_all(const char *tableName, sql_callback_t callback, const char *constraints, ...)
+    {
+      char buf[1024] = {0};
+
+      if(constraints) {
+        va_list args;
+
+        va_start(args, constraints);
+
+        vsnprintf(buf, sizeof(buf), constraints, args);
+
+        va_end(args);
+      }
+
+      if (sql_select_query(0, tableName, callback, buf) != SQL_OK) {
+        fprintf(stderr, &quot;could not load from %s&quot;, tableName);
+        return 0;
+      }
+
+      return 1;
+    }
+
+    /**
+     * loads a field_map by id.  Data will be loaded to the base structure used in the field_map table.
+     */
+    int db_load_by_id(field_map *table, const char *tablename, sql_int64 id)
+    {
+      char buf[1024] = {0};
+
+      sprintf(buf, &quot;where %s='%lld'&quot;, tablenameid(tablename), id);
+
+      if(sql_select_query(0, table, tablename, 0, buf) != SQL_OK) {
+        fprintf(stderr, &quot;could not load from %s&quot;, tablename);
+        return 0;
+      }
+
+      return 1;
+    }
+</code></pre>
+
+<p>Nothing too crazy there, except for the sql_select_query parameters which I&rsquo;ll get to later.</p>
+
+<p>We have to have a way to bind the field_map to the queries, so the following implementations take care of that:</p>
+
+<pre><code class="language-c">    /**
+     * binds a single field_map value to a query
+     */
+    int sql_bind_table_value(sql_stmt * stmt, int column, field_map * field)
+    {
+      if (field-&gt;value == 0) {
+        return sql_bind_null(stmt, column);
+      }
+      switch (field-&gt;type) {
+      case SQL_INT:
+        return sql_bind_int(stmt, column, *((int*) field-&gt;value));
+      case SQL_TEXT:
+        {
+            const char *str = *((const char *) field-&gt;value);
+            return sql_bind_text(stmt, column, str, strlen(str), 0);
+        }
+      case SQL_DOUBLE:
+        return sql_bind_double(stmt, column, *((double*) field-&gt;value));
+      case SQL_FLOAT:
+        return sql_bind_float(stmt, column, *((float*) field-&gt;value));
+      case SQL_CUSTOM:
+        {
+            custom_sql func = (custom_sql) (field-&gt;arg1);
+            assert(func != 0);
+            return (*func) (stmt, column, field);
+        }
+      default:
+        fprintf(stderr, &quot;unknown save type for field %s&quot;, field-&gt;name);
+        return SQL_NONTYPE;
+      }
+    }
+
+    /**
+     * binds a field_map values to a query
+     */
+    int sql_bind_values(sql_stmt * stmt, field_map * table)
+    {
+      for (int i = 0; table[i].name != 0; i++) {
+        int err = sql_bind_table_value(stmt, i + 1, &amp;table[i]);
+
+        if (err != SQL_OK)
+            return err;
+      }
+
+      return SQL_OK;
+    }
+</code></pre>
+
+<p>Note: I use SQL_FLOAT and SQL_DOUBLE, they both point to SQLITE3_FLOAT, however when casting we need to know the actual type.</p>
+
+<p>Now for the query methods.  They try to follow the same basic principle - create the query, bind the values, execute</p>
+
+<pre><code class="language-c">    /**
+     * insert query using a field_map
+     */
+    int sql_insert_query(field_map * table, const char *tablename)
+    {
+      sql_stmt *stmt;
+      char buf[1024] = { 0 };
+      char columns[1024] = { 0 };
+      char params[1024] = { 0 };
+      int i, len;
+
+      for (i = 0; table[i].name != 0; i++) {
+        strcat(columns, table[i].name);
+        strcat(params, &quot;?&quot;);
+
+        if (table[i + 1].name != 0) {
+            strcat(columns, &quot;,&quot;);
+            strcat(params, &quot;,&quot;);
+        }
+      }
+
+      len =  sprintf(buf, &quot;insert into %s (%s) values(%s)&quot;, tablename, columns,
+            params);
+
+      if (sql_query(buf, len, &amp;stmt) != SQL_OK) {
+        return sql_finalize(stmt);
+      }
+
+      if (sql_bind_values(stmt, table) != SQL_OK) {
+        return sql_finalize(stmt);
+      }
+
+      /* execute */
+      sql_step(stmt);
+
+      return sql_finalize(stmt);
+    }
+
+    /**
+     * updates query using a field_map
+     */
+    int sql_update_query(field_map * table, const char *tablename, sql_int64 id)
+    {
+      sql_stmt *stmt;
+      char buf[1024] = { 0 };
+      char params[1024] = { 0 };
+      int i, len;
+
+      for (i = 0; table[i].name != 0; i++) {
+        strcat(params, table[i].name);
+        strcat(params, &quot;=?&quot;);
+
+        if (table[i + 1].name != 0) {
+            strcat(params, &quot;,&quot;);
+        }
+      }
+
+      len = sprintf(buf, &quot;update %s set %s where %s=%&quot; PRId64, tablename,
+              params, tablenameid(tablename), id);
+
+      if (sql_query(buf, len, &amp;stmt) != SQL_OK) {
+        return sql_finalize(stmt);
+      }
+
+      if (sql_bind_values(stmt, table) != SQL_OK)
+        return sql_finalize(stmt);
+
+      /* execute */
+      sql_step(stmt);
+
+      return sql_finalize(stmt);
+    }
+</code></pre>
+
+<p>The select query is simplified by having a callback for custom loading.  You can however use a field_map table to load a single instance.</p>
+
+<pre><code class="language-c">    /**
+     * we have a pointer to a field value, so if we do pointer math we can apply the field value to
+     * structures of the same type/size.  Thats what the optional base/data parameters are for.
+     */
+    void sql_load_columns(sql_stmt *stmt, int i, field_map *field)
+    {
+      switch (field-&gt;type) {
+      case SQL_INT:
+          field_value(int, field, base, data) =  sql_column_int(stmt, i);
+          break;
+      case SQL_TEXT:
+          field_value(const char *, field, base, data) = str_dup(sql_column_str(stmt, i));
+          break;
+      case SQL_FLOAT:
+          field_value(float, field, base, data) = sql_column_float(stmt, i);
+          break;
+      case SQL_DOUBLE:
+          field_value(double, field, base, data) = sql_column_double(stmt, i);
+          break;
+      case SQL_CUSTOM:
+          {
+              custom_sql *func =  (custom_sql *) field-&gt;arg1;
+              assert(func != 0);
+              (*func) (stmt, i, field);
+              break;
+          }
+      }
+    }
+
+    /**
+     * create the select query and step through the results using callbacks
+     */
+    int sql_select_query(field_map * table, const char *tablename, sql_callback_t callback, const char *constraints)
+    {
+      sql_stmt *stmt;
+      char buf[1024] = { 0 };
+      char columns[1024] = { 0 };
+      int i, len;
+
+      for (i = 0; table[i].name != 0; i++) {
+          strcat(columns, table[i].name);
+
+          if (table[i + 1].name != 0) {
+              strcat(columns, &quot;,&quot;);
+          }
+      }
+
+      len = sprintf(buf, &quot;select %s,%s from %s %s&quot;,
+                tablenameid(tablename), columns,
+                tablename,
+                constraints ? constraints : &quot;&quot;);
+
+      if (sql_query(buf, len, &amp;stmt) != SQL_OK) {
+          return sql_finalize(stmt);
+      }
+      for (err = sql_step(stmt); err != SQL_DONE; err = sql_step(stmt)) {
+
+          /* check for a table to load */
+          for (int i = 0; table &amp;&amp; table[i].name != 0; i++) {
+
+              sql_load_columns(stmt, i+2, &amp;table[i]);
+          }
+
+          /* check for a callback */
+          if(callback) {
+              callback(stmt);
+          }
+      }
+      return sql_finalize(stmt);
+    }
+</code></pre>
+
+<p>There are still some utility functions and defines used throughout this code.  There is a lot of cleanup and error checking to do here as well.   But you should get the general idea.</p>
+</div>
+
+    
+    
+
+    
+
+        <h4 class="page-header">Related</h4>
+
+         <div class="item">
+
+    
+    
+
+    
+      
+
+    <h4><a href="/2016/11/27/microsoft-dev-stack-on-macos/">Microsoft Dev Stack on macOS</a></h4>
+    <h5>a microsoft cross-platform mobile and cloud first development stack on macOS</h5>
+     <kbd class="item-tag">development</kbd>  <kbd class="item-tag">programming</kbd>  <kbd class="item-tag">cross platform</kbd>  <kbd class="item-tag">mobile</kbd>  <kbd class="item-tag">web</kbd> 
+
+</div>
+  <div class="item">
+
+    
+    
+
+    
+      
+
+    <h4><a href="/2015/12/02/c-hacking-polymoriphing-2/">c hacking: polymorphing 2</a></h4>
+    <h5>c struct reuse</h5>
+     <kbd class="item-tag">c</kbd>  <kbd class="item-tag">programming</kbd>  <kbd class="item-tag">polymorphism</kbd>  <kbd class="item-tag">cparse</kbd> 
+
+</div>
+  <div class="item">
+
+    
+    
+
+    
+      
+
+    <h4><a href="/2014/02/20/java-key-path-json-objects/">Java Key Path Json Objects</a></h4>
+    <h5>emulating key-value coding in java</h5>
+     <kbd class="item-tag">java</kbd>  <kbd class="item-tag">json</kbd>  <kbd class="item-tag">key path</kbd>  <kbd class="item-tag">programming</kbd> 
+
+</div>
+ 
+
+    
+
+</main>
+
+
+  <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "arg3" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        <footer>
+
+            <p class="copyright text-muted">&copy; all rights reserved</p>
+
+        </footer>
+
+    </body>
+
+</html>
+

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>Droid Fortunes: An Experiment in Android Widgets</title>
+
+        <style>
+
+    html body {
+        font-family: Raleway, sans-serif;
+        background-color: white;
+    }
+
+    :root {
+        --accent: #006a4e;
+        --border-width:  5px ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+ <link rel="stylesheet" href="/css/app.css"> 
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+
+ <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ 
+
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+    
+
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+ <meta name="generator" content="Hugo 0.33" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="technical and musical musings">
+        
+        <link href="/css/app.css" type="text/css" rel="stylesheet" />
+
+        
+<link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="manifest" href="/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#006a4e">
+<meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#006a4e">
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28532156-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-28532156-1');
+</script>
+
+
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+
+            <div class="container">
+
+                <div class="navbar-header">
+
+                    <a class="navbar-brand" href="/">
+                        <img src="/images/coda.svg" alt="logo" />
+                    </a>
+                    <a class="navbar-brand" href="/">coda.life</a>
+
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+
+                <div class="collapse navbar-collapse">
+
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/post">blog</a></li>
+                            
+                                <li><a href="/music">music</a></li>
+                            
+                                <li><a href="/things">things</a></li>
+                            
+                        </ul>
+                    
+
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="mailto:ryan@coda.life"><i class="fa fa-envelope-o"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://github.com/ryjen/"><i class="fa fa-github"></i></a></li>
+                            
+                        </ul>
+                    
+
+                </div>
+
+            </div>
+
+        </nav>
+
+<main>
+
+    <h2><a href="/2012/07/04/droid-fortunes-an-experiment-in-android-widgets/">Droid Fortunes: An Experiment in Android Widgets</a></h2>
+
+    <br> <div class="text-justify">
+
+<h2 id="background">Background</h2>
+
+<p>I have it set up on my OSX machine to give me a random <a href="http://en.wikipedia.org/wiki/Fortune_%28Unix%29">fortune</a> when I log into the shell.
+I thought it would be a good idea to port this to Android in the form of a widget and Droid Fortunes was born!</p>
+
+<p>So a little more background on the the &lsquo;fortune&rsquo; command for those who do not know.  The program itself is simple enough - display a random message stored in a database.  The &lsquo;database&rsquo; is actually a collection of files representing a &lsquo;category&rsquo;.  Each category has a list of messages separated by a &lsquo;&#37;&rsquo; on a new line.</p>
+
+<p>Fortunes are mapped to a random-access data file using &lsquo;strfile&rsquo; (basically a header with size information followed by a list of addresses for each message in the file).</p>
+
+<p>Fortunes also have the concept of an &lsquo;offensive&rsquo; fortunes, which are encoded using <a href="http://en.wikipedia.org/wiki/ROT13">rot13</a> so anyone viewing the files is not offended.</p>
+
+<h2 id="testing">Testing</h2>
+
+<p>My original prototype of Droid Fortunes attempted to mimic the C implementation by decoding the random access data files.  This was a problem because the addresses in the data file were not portable.</p>
+
+<p>My second prototype used the raw data files and this was a problem as well because it was pretty slow.</p>
+
+<p>At this point, its obvious a database is needed.  I wrote a very simple &lsquo;<a href="git://gist.github.com/3051477.git">fortune2sqlite</a>&rsquo; converter utility to create and populate a sqlite database. After some attempts at importing a sql script, I finally ended up copying the pre-generated database from resources into user-space for use.</p>
+
+<h2 id="ui">UI</h2>
+
+<h3 id="widget-layout">Widget Layout</h3>
+
+<p>So data taken care of, it needs a UI.  Turns out android Widgets use something called &lsquo;<a href="http://developer.android.com/reference/android/widget/RemoteViews.html">RemoteViews</a>&rsquo; to update its UI without an application running.  This is the route a widget must take to transmit information to the Launcher process.  This means you cannot use the typical &lsquo;findViewById()&rsquo; method to coordinate data/UI.  My original implementation was mainly figuring out the RemoteViews usage the event handling. While it worked was not very pretty as I am not a graphic designer.</p>
+
+<p>I have since found the &lsquo;Protips&rsquo; widget from the OS (available as open source) which was very similar to what I was doing except displaying Android tips instead of fortunes - hence I&rsquo;ve updated my UI to mimic that widget.  Eventually I will replace the little &lsquo;droid&rsquo; character with something custom.</p>
+
+<p><img src="/images/blog/droidfortunes.png" alt="DroidFortunes Widget View" /></p>
+
+<p>Another issue is that the widgets are not always going to be able to display the full fortune text.  ScrollView is not available in widgets, so my alternative was to add an ellipsis after 5 lines (&hellip;) and open a full activity display when the widget is clicked.  I also added two buttons on bottom left/right corners - one for settings and one for manually advancing to the next fortune.</p>
+
+<p>![<a href="/images/blog/droidfortunes_details.png">DroidFortunes Details View</a></p>
+
+<pre><code class="language-sql">    SELECT f.* FROM fortunes f JOIN category c ON f.type = c.name WHERE c.enabled ORDER BY RANDOM() LIMIT 1
+</code></pre>
+
+<p>Nice and simple query gets the job done.</p>
+
+<h3 id="settings">Settings</h3>
+
+<p>Haven&rsquo;t quite finished implementing this yet but basically I want to be able to turn on/off fortune categories and offensive fortunes.</p>
+
+<p>Eventually I would like to implement importing new UNIX fortunes or adding your own fortunes (maybe from funny text messages or something). I would like this to be a paid feature, but I&rsquo;ll have to make sure I&rsquo;m not infringing on any licenses by using the fortune database.</p>
+
+<p><img src="/images/blog/droidfortunes_settings.png" alt="DroidFortunes Settings View" /></p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>So all in all, I&rsquo;m pleased with the result.  It took me approximately 30 hours to get this far but the grunt work is done.</p>
+</div>
+
+    
+    
+
+    
+
+        <h4 class="page-header">Related</h4>
+
+         <div class="item">
+
+    
+    
+
+    
+      
+
+    <h4><a href="/2014/02/20/java-key-path-json-objects/">Java Key Path Json Objects</a></h4>
+    <h5>emulating key-value coding in java</h5>
+     <kbd class="item-tag">java</kbd>  <kbd class="item-tag">json</kbd>  <kbd class="item-tag">key path</kbd>  <kbd class="item-tag">programming</kbd> 
+
+</div>
+ 
+
+    
+
+</main>
+
+
+  <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "arg3" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        <footer>
+
+            <p class="copyright text-muted">&copy; all rights reserved</p>
+
+        </footer>
+
+    </body>
+
+</html>
+

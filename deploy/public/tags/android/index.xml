@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Android on coda.life</title>
+    <link>https://coda.life/tags/android/</link>
+    <description>Recent content in Android on coda.life</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; all rights reserved</copyright>
+    <lastBuildDate>Wed, 04 Jul 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://coda.life/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Droid Fortunes: An Experiment in Android Widgets</title>
+      <link>https://coda.life/2012/07/04/droid-fortunes-an-experiment-in-android-widgets/</link>
+      <pubDate>Wed, 04 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://coda.life/2012/07/04/droid-fortunes-an-experiment-in-android-widgets/</guid>
+      <description>Background I have it set up on my OSX machine to give me a random fortune when I log into the shell. I thought it would be a good idea to port this to Android in the form of a widget and Droid Fortunes was born!
+So a little more background on the the &amp;lsquo;fortune&amp;rsquo; command for those who do not know. The program itself is simple enough - display a random message stored in a database.</description>
+    </item>
+    
+  </channel>
+</rss>

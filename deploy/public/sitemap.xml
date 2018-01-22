@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://coda.life/2017/06/10/openapi-directory--swagger/</loc>
+    <lastmod>2017-06-10T01:33:30-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/2016/11/27/microsoft-dev-stack-on-macos/</loc>
+    <lastmod>2016-11-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/2016/06/22/hugo-dokku-wercker-goodness/</loc>
+    <lastmod>2016-06-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/2015/12/02/c-hacking-polymoriphing-2/</loc>
+    <lastmod>2015-12-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/2015/09/09/elixir-and-phoenix/</loc>
+    <lastmod>2015-09-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/2015/08/03/gobo-/-homebrew-and-linux-application-organization/</loc>
+    <lastmod>2015-08-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/2014/02/20/java-key-path-json-objects/</loc>
+    <lastmod>2014-02-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/2012/11/30/poor-mans-polymorphism/</loc>
+    <lastmod>2012-11-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/2012/11/17/crafting-a-game-with-craftyjs/</loc>
+    <lastmod>2012-11-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/2012/07/04/droid-fortunes-an-experiment-in-android-widgets/</loc>
+    <lastmod>2012-07-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/2012/05/15/c-sqlite-tricks/</loc>
+    <lastmod>2012-05-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/about/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/tags/android/</loc>
+    <lastmod>2012-07-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/tags/api/</loc>
+    <lastmod>2017-06-10T01:33:30-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/tags/automation/</loc>
+    <lastmod>2016-06-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/tags/c/</loc>
+    <lastmod>2015-12-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/tags/chat/</loc>
+    <lastmod>2015-09-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/tags/cparse/</loc>
+    <lastmod>2015-12-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/tags/cross-platform/</loc>
+    <lastmod>2016-11-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/tags/development/</loc>
+    <lastmod>2016-11-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/tags/directory/</loc>
+    <lastmod>2017-06-10T01:33:30-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/tags/dokku/</loc>
+    <lastmod>2016-06-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/tags/elixir/</loc>
+    <lastmod>2015-09-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/tags/erlang/</loc>
+    <lastmod>2015-09-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/tags/filesystem/</loc>
+    <lastmod>2015-08-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/tags/fortunes/</loc>
+    <lastmod>2012-07-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/tags/games/</loc>
+    <lastmod>2012-11-17T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/tags/gobo/</loc>
+    <lastmod>2015-08-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/tags/homebrew/</loc>
+    <lastmod>2015-08-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/tags/hugo/</loc>
+    <lastmod>2016-06-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/tags/java/</loc>
+    <lastmod>2014-02-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/tags/javascript/</loc>
+    <lastmod>2012-11-17T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/tags/json/</loc>
+    <lastmod>2014-02-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/tags/key-path/</loc>
+    <lastmod>2014-02-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/tags/linux/</loc>
+    <lastmod>2015-08-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/tags/mobile/</loc>
+    <lastmod>2016-11-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/music/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/tags/openapi/</loc>
+    <lastmod>2017-06-10T01:33:30-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/tags/phoenix/</loc>
+    <lastmod>2015-09-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/tags/polymorphism/</loc>
+    <lastmod>2015-12-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/post/</loc>
+    <lastmod>2017-06-10T01:33:30-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/tags/programming/</loc>
+    <lastmod>2016-11-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/projects/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/resume/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/tags/sqlite/</loc>
+    <lastmod>2012-05-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/tags/swagger/</loc>
+    <lastmod>2017-06-10T01:33:30-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/tags/</loc>
+    <lastmod>2012-07-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/things/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/tags/web/</loc>
+    <lastmod>2017-06-10T01:33:30-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/categories/web/</loc>
+    <lastmod>2017-06-10T01:33:30-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/tags/web-framework/</loc>
+    <lastmod>2015-09-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/tags/wercker/</loc>
+    <lastmod>2016-06-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/tags/widgets/</loc>
+    <lastmod>2012-07-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/</loc>
+    <lastmod>2017-06-10T01:33:30-07:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/music/</loc>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/projects/</loc>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/resume/</loc>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/things/</loc>
+  </url>
+  
+</urlset>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Json on coda.life</title>
+    <link>https://coda.life/tags/json/</link>
+    <description>Recent content in Json on coda.life</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; all rights reserved</copyright>
+    <lastBuildDate>Thu, 20 Feb 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://coda.life/tags/json/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Java Key Path Json Objects</title>
+      <link>https://coda.life/2014/02/20/java-key-path-json-objects/</link>
+      <pubDate>Thu, 20 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://coda.life/2014/02/20/java-key-path-json-objects/</guid>
+      <description>After using apple&amp;rsquo;s key-value coding to basically have models without writing models, I decided to write rewrite a simple wrapper for java&amp;rsquo;s JSONObject that will allow similar functionality.
+I&amp;rsquo;m aware that this method and apple&amp;rsquo;s key value coding has a performance cost. But sometimes I&amp;rsquo;m willing to sacrifice a bit for development sake.
+So given the following JSON:
+{ &amp;quot;test1&amp;quot; : { &amp;quot;result&amp;quot;: &amp;quot;pass&amp;quot;, &amp;quot;code&amp;quot;: 42, &amp;quot;verified&amp;quot;, true, &amp;quot;subtest1&amp;quot;: [ { &amp;quot;result&amp;quot;: &amp;quot;fail&amp;quot;, &amp;quot;code&amp;quot;: 3.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>Hugo &#43; Dokku &#43; Wercker = Goodness</title>
+
+        <style>
+
+    html body {
+        font-family: Raleway, sans-serif;
+        background-color: white;
+    }
+
+    :root {
+        --accent: #006a4e;
+        --border-width:  5px ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+ <link rel="stylesheet" href="/css/app.css"> 
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+
+ <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ 
+
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+    
+
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+ <meta name="generator" content="Hugo 0.33" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="technical and musical musings">
+        
+        <link href="/css/app.css" type="text/css" rel="stylesheet" />
+
+        
+<link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="manifest" href="/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#006a4e">
+<meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#006a4e">
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28532156-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-28532156-1');
+</script>
+
+
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+
+            <div class="container">
+
+                <div class="navbar-header">
+
+                    <a class="navbar-brand" href="/">
+                        <img src="/images/coda.svg" alt="logo" />
+                    </a>
+                    <a class="navbar-brand" href="/">coda.life</a>
+
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+
+                <div class="collapse navbar-collapse">
+
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/post">blog</a></li>
+                            
+                                <li><a href="/music">music</a></li>
+                            
+                                <li><a href="/things">things</a></li>
+                            
+                        </ul>
+                    
+
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="mailto:ryan@coda.life"><i class="fa fa-envelope-o"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://github.com/ryjen/"><i class="fa fa-github"></i></a></li>
+                            
+                        </ul>
+                    
+
+                </div>
+
+            </div>
+
+        </nav>
+
+<main>
+
+    <h2><a href="/2016/06/22/hugo-dokku-wercker-goodness/">Hugo &#43; Dokku &#43; Wercker = Goodness</a></h2>
+
+    <br> <div class="text-justify">
+
+<h2 id="hugo-http-gohugo-io"><a href="http://gohugo.io">Hugo</a></h2>
+
+<p>Hugo is a static site generator with many powerful features like archtypes, themes, customization, etc.</p>
+
+<p>Combined with tools like <a href="http://bower.io">bower</a> and <a href="http://brunch.io">brunch</a> it makes for a pretty powerful app that could be more than a blog.</p>
+
+<p>The workflow is simple - build your assets with brunch, run the hugo generator.
+The end result is a complete static html site you can deploy.</p>
+
+<h3 id="dokku-http-dokku-viewdocs-io-dokku"><a href="http://dokku.viewdocs.io/dokku/">Dokku</a></h3>
+
+<p>Dokku has been great for running multiple small apps on a single <a href="http://digitialocean.com">digitalocean</a> droplet. The best part is its heroku buildpack compatible, so anything you can run on heroku you can deploy to dokku and more.</p>
+
+<h2 id="wercker-http-wercker-com"><a href="http://wercker.com">Wercker</a></h2>
+
+<p>A continuous integration solution that is quite powerful and free.  I&rsquo;m slowly migrating all my <a href="http://travis-ci.org">travisci</a> configurations.</p>
+
+<p>With a single wercker.yml config file, each git commit one can combine the static site generation and the deploy to dokku.  Beautiful!</p>
+
+<h3 id="requirements">Requirements</h3>
+
+<ul>
+<li>add the dokku git repo as a submodule called &ldquo;public&rdquo; which will contain the generated site</li>
+<li>create some dokku git environment variables in wercker config</li>
+<li>create an ssh key in the wercker config for the project</li>
+<li>add the generated ssh key to the dokku acl list</li>
+</ul>
+
+<p>The wercker.yml file:</p>
+
+<pre><code class="language-YAML">box: digitallyseamless/nodejs-bower-grunt
+build:
+  steps:
+    - wercker/npm-install@1.1.4
+    - plasticine/bower-install@0.0.4
+    - add-to-known-hosts:
+        hostname: $GIT_DEPLOY_HOST
+    - add-ssh-key:
+        keyname: dokku
+    - script:
+        name: Initialize git submodules
+        code: |
+            git submodule update --init --recursive
+    - script:
+        name: Build assets
+        code: ./node_modules/.bin/brunch build
+    - arjen/hugo-build:
+        version: &quot;0.15&quot;
+deploy:
+  steps:
+    - add-to-known-hosts:
+        hostname: $GIT_DEPLOY_HOST
+    - add-ssh-key:
+        keyname: dokku
+    - script:
+        name: push to dokku
+        code: |
+          cd ./public
+          git config user.email &quot;$GIT_USER_EMAIL&quot;
+          git config user.name &quot;$WERCKER_STARTED_BY&quot;
+          git config push.default simple
+          git add -A .
+          git commit -m &quot;deploy from wercker&quot;
+          git push origin HEAD:master
+</code></pre>
+
+<h4 id="result">Result?</h4>
+
+<p>Can simply create a post and commit it.  Once pushed, it will be deployed live.</p>
+
+<h4 id="improvements">Improvements?</h4>
+
+<ul>
+<li>Create a test suite to run in wercker as well.</li>
+<li>Devise a way to create a blog post on mobile</li>
+</ul>
+</div>
+
+    
+    
+
+    
+
+</main>
+
+
+  <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "arg3" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        <footer>
+
+            <p class="copyright text-muted">&copy; all rights reserved</p>
+
+        </footer>
+
+    </body>
+
+</html>
+

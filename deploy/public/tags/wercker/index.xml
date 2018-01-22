@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wercker on coda.life</title>
+    <link>https://coda.life/tags/wercker/</link>
+    <description>Recent content in Wercker on coda.life</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; all rights reserved</copyright>
+    <lastBuildDate>Wed, 22 Jun 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://coda.life/tags/wercker/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo &#43; Dokku &#43; Wercker = Goodness</title>
+      <link>https://coda.life/2016/06/22/hugo-dokku-wercker-goodness/</link>
+      <pubDate>Wed, 22 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://coda.life/2016/06/22/hugo-dokku-wercker-goodness/</guid>
+      <description>Hugo Hugo is a static site generator with many powerful features like archtypes, themes, customization, etc.
+Combined with tools like bower and brunch it makes for a pretty powerful app that could be more than a blog.
+The workflow is simple - build your assets with brunch, run the hugo generator. The end result is a complete static html site you can deploy.
+Dokku Dokku has been great for running multiple small apps on a single digitalocean droplet.</description>
+    </item>
+    
+  </channel>
+</rss>

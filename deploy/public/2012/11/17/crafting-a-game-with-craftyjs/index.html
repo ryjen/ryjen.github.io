@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+        <title>Crafting a Game With CraftyJS</title>
+
+        <style>
+
+    html body {
+        font-family: Raleway, sans-serif;
+        background-color: white;
+    }
+
+    :root {
+        --accent: #006a4e;
+        --border-width:  5px ;
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+ <link rel="stylesheet" href="/css/app.css"> 
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+
+ <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"> 
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ 
+
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+    
+
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+ <meta name="generator" content="Hugo 0.33" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="technical and musical musings">
+        
+        <link href="/css/app.css" type="text/css" rel="stylesheet" />
+
+        
+<link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="manifest" href="/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#006a4e">
+<meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#006a4e">
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28532156-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-28532156-1');
+</script>
+
+
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+
+            <div class="container">
+
+                <div class="navbar-header">
+
+                    <a class="navbar-brand" href="/">
+                        <img src="/images/coda.svg" alt="logo" />
+                    </a>
+                    <a class="navbar-brand" href="/">coda.life</a>
+
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+
+                <div class="collapse navbar-collapse">
+
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/post">blog</a></li>
+                            
+                                <li><a href="/music">music</a></li>
+                            
+                                <li><a href="/things">things</a></li>
+                            
+                        </ul>
+                    
+
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="mailto:ryan@coda.life"><i class="fa fa-envelope-o"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://github.com/ryjen/"><i class="fa fa-github"></i></a></li>
+                            
+                        </ul>
+                    
+
+                </div>
+
+            </div>
+
+        </nav>
+
+<main>
+
+    <h2><a href="/2012/11/17/crafting-a-game-with-craftyjs/">Crafting a Game With CraftyJS</a></h2>
+
+    <br> <div class="text-justify">
+
+<p><a href="https://amos.coda.life"><img src="/images/blog/amos_the_alien.png" alt="Amos the Alien" /></a></p>
+
+<p>Found a pretty cool javascript game engine called <a href="http://craftyjs.com/">CraftJS</a> that I&rsquo;ve been playing with the past couple of days.</p>
+
+<p>Has support for things like Entity Component System, Collision, Sprite Maps, etc.</p>
+
+<h3 id="amos-the-alien-https-amos-coda-life"><a href="https://amos.coda.life">Amos the Alien</a></h3>
+
+<p>Amos the Alien is a small demo I made, you can check my progress there.</p>
+
+<p>First thing to do if your going to try yourself is to head over <a href="http://craftycomponents.com">Crafty Components</a> and download the boilerplate.  It really shows off a sophisticated paradigm for creating crafty games.</p>
+
+<p>The first thing I knew I wanted to create was a game that had a scrolling background of some sort.</p>
+
+<p>To do this in Crafty, the best way would be to create a <em>&lsquo;Scrollable&rsquo;</em> component that scrolls in either direction on the screen.</p>
+
+<p>Then you can create a <em>&lsquo;Background&rsquo;</em> entity that contains a list of scrollable components.  I created a simple <em>scroll</em> method is used during frame events or when the main character moves.</p>
+
+<p>Another nice thing about Crafty is the concept of <em>scenes</em> built in.  In my main &ldquo;scene&rdquo; i simple create the background, character and platform entities for the demo above.</p>
+
+<p>The only caveat I found with crafty is the <em>twoway</em> movement component.  It is not possible that I can see to know when your character is jumping and where.  I had to modify the crafty source to include a &ldquo;Jump&rdquo; event and an isJumping() function.</p>
+
+<h3 id="implementation-notes">Implementation notes</h3>
+
+<p>To achieve a parallax type scrolling effect the &lsquo;Scrollable&rsquo; entity has a &lsquo;scroll&rsquo; method, but also has the ability to bind the event loop and scroll automatically.  Currently only accepts horizontal scrolling.</p>
+
+<pre><code class="language-javascript">    Crafty.c(&quot;Scrollable&quot;, {
+        _speed: 2,
+        _autoScrolling: false,
+
+        init: function() {
+            this.requires(&quot;2D, &quot;+gameContainer.conf.get('renderType')+&quot;&quot;);
+        },
+
+        setSpeed: function(speed) {
+            this.speed = speed;
+            return this;
+        },
+
+        autoScroll: function() {
+            this.bind(&quot;EnterFrame&quot;, function() {
+                this.scroll(1);
+            });
+            this.autoScrolling = true;
+        },
+
+        getSpeed: function() {
+            return this.speed;
+        },
+
+        scroll: function(direction) {
+            this.x -= this.speed * direction;
+
+            if (this.x + this.w &amp;lt; -Crafty.viewport.x) {
+                this.x = Crafty.viewport.width + -Crafty.viewport.x;
+            }
+            else if(this.x &amp;gt; Crafty.viewport.width + -Crafty.viewport.x) {
+                this.x = -this.w;
+            }
+        }
+    });
+</code></pre>
+
+<p>The background itself is an entity which may contain several &lsquo;Scrollable&rsquo; components.  The &lsquo;scroll&rsquo; method on a background will adjust the stage CSS for the image and update its children if necessary.  Currently only scrolls horizontally as well.</p>
+
+<pre><code class="language-javascript">    Background = BaseEntity.extend({
+        _bg: 0,
+        _bgWidth: 0,
+
+        initialize: function() {
+            this._elements = [];
+            this.set({'entity': this});
+        },
+
+        destroy: function() {
+            for(var i =0; i &amp;lt; this._elements.length; i++) {
+                this._elements[i].destroy();
+            }
+        },
+
+        /* adds a sprite to the background */
+        addScrollableSprite: function(sprite, speed, posX, posY, autoscroll) {
+
+            var img = Crafty.e(&quot;Scrollable, &quot; + sprite);
+
+            img.setSpeed(speed).attr({x:posX, y:posY});
+
+            this._elements.push(img);
+
+            if(typeof autoscroll !== 'undefined' &amp;amp;&amp;amp; autoscroll)
+              img.autoScroll();
+
+            return img;
+        },
+
+        /* sets the background image */
+        setImage: function(image) {
+            Crafty.background(&quot;url(&quot; + image + &quot;) &quot;);
+
+            var actualImage = new Image();
+            var model = this;
+
+            actualImage.onload = function() {
+                model._bgWidth = actualImage.width;
+            }
+            actualImage.src = image;
+            this._bgWidth = actualImage.width;
+
+        },
+
+        /* sets the background color */
+        setColor: function(color) {
+            Crafty.background(color);
+        },
+
+        /* scrolls the background and its children */
+        scroll: function(direction) {
+            for(var i = 0; i &amp;lt; this._elements.length; i++) {
+              /* skip auto scrolling elements */
+                if(this._elements[i].autoScrolling) continue;
+
+                this._elements[i].scroll(direction);
+            }
+
+            if( this._bg - Crafty.viewport.width &amp;gt; -this._bgWidth)
+            {
+                this._bg -= direction;
+
+                if(this._bg &amp;lt;= 0)
+                    Crafty.stage.elem.style.backgroundPosition = this._bg + &quot;px 0px&quot;;
+            }
+        }
+    });
+</code></pre>
+
+<p>In my main scene for example I can load the background like so:</p>
+
+<pre><code class="language-javascript">    var background = new Background();
+    background.setImage('web/world/1/background1.png');
+    background.addScrollableSprite('cloud1', 0.2, 5, 20, true);
+    background.addScrollableSprite('cloud2', 0.4, 200, 100, true);
+    background.addScrollableSprite('cloud3', 0.6, 250, 190, true);
+
+    /* assign to a global map */
+    sc[&quot;background&quot;] = background;
+</code></pre>
+
+<p>And when my character moves, I can update the background scrolling like so:</p>
+
+<pre><code class="language-javascript">    .bind(&quot;Moved&quot;, function(e) {
+
+        var direction = this.x &amp;gt; e.x ? 1 : this.x &amp;lt; e.x ? -1 : 0;
+
+        sc[&quot;background&quot;].scroll(direction);
+    }
+</code></pre>
+</div>
+
+    
+    
+
+    
+
+        <h4 class="page-header">Related</h4>
+
+         <div class="item">
+
+    
+    
+
+    
+      
+
+    <h4><a href="/2017/06/10/openapi-directory--swagger/">OpenAPI Directory &amp; Swagger</a></h4>
+    <h5>swagger is neat</h5>
+     <kbd class="item-tag">api</kbd>  <kbd class="item-tag">web</kbd>  <kbd class="item-tag">directory</kbd>  <kbd class="item-tag">openapi</kbd>  <kbd class="item-tag">swagger</kbd> 
+
+</div>
+  <div class="item">
+
+    
+    
+
+    
+      
+
+    <h4><a href="/2016/11/27/microsoft-dev-stack-on-macos/">Microsoft Dev Stack on macOS</a></h4>
+    <h5>a microsoft cross-platform mobile and cloud first development stack on macOS</h5>
+     <kbd class="item-tag">development</kbd>  <kbd class="item-tag">programming</kbd>  <kbd class="item-tag">cross platform</kbd>  <kbd class="item-tag">mobile</kbd>  <kbd class="item-tag">web</kbd> 
+
+</div>
+ 
+
+    
+
+</main>
+
+
+  <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "arg3" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        <footer>
+
+            <p class="copyright text-muted">&copy; all rights reserved</p>
+
+        </footer>
+
+    </body>
+
+</html>
+
