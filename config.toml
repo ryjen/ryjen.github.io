@@ -1,7 +1,7 @@
 baseurl = "https://coda.life/"
 languageCode = "en-us"
 title = "coda.life"
-publishDir = "deploy/public"
+publishDir = "server/public"
 buildDrafts = false
 
 ## Enable comments by entering your Disqus shortname
