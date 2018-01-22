@@ -1,6 +1,3 @@
-[submodule "deploy"]
-	path = deploy
-	url = dokku@micrantha.com:blog
 [submodule "themes/minimal"]
 	path = themes/minimal
 	url = https://github.com/calintat/minimal.git 

@@ -1,6 +1,8 @@
 baseurl = "https://coda.life/"
 languageCode = "en-us"
 title = "coda.life"
+publishDir = "deploy/public"
+buildDrafts = false
 
 ## Enable comments by entering your Disqus shortname
 disqusShortname = "arg3"
@@ -60,7 +62,7 @@ theme = "minimal"
     weight = 3
 
 #[[menu.main]]
-#    name  = "Projects"
+#    name  = "projects"
 #    url   = "/projects"
 
 [[menu.main]]
@@ -68,9 +70,8 @@ theme = "minimal"
     url   = "/things"
 
 #[[menu.main]]
-#    name  = "About"
-#    url   = "/about"
-
+#    name  = "resume"
+#    url   = "/about/resume"
 
 [[menu.icon]]
     url = "mailto:ryan@coda.life"

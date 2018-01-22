@@ -16,6 +16,5 @@ There are still times when we are forced to test manually. I could not find chea
 
 I've started [testmanship.com](http://testmanship.com) to see if I can breathe new life into manual testing and hopefully give it more visibility to teams.
 
-If you'd like to help, [let me know](mailto:ryan@arg3.com?subject=Help%20with%20Testmanship)
+If you'd like to help, [let me know](mailto:ryan@coda.life?subject=Help%20with%20Testmanship)
 
-[Bugtracker/Wiki](http://bugs.arg3.com/projects/testmanship)

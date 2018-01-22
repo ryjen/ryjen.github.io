@@ -15,7 +15,7 @@ title: things
 
 <div class="well">
 <img alt="Illusions: Adventures of a Reluctant Messiah" src="/images/things/illusions.jpg" />
-<h4><a href="http://a.co/2KwK0cz">Illusions: Adventures of a Reluctant Messiah"</a></h4>
+<h4><a href="http://a.co/2KwK0cz">Illusions: Adventures of a Reluctant Messiah</a></h4>
 <p class="clearfix">An interesting story, the unix fortunes command has quotes from this book so it made its way into some of my heroes.</p>
 </div>
 
@@ -65,9 +65,7 @@ While less secure than virtualization, it is good for testing on difference envi
 
 <div class="well">
 <h4><a href="http://reactivex.io">Reactive Extensions</a></h4>
-<p>Interesting, often misunderstood tech (its not a javascript web framework). There is some <a href="https://youtu.be/looJcaeboBY">solid match behind it all</a>.  The benfits include: <ul><li>reducing the amount of callback code you write and readability</li>
-<li>a super glue in your <a href="https://en.wikipedia.org/wiki/Model–view–controller">MVC</a>, <a href="https://en.wikipedia.org/wiki/Model–view–viewmodel">MVVM</a>, <a href="https://en.wikipedia.org/wiki/Model–view–presenter">MVVP</a> architecture for database/network to views.</li>
-<li>Thread and stream synchronization. for example delays before parsing user input or sequential network calls</li></ul></p>
+<p>Interesting, often misunderstood tech (its not a javascript web framework). There is some <a href="https://youtu.be/looJcaeboBY">solid math behind it all</a>.</p>
 </div>
 
 <div class="well">

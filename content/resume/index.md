@@ -1,5 +1,5 @@
 ---
-title: Resume
+title: resume
 layout: plain
 ---
 
@@ -21,12 +21,12 @@ layout: plain
 </td></tr></table>
 
 <div class="well">
-<h1> Robert Ryan Jennings </h1>
+<h1>(Robert) Ryan Jennings </h1>
 
-<p>Entered software engineering at the bottom with embedded systems in 2007. The early days of mobile quickly became a niche.  Worked on many mobile platforms and languages, including Windows Mobile (PALM) (C++/C#), Windows Phone (C#), iOS (ObjC), Android and Blackberry (Java).  Have also worked in backend web development (JavaEE).</p>
+<p>Self-taught programmer since 2002, formally educated in Computer Systems at BCIT with distinction.  Started professionally in quality assurance and embedded systems and been a part of the mobile revolution for 8 years on multiple platforms and languages.</p>
 
 <p>
-Originally a hobbiest programmer and student of random internet developers since 2001. Pragmatism has been a guiding philosophy during education and professional life.  My other hobby is guitar where I can express myself in technique, theory, song writing and incorporating technology.
+Pragmatism has been a guiding philosophy during education and professional life. Hobbies other than different technologies include guitar/jazz and biking.
 </p>
 
 </div>
@@ -41,16 +41,16 @@ Originally a hobbiest programmer and student of random internet developers since
 
 <ul>
 <li>Responsible for delivery customizations and components on Android</li>
-<li>Successfuly implemented beacons feature for Android, allowing for an interactive experience at conferences</li>
-<li>Improved android UX and performance with smarter resource management, animations and tablet layouts</li>
-<li>Gained experience in iterative development methodology, sprint reviews and planning</li>
-<li>Implemented chat and social integration UX for Android</li>
-<li>Gained experience and knowledge of RxJava for Android</li>
-<li>General scripting for processes and crossplatform work on iOS</li>
+<li>Successfully implemented beacons product feature for Android, allowing for an interactive experience at conferences</li>
+<li>Improved android product UX and performance with smarter resource management, animations and landscape layouts</li>
+<li>Participated in iterative development methodology, sprint reviews and planning</li>
+<li>Gained experience and read books on RxJava for Android</li>
+<li>General scripting for processes and cross-platform work on iOS</li>
+<li>Worked on 
 </ul>
 
 <span class="keywords">
-Android, Beacons, SQL, Tablet, BLE, Notifications, JIRA, UX, Agile, SCRUM, Git, Gradle
+Android, iOS, Beacons, SQL, Tablet, BLE, Notifications, JIRA, UX, Agile, SCRUM, Iterative, RxJava, Git, Gradle, VeraCode, Unit Testing, Continuous Integration, Scripting, Web Services, REST
 </span>
 </div>
 <!--
@@ -87,7 +87,7 @@ Android, Beacons, SQL, Tablet, BLE, Notifications, JIRA, UX, Agile, SCRUM, Git, 
 
 <h2> <a href="http://epactnetwork.com/">ePACT</a>
 
-<h3> Lead Mobile Developer, July 3 2014 - March 2015 </h3>
+<h3> Senior Mobile Developer, July 3 2014 - March 2015 </h3>
 
 <ul>
 <li>Implemented version 1.0 of native Android &amp; iPhone apps</li>
@@ -108,7 +108,7 @@ Android, Beacons, SQL, Tablet, BLE, Notifications, JIRA, UX, Agile, SCRUM, Git, 
 -->
 
 <span class="keywords">
-Android, iPhone, SQL, JSON, Web Service, REST, PDF, Scripting, Shared Library, UX, Agile, JIRA, Git, Appium
+Android, iPhone, SQL, JSON, Web Service, REST, PDF, Scripting, Shared Library, UX, Agile, JIRA, Git, Appium, Automated Functional Testing, Cross-Device Functionality
 </span>
 
 <h3> Backend Java Engineer, July 3 2013 - July 3 2014 </h3>
@@ -135,7 +135,7 @@ Extended API features for mobile development
 </ul>
 
 <span class="keywords">
-Java, J2EE, JavaScript, CSS, HTML5, CSRF, XSS, MySQL, Tomcat, Agile, SCRUM, JIRA, Git, Selenium
+Java, J2EE, JavaScript, CSS, HTML5, CSRF, XSS, MySQL, Tomcat, Agile, SCRUM, JIRA, Git, Selenium, Automated Functional Testing
 </span>
 
 </div>
@@ -289,7 +289,7 @@ C#, .Net Compact, Windows Mobile, Power Line Communication (PLC), Token Ring, Zi
 <div class="well">
 <h3> <a href="http://www.bcit.ca/">British Columbia Institute of Technology</a>, (84% GPA) </h3>
 <ul>
-<li>Diploma in Computer Systems, nearing completion</li>
+<li>Diploma in Computer Systems, completing in summer 2018</li>
 <li>Certificate of Technology in Computer Systems, 2012-2015</li>
 <li>Associate in Applied Software Development, 2005-2007</li>
 <li>Associate in Computer Information Systems, 2005-2007</li>
@@ -309,7 +309,7 @@ C#, .Net Compact, Windows Mobile, Power Line Communication (PLC), Token Ring, Zi
 
 <div class="well">
 <ul>
-<li>Currently working on an Augmented Reality app to solve a Scrabble Board</li>
+<li>Some closed source projects include an Augmented Reality app to solve a Scrabble Board and a UNIX fortunes microservice on Amazon Elastic Container Service</li>
 <li><a href="https://github.com/ryjen/prep">prep</a> - a dependency manager (and build tool) for c++ projects</li>
 <li><a href="https://github.com/ryjen/p0ng">p0ng</a> - an unreleased retro pong game for iOS</li>
 <li><a href="https://github.com/ryjen/Droid-Fortunes">DroidFortunes</a> - the original Android version of the UNIX 'fortunes' application</li>

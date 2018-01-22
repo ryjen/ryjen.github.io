@@ -11,13 +11,13 @@ aliases:
 banner: /images/blog/amos_the_alien.png
 ---
 
-[![Amos the Alien](/images/blog/amos_the_alien.png)](http://amos.arg3.com)
+[![Amos the Alien](/images/blog/amos_the_alien.png)](https://amos.coda.life)
 
 Found a pretty cool javascript game engine called [CraftJS](http://craftyjs.com/) that I've been playing with the past couple of days.
 
 Has support for things like Entity Component System, Collision, Sprite Maps, etc.
 
-### [Amos the Alien](http://amos.arg3.com)
+### [Amos the Alien](https://amos.coda.life)
 
 Amos the Alien is a small demo I made, you can check my progress there.
 
@@ -32,8 +32,6 @@ Then you can create a _'Background'_ entity that contains a list of scrollable c
 Another nice thing about Crafty is the concept of _scenes_ built in.  In my main "scene" i simple create the background, character and platform entities for the demo above.
 
 The only caveat I found with crafty is the _twoway_ movement component.  It is not possible that I can see to know when your character is jumping and where.  I had to modify the crafty source to include a "Jump" event and an isJumping() function.
-
-[Bugtracker/Wiki](http://bugs.arg3.com/projects/amosthealien)
 
 ### Implementation notes
 

@@ -24,4 +24,3 @@ On the TODO list:
 
 I dunno, it was a fun project for over the holidays, I wonder if anything will come of it.
 
-[Bugtracker/Wiki](http://bugs.arg3.com/projects/socialstory)
