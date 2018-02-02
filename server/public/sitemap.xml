@@ -3,8 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://coda.life/2017/06/10/openapi-directory--swagger/</loc>
-    <lastmod>2017-06-10T01:33:30-07:00</lastmod>
+    <loc>https://coda.life/2018/01/22/fortunes-on-slack/</loc>
+    <lastmod>2018-01-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -13,43 +13,13 @@
   </url>
   
   <url>
-    <loc>https://coda.life/2016/06/22/hugo-dokku-wercker-goodness/</loc>
-    <lastmod>2016-06-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://coda.life/2015/12/02/c-hacking-polymoriphing-2/</loc>
-    <lastmod>2015-12-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://coda.life/2015/09/09/elixir-and-phoenix/</loc>
     <lastmod>2015-09-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://coda.life/2015/08/03/gobo-/-homebrew-and-linux-application-organization/</loc>
-    <lastmod>2015-08-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://coda.life/2014/02/20/java-key-path-json-objects/</loc>
-    <lastmod>2014-02-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://coda.life/2012/11/30/poor-mans-polymorphism/</loc>
     <lastmod>2012-11-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://coda.life/2012/11/17/crafting-a-game-with-craftyjs/</loc>
-    <lastmod>2012-11-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://coda.life/2012/07/04/droid-fortunes-an-experiment-in-android-widgets/</loc>
-    <lastmod>2012-07-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -63,26 +33,30 @@
   </url>
   
   <url>
-    <loc>https://coda.life/tags/android/</loc>
-    <lastmod>2012-07-04T00:00:00+00:00</lastmod>
+    <loc>https://coda.life/tags/amazon/</loc>
+    <lastmod>2018-01-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://coda.life/tags/api/</loc>
-    <lastmod>2017-06-10T01:33:30-07:00</lastmod>
+    <lastmod>2018-01-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://coda.life/tags/automation/</loc>
-    <lastmod>2016-06-22T00:00:00+00:00</lastmod>
+    <loc>https://coda.life/tags/aws/</loc>
+    <lastmod>2018-01-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/things/</loc>
   </url>
   
   <url>
     <loc>https://coda.life/tags/c/</loc>
-    <lastmod>2015-12-02T00:00:00+00:00</lastmod>
+    <lastmod>2012-11-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -98,14 +72,14 @@
   </url>
   
   <url>
-    <loc>https://coda.life/tags/cparse/</loc>
-    <lastmod>2015-12-02T00:00:00+00:00</lastmod>
+    <loc>https://coda.life/tags/cross-platform/</loc>
+    <lastmod>2016-11-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://coda.life/tags/cross-platform/</loc>
-    <lastmod>2016-11-27T00:00:00+00:00</lastmod>
+    <loc>https://coda.life/tags/css/</loc>
+    <lastmod>2018-01-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -116,14 +90,20 @@
   </url>
   
   <url>
-    <loc>https://coda.life/tags/directory/</loc>
-    <lastmod>2017-06-10T01:33:30-07:00</lastmod>
+    <loc>https://coda.life/tags/docker/</loc>
+    <lastmod>2018-01-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://coda.life/tags/dokku/</loc>
-    <lastmod>2016-06-22T00:00:00+00:00</lastmod>
+    <lastmod>2018-01-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/tags/ecs/</loc>
+    <lastmod>2018-01-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -140,68 +120,44 @@
   </url>
   
   <url>
-    <loc>https://coda.life/tags/filesystem/</loc>
-    <lastmod>2015-08-03T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://coda.life/tags/fortunes/</loc>
-    <lastmod>2012-07-04T00:00:00+00:00</lastmod>
+    <lastmod>2018-01-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://coda.life/tags/games/</loc>
-    <lastmod>2012-11-17T00:00:00+00:00</lastmod>
+    <loc>https://coda.life/tags/git/</loc>
+    <lastmod>2018-01-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://coda.life/tags/gobo/</loc>
-    <lastmod>2015-08-03T00:00:00+00:00</lastmod>
+    <loc>https://coda.life/tags/go/</loc>
+    <lastmod>2018-01-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://coda.life/tags/homebrew/</loc>
-    <lastmod>2015-08-03T00:00:00+00:00</lastmod>
+    <loc>https://coda.life/tags/golang/</loc>
+    <lastmod>2018-01-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://coda.life/tags/hugo/</loc>
-    <lastmod>2016-06-22T00:00:00+00:00</lastmod>
+    <loc>https://coda.life/tags/http/</loc>
+    <lastmod>2018-01-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://coda.life/tags/java/</loc>
-    <lastmod>2014-02-20T00:00:00+00:00</lastmod>
+    <loc>https://coda.life/tags/micrantha/</loc>
+    <lastmod>2018-01-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://coda.life/tags/javascript/</loc>
-    <lastmod>2012-11-17T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://coda.life/tags/json/</loc>
-    <lastmod>2014-02-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://coda.life/tags/key-path/</loc>
-    <lastmod>2014-02-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://coda.life/tags/linux/</loc>
-    <lastmod>2015-08-03T00:00:00+00:00</lastmod>
+    <loc>https://coda.life/tags/microservice/</loc>
+    <lastmod>2018-01-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -217,12 +173,6 @@
   </url>
   
   <url>
-    <loc>https://coda.life/tags/openapi/</loc>
-    <lastmod>2017-06-10T01:33:30-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://coda.life/tags/phoenix/</loc>
     <lastmod>2015-09-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -230,13 +180,19 @@
   
   <url>
     <loc>https://coda.life/tags/polymorphism/</loc>
-    <lastmod>2015-12-02T00:00:00+00:00</lastmod>
+    <lastmod>2012-11-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/tags/postgres/</loc>
+    <lastmod>2018-01-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://coda.life/post/</loc>
-    <lastmod>2017-06-10T01:33:30-07:00</lastmod>
+    <lastmod>2018-01-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -252,7 +208,19 @@
   </url>
   
   <url>
+    <loc>https://coda.life/tags/rest/</loc>
+    <lastmod>2018-01-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://coda.life/resume/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/tags/slack/</loc>
+    <lastmod>2018-01-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -263,14 +231,8 @@
   </url>
   
   <url>
-    <loc>https://coda.life/tags/swagger/</loc>
-    <lastmod>2017-06-10T01:33:30-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://coda.life/tags/</loc>
-    <lastmod>2012-07-04T00:00:00+00:00</lastmod>
+    <lastmod>2018-01-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -281,13 +243,7 @@
   
   <url>
     <loc>https://coda.life/tags/web/</loc>
-    <lastmod>2017-06-10T01:33:30-07:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://coda.life/categories/web/</loc>
-    <lastmod>2017-06-10T01:33:30-07:00</lastmod>
+    <lastmod>2016-11-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -298,24 +254,12 @@
   </url>
   
   <url>
-    <loc>https://coda.life/tags/wercker/</loc>
-    <lastmod>2016-06-22T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://coda.life/tags/widgets/</loc>
-    <lastmod>2012-07-04T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://coda.life/about/</loc>
   </url>
   
   <url>
     <loc>https://coda.life/</loc>
-    <lastmod>2017-06-10T01:33:30-07:00</lastmod>
+    <lastmod>2018-01-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -329,10 +273,6 @@
   
   <url>
     <loc>https://coda.life/resume/</loc>
-  </url>
-  
-  <url>
-    <loc>https://coda.life/things/</loc>
   </url>
   
 </urlset>

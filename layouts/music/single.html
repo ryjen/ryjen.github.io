@@ -1,24 +1,21 @@
 {{ partial "header" . }}
 
-<main>
+<div id="main">
 
-    <br> <div class="text-justify">{{ .Content }}</div>
+    <div class="text-justify">{{ .Content }}</div>
 
-    <!-- related posts with the same tags -->
-    {{ $related := first 3 (where (where (where .Site.Pages.ByDate.Reverse ".Type" "==" "post") ".Params.tags" "intersect" .Params.tags) "Permalink" "!=" .Permalink) }}
+</div>
 
-    {{ if $related }}
+</div>
 
-        <h4 class="page-header">Related</h4>
+<hr>
 
-        {{ range $related }} {{ partial "list-item" . }} {{ end }}
-
-    {{ end }}
-
-</main>
+<div class="container">
 
 {{ if .Site.DisqusShortname }}
   {{ template "_internal/disqus.html" . }}
 {{ end }}
 
-{{ partial "footer.html" . }}
+</div>
+
+{{ partial "footer" . }}

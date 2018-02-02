@@ -9,6 +9,7 @@ tags:
     - automation
 description: "generating and automating deployment of a site"
 banner: /images/blog/hugo.png
+draft: true
 ---
 
 ## [Hugo](http://gohugo.io)

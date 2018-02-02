@@ -6,11 +6,15 @@ tags:
   - homebrew
   - linux
 date: 2015-08-03
-description: "linux package managers"
+description: "package managers"
 banner: http://www.gobolinux.org/images/gobonew.png
+draft: true
 ---
 
-I really liked the way [Gobo Linux](http://www.gobolinux.org) refactored the organization of a linux filesystem.
+
+#### Introduction
+
+I really liked the way [Gobo Linux](http://www.gobolinux.org) re-factored the organization of a linux filesystem.
 
 The short story of Gobo was to have each Recipe (application/library) install everything it needs into its own directory. The app files are then linked to support the legacy filesystem that the OS needs (You can read more at [Gobo at Glance](http://www.gobolinux.org/index.php?page=documentation) or [the history of gobo linux](http://www.gobolinux.org/?page=k5)).
 

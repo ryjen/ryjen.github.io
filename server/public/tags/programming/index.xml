@@ -6,7 +6,7 @@
     <description>Recent content in Programming on coda.life</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; all rights reserved</copyright>
+    <copyright>&amp;copy; all rights reserved, ryan jennings</copyright>
     <lastBuildDate>Sun, 27 Nov 2016 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://coda.life/tags/programming/index.xml" rel="self" type="application/rss+xml" />
@@ -18,32 +18,9 @@
       <pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate>
       
       <guid>https://coda.life/2016/11/27/microsoft-dev-stack-on-macos/</guid>
-      <description>As the tech giants becomes more friendly to other each other, I find myself wanting to evangelize a little bit.
-When Microsoft bought Xamarin, they did not understimate the power of Xamarin.Forms for building cross platform UIs. Now with the release of Visual Studio for macOS and the Dotnet Core, its officially here to stay and I&amp;rsquo;m very pleased.
-I&amp;rsquo;ve looked at a lot of cross platform solutions, this is as close as it gets to the holy grail, IMHO.</description>
-    </item>
-    
-    <item>
-      <title>c hacking: polymorphing 2</title>
-      <link>https://coda.life/2015/12/02/c-hacking-polymoriphing-2/</link>
-      <pubDate>Wed, 02 Dec 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://coda.life/2015/12/02/c-hacking-polymoriphing-2/</guid>
-      <description>While working on cparse I found another nifty way to sort of simulate polymorphism.
-cparse Another exercise in futility, a C implementation for the REST api at parse.com. Really the core of it is a web client and an object structure using json.
-polymorphing I started off by having separate structure for the different type of objects, but I quickly realized there was a lot of code duplication. To solve this I used a combination of type defines and function pointers to the library API appear to be working with a seperate type, but are indeed still working with the base object type.</description>
-    </item>
-    
-    <item>
-      <title>Java Key Path Json Objects</title>
-      <link>https://coda.life/2014/02/20/java-key-path-json-objects/</link>
-      <pubDate>Thu, 20 Feb 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://coda.life/2014/02/20/java-key-path-json-objects/</guid>
-      <description>After using apple&amp;rsquo;s key-value coding to basically have models without writing models, I decided to write rewrite a simple wrapper for java&amp;rsquo;s JSONObject that will allow similar functionality.
-I&amp;rsquo;m aware that this method and apple&amp;rsquo;s key value coding has a performance cost. But sometimes I&amp;rsquo;m willing to sacrifice a bit for development sake.
-So given the following JSON:
-{ &amp;quot;test1&amp;quot; : { &amp;quot;result&amp;quot;: &amp;quot;pass&amp;quot;, &amp;quot;code&amp;quot;: 42, &amp;quot;verified&amp;quot;, true, &amp;quot;subtest1&amp;quot;: [ { &amp;quot;result&amp;quot;: &amp;quot;fail&amp;quot;, &amp;quot;code&amp;quot;: 3.</description>
+      <description>Gonna evangelize a little bit.
+When Microsoft bought Xamarin, they did not underestimate the power of Xamarin.Forms for building cross platform UIs. Now with the release of Visual Studio for macOS and the Dotnet Core, its looks like its going to stay alive.
+Development Environment  macOS, XCode Android SDK Dotnet core Visual Studio for macOS nuget  Web ASP.NET Production Environment  Digital Ocean Dotnet core on Docker Dokku, docker based heroku  Platforms Targeted in One Solution  iOS Android Web ASP.</description>
     </item>
     
     <item>
@@ -52,8 +29,9 @@ So given the following JSON:
       <pubDate>Fri, 30 Nov 2012 00:00:00 +0000</pubDate>
       
       <guid>https://coda.life/2012/11/30/poor-mans-polymorphism/</guid>
-      <description>Just when you think you know everything about C&amp;hellip; a way to polymorph C data structures using field ordering and casts.
- </description>
+      <description>Just when you think you know everything about C&amp;hellip; a way to polymorph C data structures.
+How? Structs with the same field types and ordering can be casted.
+Note: Don&#39;t do anything like this. Not portable or guaranteed that I know of.   </description>
     </item>
     
     <item>

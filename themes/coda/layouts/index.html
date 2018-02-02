@@ -1,0 +1,17 @@
+{{ partial "header" . }}
+
+<div id="main">
+
+    <div id="intro">
+
+        <h1>{{ .Site.Params.BrandName | markdownify }}</h1>
+
+        <h3>{{ markdownify .Site.Params.Description }}</h3>
+
+        <h2>{{ markdownify .Site.Params.Motto }}</h2>
+
+    </div>
+
+</div>
+
+{{ partial "footer" . }}

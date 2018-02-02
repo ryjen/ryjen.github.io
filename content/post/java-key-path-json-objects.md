@@ -9,6 +9,7 @@ date: 2014-02-20
 description: "emulating key-value coding in java"
 aliases:
    - blog/2014/02/20/java-key-path-json-objects/
+draft: true
 ---
 
 After using apple's key-value coding to basically have models without writing models, I decided to write rewrite a simple wrapper for java's JSONObject that will allow similar functionality.

@@ -11,6 +11,7 @@ tags:
   - openapi
   - swagger
 title: "OpenAPI Directory & Swagger"
+draft: true
 ---
 
 Was browsing github and I came across the [OpenAPI Directory](https://apis.guru/openapi-directory/).  A good directory of API's will help in thinking of a mobile app idea.

@@ -11,53 +11,30 @@ googleAnalytics = "UA-28532156-1"
 # Define the number of posts per page
 paginate = 10
 footnotereturnlinkcontents = "↩"
-theme = "minimal"
+theme = "coda"
 
 [permalinks]
     post = "/:year/:month/:day/:slug"
 
-#[params]
-    # Tell me who you are
-    #author = "Ryan Jennings"
-    #bio = "Programmer - Musician"
-    #location = "Vancouver, Canada"
-    #site_description = "namespace for technical and musical musings"
-    #copyright  = "&copy; all rights reserved"
-    #avatar = "images/profile.jpeg"
-    #logo = "images/logo.png"
-
-    # Format dates with Go's time formatting
-    #date_format = "2006-01-02"
-
 [params]
     author = "Ryan Jennings"
-    description = "namespace for technical and musical musings"
+    description = "a namespace for technical and musical musings"
+    motto = "sometimes an ending is a new beginning"
     githubUsername = "ryjen"
-    accent = "#006a4e"
-    showBorder = true
-    backgroundColor = "white"
-    copyright  = "&copy; all rights reserved"
-    font = "Raleway" # should match the name on Google Fonts!
-    css = ["/css/app.css"]
+    copyright  = "&copy; all rights reserved, ryan jennings"
     highlight = true
     highlightStyle = "solarized-dark"
-    #highlightLanguages = ["go", "c++", "kotlin", "scala", "swift", "java"]
-
-
-# Create custom menu entries by defining a label and a link for
-# them. Since you can also link posts, you've the option the
-# place the links before or after them.
-#
-# E.g.: "Home" appears before all linked posts in the menu
-# and "Tags" / "Categories" after them.
+    brandName = "coda life"
 
 [[menu.main]]
     name  = "blog"
     url   = "/post"
+    identifier  = "rss"
     weight = 2
 
 [[menu.main]]
     name  = "music"
+    identifier  = "music"
     url   = "/music"
     weight = 3
 
@@ -67,18 +44,19 @@ theme = "minimal"
 
 [[menu.main]]
     name  = "things"
+    identifier  = "object-ungroup"
     url   = "/things"
 
 #[[menu.main]]
 #    name  = "resume"
 #    url   = "/about/resume"
 
-[[menu.icon]]
+[[menu.icons]]
     url = "mailto:ryan@coda.life"
     name = "envelope-o"
     weight = 1
 
-[[menu.icon]]
+[[menu.icons]]
     url = "https://github.com/ryjen/"
     name = "github"
     weight = 2
@@ -98,47 +76,4 @@ theme = "minimal"
 #    name = "stack-overflow"
 #    weight = 5
 
-# Enter a link for the follow button on the left
-[params.profile]
-    follow_button = "http://github.com/ryjen"
-    gravatar = "c0der78@gmail.com"
 
-[social]
-# Add your social network accounts to the profile section on the left
-# by entering your username. The links to your account will be
-# create automatically.
-    github          = "ryjen"
-    bitbucket       = ""
-    jsfiddle        = ""
-    codepen         = ""
-    foursquare      = ""
-    dribbble        = ""
-    deviantart      = ""
-    behance         = ""
-    flickr          = ""
-    instagram       = ""
-    youtube         = ""
-    vimeo           = ""
-    vine            = ""
-    medium          = ""
-    wordpress       = ""
-    tumblr          = ""
-    xing            = ""
-    linkedin        = "ryjen"
-    slideshare      = ""
-    stackoverflow   = ""
-    reddit          = "ryjen78"
-    pinterest       = ""
-    googleplus      = ""
-    facebook        = ""
-    facebook_admin  = ""
-    twitter_domain  = ""
-    twitter         = "ryjen78"
-
-# Enable and disable widgets for the right sidebar
-[params.widgets]
-    recent_articles = true
-    twitter = true
-    categories = false
-    tags = false
-    tag_cloud = true

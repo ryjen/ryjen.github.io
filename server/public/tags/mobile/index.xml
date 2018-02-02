@@ -6,7 +6,7 @@
     <description>Recent content in Mobile on coda.life</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; all rights reserved</copyright>
+    <copyright>&amp;copy; all rights reserved, ryan jennings</copyright>
     <lastBuildDate>Sun, 27 Nov 2016 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://coda.life/tags/mobile/index.xml" rel="self" type="application/rss+xml" />
@@ -18,9 +18,9 @@
       <pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate>
       
       <guid>https://coda.life/2016/11/27/microsoft-dev-stack-on-macos/</guid>
-      <description>As the tech giants becomes more friendly to other each other, I find myself wanting to evangelize a little bit.
-When Microsoft bought Xamarin, they did not understimate the power of Xamarin.Forms for building cross platform UIs. Now with the release of Visual Studio for macOS and the Dotnet Core, its officially here to stay and I&amp;rsquo;m very pleased.
-I&amp;rsquo;ve looked at a lot of cross platform solutions, this is as close as it gets to the holy grail, IMHO.</description>
+      <description>Gonna evangelize a little bit.
+When Microsoft bought Xamarin, they did not underestimate the power of Xamarin.Forms for building cross platform UIs. Now with the release of Visual Studio for macOS and the Dotnet Core, its looks like its going to stay alive.
+Development Environment  macOS, XCode Android SDK Dotnet core Visual Studio for macOS nuget  Web ASP.NET Production Environment  Digital Ocean Dotnet core on Docker Dokku, docker based heroku  Platforms Targeted in One Solution  iOS Android Web ASP.</description>
     </item>
     
   </channel>

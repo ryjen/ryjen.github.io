@@ -8,6 +8,7 @@ tags:
 date: 2012-07-04
 description: "android development"
 banner: /images/blog/droidfortunes.png
+draft: true
 ---
 
 ## Background

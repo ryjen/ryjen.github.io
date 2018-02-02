@@ -1,183 +1,167 @@
-<!DOCTYPE html>
-<html lang="en-us">
+<!doctype html>
+<html class="no-js" lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Chat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="The fortunes api serves witty antidotes from the UNIX world that relieve project tensions.">
+    <meta name="keywords" content="unix,fortunes,micrantha,ryjen,ryan,jennings,coda,humour,humor,micro,microservice,micro-service,api,poems,proverbs,cookie,definitions,joke">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="/icon/icon.png">
 
-        <title>Chat</title>
+    
+<link rel="stylesheet" href="/css/normalize.css">
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/skeleton.css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata|Lora|Raleway" rel="stylesheet">
+<style type="text/css">
 
-        <style>
+#header {
+	
+    background-color: mediumseagreen;
+    
 
-    html body {
-        font-family: Raleway, sans-serif;
-        background-color: white;
-    }
-
-    :root {
-        --accent: #006a4e;
-        --border-width:  5px ;
-    }
+    
+    color: whitesmoke;
+    
+    
+}
 
 </style>
-
 
 <link rel="stylesheet" href="/css/main.css">
 
 
- <link rel="stylesheet" href="/css/app.css"> 
 
-
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-
-
- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/solarized-dark.min.css"> 
-
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
  
 
+    <meta name="generator" content="Hugo 0.34" />
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+</head>
+<body>
 
+
+
+<div id="header" class="clearfix">
     
+    <div class="container clearfix">
+        <span id="menu-toggle">&equiv;</span>
+        <div id="brand">
+			<a href="/">
+	<img src="/image/logo-light.svg" alt="logo" width="40" height="40" /> <span>coda life</span>
+</a>
 
-    <script>hljs.initHighlightingOnLoad();</script>
-
-
-
-
-
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
- <meta name="generator" content="Hugo 0.33" />
-
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <meta name="description" content="technical and musical musings">
-        
-        <link href="/css/app.css" type="text/css" rel="stylesheet" />
-
-        
-<link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-<link rel="manifest" href="/favicon/manifest.json">
-<meta name="msapplication-TileColor" content="#006a4e">
-<meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
-<meta name="theme-color" content="#006a4e">
-
-
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28532156-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-28532156-1');
-</script>
-
-
-    </head>
-
-    <body>
-
-        <nav class="navbar navbar-default navbar-fixed-top">
-
-            <div class="container">
-
-                <div class="navbar-header">
-
-                    <a class="navbar-brand" href="/">
-                        <img src="/images/coda.svg" alt="logo" />
-                    </a>
-                    <a class="navbar-brand" href="/">coda.life</a>
-
-                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-
-                </div>
-
-                <div class="collapse navbar-collapse">
-
+        </div>
+        <nav>
+            
+                <ul class="nav navbar-nav">
                     
-                        <ul class="nav navbar-nav">
+                        <li class="nav-toggle blog">
                             
-                                <li><a href="/post">blog</a></li>
+                            <i class="fa fa-rss"></i> 
                             
-                                <li><a href="/music">music</a></li>
-                            
-                                <li><a href="/things">things</a></li>
-                            
-                        </ul>
+                            <a href="/post">blog</a>
+                        </li>
                     
-
+                        <li class="nav-toggle music">
+                            
+                            <i class="fa fa-music"></i> 
+                            
+                            <a href="/music">music</a>
+                        </li>
                     
-                        <ul class="nav navbar-nav navbar-right">
+                        <li class="nav-toggle things">
                             
-                                <li class="navbar-icon"><a href="mailto:ryan@coda.life"><i class="fa fa-envelope-o"></i></a></li>
+                            <i class="fa fa-object-ungroup"></i> 
                             
-                                <li class="navbar-icon"><a href="https://github.com/ryjen/"><i class="fa fa-github"></i></a></li>
-                            
-                        </ul>
+                            <a href="/things">things</a>
+                        </li>
                     
+                </ul>
+            
 
-                </div>
 
-            </div>
-
+            
+                <ul class="nav navbar-icons">
+                    
+                        <li class="navbar-icon"><a href="mailto:ryan@coda.life"><i class="fa fa-envelope-o"></i></a></li>
+                    
+                        <li class="navbar-icon"><a href="https://github.com/ryjen/"><i class="fa fa-github"></i></a></li>
+                    
+                </ul>
+            
         </nav>
+    </div>
+</div>
 
-<main>
+<div class="container">
+
+
+<div id="main">
 
     <h2>Chat</h2>
 
-     <div class="item">
+     <div class="card item bg-default clearfix">
 
     
     
 
-    
       
 
+    <p class="pull-right">September 9, 2015</p>
     <h4><a href="/2015/09/09/elixir-and-phoenix/">Elixir and Phoenix</a></h4>
     <h5>erlang vm chat application</h5>
-     <kbd class="item-tag">chat</kbd>  <kbd class="item-tag">elixir</kbd>  <kbd class="item-tag">erlang</kbd>  <kbd class="item-tag">phoenix</kbd>  <kbd class="item-tag">web framework</kbd> 
+
+     <span class="item-tag">chat</span>  <span class="item-tag">elixir</span>  <span class="item-tag">erlang</span>  <span class="item-tag">phoenix</span>  <span class="item-tag">web framework</span> 
 
 </div>
  
 
-</main>
+</div>
 
 
 
-        <footer>
 
-            <p class="copyright text-muted">&copy; all rights reserved</p>
+</div>
 
-        </footer>
+<div class="center">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-5084920929867043"
+         data-ad-slot="3126644849"
+         data-ad-format="auto"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div>
 
-    </body>
 
+<hr>
+
+
+
+
+<footer class="center">
+	&copy; all rights reserved, ryan jennings
+</footer>
+
+
+    <script src="/js/vendor/modernizr-3.5.0.min.js"></script>
+<script>window.jQuery || document.write('<script src="/js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+<script src="/js/plugins.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+ 
+
+
+</body>
 </html>
 

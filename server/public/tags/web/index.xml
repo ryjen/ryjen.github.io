@@ -6,22 +6,11 @@
     <description>Recent content in Web on coda.life</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; all rights reserved</copyright>
-    <lastBuildDate>Sat, 10 Jun 2017 01:33:30 -0700</lastBuildDate>
+    <copyright>&amp;copy; all rights reserved, ryan jennings</copyright>
+    <lastBuildDate>Sun, 27 Nov 2016 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://coda.life/tags/web/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>OpenAPI Directory &amp; Swagger</title>
-      <link>https://coda.life/2017/06/10/openapi-directory--swagger/</link>
-      <pubDate>Sat, 10 Jun 2017 01:33:30 -0700</pubDate>
-      
-      <guid>https://coda.life/2017/06/10/openapi-directory--swagger/</guid>
-      <description>Was browsing github and I came across the OpenAPI Directory. A good directory of API&amp;rsquo;s will help in thinking of a mobile app idea.
-Couldn&amp;rsquo;t help but notice that all the API&amp;rsquo;s implement something called OpenAPI (&amp;quot;Swagger&amp;quot;) 2.0. Ok, great, consistency in API specs, that will help if you had to write one.
-In fact, most web apps have been moving towards an architecture of an API backend and Javascript frontend that calls the API, so chances are if you had to write a web app it will have an API.</description>
-    </item>
     
     <item>
       <title>Microsoft Dev Stack on macOS</title>
@@ -29,21 +18,9 @@ In fact, most web apps have been moving towards an architecture of an API backen
       <pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate>
       
       <guid>https://coda.life/2016/11/27/microsoft-dev-stack-on-macos/</guid>
-      <description>As the tech giants becomes more friendly to other each other, I find myself wanting to evangelize a little bit.
-When Microsoft bought Xamarin, they did not understimate the power of Xamarin.Forms for building cross platform UIs. Now with the release of Visual Studio for macOS and the Dotnet Core, its officially here to stay and I&amp;rsquo;m very pleased.
-I&amp;rsquo;ve looked at a lot of cross platform solutions, this is as close as it gets to the holy grail, IMHO.</description>
-    </item>
-    
-    <item>
-      <title>Crafting a Game With CraftyJS</title>
-      <link>https://coda.life/2012/11/17/crafting-a-game-with-craftyjs/</link>
-      <pubDate>Sat, 17 Nov 2012 00:00:00 +0000</pubDate>
-      
-      <guid>https://coda.life/2012/11/17/crafting-a-game-with-craftyjs/</guid>
-      <description>Found a pretty cool javascript game engine called CraftJS that I&amp;rsquo;ve been playing with the past couple of days.
-Has support for things like Entity Component System, Collision, Sprite Maps, etc.
-Amos the Alien Amos the Alien is a small demo I made, you can check my progress there.
-First thing to do if your going to try yourself is to head over Crafty Components and download the boilerplate.</description>
+      <description>Gonna evangelize a little bit.
+When Microsoft bought Xamarin, they did not underestimate the power of Xamarin.Forms for building cross platform UIs. Now with the release of Visual Studio for macOS and the Dotnet Core, its looks like its going to stay alive.
+Development Environment  macOS, XCode Android SDK Dotnet core Visual Studio for macOS nuget  Web ASP.NET Production Environment  Digital Ocean Dotnet core on Docker Dokku, docker based heroku  Platforms Targeted in One Solution  iOS Android Web ASP.</description>
     </item>
     
   </channel>
