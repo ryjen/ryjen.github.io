@@ -5,6 +5,8 @@ description: "witty antidotes in a service"
 tags: [golang, slack, api, microservice, docker, dokku, http, rest, go, fortunes, micrantha, amazon, aws, ecs, postgres, git, css]
 ---
 
+[view the service homepage](https://fortunes.micrantha.com)
+
 #### Introduction
 
 Have always enjoyed the UNIX fortunes program, ever since I was a wee newbie.  If you aren't familiar with it (sad), yes, its like a fortune cookie.  
@@ -63,6 +65,9 @@ The server has two API's:  the standard API and the Slack API. Both use the same
 
 `TODO: add some code architecture details`
 
+
 ##### Conclusion
 
 Random fortune cookies are fun.  Slack is fun.  Golang is awesome.  Docker is pleasing.
+
+Check out [the final product](https://fortunes.micrantha.com) page.
