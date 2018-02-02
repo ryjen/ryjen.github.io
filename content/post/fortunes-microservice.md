@@ -17,7 +17,7 @@ Often I will find a fortune, I'd like to share, and would simply make a snippet 
 
 This time a Slack app has appeared on my radar as a target.
 
-### Man the Sonar
+#### Man the Sonar
 
 Cannot engage the target without some information.  
 
@@ -27,7 +27,7 @@ The existing fortunes database will provide plenty of content.  Fortunately (no 
 
 Had to make a few changes, a link table here, few fields there, but the gist is I have a postgres initilization script of fortunes.
 
-### Cut me some Slack
+#### Cut me some Slack
 
 Got the data (got the life), how does Slack care?
 
@@ -37,9 +37,9 @@ My server will then typically counter measure with what they call an "Ephemeral 
 
 The counter measure will have an attachment to give an option to make the message visible to the current channel (by means of another torpedo and counter measure).
 
-`TODO: detail more the json key parts`
+`TODO: detail more the key parts, json and oauth`
 
-### Alright Captain, Tell me About Your Ship
+#### Alright Captain, Tell me About Your Ship
 
 First, say "I was born on a pirate ship" 5 times fast. OK, nevermind.
 
@@ -49,15 +49,17 @@ In other words, I'm just running golang, in a docker container, behind nginx wit
 
 ![fortunes architecture](/image/blog/architecture.png)
 
-##### OK, What if a Torpedo Hits?
+#### OK, What if a Torpedo Hits?
 
 Yah, I don't think the world will be falling over itself to use the fortunes service, but if they do, I will start charging to spin up more droplets and load balancer.
 
 As I'm using docker, switching to AWS Fargate is possible too.
 
-##### For the Code or Gopher Geeks
+#### For the Code or Gopher Geeks
 
-As most gophers already know, the beauty of go for HTTP is you really don't need anything.  The standard library is so simple yet so effective.  Your endpoints become functions, your functions become routed to paths, and you serve.
+As most gophers already know, the beauty of go is its simplicity and its awesome packages.
+
+For HTTP is you really don't need anything.  The standard library is so simple yet so effective.  Your endpoints become functions, your functions become routed to paths, and you serve.
 
 Not only that, the html/template standard package allows for templating HTML inside your endpoint functions.
 
@@ -66,7 +68,7 @@ The server has two API's:  the standard API and the Slack API. Both use the same
 `TODO: add some code architecture details`
 
 
-##### Conclusion
+#### Conclusion
 
 Random fortune cookies are fun.  Slack is fun.  Golang is awesome.  Docker is pleasing.
 

@@ -117,7 +117,7 @@
 
 <p>This time a Slack app has appeared on my radar as a target.</p>
 
-<h3 id="man-the-sonar">Man the Sonar</h3>
+<h4 id="man-the-sonar">Man the Sonar</h4>
 
 <p>Cannot engage the target without some information.</p>
 
@@ -127,7 +127,7 @@
 
 <p>Had to make a few changes, a link table here, few fields there, but the gist is I have a postgres initilization script of fortunes.</p>
 
-<h3 id="cut-me-some-slack">Cut me some Slack</h3>
+<h4 id="cut-me-some-slack">Cut me some Slack</h4>
 
 <p>Got the data (got the life), how does Slack care?</p>
 
@@ -137,9 +137,9 @@
 
 <p>The counter measure will have an attachment to give an option to make the message visible to the current channel (by means of another torpedo and counter measure).</p>
 
-<p><code>TODO: detail more the json key parts</code></p>
+<p><code>TODO: detail more the key parts, json and oauth</code></p>
 
-<h3 id="alright-captain-tell-me-about-your-ship">Alright Captain, Tell me About Your Ship</h3>
+<h4 id="alright-captain-tell-me-about-your-ship">Alright Captain, Tell me About Your Ship</h4>
 
 <p>First, say &ldquo;I was born on a pirate ship&rdquo; 5 times fast. OK, nevermind.</p>
 
@@ -149,15 +149,17 @@
 
 <p><img src="/image/blog/architecture.png" alt="fortunes architecture" /></p>
 
-<h5 id="ok-what-if-a-torpedo-hits">OK, What if a Torpedo Hits?</h5>
+<h4 id="ok-what-if-a-torpedo-hits">OK, What if a Torpedo Hits?</h4>
 
 <p>Yah, I don&rsquo;t think the world will be falling over itself to use the fortunes service, but if they do, I will start charging to spin up more droplets and load balancer.</p>
 
 <p>As I&rsquo;m using docker, switching to AWS Fargate is possible too.</p>
 
-<h5 id="for-the-code-or-gopher-geeks">For the Code or Gopher Geeks</h5>
+<h4 id="for-the-code-or-gopher-geeks">For the Code or Gopher Geeks</h4>
 
-<p>As most gophers already know, the beauty of go for HTTP is you really don&rsquo;t need anything.  The standard library is so simple yet so effective.  Your endpoints become functions, your functions become routed to paths, and you serve.</p>
+<p>As most gophers already know, the beauty of go is its simplicity and its awesome packages.</p>
+
+<p>For HTTP is you really don&rsquo;t need anything.  The standard library is so simple yet so effective.  Your endpoints become functions, your functions become routed to paths, and you serve.</p>
 
 <p>Not only that, the html/template standard package allows for templating HTML inside your endpoint functions.</p>
 
@@ -165,7 +167,7 @@
 
 <p><code>TODO: add some code architecture details</code></p>
 
-<h5 id="conclusion">Conclusion</h5>
+<h4 id="conclusion">Conclusion</h4>
 
 <p>Random fortune cookies are fun.  Slack is fun.  Golang is awesome.  Docker is pleasing.</p>
 
