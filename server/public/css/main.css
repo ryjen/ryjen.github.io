@@ -298,6 +298,10 @@ hr {
     border-radius: 5px;
 }
 
+#header .navbar-icons li {
+    padding: 0;
+}
+
 #header li:last-child {
     margin-right: inherit;
 }

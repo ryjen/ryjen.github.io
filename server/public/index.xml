@@ -6,7 +6,6 @@
     <description>Recent content on coda.life</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; all rights reserved, ryan jennings</copyright>
     <lastBuildDate>Mon, 22 Jan 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://coda.life/index.xml" rel="self" type="application/rss+xml" />
@@ -69,7 +68,7 @@ This is how my data access works - I&amp;rsquo;m not saying its the best approac
     <item>
       <title>Books</title>
       <link>https://coda.life/things/</link>
-      <pubDate>Tue, 10 Apr 2012 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://coda.life/things/</guid>
       <description>RxJava for Android Developers If you were confused about Rx or RxJava, this book does a great job of a practical explanation. Its still in early access as of 12/20/17.
@@ -83,7 +82,7 @@ This is how my data access works - I&amp;rsquo;m not saying its the best approac
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://coda.life/music/</guid>
-      <description>Videos  SoundCloud  Other View some gear on Equipboard.com
+      <description>SoundCloud  Other View some gear on Equipboard.com
 Find canadian musicians on Bandmix.ca</description>
     </item>
     

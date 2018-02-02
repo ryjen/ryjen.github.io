@@ -28,16 +28,6 @@
   </url>
   
   <url>
-    <loc>https://coda.life/things/</loc>
-    <lastmod>2012-04-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://coda.life/about/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://coda.life/tags/amazon/</loc>
     <lastmod>2018-01-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -53,6 +43,10 @@
     <loc>https://coda.life/tags/aws/</loc>
     <lastmod>2018-01-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/things/</loc>
   </url>
   
   <url>
@@ -169,11 +163,6 @@
   </url>
   
   <url>
-    <loc>https://coda.life/music/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://coda.life/tags/phoenix/</loc>
     <lastmod>2015-09-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -204,11 +193,6 @@
   </url>
   
   <url>
-    <loc>https://coda.life/projects/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://coda.life/tags/rest/</loc>
     <lastmod>2018-01-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -234,12 +218,6 @@
   <url>
     <loc>https://coda.life/tags/</loc>
     <lastmod>2018-01-22T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://coda.life/things/</loc>
-    <lastmod>2012-04-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
