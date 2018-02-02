@@ -23,7 +23,7 @@ title: Books
 <div class="card bg-default thing">
 <h4><a href="http://a.co/4SznSAU">Tao Te Ching</a></h4>
 <img alt="Tao Te Ting" src="/image/things/tao_te_ching.jpg" />
-<p class="clearfix">An ancient chinese text that loosely means "The way" however the nature of "Tao" is that it is unknown and cannot be translated.  The Stephen Mitchell translation is recommended for westerners.</p>
+<p class="clearfix">An ancient Chinese text that loosely means "The way" however the nature of "Tao" is that it is unknown and cannot be translated.  The Stephen Mitchell translation is recommended for westerners.</p>
 </div>
 
 <div class="card bg-default thing">
