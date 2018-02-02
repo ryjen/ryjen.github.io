@@ -1,5 +1,6 @@
 ---
 title: Books
+date: 2012-04-10
 ---
 
 <div class="card bg-default thing">
@@ -75,7 +76,6 @@ While less secure than virtualization, it has proven useful for a lot of things 
 <h4><a href="http://keybase.io">Keybase</a></h4>
 <p>A nice solution for managing encryption and keys.  Has a auto-encrypt file system and a chat client.</p>
 </div>
-
 
 <p class="smaller">view more on my <a href="https://github.com/ryjen?tab=stars">starred repositories on github</a>.</p>
 

@@ -69,12 +69,22 @@ This is how my data access works - I&amp;rsquo;m not saying its the best approac
     <item>
       <title>Books</title>
       <link>https://coda.life/things/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 10 Apr 2012 00:00:00 +0000</pubDate>
       
       <guid>https://coda.life/things/</guid>
       <description>RxJava for Android Developers If you were confused about Rx or RxJava, this book does a great job of a practical explanation. Its still in early access as of 12/20/17.
  Cracking the Coding Interview Found this book to be very useful, good example problems and content just for your own enjoyment of solving if your not interviewing.
  The Clean Coder Much good advice in here, if your interested in being more professional.</description>
+    </item>
+    
+    <item>
+      <title>Videos</title>
+      <link>https://coda.life/music/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://coda.life/music/</guid>
+      <description>Videos  SoundCloud  Other View some gear on Equipboard.com
+Find canadian musicians on Bandmix.ca</description>
     </item>
     
     <item>
@@ -84,16 +94,6 @@ This is how my data access works - I&amp;rsquo;m not saying its the best approac
       
       <guid>https://coda.life/about/</guid>
       <description> &amp;nbsp; 778-240-3248  &amp;nbsp; ryan@coda.life  &amp;nbsp; [github.com/ryjen](https://github.com/ryjen?tab=repositories)   &amp;nbsp; [ca.linkedin.com/in/ryjen](http://ca.linkedin.com/in/ryjen)  &amp;nbsp; [coda.life](http://coda.life)  I currently work as a mobile application developer for a respectable software company. If you’d like, you can view my [resume](/about/resume). </description>
-    </item>
-    
-    <item>
-      <title>music</title>
-      <link>https://coda.life/music/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://coda.life/music/</guid>
-      <description>Videos  SoundCloud  Other View some gear on Equipboard.com
-Find canadian musicians on Bandmix.ca</description>
     </item>
     
     <item>
@@ -107,12 +107,21 @@ Find canadian musicians on Bandmix.ca</description>
     
     <item>
       <title>resume</title>
-      <link>https://coda.life/resume/</link>
+      <link>https://coda.life/resume/resume/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://coda.life/resume/</guid>
+      <guid>https://coda.life/resume/resume/</guid>
       <description>778-240-3248     ryan@coda.life     github.com/ryjen     ca.linkedin.com/in/ryjen    https://coda.life   (Robert) Ryan Jennings  Self-taught programmer since 2002, formally educated in Computer Systems at BCIT with distinction. Started professionally in quality assurance and embedded systems and been a part of the mobile revolution for 8 years on multiple platforms and languages.
  Pragmatism has been a guiding philosophy during education and professional life.</description>
+    </item>
+    
+    <item>
+      <title>timeline</title>
+      <link>https://coda.life/resume/timeline/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://coda.life/resume/timeline/</guid>
+      <description>2007 - something happened here    2008 - something happened here        2010 - something happened here    2011 - something happened here</description>
     </item>
     
   </channel>

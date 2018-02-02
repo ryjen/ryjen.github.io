@@ -1,5 +1,5 @@
 ---
-title: music
+title: Videos
 ---
 
 ## Videos
