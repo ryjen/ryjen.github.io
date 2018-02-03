@@ -51,9 +51,9 @@ In other words, I'm just running golang, in a docker container, behind NGINX wit
 
 #### OK, What if a Torpedo Hits?
 
-Yeah, I don't think the world will be falling over itself to use the fortunes service, but if they do, I will start charging to spin up more droplets and load balancer.
+Yeah, I don't think the world will be falling over itself to use the fortunes service, but if they do, I will start charging to spin up more droplets and a load balancer.
 
-As I'm using docker, switching to AWS Fargate is possible too.
+As I'm using docker, switching to AWS Fargate is possible too with a Docker Compose file.
 
 #### For the Code or Gopher Geeks
 

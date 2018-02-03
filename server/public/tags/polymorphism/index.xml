@@ -19,7 +19,9 @@
       <guid>https://coda.life/2012/11/30/poor-mans-polymorphism/</guid>
       <description>Just when you think you know everything about C&amp;hellip; a way to polymorph C data structures.
 How? Structs with the same field types and ordering can be casted.
-Note: Don&#39;t do anything like this. Not portable or guaranteed that I know of.   </description>
+This is an attempt at an example.
+Note: Don&#39;t do anything like this in the real world.  Example Story Given a base structure called vehicle&amp;hellip;
+typedef struct { int key; } Vehicle;  Sub structures must implement the exact types and order to cast it.</description>
     </item>
     
   </channel>

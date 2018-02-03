@@ -104,15 +104,114 @@
 
 	<h2>Poor Man&#39;s Polymorphism</h2>
 
-    <div class="text-justify"><p>Just when you think you know everything about C&hellip; a way to polymorph C data structures.</p>
+    <div class="text-justify">
+
+<p>Just when you think you know everything about C&hellip; a way to polymorph C data structures.</p>
 
 <p>How?  Structs with the same field types and ordering can be casted.</p>
 
+<p>This is an attempt at an example.</p>
+
 <div class="card bg-default">
-<span class="larger"><b>Note:</b></span> Don't do anything like this.  Not portable or guaranteed that I know of.
+<span class="larger"><b>Note:</b></span> Don't do anything like this in the real world.
 </div>
 
-<script type="text/javascript" src="http://gist.github.com/4180753.js"></script>
+<h4 id="example-story">Example Story</h4>
+
+<p>Given a base structure called vehicle&hellip;</p>
+
+<pre><code class="language-c">typedef struct 
+{
+  int key;
+} 
+Vehicle;
+</code></pre>
+
+<p>Sub structures must implement the exact types and order to cast it.</p>
+
+<p>and a similar structure called car&hellip;.</p>
+
+<pre><code class="language-c">typedef struct
+{
+  int key;
+  /* car specific */
+  int doors;
+  int wheels;
+}
+Car;
+</code></pre>
+
+<p>and a third structure called boat&hellip;</p>
+
+<pre><code class="language-c">typedef struct 
+{
+  int key;
+  /* boat specific */
+  int life_jackets;
+  int anchors;
+}
+Boat;
+</code></pre>
+
+<p>We can use a function designed for the base type with the two subtypes.</p>
+
+<div class="card bg-default">
+    <b>Note</b>: this is copy by value, not a pointer, but it shouldn't matter
+</div>
+
+<pre><code class="language-c">int key_fits_vehicle(Vehicle this, int key)
+{
+  /* check for the right key */
+  return this.key == key;
+}
+</code></pre>
+
+<h5 id="test-the-ignition">Test the Ignition</h5>
+
+<p>This is really what the black magic is all about.  We can cast a Car or Plane to a Vehicle because the field type and order is the same.</p>
+
+<pre><code class="language-c">Car car;
+car.key = key1;
+car.doors = 4;
+car.wheels = 4;
+
+Boat boat;
+boat.key = boat;
+boat.life_pjackets = 6;
+boat.anchors = 1;
+
+if (key_fits_vehicle((Vehicle) car, key1)) {
+  puts(&quot;key1 fits the car&quot;);
+} else {
+  puts(&quot;key2 does not fit the car&quot;);
+}
+
+if (key_fits_vehicle((Vehicle) car, key2)) {
+  puts(&quot;key2 fits the car&quot;);
+} else {
+  puts(&quot;key2 does not fit the car&quot;);
+}
+
+if (key_fits_vehicle((Vehicle) boat, key1)) {
+  puts(&quot;key1 fits the boat&quot;);
+} else {
+  puts(&quot;key1 does not fit the boat&quot;);
+}
+
+if (key_fits_vehicle((Vehicle) boat, key2)) {
+  puts(&quot;key2 fits the boat&quot;);
+} else {
+  puts(&quot;key2 does not fit the boat&quot;);
+}
+</code></pre>
+
+<h4 id="output">Output</h4>
+
+<pre><code class="language-bash">key1 fits the car
+key2 does not fit the car
+key1 does not fit the boat
+key2 fits the boat
+</code></pre>
 </div>
 
 </div>
