@@ -11,4 +11,10 @@ $(function() {
 		case '/things/':
 			$("#header .things").addClass("active");
 	}
+
+	
+    $("#menu-toggle").click(function() {
+        $("#header nav").slideToggle();
+    });
+
 })

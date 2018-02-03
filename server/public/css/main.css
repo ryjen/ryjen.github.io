@@ -431,20 +431,14 @@ img.logo {
     display: none;
 }
 
-/* Responsive Design */
+/* Responsiveness */
 
-@media (max-width: 850px) {
-    #brand span + span {
-        display: none;
-    }
-}
-
-@media (max-width: 750px) {
+@media (max-width: 840px) {
     #menu-toggle {
         display: inline-block;
         position: absolute;
-        right: 30px;
-        top: 15px;
+        right: 0;
+        top: 0;
     }
 
     #brand {
@@ -455,22 +449,16 @@ img.logo {
         display: none;
     }
     #header li {
+        text-align: left;
         display: block;
-        line-height: 2em;
     }
-    #header li:before, #header li + li:before {
-        content: "⇢ ";
+    #header .navbar-icons {
+        display: block;
     }
 
-    #brand span + span {
-        display: inline-block;
-    }
-}
-
-
-@media (max-width: 420px) {
-    #brand span + span {
-        display: none;
+    #header .navbar-icons li {
+        display:  inline-block;
+        padding-left:  1em;
     }
 }
 
