@@ -15,6 +15,7 @@
 <link rel="stylesheet" href="/css/normalize.css">
 <link rel="stylesheet" href="/css/font-awesome.min.css">
 <link rel="stylesheet" href="/css/skeleton.css">
+<link rel="stylesheet" href="/css/highlight.css">
 <link href="https://fonts.googleapis.com/css?family=Inconsolata|Lora|Raleway" rel="stylesheet">
 <style type="text/css">
 
@@ -103,339 +104,292 @@
 
 	<h2>C Sqlite Tricks</h2>
 
-    <div class="text-justify"><p>Well, I thought I would share some tricks I use for easy data CRUD&rsquo;s in C (potentially C++/ObjC but its lacking typesafety).  I&rsquo;m using sqlite here, but could apply to any database.</p>
+    <div class="text-justify">
 
-<p>This is how my data access works - I&rsquo;m not saying its the best approach, its just how its evolved for me.</p>
+<h4 id="introduction">Introduction</h4>
 
-<pre><code class="language-c">    /* The account table name */
-    #define ACCOUNT_TABLE &quot;account&quot;
+<p>Thought I would share some tricks I use for easy data CRUD&rsquo;s in C.  I&rsquo;m using Sqlite here, but could apply to any database.</p>
 
-    /* a structure representing the account fields */
-    field_map account_values[] = {
-      {&quot;login&quot;, &amp;acc-&gt;login, SQL_TEXT},
-      {&quot;email&quot;, &amp;acc-&gt;email, SQL_TEXT},
-      {&quot;password&quot;, &amp;acc-&gt;password, SQL_TEXT},
-      {&quot;timezone&quot;, &amp;acc-&gt;timezone, SQL_INT},
-      {0}
-    };
+<p>Not saying its the best approach at all (nor <a href="https://github.com/ryjen/db">ryjen/db</a>), this is just how it evolved for me.</p>
 
-    /* saves the fields to the database */
-    acc-&gt;id = db_save(account_values, ACCOUNT_TABLE, acc-&gt;id);
-</code></pre>
+<h4 id="mapping">Mapping</h4>
 
-<p>As you can see, saving a structure is as simple as creating a field_map table and calling db_save.</p>
-
-<pre><code class="language-c">   /* loads one account by id
-    * the query results are assigned to the pointers in the table
-    */
-    if(db_load_by_id(account_values, ACCOUNT_TABLE, acc-&gt;id) != SQL_OK)
-      fprintf(stderr, &quot;could not load account&quot;);
-
-    /* a callback method */
-    void load_account_callback(sql_stmt *stmt);
-
-    /* load all accounts using the callback method
-     * query results are sent to the callback
-     */
-    if(db_load_all(ACCOUNT_TABLE, load_account_callback) != SQL_OK)
-      fprintf(stderr, &quot;could not load accounts&quot;);
-</code></pre>
-
-<p>Loading is the same for single instances, but I use a callback method to load multiple instances.</p>
-
-<p>The core of my data access is the field_map structure, which determines how to save each field to the database.</p>
+<p>The core of my data access is the FieldMap structure, which determines how to save each field to the database.</p>
 
 <pre><code class="language-c">    /*
      * this is the magical table used to communicate between memory and the database
      */
-    typedef struct field_map {
+    typedef struct FieldMap {
       const char   *name;        /* name of the field */
       void        *value;        /* a pointer to the value of the field */
       int         type;          /* type of value */
       const void   *arg1;        /* additional argument */
       const void   *arg2;        /* additional argument */
       int         flags;         /* usage flags */
-    } field_map;
+    } FieldMap;
 
     /* callback for custom field types */
-    typedef int (*custom_field_t) (sql_stmt *, int column, field_map *field);
+    typedef int (*CustomField) (sqlite3_stmt *, int column, FieldMap *field);
 
-    typedef void (*sql_callback_t) (sql_stmt *);
+    typedef void (*DbCallback) (sqlite3_stmt *);
 </code></pre>
 
-<p>The implementations for save/load are basically just wrappers for the actual insert/update/select query methods.</p>
+<div class="card bg-default">
+<b>Note</b>: these examples will create this table dynamically with an object, however this can be used as a static table.
 
-<pre><code class="language-c">    /**
-     * saves a field_map.  does an insert/update based on id == 0
-     */
-    sql_int64 db_save(field_map * table, const char *tableName, sql_int64 id)
-    {
-      if (id == 0) {
-        if (sql_insert_query(table, tableName) != SQL_OK)
-            fprintf(stderr, &quot;could not insert to %s&quot;, tableName);
-        return db_last_insert_rowid();
-      } else {
-        if (sql_update_query(table, tableName, id) != SQL_OK)
-            fprintf(stderr, &quot;could not update %s&quot;, tableName);
+Basically you would have to:<br><br>
 
-        return id;
-      }
-    }
+<ol>
+<li>define a static dummy variable (for account in this case)</li>
+<li>build the static mapping table with the dummy variable</li>
+<li>do pointer math to subtract the dummy variable and add the real variable</li>
+</div>
 
-    /**
-    * loads a field_map.
-    * @param baseData is the base structure used in the field_map
-    * @param table the field_map
-    * @param tableName the name of the table
-    * @param alloc the callacbk to create a new instance of data structure
-    * @param on_load callback when a row has been loaded
-    * @param constraints contraints for the sql query
-    */
-    int db_load_all(const char *tableName, sql_callback_t callback, const char *constraints, ...)
-    {
-      char buf[1024] = {0};
+<h5 id="example-1-saving">Example 1 - Saving</h5>
 
-      if(constraints) {
-        va_list args;
+<p>This high level example shows building a quick table for each field we want to save in the database.   In this case, an account object.</p>
 
-        va_start(args, constraints);
+<pre><code class="language-c">/* The account table name */
+#define ACCOUNT_TABLE &quot;account&quot;
 
-        vsnprintf(buf, sizeof(buf), constraints, args);
+/* a structure representing the account fields */
+FieldMap account_values[] = {
+  {&quot;login&quot;, &amp;acc-&gt;login, SQL_TEXT},
+  {&quot;email&quot;, &amp;acc-&gt;email, SQL_TEXT},
+  {&quot;password&quot;, &amp;acc-&gt;password, SQL_TEXT},
+  {&quot;timezone&quot;, &amp;acc-&gt;timezone, SQL_INT},
+  {0}
+};
 
-        va_end(args);
-      }
-
-      if (sql_select_query(0, tableName, callback, buf) != SQL_OK) {
-        fprintf(stderr, &quot;could not load from %s&quot;, tableName);
-        return 0;
-      }
-
-      return 1;
-    }
-
-    /**
-     * loads a field_map by id.  Data will be loaded to the base structure used in the field_map table.
-     */
-    int db_load_by_id(field_map *table, const char *tablename, sql_int64 id)
-    {
-      char buf[1024] = {0};
-
-      sprintf(buf, &quot;where %s='%lld'&quot;, tablenameid(tablename), id);
-
-      if(sql_select_query(0, table, tablename, 0, buf) != SQL_OK) {
-        fprintf(stderr, &quot;could not load from %s&quot;, tablename);
-        return 0;
-      }
-
-      return 1;
-    }
+/* saves the fields to the database */
+acc-&gt;id = db_save(account_values, ACCOUNT_TABLE, acc-&gt;id);
 </code></pre>
 
-<p>Nothing too crazy there, except for the sql_select_query parameters which I&rsquo;ll get to later.</p>
-
-<p>We have to have a way to bind the field_map to the queries, so the following implementations take care of that:</p>
-
-<pre><code class="language-c">    /**
-     * binds a single field_map value to a query
-     */
-    int sql_bind_table_value(sql_stmt * stmt, int column, field_map * field)
-    {
-      if (field-&gt;value == 0) {
-        return sql_bind_null(stmt, column);
-      }
-      switch (field-&gt;type) {
-      case SQL_INT:
-        return sql_bind_int(stmt, column, *((int*) field-&gt;value));
-      case SQL_TEXT:
-        {
-            const char *str = *((const char *) field-&gt;value);
-            return sql_bind_text(stmt, column, str, strlen(str), 0);
-        }
-      case SQL_DOUBLE:
-        return sql_bind_double(stmt, column, *((double*) field-&gt;value));
-      case SQL_FLOAT:
-        return sql_bind_float(stmt, column, *((float*) field-&gt;value));
-      case SQL_CUSTOM:
-        {
-            custom_sql func = (custom_sql) (field-&gt;arg1);
-            assert(func != 0);
-            return (*func) (stmt, column, field);
-        }
-      default:
-        fprintf(stderr, &quot;unknown save type for field %s&quot;, field-&gt;name);
-        return SQL_NONTYPE;
-      }
-    }
-
-    /**
-     * binds a field_map values to a query
-     */
-    int sql_bind_values(sql_stmt * stmt, field_map * table)
-    {
-      for (int i = 0; table[i].name != 0; i++) {
-        int err = sql_bind_table_value(stmt, i + 1, &amp;table[i]);
-
-        if (err != SQL_OK)
-            return err;
-      }
-
-      return SQL_OK;
-    }
+<pre><code class="language-c">sqlite3_int64 db_save(FieldMap *table, const char *tableName, sqlite3_int64 *id)
+{
+  if (id == 0) {
+    if (db_insert_query(table, tableName) != SQL_OK)
+        error(&quot;could not insert&quot;);
+    return db_last_insert_rowid();
+  } else {
+    if (db_update_query(table, tableName, *id) != SQL_OK)
+        error(&quot;could not update&quot;,);
+    return id;
+  }
+}
 </code></pre>
 
-<p>Note: I use SQL_FLOAT and SQL_DOUBLE, they both point to SQLITE3_FLOAT, however when casting we need to know the actual type.</p>
+<h4 id="example-2-deeper-into-saving">Example 2 - Deeper into Saving</h4>
 
-<p>Now for the query methods.  They try to follow the same basic principle - create the query, bind the values, execute</p>
+<p>The first part of saving is inserting.  The steps are to build a query, bind the values, and execute.  In the case the values from the field map table for an account.</p>
 
-<pre><code class="language-c">    /**
-     * insert query using a field_map
-     */
-    int sql_insert_query(field_map * table, const char *tablename)
-    {
-      sql_stmt *stmt;
-      char buf[1024] = { 0 };
-      char columns[1024] = { 0 };
-      char params[1024] = { 0 };
-      int i, len;
+<pre><code class="language-c">int sql_insert_query(FieldMap *table, const char *tablename)
+{
+  sqlite3_stmt *stmt;
+  char buf[1024] = { 0 };
+  char columns[1024] = { 0 };
+  char params[1024] = { 0 };
+  int len;
 
-      for (i = 0; table[i].name != 0; i++) {
-        strcat(columns, table[i].name);
-        strcat(params, &quot;?&quot;);
+  /* create a csv list of columns and params */
+  db_build_columns(table, columns);
+  db_build_params(table, params);
 
-        if (table[i + 1].name != 0) {
-            strcat(columns, &quot;,&quot;);
-            strcat(params, &quot;,&quot;);
-        }
-      }
+  len =  sprintf(buf, &quot;INSERT INTO %s (%s) VALUES(%s)&quot;, tablename, columns,
+        params);
 
-      len =  sprintf(buf, &quot;insert into %s (%s) values(%s)&quot;, tablename, columns,
-            params);
+  if (sqlite3_query(buf, len, &amp;stmt) != SQL_OK) {
+    return sql_finalize(stmt);
+  }
 
-      if (sql_query(buf, len, &amp;stmt) != SQL_OK) {
-        return sql_finalize(stmt);
-      }
+  if (sqlite3_bind_values(stmt, table) != SQL_OK) {
+    return sql_finalize(stmt);
+  }
 
-      if (sql_bind_values(stmt, table) != SQL_OK) {
-        return sql_finalize(stmt);
-      }
+  /* execute */
+  sqlite3_step(stmt);
 
-      /* execute */
-      sql_step(stmt);
-
-      return sql_finalize(stmt);
-    }
-
-    /**
-     * updates query using a field_map
-     */
-    int sql_update_query(field_map * table, const char *tablename, sql_int64 id)
-    {
-      sql_stmt *stmt;
-      char buf[1024] = { 0 };
-      char params[1024] = { 0 };
-      int i, len;
-
-      for (i = 0; table[i].name != 0; i++) {
-        strcat(params, table[i].name);
-        strcat(params, &quot;=?&quot;);
-
-        if (table[i + 1].name != 0) {
-            strcat(params, &quot;,&quot;);
-        }
-      }
-
-      len = sprintf(buf, &quot;update %s set %s where %s=%&quot; PRId64, tablename,
-              params, tablenameid(tablename), id);
-
-      if (sql_query(buf, len, &amp;stmt) != SQL_OK) {
-        return sql_finalize(stmt);
-      }
-
-      if (sql_bind_values(stmt, table) != SQL_OK)
-        return sql_finalize(stmt);
-
-      /* execute */
-      sql_step(stmt);
-
-      return sql_finalize(stmt);
-    }
+  return sqlite3_finalize(stmt);
+}
 </code></pre>
 
-<p>The select query is simplified by having a callback for custom loading.  You can however use a field_map table to load a single instance.</p>
+<div class="card bg-default">
+Updating is basically the same steps, just a different query.
+</div>
 
-<pre><code class="language-c">    /**
-     * we have a pointer to a field value, so if we do pointer math we can apply the field value to
-     * structures of the same type/size.  Thats what the optional base/data parameters are for.
-     */
-    void sql_load_columns(sql_stmt *stmt, int i, field_map *field)
+<h4 id="example-3-binding">Example 3 - Binding</h4>
+
+<p>Have to have a way to bind the FieldMap to the queries, so the following implementations take care of that.</p>
+
+<pre><code class="language-c">int db_bind_values(sql_stmt *stmt, FieldMap *table)
+{
+  for (int i = 0; table[i].name != 0; i++) {
+    int err = sql_bind_table_value(stmt, i+1, &amp;table[i]);
+
+    if (err != SQL_OK)
+        return err;
+  }
+
+  return SQL_OK;
+}
+</code></pre>
+
+<pre><code class="language-c">/*
+ * binds a single FieldMap value to a query
+ */
+int db_bind_table_value(sqlite3_stmt *stmt, int column, FieldMap *field)
+{
+  if (field-&gt;value == 0) {
+    return sqlite3_bind_null(stmt, column);
+  }
+
+  switch (field-&gt;type) {
+  case SQL_INT:
+    return sqlite3_bind_int(stmt, column, *((int*) field-&gt;value));
+  case SQL_TEXT:
     {
-      switch (field-&gt;type) {
-      case SQL_INT:
-          field_value(int, field, base, data) =  sql_column_int(stmt, i);
+        const char *str = *((const char *) field-&gt;value);
+        return sqlite3_bind_text(stmt, column, str, strlen(str), 0);
+    }
+  case SQL_DOUBLE:
+    return sqlite3_bind_double(stmt, column, *((double*) field-&gt;value));
+  case SQL_FLOAT:
+    return sqlite3_bind_float(stmt, column, *((float*) field-&gt;value));
+  case SQL_CUSTOM:
+    {
+        custom_sql func = (custom_sql) (field-&gt;arg1);
+        assert(func != 0);
+        return (*func) (stmt, column, field);
+    }
+  default:
+    error(&quot;unknown save type for field %s&quot;, field-&gt;name);
+    return SQL_NONTYPE;
+  }
+}
+</code></pre>
+
+<h4 id="example-4-loading">Example 4 - Loading</h4>
+
+<p>This high level example shows loading an account by an id using the same table.</p>
+
+<p>The the query results are assigned to the pointers in the table.</p>
+
+<pre><code class="language-c">/* loads one account by id */
+res = db_load_by_id(account_values, ACCOUNT_TABLE, acc-&gt;id);
+</code></pre>
+
+<pre><code class="language-c">int db_load_by_id(FieldMap *table, const char *tablename, sql_int64 id)
+{
+  char buf[1024] = {0};
+
+  sprintf(buf, &quot;where %s='%lld'&quot;, tablenameId(tablename), id);
+
+  if(db_select_query(0, table, tablename, 0, buf) != SQL_OK) {
+    error(&quot;could not load&quot;);
+    return 0;
+  }
+
+  return 1;
+}
+</code></pre>
+
+<p>Load multiple accounts by using a callback method.</p>
+
+<pre><code class="language-c">res = db_load_all(ACCOUNT_TABLE, load_account_callback);
+</code></pre>
+
+<pre><code class="language-c">int db_load_all(const char *tableName, DbCallback callback)
+{
+  if (db_select_query(0, tableName, callback, 0) != SQL_OK) {
+    error(&quot;could not load&quot;);
+    return 0;
+  }
+
+  return 1;
+}
+</code></pre>
+
+<h4 id="example-5-querying">Example 5 - Querying</h4>
+
+<p>Querying is not too complicated.  Its the typical process of create and execute looping the results.  For each row it will:</p>
+
+<ol>
+<li>loading columns into the field map</li>
+<li>issues the callback if provided</li>
+</ol>
+
+<pre><code class="language-c">int sql_select_query(FieldMap *table, const char *tablename, DbCallback callback, const char *constraints)
+{
+  sqlite3_stmt *stmt;
+  char buf[1024] = { 0 };
+  char columns[1024] = { 0 };
+  int column, len;
+
+  /* creates a csv list of columns */
+  db_build_columns(table, columns);
+
+  len = sprintf(buf, &quot;SELECT %s,%s FROM %s %s&quot;,
+            tablenameId(tablename), columns,
+            tablename,
+            constraints ? constraints : &quot;&quot;);
+
+  if (sqlite3_query(buf, len, &amp;stmt) != SQL_OK) {
+      return sqlite3_finalize(stmt);
+  }
+  for (err = sqlite3_step(stmt); err != SQL_DONE; err = sqlite3_step(stmt)) {
+
+      /* check for a table to load */
+      for (column = 0; table &amp;&amp; table[column].name != 0; column++) {
+
+          /* pass a pointer to the current position in the table */
+          db_load_column(stmt, column+1, &amp;table[column]);
+      }
+
+      /* check for a callback */
+      if(callback) {
+          callback(stmt);
+      }
+  }
+  return sqlite3_finalize(stmt);
+}
+</code></pre>
+
+<h4 id="example-6-deeper-into-querying">Example 6 - Deeper into Querying</h4>
+
+<p>You saw that querying will load each column in a row.  This function shows how that is done.</p>
+
+<pre><code class="language-c">
+void db_load_column(sqlite3_stmt *stmt, int column, FieldMap *field)
+{
+  switch (field-&gt;type) {
+  case SQL_INT:
+      field_value(int, field) =  sqlite3_column_int(stmt, column);
+      break;
+  case SQL_TEXT:
+      field_value(const char *, field) = str_dup(sqlite3_column_str(stmt, column));
+      break;
+  case SQL_FLOAT:
+      field_value(float, field) = sqlite3_column_float(stmt, column);
+      break;
+  case SQL_DOUBLE:
+      field_value(double, field) = sqlite3_column_double(stmt, column);
+      break;
+  case SQL_CUSTOM:
+      {
+          custom_sql *func =  (custom_sql *) field-&gt;arg1;
+          assert(func != 0);
+          (*func) (stmt, column, field);
           break;
-      case SQL_TEXT:
-          field_value(const char *, field, base, data) = str_dup(sql_column_str(stmt, i));
-          break;
-      case SQL_FLOAT:
-          field_value(float, field, base, data) = sql_column_float(stmt, i);
-          break;
-      case SQL_DOUBLE:
-          field_value(double, field, base, data) = sql_column_double(stmt, i);
-          break;
-      case SQL_CUSTOM:
-          {
-              custom_sql *func =  (custom_sql *) field-&gt;arg1;
-              assert(func != 0);
-              (*func) (stmt, i, field);
-              break;
-          }
       }
-    }
-
-    /**
-     * create the select query and step through the results using callbacks
-     */
-    int sql_select_query(field_map * table, const char *tablename, sql_callback_t callback, const char *constraints)
-    {
-      sql_stmt *stmt;
-      char buf[1024] = { 0 };
-      char columns[1024] = { 0 };
-      int i, len;
-
-      for (i = 0; table[i].name != 0; i++) {
-          strcat(columns, table[i].name);
-
-          if (table[i + 1].name != 0) {
-              strcat(columns, &quot;,&quot;);
-          }
-      }
-
-      len = sprintf(buf, &quot;select %s,%s from %s %s&quot;,
-                tablenameid(tablename), columns,
-                tablename,
-                constraints ? constraints : &quot;&quot;);
-
-      if (sql_query(buf, len, &amp;stmt) != SQL_OK) {
-          return sql_finalize(stmt);
-      }
-      for (err = sql_step(stmt); err != SQL_DONE; err = sql_step(stmt)) {
-
-          /* check for a table to load */
-          for (int i = 0; table &amp;&amp; table[i].name != 0; i++) {
-
-              sql_load_columns(stmt, i+2, &amp;table[i]);
-          }
-
-          /* check for a callback */
-          if(callback) {
-              callback(stmt);
-          }
-      }
-      return sql_finalize(stmt);
-    }
+  }
+}
 </code></pre>
 
-<p>There are still some utility functions and defines used throughout this code.  There is a lot of cleanup and error checking to do here as well.   But you should get the general idea.</p>
+<p>The <code>field_value</code> macro turns the field map into something we can assign a result to.</p>
+
+<h4 id="conclusion">Conclusion</h4>
+
+<p>C is already a very verbose language, but defining and using a table structure for database operations saves a lot of boiler plate code.</p>
 </div>
 
 </div>
@@ -551,7 +505,11 @@
 <script>window.jQuery || document.write('<script src="/js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
 <script src="/js/plugins.js"></script>
 <script src="/js/nav.js"></script>
+<script src="/js/vendor/highlight.pack.js"></script>
 <script src="/js/main.js"></script>
+
+
+<script>hljs.initHighlightingOnLoad();</script>
 
 
 

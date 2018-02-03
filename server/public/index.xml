@@ -20,7 +20,7 @@
       <description>view the service homepage
 Introduction Have always enjoyed the UNIX fortunes program, ever since I was a wee newbie. If you aren&amp;rsquo;t familiar with it (sad), yes, its like a fortune cookie.
 Except that it can be more technical in nature but not always. It also has poems, quotations, and if enabled - offensive content.
-Often I will find a fortune, I&amp;rsquo;d like to share, and would simply make a snippet of my terminal.</description>
+Often I would find a fortune I&amp;rsquo;d like to share and simply make a snippet of my terminal.</description>
     </item>
     
     <item>
@@ -61,9 +61,10 @@ Note: Don&#39;t do anything like this. Not portable or guaranteed that I know of
       <pubDate>Tue, 15 May 2012 00:00:00 +0000</pubDate>
       
       <guid>https://coda.life/2012/05/15/c-sqlite-tricks/</guid>
-      <description>Well, I thought I would share some tricks I use for easy data CRUD&amp;rsquo;s in C (potentially C++/ObjC but its lacking typesafety). I&amp;rsquo;m using sqlite here, but could apply to any database.
-This is how my data access works - I&amp;rsquo;m not saying its the best approach, its just how its evolved for me.
-/* The account table name */ #define ACCOUNT_TABLE &amp;quot;account&amp;quot; /* a structure representing the account fields */ field_map account_values[] = { {&amp;quot;login&amp;quot;, &amp;amp;acc-&amp;gt;login, SQL_TEXT}, {&amp;quot;email&amp;quot;, &amp;amp;acc-&amp;gt;email, SQL_TEXT}, {&amp;quot;password&amp;quot;, &amp;amp;acc-&amp;gt;password, SQL_TEXT}, {&amp;quot;timezone&amp;quot;, &amp;amp;acc-&amp;gt;timezone, SQL_INT}, {0} }; /* saves the fields to the database */ acc-&amp;gt;id = db_save(account_values, ACCOUNT_TABLE, acc-&amp;gt;id);  As you can see, saving a structure is as simple as creating a field_map table and calling db_save.</description>
+      <description>Introduction Thought I would share some tricks I use for easy data CRUD&amp;rsquo;s in C. I&amp;rsquo;m using Sqlite here, but could apply to any database.
+Not saying its the best approach at all (nor ryjen/db), this is just how it evolved for me.
+Mapping The core of my data access is the FieldMap structure, which determines how to save each field to the database.
+/* * this is the magical table used to communicate between memory and the database */ typedef struct FieldMap { const char *name; /* name of the field */ void *value; /* a pointer to the value of the field */ int type; /* type of value */ const void *arg1; /* additional argument */ const void *arg2; /* additional argument */ int flags; /* usage flags */ } FieldMap; /* callback for custom field types */ typedef int (*CustomField) (sqlite3_stmt *, int column, FieldMap *field); typedef void (*DbCallback) (sqlite3_stmt *);  Note: these examples will create this table dynamically with an object, however this can be used as a static table.</description>
     </item>
     
     <item>

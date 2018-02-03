@@ -12,29 +12,11 @@
     
     
     <item>
-      <title>Amazon</title>
-      <link>https://coda.life/tags/amazon/</link>
-      <pubDate>Mon, 22 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://coda.life/tags/amazon/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Api</title>
       <link>https://coda.life/tags/api/</link>
       <pubDate>Mon, 22 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>https://coda.life/tags/api/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Aws</title>
-      <link>https://coda.life/tags/aws/</link>
-      <pubDate>Mon, 22 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://coda.life/tags/aws/</guid>
       <description></description>
     </item>
     
@@ -66,15 +48,6 @@
     </item>
     
     <item>
-      <title>Css</title>
-      <link>https://coda.life/tags/css/</link>
-      <pubDate>Mon, 22 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://coda.life/tags/css/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Development</title>
       <link>https://coda.life/tags/development/</link>
       <pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate>
@@ -102,11 +75,11 @@
     </item>
     
     <item>
-      <title>Ecs</title>
-      <link>https://coda.life/tags/ecs/</link>
+      <title>Droplet</title>
+      <link>https://coda.life/tags/droplet/</link>
       <pubDate>Mon, 22 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://coda.life/tags/ecs/</guid>
+      <guid>https://coda.life/tags/droplet/</guid>
       <description></description>
     </item>
     
@@ -183,11 +156,11 @@
     </item>
     
     <item>
-      <title>Microservice</title>
-      <link>https://coda.life/tags/microservice/</link>
+      <title>Micro Service</title>
+      <link>https://coda.life/tags/micro-service/</link>
       <pubDate>Mon, 22 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://coda.life/tags/microservice/</guid>
+      <guid>https://coda.life/tags/micro-service/</guid>
       <description></description>
     </item>
     
