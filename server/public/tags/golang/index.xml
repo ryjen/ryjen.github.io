@@ -20,7 +20,7 @@
       <description>view the service homepage
 Introduction Have always enjoyed the UNIX fortunes program, ever since I was a wee newbie. If you aren&amp;rsquo;t familiar with it (sad), yes, its like a fortune cookie.
 Except that it can be more technical in nature but not always. It also has poems, quotations, and if enabled - offensive content.
-Often I would find a fortune I&amp;rsquo;d like to share and simply make a snippet of my terminal.</description>
+Often I would find a fortune I&amp;rsquo;d like to share and pipe it to a snippet from the terminal.</description>
     </item>
     
   </channel>

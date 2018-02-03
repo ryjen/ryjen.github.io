@@ -13,7 +13,7 @@ Have always enjoyed the [UNIX fortunes](https://en.wikipedia.org/wiki/Fortune_%2
 
 Except that it can be more technical in nature but not always.  It also has poems, quotations, and if enabled - offensive content.  
 
-Often I would find a fortune I'd like to share and simply make a snippet of my terminal.  There has to and must be a better way!
+Often I would find a fortune I'd like to share and pipe it to a snippet from the terminal.  There has to and must be a better way!  
 
 This time a Slack application has appeared on my radar as a target.
 

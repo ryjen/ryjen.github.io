@@ -1,8 +1,9 @@
 ---
 title: Microsoft Dev Stack on macOS
 tags:
-  - development
-  - programming
+  - dotnet
+  - xamarin
+  - visual studio
   - cross platform
   - mobile
   - web

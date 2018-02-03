@@ -61,12 +61,6 @@
   </url>
   
   <url>
-    <loc>https://coda.life/tags/development/</loc>
-    <lastmod>2016-11-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://coda.life/tags/docker/</loc>
     <lastmod>2018-01-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -75,6 +69,12 @@
   <url>
     <loc>https://coda.life/tags/dokku/</loc>
     <lastmod>2018-01-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/tags/dotnet/</loc>
+    <lastmod>2016-11-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -170,7 +170,7 @@
   
   <url>
     <loc>https://coda.life/tags/programming/</loc>
-    <lastmod>2016-11-27T00:00:00+00:00</lastmod>
+    <lastmod>2012-11-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -208,6 +208,12 @@
   </url>
   
   <url>
+    <loc>https://coda.life/tags/visual-studio/</loc>
+    <lastmod>2016-11-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://coda.life/tags/web/</loc>
     <lastmod>2016-11-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -216,6 +222,12 @@
   <url>
     <loc>https://coda.life/tags/web-framework/</loc>
     <lastmod>2015-09-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/tags/xamarin/</loc>
+    <lastmod>2016-11-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

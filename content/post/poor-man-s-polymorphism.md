@@ -88,7 +88,7 @@ car.wheels = 4;
 
 Boat boat;
 boat.key = boat;
-boat.life_pjackets = 6;
+boat.life_jackets = 6;
 boat.anchors = 1;
 
 if (key_fits_vehicle((Vehicle) car, key1)) {
