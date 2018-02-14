@@ -4,40 +4,50 @@ layout: plain
 ---
 
 <div id="page-resume">
+<h1>(Robert) Ryan Jennings</h1>
+<div class="row" id="contact-info">
+<div class="six columns">
+    <img id="avatar" alt="ryan jennings" src="/image/profile.jpeg" />
+</div>
+<div class="links clearfix">
+<div>
+    <i class="fa fa-phone"></i><a href="tel:1-778-240-3248">778-240-3248</a>
+</div>
 
-<table id="contact-info">
-<tr><td>
-<img id="avatar" alt="ryan jennings" src="/images/profile.jpeg" />
-</td><td>
+<div>
+    <i class="fa fa-envelope"></i><a href="mailto:ryan@coda.life">ryan@coda.life</a>
+</div>
 
-<table class="borderless">
-<tr><td> <i class="fa fa-phone"></i> </td><td> <a href="tel:1-778-240-3248">778-240-3248</a> </td></tr>
-<tr><td> <i class="fa fa-envelope"></i> </td><td> <a href="mailto:ryan@coda.life">ryan@coda.life</a> </td></tr>
-<tr><td> <i class="fa fa-github"></i> </td><td> <a href="https://github.com/ryjen?tab=repositories">github.com/ryjen</a> </td></tr>
-<tr><td> <i class="fa fa-linkedin"></i> </td><td> <a href="http://ca.linkedin.com/in/ryjen">ca.linkedin.com/in/ryjen</a></td></tr>
-<tr><td> <i class="fa fa-globe"></i> </td><td> <a href="https://coda.life">https://coda.life</td></tr>
-</table>
+<div>
+    <i class="fa fa-github"></i><a href="https://github.com/ryjen?tab=repositories">github.com/ryjen</a>
+</div>
 
-</td></tr></table>
-
-<div class="well">
-<h1>(Robert) Ryan Jennings </h1>
+<div>
+    <i class="fa fa-globe"></i><a href="https://coda.life">https://coda.life</a>
+</div>
+</div>
+</div>
+<div class="card bg-default">
 
 <p>Self-taught programmer since 2002, formally educated in Computer Systems at BCIT with distinction.  Started professionally in quality assurance and embedded systems and been a part of the mobile revolution for 8 years on multiple platforms and languages.</p>
-
+<br>
 <p>
-Pragmatism has been a guiding philosophy during education and professional life. Hobbies other than different technologies include guitar/jazz and biking.
+Pragmatism is a guiding philosophy during education and professional life. Hobbies include learning different technologies, guitar, recording, jazz and biking.
 </p>
 
 </div>
 
-<h1> Work Experience </h1>
+<h2> Work Experience </h2>
 
-<div class="well">
+<div class="card bg-default">
 
 <h2> <a href="http://quickmobile.com/">Quickmobile</a> </h2>
 
 <h3> Mobile Application Developer, July 2015 - Present </h3>
+
+<span class="keywords">
+Android, iOS, Beacons, SQL, Tablet, BLE, Notifications, JIRA, UX, Agile, SCRUM, Iterative, RxJava, Git, Gradle, VeraCode, Unit Testing, Continuous Integration, Scripting, Web Services, REST
+</span>
 
 <ul>
 <li>Responsible for delivery customizations and components on Android</li>
@@ -49,9 +59,6 @@ Pragmatism has been a guiding philosophy during education and professional life.
 <li>Worked on 
 </ul>
 
-<span class="keywords">
-Android, iOS, Beacons, SQL, Tablet, BLE, Notifications, JIRA, UX, Agile, SCRUM, Iterative, RxJava, Git, Gradle, VeraCode, Unit Testing, Continuous Integration, Scripting, Web Services, REST
-</span>
 </div>
 <!--
 <ul>
@@ -66,7 +73,7 @@ Android, iOS, Beacons, SQL, Tablet, BLE, Notifications, JIRA, UX, Agile, SCRUM, 
 </div>-->
 
 <!--
-<div class="well">
+<div class="card bg-default">
 
 <h2> <a href="http://linuxmagic.com/">Linux Magic</a> </h2>
 
@@ -83,11 +90,16 @@ Android, iOS, Beacons, SQL, Tablet, BLE, Notifications, JIRA, UX, Agile, SCRUM, 
 
 </div>
 -->
-<div class="well">
+<div class="card bg-default">
 
 <h2> <a href="http://epactnetwork.com/">ePACT</a>
 
 <h3> Senior Mobile Developer, July 3 2014 - March 2015 </h3>
+
+<span class="keywords">
+Android, iPhone, SQL, JSON, Web Service, REST, PDF, Scripting, Shared Library, UX, Agile, JIRA, Git, Appium, Automated Functional Testing, Cross-Device Functionality
+</span>
+
 
 <ul>
 <li>Implemented version 1.0 of native Android &amp; iPhone apps</li>
@@ -102,16 +114,17 @@ Android, iOS, Beacons, SQL, Tablet, BLE, Notifications, JIRA, UX, Agile, SCRUM, 
 <li>Implemented secure synchronization of data for offline viewing across mobile platforms (sqlcipher, json)</li>
 <li>Implement dynamic data display for different forms across mobile platforms</li>
 <li>Scripted build processes and documented work for both iOS and Android</li>
-<li>Made proof of concept library in C that shares code between mobile platforms automatically</li>
+<li>Made proof of concept library in C that shares code between mobile platforms through an automated process</li>
 <li>Implemented UI and UX according to specifications and wireframe</li>
 </ul>
 -->
 
+<h3> Backend Java Engineer, July 3 2013 - July 3 2014 </h3>
+
 <span class="keywords">
-Android, iPhone, SQL, JSON, Web Service, REST, PDF, Scripting, Shared Library, UX, Agile, JIRA, Git, Appium, Automated Functional Testing, Cross-Device Functionality
+Java, J2EE, JavaScript, CSS, HTML5, CSRF, XSS, MySQL, Tomcat, Agile, SCRUM, JIRA, Git, Selenium, Automated Functional Testing, UX
 </span>
 
-<h3> Backend Java Engineer, July 3 2013 - July 3 2014 </h3>
 
 <ul>
 <li>Successfully developed new features for and maintained website framework (Custom Java Enterprise, Servlets)</li>
@@ -134,17 +147,15 @@ Extended API features for mobile development
 <li>Initiated an automation framework for web (Selenium)</li>
 </ul>
 
-<span class="keywords">
-Java, J2EE, JavaScript, CSS, HTML5, CSRF, XSS, MySQL, Tomcat, Agile, SCRUM, JIRA, Git, Selenium, Automated Functional Testing
-</span>
-
 </div>
 
-<div class="well">
+<div class="card bg-default">
 
 <h2> <a href="http://www.quickmobile.com/">QuickMobile</a>
 
 <h3> Mobile Application Developer, Apr 2011 - July 3 2013 </h3>
+
+<span class="keywords">Java, Android SDK, Blackberry SDK, RPC, SQL, UX, QA</span>
 
 <ul>
 <li>Responsible for developing and maintaining mobile framework in Java (Android, Blackberry)</li>
@@ -170,16 +181,24 @@ Java, J2EE, JavaScript, CSS, HTML5, CSRF, XSS, MySQL, Tomcat, Agile, SCRUM, JIRA
 
 </div>
 
-<div class="well">
+<div class="card bg-default">
 
 <h2> <a href="http://www.panoramicsoft.com/">Panoramic Software</a> </h2>
 
 <h3> Contract Developer, Sep 2011 - Apr 2012 </h3>
+<span class="keywords">
+	Xamarin, C++, Windows Phone, iPhone, C#, UX, XAML, Silverlight, REST/SOAP, Twitter
+</span>
+
+
 <ul>
 <li>Ported GuitarSuite to from C++ (Palm) to iPhone/Windows in C#/Xamarin. Features included a metronome, scales/chord charts, tuner, etc</li>
 </ul>
 
 <h3> Software Developer, Nov 2010 - Apr 2011 </h3>
+<span class="keywords">
+	Xamarin, C++, Windows Phone, iPhone, C#, UX, XAML, Silverlight, REST/SOAP, Twitter
+</span>
 
 <ul>
 <li>Successfully ported several C++ (Palm) applications to Windows Phone (C#/XAML) and iOS/Android (Xamarin)</li>
@@ -187,9 +206,6 @@ Java, J2EE, JavaScript, CSS, HTML5, CSRF, XSS, MySQL, Tomcat, Agile, SCRUM, JIRA
 <li>Attended Microsoft campus for a conference</li>
 </ul>
 
-<span class="keywords">
-	Xamarin, C++, Windows Phone, iPhone, C#, XAML, SIlverlight, REST/SOAP
-</span>
 <!--
 <ul>
 <li>Successfully completed milestone applications for Windows Phone 7 and iPhone marketplace</li>
@@ -203,12 +219,17 @@ Java, J2EE, JavaScript, CSS, HTML5, CSRF, XSS, MySQL, Tomcat, Agile, SCRUM, JIRA
 
 </div>
 
-<div class="well">
+<div class="card bg-default">
 
 <h2> <a href="http://www.novax.com/">Novax Industries Corporation</a>
 
 <h3> Software Developer, Apr 2008 - 2010 </h3>
 <h5> Pilot Project 1: SoundSafe Advanced Pedestrian Control </h5>
+
+<span class="keywords">
+C#, .Net Compact, Windows Mobile, Power Line Communication (PLC), Token Ring, ZigBee
+</span>
+
 
 <ul>
 <li>Delivered a Windows Mobile application for configuring a power line communication pedestrian control unit over ZigBee wireless</li>
@@ -217,10 +238,6 @@ Java, J2EE, JavaScript, CSS, HTML5, CSRF, XSS, MySQL, Tomcat, Agile, SCRUM, JIRA
 <li>Provided additional testing and integration of system components</li>
 <li>Worked effectively in an agile team of 4-6, coordinating project progress</li>
 </ul>
-
-<span class="keywords">
-C#, .Net Compact, Windows Mobile, Power Line Communication (PLC), Token Ring, ZigBee
-</span>
 
 <!--
 <ul>
@@ -234,6 +251,9 @@ C#, .Net Compact, Windows Mobile, Power Line Communication (PLC), Token Ring, Zi
 -->
 <h5> Pilot Project 2: TransPOD Public Transit Optimizer </h5>
 
+<span class="keywords">C, C++, GPS, Linux, Embedded Systems, Distributed Systems, Shell Scripting, SQL, GPS, Multithreading, GPIO, Networking</span>
+
+
 <ul>
 <li>Responsible for new features and maintaining C++ code for a public transit traffic light priority request generator and receiver</li>
 <li>Successfully implemented a GPIO interface for Chicago Transit pilot project</li>
@@ -243,8 +263,6 @@ C#, .Net Compact, Windows Mobile, Power Line Communication (PLC), Token Ring, Zi
 <li>Documented changes for release notes and internal docs on a team wiki</li>
 <li>Improved experience managing development time and met deadlines effectively</li>
 </ul>
-
-<span class="keywords">C, C++, GPS, Linux, Embedded Systems, Distributed Systems, Shell Scripting, SQL, GPS, Multithreading, GPIO, Networking</span>
 
 <!--
 <ul>
@@ -260,6 +278,11 @@ C#, .Net Compact, Windows Mobile, Power Line Communication (PLC), Token Ring, Zi
 -->
 
 <h3> Quality Assurance Engineer, Dec 2007 - Apr 2008 </h3>
+
+<span class="keywords">
+	Blackbox, Whitebox, Test Plan, Test Case, Stress Test, Virtualization, Scripting
+</span>
+
 <!--
 <ul>
 <li>Responsible for ensuring system quality in a public transit traffic light priority system for TransLink</li>
@@ -279,14 +302,11 @@ C#, .Net Compact, Windows Mobile, Power Line Communication (PLC), Token Ring, Zi
 <li>Complete system analysis and testing for release with Translink</li>
 </ul>
 
-<span class="keywords">
-	Blackbox, Whitebox, Test Plan, Test Case, Stress Test, Virtualization, Scripting
-</span>
 </div>
 
-<h1> Education </h1>
+<h2> Education </h2>
 
-<div class="well">
+<div class="card bg-default">
 <h3> <a href="http://www.bcit.ca/">British Columbia Institute of Technology</a>, (84% GPA) </h3>
 <ul>
 <li>Diploma in Computer Systems, completing in summer 2018</li>
@@ -295,9 +315,6 @@ C#, .Net Compact, Windows Mobile, Power Line Communication (PLC), Token Ring, Zi
 <li>Associate in Computer Information Systems, 2005-2007</li>
 </ul>
 
-</div>
-
-<div class="well">
 <h3>Sun Microsystems Certified Java Programmer</h3>
 
 <ul>
@@ -305,18 +322,19 @@ C#, .Net Compact, Windows Mobile, Power Line Communication (PLC), Token Ring, Zi
 </ul>
 </div>
 
-<h1> Other / Hobby </h1>
+<h2> Other / Hobby </h2>
 
-<div class="well">
+<div class="card bg-default">
 <ul>
-<li>Some closed source projects include an Augmented Reality app to solve a Scrabble Board and a UNIX fortunes microservice on Amazon Elastic Container Service</li>
-<li><a href="https://github.com/ryjen/prep">prep</a> - a dependency manager (and build tool) for c++ projects</li>
+<li>CTO of <a href="https://micrantha.com">Micrantha Software Solutions</a> for contracting needs.</li>
+<li><a href="https://fortunes.micrantha.com/">Fortunes</a> Slack App and Microservice</li>
+<li><a href="https://github.com/ryjen/prep">prep</a> - a dependency manager (and build tool) for c/c++ projects</li>
 <li><a href="https://github.com/ryjen/p0ng">p0ng</a> - an unreleased retro pong game for iOS</li>
-<li><a href="https://github.com/ryjen/Droid-Fortunes">DroidFortunes</a> - the original Android version of the UNIX 'fortunes' application</li>
-<li><a href="https://github.com/ryjen/db">rjdb</a> &amp; <a href="http://github.com/ryjen/net">rjnet</a> - some c++11 libraries</li>
+<li><a href="https://github.com/ryjen/Droid-Fortunes">Droid Fortunes</a> - an Android hello world app of the UNIX 'fortunes' applications</li>
+<li><a href="https://github.com/ryjen/db">rjdb</a> &amp; <a href="http://github.com/ryjen/net">rjnet</a> are some c++11 libraries I'm proud of</li>
 </ul>
 </div>
 
-References available upon request.
+<p class="center">References available upon request.</p>
 
 </div>

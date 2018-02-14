@@ -110,21 +110,12 @@ Find canadian musicians on Bandmix.ca</description>
     
     <item>
       <title>resume</title>
-      <link>https://coda.life/resume/resume/</link>
+      <link>https://coda.life/resume/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://coda.life/resume/resume/</guid>
-      <description>778-240-3248     ryan@coda.life     github.com/ryjen     ca.linkedin.com/in/ryjen    https://coda.life   (Robert) Ryan Jennings  Self-taught programmer since 2002, formally educated in Computer Systems at BCIT with distinction. Started professionally in quality assurance and embedded systems and been a part of the mobile revolution for 8 years on multiple platforms and languages.
- Pragmatism has been a guiding philosophy during education and professional life.</description>
-    </item>
-    
-    <item>
-      <title>timeline</title>
-      <link>https://coda.life/resume/timeline/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://coda.life/resume/timeline/</guid>
-      <description>2007 - something happened here    2008 - something happened here        2010 - something happened here    2011 - something happened here</description>
+      <guid>https://coda.life/resume/</guid>
+      <description>(Robert) Ryan Jennings   778-240-3248   ryan@coda.life   github.com/ryjen   https://coda.life    Self-taught programmer since 2002, formally educated in Computer Systems at BCIT with distinction. Started professionally in quality assurance and embedded systems and been a part of the mobile revolution for 8 years on multiple platforms and languages.
+ Pragmatism is a guiding philosophy during education and professional life. Hobbies include learning different technologies, guitar, recording, jazz and biking.</description>
     </item>
     
   </channel>

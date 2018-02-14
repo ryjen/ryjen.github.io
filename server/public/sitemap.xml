@@ -181,11 +181,6 @@
   </url>
   
   <url>
-    <loc>https://coda.life/resume/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://coda.life/tags/slack/</loc>
     <lastmod>2018-01-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -246,11 +241,7 @@
   </url>
   
   <url>
-    <loc>https://coda.life/resume/resume/</loc>
-  </url>
-  
-  <url>
-    <loc>https://coda.life/resume/timeline/</loc>
+    <loc>https://coda.life/resume/</loc>
   </url>
   
 </urlset>

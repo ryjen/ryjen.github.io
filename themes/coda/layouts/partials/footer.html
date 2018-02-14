@@ -1,6 +1,8 @@
 
 </div>
 
+<div id="footer">
+
 {{ partial "ads" . }}
 
 <hr>
@@ -8,10 +10,11 @@
 {{ block "content-footer" . }}
 {{ end }}
 
-<footer class="center">
+<div class="center">
 	{{ .Site.Params.copyright | default "© All Rights Reserved" | markdownify }}
-</footer>
+</div>
 
+</div>
 
     {{ partial "js" . }} 
 
