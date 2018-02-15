@@ -4,7 +4,7 @@
 }
 
 #page-resume ul {
-    list-style: disc inside url('/image/bullet.gif');
+    list-style: disc outside url('/image/bullet.gif');
 }
 
 #page-resume #avatar {
@@ -16,7 +16,6 @@
 
 #page-resume h1 {
     font-size: 3.3em;
-    text-align: center;
 }
 
 #page-resume #contact-info {
@@ -47,21 +46,32 @@
 
 #page-resume .card h3 {
     font-size: 1.2em;
+    margin-bottom: 1em;
     border-bottom: 1px solid silver;
 }
 
 #page-resume .card h5 {
     font-size: 1.1em;
     color: #666;
-    margin-bottom: 0;
+    font-style: normal;
+    margin-bottom: 0.4em;
 }
 
 #page-resume .keywords {
-    font-size: 0.8em;
     font-style: italic;
     margin-bottom: 1em;
     display: block;
+    margin-left: 1em;
+    font-size: 0.85em;
     color: #666;
+}
+
+#page-resume .card ul {
+    margin-left: 1em;
+}
+
+#page-resume .card ul + h5 {
+    margin-top: 1.5em;
 }
 
 @media print {
@@ -72,7 +82,18 @@
 
     #page-resume h1 {
         text-align: left;
-        font-size: 18px; 
+        font-size: 2.5em; 
+    }
+
+    #page-resume h2 {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 0;
+    }
+
+    #page-resume .card {
+        margin: 0;
+        padding: 0;
     }
 
     #page-resume a:after {

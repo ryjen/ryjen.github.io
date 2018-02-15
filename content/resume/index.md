@@ -5,8 +5,8 @@ layout: plain
 
 <div id="page-resume">
 <h1>(Robert) Ryan Jennings</h1>
-<div class="row" id="contact-info">
-<div class="six columns">
+<div id="contact-info">
+<div class="pull-left">
     <img id="avatar" alt="ryan jennings" src="/image/profile.jpeg" />
 </div>
 <div class="links clearfix">
@@ -23,16 +23,13 @@ layout: plain
 </div>
 
 <div>
-    <i class="fa fa-globe"></i><a href="https://coda.life">https://coda.life</a>
+    <i class="fa fa-globe"></i><a href="https://coda.life">coda.life</a>
 </div>
 </div>
 </div>
 <div class="card bg-default">
 
-<p>Self-taught programmer since 2002, formally educated in Computer Systems at BCIT with distinction.  Started professionally in quality assurance and embedded systems and been a part of the mobile revolution for 8 years on multiple platforms and languages.</p>
-<br>
-<p>
-Pragmatism is a guiding philosophy during education and professional life. Hobbies include learning different technologies, guitar, recording, jazz and biking.
+<p>Self-taught programmer since 2002, formally educated with distinction in Computer Systems at BCIT.  Started professionally in quality assurance and embedded systems.  Have successfully been a part of the mobile revolution for 8 years on multiple platforms and languages.</p><p>Hobbies include learning different technologies, guitar/jazz and biking.
 </p>
 
 </div>
@@ -45,9 +42,9 @@ Pragmatism is a guiding philosophy during education and professional life. Hobbi
 
 <h3> Mobile Application Developer, July 2015 - Present </h3>
 
-<span class="keywords">
-Android, iOS, Beacons, SQL, Tablet, BLE, Notifications, JIRA, UX, Agile, SCRUM, Iterative, RxJava, Git, Gradle, VeraCode, Unit Testing, Continuous Integration, Scripting, Web Services, REST
-</span>
+<blockquote class="keywords">
+Android, iOS, Beacons, SQL, Tablet, BLE, Notifications, JIRA, UX, Agile, SCRUM, Iterative, RxJava, Git, Gradle, VeraCode, Unit Testing, Continuous Integration, Scripting, Web Services, REST, Android Studio, Xcode
+</blockquote>
 
 <ul>
 <li>Responsible for delivery customizations and components on Android</li>
@@ -56,7 +53,6 @@ Android, iOS, Beacons, SQL, Tablet, BLE, Notifications, JIRA, UX, Agile, SCRUM, 
 <li>Participated in iterative development methodology, sprint reviews and planning</li>
 <li>Gained experience and read books on RxJava for Android</li>
 <li>General scripting for processes and cross-platform work on iOS</li>
-<li>Worked on 
 </ul>
 
 </div>
@@ -96,9 +92,9 @@ Android, iOS, Beacons, SQL, Tablet, BLE, Notifications, JIRA, UX, Agile, SCRUM, 
 
 <h3> Senior Mobile Developer, July 3 2014 - March 2015 </h3>
 
-<span class="keywords">
-Android, iPhone, SQL, JSON, Web Service, REST, PDF, Scripting, Shared Library, UX, Agile, JIRA, Git, Appium, Automated Functional Testing, Cross-Device Functionality
-</span>
+<blockquote class="keywords">
+Android, iPhone, Android Studio, Xcode, SQL, JSON, Web Service, REST, PDF, Scripting, Shared Library, UX, Agile, JIRA, Git, Appium, Automated Functional Testing, Cross-Device Functionality
+</blockquote>
 
 
 <ul>
@@ -121,15 +117,15 @@ Android, iPhone, SQL, JSON, Web Service, REST, PDF, Scripting, Shared Library, U
 
 <h3> Backend Java Engineer, July 3 2013 - July 3 2014 </h3>
 
-<span class="keywords">
-Java, J2EE, JavaScript, CSS, HTML5, CSRF, XSS, MySQL, Tomcat, Agile, SCRUM, JIRA, Git, Selenium, Automated Functional Testing, UX
-</span>
+<blockquote class="keywords">
+Java, J2EE, Eclipse, JavaScript, CSS, HTML5, CSRF, XSS, MySQL, Tomcat, Agile, SCRUM, JIRA, Git, Selenium, Automated Functional Testing, UX
+</blockquote>
 
 
 <ul>
 <li>Successfully developed new features for and maintained website framework (Custom Java Enterprise, Servlets)</li>
 <li>Improved development efficiency of PDF rendering for dynamic views</li>
-<li>Extended REST API for mobile development</li>
+<li>Extended JSON REST API for mobile clients</li>
 <li>Participated in implementation of push notifications for mobile devices</li>
 <li>Provided some web security and performance (compression) enhancements on own initiative</li>
 
@@ -155,7 +151,7 @@ Extended API features for mobile development
 
 <h3> Mobile Application Developer, Apr 2011 - July 3 2013 </h3>
 
-<span class="keywords">Java, Android SDK, Blackberry SDK, RPC, SQL, UX, QA</span>
+<blockquote class="keywords">Java, Eclipse, Android SDK, Blackberry SDK, RPC, SQL, UX, QA</blockquote>
 
 <ul>
 <li>Responsible for developing and maintaining mobile framework in Java (Android, Blackberry)</li>
@@ -186,9 +182,9 @@ Extended API features for mobile development
 <h2> <a href="http://www.panoramicsoft.com/">Panoramic Software</a> </h2>
 
 <h3> Contract Developer, Sep 2011 - Apr 2012 </h3>
-<span class="keywords">
+<blockquote class="keywords">
 	Xamarin, C++, Windows Phone, iPhone, C#, UX, XAML, Silverlight, REST/SOAP, Twitter
-</span>
+</blockquote>
 
 
 <ul>
@@ -196,9 +192,9 @@ Extended API features for mobile development
 </ul>
 
 <h3> Software Developer, Nov 2010 - Apr 2011 </h3>
-<span class="keywords">
+<blockquote class="keywords">
 	Xamarin, C++, Windows Phone, iPhone, C#, UX, XAML, Silverlight, REST/SOAP, Twitter
-</span>
+</blockquote>
 
 <ul>
 <li>Successfully ported several C++ (Palm) applications to Windows Phone (C#/XAML) and iOS/Android (Xamarin)</li>
@@ -226,9 +222,9 @@ Extended API features for mobile development
 <h3> Software Developer, Apr 2008 - 2010 </h3>
 <h5> Pilot Project 1: SoundSafe Advanced Pedestrian Control </h5>
 
-<span class="keywords">
+<blockquote class="keywords">
 C#, .Net Compact, Windows Mobile, Power Line Communication (PLC), Token Ring, ZigBee
-</span>
+</blockquote>
 
 
 <ul>
@@ -249,9 +245,11 @@ C#, .Net Compact, Windows Mobile, Power Line Communication (PLC), Token Ring, Zi
 <li>Gained experience implementing, debugging and optimizing custom network protocols</li>
 </ul>
 -->
+
 <h5> Pilot Project 2: TransPOD Public Transit Optimizer </h5>
 
-<span class="keywords">C, C++, GPS, Linux, Embedded Systems, Distributed Systems, Shell Scripting, SQL, GPS, Multithreading, GPIO, Networking</span>
+<blockquote class="keywords">
+C, C++, GPS, Linux, Embedded Systems, Distributed Systems, Shell Scripting, SQL, GPS, Multithreading, GPIO, Networking</blockquote>
 
 
 <ul>
@@ -326,12 +324,12 @@ C#, .Net Compact, Windows Mobile, Power Line Communication (PLC), Token Ring, Zi
 
 <div class="card bg-default">
 <ul>
-<li>CTO of <a href="https://micrantha.com">Micrantha Software Solutions</a> for contracting needs.</li>
+<li>CTO of <a href="https://micrantha.com">Micrantha Software Solutions</a> for contracting needs</li>
 <li><a href="https://fortunes.micrantha.com/">Fortunes</a> Slack App and Microservice</li>
 <li><a href="https://github.com/ryjen/prep">prep</a> - a dependency manager (and build tool) for c/c++ projects</li>
-<li><a href="https://github.com/ryjen/p0ng">p0ng</a> - an unreleased retro pong game for iOS</li>
-<li><a href="https://github.com/ryjen/Droid-Fortunes">Droid Fortunes</a> - an Android hello world app of the UNIX 'fortunes' applications</li>
-<li><a href="https://github.com/ryjen/db">rjdb</a> &amp; <a href="http://github.com/ryjen/net">rjnet</a> are some c++11 libraries I'm proud of</li>
+<!--<li><a href="https://github.com/ryjen/p0ng">p0ng</a> - an unreleased retro pong game for iOS</li>-->
+<li><a href="https://github.com/ryjen/Droid-Fortunes">Droid Fortunes</a> - an Android hello world app of the UNIX 'fortunes' command</li>
+<li><a href="https://github.com/ryjen/db">rjdb</a> &amp; <a href="http://github.com/ryjen/net">rjnet</a> - some c++11 libraries I'm proud of</li>
 </ul>
 </div>
 
