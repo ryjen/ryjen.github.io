@@ -100,6 +100,10 @@
         content: "";
     }
 
+    #page-resume .card {
+        background: none;
+    }
+
     #page-resume #avatar {
         display: none;
     }
@@ -109,6 +113,10 @@
 
     #page-resume #contact-info div {
         display: inline;
+    }
+
+    #page-resume blockquote {
+        border: none;
     }
 
     #page-resume #contact-info i {
