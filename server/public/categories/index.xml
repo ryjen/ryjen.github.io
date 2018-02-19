@@ -10,5 +10,23 @@
 	<atom:link href="https://coda.life/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Containerization</title>
+      <link>https://coda.life/categories/containerization/</link>
+      <pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://coda.life/categories/containerization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Development</title>
+      <link>https://coda.life/categories/development/</link>
+      <pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://coda.life/categories/development/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

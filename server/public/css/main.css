@@ -338,6 +338,10 @@ hr {
     font-size:  0.8em;
 }
 
+#main code {
+    display: block;
+}
+
 #main .item h4 {
     font-size: 1.2em;
     margin-top: 0;
