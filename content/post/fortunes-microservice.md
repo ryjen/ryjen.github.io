@@ -11,7 +11,7 @@ tags: [golang, slack, api, droplet, micro-service, docker, dokku, HTTP, rest, go
 
 Have always enjoyed the [UNIX fortunes](https://en.wikipedia.org/wiki/Fortune_%28Unix%29) program, ever since I was a wee [newbie](https://en.wikipedia.org/wiki/Newbie).  If you aren't familiar with it (sad), yes, its like a fortune cookie.  
 
-Except that it can be more technical in nature but not always.  It also has poems, quotations, and if enabled - offensive content.  
+It can be more technical in nature but not always.  It also has poems, quotations, and if enabled - offensive content.  
 
 Often I would find a fortune I'd like to share and pipe it to a snippet from the terminal.  There has to and must be a better way!  
 
@@ -21,7 +21,7 @@ This time a Slack application has appeared on my radar as a target.
 
 Cannot engage the target without some information.  
 
-The existing fortunes database will provide plenty of content.  Fortunately (no pun intended), I've already extracted the legacy flat file storage system into SQL. 
+The existing fortunes database will provide plenty of content.  Fortunately (no pun intended), I've already extracted the legacy flat file storage system into SQL for another project. 
 
 `TODO: add conversion to SQL details`
 
@@ -57,19 +57,19 @@ As I'm using docker, switching to AWS Fargate is possible too with a Docker Comp
 
 #### For the Code or Gopher Geeks
 
-As most gophers already know, the beauty of go is its simplicity and its awesome packages.
+As most gophers already know, the beauty of go besides its concurrency is its simplicity and its awesome packages.
 
-For HTTP is you really don't need anything.  The standard library is so simple yet so effective.  Your endpoints become functions, your functions become routed to paths, and you serve.
+For HTTP is you really don't need anything.  The standard library is so simple yet so effective.  Your endpoints become functions, your functions become routed to paths, and you serve. The standard template packages work great for layouts in the endpoint functions.
 
-Not only that, the standard template packages work great for layouts in the endpoint functions.
-
-The server has two restful API's - the standard API and the Slack API. Both use the same process of serializing from the database to JSON by means of attributed data models.
+The server has two restful API's - the standard API and the Slack API. Both use the same process of serializing from the database to JSON by typical means of attributed data models.
 
 `TODO: add some code architecture details`
-
 
 #### Conclusion
 
 Random fortune cookies are fun.  Slack is fun.  Golang is awesome.  Docker is pleasing.
 
-Check out [the final product](https://fortunes.micrantha.com) page.
+Check out [the final solution](https://fortunes.micrantha.com) page.
+
+`TODO: implement mobile apps`
+
