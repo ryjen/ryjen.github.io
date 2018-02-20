@@ -92,19 +92,19 @@ There is always at least one.
 
 NGINX by default will throw an HTTP 413 error if your image is too big.  To fix that we have to disable the max HTTP body size.
 
-1. dit the configuration for the repository app: `vim /home/dokku/registry/nginx.conf`
+1. Edit the configuration for the repository app: `vim /home/dokku/registry/nginx.conf`
 
-2. in any server{} blocks add: `client_max_body_size 0;` which will disable the max body size limitation.
+2. In any server{} blocks add: `client_max_body_size 0;` which will disable the max body size limitation.
 
 
 #### Conclusion
 
 Super easy to get a private docker repository running on dokku.   Why would you want to?  
 
-1. because you can
-2. private repositories are generally not free
-3. sometimes doesn't make sense for an image to be public
-4. control over your data from other country's jurisdiction (hopefully this isn't the reason)
+1. Because you can
+2. Private registries are generally not free
+3. Sometimes doesn't make sense for an image to be public
+4. Control over your data from other country's jurisdiction (hopefully this isn't the reason)
 
 For example, I have a docker image to run weechat with very customized configuration and only usable by me.  I only want to run it on my server and attach to it when I need to.
 

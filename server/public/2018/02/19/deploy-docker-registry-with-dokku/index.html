@@ -210,9 +210,9 @@ To persist data, a volume is used.</p>
 <p>NGINX by default will throw an HTTP 413 error if your image is too big.  To fix that we have to disable the max HTTP body size.</p>
 
 <ol>
-<li><p>dit the configuration for the repository app: <code>vim /home/dokku/registry/nginx.conf</code></p></li>
+<li><p>Edit the configuration for the repository app: <code>vim /home/dokku/registry/nginx.conf</code></p></li>
 
-<li><p>in any server{} blocks add: <code>client_max_body_size 0;</code> which will disable the max body size limitation.</p></li>
+<li><p>In any server{} blocks add: <code>client_max_body_size 0;</code> which will disable the max body size limitation.</p></li>
 </ol>
 
 <h4 id="conclusion">Conclusion</h4>
@@ -220,10 +220,10 @@ To persist data, a volume is used.</p>
 <p>Super easy to get a private docker repository running on dokku.   Why would you want to?</p>
 
 <ol>
-<li>because you can</li>
-<li>private repositories are generally not free</li>
-<li>sometimes doesn&rsquo;t make sense for an image to be public</li>
-<li>control over your data from other country&rsquo;s jurisdiction (hopefully this isn&rsquo;t the reason)</li>
+<li>Because you can</li>
+<li>Private registries are generally not free</li>
+<li>Sometimes doesn&rsquo;t make sense for an image to be public</li>
+<li>Control over your data from other country&rsquo;s jurisdiction (hopefully this isn&rsquo;t the reason)</li>
 </ol>
 
 <p>For example, I have a docker image to run weechat with very customized configuration and only usable by me.  I only want to run it on my server and attach to it when I need to.</p>
