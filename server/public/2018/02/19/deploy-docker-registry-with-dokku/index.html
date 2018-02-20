@@ -142,19 +142,23 @@ To persist data, a volume is used.</p>
 <ol>
 <li><p>Create a new app named &ldquo;registry&rdquo; in dokku: <code>dokku apps:create registry</code></p></li>
 
-<li><p>Configure the local storage directory for the registry: <code>dokku config:set registry --no-restart REGISTRY_STORAGE_FILESYSTEM_ROOTDIRECTORY=&quot;/mydir/registry&quot;</code></p></li>
-
-<li><p>Now add an application mount point for the local storage directory: <code>dokku storage:mount registry /mydir/registry:/var/lib/registry</code>  <em>(note: the default container location is /var/lib/registry)</em></p></li>
-
-<li><p>Next, remove the default http port mapping: <code>dokku proxy:ports-remove registry 80</code></p></li>
-
-<li><p>And and a new one pointing to the repository: <code>dokku proxy:ports-add registry 80:5000 5000:5000</code></p></li>
-
 <li><p>Go ahead an pull the docker registry image (using alpine for reduced size): <code>docker pull ses1er/alpine-registry</code></p></li>
 
 <li><p>Now retag the image so dokku knows about it: <code>docker tag ses1er/alpine-registry dokku/registry</code></p></li>
 
-<li><p>Finally deploy the image to dokku: <code>dokku tags:deploy registry</code></p></li>
+<li><p>Deploy the image to dokku: <code>dokku tags:deploy registry</code></p></li>
+</ol>
+
+<h5 id="configure-the-app">Configure the app</h5>
+
+<ol>
+<li><p>Configure the local storage directory for the registry: <code>dokku config:set --no-restart registry REGISTRY_STORAGE_FILESYSTEM_ROOTDIRECTORY=&quot;/container/dir/registry&quot;</code></p></li>
+
+<li><p>Now add an application mount point for the local storage directory: <code>dokku storage:mount registry /mydir/registry:/container/dir/registry</code>  <em>(note: the default container location is /var/lib/registry)</em></p></li>
+
+<li><p>Now remove the default http port mapping: <code>dokku proxy:ports-remove registry 80</code></p></li>
+
+<li><p>And and a new one pointing to the repository: <code>dokku proxy:ports-add registry 80:5000 5000:5000</code></p></li>
 </ol>
 
 <h3 id="authorization">Authorization</h3>
@@ -168,7 +172,7 @@ To persist data, a volume is used.</p>
 
 <li><p>Create a username/password file: <code>htpasswd -Bn username &gt; /mydir/registry/auth/htpasswd</code> <em>(will prompt for password)</em></p></li>
 
-<li><p>Add configuration variables to dokku registry app: <code>dokku config:set registry --no-restart REGISTRY_AUTH=htpasswd REGISTRY_AUTH_HTPASSWD_REALM=&quot;My Registry&quot; REGISTRY_AUTH_HTPASSWD_PATH=/var/lib/registry/auth/htpasswd</code></p></li>
+<li><p>Add configuration variables to dokku registry app: <code>dokku config:set --no-restart registry REGISTRY_AUTH=htpasswd REGISTRY_AUTH_HTPASSWD_REALM=&quot;My Registry&quot; REGISTRY_AUTH_HTPASSWD_PATH=/container/dir/registry/auth/htpasswd</code></p></li>
 </ol>
 
 <h3 id="external-registry">External Registry</h3>
@@ -223,7 +227,7 @@ To persist data, a volume is used.</p>
 <li>Because you can</li>
 <li>Private registries are generally not free</li>
 <li>Sometimes doesn&rsquo;t make sense for an image to be public</li>
-<li>Control over your data from other country&rsquo;s jurisdiction (hopefully this isn&rsquo;t the reason)</li>
+<li>Control over your data from another country&rsquo;s jurisdiction</li>
 </ol>
 
 <p>For example, I have a docker image to run weechat with very customized configuration and only usable by me.  I only want to run it on my server and attach to it when I need to.</p>

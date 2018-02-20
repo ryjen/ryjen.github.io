@@ -33,19 +33,21 @@ To persist data, a volume is used.
 
 1. Create a new app named "registry" in dokku: `dokku apps:create registry`
 
-2. Configure the local storage directory for the registry: `dokku config:set registry --no-restart REGISTRY_STORAGE_FILESYSTEM_ROOTDIRECTORY="/mydir/registry"`
+2. Go ahead an pull the docker registry image (using alpine for reduced size): `docker pull ses1er/alpine-registry`
 
-3. Now add an application mount point for the local storage directory: `dokku storage:mount registry /mydir/registry:/var/lib/registry`  *(note: the default container location is /var/lib/registry)*
+3. Now retag the image so dokku knows about it: `docker tag ses1er/alpine-registry dokku/registry`
 
-4. Next, remove the default http port mapping: `dokku proxy:ports-remove registry 80`
+4. Deploy the image to dokku: `dokku tags:deploy registry`
 
-5. And and a new one pointing to the repository: `dokku proxy:ports-add registry 80:5000 5000:5000`
+##### Configure the app
 
-6. Go ahead an pull the docker registry image (using alpine for reduced size): `docker pull ses1er/alpine-registry`
+1. Configure the local storage directory for the registry: `dokku config:set --no-restart registry REGISTRY_STORAGE_FILESYSTEM_ROOTDIRECTORY="/container/dir/registry"`
 
-7. Now retag the image so dokku knows about it: `docker tag ses1er/alpine-registry dokku/registry`
+2. Now add an application mount point for the local storage directory: `dokku storage:mount registry /mydir/registry:/container/dir/registry`  *(note: the default container location is /var/lib/registry)*
 
-8. Finally deploy the image to dokku: `dokku tags:deploy registry`
+3. Now remove the default http port mapping: `dokku proxy:ports-remove registry 80`
+
+4. And and a new one pointing to the repository: `dokku proxy:ports-add registry 80:5000 5000:5000`
 
 ### Authorization
 
@@ -57,7 +59,7 @@ Require a valid login to create a repository.
 
 2. Create a username/password file: `htpasswd -Bn username > /mydir/registry/auth/htpasswd` *(will prompt for password)*
 
-3. Add configuration variables to dokku registry app: `dokku config:set registry --no-restart REGISTRY_AUTH=htpasswd REGISTRY_AUTH_HTPASSWD_REALM="My Registry" REGISTRY_AUTH_HTPASSWD_PATH=/var/lib/registry/auth/htpasswd`
+3. Add configuration variables to dokku registry app: `dokku config:set --no-restart registry REGISTRY_AUTH=htpasswd REGISTRY_AUTH_HTPASSWD_REALM="My Registry" REGISTRY_AUTH_HTPASSWD_PATH=/container/dir/registry/auth/htpasswd`
 
 
 ### External Registry
@@ -69,9 +71,9 @@ To allow your registry to be remotely accessible.
 
 2. Add letsencrypt to the app: `dokku letsencrypt registry` and ensure a valid certificate is always available: `dokku letsencrypt:auto-renew registry`
 
-4. Remove the default HTTPS port mapping: `dokku proxy:ports-remove 443`
+3. Remove the default HTTPS port mapping: `dokku proxy:ports-remove 443`
 
-5. And add a new port mapping to the repository: `dokku proxy:ports-add 443:5000`
+4. And add a new port mapping to the repository: `dokku proxy:ports-add 443:5000`
 
 ### Testing
 Does it work?
@@ -104,7 +106,7 @@ Super easy to get a private docker repository running on dokku.   Why would you 
 1. Because you can
 2. Private registries are generally not free
 3. Sometimes doesn't make sense for an image to be public
-4. Control over your data from other country's jurisdiction (hopefully this isn't the reason)
+4. Control over your data from another country's jurisdiction
 
 For example, I have a docker image to run weechat with very customized configuration and only usable by me.  I only want to run it on my server and attach to it when I need to.
 
