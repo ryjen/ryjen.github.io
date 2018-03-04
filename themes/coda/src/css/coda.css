@@ -157,6 +157,7 @@ hr {
 
 #header {
     padding-top: 10px;
+    padding-bottom: 10px;
     margin-bottom: 2em;
     filter: drop-shadow(5px 5px 5px silver);
 }
@@ -332,7 +333,6 @@ img.logo {
 }
 
 #menu-toggle {
-    font-size: 3em;
     line-height: 0.5em;
     display: none;
 }
@@ -343,8 +343,8 @@ img.logo {
     #menu-toggle {
         display: inline-block;
         position: absolute;
-        right: 0;
-        top: 0;
+        right: 10px;
+        top: 15px;
     }
 
     #brand {
