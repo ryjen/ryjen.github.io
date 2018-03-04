@@ -1,5 +1,5 @@
 
-$(function() {
+(function() {
 
 	switch(window.location.pathname) {
 		case '/post/':

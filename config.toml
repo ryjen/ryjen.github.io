@@ -25,7 +25,7 @@ theme = "coda"
     highlight = true
     highlightStyle = "solarized-dark"
     brandName = "coda life"
-    css = ["/css/app.css"]
+    css = ["/css/app.min.css"]
 
 [[menu.main]]
     name  = "blog"
