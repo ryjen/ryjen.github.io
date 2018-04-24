@@ -246,6 +246,10 @@ hr {
     display: block;
 }
 
+#main h2 {
+    font-size: 1.4em;
+}
+
 #main .item h4 {
     font-size: 1.2em;
     margin-top: 0;
