@@ -11,7 +11,9 @@
     "gulp-sourcemaps": "^2.6.4",
     "merge-stream": "^1.0.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "graceful-fs": "4.1.11"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

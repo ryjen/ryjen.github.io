@@ -24,7 +24,7 @@ theme = "coda"
     copyright  = "&copy; all rights reserved, ryan jennings"
     highlight = true
     highlightStyle = "solarized-dark"
-    brandName = "coda life"
+    brandName = "coda.life"
     css = ["/css/app.min.css"]
 
 [[menu.main]]

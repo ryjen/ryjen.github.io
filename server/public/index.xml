@@ -94,7 +94,7 @@ Mapping The core of my data access is the FieldMap structure, which determines h
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://coda.life/things/</guid>
-      <description>RxJava for Android Developers If you were confused about Rx or RxJava, this book does a great job of a practical explanation. Its still in early access as of 12/20/17.
+      <description>Books RxJava for Android Developers If you were confused about Rx or RxJava, this book does a great job of a practical explanation. Its still in early access as of 12/20/17.
  Cracking the Coding Interview Found this book to be very useful, good example problems and content just for your own enjoyment of solving if your not interviewing.
  The Clean Coder Much good advice in here, if your interested in being more professional.</description>
     </item>
@@ -105,8 +105,7 @@ Mapping The core of my data access is the FieldMap structure, which determines h
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://coda.life/music/</guid>
-      <description>SoundCloud  Other View some gear on Equipboard.com
-Find canadian musicians on Bandmix.ca</description>
+      <description> SoundCloud  Videos  </description>
     </item>
     
     <item>

@@ -1,6 +1,6 @@
 body {
     background-color: whitesmoke;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Source Code Pro', monospace;
     color: #555555;
 }
 
@@ -27,7 +27,6 @@ pre, code, kbd {
     white-space: -pre-wrap;      /* Opera 4-6 */
     white-space: -o-pre-wrap;    /* Opera 7 */
     word-wrap: break-word;       /* Internet Explorer 5.5+ */
-    font-family: 'Incosolata', monospace;
 }
 
 ul, form {
@@ -156,7 +155,6 @@ hr {
 
 #header {
     padding-top: 10px;
-    padding-bottom: 10px;
     margin-bottom: 2em;
     filter: drop-shadow(5px 5px 5px silver);
 }
@@ -168,6 +166,7 @@ hr {
 #header a {
     font-weight: normal;
     color: whitesmoke;
+    vertical-align: top;
 }
 
 #brand {
@@ -184,11 +183,16 @@ hr {
     margin-right: 8px;
 }
 
+.brand {
+    /*font-family: 'Cousine', monospace;*/
+    font-weight: bold;
+}
+
 #header nav {
     display: inline-block;
     line-height: 2em;
     float: right;
-    margin-top: 5px;
+    margin-top: 7px;
 }
 
 #header li {
@@ -225,6 +229,30 @@ hr {
     filter: drop-shadow(5px 5px 5px #dcdcdc);
 }
 
+#main .card.bg-default:nth-child(3n-2) h4 a {
+    color: steelblue;
+}
+
+#main .card.bg-default:nth-child(3n-2) {
+    background-color: RGBA(70,130,180,0.08);
+}
+
+#main .card.bg-default:nth-child(3n-1) h4 a {
+    color: #935635;
+}
+
+#main .card.bg-default:nth-child(3n-1) {
+    background-color: RGBA(249, 181, 76, 0.08);
+}
+
+#main .card.bg-default:nth-child(3n) h4 a {
+    color: mediumseagreen;
+}
+
+#main .card.bg-default:nth-child(3n) {
+    background-color: RGBA(60,179,113,0.08);
+}
+
 #main .thing img {
     width:  3em;
     height: 4em;
@@ -235,6 +263,7 @@ hr {
 #main .thing h4 {
     font-size: 1.2em;
     margin-top: 0;
+    margin-bottom: 12px;
 }
 
 #main .thing p {
@@ -245,9 +274,11 @@ hr {
     display: block;
 }
 
-/*#main h2 {
+#main h2 {
     font-size: 1.4em;
-}*/
+    border-bottom: 1px dashed mediumseagreen;
+    padding-left: 12px;
+}
 
 #main .item h4 {
     font-size: 1.2em;

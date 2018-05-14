@@ -1,9 +1,10 @@
-+++
-title = "Deploy Docker Registry with Dokku"
-date = "2018-02-19"
-tags = [ "docker", "registry", "dokku" ]
-categories = ["development", "containerization"]
-+++
+---
+title: "Deploy Docker Registry with Dokku"
+date: 2018-02-19
+description: "Put your own docker registry in a dokku app"
+tags: [ "docker", "registry", "dokku" ]
+categories: ["development", "containerization"]
+---
 
 #### Prerequisites
 
