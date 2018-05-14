@@ -1,6 +1,6 @@
 body {
     background-color: whitesmoke;
-    font-family: 'Source Code Pro', monospace;
+    font-family: 'Source Sans Pro', sans-serif;
     color: #555555;
 }
 
@@ -184,7 +184,7 @@ hr {
 }
 
 .brand {
-    /*font-family: 'Cousine', monospace;*/
+    font-family: Courier New, monospace;
     font-weight: bold;
 }
 
