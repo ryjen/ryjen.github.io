@@ -274,10 +274,22 @@ hr {
     display: block;
 }
 
+#main p > code {
+    display: inline;
+}
+
 #main h2 {
     font-size: 1.4em;
     border-bottom: 1px dashed mediumseagreen;
     padding-left: 12px;
+}
+
+#main h3 {
+    font-size: 1.4em;
+}
+
+#main h4 {
+    font-size: 1.2em;
 }
 
 #main .item h4 {
