@@ -6,10 +6,23 @@
     <description>Recent content in Posts on coda.life</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 Feb 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 16 May 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://coda.life/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>mitmproxy and android</title>
+      <link>https://coda.life/2018/05/16/mitmproxy-and-android/</link>
+      <pubDate>Wed, 16 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://coda.life/2018/05/16/mitmproxy-and-android/</guid>
+      <description>Introduction Debugging network traffic for your app can be useful, and sometimes necessary if the data is not what is expected or inconsistent.
+The Proxy I prefer the open source proxy mitmproxy. Easy to install on OSX with homebrew.
+brew install mitmproxy
+I&amp;rsquo;ll leave it up to you to explore its greatness, I just wanna clarify the android setup.
+Steps 1) mitmproxy Choose a port (ex. 8888) and start the program: mitmproxy -p 8888:</description>
+    </item>
     
     <item>
       <title>Deploy Docker Registry with Dokku</title>

@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://coda.life/2018/05/16/mitmproxy-and-android/</loc>
+    <lastmod>2018-05-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://coda.life/2018/02/19/deploy-docker-registry-with-dokku/</loc>
     <lastmod>2018-02-19T00:00:00+00:00</lastmod>
   </url>
@@ -37,6 +42,12 @@
   </url>
   
   <url>
+    <loc>https://coda.life/tags/android/</loc>
+    <lastmod>2018-05-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://coda.life/tags/api/</loc>
     <lastmod>2018-01-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -54,6 +65,12 @@
   
   <url>
     <loc>https://coda.life/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/tags/certificates/</loc>
+    <lastmod>2018-05-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -160,8 +177,20 @@
   </url>
   
   <url>
+    <loc>https://coda.life/categories/mobile/</loc>
+    <lastmod>2018-05-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://coda.life/tags/mobile/</loc>
     <lastmod>2016-11-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/tags/network/</loc>
+    <lastmod>2018-05-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -185,13 +214,19 @@
   
   <url>
     <loc>https://coda.life/post/</loc>
-    <lastmod>2018-02-19T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://coda.life/tags/programming/</loc>
     <lastmod>2012-11-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/tags/proxy/</loc>
+    <lastmod>2018-05-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -204,6 +239,12 @@
   <url>
     <loc>https://coda.life/tags/rest/</loc>
     <lastmod>2018-01-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://coda.life/tags/security/</loc>
+    <lastmod>2018-05-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -221,7 +262,7 @@
   
   <url>
     <loc>https://coda.life/tags/</loc>
-    <lastmod>2018-01-22T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -259,7 +300,7 @@
   
   <url>
     <loc>https://coda.life/</loc>
-    <lastmod>2018-02-19T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

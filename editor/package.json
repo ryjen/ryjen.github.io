@@ -1,0 +1,15 @@
+{
+  "name": "blog-editor",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "http-server public -p $PORT"
+  },
+  "dependencies": {
+    "http-server": "^0.7.5",
+    "simplemde": "^1.11.2"
+  },
+  "devDependencies": {
+    "gulp-sass": "^4.0.1"
+  }
+}

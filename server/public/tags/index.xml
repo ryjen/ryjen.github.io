@@ -6,10 +6,19 @@
     <description>Recent content in Tags on coda.life</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 22 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 16 May 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://coda.life/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Android</title>
+      <link>https://coda.life/tags/android/</link>
+      <pubDate>Wed, 16 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://coda.life/tags/android/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Api</title>
@@ -26,6 +35,15 @@
       <pubDate>Fri, 30 Nov 2012 00:00:00 +0000</pubDate>
       
       <guid>https://coda.life/tags/c/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Certificates</title>
+      <link>https://coda.life/tags/certificates/</link>
+      <pubDate>Wed, 16 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://coda.life/tags/certificates/</guid>
       <description></description>
     </item>
     
@@ -174,6 +192,15 @@
     </item>
     
     <item>
+      <title>Network</title>
+      <link>https://coda.life/tags/network/</link>
+      <pubDate>Wed, 16 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://coda.life/tags/network/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Phoenix</title>
       <link>https://coda.life/tags/phoenix/</link>
       <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate>
@@ -210,6 +237,15 @@
     </item>
     
     <item>
+      <title>Proxy</title>
+      <link>https://coda.life/tags/proxy/</link>
+      <pubDate>Wed, 16 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://coda.life/tags/proxy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Registry</title>
       <link>https://coda.life/tags/registry/</link>
       <pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate>
@@ -224,6 +260,15 @@
       <pubDate>Mon, 22 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>https://coda.life/tags/rest/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Security</title>
+      <link>https://coda.life/tags/security/</link>
+      <pubDate>Wed, 16 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://coda.life/tags/security/</guid>
       <description></description>
     </item>
     
