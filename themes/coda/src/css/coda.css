@@ -390,7 +390,7 @@ img.logo {
 
 /* Responsiveness */
 
-@media (max-width: 840px) {
+@media (max-width: 1095px) {
     #menu-toggle {
         display: inline-block;
         position: absolute;
