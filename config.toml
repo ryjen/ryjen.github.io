@@ -60,14 +60,19 @@ theme = "coda"
 #    url   = "/about/resume"
 
 [[menu.icons]]
+    url = "/resume/"
+    name = "file-o"
+    weight = 1
+
+[[menu.icons]]
     url = "mailto:ryan@coda.life"
     name = "envelope-o"
-    weight = 1
+    weight = 2
 
 [[menu.icons]]
     url = "https://github.com/ryjen/"
     name = "github"
-    weight = 2
+    weight = 3
 
 #[[menu.icon]]
 #    url = "https://twitter.com/ryjen78/"
