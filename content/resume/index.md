@@ -27,25 +27,35 @@ layout: plain
 </div>
 </div>
 </div>
-<div class="card bg-default">
+
+<!--<div class="card bg-default">
 
 <p>Self-taught programmer since 2002, formally educated with distinction in Computer Systems at BCIT.  Started professionally in quality assurance and embedded systems.  Have successfully been a part of the mobile revolution for 8 years on multiple platforms and languages.</p><p>Hobbies include learning different technologies, guitar/jazz and biking.
 </p>
 
-</div>
+</div>-->
 
 <h2> Work Experience </h2>
 
 <div class="card bg-default">
 
-<h2> <a href="http://quickmobile.com/">Quickmobile</a> </h2>
+<h3> <a href="http://quickmobile.com/">Quickmobile</a>, Mobile Application Developer</h3>
 
+<h4>Problem</h4>
+<p>The company required assistance in delivering client customizations and platform consistency and quality.</p>
+<h4>Action</h4>
+<p>My role as a mobile application developer saw me developing across multiple platforms like Blackberry, Windows Phone, Android and iOS.  In a time sensitive industry, I was able to bring quality customizations in a timely fashion. Allowing me to also bring important platform features like Beacons and core changes to Android.</p>
+<h4>Result</h4>
+<p>The end result was an impressive list of fortune 500 clients, a transtion to a product sass enterprise company, a more interactive experience at conferences, a more visually appealing and performant Android platform. </p>
+<h5>Keywords</h5>
+<!--
 <h3> Mobile Application Developer, July 2015 - Present </h3>
-
+!-->
 <blockquote class="keywords">
 Android, iOS, Beacons, SQL, Tablet, BLE, Notifications, JIRA, UX, Agile, SCRUM, Iterative, RxJava, Git, Gradle, VeraCode, Unit Testing, Continuous Integration, Scripting, Web Services, REST, Android Studio, Xcode
 </blockquote>
-
+</div>
+<!--
 <ul>
 <li>Responsible for delivery customizations and components on Android</li>
 <li>Successfully implemented beacons product feature for Android, allowing for an interactive experience at conferences</li>
@@ -55,7 +65,7 @@ Android, iOS, Beacons, SQL, Tablet, BLE, Notifications, JIRA, UX, Agile, SCRUM, 
 <li>General scripting for processes and cross-platform work on iOS</li>
 </ul>
 
-</div>
+</div>-->
 <!--
 <ul>
 <li>Implemented beacon notifications for conferences on Android</li>
@@ -88,14 +98,23 @@ Android, iOS, Beacons, SQL, Tablet, BLE, Notifications, JIRA, UX, Agile, SCRUM, 
 -->
 <div class="card bg-default">
 
-<h2> <a href="http://epactnetwork.com/">ePACT</a>
+<h3> <a href="http://epactnetwork.com/">ePACT</a>, Backend Java Engineer and Senior Mobile Developer</h3>
 
-<h3> Senior Mobile Developer, July 3 2014 - March 2015 </h3>
-
+<h4>Problem</h4>
+<p>The company needed help bringing their emergency networking system to the world.</p>
+<h4>Action</h4>
+<p>My role on the backend saw me providing features like easier PDF rendering, web security, performance improvements, an extension to the API for mobile and push notifications.</p>
+<br>
+<p>On the mobile side I developed both iOS and Android at the same time. Ensuring the functionality desired met the UX design securely in a timely and quality manner.  Notable features included dynamic views based on data, and a data synchronization component.</p>
+<br>
+<p>I also worked closly with quality assurance creating an automated mobile UI testing framework that also expanded to test the web application.</p>
+<h4>Result</h4>
+<p>The end result was a better quality and more functional backend. A succesful launch of version 1 of the mobile app for on-site users and notifications. An automated testing framework helped ensure quality for future version of the platforms.</p>
+<h5>Keywords</h5>
 <blockquote class="keywords">
-Android, iPhone, Android Studio, Xcode, SQL, JSON, Web Service, REST, PDF, Scripting, Shared Library, UX, Agile, JIRA, Git, Appium, Automated Functional Testing, Cross-Device Functionality
+AJava, J2EE, Eclipse, JavaScript, CSS, HTML5, CSRF, XSS, MySQL, Tomcat, Agile, SCRUM, JIRA, Git, Selenium, Automated Functional Testing, UX, Android, iPhone, Android Studio, Xcode, SQL, JSON, Web Service, REST, PDF, Scripting, Shared Library, UX, Agile, JIRA, Git, Appium, Automated Functional Testing, Cross-Device Functionality
 </blockquote>
-
+<!--
 
 <ul>
 <li>Implemented version 1.0 of native Android &amp; iPhone apps</li>
@@ -103,7 +122,7 @@ Android, iPhone, Android Studio, Xcode, SQL, JSON, Web Service, REST, PDF, Scrip
 <li>Implemented dynamic customizable views and data synchronization</li>
 <li>Implemented prototype for a shared library between platforms in C with automated build processes</li>
 <li>Implemented push notifications for platforms</li>
-</ul>
+</ul>-->
 <!--
 <ul>
 <li>Developed Android, iPhone and Blackberry apps</li>
@@ -114,7 +133,7 @@ Android, iPhone, Android Studio, Xcode, SQL, JSON, Web Service, REST, PDF, Scrip
 <li>Implemented UI and UX according to specifications and wireframe</li>
 </ul>
 -->
-
+<!--
 <h3> Backend Java Engineer, July 3 2013 - July 3 2014 </h3>
 
 <blockquote class="keywords">
@@ -129,7 +148,7 @@ Java, J2EE, Eclipse, JavaScript, CSS, HTML5, CSRF, XSS, MySQL, Tomcat, Agile, SC
 <li>Participated in implementation of push notifications for mobile devices</li>
 <li>Provided some web security and performance (compression) enhancements on own initiative</li>
 
-
+-->
 <!--</ul>
 Provided bug fixes and new features on main web site (J2EE, Tomcat, HTML5, MySQL, JS)
 Reduced complexity in PDF generation
@@ -138,13 +157,14 @@ Initiated an implemented XSS and CSRF security fixes
 Extended API features for mobile development
 <h3> General </h3>
 <ul>
--->
 
 <li>Initiated an automation framework for web (Selenium)</li>
 </ul>
 
 </div>
+-->
 
+<!--
 <div class="card bg-default">
 
 <h2> <a href="http://www.quickmobile.com/">QuickMobile</a>
@@ -158,6 +178,7 @@ Extended API features for mobile development
 <li>Successfully and consistently met or exceeded all client deadlines</li>
 <li>Participated in stanford machine learning online course</li>
 </ul>
+-->
 <!--
 <ul>
 <li>Participated in developing mobile application framework</li>
@@ -179,14 +200,22 @@ Extended API features for mobile development
 
 <div class="card bg-default">
 
-<h2> <a href="http://www.panoramicsoft.com/">Panoramic Software</a> </h2>
-
+<h3> <a href="http://www.panoramicsoft.com/">Panoramic Software</a>,  Software Developer </h3>
+<h4>Problem</h4>
+<p>The company required thier windows mobile (palm) applications to be ported to the new windows phone platform.</p>
+<h4>Action</h4>
+<p>My role as a software developer was to convert C++ code to C# and XAML.  I converted several apps like and advanced calculator, social media apps, music applications, and games.  I often exceeded expected timelines, which allowed us to do things like use the C# code for the Xamarin framework and target iOS/Android.</p>
+<h4>Result</h4>
+<p>The result was several apps in more popular platforms that continue to bring revenue for the company.  They enjoyed the quality of my work so much I continued sub-contracting for the company after my initial one ended.</p>
+<h5>Keywords</h5>
+<!--
 <h3> Contract Developer, Sep 2011 - Apr 2012 </h3>
+-->
 <blockquote class="keywords">
 	Xamarin, C++, Windows Phone, iPhone, C#, UX, XAML, Silverlight, REST/SOAP, Twitter
 </blockquote>
 
-
+<!--
 <ul>
 <li>Ported GuitarSuite to from C++ (Palm) to iPhone/Windows in C#/Xamarin. Features included a metronome, scales/chord charts, tuner, etc</li>
 </ul>
@@ -195,13 +224,12 @@ Extended API features for mobile development
 <blockquote class="keywords">
 	Xamarin, C++, Windows Phone, iPhone, C#, UX, XAML, Silverlight, REST/SOAP, Twitter
 </blockquote>
-
 <ul>
 <li>Successfully ported several C++ (Palm) applications to Windows Phone (C#/XAML) and iOS/Android (Xamarin)</li>
 <li>Completed milestones ahead of schedule</li>
 <li>Attended Microsoft campus for a conference</li>
 </ul>
-
+-->
 <!--
 <ul>
 <li>Successfully completed milestone applications for Windows Phone 7 and iPhone marketplace</li>
@@ -217,15 +245,23 @@ Extended API features for mobile development
 
 <div class="card bg-default">
 
-<h2> <a href="http://www.novax.com/">Novax Industries Corporation</a>
-
-<h3> Software Developer, Apr 2008 - 2010 </h3>
-<h5> Pilot Project 1: SoundSafe Advanced Pedestrian Control </h5>
-
+<h3> <a href="http://www.novax.com/">Novax Industries Corporation</a>, Software Engineer and Quality Assurance Engineer</h3>
+<h4>Problem</h4>
+<p>The company wanted to expand thier traffic controller operations into several pilot projects for public transit traffic signal priority and configurable pedestrian push buttons.</p>
+<h4>Action</h4>
+<p>My role in quality assurance helped ensure the consistency of recievers and signal generators on buses by developing a system test plan, test cases, and test beds in a complex embedded network linux environment.</p>
+<br>
+<p>My role as a software engineer ensured a successful customization of transit priority using GPIO for the city of chicago.  I also worked closely with pedestrian push button engineers to develop a configuration application.  The application was for windows mobile and communicated over the zigbee protocol.</p>
+<h4>Result</h4>
+<p>The end result saw the pilot projects run succesfully with different organizations like Translink and Richmond municipality, Chicago transit and others.</p>
+<h5>Keywords</h5>
+<!--<h5> Pilot Project 1: SoundSafe Advanced Pedestrian Control </h5>
+-->
 <blockquote class="keywords">
+C, C++, GPS, Linux, Embedded Systems, Distributed Systems, Shell Scripting, SQL, GPS, Multithreading, GPIO, Networking,
 C#, .Net Compact, Windows Mobile, Power Line Communication (PLC), Token Ring, ZigBee
 </blockquote>
-
+<!--
 
 <ul>
 <li>Delivered a Windows Mobile application for configuring a power line communication pedestrian control unit over ZigBee wireless</li>
@@ -234,7 +270,7 @@ C#, .Net Compact, Windows Mobile, Power Line Communication (PLC), Token Ring, Zi
 <li>Provided additional testing and integration of system components</li>
 <li>Worked effectively in an agile team of 4-6, coordinating project progress</li>
 </ul>
-
+-->
 <!--
 <ul>
 <li>Developed a Windows Mobile application to configure pedestrian control buttons</li>
@@ -245,7 +281,7 @@ C#, .Net Compact, Windows Mobile, Power Line Communication (PLC), Token Ring, Zi
 <li>Gained experience implementing, debugging and optimizing custom network protocols</li>
 </ul>
 -->
-
+<!--
 <h5> Pilot Project 2: TransPOD Public Transit Optimizer </h5>
 
 <blockquote class="keywords">
@@ -261,7 +297,7 @@ C, C++, GPS, Linux, Embedded Systems, Distributed Systems, Shell Scripting, SQL,
 <li>Documented changes for release notes and internal docs on a team wiki</li>
 <li>Improved experience managing development time and met deadlines effectively</li>
 </ul>
-
+-->
 <!--
 <ul>
 <li>Implement new features for a traffic light priority request generator/receiver</li>
@@ -274,13 +310,13 @@ C, C++, GPS, Linux, Embedded Systems, Distributed Systems, Shell Scripting, SQL,
 <li>Successfully released software and hardware for Translink, Edmonton and Chicago transit authorities</li>
 </ul>
 -->
-
+<!--
 <h3> Quality Assurance Engineer, Dec 2007 - Apr 2008 </h3>
 
 <span class="keywords">
 	Blackbox, Whitebox, Test Plan, Test Case, Stress Test, Virtualization, Scripting
 </span>
-
+-->
 <!--
 <ul>
 <li>Responsible for ensuring system quality in a public transit traffic light priority system for TransLink</li>
@@ -289,6 +325,7 @@ C, C++, GPS, Linux, Embedded Systems, Distributed Systems, Shell Scripting, SQL,
 <li>Maintained detailed bug reports and sql analysis and 
 </ul>
 -->
+<!--
 <ul>
 <li>Responsible for ensuring system quality in a public transit traffic light priority system for TransLink</li>
 <li>Successfully developed first test plan and test cases based on project documentation</li>
@@ -299,18 +336,18 @@ C, C++, GPS, Linux, Embedded Systems, Distributed Systems, Shell Scripting, SQL,
 <li>Incorporated tools like selenium to perform web interface testing</li>
 <li>Complete system analysis and testing for release with Translink</li>
 </ul>
-
+-->
 </div>
 
 <h2> Education </h2>
 
 <div class="card bg-default">
-<h3> <a href="http://www.bcit.ca/">British Columbia Institute of Technology</a>, (84% GPA) </h3>
+<h3> <a href="http://www.bcit.ca/">British Columbia Institute of Technology</a></h3>
 <ul>
-<li>Diploma in Computer Systems, completing in summer 2018</li>
-<li>Certificate of Technology in Computer Systems, 2012-2015</li>
-<li>Associate in Applied Software Development, 2005-2007</li>
-<li>Associate in Computer Information Systems, 2005-2007</li>
+<li>Diploma in Computer Systems</li>
+<li>Certificate of Technology in Computer Systems</li>
+<li>Associate in Applied Software Development</li>
+<li>Associate in Computer Information Systems</li>
 </ul>
 
 <h3>Sun Microsystems Certified Java Programmer</h3>
@@ -324,12 +361,12 @@ C, C++, GPS, Linux, Embedded Systems, Distributed Systems, Shell Scripting, SQL,
 
 <div class="card bg-default">
 <ul>
-<li>CTO of <a href="https://micrantha.com">Micrantha Software Solutions</a> for contracting needs</li>
-<li><a href="https://fortunes.micrantha.com/">Fortunes</a> Slack App and Microservice</li>
-<li><a href="https://github.com/ryjen/prep">prep</a> - a dependency manager (and build tool) for c/c++ projects</li>
-<!--<li><a href="https://github.com/ryjen/p0ng">p0ng</a> - an unreleased retro pong game for iOS</li>-->
-<li><a href="https://github.com/ryjen/Droid-Fortunes">Droid Fortunes</a> - an Android hello world app of the UNIX 'fortunes' command</li>
-<li><a href="https://github.com/ryjen/db">rjdb</a> &amp; <a href="http://github.com/ryjen/net">rjnet</a> - some c++11 libraries I'm proud of</li>
+<li><a href="https://fortunes.micrantha.com/">fortunes</a>: Slack App and Microservice</li>
+<li><a href="https://github.com/ryjen/prep">prep</a>: a dependency manager (and build tool) for c/c++ projects</li>
+<li><a href="https://github.com/ryjen/p0ng">p0ng</a>: a multiplayer retro feel pong game for iOS</li>
+<li><a href="https://github.com/ryjen/Droid-Fortunes">droid fortunes</a>: an Android app to display random fortune cookies</li>
+<li><a href="https://github.com/ryjen/db">coda_db</a> &amp; <a href="http://github.com/ryjen/net">coda_net</a>: some c++11 libraries I'm proud of</li>
+<li><a href="https://micrantha.com">micrantha software solutions</a>: registered business for contracting needs</li>
 </ul>
 </div>
 

@@ -37,6 +37,10 @@
     margin-left: 0.5em;
 }
 
+#page-resume .card p, #page-resume .card li {
+    font-size: 0.8em;
+}
+
 #page-resume .card h2 {
     font-size: 1.5em;
     border-bottom: none;
@@ -45,25 +49,26 @@
 }
 
 #page-resume .card h3 {
-    font-size: 1.2em;
+    font-size: 1.1em;
     margin-bottom: 1em;
+    margin-top: 0;
     border-bottom: 1px solid silver;
 }
 
-#page-resume .card h5 {
-    font-size: 1.1em;
-    color: #666;
+#page-resume .card h4 {
+    font-size: 0.9em;
     font-style: normal;
-    margin-bottom: 0.4em;
+}
+
+#page-resume .card h5 {
+    font-size: 0.77em;
+    font-style: normal;
 }
 
 #page-resume .keywords {
-    font-style: italic;
-    margin-bottom: 1em;
     display: block;
-    margin-left: 1em;
-    font-size: 0.85em;
-    color: #666;
+    font-size: 0.6em;
+    margin: 5px 0 0 0;
 }
 
 #page-resume .card ul {
