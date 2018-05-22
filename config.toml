@@ -44,9 +44,16 @@ theme = "coda"
 #    url   = "/projects"
 
 [[menu.main]]
+    name   = "doodles"
+    identifier = "paint-brush"
+    url    = "/doodles"
+    weight = 4
+    
+[[menu.main]]
     name  = "things"
     identifier  = "object-ungroup"
     url   = "/things"
+    weight = 5
 
 #[[menu.main]]
 #    name  = "resume"

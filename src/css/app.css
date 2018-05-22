@@ -74,6 +74,15 @@
     margin-top: 1.5em;
 }
 
+.imgbox {
+    border: 1px solid silver;
+    border-radius: 12px;
+}
+
+#doodles td {
+    border: none;
+}
+
 @media print {
 
     #page-resume {

@@ -41,6 +41,10 @@ hr {
     margin: 2em 0;
 }
 
+td {
+    border: none
+}
+
 /* Utilities */
 
 .smaller {

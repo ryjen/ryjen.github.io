@@ -113,6 +113,15 @@ Mapping The core of my data access is the FieldMap structure, which determines h
     </item>
     
     <item>
+      <title>Doodles</title>
+      <link>https://coda.life/doodles/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://coda.life/doodles/</guid>
+      <description>            </description>
+    </item>
+    
+    <item>
       <title>Videos</title>
       <link>https://coda.life/music/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
