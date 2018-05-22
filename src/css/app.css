@@ -33,12 +33,11 @@
 
 #page-resume h2 {
     font-size: 1.6em;
-    margin-top: 2.5em;
     margin-left: 0.5em;
 }
 
 #page-resume .card p, #page-resume .card li {
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 
 #page-resume .card h2 {
@@ -56,18 +55,18 @@
 }
 
 #page-resume .card h4 {
+    font-weight: 600;
     font-size: 0.9em;
-    font-style: normal;
 }
 
 #page-resume .card h5 {
+    font-weight: 600;
     font-size: 0.77em;
-    font-style: normal;
 }
 
 #page-resume .keywords {
     display: block;
-    font-size: 0.6em;
+    font-size: 0.75em;
     margin: 5px 0 0 0;
 }
 
