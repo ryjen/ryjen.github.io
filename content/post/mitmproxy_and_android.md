@@ -53,9 +53,10 @@ Download a [proxy app](https://play.google.com/store/apps/details?id=org.proxydr
 
 a) Open the mitmproxy portal to download its HTTPS certificate: `https://mitm.it`
 
+![mitm cert](/image/blog/mitm_cert.png)
+
 b) Download the Android certificate and install it.  Name it whatever your want.
 
-![mitm cert](/image/blog/mitm_cert.png)
 
 ## Gotcha
 
