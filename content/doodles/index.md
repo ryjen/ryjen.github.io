@@ -2,32 +2,14 @@
 title: Doodles
 ---
 
-<table border=0>
+<div id="doodle-gallery" class="clearfix">
 
-<tr>
+<img class="doodle imgbox" src="/image/doodles/doodle1.png" />
 
-<td>
+<img class="doodle imgbox" src="/image/doodles/doodle3.png" />
 
-<a href="/image/doodles/doodle1.png">
-<img src="/image/doodles/doodle1.png" class="imgbox" />
-</a>
+<img class="doodle imgbox" src="/image/doodles/doodle2.png"/>
 
-</td>
-
-<td>
-<a href="/image/doodles/doodle2.png">
-<img src="/image/doodles/doodle2.png" class="imgbox"/>
-</a>
-
-</td>
-<td>
-<a href="/image/doodles/doodle3.png">
-<img src="/image/doodles/doodle3.png" class="imgbox" />
-</a>
-
-</td>
-</tr>
-
-</table>
+</div>
 
 

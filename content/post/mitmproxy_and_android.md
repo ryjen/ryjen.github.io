@@ -1,5 +1,5 @@
 ---
-title: "mitmproxy and android"
+title: "Mitmproxy and Android"
 description: "Some notes on using a network sniffer with android"
 date: 2018-05-16
 tags: ["proxy", "android", "network", "security", "certificates"]

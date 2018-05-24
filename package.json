@@ -6,9 +6,11 @@
   "dependencies": {
     "gulp-concat": "^2.6.1",
     "gulp-csso": "^3.0.1",
-    "gulp-scss": "^1.4.0",
+    "gulp-order": "^1.1.1",
+    "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "^2.6.4",
-    "merge-stream": "^1.0.1"
+    "gulp-uglify": "^3.0.0",
+    "merge-stream": "^1.0.1",
   },
   "devDependencies": {
     "graceful-fs": "4.1.11",
