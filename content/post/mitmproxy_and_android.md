@@ -33,7 +33,9 @@ If you prefer a web interface `mitmweb`:
 
 ### 2) Android
 
-Find your IP address on [whatismyip.com](https://whatismyip.com).  For example `55.55.55.55`.
+Find your local machine IP address, on OSX this can be found in network preferences.  For example `192.168.1.55`.
+
+Alternatively, find your public IP address on [whatismyip.com](https://whatismyip.com).  For example `55.55.55.55`.
 
 #### 2.1) Emulator
 
