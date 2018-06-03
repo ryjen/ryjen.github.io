@@ -47,7 +47,7 @@ Seeking a senior or lead software engineer role where I can maximize my experien
 <h4>Problem</h4>
 <p>The company required assistance in delivering client customizations and platform consistency and quality.</p>
 <h4>Action</h4>
-<p>My role as a mobile application developer saw me developing across multiple platforms like Blackberry, Windows Phone, Android and iOS.  In a time sensitive industry, I was able to bring quality customizations in a timely fashion. Allowing me to also bring important platform features like Beacons and core changes to Android.</p>
+<p>My role as a mobile application developer saw me developing across multiple platforms like Blackberry, Windows Phone, Android and iOS.  In a time sensitive industry, I was able to bring quality customizations in a timely fashion. Allowing me to also bring important platform features like Beacons and other core changes to Android.</p>
 <h4>Result</h4>
 <p>The end result was an impressive list of fortune 500 clients, a transtion to a product sass enterprise company, a more interactive experience at conferences, a more visually appealing and performant Android platform. </p>
 <h5>Keywords</h5>
@@ -209,7 +209,7 @@ Extended API features for mobile development
 <h4>Action</h4>
 <p>My role as a software developer was to convert C++ code to C# and XAML.  I converted several apps like and advanced calculator, social media apps, music applications, and games.  I often exceeded expected timelines, which allowed us to do things like use the C# code for the Xamarin framework and target iOS/Android.</p>
 <h4>Result</h4>
-<p>The result was several apps in more popular platforms that continue to bring revenue for the company.  They enjoyed the quality of my work so much I continued sub-contracting for the company after my initial one ended.</p>
+<p>The result was several apps in more popular platforms that continue to bring revenue for the company.  They enjoyed the quality of my work so much I continued contracting on the side for the company after my initial one ended.</p>
 <h5>Keywords</h5>
 <!--
 <h3> Contract Developer, Sep 2011 - Apr 2012 </h3>
