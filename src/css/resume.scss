@@ -106,14 +106,12 @@
         .card {
             margin: 0 0 1em 0;
             padding: 0;
+            background: none;
+            filter: unset;
         }
 
         a:after {
             content: "";
-        }
-
-        .card {
-            background: none;
         }
 
         #avatar {
