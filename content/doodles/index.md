@@ -4,17 +4,17 @@ title: Doodles
 
 <table id="doodles">
 <tr>
-<td class="prev right">&#8592;</td>
+<td class="prev"><span class="bg-green">&#8592;</span></td>
 <td>
 <ul id="doodle-gallery">
 <li>
+<img class="doodle imgbox" src="/image/doodles/doodle7.jpeg"/>
+</li><li>
 <img class="doodle imgbox" src="/image/doodles/doodle4.jpeg"/>
 </li><li>
 <img class="doodle imgbox" src="/image/doodles/doodle5.jpeg"/>
 </li><li>
 <img class="doodle imgbox" src="/image/doodles/doodle6.jpeg"/>
-</li><li>
-<img class="doodle imgbox" src="/image/doodles/doodle7.jpeg"/>
 </li><li>
 <img class="doodle imgbox" src="/image/doodles/doodle8.jpeg"/>
 </li><li>
@@ -32,7 +32,7 @@ title: Doodles
 </li>
 </ul>
 </td>
-<td class="next left">&#8594;</td>
+<td class="next"><span class="bg-green">&#8594;</span></td>
 </table>
 
 
