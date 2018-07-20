@@ -21,7 +21,7 @@ Things that matter relatively but not absolutely include: everything.
 “Its up to you.”
 
 ### Authority
-Seems like its always good intentions gone wrong.  A an imagined order that is written by an "author".  Turning the tables can create its own misplaced intentions.
+Seems like its always good intentions gone wrong.  An imagined order that is written by an "author".  Turning the tables can create its own misplaced intentions.
 
 ### Money
 I have cointempt.  Cleverly combines the words "contempt" and "coin". 
