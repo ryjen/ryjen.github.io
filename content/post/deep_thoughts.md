@@ -6,13 +6,15 @@ tags: []
 categories: []
 ---
 
+## Introduction
+
 If you are familiar with 90s Saturday Night Live, you may be familiar with a skit called "Deep Thoughts with Jack Handy".
 
 This is the simpleton who looks in the mirror and says the famous words "Your good enough, smart enough and gosh darn it.... people like you".  Needless to say, his deep thoughts were not so deep.
 
 I tend to have an active mind, so might be interesting to log some deep thoughts:
 
-# Deep Thoughts With RJ
+## Deep Thoughts With RJ
 
 ### Relatively and Absolutely
 Things that matter relatively but not absolutely include: everything.
@@ -25,6 +27,9 @@ Seems like its always good intentions gone wrong.  An imagined order that is wri
 
 ### Money
 I have cointempt.  Cleverly combines the words "contempt" and "coin". 
+
+### Love
+It's a more sadistic form of the oldest profession on earth.
 
 ### When the Industry breaks me down
 My core is linux and c.  The only thing that always brings passion.  
