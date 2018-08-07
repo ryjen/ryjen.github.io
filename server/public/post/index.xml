@@ -103,14 +103,5 @@ Mapping The core of my data access is the FieldMap structure, which determines h
 /* * this is the magical table used to communicate between memory and the database */ typedef struct FieldMap { const char *name; /* name of the field */ void *value; /* a pointer to the value of the field */ int type; /* type of value */ const void *arg1; /* additional argument */ const void *arg2; /* additional argument */ int flags; /* usage flags */ } FieldMap; /* callback for custom field types */ typedef int (*CustomField) (sqlite3_stmt *, int column, FieldMap *field); typedef void (*DbCallback) (sqlite3_stmt *);  Note: these examples will create this table dynamically with an object, however this can be used as a static table.</description>
     </item>
     
-    <item>
-      <title></title>
-      <link>https://coda.life/1/01/01/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://coda.life/1/01/01/</guid>
-      <description></description>
-    </item>
-    
   </channel>
 </rss>
