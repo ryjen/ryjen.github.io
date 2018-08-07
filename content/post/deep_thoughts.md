@@ -14,7 +14,7 @@ This is the simpleton who looks in the mirror and says the famous words "Your go
 
 I tend to have an active mind, so might be interesting to log some deep thoughts:
 
-## Deep Thoughts With RJ
+## Deep Thoughts
 
 ### Relatively and Absolutely
 Things that matter relatively but not absolutely include: everything.
