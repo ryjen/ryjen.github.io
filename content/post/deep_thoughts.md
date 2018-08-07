@@ -4,6 +4,7 @@ description: "Some ramblings from a madman"
 date: 2018-07-19
 tags: []
 categories: []
+draft: true
 ---
 
 ## Introduction

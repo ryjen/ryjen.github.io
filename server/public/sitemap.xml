@@ -3,11 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://coda.life/2018/07/19/deep-thoughts-with-rj/</loc>
-    <lastmod>2018-07-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://coda.life/2018/05/16/mitmproxy-and-android/</loc>
     <lastmod>2018-05-16T00:00:00+00:00</lastmod>
   </url>
@@ -219,7 +214,7 @@
   
   <url>
     <loc>https://coda.life/post/</loc>
-    <lastmod>2018-07-19T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -305,7 +300,7 @@
   
   <url>
     <loc>https://coda.life/</loc>
-    <lastmod>2018-07-19T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
