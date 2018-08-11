@@ -30,9 +30,35 @@ It is about working with and rearranging atoms to create or do just about anythi
 
 ## Current Status
 
-- 2018 usage
-  * Currently, we are able to use nano-technology to water-proof existing materials using a spray.
-  * CMOS transistors in the limits of 18nm.
+Researchers are constantly identifying new molecular structres and properties that will be usefull and new methods of use.  Practical applications are still limited, here are some:
+
+### Medical
+
+- [Abraxane](https://en.wikipedia.org/wiki/Abraxane) to treat breast, lung and pancreatic cancer
+- [Doxil](https://en.wikipedia.org/wiki/Doxil) which is an nano encasing for drugs that extend their life
+
+### Green
+
+- Water treatment devices already patented and on the market, low cost and effective.
+- The Interface Science Corporation successfully launched a an oil spill and recovery applicating using nanowires to cleanup the damage from Hurricane Katrina.
+- Nanotechnology coatings are already used on solar panels for improved performance.
+
+### Industrial
+
+- Self-cleaning or easy-to-clean nanotech surfaces are very prominent using coatings.
+- Nano coatings are also applied to clothing to make them wrinkle free, stain repellent or waterproof.  [Neverwet](http://www.neverwet.com) is a good example.
+- Alternative sunscreens use nanoparticles such as titaniukm oxide that have cosmetic benefits.
+- Baseball bats and other sports equipment may use carbon nanotubes for reinforcement or to make them lighter.
+- [New foods](https://en.wikipedia.org/wiki/Designer_food) has claimed nano-products like canola oil, Nanotea and shakes.  The products contain an additive "nanodrops" designed to carry vitamins, minerals and phytochemicals.
+
+### Electronical
+
+CMOS transistors currently are in the limits of 18nm and nanotechnology, however they are still produced with traditional manufacturing methods.
+
+### Investment
+
+Worldwide investment in nanotechnology "has increased nearly 20-fold, from $432 million in 1997 to $8.6 billion in 2004".  Today more private investment is flowing into the mix. [PR Newswire](https://www.prnewswire.com/news-releases/global-nanotechnology-market-2018-2024-market-is-expected-to-exceed-us-125-billion-300641054.html) "The global nanotechnology market is expected to exceed US$ 125 Billion mark by 2024."
+
 - government investment
 - universities
   * MIT Nano-Lab
@@ -248,6 +274,9 @@ I will be attending a conference on the issue of the need for humans to evolve, 
 
 - sapiens
 - a new earth
+- [Global Government Investment in Nanotechnologies](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2768287/)
+- [PR Newswire](https://www.prnewswire.com/news-releases/global-nanotechnology-market-2018-2024-market-is-expected-to-exceed-us-125-billion-300641054.html)
+
 
 `TODO: expand`
 
