@@ -47,9 +47,7 @@ gulp.task('image', function() {
 
   del(['static/image/*-[0-9a-e]+.*'])
 
-  return gulp.src([
-    'src/image/**/*'
-    ])
+  return gulp.src('src/image/**/*')
     .pipe(hash())
     .pipe(gulp.dest('static/image'))
     .pipe(hash.manifest('hash.json'))

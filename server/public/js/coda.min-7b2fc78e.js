@@ -1,0 +1,4 @@
+$(function(){switch(window.location.pathname){case"/post/":$("#header .blog").addClass("active");break;case"/music/":$("#header .music").addClass("active");break;case"/doodles/":$("#header .doodles").addClass("active");break;case"/things/":$("#header .things").addClass("active")}$("#menu-toggle").click(function(){$("#header nav").slideToggle()})});
+$(function(){particlesJS.load("background","/assets/particles.json",function(){console.log("callback - particles.js config loaded")})});
+!function(){for(var e,n=function(){},o=["assert","clear","count","debug","dir","dirxml","error","exception","group","groupCollapsed","groupEnd","info","log","markTimeline","profile","profileEnd","table","time","timeEnd","timeline","timelineEnd","timeStamp","trace","warn"],i=o.length,r=window.console=window.console||{};i--;)r[e=o[i]]||(r[e]=n)}();
+//# sourceMappingURL=maps/coda.min-7b2fc78e.js.map

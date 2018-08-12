@@ -8,7 +8,7 @@
 
     {{ partial "meta" . }}
         
-    {{ partial "css" . }} 
+    {{ partial "css_theme" . }} 
 
     {{ .Hugo.Generator }}
 
@@ -28,7 +28,7 @@
     <div class="container clearfix">
         <span id="menu-toggle"><i class="fa fa-bars"></i></span>
         <div id="brand">
-			{{ partial "brand" . }}
+	    {{ partial "brand" . }}
         </div>
         <nav>
             {{ if .Site.Menus.main }}
