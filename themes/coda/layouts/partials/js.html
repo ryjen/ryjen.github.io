@@ -4,6 +4,8 @@
 
 <script src="/js/coda.min.js"></script>
 
+{{ partial "js_include" . }}
+
 <script>hljs.initHighlightingOnLoad();</script>
 
 {{ if .Site.Params.GoogleAnalytics }}
@@ -19,5 +21,5 @@
 <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 {{ end }}
 
-<!-- custom -->
-{{ range .Site.Params.js }} <script src="{{ . }}"></script> {{ end }}
+
+

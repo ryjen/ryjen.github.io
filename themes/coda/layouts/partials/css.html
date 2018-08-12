@@ -1,23 +1,8 @@
 
 <link rel="stylesheet" href="/css/font-awesome.min.css">
-<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-<style type="text/css">
-#header {
-	{{ if .Site.Params.HeaderColorBG }}
-    background-color:  {{ .Site.Params.HeaderColorBG }};
-    {{ else  }}
-    background-color: mediumseagreen;
-    {{ end }}
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro" rel="stylesheet">
+<link rel="stylesheet" href="/css/{{ index .Site.Data.css.hash "coda.min.css" }}">
 
-    {{ if .Site.Params.HeaderColorFG }}
-    color: {{ .Site.Params.HeaderColorFG  }};
-    {{ else }}
-    color: whitesmoke;
-    {{ end }}
-}
-</style>
 
-<link rel="stylesheet" href="/css/coda.min.css">
+{{ partial "css" . }}
 
-<!-- custom -->
-{{ range .Site.Params.css }} <link rel="stylesheet" href="{{ . }}"> {{ end }}

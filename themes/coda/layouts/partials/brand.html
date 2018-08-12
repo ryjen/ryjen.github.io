@@ -1,3 +1,3 @@
 <a href="/">
-	<img src="/image/logo-light.svg" alt="logo" width="40" height="40" /> <span class="brand">{{ .Site.Params.BrandName | markdownify }}</span>
+  <img src="/image/{{ index .Site.Data.image.hash "logo-light.svg" }}" alt="logo" width="40" height="40" /> <span class="brand">{{ .Site.Params.BrandName | markdownify }}</span>
 </a>

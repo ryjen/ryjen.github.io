@@ -161,7 +161,10 @@ td {
     padding-top: 10px;
     padding-bottom: 13px;
     margin-bottom: 2em;
-    filter: drop-shadow(5px 5px 5px silver);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
     
     .nav {
         display:  inline-block;
@@ -169,17 +172,18 @@ td {
 
     a {
         font-weight: normal;
-        color: whitesmoke;
+        color: mediumseagreen;
         vertical-align: top;
         
         &:hover {
-            color: white;
+          font-size: larger;
         }
 
     }
     #menu-toggle {
         line-height: 0.5em;
         display: none;
+        color: mediumseagreen;
     }
 
     #brand {
@@ -210,6 +214,10 @@ td {
         text-align: center;
         border-radius: 5px;
 
+        i {
+          color: mediumseagreen;
+        }
+
         &:last-child {
             margin-right: inherit;
         }
@@ -230,7 +238,17 @@ td {
     font-weight: bold;
 }
 
+#background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 #main {
+
+    margin-top: 2em;
     
     h1, h2, h3, h4, h5 {
         margin-top: 1em;

@@ -7,8 +7,12 @@ var sourcemaps = require('gulp-sourcemaps');
 var merge = require('merge-stream');
 var order = require("gulp-order");
 var uglify = require("gulp-uglify");
+var hash = require("gulp-hash");
+var del = require("del");
 
 gulp.task('css', function(){
+  del(['static/css/**/*'])
+
   var cssSrc = gulp.src('src/css/*.css')
     .pipe(order([
         "normalize.css",
@@ -25,22 +29,44 @@ gulp.task('css', function(){
     .pipe(sourcemaps.init())
     .pipe(minifyCSS())
     .pipe(concat('coda.min.css'))
+    .pipe(hash())
     .pipe(sourcemaps.write('maps'))
     .pipe(gulp.dest('static/css'))
+    .pipe(hash.manifest('hash.json'))
+    .pipe(gulp.dest('data/css'))
 });
 
 gulp.task('js', function(){
-  return gulp.src('src/js/*.js')
+  del(['static/js/**/*'])
+
+  return gulp.src([
+      'src/js/*.js',
+      'node_modules/particles.js/particles.js',
+     ])
     .pipe(sourcemaps.init())
     .pipe(uglify())
     .pipe(concat('coda.min.js'))
+    .pipe(hash())
     .pipe(sourcemaps.write('maps'))
     .pipe(gulp.dest('static/js'))
+    .pipe(hash.manifest('hash.json'))
+    .pipe(gulp.dest('data/js'))
 });
+
+gulp.task('image', function() {
+  del(['static/image/**/*'])
+
+  return gulp.src('src/image/**/*')
+      .pipe(hash())
+      .pipe(gulp.dest('static/image'))
+      .pipe(hash.manifest('hash.json'))
+      .pipe(gulp.dest('data/image'))
+})
 
 gulp.task('watch', function() {
-    gulp.watch('src/css/*.scss', ['css']);
-    gulp.watch('src/js/*.js', ['js']);
+    gulp.watch('src/css/**/*', ['css']);
+    gulp.watch('src/js/**/*', ['js']);
+    gulp.watch('src/image/**/*', ['image']);
 });
 
-gulp.task('default', [ 'css', 'js' ]);
+gulp.task('default', [ 'css', 'js', 'image' ]);
