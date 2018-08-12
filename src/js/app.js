@@ -1,11 +1,24 @@
 
+function initDoodles() {
+
+    var width = $(window).width()/3*2;
+    var height = width * 0.68571428571;
+
+    $("#doodle-gallery").simplecarousel({
+        next: $('.next'),
+        prev: $('.prev'),
+        slidespeed: 700,
+        height: height,
+        width: width,
+    });
+}
+
 $(function() {
-  $("#doodle-gallery").simplecarousel({
-    next: $('.next'),
-    prev: $('.prev'),
-    slidespeed: 700,
-    height: 400,
-    width: 700
+  
+  $(window).resize(function() {
+    initDoodles();
   });
+
+  initDoodles();
 });
 

@@ -12,10 +12,12 @@ var del = require('del');
 gulp.task('css', function(){
   del(['static/css/**/*'])
 
-  var cssSrc = gulp.src('src/css/*.css')
+  var cssSrc = gulp.src([
+    'src/css/*.css',
+  ])
   
   var sasSrc = gulp.src('src/css/*.scss')
-    .pipe(sass().on('error', sass.logError))
+    .pipe(sass({errLogToConsole: true}))
     
   return merge(cssSrc, sasSrc)
     .pipe(sourcemaps.init())
@@ -28,13 +30,20 @@ gulp.task('css', function(){
 gulp.task('js', function(){
   del(['static/js/**/*'])
 
-  return gulp.src('src/js/*.js')
+  return gulp.src([
+      'src/js/*.js',
+    ])
+    .pipe(order([
+        'simple.carousel.js',
+        'app.js',
+     ]))
     .pipe(sourcemaps.init())
     .pipe(uglify())
     .pipe(concat('app.min.js'))
     .pipe(sourcemaps.write('maps'))
     .pipe(gulp.dest('static/js'))
 });
+
 
 gulp.task('watch', function() {
     gulp.watch('src/css/*.scss', ['css']);

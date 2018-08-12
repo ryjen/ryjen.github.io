@@ -52,13 +52,13 @@ gulp.task('js', function(){
   return gulp.src([
       'src/js/*.js',
       'node_modules/particles.js/particles.js',
-      'node_modules/jquery/dist/jquery.slim.js',
+      'node_modules/jquery/dist/jquery.js',
       'node_modules/highlightjs/highlight.pack.js',
      ])
     .pipe(order([
       'modernizr.js',
       'highlight.pack.js',
-      'jquery.slim.js',
+      'jquery.js',
     ]))
     .pipe(sourcemaps.init())
     .pipe(uglify())
