@@ -7,13 +7,30 @@ var sourcemaps = require('gulp-sourcemaps');
 var merge = require('merge-stream');
 var order = require("gulp-order");
 var uglify = require("gulp-uglify");
-var hash = require("gulp-hash");
+var bust = require("gulp-buster");
 var del = require("del");
 
-gulp.task('css', function(){
+gulp.task('clean', function() {
   del(['static/css/**/*'])
+  del(['static/js/**/*'])
+  del(['static/font/**/*'])
+  del(['static/image/**/*'])
+});
 
-  var cssSrc = gulp.src('src/css/*.css')
+gulp.task('css', function(){
+
+  var cssSrc = gulp.src([
+      'src/css/*.css',
+      'node_modules/skeleton-css/css/*.css',
+      'node_modules/font-awesome/css/font-awesome.css',
+    ])
+  
+  var sasSrc = gulp.src([
+      'src/css/*.scss',
+    ])
+    .pipe(sass({errLogToConsole: true}))
+    
+  return merge(cssSrc, sasSrc)
     .pipe(order([
         "normalize.css",
         "skeleton.css",
@@ -21,52 +38,54 @@ gulp.task('css', function(){
         "coda.css",
         "print.css"
     ]))
-  
-  var sasSrc = gulp.src('src/css/*.scss')
-    .pipe(sass({errLogToConsole: true}))
-    
-  return merge(cssSrc, sasSrc)
     .pipe(sourcemaps.init())
     .pipe(minifyCSS())
     .pipe(concat('coda.min.css'))
-    .pipe(hash())
     .pipe(sourcemaps.write('maps'))
     .pipe(gulp.dest('static/css'))
-    .pipe(hash.manifest('hash.json'))
+    .pipe(bust({ fileName: 'hash.json' }))
     .pipe(gulp.dest('data/css'))
 });
 
 gulp.task('js', function(){
-  del(['static/js/**/*'])
 
   return gulp.src([
       'src/js/*.js',
       'node_modules/particles.js/particles.js',
+      'node_modules/jquery/dist/jquery.slim.js',
+      'node_modules/highlightjs/highlight.pack.js',
      ])
+    .pipe(order([
+      'modernizr.js',
+      'highlight.pack.js',
+      'jquery.slim.js',
+    ]))
     .pipe(sourcemaps.init())
     .pipe(uglify())
     .pipe(concat('coda.min.js'))
-    .pipe(hash())
     .pipe(sourcemaps.write('maps'))
     .pipe(gulp.dest('static/js'))
-    .pipe(hash.manifest('hash.json'))
+    .pipe(bust({ fileName: 'hash.json'}))
     .pipe(gulp.dest('data/js'))
 });
 
 gulp.task('image', function() {
-  del(['static/image/**/*'])
-
   return gulp.src('src/image/**/*')
-      .pipe(hash())
       .pipe(gulp.dest('static/image'))
-      .pipe(hash.manifest('hash.json'))
-      .pipe(gulp.dest('data/image'))
+})
+
+gulp.task('font', function() {
+  return gulp.src([
+      'node_modules/font-awesome/fonts/**/*',
+    ])
+    .pipe(gulp.dest('static/fonts'))
 })
 
 gulp.task('watch', function() {
     gulp.watch('src/css/**/*', ['css']);
     gulp.watch('src/js/**/*', ['js']);
     gulp.watch('src/image/**/*', ['image']);
+    gulp.watch('src/fonts/**/*', ['font']);
 });
 
-gulp.task('default', [ 'css', 'js', 'image' ]);
+gulp.task('default', [ 'clean', 'css', 'js', 'image', 'font' ]);

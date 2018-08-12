@@ -4,21 +4,27 @@
   "description": "a theme for hugo",
   "main": "gulpfile.js",
   "dependencies": {
-    "particles.js": "^2.0.0"
+    "font-awesome": "^4.7.0",
+    "highlightjs": "^9.10.0",
+    "jquery": "^3.3.1",
+    "modernizr": "^3.6.0",
+    "particles.js": "^2.0.0",
+    "skeleton-css": "^2.0.4"
   },
   "devDependencies": {
     "del": "^3.0.0",
     "graceful-fs": "4.1.11",
     "gulp": "^3.9.1",
+    "gulp-buster": "^1.1.0",
     "gulp-concat": "^2.6.1",
     "gulp-csso": "^3.0.1",
-    "gulp-hash": "^4.2.2",
     "gulp-order": "^1.1.1",
     "gulp-sass": "^4.0.1",
     "gulp-uglify": "^3.0.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "node_modules/modernizr/bin/modernizr -d src/js/modernizr.js -c node_modules/modernizr/lib/config-all.json"
   },
   "keywords": [
     "theme",
