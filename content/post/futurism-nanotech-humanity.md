@@ -20,9 +20,9 @@ draft: true
 
 ## Introduction
 
-Somewhere around 2005, I had the good fortune of doing a research paper on [nanotechnology](https://en.wikipedia.org/wiki/Nanotechnology#Tools_and_techniques) for university. I've been very interested in the topic ever since.
+Somewhere around 2005, a student did a relatively small research project on [nanotechnology](https://en.wikipedia.org/wiki/Nanotechnology#Tools_and_techniques) for university. I've been very interested in the topic ever since.
 
-If you aren't used to hearing about nano technology the summary is this:  it is **a technology that works are the nano scale** (1 billionth of a metre).  
+Th nano technology summary goes like this:  it is **a technology that works are the nano scale** (1 billionth of a metre).  
 
 To put it in perspective, it takes 10 hydrogen atoms side by side to equal 1 nanometre.  A human hair is 80,000 nanometres.
 
@@ -30,7 +30,7 @@ It is about working with and rearranging atoms to create or do just about anythi
 
 ## Current Status
 
-Researchers are constantly identifying new molecular structres and properties that will be usefull and new methods of use.  Practical applications are still limited, here are some:
+In terms of practical applications there a few, but most are still in research mode.  This is evolving regularily (see [reddit/r/nanotech](https://reddit.com/r/nanotech) though I never hear politicians or media talk about it.
 
 ### Medical
 
@@ -46,37 +46,35 @@ Researchers are constantly identifying new molecular structres and properties th
 ### Industrial
 
 - Self-cleaning or easy-to-clean nanotech surfaces are very prominent using coatings.
-- Nano coatings are also applied to clothing to make them wrinkle free, stain repellent or waterproof.  [Neverwet](http://www.neverwet.com) is a good example.
+- Nano coatings are also applied to clothing to make them wrinkle free, stain repelent or waterproof.  [Neverwet](http://www.neverwet.com) is a good example.
 - Alternative sunscreens use nanoparticles such as titaniukm oxide that have cosmetic benefits.
 - Baseball bats and other sports equipment may use carbon nanotubes for reinforcement or to make them lighter.
 - [New foods](https://en.wikipedia.org/wiki/Designer_food) has claimed nano-products like canola oil, Nanotea and shakes.  The products contain an additive "nanodrops" designed to carry vitamins, minerals and phytochemicals.
 
 ### Electronical
 
-CMOS transistors currently are in the limits of 18nm and nanotechnology, however they are still produced with traditional manufacturing methods.
+CMOS transistors currently are in the limits of 18nm and nanotechnology, however they are still produced with traditional manufacturing methods (meaning top down not bottom up).
 
 ### Investment
 
-Worldwide investment in nanotechnology "has increased nearly 20-fold, from $432 million in 1997 to $8.6 billion in 2004".  Today more private investment is flowing into the mix. [PR Newswire](https://www.prnewswire.com/news-releases/global-nanotechnology-market-2018-2024-market-is-expected-to-exceed-us-125-billion-300641054.html) "The global nanotechnology market is expected to exceed US$ 125 Billion mark by 2024."
+Worldwide investment in nanotechnology "has increased nearly 20-fold, from $432 million in 1997 to $8.6 billion in 2004".  More private investment is flowing into the mix. [PR Newswire](https://www.prnewswire.com/news-releases/global-nanotechnology-market-2018-2024-market-is-expected-to-exceed-us-125-billion-300641054.html) "The global nanotechnology market is expected to exceed US$ 125 Billion mark by 2024."
 
-- government investment
-- universities
-  * MIT Nano-Lab
-- tools
+## Going Forward
 
-`TODO: research more and reference`
-
-## Going Forward / Speculation
+The implications of some of this research is quite mond boggling.  The efficiency and power of is magnitudes more than current standards.  One can start dreaming of safer space ships, disaster proof buildings, cleaner more efficient energy, more powerful and smaller computers, stronger body armor and space suits, etc.
 
 ### Material Improvements
 
-A promising nano-structure is called the [carbon nano-tube](https://example.com/carbon-nanotube).  This structure is 10 times the strength of steel and yet super lightweight with conductivity properties.
+There are a few good candidates for new industrial materials like:
+* [carbon nano-tube](https://example.com/carbon-nanotube).
+* [graphite](https://example.com/graphite)
+* [buckyballs](https://example.com/bb)
 
-The implications of carbon nano-tubes are enormous. For example, safer space ships, disaster proof buildings, body armor, space suits, etc.
+All of these nano-structures share improvements in strength, weight and conductivity.
 
 #### Smart Materials
 
-If we combine electronical or computational properties of nanotechnology with materials we get "smart" materials.  These will make apple watches and google goggles look like typewriters to computers.
+If we combine electronical or computational properties of nanotechnology with materials we get "smart" materials.  When fully mature in a not-so-distant future, apple watches and google goggles will be comparable to typewriters from computers.
 
 `TODO: reference, expand, recent smart material conference, south korea`
 
@@ -213,6 +211,12 @@ Another problem to shifting technology or human thinking is the structures that 
 For example, we definately have the technology to use alternative sources of power for mobility.  Because of all the infrastructure in place for existing technologies, its not economically feasible to change.
 
 If an emerging nano technology provided environmental benefit to the world, it might also be limited in use for the same reasons.
+
+#### Love / Hate
+
+Some people say that love is the answer.  I think this is terribly naive.  You can love in an egoic state like you would an object and this just leads to more suffering in the long term.
+
+A good concept of love is "Recognizing the other as your self".
 
 ## The Economic Problem
 
