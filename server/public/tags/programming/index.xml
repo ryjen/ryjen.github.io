@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Programming on coda.life</title>
-    <link>https://coda.life/tags/programming/</link>
+    <link>https://nullstruct.com/tags/programming/</link>
     <description>Recent content in Programming on coda.life</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 30 Nov 2012 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://coda.life/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://nullstruct.com/tags/programming/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Poor Man&#39;s Polymorphism</title>
-      <link>https://coda.life/2012/11/30/poor-mans-polymorphism/</link>
+      <link>https://nullstruct.com/2012/11/30/poor-mans-polymorphism/</link>
       <pubDate>Fri, 30 Nov 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://coda.life/2012/11/30/poor-mans-polymorphism/</guid>
+      <guid>https://nullstruct.com/2012/11/30/poor-mans-polymorphism/</guid>
       <description>Just when you think you know everything about C&amp;hellip; a way to polymorph C data structures.
 How? Structs with the same field types and ordering can be casted.
 This is an attempt at an example.
@@ -26,10 +26,10 @@ typedef struct { int key; } Vehicle;  Sub structures must implement the exact ty
     
     <item>
       <title>C Sqlite Tricks</title>
-      <link>https://coda.life/2012/05/15/c-sqlite-tricks/</link>
+      <link>https://nullstruct.com/2012/05/15/c-sqlite-tricks/</link>
       <pubDate>Tue, 15 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://coda.life/2012/05/15/c-sqlite-tricks/</guid>
+      <guid>https://nullstruct.com/2012/05/15/c-sqlite-tricks/</guid>
       <description>Introduction Thought I would share some tricks I use for easy data CRUD&amp;rsquo;s in C. I&amp;rsquo;m using Sqlite here, but could apply to any database.
 Not saying its the best approach at all (nor ryjen/db), this is just how it evolved for me.
 Mapping The core of my data access is the FieldMap structure, which determines how to save each field to the database.

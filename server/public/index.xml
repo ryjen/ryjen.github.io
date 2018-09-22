@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>coda.life</title>
-    <link>https://coda.life/</link>
+    <link>https://nullstruct.com/</link>
     <description>Recent content on coda.life</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 16 May 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://coda.life/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://nullstruct.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Mitmproxy and Android</title>
-      <link>https://coda.life/2018/05/16/mitmproxy-and-android/</link>
+      <link>https://nullstruct.com/2018/05/16/mitmproxy-and-android/</link>
       <pubDate>Wed, 16 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://coda.life/2018/05/16/mitmproxy-and-android/</guid>
+      <guid>https://nullstruct.com/2018/05/16/mitmproxy-and-android/</guid>
       <description>Introduction Debugging network traffic for your app can be useful, and sometimes necessary if the data is not what is expected or inconsistent.
 The Proxy I prefer the open source proxy mitmproxy. Easy to install on OSX with homebrew.
 brew install mitmproxy
@@ -26,20 +26,20 @@ Steps 1) mitmproxy Choose a port (ex. 8888) and start the program: mitmproxy -p 
     
     <item>
       <title>Deploy Docker Registry with Dokku</title>
-      <link>https://coda.life/2018/02/19/deploy-docker-registry-with-dokku/</link>
+      <link>https://nullstruct.com/2018/02/19/deploy-docker-registry-with-dokku/</link>
       <pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://coda.life/2018/02/19/deploy-docker-registry-with-dokku/</guid>
+      <guid>https://nullstruct.com/2018/02/19/deploy-docker-registry-with-dokku/</guid>
       <description>Prerequisites You&amp;rsquo;ll need to prepare a bit.
  A local path on the server to store registry data. For example: /mydir/registry Docker installed on the client and server machine Dokku installed on the server  For Authentication  httpasswd command is installed  For an External Registry  Dokku letsencrypt plugin installed A working domain name pointing to the dokku app. For example, https://registry.mydomain.com  Create the dokku app Create the dokku app and retag a pre-existing repository image to it.</description>
     </item>
     
     <item>
       <title>Fortunes on Slack</title>
-      <link>https://coda.life/2018/01/22/fortunes-on-slack/</link>
+      <link>https://nullstruct.com/2018/01/22/fortunes-on-slack/</link>
       <pubDate>Mon, 22 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://coda.life/2018/01/22/fortunes-on-slack/</guid>
+      <guid>https://nullstruct.com/2018/01/22/fortunes-on-slack/</guid>
       <description>view the service homepage
 Introduction Have always enjoyed the UNIX fortunes program, ever since I was a wee newbie. If you aren&amp;rsquo;t familiar with it (sad), yes, its like a fortune cookie.
 It can be more technical in nature but not always. It also has poems, quotations, and if enabled - offensive content.
@@ -48,10 +48,10 @@ Often I would find a fortune I&amp;rsquo;d like to share and pipe it to a snippe
     
     <item>
       <title>Microsoft Dev Stack on macOS</title>
-      <link>https://coda.life/2016/11/27/microsoft-dev-stack-on-macos/</link>
+      <link>https://nullstruct.com/2016/11/27/microsoft-dev-stack-on-macos/</link>
       <pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://coda.life/2016/11/27/microsoft-dev-stack-on-macos/</guid>
+      <guid>https://nullstruct.com/2016/11/27/microsoft-dev-stack-on-macos/</guid>
       <description>Gonna evangelize a little bit.
 When Microsoft bought Xamarin, they did not underestimate the power of Xamarin.Forms for building cross platform UIs. Now with the release of Visual Studio for macOS and the Dotnet Core, its looks like its going to stay alive.
 Development Environment  macOS, XCode Android SDK Dotnet core Visual Studio for macOS nuget  Web ASP.NET Production Environment  Digital Ocean Dotnet core on Docker Dokku, docker based heroku  Platforms Targeted in One Solution  iOS Android Web ASP.</description>
@@ -59,20 +59,20 @@ Development Environment  macOS, XCode Android SDK Dotnet core Visual Studio for 
     
     <item>
       <title>Elixir and Phoenix</title>
-      <link>https://coda.life/2015/09/09/elixir-and-phoenix/</link>
+      <link>https://nullstruct.com/2015/09/09/elixir-and-phoenix/</link>
       <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://coda.life/2015/09/09/elixir-and-phoenix/</guid>
+      <guid>https://nullstruct.com/2015/09/09/elixir-and-phoenix/</guid>
       <description>Introduction Saw a post on reddit about this new web framework phoenix. It is an elixir based framework. Elixir is based upon erlang. Erlang has been around a while (open-sourced in 1998) and is a massively scalable and highly reliable language used in telecoms, banking and instant messaging (among others).
 Elixir brings very ruby-ish syntax to the language. Phoenix framework is like rails for elixir, and is pretty full featured.</description>
     </item>
     
     <item>
       <title>Poor Man&#39;s Polymorphism</title>
-      <link>https://coda.life/2012/11/30/poor-mans-polymorphism/</link>
+      <link>https://nullstruct.com/2012/11/30/poor-mans-polymorphism/</link>
       <pubDate>Fri, 30 Nov 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://coda.life/2012/11/30/poor-mans-polymorphism/</guid>
+      <guid>https://nullstruct.com/2012/11/30/poor-mans-polymorphism/</guid>
       <description>Just when you think you know everything about C&amp;hellip; a way to polymorph C data structures.
 How? Structs with the same field types and ordering can be casted.
 This is an attempt at an example.
@@ -82,10 +82,10 @@ typedef struct { int key; } Vehicle;  Sub structures must implement the exact ty
     
     <item>
       <title>C Sqlite Tricks</title>
-      <link>https://coda.life/2012/05/15/c-sqlite-tricks/</link>
+      <link>https://nullstruct.com/2012/05/15/c-sqlite-tricks/</link>
       <pubDate>Tue, 15 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://coda.life/2012/05/15/c-sqlite-tricks/</guid>
+      <guid>https://nullstruct.com/2012/05/15/c-sqlite-tricks/</guid>
       <description>Introduction Thought I would share some tricks I use for easy data CRUD&amp;rsquo;s in C. I&amp;rsquo;m using Sqlite here, but could apply to any database.
 Not saying its the best approach at all (nor ryjen/db), this is just how it evolved for me.
 Mapping The core of my data access is the FieldMap structure, which determines how to save each field to the database.
@@ -94,10 +94,10 @@ Mapping The core of my data access is the FieldMap structure, which determines h
     
     <item>
       <title>Books</title>
-      <link>https://coda.life/things/</link>
+      <link>https://nullstruct.com/things/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://coda.life/things/</guid>
+      <guid>https://nullstruct.com/things/</guid>
       <description>Books RxJava for Android Developers If you were confused about Rx or RxJava, this book does a great job of a practical explanation. Its still in early access as of 12/20/17.
  Cracking the Coding Interview Found this book to be very useful, good example problems and content just for your own enjoyment of solving if your not interviewing.
  The Clean Coder Much good advice in here, if your interested in being more professional.</description>
@@ -105,46 +105,46 @@ Mapping The core of my data access is the FieldMap structure, which determines h
     
     <item>
       <title>Doodles</title>
-      <link>https://coda.life/doodles/</link>
+      <link>https://nullstruct.com/doodles/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://coda.life/doodles/</guid>
+      <guid>https://nullstruct.com/doodles/</guid>
       <description> &amp;#x2B9C;                &amp;#x2B9E;  </description>
     </item>
     
     <item>
       <title>Videos</title>
-      <link>https://coda.life/music/</link>
+      <link>https://nullstruct.com/music/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://coda.life/music/</guid>
+      <guid>https://nullstruct.com/music/</guid>
       <description> SoundCloud  Videos  </description>
     </item>
     
     <item>
       <title>about</title>
-      <link>https://coda.life/about/</link>
+      <link>https://nullstruct.com/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://coda.life/about/</guid>
+      <guid>https://nullstruct.com/about/</guid>
       <description> &amp;nbsp; 778-240-3248  &amp;nbsp; ryan@coda.life  &amp;nbsp; [github.com/ryjen](https://github.com/ryjen?tab=repositories)   &amp;nbsp; [ca.linkedin.com/in/ryjen](http://ca.linkedin.com/in/ryjen)  &amp;nbsp; [coda.life](http://coda.life)  I currently work as a mobile application developer for a respectable software company. If you’d like, you can view my [resume](/about/resume). </description>
     </item>
     
     <item>
       <title>projects</title>
-      <link>https://coda.life/projects/</link>
+      <link>https://nullstruct.com/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://coda.life/projects/</guid>
+      <guid>https://nullstruct.com/projects/</guid>
       <description>Open Source Closed Source   prep A c++ package manager and build tool. Think npm for c++. Uses plugins for system independent dependency management and builds.</description>
     </item>
     
     <item>
       <title>resume</title>
-      <link>https://coda.life/resume/</link>
+      <link>https://nullstruct.com/resume/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://coda.life/resume/</guid>
+      <guid>https://nullstruct.com/resume/</guid>
       <description>Ryan Jennings   778-240-3248   ryan@coda.life   github.com/ryjen   coda.life    Seeking a senior or challenging software engineer role where I can maximize my experience and knowledge. Self-taught programmer since 2002, formally educated with distinction in Computer Systems at BCIT. Started professionally in quality assurance and embedded systems. Have successfully been a part of the mobile revolution for 8 years on multiple platforms and languages.</description>
     </item>
     

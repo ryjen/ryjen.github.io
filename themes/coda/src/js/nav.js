@@ -27,16 +27,16 @@ $(function() {
   }
 
   $("#menu-toggle").click(function() {
-    if ( $("#header nav").is(':visible')) {
+    /*if ( $("#header nav").is(':visible')) {
       // going to hide
       transNav();
     } else {
       solidNav();
-    }
+    }*/
     $("#header nav").slideToggle();
   });
 
-  // Transition effect for navbar 
+  /* Transition effect for navbar 
   $(window).scroll(function() {
     // checks if window is scrolled more than 500px, adds/removes solid class
     if($(this).scrollTop() > 20) { 
@@ -48,6 +48,6 @@ $(function() {
 
   if ($(window).scrollTop() > 20) {
     solidNav();
-  }
+  }*/
 
 });

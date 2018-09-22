@@ -1,0 +1,14 @@
+<div class="card item bg-default clearfix">
+
+    {{ $.Scratch.Set "link" .RelPermalink }}
+    {{ with .Params.repo }} {{ printf "https://github.com/%s/%s/" $.Site.Params.githubUsername . | $.Scratch.Set "link" }} {{ end }}
+
+    {{ with .Description }} {{ $.Scratch.Set "subtitle" . }} {{ end }}
+
+    <p class="pull-right">{{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006") }}</p>
+    <h4><a href="{{ .Scratch.Get "link" }}">{{ .Title }}</a></h4>
+    <h5>{{ $.Scratch.Get "subtitle" }}</h5>
+
+    {{ range .Params.tags }} <span class="item-tag">{{ . }}</span> {{ end }}
+
+</div>

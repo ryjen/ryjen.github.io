@@ -1,7 +1,7 @@
 
 function initDoodles() {
 
-    var width = $(window).width()/3*2;
+    var width = ($(window).width()/4)*2;
     var height = width * 0.68571428571;
 
     $("#doodle-gallery").simplecarousel({

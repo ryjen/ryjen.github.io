@@ -1,25 +1,54 @@
+
+// dark background tones
+$base03:    #002b36;
+$base02:    #073642;
+
+// dark content tones
+$base01:    #586e75;
+$base00:    #657b83;
+
+// light content tones
+$base0:     #839496;
+$base1:     #93a1a1;
+
+// light background tones
+$base2:     #eee8d5;
+$base3:     #fdf6e3;
+
+// colors
+$yellow:    #b58900;
+$orange:    #cb4b16;
+$red:       #dc322f;
+$magenta:   #d33682;
+$violet:    #6c71c4;
+$blue:      #268bd2;
+$cyan:      #2aa198;
+$green:     #859900;
+
+$brand-color: $green;
+$background-color: $base3;
+
 body {
-  background-color: whitesmoke;
+  background-color: $background-color;
   font-family: 'Source Sans Pro', sans-serif;
-  color: #555555;
-  padding-top: 120px;
+  color: $base00;
 }
 
 a {
-  color: steelblue;
+  color: $blue;
   text-decoration: none;
 }
 
 a:hover {
-  color: cornflowerblue;
+  color: $violet;
 }
 
 html body a.no-link {
-  color: whitesmoke !important;
+  color: $background-color !important;
 }
 
 html body a.no-link:hover {
-  color:whitesmoke !important;
+  color:$background-color !important;
 }
 
 pre, code, kbd {
@@ -60,62 +89,54 @@ td {
 /* Foreground Colors */
 
 .fg-brown {
-  color: #935635;
-}
-
-.fg-brown2 {
-  color: #804000;
+  color: $yellow;
 }
 
 .fg-orange {
-  color: #f9b54c;
-}
-
-.fg-orange2 {
-  color: #ffd15d;
+  color: $orange;
 }
 
 .fg-blue {
-  color: steelblue;
+  color: $blue;
 }
 
 .fg-green {
-  color: mediumseagreen;
+  color: $green;
 }
 
 .fg-red {
-  color: indianred;
+  color: $red;
 }
 
 /* Background Colors */
 
 .bg-blue {
-  background-color: steelblue;
-  color: whitesmoke;
+  background-color: $blue;
+  color: $background-color;
 }
 
 .bg-green {
-  background-color: mediumseagreen;
-  color: whitesmoke;
+  background-color: $green;
+  color: $background-color;
 }
 
 .bg-red {
-  background-color: indianred;
-  color: whitesmoke;
+  background-color: $red;
+  color: $background-color;
 }
 
 .bg-orange {
-  background-color: #f9b54c;
-  color: whitesmoke;
+  background-color: $orange;
+  color: $background-color;
 }
 
 .bg-brown {
-  background-color: #935635;
-  color: whitesmoke;
+  background-color: $yellow;
+  color: $background-color;
 }
 
 .bg-default {
-  background-color: #e8e8e8;
+  background-color: $base02;
 }
 
 /* Cards */
@@ -133,7 +154,6 @@ td {
 
   &.bg-blue, &.bg-green, &.bg-red, &.bg-orange, &.bg-brown {
     padding: 1.5em;
-    filter: drop-shadow(5px 5px 5px silver);
   }
 
   &.bg-orange a, &.bg-brown a {
@@ -162,11 +182,6 @@ td {
   padding-top: 10px;
   padding-bottom: 13px;
   margin-bottom: 2em;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  z-index: 100;
 
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -179,14 +194,14 @@ td {
 
   a {
     font-weight: normal;
-    color: mediumseagreen;
+    color: $green;
     vertical-align: top;
   }
 
   #menu-toggle {
     line-height: 0.5em;
     display: none;
-    color: mediumseagreen;
+    color: $green;
   }
 
   #brand {
@@ -218,15 +233,14 @@ td {
     border-radius: 5px;
 
     i {
-      color: mediumseagreen;
+      color: $green;
     }
 
     &:last-child {
       margin-right: inherit;
     }
     &:hover, &.active {
-      background-color: #76c99b; 
-      background-color: rgba(60,179,113,0.1);
+      background-color: rgba($green,0.1);
     }
   }
 
@@ -235,32 +249,30 @@ td {
   }
 
   &.solid {
-    background-color: mediumseagreen;
-    filter: drop-shadow(5px 5px 5px #76c99b);
-    color: whitesmoke;
+    background-color: $green;
+    color: $background-color;
     a {
-      color: whitesmoke;
+      color: $background-color;
     }
 
     li {
       &:hover, &.active {
-        background-color: #76c99b;
         background-color: rgba(255,255,255,0.1);
       }
 
       i {
-        color: whitesmoke;
+        color: $background-color;
       }
     }
     #menu-toggle {
-      color: whitesmoke;
+      color: $background-color;
     }
   }
 
 }
 
 .brand {
-  font-family: Courier New, monospace;
+  font-family: 'Source Code Pro', monospace;
   font-weight: bold;
 }
 
@@ -270,15 +282,13 @@ td {
   left: 0;
   right: 0;
   bottom: 0;
-  padding-top: 2em;
 }
+
 .container > #main > h1 {
   margin-top: 0;
 }
 
 #main {
-
-  
 
   h1, h2, h3, h4, h5 {
     margin-top: 1em;
@@ -286,30 +296,25 @@ td {
 
 
   .card {
-    filter: drop-shadow(5px 5px 5px #dcdcdc);
-
     &.bg-default {
       &:nth-child(3n-2) {
-        background-color: #dae6f0;
-        background-color: RGBA(70,130,180,0.08);
+        background-color: rgba($blue,0.08);
         h4 a {
-          color: steelblue;
+          color: $blue;
         }
       }
 
       &:nth-child(3n-1) {
-        background-color: #fcf0db;
-        background-color: RGBA(249, 181, 76, 0.08);
+        background-color: rgba($orange, 0.08);
         h4 a {
-          color: #935635;
+          color: $orange;
         } 
       }
 
       &:nth-child(3n) {
-        background-color: #ebf7f0;
-        background-color: RGBA(60,179,113,0.08);
+        background-color: rgba($green,0.08);
         h4 a {
-          color: mediumseagreen;
+          color: $green;
         }
       }
     }
@@ -325,7 +330,7 @@ td {
 
   h2 {
     font-size: 1.8em;
-    border-bottom: 1px dashed mediumseagreen;
+    border-bottom: 1px dashed $green;
     padding-left: 12px;
   }
 
@@ -361,7 +366,6 @@ td {
     padding-left: 8px;
     padding-right: 8px;
     border-radius: 5px;
-    background-color: #e5e5e5;
     background-color: RGBA(0, 0, 0, 0.1);
   }
 
@@ -411,19 +415,19 @@ td {
       padding-top: 14vh;
       font-size: 3em;
       font-weight: bold;
-      color:  mediumseagreen;
+      color:  $green;
       margin-bottom: 4px;
     }
 
     h3 {
       font-size:  1.2em;
-      color:  mediumseagreen;
+      color:  $green;
       margin-bottom: 2em;
     }
 
     h2 {
       font-size:  1.5em;
-      color:  mediumseagreen;
+      color:  $green;
     }
   }
 }

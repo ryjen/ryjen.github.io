@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Xamarin on coda.life</title>
-    <link>https://coda.life/tags/xamarin/</link>
+    <link>https://nullstruct.com/tags/xamarin/</link>
     <description>Recent content in Xamarin on coda.life</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 27 Nov 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://coda.life/tags/xamarin/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://nullstruct.com/tags/xamarin/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Microsoft Dev Stack on macOS</title>
-      <link>https://coda.life/2016/11/27/microsoft-dev-stack-on-macos/</link>
+      <link>https://nullstruct.com/2016/11/27/microsoft-dev-stack-on-macos/</link>
       <pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://coda.life/2016/11/27/microsoft-dev-stack-on-macos/</guid>
+      <guid>https://nullstruct.com/2016/11/27/microsoft-dev-stack-on-macos/</guid>
       <description>Gonna evangelize a little bit.
 When Microsoft bought Xamarin, they did not underestimate the power of Xamarin.Forms for building cross platform UIs. Now with the release of Visual Studio for macOS and the Dotnet Core, its looks like its going to stay alive.
 Development Environment  macOS, XCode Android SDK Dotnet core Visual Studio for macOS nuget  Web ASP.NET Production Environment  Digital Ocean Dotnet core on Docker Dokku, docker based heroku  Platforms Targeted in One Solution  iOS Android Web ASP.</description>

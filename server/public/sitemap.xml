@@ -3,313 +3,313 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://coda.life/2018/05/16/mitmproxy-and-android/</loc>
+    <loc>https://nullstruct.com/2018/05/16/mitmproxy-and-android/</loc>
     <lastmod>2018-05-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://coda.life/2018/02/19/deploy-docker-registry-with-dokku/</loc>
+    <loc>https://nullstruct.com/2018/02/19/deploy-docker-registry-with-dokku/</loc>
     <lastmod>2018-02-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://coda.life/2018/01/22/fortunes-on-slack/</loc>
+    <loc>https://nullstruct.com/2018/01/22/fortunes-on-slack/</loc>
     <lastmod>2018-01-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://coda.life/2016/11/27/microsoft-dev-stack-on-macos/</loc>
+    <loc>https://nullstruct.com/2016/11/27/microsoft-dev-stack-on-macos/</loc>
     <lastmod>2016-11-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://coda.life/2015/09/09/elixir-and-phoenix/</loc>
+    <loc>https://nullstruct.com/2015/09/09/elixir-and-phoenix/</loc>
     <lastmod>2015-09-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://coda.life/2012/11/30/poor-mans-polymorphism/</loc>
+    <loc>https://nullstruct.com/2012/11/30/poor-mans-polymorphism/</loc>
     <lastmod>2012-11-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://coda.life/2012/05/15/c-sqlite-tricks/</loc>
+    <loc>https://nullstruct.com/2012/05/15/c-sqlite-tricks/</loc>
     <lastmod>2012-05-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://coda.life/tags/android/</loc>
+    <loc>https://nullstruct.com/tags/android/</loc>
     <lastmod>2018-05-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://coda.life/tags/api/</loc>
+    <loc>https://nullstruct.com/tags/api/</loc>
     <lastmod>2018-01-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://coda.life/things/</loc>
+    <loc>https://nullstruct.com/things/</loc>
   </url>
   
   <url>
-    <loc>https://coda.life/tags/c/</loc>
+    <loc>https://nullstruct.com/tags/c/</loc>
     <lastmod>2012-11-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://coda.life/categories/</loc>
+    <loc>https://nullstruct.com/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://coda.life/tags/certificates/</loc>
+    <loc>https://nullstruct.com/tags/certificates/</loc>
     <lastmod>2018-05-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://coda.life/tags/chat/</loc>
+    <loc>https://nullstruct.com/tags/chat/</loc>
     <lastmod>2015-09-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://coda.life/categories/containerization/</loc>
+    <loc>https://nullstruct.com/categories/containerization/</loc>
     <lastmod>2018-02-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://coda.life/tags/cross-platform/</loc>
+    <loc>https://nullstruct.com/tags/cross-platform/</loc>
     <lastmod>2016-11-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://coda.life/categories/development/</loc>
+    <loc>https://nullstruct.com/categories/development/</loc>
     <lastmod>2018-02-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://coda.life/tags/docker/</loc>
+    <loc>https://nullstruct.com/tags/docker/</loc>
     <lastmod>2018-02-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://coda.life/tags/dokku/</loc>
+    <loc>https://nullstruct.com/tags/dokku/</loc>
     <lastmod>2018-02-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://coda.life/doodles/</loc>
+    <loc>https://nullstruct.com/doodles/</loc>
   </url>
   
   <url>
-    <loc>https://coda.life/tags/dotnet/</loc>
+    <loc>https://nullstruct.com/tags/dotnet/</loc>
     <lastmod>2016-11-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://coda.life/tags/droplet/</loc>
+    <loc>https://nullstruct.com/tags/droplet/</loc>
     <lastmod>2018-01-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://coda.life/tags/elixir/</loc>
+    <loc>https://nullstruct.com/tags/elixir/</loc>
     <lastmod>2015-09-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://coda.life/tags/erlang/</loc>
+    <loc>https://nullstruct.com/tags/erlang/</loc>
     <lastmod>2015-09-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://coda.life/tags/fortunes/</loc>
+    <loc>https://nullstruct.com/tags/fortunes/</loc>
     <lastmod>2018-01-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://coda.life/tags/git/</loc>
+    <loc>https://nullstruct.com/tags/git/</loc>
     <lastmod>2018-01-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://coda.life/tags/go/</loc>
+    <loc>https://nullstruct.com/tags/go/</loc>
     <lastmod>2018-01-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://coda.life/tags/golang/</loc>
+    <loc>https://nullstruct.com/tags/golang/</loc>
     <lastmod>2018-01-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://coda.life/tags/http/</loc>
+    <loc>https://nullstruct.com/tags/http/</loc>
     <lastmod>2018-01-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://coda.life/tags/micrantha/</loc>
+    <loc>https://nullstruct.com/tags/micrantha/</loc>
     <lastmod>2018-01-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://coda.life/tags/micro-service/</loc>
+    <loc>https://nullstruct.com/tags/micro-service/</loc>
     <lastmod>2018-01-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://coda.life/tags/mobile/</loc>
+    <loc>https://nullstruct.com/tags/mobile/</loc>
     <lastmod>2016-11-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://coda.life/categories/mobile/</loc>
+    <loc>https://nullstruct.com/categories/mobile/</loc>
     <lastmod>2018-05-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://coda.life/tags/network/</loc>
+    <loc>https://nullstruct.com/tags/network/</loc>
     <lastmod>2018-05-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://coda.life/tags/phoenix/</loc>
+    <loc>https://nullstruct.com/tags/phoenix/</loc>
     <lastmod>2015-09-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://coda.life/tags/polymorphism/</loc>
+    <loc>https://nullstruct.com/tags/polymorphism/</loc>
     <lastmod>2012-11-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://coda.life/tags/postgres/</loc>
+    <loc>https://nullstruct.com/tags/postgres/</loc>
     <lastmod>2018-01-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://coda.life/post/</loc>
+    <loc>https://nullstruct.com/post/</loc>
     <lastmod>2018-05-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://coda.life/tags/programming/</loc>
+    <loc>https://nullstruct.com/tags/programming/</loc>
     <lastmod>2012-11-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://coda.life/tags/proxy/</loc>
+    <loc>https://nullstruct.com/tags/proxy/</loc>
     <lastmod>2018-05-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://coda.life/tags/registry/</loc>
+    <loc>https://nullstruct.com/tags/registry/</loc>
     <lastmod>2018-02-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://coda.life/tags/rest/</loc>
+    <loc>https://nullstruct.com/tags/rest/</loc>
     <lastmod>2018-01-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://coda.life/tags/security/</loc>
+    <loc>https://nullstruct.com/tags/security/</loc>
     <lastmod>2018-05-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://coda.life/tags/slack/</loc>
+    <loc>https://nullstruct.com/tags/slack/</loc>
     <lastmod>2018-01-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://coda.life/tags/sqlite/</loc>
+    <loc>https://nullstruct.com/tags/sqlite/</loc>
     <lastmod>2012-05-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://coda.life/tags/</loc>
+    <loc>https://nullstruct.com/tags/</loc>
     <lastmod>2018-05-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://coda.life/music/</loc>
+    <loc>https://nullstruct.com/music/</loc>
   </url>
   
   <url>
-    <loc>https://coda.life/tags/visual-studio/</loc>
+    <loc>https://nullstruct.com/tags/visual-studio/</loc>
     <lastmod>2016-11-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://coda.life/tags/web/</loc>
+    <loc>https://nullstruct.com/tags/web/</loc>
     <lastmod>2016-11-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://coda.life/tags/web-framework/</loc>
+    <loc>https://nullstruct.com/tags/web-framework/</loc>
     <lastmod>2015-09-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://coda.life/tags/xamarin/</loc>
+    <loc>https://nullstruct.com/tags/xamarin/</loc>
     <lastmod>2016-11-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://coda.life/about/</loc>
+    <loc>https://nullstruct.com/about/</loc>
   </url>
   
   <url>
-    <loc>https://coda.life/</loc>
+    <loc>https://nullstruct.com/</loc>
     <lastmod>2018-05-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://coda.life/projects/</loc>
+    <loc>https://nullstruct.com/projects/</loc>
   </url>
   
   <url>
-    <loc>https://coda.life/resume/</loc>
+    <loc>https://nullstruct.com/resume/</loc>
   </url>
   
 </urlset>

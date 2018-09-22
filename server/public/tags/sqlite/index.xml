@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sqlite on coda.life</title>
-    <link>https://coda.life/tags/sqlite/</link>
+    <link>https://nullstruct.com/tags/sqlite/</link>
     <description>Recent content in Sqlite on coda.life</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 15 May 2012 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://coda.life/tags/sqlite/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://nullstruct.com/tags/sqlite/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>C Sqlite Tricks</title>
-      <link>https://coda.life/2012/05/15/c-sqlite-tricks/</link>
+      <link>https://nullstruct.com/2012/05/15/c-sqlite-tricks/</link>
       <pubDate>Tue, 15 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://coda.life/2012/05/15/c-sqlite-tricks/</guid>
+      <guid>https://nullstruct.com/2012/05/15/c-sqlite-tricks/</guid>
       <description>Introduction Thought I would share some tricks I use for easy data CRUD&amp;rsquo;s in C. I&amp;rsquo;m using Sqlite here, but could apply to any database.
 Not saying its the best approach at all (nor ryjen/db), this is just how it evolved for me.
 Mapping The core of my data access is the FieldMap structure, which determines how to save each field to the database.

@@ -1,4 +1,4 @@
-baseurl = "https://coda.life/"
+baseurl = "https://nullstruct.com/"
 languageCode = "en-us"
 title = "coda.life"
 publishDir = "server/public"
@@ -18,7 +18,7 @@ theme = "coda"
 
 [params]
     author = "Ryan Jennings"
-    description = "a namespace for technical and musical musings"
+    description = "a namespace for ryjen's technical and musical musings"
     motto = "sometimes an ending is a new beginning"
     githubUsername = "ryjen"
     copyright  = "&copy; all rights reserved, ryan jennings"
