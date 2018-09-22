@@ -22,13 +22,7 @@ title: Doodles
 </li><li>
 <img class="doodle imgbox" src="/image/doodles/doodle10.jpeg"/>
 </li><li>
-<img class="doodle imgbox" src="/image/doodles/doodle11.jpeg"/>
-</li><li>
 <img class="doodle imgbox" src="/image/doodles/doodle1.png" />
-</li><li>
-<img class="doodle imgbox" src="/image/doodles/doodle3.png" />
-</li><li>
-<img class="doodle imgbox" src="/image/doodles/doodle2.png"/>
 </li>
 </ul>
 </td>
