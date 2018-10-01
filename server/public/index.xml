@@ -81,6 +81,19 @@ typedef struct { int key; } Vehicle;  Sub structures must implement the exact ty
     </item>
     
     <item>
+      <title>Crafting a Game With CraftyJS</title>
+      <link>https://nullstruct.com/2012/11/17/crafting-a-game-with-craftyjs/</link>
+      <pubDate>Sat, 17 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://nullstruct.com/2012/11/17/crafting-a-game-with-craftyjs/</guid>
+      <description>Introduction Briefly going to mention a javascript game engine called CraftyJS that I&amp;rsquo;ve been playing with the past couple of days.
+Has the usual suspects like Entity Component System, Collision, Sprite Maps, etc.
+The Project 
+Amos the Alien is a small demo I made.
+I knew that I wanted a scrolling background of some sort - in other words - parallax scrolling. I also knew that I wanted two modes of scrolling: A) automatic background scrollin (clouds, etc) and character movement scrolling.</description>
+    </item>
+    
+    <item>
       <title>C Sqlite Tricks</title>
       <link>https://nullstruct.com/2012/05/15/c-sqlite-tricks/</link>
       <pubDate>Tue, 15 May 2012 00:00:00 +0000</pubDate>

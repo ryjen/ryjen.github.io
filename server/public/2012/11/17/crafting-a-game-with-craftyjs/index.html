@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Web</title>
+    <title>Crafting a Game With CraftyJS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <meta name="description" content="The fortunes api serves witty antidotes from the UNIX world that relieve project tensions.">
@@ -98,7 +98,50 @@
 
 <div id="main">
 
-     <div class="card item bg-default clearfix">
+    <h1>Crafting a Game With CraftyJS</h1>
+
+    <div class="text-justify">
+
+<h4 id="introduction">Introduction</h4>
+
+<p>Briefly going to mention a javascript game engine called <a href="http://craftyjs.com/">CraftyJS</a> that I&rsquo;ve been playing with the past couple of days.</p>
+
+<p>Has the usual suspects like Entity Component System, Collision, Sprite Maps, etc.</p>
+
+<h4 id="the-project">The Project</h4>
+
+<p><a href="https://amos.coda.life"><img src="/image/blog/amos_the_alien.png" alt="Amos the Alien" /></a></p>
+
+<p><a href="https://amos.coda.life">Amos the Alien</a> is a small demo I made.</p>
+
+<p>I knew that I wanted a scrolling background of some sort - in other words - parallax scrolling.  I also knew that I wanted two modes of scrolling:  A) automatic background scrollin (clouds, etc) and character movement scrolling.</p>
+
+<p>To do this in Crafty, the best way would be to create a <em>&lsquo;Scrollable&rsquo;</em> component that scrolls in either direction on the screen.</p>
+
+<p>Then you can create a <em>&lsquo;Background&rsquo;</em> entity that contains a list of scrollable components.  A <em>scroll</em> method is used during frame events or when the main character moves.</p>
+
+<p>Crafty also has <em>scenes</em> for which I built the background, character and platform entities for the demo above.</p>
+
+<p>All and all, it was fun.  Might continue it one day, but not really motivated to.</p>
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+<hr>
+
+<div class="container">
+
+
+    <div id="related">
+        <h5>Related:</h5>
+
+         <div class="card item bg-default clearfix">
 
     
     
@@ -112,25 +155,43 @@
      <span class="item-tag">dotnet</span>  <span class="item-tag">xamarin</span>  <span class="item-tag">visual studio</span>  <span class="item-tag">cross platform</span>  <span class="item-tag">mobile</span>  <span class="item-tag">web</span> 
 
 </div>
-  <div class="card item bg-default clearfix">
-
-    
-    
-
-      
-
-    <p class="pull-right">November 17, 2012</p>
-    <h4><a href="/2012/11/17/crafting-a-game-with-craftyjs/">Crafting a Game With CraftyJS</a></h4>
-    <h5>javascript games</h5>
-
-     <span class="item-tag">games</span>  <span class="item-tag">javascript</span>  <span class="item-tag">web</span> 
-
-</div>
  
 
+    </div>
+
+
 </div>
 
 
+
+<hr>
+
+<div class="container">
+
+	
+	  <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "arg3" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	
+
+</div>
 
 
 </div>
