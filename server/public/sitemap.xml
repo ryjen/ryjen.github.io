@@ -43,6 +43,11 @@
   </url>
   
   <url>
+    <loc>https://nullstruct.com/2012/04/10/best-programming-quotes/</loc>
+    <lastmod>2012-04-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://nullstruct.com/tags/android/</loc>
     <lastmod>2018-05-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -90,6 +95,12 @@
   <url>
     <loc>https://nullstruct.com/tags/cross-platform/</loc>
     <lastmod>2016-11-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nullstruct.com/tags/development/</loc>
+    <lastmod>2012-04-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -248,6 +259,12 @@
   </url>
   
   <url>
+    <loc>https://nullstruct.com/tags/quotes/</loc>
+    <lastmod>2012-04-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://nullstruct.com/tags/registry/</loc>
     <lastmod>2018-02-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -268,6 +285,12 @@
   <url>
     <loc>https://nullstruct.com/tags/slack/</loc>
     <lastmod>2018-01-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nullstruct.com/tags/software/</loc>
+    <lastmod>2012-04-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

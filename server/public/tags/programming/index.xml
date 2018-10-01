@@ -36,5 +36,17 @@ Mapping The core of my data access is the FieldMap structure, which determines h
 /* * this is the magical table used to communicate between memory and the database */ typedef struct FieldMap { const char *name; /* name of the field */ void *value; /* a pointer to the value of the field */ int type; /* type of value */ const void *arg1; /* additional argument */ const void *arg2; /* additional argument */ int flags; /* usage flags */ } FieldMap; /* callback for custom field types */ typedef int (*CustomField) (sqlite3_stmt *, int column, FieldMap *field); typedef void (*DbCallback) (sqlite3_stmt *);  Note: these examples will create this table dynamically with an object, however this can be used as a static table.</description>
     </item>
     
+    <item>
+      <title>Best Programming Quotes</title>
+      <link>https://nullstruct.com/2012/04/10/best-programming-quotes/</link>
+      <pubDate>Tue, 10 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://nullstruct.com/2012/04/10/best-programming-quotes/</guid>
+      <description>Sites with programmer quotes that always humble me with their laser-like honesty. I&amp;rsquo;ve decided to keep a collection of my favourites here (in no particular order).
+ &amp;ldquo;The only real education is self-education&amp;rdquo; - Aristotle
+ If I&amp;rsquo;d known computer science was going to be like this, I&amp;rsquo;d never have given up being a rock &amp;lsquo;n&amp;rsquo; roll star. &amp;ndash; G. Hirst
+ Lubarsky&amp;rsquo;s Law of Cybernetic Entomology: There&amp;rsquo;s always one more bug</description>
+    </item>
+    
   </channel>
 </rss>

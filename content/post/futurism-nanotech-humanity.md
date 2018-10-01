@@ -20,9 +20,7 @@ draft: true
 
 ## Introduction
 
-Somewhere around 2005, a student did a relatively small research project on [nanotechnology](https://en.wikipedia.org/wiki/Nanotechnology#Tools_and_techniques) for university. I've been very interested in the topic ever since.
-
-Th nano technology summary goes like this:  it is **a technology that works are the nano scale** (1 billionth of a metre).  
+The [nanotechnology](https://en.wikipedia.org/wiki/Nanotechnology#Tools_and_techniques) summary goes like this:  it is **a technology that works are the nano scale** (1 billionth of a metre).  
 
 To put it in perspective, it takes 10 hydrogen atoms side by side to equal 1 nanometre.  A human hair is 80,000 nanometres.
 
@@ -30,7 +28,7 @@ It is about working with and rearranging atoms to create or do just about anythi
 
 ## Current Status
 
-In terms of practical applications there a few, but most are still in research mode.  This is evolving regularily (see [reddit/r/nanotech](https://reddit.com/r/nanotech) though I never hear politicians or media talk about it.
+There are few practical applications, but most are heavily being researched.  The state is evolving regularily (see [reddit/r/nanotech](https://reddit.com/r/nanotech) though I never hear politicians or media talk about it.
 
 ### Medical
 

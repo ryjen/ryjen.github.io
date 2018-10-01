@@ -7,7 +7,6 @@ tags:
   - software
 date: 2012-04-10
 description: quotes used in software development
-draft: true
 ---
 
 Sites with programmer quotes that always humble me with their laser-like honesty.

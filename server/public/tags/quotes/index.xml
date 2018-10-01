@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Quotes on coda.life</title>
+    <link>https://nullstruct.com/tags/quotes/</link>
+    <description>Recent content in Quotes on coda.life</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 10 Apr 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://nullstruct.com/tags/quotes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Best Programming Quotes</title>
+      <link>https://nullstruct.com/2012/04/10/best-programming-quotes/</link>
+      <pubDate>Tue, 10 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://nullstruct.com/2012/04/10/best-programming-quotes/</guid>
+      <description>Sites with programmer quotes that always humble me with their laser-like honesty. I&amp;rsquo;ve decided to keep a collection of my favourites here (in no particular order).
+ &amp;ldquo;The only real education is self-education&amp;rdquo; - Aristotle
+ If I&amp;rsquo;d known computer science was going to be like this, I&amp;rsquo;d never have given up being a rock &amp;lsquo;n&amp;rsquo; roll star. &amp;ndash; G. Hirst
+ Lubarsky&amp;rsquo;s Law of Cybernetic Entomology: There&amp;rsquo;s always one more bug</description>
+    </item>
+    
+  </channel>
+</rss>
