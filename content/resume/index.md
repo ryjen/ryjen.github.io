@@ -42,14 +42,14 @@ Seeking a senior or challenging software engineer role where I can maximize my e
 
 <div class="card bg-default">
 
-<h3> <a href="https://cvent.com/">Cvent</a> - <a href="http://quickmobile.com/">Quickmobile</a>, Mobile Application Developer</h3>
+<h3> <a href="https://cvent.com/">Cvent</a> - <a href="http://quickmobile.com/">Quickmobile</a>, Mobile Application Developer, 2015 - Present</h3>
 
 <h4>Problem</h4>
-<p>The company required assistance in delivering client customizations and platform consistency and quality.</p>
+<p>The company still had a need for extra skills maintaining existing client applications and growing the product</p>
 <h4>Action</h4>
-<p>My role as a mobile application developer saw me developing across multiple platforms like Blackberry, Windows Phone, Android and iOS.  In a time sensitive industry, I was able to bring quality customizations in a timely fashion. Allowing me to also bring important platform features like Beacons and other core changes to Android.</p>
+<p>Initially working cross platform on Windows, iOS and Android, existing applications were maintained.  As the clients moved to the new platform, I helped reduce risk by helping sunset legacy platforms and joining a single platform team.  I offered several improvements to the existing Android platform like making better use of fragments and external beacon support with notifications.</p>
 <h4>Result</h4>
-<p>The end result was an impressive list of fortune 500 clients, a transtion to a product sass enterprise company, a more interactive experience at conferences, a more visually appealing and performant Android platform. </p>
+<p>Legacy platforms successfully sunsetted, existing platform quality improved over several support/bug tickets.  Better use of fragments on Android platform allowed less resource usage resulting in zero memory crashes and an overall improved UX experience with side-transitions.  With beacon experiences at conferences, the android platform performed reliably with a good user experience. Played a role in a successful aquisition by Cvent</p>
 <h5>Keywords</h5>
 <!--
 <h3> Mobile Application Developer, July 2015 - Present </h3>
@@ -83,10 +83,9 @@ Android, iOS, Beacons, SQL, Tablet, BLE, Notifications, JIRA, UX, Agile, SCRUM, 
 
 <div class="card bg-default">
 
-<h2> <a href="http://linuxmagic.com/">Linux Magic</a> </h2>
+<h3> <a href="http://linuxmagic.com/">Linux Magic</a>, Linux Engineer April 2015 - July 2015 </h3>
 
-<h3> Linux Engineer April 2015 - July 2015 </h3>
-
+<!--
 <ul>
 <li>Bug fixing and implementations to current SPAM product in C and Linux</li>
 <li>Ported perl prototypes binary C for production implementation</li>
@@ -95,27 +94,38 @@ Android, iOS, Beacons, SQL, Tablet, BLE, Notifications, JIRA, UX, Agile, SCRUM, 
 <li>Participated in standups, new project planning and a raspberry pi quake tournament</li>
 <li>Learned more about packaging software in linux</li>
 </ul>
-
+-->
+<h4>Problem</h4>
+<p>The company required extra hands in maintaining existing products and developing future ones</p>
+<h4>Action</h4>
+<p>In my short tenure, I was able to quickly adapt to the different working environment using virtual machine sandboxing, time tracking applications and vim.  I assisted in a research project in probing the internet to collect data on services.  I also was able to port a perl prototype of a next gen distributed product to binary C, passing all code code reviews for production. </p>
+<h4>Result</h4>
+<p>
+Improved main product stability with progress on two research projects. Successfully met all probation work.
+ I improved some of my work habits like planning, documenting and communicating.  Even had some fun participating in a build-your-own-quake on a raspberry pi tournament.
+</p>
 </div>
 
 <div class="card bg-default">
 
-<h3> <a href="http://epactnetwork.com/">ePACT</a>, Backend Java Engineer and Senior Mobile Developer</h3>
+<h3> <a href="http://epactnetwork.com/">ePACT</a>, Backend Java Engineer and Senior Mobile Developer, 2013 - 2015</h3>
 
 <h4>Problem</h4>
-<p>The company needed help bringing their emergency networking system to the world.</p>
+<p>The company required extra skills bringing their emergency networking/communication platform to life.</p>
 <h4>Action</h4>
 <p>My role on the backend saw me providing features like easier PDF rendering, web security, performance improvements, an extension to the API for mobile and push notifications.</p>
 <br>
-<p>On the mobile side I developed both iOS and Android at the same time. Ensuring the functionality desired met the UX design securely in a timely and quality manner.  Notable features included dynamic views based on data, and a data synchronization component.</p>
+<p>On the mobile side I developed the initial version on both iOS and Android. Ensured the functionality desired met the UX design in a secure, timely and quality manner.  Notable features included dynamic views based on data and backend configuration, a data synchronization component, and tablet layouts.</p>
 <br>
 <p>I also worked closly with quality assurance creating an automated mobile UI testing framework that also expanded to test the web application.</p>
 <h4>Result</h4>
-<p>The end result was a better quality and more functional backend. A succesful launch of version 1 of the mobile app for on-site users and notifications. An automated testing framework helped ensure quality for future version of the platforms.</p>
+<p>The end result was a better quality and more functional backend. A succesful launch of version 1 of the mobile app for on-site users of organizations using the service. An automated testing framework helped ensure quality for future version of the platforms.</p>
 <h5>Keywords</h5>
 <blockquote class="keywords">
 Java, J2EE, Eclipse, JavaScript, CSS, HTML5, CSRF, XSS, MySQL, Tomcat, Agile, SCRUM, JIRA, Git, Selenium, Automated Functional Testing, UX, Android, iPhone, Android Studio, Xcode, SQL, JSON, Web Service, REST, PDF, Scripting, Shared Library, UX, Agile, JIRA, Git, Appium, Automated Functional Testing, Cross-Device Functionality
 </blockquote>
+</div>
+
 <!--
 
 <ul>
@@ -171,18 +181,25 @@ Extended API features for mobile development
 
 <h2> <a href="http://www.quickmobile.com/">QuickMobile</a>
 
-<h3> Mobile Application Developer, Apr 2011 - July 3 2013 </h3>
+<h3> Mobile Application Developer, 2011 - 2013 </h3>
 
-
+<!--
 <ul>
 <li>Developed client customizations and helped maintain mobile framework in Java</li>
 <li>Successfully and consistently met or exceeded all deadlines with quality code</li>
 <li>Participated in stanford machine learning online course</li>
 <li>Played a role in the company winning a BCTIA emerging company award.</li>
 </ul>
+-->
+<h4>Problem</h4>
+<p>The company needed extra help producing mobile applications for big clients</p>
+<h4>Action</h4>
+<p>Ensured that client requirements were met on the platforms specified, bringing value both in quality and speed.  Took initiative on several missing parts, working with team members.  Worked effectively with project managers and quality assurance.</p>
+<h4>Result</h4>
+<p>Many successful projects and happy clients, played a role in the company winning a BCTIA emerging company award. Increased experience working with mobile, web services and a large group of stakeholders</p>
+
 <h5>Keywords</h5>
 <blockquote class="keywords">Java, Eclipse, Android SDK, Blackberry SDK, RPC, SQL, UX, QA</blockquote>
--->
 <!--
 <ul>
 <li>Participated in developing mobile application framework</li>
@@ -204,7 +221,7 @@ Extended API features for mobile development
 
 <div class="card bg-default">
 
-<h3> <a href="http://www.panoramicsoft.com/">Panoramic Software</a>,  Software Developer </h3>
+<h3> <a href="http://www.panoramicsoft.com/">Panoramic Software</a>,  Software Developer, 2010 - 2011 </h3>
 <h4>Problem</h4>
 <p>The company required thier windows mobile (palm) applications to be ported to the new windows phone platform.</p>
 <h4>Action</h4>
@@ -249,7 +266,7 @@ Extended API features for mobile development
 
 <div class="card bg-default">
 
-<h3> <a href="http://www.novax.com/">Novax Industries Corporation</a>, Software Engineer and Quality Assurance Engineer</h3>
+<h3> <a href="http://www.novax.com/">Novax Industries Corporation</a>, Software Engineer and Quality Assurance Engineer, 2007 - 2010</h3>
 <h4>Problem</h4>
 <p>The company wanted to expand thier traffic controller operations into several pilot projects for public transit traffic signal priority and configurable pedestrian push buttons.</p>
 <h4>Action</h4>
