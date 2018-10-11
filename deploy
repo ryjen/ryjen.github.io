@@ -2,3 +2,6 @@
 
 git subtree push --prefix server dokku master
 
+git subtree push --prefix server/public github master
+
+
