@@ -378,8 +378,6 @@ C, C++, GPS, Linux, Embedded Systems, Distributed Systems, Shell Scripting, SQL,
     <div class="smaller">Knowledge of databases and business concepts</div>
 </li>
 </ul>
-<i class="smaller">(have been continuing education while working full time)</i>
-<br><br>
 
 <h3>Sun Microsystems Certified Java Programmer</h3>
 
@@ -392,10 +390,10 @@ C, C++, GPS, Linux, Embedded Systems, Distributed Systems, Shell Scripting, SQL,
 
 <div class="card bg-default">
 <ul>
-<li>Playing guitar and bass, alt-rock and jazz</li>
-<li>Cycling, hockey and basketball</li>
-<li>Reading about enlightenment, technology, and psychology</li>
-<li>Building and learning open source software on <a href="https://github.com/ryjen">github</a></li>
+<li>Playing and guitar and bass and recording songs</li>
+<li>Cycling and hockey</li>
+<li>Reading about enlightenment, technology and psychology</li>
+<li>Experimenting with <a href="https://github.com/ryjen">Open source software</a>, machine learning and algorithms</li>
 <li><a href="https://fortunes.micrantha.com/">fortunes</a> and <a href="https://github.com/ryjen/Droid-Fortunes">droid fortunes</a> : Slack App, Microservice, and Android app</li>
 <li><a href="https://github.com/ryjen/prep">prep</a> a dependency manager (and build tool) for c/c++ projects</li>
 <li><a href="https://github.com/ryjen/p0ng">p0ng</a> a multiplayer retro feel pong game for iOS</li>
