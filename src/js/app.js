@@ -20,5 +20,8 @@ $(function() {
   });
 
   initDoodles();
+
+  $("#intro .brand, #brand .brand").text(window.location.hostname)
+
 });
 
