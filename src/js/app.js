@@ -21,7 +21,9 @@ $(function() {
 
   initDoodles();
 
-  $("#intro .brand, #brand .brand").text(window.location.hostname)
+  if (window.location.hostname != 'coda.life') {
+    $("#intro .brand, #brand .brand").text(window.location.hostname.split('.')[0])
+  }
 
 });
 
