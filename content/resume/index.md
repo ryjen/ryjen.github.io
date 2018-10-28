@@ -47,9 +47,9 @@ Seeking a senior or challenging software engineer role where I can maximize my e
 <h4>Problem</h4>
 <p>The company still had a need for extra skills maintaining existing client applications and growing the product</p>
 <h4>Action</h4>
-<p>Initially working cross platform on Windows, iOS and Android, existing applications were maintained.  As the clients moved to the new platform, helped reduce risk by helping sunset legacy platforms and joining a single platform team.  Offered several improvements to the existing Android platform, for example, making better use of fragments and external beacon support with notifications.</p>
+<p>Initially working cross platform on Windows, iOS and Android, existing applications were maintained.  As the clients moved to the new platform, I adapted to the iterative development cycle on a single platform.  Offered several stabalizing fixes and improvements, for example, making better use of android fragments and external beacon support with notifications.</p>
 <h4>Result</h4>
-<p>Legacy platforms successfully sunsetted, new platform quality improved over several support/bug tickets.  Better use of fragments on Android platform allowed less resource usage resulting in no memory crashes and an overall improved UX experience with side-transitions.  With beacon experiences at conferences, the android platform performed reliably with a good user experience. Played a role in a successful aquisition by Cvent, and partipated in learning new technologies like Couchbase and React Native</p>
+<p>Legacy platforms successfully sunsetted, new platform quality improved over several support/bug tickets.  Better use of fragments on Android platform allowed less resource usage resulting in no memory crashes and an overall improved UX experience with side-transitions.  With beacon experiences at conferences, the android platform performed reliably with a good user experience. Played a role in a successful acquisition by Cvent, and participated in learning new technologies like Couchbase and React Native</p>
 <h5>Keywords</h5>
 <!--
 <h3> Mobile Application Developer, July 2015 - Present </h3>
@@ -98,7 +98,7 @@ Android, iOS, Beacons, SQL, BLE, Notifications, JIRA, UX, Agile, SCRUM, Iterativ
 <h4>Problem</h4>
 <p>The company required extra hands in maintaining existing products and developing future ones</p>
 <h4>Action</h4>
-<p>In my short tenure, was able to quickly adapt to the different working environment using virtual machine sandboxing, time tracking applications and vim.  Assisted in a research project in probing the internet to collect data on services.  Ported a perl prototype of a next gen distributed product to binary C. </p>
+<p>During my short stay I quickly adapt to the different technical working environment using virtual machine sandboxing, time tracking applications and vim.  Assisted in a research project in probing the internet to collect data on services.  Ported a perl prototype of a next gen distributed product to binary C. </p>
 <h4>Result</h4>
 <p>
 Improved main product stability with progress on two research projects. Successfully met all probation work.
@@ -106,7 +106,7 @@ Improved main product stability with progress on two research projects. Successf
 </p>
 <h5>Keywords</h5>
 <blockquote class="keywords">
-Perl, C, Linux, SMTP, HTML, JS, Vim, GDB, GCC, SCRUM, Virtual Machines
+Perl, C, Linux, PostgreSQL, SMTP, HTML, JS, Vim, GDB, GCC, SCRUM, Virtual Machines
 </blockquote>
 </div>
 
@@ -117,16 +117,16 @@ Perl, C, Linux, SMTP, HTML, JS, Vim, GDB, GCC, SCRUM, Virtual Machines
 <h4>Problem</h4>
 <p>The company required extra skills bringing their emergency networking/communication platform to life.</p>
 <h4>Action</h4>
-<p>My role on the backend saw me providing features like easier PDF rendering, web security, performance improvements, an extension to the API for mobile and push notifications.</p>
+<p>My role on the backend saw me participating in SCRUM and providing features like easier PDF rendering, web security, performance improvements, an extension to the API for mobile and push notifications.</p>
 <br>
-<p>On the mobile side, the initial version on both iOS and Android was developed. Ensured the functionality desired met the UX design in a secure, timely and quality manner.  Notable features included dynamic views based on data and backend configuration, a data synchronization component, and tablet layouts.</p>
+<p>On the mobile side, the initial version on both iOS and Android was developed. Ensured the functionality desired met the UX design in a secure, timely and quality manner.  Notable features included dynamic views based on data and backend configuration, a data synchronization component on a hyrbrid relational indexing/json blob database, and tablet layouts.</p>
 <br>
-<p>Worked closly with quality assurance creating an automated mobile UI testing framework that also expanded to test the web application.</p>
+<p>Worked closely with quality assurance creating an automated mobile UI testing framework that also expanded to test the web application.</p>
 <h4>Result</h4>
-<p>The end result was a better quality and more functional backend. A succesful launch of the mobile app in stores for on-site users of organizations using the service. An automated testing framework helped ensure quality for future version of the platforms.</p>
+<p>The end result was a better quality and more functional backend. A successful launch of the mobile app in stores for on-site users of organizations using the service. An automated testing framework helped ensure quality for future version of the platforms.</p>
 <h5>Keywords</h5>
 <blockquote class="keywords">
-Java, J2EE, Eclipse, JavaScript, CSS, HTML5, CSRF, XSS, MySQL, Tomcat, Agile, SCRUM, JIRA, Git, Selenium, Automated Functional Testing, UX, Android, iPhone, Android Studio, Xcode, SQL, JSON, Web Service, REST, PDF, Scripting, Shared Library, UX, Agile, JIRA, Git, Appium, Automated Functional Testing, Cross-Device Functionality
+Java, J2EE, Eclipse, JavaScript, CSS, HTML5, CSRF, XSS, MySQL, Tomcat, Agile, SCRUM, JIRA, Git, Selenium, Automated Functional Testing, UX, Android, iPhone, Android Studio, Xcode, SQL, JSON, Web Service, REST, PDF, Scripting, Shared Library, UX, Agile, JIRA, Git, Appium, Automated Functional Testing
 </blockquote>
 </div>
 
@@ -225,7 +225,7 @@ Extended API features for mobile development
 
 <h3> <a href="http://www.panoramicsoft.com/">Panoramic Software</a>,  Software Developer, Nov 2010 - Apr 2011 </h3>
 <h4>Problem</h4>
-<p>The company required thier windows mobile (palm) applications to be ported to the new windows phone platform.</p>
+<p>The company required their windows mobile (palm) applications to be ported to the new windows phone platform.</p>
 <h4>Action</h4>
 <p>My role as a software developer was to convert C++ code to C# and XAML.  Converted several apps like: an advanced calculator, social media apps, music applications, and games.  I often exceeded expected timelines, which allowed us to do things like use the C# code for the Xamarin framework and target iOS/Android.</p>
 <h4>Result</h4>
@@ -272,11 +272,11 @@ Extended API features for mobile development
 <h4>Problem</h4>
 <p>The company wanted to expand thier traffic controller operations into several pilot projects for public transit traffic signal priority and configurable pedestrian push buttons.</p>
 <h4>Action</h4>
-<p>My role in quality assurance helped ensure the consistency of recievers and signal generators on buses by developing a system test plan, test cases, and test beds in a complex embedded network linux environment.</p>
+<p>My role in quality assurance helped ensure the consistency of receivers and signal generators on buses by developing a system test plan, test cases, and test beds in a complex embedded network linux environment.</p>
 <br>
-<p>My role as a software engineer ensured a successful customization of transit priority using GPIO for the city of chicago.  Worked closely with pedestrian push button engineers to develop a configuration application.  The application was for windows mobile and communicated over the zigbee protocol.</p>
+<p>My role as a software engineer ensured a successful customization of transit priority using GPIO for the city of Chicago.  Worked closely with pedestrian push button engineers to develop a configuration application.  The application was for windows mobile and communicated over the zigbee protocol.</p>
 <h4>Result</h4>
-<p>The end result saw the pilot projects run succesfully with different organizations like Translink and Richmond municipality, Chicago transit and others.</p>
+<p>The end result saw the pilot projects run successfully with different organizations like Translink and Richmond municipality, Chicago transit and others.</p>
 <h5>Keywords</h5>
 <!--<h5> Pilot Project 1: SoundSafe Advanced Pedestrian Control </h5>
 -->
