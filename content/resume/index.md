@@ -225,13 +225,7 @@ Extended API features for mobile development
 <h4>Action</h4>
 <p>My role as a software developer was to convert C++ code to C# and XAML.  Converted several apps like: an advanced calculator, social media apps, music applications, and games.  I often exceeded expected timelines, which allowed us to do things like use the C# code for the Xamarin framework and target iOS/Android.</p>
 <h4>Result</h4>
-<<<<<<< Updated upstream
-<p>The result was several apps in more popular platforms that continue to bring revenue for the company.  Continued contracting for the company after parting ways.</p>
-||||||| merged common ancestors
-<p>The result was several apps in more popular platforms that continue to bring revenue for the company.  They enjoyed the quality of my work so much I continued contracting on the side for the company after my initial one ended.</p>
-=======
 <p>The result was several apps in more popular platforms that continue to bring revenue for the company.  They enjoyed the quality of my work so much I continued contracting on the side for the company into 2012.</p>
->>>>>>> Stashed changes
 <h5>Keywords</h5>
 <!--
 <h3> Contract Developer, Sep 2011 - Apr 2012 </h3>
