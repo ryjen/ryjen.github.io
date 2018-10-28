@@ -22,7 +22,8 @@ $(function() {
   initDoodles();
 
   if (window.location.hostname != 'coda.life') {
-    $("#intro .brand, #brand .brand").text(window.location.hostname.split('.')[0])
+    document.title = window.location.hostname.split('.')[0]
+    $("#intro .brand, #brand .brand").text(document.title)
   }
 
 });
