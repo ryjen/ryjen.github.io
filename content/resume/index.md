@@ -42,7 +42,7 @@ Seeking a senior or challenging software engineer role where I can maximize my e
 
 <div class="card bg-default">
 
-<h3> <a href="https://cvent.com/">Cvent</a> - <a href="http://quickmobile.com/">Quickmobile</a>, Mobile Application Developer, 2015 - Present</h3>
+<h3> <a href="https://cvent.com/">Cvent</a> - <a href="http://quickmobile.com/">Quickmobile</a>, Mobile Application Developer, Jul 2015 - Present</h3>
 
 <h4>Problem</h4>
 <p>The company still had a need for extra skills maintaining existing client applications and growing the product</p>
@@ -83,7 +83,7 @@ Android, iOS, Beacons, SQL, BLE, Notifications, JIRA, UX, Agile, SCRUM, Iterativ
 
 <div class="card bg-default">
 
-<h3> <a href="http://linuxmagic.com/">Linux Magic</a>, Linux Engineer April 2015 - July 2015 </h3>
+<h3> <a href="http://linuxmagic.com/">Linux Magic</a>, Linux Engineer Apr 2015 - Jul 2015 </h3>
 
 <!--
 <ul>
@@ -108,7 +108,7 @@ Improved main product stability with progress on two research projects. Successf
 
 <div class="card bg-default">
 
-<h3> <a href="http://epactnetwork.com/">ePACT</a>, Backend Java Engineer and Senior Mobile Developer, 2013 - 2015</h3>
+<h3> <a href="http://epactnetwork.com/">ePACT</a>, Backend Java Engineer and Senior Mobile Developer, Jul 2013 - Apr 2015</h3>
 
 <h4>Problem</h4>
 <p>The company required extra skills bringing their emergency networking/communication platform to life.</p>
@@ -179,7 +179,7 @@ Extended API features for mobile development
 
 <div class="card bg-default">
 
-<h3> <a href="http://www.quickmobile.com/">QuickMobile</a>, Mobile Application Developer, 2011 - 2013 </h3>
+<h3> <a href="http://www.quickmobile.com/">QuickMobile</a>, Mobile Application Developer, Apr 2011 - Jul 2013 </h3>
 
 <!--
 <ul>
@@ -219,13 +219,19 @@ Extended API features for mobile development
 
 <div class="card bg-default">
 
-<h3> <a href="http://www.panoramicsoft.com/">Panoramic Software</a>,  Software Developer, 2010 - 2011 </h3>
+<h3> <a href="http://www.panoramicsoft.com/">Panoramic Software</a>,  Software Developer, Nov 2010 - Apr 2011 </h3>
 <h4>Problem</h4>
 <p>The company required thier windows mobile (palm) applications to be ported to the new windows phone platform.</p>
 <h4>Action</h4>
 <p>My role as a software developer was to convert C++ code to C# and XAML.  Converted several apps like: an advanced calculator, social media apps, music applications, and games.  I often exceeded expected timelines, which allowed us to do things like use the C# code for the Xamarin framework and target iOS/Android.</p>
 <h4>Result</h4>
+<<<<<<< Updated upstream
 <p>The result was several apps in more popular platforms that continue to bring revenue for the company.  Continued contracting for the company after parting ways.</p>
+||||||| merged common ancestors
+<p>The result was several apps in more popular platforms that continue to bring revenue for the company.  They enjoyed the quality of my work so much I continued contracting on the side for the company after my initial one ended.</p>
+=======
+<p>The result was several apps in more popular platforms that continue to bring revenue for the company.  They enjoyed the quality of my work so much I continued contracting on the side for the company into 2012.</p>
+>>>>>>> Stashed changes
 <h5>Keywords</h5>
 <!--
 <h3> Contract Developer, Sep 2011 - Apr 2012 </h3>
@@ -264,7 +270,7 @@ Extended API features for mobile development
 
 <div class="card bg-default">
 
-<h3> <a href="http://www.novax.com/">Novax Industries Corporation</a>, Software Engineer and Quality Assurance Engineer, 2007 - 2010</h3>
+<h3> <a href="http://www.novax.com/">Novax Industries Corporation</a>, Software Engineer and Quality Assurance Engineer, Dec 2007 - Nov 2010</h3>
 <h4>Problem</h4>
 <p>The company wanted to expand thier traffic controller operations into several pilot projects for public transit traffic signal priority and configurable pedestrian push buttons.</p>
 <h4>Action</h4>
