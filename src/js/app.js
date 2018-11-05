@@ -21,8 +21,9 @@ $(function() {
 
   initDoodles();
 
-  if (window.location.hostname != 'coda.life') {
-    document.title = window.location.hostname.split('.')[0]
+  if (window.location.hostname != 'coda.life' && window.location.hostname != 'www.coda.life') {
+    var parts = window.location.hostname.split('.')
+    document.title = parts.length > 2 ? parts[1] : parts[0]
     $("#intro .brand, #brand .brand").text(document.title)
   }
 
