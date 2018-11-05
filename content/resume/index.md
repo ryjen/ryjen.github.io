@@ -23,7 +23,7 @@ layout: plain
 </div>
 
 <div>
-    <i class="fa fa-globe"></i><a href="https://nullstruct.com">nullstruct.com</a>
+    <i class="fa fa-globe"></i><a href="https://coda.life">coda.life</a>
 </div>
 </div>
 </div>
