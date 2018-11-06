@@ -1,0 +1,304 @@
+<!doctype html>
+<html class="no-js" lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Favourite &#39;nixisms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="The fortunes api serves witty antidotes from the UNIX world that relieve project tensions.">
+    <meta name="keywords" content="unix,fortunes,micrantha,ryjen,ryan,jennings,coda,humour,humor,micro,microservice,micro-service,api,poems,proverbs,cookie,definitions,joke">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="/icon/icon.png">
+        
+    
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro" rel="stylesheet">
+<link rel="stylesheet" href="/css/theme.min.css">
+
+
+
+<link href="/css/app.min.css" rel="stylesheet">
+
+
+ 
+
+    <meta name="generator" content="Hugo 0.40.1" />
+
+</head>
+<body>
+
+<div id="background">
+</div>
+
+
+
+<div id="header" class="clearfix">
+    
+    <div class="container clearfix">
+        <span id="menu-toggle"><i class="fa fa-bars"></i></span>
+        <div id="brand">
+	    <a href="/">
+  <img src="/image/logo.svg" alt="logo" width="40" height="40" /> <span class="brand">coda.life</span>
+</a>
+
+        </div>
+        <nav>
+            
+                <ul class="nav navbar-nav">
+                    
+                        <li class="nav-toggle blog">
+                            
+                            <i class="fa fa-rss"></i> 
+                            
+                            <a href="/post">blog</a>
+                        </li>
+                    
+                        <li class="nav-toggle music">
+                            
+                            <i class="fa fa-music"></i> 
+                            
+                            <a href="/music">music</a>
+                        </li>
+                    
+                        <li class="nav-toggle doodles">
+                            
+                            <i class="fa fa-paint-brush"></i> 
+                            
+                            <a href="/doodles">doodles</a>
+                        </li>
+                    
+                        <li class="nav-toggle things">
+                            
+                            <i class="fa fa-object-ungroup"></i> 
+                            
+                            <a href="/things">things</a>
+                        </li>
+                    
+                </ul>
+            
+
+
+            
+                <ul class="nav navbar-icons">
+                    
+                        <li class="navbar-icon"><a href="/resume/"><i class="fa fa-file-o"></i></a></li>
+                    
+                        <li class="navbar-icon"><a href="mailto:ryan@coda.life"><i class="fa fa-envelope-o"></i></a></li>
+                    
+                        <li class="navbar-icon"><a href="https://github.com/ryjen/"><i class="fa fa-github"></i></a></li>
+                    
+                </ul>
+            
+        </nav>
+    </div>
+</div>
+
+<div class="container">
+
+
+<div id="main">
+
+    <h1>Favourite &#39;nixisms</h1>
+
+    <div class="text-justify">
+
+<h2 id="dotfiles">dotfiles</h2>
+
+<p>There are many ways and tools to manage your dotfiles, having tried several, I like to use good &lsquo;ol GNU <code>stow</code>. (why is there no Gnu emoji?? its a different form of a bull, sh*t)</p>
+
+<p>In my dotfiles repo there is a stow config for different environments (home,work)/ Cloning [a project that setup good file conventions]() that has good file naming conventions for stow and git helps as well.</p>
+
+<p>The end result is:</p>
+
+<ul>
+<li>a config system that is portable across environments and platforms.</li>
+<li>updatability and cleanliness through symlinks</li>
+<li>stow allows you to pick and choose which things to install configuration for</li>
+</ul>
+
+<p>Helpful links:
+- [stow tutorial]()
+- [dotfiles standards]()</p>
+
+<h2 id="environment-shims">environment shims</h2>
+
+<p>Having the ability to run different versions of a programming language or framework can be very useful for consistency in problem solving.</p>
+
+<p>Enter environment <a href="https://en.wikipedia.org/wiki/Shim_(computing)">shim</a>s. Sitting at the front of your path they intercept tools and forward to the right version.</p>
+
+<p>Maybe not uniquely a unix solution as all you need is a CLI path, nonetheless, having your dotfiles add them to the path automatically is helpful.</p>
+
+<ul>
+<li>[pyenv]() for python</li>
+<li>[rbenv]() for ruby</li>
+<li>[exenv]() for elixir</li>
+<li>[goenv]() for golang</li>
+<li>[nodenv]() for node</li>
+</ul>
+
+<p>Web polyfills solve browser compatibility standards in a similar way.</p>
+
+<p>If there is a system installed version of the tools, they will usually appear as <strong>&ldquo;system&rdquo;</strong> as the version.  Usually, you will need root permission to work with that version.</p>
+
+<p>Cleanliness is another benefit of shims - you don&rsquo;t pollute your system and installed versions are easily removed.</p>
+
+<h2 id="docker-linux-namespaces">docker / linux namespaces</h2>
+
+<p><a href="https://en.wikipedia.org/wiki/Linux_namespaces">Namespaces</a> were a cool addition to linux that enable partitioning of kernel resources.</p>
+
+<p>I learned about them from someone (forgot their name) doing a demo of their functionality through programming simple C programs.</p>
+
+<p>There are 7 namespaces in linux, each enabling a different resource functionality.</p>
+
+<p>For example, using the first namespace, mount, allows a process to create new mount points without root or affecting the rest of the system.</p>
+
+<p>The final namespace, user, allowed isolation of privledges and user identification isolation.  Container systems like [docker]() and [lxcd]() were able to form with this namespace.</p>
+
+<p>Docker has proven for me to be very useful in providing stable environments for development and releases.  My entire homelab micro services, CI and PaaS run using docker.</p>
+
+<h2 id="vim">vim</h2>
+
+<p>Oh vim&hellip;. your like a complicated woman, hard to get, but with a few accessories - so worth it.</p>
+
+<ul>
+<li>neovim</li>
+<li>plugins (see dotfiles)</li>
+<li>favourite keystrokes</li>
+</ul>
+
+<h2 id="shells-piping-redirection">shells / piping / redirection</h2>
+
+<p>My favourite shell is ZSH, using [oh-my-zsh]() for plugins and themes.  For scripting, I like to use bash.</p>
+
+<ul>
+<li>writing your own shell</li>
+<li>chaining pipes</li>
+<li>background processes / CTRL-Z / fg / jobs</li>
+</ul>
+
+<p>TODO: add some value here, is this for newbs?</p>
+
+<h2 id="files-for-100-everything">files (for 100% everything)</h2>
+
+<ul>
+<li>[proc filesystem]() examples</li>
+<li>[fifo files]() examples</li>
+<li>[shm / mmap]() examples</li>
+</ul>
+
+<p>TODO: cool tricks and examples</p>
+
+<h2 id="security">security</h2>
+
+<p>TODO: fill out</p>
+
+<h2 id="open-source-c">open source / c</h2>
+
+<p>I would not exist without these, would have hanged myself at my kitchen job.  BTW hangman is a great hello world for new tech!</p>
+
+<h2 id="downsides">Downsides</h2>
+
+<ul>
+<li>configuration heavy</li>
+<li>messy filesystem</li>
+</ul>
+
+<p>TODO: mention more</p>
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+
+<hr>
+
+<div class="container">
+
+	
+	  <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "arg3" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	
+
+</div>
+
+
+</div>
+
+<div id="footer">
+
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "ca-pub-5084920929867043",
+      enable_page_level_ads: true
+    });
+  </script>
+
+
+<script type="text/javascript">
+  var _paq = _paq || [];
+   
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//analytics.micrantha.com/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+
+
+
+
+
+
+<div class="center">
+	&copy; all rights reserved, ryan jennings
+</div>
+
+</div>
+
+
+<script src="/js/theme.min.js"></script>
+
+
+<script src="/js/app.min.js"></script>
+
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+</body>
+</html>
+
+
