@@ -210,12 +210,6 @@ For example, we definately have the technology to use alternative sources of pow
 
 If an emerging nano technology provided environmental benefit to the world, it might also be limited in use for the same reasons.
 
-#### Love / Hate
-
-Some people say that love is the answer.  I think this is terribly naive.  You can love in an egoic state like you would an object and this just leads to more suffering in the long term.
-
-A good concept of love is "Recognizing the other as your self".
-
 ## The Economic Problem
 
 The economic system is complex, but in modern terms largley based on credit.  Credit is based upon trust in a future outcome.  Typically in capitalist terms the trust is an expectation to produce more economic benefit.
