@@ -54,9 +54,9 @@ Maybe not uniquely a Unix solution (all you need is a CLI path), nonetheless, th
 
 <code class="header">container of system resources isolated from the pirates</code>
 
-[Namespaces](https://en.wikipedia.org/wiki/Linux_namespaces) were an addition to the Linux kernel that enable **partitioning of kernel resources**.   While `chroot` isolates at a file hierarchy level, namespaces isolate everything at a system level - processes, network, users, etc.  They could be considered like a virtual machine without the virtual hardware.  More efficient without the extra security of a hypervisor.
+[Namespaces](https://en.wikipedia.org/wiki/Linux_namespaces) were an addition to the Linux kernel that enable **partitioning of kernel resources**.  Namespaces isolate everything at a system level (processes, network, users, etc).  This is different from *chroot* which isolates at a file hierarchy level.   They could be considered like a virtual machine without the virtual hardware.  More efficient without the extra security of a hypervisor.
 
-Namespaces can be implemented in C code via corresponding [system commands and C api](http://man7.org/linux/man-pages/man7/namespaces.7.html).
+Namespaces can be used in C code via corresponding [system commands and C api](http://man7.org/linux/man-pages/man7/namespaces.7.html).
 
 Using the first namespace for example, mount, allows a process to create new mount points that don't affect the rest of the system.
 
