@@ -23,7 +23,7 @@ $(function() {
 
   if (window.location.hostname != 'coda.life' && window.location.hostname != 'www.coda.life') {
     var parts = window.location.hostname.split('.')
-    document.title = parts.length > 2 ? parts[1] : parts[0]
+    document.title = parts.length > 3 ? parts[2] : parts.length > 2 ? parts[1] : parts[0]
     var items = $("#intro .brand, #brand .brand")
     items.css({ opacity: 0 })
     items.text(document.title)
