@@ -6,10 +6,23 @@
     <description>Recent content in Posts on coda.life</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 16 May 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 05 Nov 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://nullstruct.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Favourite &#39;nixisms</title>
+      <link>https://nullstruct.com/2018/11/05/favourite-nixisms/</link>
+      <pubDate>Mon, 05 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://nullstruct.com/2018/11/05/favourite-nixisms/</guid>
+      <description>introduction A log to myself of things I like about Unix type systems. In case I forget why someday.
+dotfiles files in braille? are they for the blind?
+Dotfiles in Linux are hidden files preceded with a period. Depending on the program, they are used for configuration in your home directory.
+It is common to have a set of dotfiles that you use regularly on different computer systems.
+There are many ways and tools to manage your dotfiles.</description>
+    </item>
     
     <item>
       <title>Mitmproxy and Android</title>

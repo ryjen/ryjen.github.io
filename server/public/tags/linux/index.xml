@@ -17,8 +17,11 @@
       <pubDate>Mon, 05 Nov 2018 00:00:00 +0000</pubDate>
       
       <guid>https://nullstruct.com/2018/11/05/favourite-nixisms/</guid>
-      <description>dotfiles There are many ways and tools to manage your dotfiles, having tried several, I like to use good &amp;lsquo;ol GNU stow. (why is there no Gnu emoji?? its a different form of a bull, sh*t)
-In my dotfiles repo there is a stow config for different environments (home,work)/ Cloning [a project that setup good file conventions]() that has good file naming conventions for stow and git helps as well.</description>
+      <description>introduction A log to myself of things I like about Unix type systems. In case I forget why someday.
+dotfiles files in braille? are they for the blind?
+Dotfiles in Linux are hidden files preceded with a period. Depending on the program, they are used for configuration in your home directory.
+It is common to have a set of dotfiles that you use regularly on different computer systems.
+There are many ways and tools to manage your dotfiles.</description>
     </item>
     
   </channel>

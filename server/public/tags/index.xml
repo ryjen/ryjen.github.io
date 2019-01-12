@@ -129,6 +129,15 @@
     </item>
     
     <item>
+      <title>Favourite</title>
+      <link>https://nullstruct.com/tags/favourite/</link>
+      <pubDate>Mon, 05 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://nullstruct.com/tags/favourite/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Fortunes</title>
       <link>https://nullstruct.com/tags/fortunes/</link>
       <pubDate>Mon, 22 Jan 2018 00:00:00 +0000</pubDate>
@@ -188,6 +197,24 @@
       <pubDate>Sat, 17 Nov 2012 00:00:00 +0000</pubDate>
       
       <guid>https://nullstruct.com/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://nullstruct.com/tags/linux/</link>
+      <pubDate>Mon, 05 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://nullstruct.com/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Log</title>
+      <link>https://nullstruct.com/tags/log/</link>
+      <pubDate>Mon, 05 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://nullstruct.com/tags/log/</guid>
       <description></description>
     </item>
     
@@ -332,6 +359,15 @@
       <pubDate>Tue, 15 May 2012 00:00:00 +0000</pubDate>
       
       <guid>https://nullstruct.com/tags/sqlite/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Unix</title>
+      <link>https://nullstruct.com/tags/unix/</link>
+      <pubDate>Mon, 05 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://nullstruct.com/tags/unix/</guid>
       <description></description>
     </item>
     
