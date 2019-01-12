@@ -101,9 +101,9 @@ Try the [interactive vim tutorial](https://www.openvim.com/) for a better exampl
 
 Being productive on the command line comes down to a few things: **multitasking, piping/redirect, multiplexing**
 
-The technique I use most often is **multitasking**:
+**Multitasking** involves foreground and background jobs in the shell:
 
-1. suspending the current foreground process using **CTRL-Z** (in something like vim)
+1. suspending the current foreground process using **CTRL-Z**
 2. do some other stuff, like restarting services or checking mail
 3. returning to the suspended process with the **fg** command
 
