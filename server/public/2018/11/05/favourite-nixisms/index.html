@@ -151,9 +151,9 @@ to the right version.  Another nice benefit of using shims is that package manag
 
 <p><code class="header">container of system resources isolated from the pirates</code></p>
 
-<p><a href="https://en.wikipedia.org/wiki/Linux_namespaces">Namespaces</a> were an addition to the Linux kernel that enable <strong>partitioning of kernel resources</strong>.   While <code>chroot</code> isolates at a file hierarchy level, namespaces isolate everything at a system level - processes, network, users, etc.  They could be considered like a virtual machine without the virtual hardware.  More efficient without the extra security of a hypervisor.</p>
+<p><a href="https://en.wikipedia.org/wiki/Linux_namespaces">Namespaces</a> were an addition to the Linux kernel that enable <strong>partitioning of kernel resources</strong>.  Namespaces isolate everything at a system level (processes, network, users, etc).  This is different from <em>chroot</em> which isolates at a file hierarchy level.   They could be considered like a virtual machine without the virtual hardware.  More efficient without the extra security of a hypervisor.</p>
 
-<p>Namespaces can be implemented in C code via corresponding <a href="http://man7.org/linux/man-pages/man7/namespaces.7.html">system commands and C api</a>.</p>
+<p>Namespaces can be used in C code via corresponding <a href="http://man7.org/linux/man-pages/man7/namespaces.7.html">system commands and C api</a>.</p>
 
 <p>Using the first namespace for example, mount, allows a process to create new mount points that don&rsquo;t affect the rest of the system.</p>
 
