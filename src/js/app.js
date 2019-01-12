@@ -24,7 +24,12 @@ $(function() {
   if (window.location.hostname != 'coda.life' && window.location.hostname != 'www.coda.life') {
     var parts = window.location.hostname.split('.')
     document.title = parts.length > 2 ? parts[1] : parts[0]
-    $("#intro .brand, #brand .brand").text(document.title)
+    var items = $("#intro .brand, #brand .brand")
+    items.css({ opacity: 0 })
+    items.text(document.title)
+    items.fadeIn('slow', function() {
+      items.css({opacity: 1}) 
+    })
   }
 
 });
