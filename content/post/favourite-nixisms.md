@@ -80,6 +80,8 @@ The Linux tech has even spawned a new OS, [Rancher OS](https://rancher.com/ranch
 
 The **editing modes** and **navigation** using keystrokes in Vim are useful for **never having to use a mouse again**. Once you get the hang of it, your wrists are happier.  Especially if you combine with an ergonomic keyboard layout like [Dvorak](https://www.dvorak-keyboard.com/) or [Colemak](https://en.wikipedia.org/wiki/Colemak).
 
+Try the [interactive vim tutorial](https://www.openvim.com/) for a better example of vims capabilities.
+
 **Plugins and/or syntax highlighting** are usually needed for anything serious.  Some included in my [dotfiles](https://github.com/ryjen/dotfiles/blob/master/vim/.vim/config/plug.vim) are:
 
 * [command-t](https://github.com/wincent/command-t): fuzzy search for files and tags (ctags)
