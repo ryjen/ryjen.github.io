@@ -35,10 +35,12 @@
                 <ul class="nav navbar-nav">
                     {{ range sort .Site.Menus.main }}
                         <li class="nav-toggle {{ .Name }}">
+                            <a href="{{ .URL }}">
                             {{ if .Identifier }}
                             <i class="fa fa-{{ .Identifier }}"></i> 
                             {{ end }}
-                            <a href="{{ .URL }}">{{ .Name }}</a>
+                            <span class="nav-name">{{ .Name }}</span>
+                            </a>
                         </li>
                     {{ end }}
                 </ul>

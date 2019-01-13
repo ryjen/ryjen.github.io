@@ -206,8 +206,10 @@ td {
 
   #brand {
     display: inline-block;
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: bold;
+    width: 315px;
+    margin-top: 6px;
 
     img {
       margin-right: 8px;
@@ -438,7 +440,19 @@ td {
 
 /* Responsiveness */
 
-@media (max-width: 1125px) {
+@media (max-width: 1195px) {
+
+  #header {
+    nav {
+      .nav-name {
+        display: none;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1000px) {
 
   #header {
     #menu-toggle {
