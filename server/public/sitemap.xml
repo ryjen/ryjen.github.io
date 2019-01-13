@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://nullstruct.com/2019/01/12/what-ive-learned-from-4-years-of-eckhart-tolle/</loc>
+    <lastmod>2019-01-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://nullstruct.com/2018/11/05/favourite-nixisms/</loc>
     <lastmod>2018-11-05T00:00:00+00:00</lastmod>
   </url>
@@ -144,8 +149,26 @@
   </url>
   
   <url>
+    <loc>https://nullstruct.com/tags/eckhart/</loc>
+    <lastmod>2019-01-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nullstruct.com/tags/ego/</loc>
+    <lastmod>2019-01-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://nullstruct.com/tags/elixir/</loc>
     <lastmod>2015-09-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nullstruct.com/tags/enlightenment/</loc>
+    <lastmod>2019-01-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -271,7 +294,7 @@
   
   <url>
     <loc>https://nullstruct.com/post/</loc>
-    <lastmod>2018-11-05T00:00:00+00:00</lastmod>
+    <lastmod>2019-01-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -324,14 +347,38 @@
   </url>
   
   <url>
+    <loc>https://nullstruct.com/tags/spirituality/</loc>
+    <lastmod>2019-01-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nullstruct.com/categories/spirituality/</loc>
+    <lastmod>2019-01-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://nullstruct.com/tags/sqlite/</loc>
     <lastmod>2012-05-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>https://nullstruct.com/tags/suffering/</loc>
+    <lastmod>2019-01-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://nullstruct.com/tags/</loc>
     <lastmod>2018-05-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nullstruct.com/tags/tolle/</loc>
+    <lastmod>2019-01-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -375,7 +422,7 @@
   
   <url>
     <loc>https://nullstruct.com/</loc>
-    <lastmod>2018-11-05T00:00:00+00:00</lastmod>
+    <lastmod>2019-01-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -7,5 +7,13 @@ tags: [self-hosting, hosting, docker, cloud, services, server]
 categories: [self-hosting]
 ---
 
-## 
+## introduction
+
+A use case of containerization basically.
+
+## the server
+
+A 
+
+
 
