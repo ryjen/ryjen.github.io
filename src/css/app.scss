@@ -19,10 +19,13 @@
 }
 
 ul {
-        list-style: disc outside url('/image/bullet.gif');
-        margin-left: 12px;
-    }
+  list-style: disc outside url('/image/bullet.gif');
+  margin-left: 12px;
+}
 
+#brand .brand, #intro .brand {
+  opacity: 0;
+}
 
 #doodles {
 

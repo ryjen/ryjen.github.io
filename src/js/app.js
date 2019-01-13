@@ -21,6 +21,8 @@ $(function() {
 
   initDoodles();
 
+  var items = $("#intro .brand, #brand .brand")
+  
   if (window.location.hostname != 'coda.life' && window.location.hostname != 'www.coda.life') {
 
     if (window.location.hostname == 'ryanjennin.gs' || window.location.hostname == 'www.ryanjennin.gs') {
@@ -29,13 +31,10 @@ $(function() {
       var parts = window.location.hostname.split('.')
       document.title = parts.length > 3 ? parts[2] : parts.length > 2 ? parts[1] : parts[0]
     }
-    var items = $("#intro .brand, #brand .brand")
-    items.css({ opacity: 0 })
     items.text(document.title)
-    items.fadeIn('slow', function() {
-      items.css({opacity: 1}) 
-    })
   }
+
+  items.fadeIn(900, function() { items.css({opacity: 1}) })
 
 });
 
