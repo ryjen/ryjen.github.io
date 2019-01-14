@@ -4,6 +4,9 @@ layout: plain
 ---
 
 <div id="page-resume">
+<a class="pull-right" href="javascript:window.print()">
+  <i class="fa fa-lg fa-print" onclick="window.print()"></i>
+</a>
 <h1>Ryan Jennings</h1>
 <div id="contact-info">
 <div class="pull-left">

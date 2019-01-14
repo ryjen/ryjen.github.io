@@ -1,4 +1,27 @@
 
+function redirect_business_card_url() {
+
+
+  if (Cookies.get('business_card_view')) {
+    return false
+  }
+
+  if (window.location.pathname !== '/') {
+    return false
+  }
+
+
+  if (window.location.hostname !== 'localhost' && window.location.hostname !== 'www.ryanjennin.gs') {
+    return false
+  }
+
+  Cookies.set('business_card_view', true, { expires: 7, path: '/' })
+
+  window.location = window.location.origin + "/resume"
+
+  return true
+}
+
 function initDoodles() {
 
   var width = ($(window).width()/4)*2;
@@ -14,6 +37,10 @@ function initDoodles() {
 }
 
 $(function() {
+
+  if (redirect_business_card_url()) {
+    return
+  }
 
   $(window).resize(function() {
     initDoodles();

@@ -296,6 +296,11 @@ td {
     margin-top: 1em;
   }
 
+  .image {
+    border-radius: 1em;
+    border: 2px solid $base02;
+    margin: 1em;
+  }
 
   .card {
     &.bg-default {
