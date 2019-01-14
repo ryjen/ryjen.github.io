@@ -11,7 +11,7 @@ function redirect_business_card_url() {
   }
 
 
-  if (window.location.hostname !== 'localhost' && window.location.hostname !== 'www.ryanjennin.gs') {
+  if (window.location.hostname !== 'ryanjennin.gs' && window.location.hostname !== 'www.ryanjennin.gs') {
     return false
   }
 
