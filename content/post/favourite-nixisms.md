@@ -58,7 +58,7 @@ Maybe not uniquely a Unix solution (all you need is a CLI path), nonetheless, th
 
 Namespaces can be used in C code via corresponding [system commands and C api](http://man7.org/linux/man-pages/man7/namespaces.7.html).
 
-Using the first namespace for example, mount, allows a process to create new mount points that don't affect the rest of the system.
+Using the first namespace mount allows a process to create new mount points that don't affect the rest of the system.
 
 An important namespace was user, which allowed isolation of user privileges.  It's because of this namespaces container software like [docker](https://www.docker.com/) and [lxc](https://linuxcontainers.org/lxd/) were able to form.
 
@@ -129,9 +129,11 @@ Some people prefer [byobu](http://www.byobu.co/) as a layer over tmux or screen.
 
 Your entire system is available to you as a file, meaning the same C API and kernel calls that opens, reads and writes files can also be used for sockets, processes, devices, etc.
 
-The [proc filesystem](https://en.wikipedia.org/wiki/Procfs) exposes kernel information to user land as files. For example, cpuinfo, memory, modules, uptime, etc.
+The [proc filesystem](https://en.wikipedia.org/wiki/Procfs) exposes kernel information to user land as files. The cpuinfo, memory, modules, uptime, etc. information is all available to you as a file.
 
-[Fifo files](http://man7.org/linux/man-pages/man7/fifo.7.html) are basically pipes as a file and are used as a communication channel (IPC).   For example, testing  client/server applications communicating over a socket, you would pass your programs a FIFO instead and simulate the server output and the client input.
+[Fifo files](http://man7.org/linux/man-pages/man7/fifo.7.html) are basically pipes as a file and are used as a communication channel (IPC).   
+
+A use case of FIFOs could be testing client/server applications communicating over a socket (another file), you would pass your programs a FIFO instead and simulate the server output and the client input.
 
 [Shared memory / mmap](http://man7.org/linux/man-pages/man7/shm_overview.7.html) also returns a file descriptor that can be mapped to a block of memory instead of a file and also used for IPC.
 

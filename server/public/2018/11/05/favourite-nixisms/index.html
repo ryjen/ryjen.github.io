@@ -164,7 +164,7 @@ to the right version.  Another nice benefit of using shims is that package manag
 
 <p>Namespaces can be used in C code via corresponding <a href="http://man7.org/linux/man-pages/man7/namespaces.7.html">system commands and C api</a>.</p>
 
-<p>Using the first namespace for example, mount, allows a process to create new mount points that don&rsquo;t affect the rest of the system.</p>
+<p>Using the first namespace mount allows a process to create new mount points that don&rsquo;t affect the rest of the system.</p>
 
 <p>An important namespace was user, which allowed isolation of user privileges.  It&rsquo;s because of this namespaces container software like <a href="https://www.docker.com/">docker</a> and <a href="https://linuxcontainers.org/lxd/">lxc</a> were able to form.</p>
 
@@ -245,9 +245,11 @@ to the right version.  Another nice benefit of using shims is that package manag
 
 <p>Your entire system is available to you as a file, meaning the same C API and kernel calls that opens, reads and writes files can also be used for sockets, processes, devices, etc.</p>
 
-<p>The <a href="https://en.wikipedia.org/wiki/Procfs">proc filesystem</a> exposes kernel information to user land as files. For example, cpuinfo, memory, modules, uptime, etc.</p>
+<p>The <a href="https://en.wikipedia.org/wiki/Procfs">proc filesystem</a> exposes kernel information to user land as files. The cpuinfo, memory, modules, uptime, etc. information is all available to you as a file.</p>
 
-<p><a href="http://man7.org/linux/man-pages/man7/fifo.7.html">Fifo files</a> are basically pipes as a file and are used as a communication channel (IPC).   For example, testing  client/server applications communicating over a socket, you would pass your programs a FIFO instead and simulate the server output and the client input.</p>
+<p><a href="http://man7.org/linux/man-pages/man7/fifo.7.html">Fifo files</a> are basically pipes as a file and are used as a communication channel (IPC).</p>
+
+<p>A use case of FIFOs could be testing client/server applications communicating over a socket (another file), you would pass your programs a FIFO instead and simulate the server output and the client input.</p>
 
 <p><a href="http://man7.org/linux/man-pages/man7/shm_overview.7.html">Shared memory / mmap</a> also returns a file descriptor that can be mapped to a block of memory instead of a file and also used for IPC.</p>
 
