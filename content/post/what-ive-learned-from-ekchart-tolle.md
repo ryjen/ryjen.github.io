@@ -60,7 +60,7 @@ In fact, most of your problems only exist in the past or the future!  Recognitio
 
 "You are life, you don't have a life".
 
-In fact life only ever consists of the present moment.... always. Yes, the past and future can be useful as a practical tool, for scheduling or learning.  Forming attachments to them, will ultimately only lead to more suffering.
+In fact life only ever consists of the present moment.... always. Yes, the past and future can be useful as a practical tool, for learning or scheduling.  Forming attachments to them, will ultimately only lead to more suffering.
 
 ## Who am I?
 
