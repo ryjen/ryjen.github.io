@@ -34,6 +34,8 @@ A few enlightened individuals have appeared about 2500 years ago (Budda, Jesus, 
 
 Eckhart likes to depict the ego as a fictional mind-made entity "little me" that lives inside us.  Most people "identify" with it and are completely wrapped up in satisfying its needs as if without it, they would cease to exist.   It is always needy, comparing, always causing suffering to its host and others in very cunning ways.  It can be hard to distinguish.
 
+Most people are unaware of or deny a stream of "thinking" in their heads.  Einstein's quote in the cute little image implies that you should think more.... but in fact identifying with thinking is the fundamental problem.  And yes, you can have an ego about being so "ego-less".
+
 Its also important to identify the collective human ego as well. As anything that separates you and others from the "oneness" of all things in the universe.  Things like gender, race, wealth, location, politics, etc, are all things that the ego will use.
 
 In Jungian terms, introverts have an "ambivalent ego" that both "craves and fears attention".  Extrovert ego is the classic ego - loud, demanding attention - both are unconcious.
