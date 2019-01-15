@@ -60,7 +60,7 @@ Namespaces can be used in C code via corresponding [system commands and C api](h
 
 Using the first namespace for example, mount, allows a process to create new mount points that don't affect the rest of the system.
 
-An important namespace was user, which allowed isolation of user privileges.  Its because of this namespaces container software like [docker](https://www.docker.com/) and [lxc](https://linuxcontainers.org/lxd/) were able to form.
+An important namespace was user, which allowed isolation of user privileges.  It's because of this namespaces container software like [docker](https://www.docker.com/) and [lxc](https://linuxcontainers.org/lxd/) were able to form.
 
 There were some neat LXC sessions at the recent [Open Source Summit 2018](https://events.linuxfoundation.org/events/open-source-summit-north-america-2018/) in Vancouver, I recommend the conference if you get a chance.
 
@@ -109,7 +109,7 @@ Being productive on the command line comes down to a few things: **multitasking,
 
 Shell piping/redirection is the glue that makes the **[Unix Philosophy](https://en.wikipedia.org/wiki/Unix_philosophy)** of concise modular programs work.  You can solve a wide variety of problems from the command line.  I rate software as more sophisticated if it includes a CLI toolset.
 
-To get a better idea of Unix philosophy in action, check out [CommandLine Fu](https://www.commandlinefu.com/commands/browse/sort-by-votes).  Top programs include **curl, jq, cut, cat, more, uniq, sed, parallel, xargs, wc, find, sort, rev, tr, echo**. 
+To get a better idea of Unix philosophy in action, check out [CommandLine Fu](https://www.commandlinefu.com/commands/browse/sort-by-votes).  Top programs include **cut, cat, more, uniq, sed, parallel, xargs, wc, find, sort, rev, tr, echo, curl, jq, etc**. 
 
 Another common thing to do with shells is **multiplex** them (usually with [tmux](https://en.wikipedia.org/wiki/Tmux)).  This is sort of like piping the entire shell into different views.
 
@@ -159,7 +159,7 @@ But humans are what they are, imperfect as the software they create.  I believe 
 
 - Complex configuration can be annoying, there are times when you need to do something pronto and some time consuming configuration thing will be blocking you.  Thankfully using containers solves most of this for enterprise needs.
 
-- Can be a messy or unorganized file system, but its not too bad.  [Gobo Linux](https://gobolinux.org/) has redefined the standard file system hierarchy to something that makes more sense to me)
+- Can be a messy or unorganized file system, but its not too bad.  [Gobo Linux](https://gobolinux.org/) has redefined the standard file system hierarchy to something that makes more sense to me.
 
 - Nix is mostly only friends with technical people.  This is a feature though, not a downside.
 
