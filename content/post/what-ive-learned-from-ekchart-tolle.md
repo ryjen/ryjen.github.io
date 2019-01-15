@@ -58,7 +58,9 @@ Eckhart suggests salvation is always in the present moment.  He reminds you that
 
 In fact, most of your problems only exist in the past or the future!  Recognition of the fact your problems don't exist in the now can completely dissolve the ego.
 
-In fact your so called "life" only ever consists of the present moment.... always.  "You are life, you don't have a life".
+"You are life, you don't have a life".
+
+In fact life only ever consists of the present moment.... always. Yes, the past and future can be useful as a practical tool, for scheduling or learning.  Forming attachments to them, will ultimately only lead to more suffering.
 
 ## Who am I?
 
