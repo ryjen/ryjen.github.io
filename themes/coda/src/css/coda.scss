@@ -32,7 +32,6 @@ body {
   background-color: $background-color;
   font-family: 'Source Sans Pro', sans-serif;
   color: $base00;
-  min-width: 360px;
 }
 
 a {
@@ -463,14 +462,13 @@ td {
   #header {
     #menu-toggle {
       display: inline-block;
-      position: fixed;
-      right: 1em;
-      top: 1.2em;
-      z-index: 999;
+      float: right;
+      margin-top: 0.7em;
+      z-index: 9999;
     }
 
     #brand {
-      display: block;
+      display: inline-block;
     }
     nav {
       float: none;
