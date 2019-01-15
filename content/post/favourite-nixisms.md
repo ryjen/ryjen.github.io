@@ -33,7 +33,7 @@ Dotfile repositories are usually personalized, however I forked [mine](https://g
 ## environment shims
 
 
-<code class="header">a thin layer above your path to keep a level surface across versions</code>
+<code class="header">a thin layer above your path to keep a level surface across versions.</code>
 
 
 Have you ever had to solve an issue using a different version than your environment?  You might have wanted a way to keep the stability of your system.
@@ -52,7 +52,7 @@ Maybe not uniquely a Unix solution (all you need is a CLI path), nonetheless, th
 
 ## linux namespaces / containers
 
-<code class="header">container of system resources isolated from the pirates</code>
+<code class="header">container of system resources isolated from the pirates.</code>
 
 [Namespaces](https://en.wikipedia.org/wiki/Linux_namespaces) were an addition to the Linux kernel that enable **partitioning of kernel resources**.  Namespaces isolate everything at a system level (processes, network, users, etc).  This is different from *chroot* which isolates at a file hierarchy level.   They could be considered like a virtual machine without the virtual hardware.  More efficient without the extra security of a hypervisor.
 
@@ -138,7 +138,7 @@ The [proc filesystem](https://en.wikipedia.org/wiki/Procfs) exposes kernel infor
 
 ## open source / c / security
 
-<code class="header">The source of life must be open as nothing is separate from it</code>
+<code class="header">The source of life must be open as nothing is separate from it.</code>
 
 Basically, my life as I know it, would not exist without open source, C and Linux.  As a young high-school grad with nothing to live for, hacking code and having people use it was immensely more exciting than real world life.  Too much for my poor parents, who did not understand, and it turns out neither did I.
 
