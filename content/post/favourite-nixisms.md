@@ -111,7 +111,9 @@ Being productive on the command line comes down to a few things: **multitasking,
 2. do some other stuff, like restarting services or checking mail
 3. returning to the suspended process with the **fg** command
 
-**Shell piping and redirection** is the glue that makes the [Unix Philosophy](https://en.wikipedia.org/wiki/Unix_philosophy) of concise modular programs work. Piping basically means taking the output of program and using it as the input for another program.   You can solve a wide variety of problems this way.  I rate softw re as more sophisticated if it includes a CLI toolset.
+**Shell piping and redirection** is the glue that makes the [Unix Philosophy](https://en.wikipedia.org/wiki/Unix_philosophy) of concise modular programs work. Piping basically means taking the output of program and using it as the input for another program.   You can solve a wide variety of problems this way.  
+
+[Writing your own shell](https://github.com/ryjen/os/tree/master/shell) is good fun and practice.  I usually rate software as more sophisticated if it includes a CLI toolset.  
 
 To get a better idea of Unix philosophy in action, check out [CommandLine Fu](https://www.commandlinefu.com/commands/browse/sort-by-votes).  Commands like **cut, cat, more, uniq, sed, parallel, xargs, wc, find, sort, rev, tr, echo, curl, jq** and others are all modular programs that work together. 
 
