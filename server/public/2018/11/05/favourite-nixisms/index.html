@@ -144,7 +144,9 @@
 <p>Have you ever had to solve an issue using a different version than your environment?  You might have wanted a way to keep the stability of your system.</p>
 
 <p>Enter environment <a href="https://en.wikipedia.org/wiki/Shim_(computing)">shim</a>s that sit at the front of your path, intercepting tools and forwarding
-to the right version.  Another nice benefit of using shims is that package manager installs are limited to the project or a global version and don&rsquo;t pollute the system version.</p>
+to the right version.</p>
+
+<p>A side effect of using shims is that package manager installs are limited to the project or a global version and don&rsquo;t need priviledges to interfere with the system version.</p>
 
 <p>Maybe not uniquely a Unix solution (all you need is a CLI path), nonetheless, they fit well in the ecosystem.</p>
 
@@ -160,7 +162,9 @@ to the right version.  Another nice benefit of using shims is that package manag
 
 <p><code class="header">container of system resources isolated from the pirates.</code></p>
 
-<p><a href="https://en.wikipedia.org/wiki/Linux_namespaces">Namespaces</a> were an addition to the Linux kernel that enable <strong>partitioning of kernel resources</strong>.  Namespaces isolate everything at a system level (processes, network, users, etc).  This is different from <em>chroot</em> which isolates at a file hierarchy level.   They could be considered like a virtual machine without the virtual hardware.  More efficient without the extra security of a hypervisor.</p>
+<p><a href="https://en.wikipedia.org/wiki/Linux_namespaces">Namespaces</a> were an addition to the Linux kernel that enable <strong>partitioning of kernel resources</strong>.  Namespaces isolate everything at a system level (processes, network, users, etc).  This is different from <em>chroot</em> which isolates at a file hierarchy level.</p>
+
+<p>They could be considered like a virtual machine without the virtual hardware.  More efficient without the extra security of a hypervisor.</p>
 
 <p>Namespaces can be used in C code via corresponding <a href="http://man7.org/linux/man-pages/man7/namespaces.7.html">system commands and C api</a>.</p>
 
@@ -186,7 +190,7 @@ to the right version.  Another nice benefit of using shims is that package manag
 
 <p><a href="https://neovim.io/">neovim</a> is my fork of choice.</p>
 
-<p>The <strong>editing modes</strong> and <strong>navigation</strong> using keystrokes in Vim are useful for <strong>never having to use a mouse again</strong>. Once you get the hang of it, your wrists are happier.  Especially if you combine with an ergonomic keyboard layout like <a href="https://www.dvorak-keyboard.com/">Dvorak</a> or <a href="https://en.wikipedia.org/wiki/Colemak">Colemak</a>.</p>
+<p>The <a href="https://en.wikibooks.org/wiki/Learning_the_vi_Editor/Vim/Modes">editing modes</a> and <a href="https://www.thegeekstuff.com/2009/03/8-essential-vim-editor-navigation-fundamentals/">navigation</a> using keystrokes in Vim are useful for <strong>never having to use a mouse again</strong>. Once you get the hang of it, your wrists are happier.  Especially if you combine with an ergonomic keyboard layout like <a href="https://www.dvorak-keyboard.com/">Dvorak</a> or <a href="https://en.wikipedia.org/wiki/Colemak">Colemak</a>.</p>
 
 <p>Try the <a href="https://www.openvim.com/">interactive vim tutorial</a> for a better example of vims capabilities.</p>
 
@@ -221,13 +225,13 @@ to the right version.  Another nice benefit of using shims is that package manag
 <li>returning to the suspended process with the <strong>fg</strong> command</li>
 </ol>
 
-<p>Shell piping/redirection is the glue that makes the <strong><a href="https://en.wikipedia.org/wiki/Unix_philosophy">Unix Philosophy</a></strong> of concise modular programs work.  You can solve a wide variety of problems from the command line.  I rate software as more sophisticated if it includes a CLI toolset.</p>
+<p>Shell piping and redirection is the glue that makes the <a href="https://en.wikipedia.org/wiki/Unix_philosophy">Unix Philosophy</a> of concise modular programs work.  You can solve a wide variety of problems from the command line.  I rate software as more sophisticated if it includes a CLI toolset.</p>
 
-<p>To get a better idea of Unix philosophy in action, check out <a href="https://www.commandlinefu.com/commands/browse/sort-by-votes">CommandLine Fu</a>.  Top programs include <strong>cut, cat, more, uniq, sed, parallel, xargs, wc, find, sort, rev, tr, echo, curl, jq, etc</strong>.</p>
+<p>To get a better idea of Unix philosophy in action, check out <a href="https://www.commandlinefu.com/commands/browse/sort-by-votes">CommandLine Fu</a>.  Commands like <strong>cut, cat, more, uniq, sed, parallel, xargs, wc, find, sort, rev, tr, echo, curl, jq</strong> and others are all modular programs that work together.</p>
 
-<p>Another common thing to do with shells is <strong>multiplex</strong> them (usually with <a href="https://en.wikipedia.org/wiki/Tmux">tmux</a>).  This is sort of like piping the entire shell into different views.</p>
+<p>Another common thing to do with shells is <strong>multiplex</strong> them (usually with <a href="https://en.wikipedia.org/wiki/Tmux">tmux</a>).  This is sort of like <strong>piping the entire shell into different views</strong>.</p>
 
-<p>It can be handy to quickly split screen with another shell, zoom a split pane to full, switch between virtual windows, or detach/retach sessions with a persistent state (SSH).  And remember, like vim, this is all done with key strokes, saving the mouse effort.</p>
+<p>It can be handy to quickly <strong>split screen</strong> with another shell, <strong>zoom</strong> a split pane to full, switch between <strong>virtual views</strong>, or <strong>detach/retach</strong> sessions with a <strong>persistent state</strong> (SSH).  Like vim, this is all done with key strokes, saving the mouse effort.</p>
 
 <p>Some people prefer <a href="http://www.byobu.co/">byobu</a> as a layer over tmux or screen. Either way, if your new to multiplexing it will take some getting used to.</p>
 
@@ -245,7 +249,7 @@ to the right version.  Another nice benefit of using shims is that package manag
 
 <p>Your entire system is available to you as a file, meaning the same C API and kernel calls that opens, reads and writes files can also be used for sockets, processes, devices, etc.</p>
 
-<p>The <a href="https://en.wikipedia.org/wiki/Procfs">proc filesystem</a> exposes kernel information to user land as files. The cpuinfo, memory, modules, uptime, etc. information is all available to you as a file.</p>
+<p>The <a href="https://en.wikipedia.org/wiki/Procfs">proc filesystem</a> exposes kernel information to user land as files. Information like <strong>cpuinfo</strong>, <strong>memory</strong>, <strong>battery</strong>, and more is all available to you as a file.</p>
 
 <p><a href="http://man7.org/linux/man-pages/man7/fifo.7.html">Fifo files</a> are basically pipes as a file and are used as a communication channel (IPC).</p>
 
@@ -259,7 +263,7 @@ to the right version.  Another nice benefit of using shims is that package manag
 
 <p>Basically, my life as I know it, would not exist without open source, C and Linux.  As a young high-school grad with nothing to live for, hacking code and having people use it was immensely more exciting than real world life.  Too much for my poor parents, who did not understand, and it turns out neither did I.</p>
 
-<p>The past aside, people nowadays will complain about C as dangerous. Especially since the <a href="http://heartbleed.com/">heartbleed</a> bug and recent <a href="https://en.wikipedia.org/wiki/Fuzzing">open source bugs</a> found with <a href="https://en.wikipedia.org/wiki/Fuzzing">fuzz testing</a> tools.  But the reality is, if you deeply understand buffer overflows and pointers and you are a proactive tester, C is quite manageable.</p>
+<p>The past aside, people nowadays will complain about C as dangerous. Especially since the <a href="http://heartbleed.com/">heartbleed</a> bug and recent <a href="https://en.wikipedia.org/wiki/Fuzzing">open source bugs</a> found with <a href="https://en.wikipedia.org/wiki/Fuzzing">fuzz testing</a> tools.  But the reality is, if you deeply understand buffer overflows, pointers and you are a proactive tester, C is quite manageable.</p>
 
 <p>But humans are what they are, imperfect as the software they create.  I believe C is like the matrix in that it has just enough flaws for humans to accept it as a challenge and not too many that we&rsquo;ll reject it.</p>
 

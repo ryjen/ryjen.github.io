@@ -39,7 +39,9 @@ Dotfile repositories are usually personalized, however I forked [mine](https://g
 Have you ever had to solve an issue using a different version than your environment?  You might have wanted a way to keep the stability of your system.
 
 Enter environment [shim](https://en.wikipedia.org/wiki/Shim_(computing))s that sit at the front of your path, intercepting tools and forwarding 
-to the right version.  Another nice benefit of using shims is that package manager installs are limited to the project or a global version and don't pollute the system version. 
+to the right version. 
+
+A side effect of using shims is that package manager installs are limited to the project or a global version and don't need priviledges to interfere with the system version. 
 
 Maybe not uniquely a Unix solution (all you need is a CLI path), nonetheless, they fit well in the ecosystem.
 
@@ -54,7 +56,9 @@ Maybe not uniquely a Unix solution (all you need is a CLI path), nonetheless, th
 
 <code class="header">container of system resources isolated from the pirates.</code>
 
-[Namespaces](https://en.wikipedia.org/wiki/Linux_namespaces) were an addition to the Linux kernel that enable **partitioning of kernel resources**.  Namespaces isolate everything at a system level (processes, network, users, etc).  This is different from *chroot* which isolates at a file hierarchy level.   They could be considered like a virtual machine without the virtual hardware.  More efficient without the extra security of a hypervisor.
+[Namespaces](https://en.wikipedia.org/wiki/Linux_namespaces) were an addition to the Linux kernel that enable **partitioning of kernel resources**.  Namespaces isolate everything at a system level (processes, network, users, etc).  This is different from *chroot* which isolates at a file hierarchy level.   
+
+They could be considered like a virtual machine without the virtual hardware.  More efficient without the extra security of a hypervisor.
 
 Namespaces can be used in C code via corresponding [system commands and C api](http://man7.org/linux/man-pages/man7/namespaces.7.html).
 
@@ -78,7 +82,7 @@ The Linux tech has even spawned a new OS, [Rancher OS](https://rancher.com/ranch
 
 [neovim](https://neovim.io/) is my fork of choice.
 
-The **editing modes** and **navigation** using keystrokes in Vim are useful for **never having to use a mouse again**. Once you get the hang of it, your wrists are happier.  Especially if you combine with an ergonomic keyboard layout like [Dvorak](https://www.dvorak-keyboard.com/) or [Colemak](https://en.wikipedia.org/wiki/Colemak).
+The [editing modes](https://en.wikibooks.org/wiki/Learning_the_vi_Editor/Vim/Modes) and [navigation](https://www.thegeekstuff.com/2009/03/8-essential-vim-editor-navigation-fundamentals/) using keystrokes in Vim are useful for **never having to use a mouse again**. Once you get the hang of it, your wrists are happier.  Especially if you combine with an ergonomic keyboard layout like [Dvorak](https://www.dvorak-keyboard.com/) or [Colemak](https://en.wikipedia.org/wiki/Colemak).
 
 Try the [interactive vim tutorial](https://www.openvim.com/) for a better example of vims capabilities.
 
@@ -107,13 +111,13 @@ Being productive on the command line comes down to a few things: **multitasking,
 2. do some other stuff, like restarting services or checking mail
 3. returning to the suspended process with the **fg** command
 
-Shell piping/redirection is the glue that makes the **[Unix Philosophy](https://en.wikipedia.org/wiki/Unix_philosophy)** of concise modular programs work.  You can solve a wide variety of problems from the command line.  I rate software as more sophisticated if it includes a CLI toolset.
+Shell piping and redirection is the glue that makes the [Unix Philosophy](https://en.wikipedia.org/wiki/Unix_philosophy) of concise modular programs work.  You can solve a wide variety of problems from the command line.  I rate software as more sophisticated if it includes a CLI toolset.
 
-To get a better idea of Unix philosophy in action, check out [CommandLine Fu](https://www.commandlinefu.com/commands/browse/sort-by-votes).  Top programs include **cut, cat, more, uniq, sed, parallel, xargs, wc, find, sort, rev, tr, echo, curl, jq, etc**. 
+To get a better idea of Unix philosophy in action, check out [CommandLine Fu](https://www.commandlinefu.com/commands/browse/sort-by-votes).  Commands like **cut, cat, more, uniq, sed, parallel, xargs, wc, find, sort, rev, tr, echo, curl, jq** and others are all modular programs that work together. 
 
-Another common thing to do with shells is **multiplex** them (usually with [tmux](https://en.wikipedia.org/wiki/Tmux)).  This is sort of like piping the entire shell into different views.
+Another common thing to do with shells is **multiplex** them (usually with [tmux](https://en.wikipedia.org/wiki/Tmux)).  This is sort of like **piping the entire shell into different views**.
 
-It can be handy to quickly split screen with another shell, zoom a split pane to full, switch between virtual windows, or detach/retach sessions with a persistent state (SSH).  And remember, like vim, this is all done with key strokes, saving the mouse effort.
+It can be handy to quickly **split screen** with another shell, **zoom** a split pane to full, switch between **virtual views**, or **detach/retach** sessions with a **persistent state** (SSH).  Like vim, this is all done with key strokes, saving the mouse effort.
 
 Some people prefer [byobu](http://www.byobu.co/) as a layer over tmux or screen. Either way, if your new to multiplexing it will take some getting used to.
 
@@ -129,7 +133,7 @@ Some people prefer [byobu](http://www.byobu.co/) as a layer over tmux or screen.
 
 Your entire system is available to you as a file, meaning the same C API and kernel calls that opens, reads and writes files can also be used for sockets, processes, devices, etc.
 
-The [proc filesystem](https://en.wikipedia.org/wiki/Procfs) exposes kernel information to user land as files. The cpuinfo, memory, modules, uptime, etc. information is all available to you as a file.
+The [proc filesystem](https://en.wikipedia.org/wiki/Procfs) exposes kernel information to user land as files. Information like **cpuinfo**, **memory**, **battery**, and more is all available to you as a file.
 
 [Fifo files](http://man7.org/linux/man-pages/man7/fifo.7.html) are basically pipes as a file and are used as a communication channel (IPC).   
 
@@ -144,7 +148,7 @@ A use case of FIFOs could be testing client/server applications communicating ov
 
 Basically, my life as I know it, would not exist without open source, C and Linux.  As a young high-school grad with nothing to live for, hacking code and having people use it was immensely more exciting than real world life.  Too much for my poor parents, who did not understand, and it turns out neither did I.
 
-The past aside, people nowadays will complain about C as dangerous. Especially since the [heartbleed](http://heartbleed.com/) bug and recent [open source bugs](https://en.wikipedia.org/wiki/Fuzzing) found with [fuzz testing](https://en.wikipedia.org/wiki/Fuzzing) tools.  But the reality is, if you deeply understand buffer overflows and pointers and you are a proactive tester, C is quite manageable.
+The past aside, people nowadays will complain about C as dangerous. Especially since the [heartbleed](http://heartbleed.com/) bug and recent [open source bugs](https://en.wikipedia.org/wiki/Fuzzing) found with [fuzz testing](https://en.wikipedia.org/wiki/Fuzzing) tools.  But the reality is, if you deeply understand buffer overflows, pointers and you are a proactive tester, C is quite manageable.
 
 But humans are what they are, imperfect as the software they create.  I believe C is like the matrix in that it has just enough flaws for humans to accept it as a challenge and not too many that we'll reject it.
 
