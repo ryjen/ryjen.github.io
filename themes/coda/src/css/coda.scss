@@ -32,6 +32,7 @@ body {
   background-color: $background-color;
   font-family: 'Source Sans Pro', sans-serif;
   color: $base00;
+  min-width: 420px;
 }
 
 a {
@@ -473,6 +474,9 @@ td {
     nav {
       float: none;
       display: none;
+      .nav-name {
+        display: inline;
+      }
     }
     li {
       text-align: left;
