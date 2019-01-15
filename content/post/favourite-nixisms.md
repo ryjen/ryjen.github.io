@@ -6,11 +6,11 @@ tags: [linux, unix, favourite, log]
 categories: [linux]
 ---
 
-## introduction
+## Introduction
 
 A log to myself of things I like about Unix type systems.  In case I forget why someday.
 
-## dotfiles
+## Dotfiles
 
 <code class="header">files in braille? are they for the blind?</code>
 
@@ -24,13 +24,13 @@ One can create a modular and secure repository with a set of conventions and rul
 
 Dotfile repositories are usually personalized, however I forked [mine](https://github.com/ryjen/dotfiles) from a repository that implemented the above.
 
-#### helpful links: 
+#### Helpful links: 
 
 * [stow documentation](https://www.gnu.org/software/stow/manual/stow.html): how to use stow
 * [awesome dotfiles](https://github.com/webpro/awesome-dotfiles): a list of awesome for dotfiles
 * [F-dotfiles](https://github.com/Kraymer/F-dotfiles): a dotfile repo with conventions 
 
-## environment shims
+## Environment shims
 
 
 <code class="header">a thin layer above your path to keep a level surface across versions.</code>
@@ -52,7 +52,7 @@ Maybe not uniquely a Unix solution (all you need is a CLI path), nonetheless, th
 * [nodenv](https://github.com/nodenv/nodenv) for node
 
 
-## linux namespaces / containers
+## Linux namespaces / containers
 
 <code class="header">container of system resources isolated from the pirates.</code>
 
@@ -72,11 +72,11 @@ For me containers have been helpful in cross-compiler and cross-platform testing
 
 The Linux tech has even spawned a new OS, [Rancher OS](https://rancher.com/rancher-os/) where the entire host system is in docker containers.  For example systemd is a container.  Having tried it, it makes me wonder what more can be done with it.
 
-#### helpful links
+#### Helpful links
 
 * [awesome containers](https://github.com/Friz-zy/awesome-linux-containers): a list of awesome for containers
 
-## vim
+## Vim
 
 <code class="header">Oh vim.... you're like a complicated lover, hard to get, and with a few accessories - so worth it.</code>
 
@@ -95,11 +95,11 @@ Try the [interactive vim tutorial](https://www.openvim.com/) for a better exampl
 * [lightline](https://github.com/itchyny/lightline.vim): editing status bar
 
 
-#### helpful links
+#### Helpful links
 * [awesome vim](https://github.com/akrawchyk/awesome-vim): a list of awesome for vim
 * [vim-clutch](https://github.com/alevchuk/vim-clutch): a hardware clutch for vim escape key
 
-## shells / unix philosphy / multiplexing
+## Shells / unix philosphy / multiplexing
 
 <code class="header">Who doesn't love piping a solution to your problems?</code>
 
@@ -121,13 +121,13 @@ It can be handy to quickly **split screen** with another shell, **zoom** a split
 
 Some people prefer [byobu](http://www.byobu.co/) as a layer over tmux or screen. Either way, if your new to multiplexing it will take some getting used to.
 
-#### helpful links
+#### Helpful links
 
 * [job control](http://linuxreviews.org/beginner/jobs/)
 * [tmux tutorial](https://danielmiessler.com/study/tmux/)
 * [awesome shell](https://github.com/alebcay/awesome-shell)
 
-## everything is a file and interprocess communication
+## Everything is a file and interprocess communication
 
 <code class="header">hippie: "how does the system communicate to us?"  nerd: "with files"</code>
 
@@ -142,7 +142,7 @@ A use case of FIFOs could be testing client/server applications communicating ov
 [Shared memory / mmap](http://man7.org/linux/man-pages/man7/shm_overview.7.html) also returns a file descriptor that can be mapped to a block of memory instead of a file and also used for IPC.
 
 
-## open source / c / security
+## Open source / C / Security
 
 <code class="header">The source of life must be open as nothing is separate from it.</code>
 
@@ -152,7 +152,7 @@ The past aside, people nowadays will complain about C as dangerous. Especially s
 
 But humans are what they are, imperfect as the software they create.  I believe C is like the matrix in that it has just enough flaws for humans to accept it as a challenge and not too many that we'll reject it.
 
-#### helpful links
+#### Helpful links
 
 * [awesome security](https://github.com/sbilly/awesome-security)
 * [awesome c](https://github.com/aleksandar-todorovic/awesome-c)

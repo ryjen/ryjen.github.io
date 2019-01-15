@@ -27,8 +27,8 @@ His books The Power of Now and A New Earth have been #1 on the New York Times be
       <pubDate>Mon, 05 Nov 2018 00:00:00 +0000</pubDate>
       
       <guid>https://nullstruct.com/2018/11/05/favourite-nixisms/</guid>
-      <description>introduction A log to myself of things I like about Unix type systems. In case I forget why someday.
-dotfiles files in braille? are they for the blind?
+      <description>Introduction A log to myself of things I like about Unix type systems. In case I forget why someday.
+Dotfiles files in braille? are they for the blind?
 Dotfiles in Linux are hidden files preceded with a period. Depending on the program, they are used for configuration in your home directory.
 It is common to have a set of dotfiles that you use regularly on different computer systems.
 There are many ways and tools to manage your dotfiles.</description>
