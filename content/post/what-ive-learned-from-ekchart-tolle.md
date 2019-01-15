@@ -32,7 +32,7 @@ According to Eckhart, and it is really hard to disagree with him, the ego is a f
 
 A few enlightened individuals have appeared about 2500 years ago (Budda, Jesus, Laozi).  The basic dysfunction has not really needed to evolve until the time we are presently in.   Given the amount of dysfunction in the recent history with world wars, population, technological and environmental doomsdays humans face a stark choice.  Evolve beyond the Ego or die.
 
-Eckhart likes to depict the ego as a fictional mind-made entity "little me" that lives inside us.  Most people "identify" with it and are completely wrapped up in satisfying its needs as if without it, they would cease to exist.   It is always needy, comparing, always causing suffering to its host and others in very cunning ways.  It can be hard to distinguish.
+Eckhart likes to depict the ego as a mind-made entity, a "little me" that lives inside us, that forms a fictional self.  Most people "identify" with it and are completely wrapped up in satisfying its needs as if without it, they would cease to exist.   It is always needy, comparing, always causing suffering to its host and others in very cunning ways.  It can be hard to distinguish.
 
 Most people are unaware of or deny a stream of "thinking" in their heads.  Einstein's quote in the cute little image implies that you should think more.... but in fact identifying with thinking is the fundamental problem.  And yes, you can have an ego about being so "ego-less".
 
