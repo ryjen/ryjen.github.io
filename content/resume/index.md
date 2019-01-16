@@ -392,7 +392,7 @@ C, C++, GPS, Linux, Embedded Systems, Distributed Systems, Shell Scripting, SQL,
 <div class="card bg-default">
 
 <ul>
-<li>Digital Signal Processing, Machine Learning in Go, Ethical Hacking at Udemy, 2018</li>
+<li>Digital Signal Processing, Machine Learning in Go, Ethical Hacking at Udemy, 2019</li>
 <li>Attended <a href="https://events.linuxfoundation.org/events/open-source-summit-north-america-2018/">Vancouver Open Source Summit</a>, 2018</li>
 <li>Couchbase Certification, Couchbase Online, 2018</li>
 <li>Machine Learning Course, Stanford Online, 2012</li>
