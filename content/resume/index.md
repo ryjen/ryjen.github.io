@@ -411,4 +411,4 @@ C, C++, GPS, Linux, Embedded Systems, Distributed Systems, Shell Scripting, SQL,
 
 <p class="center smaller">References available upon request.</p>
 
-/div>
+</div>
