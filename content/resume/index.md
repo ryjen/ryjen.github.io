@@ -33,7 +33,7 @@ layout: plain
 
 <div class="card bg-default">
 
-As an online hobbyist software enthusiast since 1999, I've slowly accumulated a formal part-time education and a successful career since 2005.
+As an online hobbyist software enthusiast since 1999, I've accumulated a formal part-time education and a successful career since 2005.
 <br/><br/>
 Currently seeking a senior or challenging software engineer role to make the best use of my experience and knowledge.
 
@@ -50,7 +50,7 @@ Currently seeking a senior or challenging software engineer role to make the bes
 <h3> <a href="https://cvent.com/">Cvent</a> - <a href="http://quickmobile.com/">Quickmobile</a>, Mobile Application Developer, Jul 2015 - Present</h3>
 
 <h4>Problem</h4>
-<p>The company had a need for more help maintaining existing client applications and growing the product framework</p>
+<p>The company had a need for more help maintaining existing client applications and growing the product framework.</p>
 <h4>Action</h4>
 <p>Working cross platform on Windows, iOS and Android, existing applications were maintained.  Offered several stabilizing fixes and improvements to the Android product framework, including Beacon support.</p>
 <h4>Result</h4>
@@ -101,7 +101,7 @@ Android, iOS, Beacons, SQL, BLE, Notifications, JIRA, UX, Agile, SCRUM, Iterativ
 </ul>
 -->
 <h4>Problem</h4>
-<p>The company required extra help in maintaining existing products and developing future ones</p>
+<p>The company required extra help in maintaining existing products and developing future ones.</p>
 <h4>Action</h4>
 <p>During my short stay I quickly adapt to the different technical working environment using virtual machine sandboxing, time tracking applications and vim.  Assisted in a research project in probing the internet to collect data on services.  Ported a perl prototype of a next generation distributed product to binary C. </p>
 <h4>Result</h4>
@@ -199,7 +199,7 @@ Extended API features for mobile development
 </ul>
 -->
 <h4>Problem</h4>
-<p>The company needed extra help producing mobile applications for big clients</p>
+<p>The company needed extra help producing mobile applications for big clients.</p>
 <h4>Action</h4>
 <p>Ensured that client requirements were met on the platforms specified, bringing value both in quality and speed.  Took initiative on several missing parts, working with team members.  Worked effectively with project managers and quality assurance.</p>
 <h4>Result</h4>
