@@ -1,61 +1,61 @@
 <!doctype html>
 <html class="no-js" lang="{{ .Site.LanguageCode }}">
-<head>
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>{{ .Title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     {{ partial "meta" . }}
-        
+
     {{ partial "css_theme" . }} 
 
     {{ .Hugo.Generator }}
 
-</head>
-<body>
+  </head>
+  <body>
 
-<div id="background">
-</div>
-
-<!--[if lte IE 9]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
-    your browser</a> to improve your experience and security.</p>
-<![endif]-->
-
-<div id="header" class="clearfix">
-    <!-- Add your site or application content here -->
-    <div class="container clearfix">
-        <div id="brand">
-	    {{ partial "brand" . }}
-        </div>
-    <div id="menu-toggle"><i class="fa fa-bars"></i></div>
-        <nav>
-            {{ if .Site.Menus.main }}
-                <ul class="nav navbar-nav">
-                    {{ range sort .Site.Menus.main }}
-                        <li class="nav-toggle {{ .Name }}">
-                            <a href="{{ .URL }}">
-                            {{ if .Identifier }}
-                            <i class="fa fa-{{ .Identifier }}"></i> 
-                            {{ end }}
-                            <span class="nav-name">{{ .Name }}</span>
-                            </a>
-                        </li>
-                    {{ end }}
-                </ul>
-            {{ end }}
-
-
-            {{ if .Site.Menus.icons }}
-                <ul class="nav navbar-icons">
-                    {{ range sort .Site.Menus.icons }}
-                        <li class="navbar-icon"><a href="{{ .URL }}"><i class="fa fa-{{ .Name }}"></i></a></li>
-                    {{ end }}
-                </ul>
-            {{ end }}
-        </nav>
+    <div id="background">
     </div>
-</div>
 
-<div class="container">
+    <!--[if lte IE 9]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+      your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+
+    <div id="header" class="clearfix">
+      <!-- Add your site or application content here -->
+      <div class="container clearfix">
+        <div id="brand">
+          {{ partial "brand" . }}
+        </div>
+        <div id="menu-toggle"><i class="fa fa-bars"></i></div>
+        <nav>
+          {{ if .Site.Menus.main }}
+          <ul class="nav navbar-nav">
+            {{ range sort .Site.Menus.main }}
+            <li class="nav-toggle {{ .Name }}">
+              <a href="{{ .URL }}">
+                {{ if .Identifier }}
+                <i class="fa fa-{{ .Identifier }}"></i> 
+                {{ end }}
+                <span class="nav-name">{{ .Name }}</span>
+              </a>
+            </li>
+            {{ end }}
+          </ul>
+          {{ end }}
+
+
+          {{ if .Site.Menus.icons }}
+          <ul class="nav navbar-icons">
+            {{ range sort .Site.Menus.icons }}
+            <li class="navbar-icon"><a href="{{ .URL }}"><i class="fa fa-{{ .Name }}"></i></a></li>
+            {{ end }}
+          </ul>
+          {{ end }}
+        </nav>
+      </div>
+    </div>
+
+    <div class="container">

@@ -195,11 +195,9 @@ td {
   a {
     font-weight: normal;
     color: $green;
-    vertical-align: top;
   }
 
   #menu-toggle {
-    line-height: 0.5em;
     display: none;
     color: $green;
   }
@@ -217,8 +215,6 @@ td {
   }
   nav {
     float: right;
-    position: relative;
-    top: 12px;
   }
 
   ul {
@@ -342,8 +338,8 @@ td {
   h2 {
     font-size: 1.8em;
     border-bottom: 1px dashed $green;
-  	padding-bottom: 10px;
-	}
+    padding-bottom: 10px;
+  }
 
   h3 {
     font-size: 1.55em;
@@ -463,7 +459,7 @@ td {
     #menu-toggle {
       display: inline-block;
       float: right;
-      margin-top: 0.7em;
+      margin-top: 0.5em;
       z-index: 9999;
     }
 
@@ -471,8 +467,8 @@ td {
       display: inline-block;
     }
     nav {
-      float: none;
-      display: none;
+      width: 100%;
+      margin-top: 8px;
       .nav-name {
         display: inline;
       }
@@ -481,6 +477,18 @@ td {
       text-align: left;
       display: block;
     }
+    .navbar-nav {
+      width: 100%;
+      li {
+        width: 100%;
+        padding-right: 0;
+        a {
+          width: 100%;
+          display: block;
+        }
+      }
+    }
+
     .navbar-icons {
       display: block;
 
