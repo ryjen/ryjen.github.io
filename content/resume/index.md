@@ -52,7 +52,7 @@ Currently seeking a senior or challenging software engineer role to make the bes
 <h4>Problem</h4>
 <p>The company had a need for more help maintaining existing client applications and growing the product framework.</p>
 <h4>Action</h4>
-<p>Working cross platform on Windows, iOS and Android, existing applications were maintained.  Offered several stabilizing fixes and improvements to the Android product framework, including Beacon support.</p>
+<p>Working cross platform on Windows, iOS and Android, existing applications were maintained.  Participate in Iterative Agile offering several stabilizing fixes and improvements to the Android product framework, including Beacon support.</p>
 <h4>Result</h4>
 <p>Legacy platforms successfully sunsetted and product platform quality improved with less support tickets.  Better Android resource usage resulting in no random memory crashes.  Improved UX experience with side-transitions.  The beacon experience at conferences performed reliably. Played a role in a successful acquisition by Cvent.  Participated in learning new technologies like Couchbase and React Native.</p>
 <h5>Keywords</h5>
@@ -107,7 +107,7 @@ Android, iOS, Beacons, SQL, BLE, Notifications, JIRA, UX, Agile, SCRUM, Iterativ
 <h4>Result</h4>
 <p>
 Improved main product stability with progress on two research projects. Successfully met all probation work.
- Improved some of my work habits like planning, documenting and communicating.  Participated in a build-your-own-quake on a raspberry pi tournament.
+ Improved some of my work habits like planning, documenting and communicating.  Participated in a build-your-own-quake on a raspberry pi tournament. Decided not to stay after probation.
 </p>
 <h5>Keywords</h5>
 <blockquote class="keywords">
