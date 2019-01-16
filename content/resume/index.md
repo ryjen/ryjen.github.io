@@ -26,7 +26,7 @@ layout: plain
 </div>
 
 <div>
-    <i class="fa fa-globe"></i><a href="https://coda.life">coda.life</a>
+    <i class="fa fa-globe"></i><a href="https://ryanjennin.gs">ryanjennin.gs</a>
 </div>
 </div>
 </div>
