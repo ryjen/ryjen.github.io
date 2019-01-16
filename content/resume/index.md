@@ -48,11 +48,11 @@ Seeking a senior or challenging software engineer role where I can maximize my e
 <h3> <a href="https://cvent.com/">Cvent</a> - <a href="http://quickmobile.com/">Quickmobile</a>, Mobile Application Developer, Jul 2015 - Present</h3>
 
 <h4>Problem</h4>
-<p>The company still had a need for extra skills maintaining existing client applications and growing the product</p>
+<p>The company had a need for more help maintaining existing client applications and growing the product framework</p>
 <h4>Action</h4>
-<p>Initially working cross platform on Windows, iOS and Android, existing applications were maintained.  As the clients moved to the new platform, I adapted to the iterative development cycle on a single platform.  Offered several stabilizing fixes and improvements, for example, making better use of android fragments and external beacon support with notifications.</p>
+<p>Working cross platform on Windows, iOS and Android, existing applications were maintained.  Offered several stabilizing fixes and improvements to the Android product framework, including Beacon support.</p>
 <h4>Result</h4>
-<p>Legacy platforms successfully sunsetted, new platform quality improved over several support/bug tickets.  Better use of fragments on Android platform allowed less resource usage resulting in no memory crashes and an overall improved UX experience with side-transitions.  With beacon experiences at conferences, the android platform performed reliably with a good user experience. Played a role in a successful acquisition by Cvent, and participated in learning new technologies like Couchbase and React Native</p>
+<p>Legacy platforms successfully sunsetted and product platform quality improved with less support tickets.  Better Android resource usage resulting in no random memory crashes.  Improved UX experience with side-transitions.  The beacon experience at conferences performed reliably. Played a role in a successful acquisition by Cvent.  Participated in learning new technologies like Couchbase and React Native.</p>
 <h5>Keywords</h5>
 <!--
 <h3> Mobile Application Developer, July 2015 - Present </h3>
@@ -99,9 +99,9 @@ Android, iOS, Beacons, SQL, BLE, Notifications, JIRA, UX, Agile, SCRUM, Iterativ
 </ul>
 -->
 <h4>Problem</h4>
-<p>The company required extra hands in maintaining existing products and developing future ones</p>
+<p>The company required extra help in maintaining existing products and developing future ones</p>
 <h4>Action</h4>
-<p>During my short stay I quickly adapt to the different technical working environment using virtual machine sandboxing, time tracking applications and vim.  Assisted in a research project in probing the internet to collect data on services.  Ported a perl prototype of a next gen distributed product to binary C. </p>
+<p>During my short stay I quickly adapt to the different technical working environment using virtual machine sandboxing, time tracking applications and vim.  Assisted in a research project in probing the internet to collect data on services.  Ported a perl prototype of a next generation distributed product to binary C. </p>
 <h4>Result</h4>
 <p>
 Improved main product stability with progress on two research projects. Successfully met all probation work.
@@ -118,7 +118,7 @@ Perl, C, Linux, PostgreSQL, SMTP, HTML, JS, Vim, GDB, GCC, SCRUM, Virtual Machin
 <h3> <a href="http://epactnetwork.com/">ePACT</a>, Backend Java Engineer and Senior Mobile Developer, Jul 2013 - Apr 2015</h3>
 
 <h4>Problem</h4>
-<p>The company required extra skills bringing their emergency networking/communication platform to life.</p>
+<p>The company required more help bringing their emergency networking/communication platform to life.</p>
 <h4>Action</h4>
 <p>My role on the backend saw me participating in SCRUM and providing features like easier PDF rendering, web security, performance improvements, an extension to the API for mobile and push notifications.</p>
 <br>
