@@ -33,7 +33,9 @@ layout: plain
 
 <div class="card bg-default">
 
-Seeking a senior or challenging software engineer role where I can maximize my experience and knowledge.
+As a hobbyist software enthusiast since 1999, I've slowly worked my way into formal part-time education and a stable career since 2005.
+
+Currently seeking a senior or challenging software engineer role where I can maximize my experience and knowledge.
 
 <!--
 <p>Self-taught programmer since 2002, formally educated with distinction in Computer Systems at BCIT.  Started professionally in quality assurance and embedded systems.  Have successfully been a part of the mobile revolution for 8 years on multiple platforms and languages.</p><p>Hobbies include learning different technologies, guitar/jazz and biking.
