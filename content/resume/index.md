@@ -9,10 +9,10 @@ layout: plain
 </a>
 <h1>Ryan Jennings</h1>
 <div id="contact-info">
-<div class="pull-left">
+<div>
     <img id="avatar" alt="ryan jennings" src="/image/profile.jpeg" />
 </div>
-<div class="links clearfix">
+<div class="links">
 <div>
     <i class="fa fa-phone"></i><a href="tel:1-778-240-3248">778-240-3248</a>
 </div>

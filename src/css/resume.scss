@@ -2,11 +2,16 @@
 #page-resume {
   font-size: smaller;
 
+  .fa-print {
+    position: relative;
+    top: 20px;
+  }
+
   #avatar {
     border-radius: 50%;
     height: 7em;
     width: 7em;
-    float: right;
+    vertical-align: sub;
   }
 
   h1 {
@@ -17,8 +22,15 @@
   #contact-info {
     margin-bottom: 1.5em;
 
+    div {
+      display: inline-block;
+    }
+
     .links {
       text-align: left;
+      div {
+        display: block;
+      }
     }
 
     i {
@@ -81,6 +93,7 @@
     }
   }
 }
+
 @media print {
 
   #page-resume {
@@ -120,9 +133,12 @@
     #contact-info {
       width: 100%;
 
-      div {
-        display: inline;
+      .links {
+        div {
+          display: inline-block;
+        }
       }
+
       i {
         width: auto;
         margin-right: 5px;
