@@ -55,13 +55,13 @@ Currently seeking a senior or challenging software engineer role to make the bes
 <h4>Action</h4>
 <p>Working cross platform on Windows, iOS and Android, existing applications were maintained.  Participate in Iterative Agile offering several stabilizing fixes and improvements to the Android product framework, including Beacon support.</p>
 <h4>Result</h4>
-<p>Legacy platforms successfully sunsetted and product platform quality improved with less support tickets.  Better Android resource usage resulting in no random memory crashes.  Improved UX experience with side-transitions.  The beacon experience at conferences performed reliably. Played a role in a successful acquisition by Cvent.  Participated in learning new technologies like Couchbase and React Native.</p>
+<p>Legacy platforms successfully sunsetted and product platform quality improved with less support tickets.  Better Android resource usage resulting in no random memory crashes.  Improved UX experience with side-transitions.  The beacon experience at conferences performed reliably. Played a role in a successful acquisition by Cvent.  Participated in learning new technologies like Couchbase, Typescript and React Native.</p>
 <h5>Keywords</h5>
 <!--
 <h3> Mobile Application Developer, July 2015 - Present </h3>
 !-->
 <blockquote class="keywords">
-Android, iOS, Beacons, SQL, BLE, Notifications, JIRA, UX, Agile, SCRUM, Iterative, RxJava, Git, Gradle, VeraCode, Security, Unit Testing, Continuous Integration, Scripting, Web Services, REST, Android Studio, Xcode, Visual Studio, Java, ObjectiveC, JavaScript, Couchbase, React Native
+Android, iOS, Beacons, SQL, BLE, Notifications, JIRA, UX, Agile, SCRUM, Iterative, RxJava, Git, Gradle, VeraCode, Security, Unit Testing, Continuous Integration, Scripting, Web Services, REST, Android Studio, Xcode, Visual Studio, Java, ObjectiveC, JavaScript, Typescript, Couchbase, React Native
 </blockquote>
 </div>
 <!--
