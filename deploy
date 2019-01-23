@@ -1,7 +1,15 @@
 #!/bin/sh
 
-git subtree push --prefix server dokku master
+if [ "$1" -eq "force" ]; then
 
-git subtree push --prefix server/public github master
+  git push dokku `git subtree split --prefix server master`:master --force
 
+  git push github `git subtree split --prefix server/public master`:master --force
 
+else
+
+  git subtree push --prefix server dokku master
+
+  git subtree push --prefix server/public github master
+
+fi

@@ -14,7 +14,7 @@ categories: [spirituality]
 
 [Eckhart Tolle](https://en.wikipedia.org/wiki/Eckhart_Tolle) or **ET** is a unique individual, author and orator.   After a suicidal night where he thought "I cannot live with myself any longer" he experienced a radical inner transformation.    After learning what happened to him, he became a "spiritual teacher". 
 
-His books [The Power of Now](https://en.wikipedia.org/wiki/The_Power_of_Now) and [A New Earth](https://en.wikipedia.org/wiki/A_New_Earth) have been #1 on the New York Times best seller list. He has been on Oprah and Larry King and travels the world giving talks and helping people realize they can live without their own suffering.   
+His books [The Power of Now](https://en.wikipedia.org/wiki/The_Power_of_Now) and [A New Earth](https://en.wikipedia.org/wiki/A_New_Earth) have been #1 on the New York Times best seller list. He has been on Oprah and Larry King and travels the world giving talks and helping people realize they can live without their own suffering.  He has even done [a talk at google](https://youtu.be/qE1dWwoJPU0). 
 
 The proceeds from the [Eckhart Tolle Foundation](https://www.eckharttollefoundation.org/) go towards awakening conciousness and creating a new earth.
 
