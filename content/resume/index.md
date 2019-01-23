@@ -1,6 +1,7 @@
 ---
 title: resume
 layout: plain
+is_home: true
 ---
 
 <div id="page-resume">

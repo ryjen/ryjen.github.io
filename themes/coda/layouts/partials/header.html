@@ -23,7 +23,7 @@
       your browser</a> to improve your experience and security.</p>
     <![endif]-->
 
-    {{ if .IsHome }}
+    {{ if or (.IsHome)  (.Params.is_home) }}
     <div id="header" class="clearfix home">
       {{ else }}
     <div id="header" class="clearfix">
