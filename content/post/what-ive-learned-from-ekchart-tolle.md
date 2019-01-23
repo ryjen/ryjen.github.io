@@ -60,9 +60,9 @@ Recomendations for dealing with the pain body is to be aware of it as what it is
 
 ## The present momemt
 
-Eckhart suggests salvation is always in the present moment.  He reminds you that both the past, and present, don't exist!  Where is the past?  Where is the future and does it ever appear as expected?  
+Eckhart suggests salvation is always in the present moment.  He reminds you that both the past, and present, don't exist.  Where is the past?  Where is the future and does it ever appear as expected?  
 
-In fact, most of your problems only exist in the past or the future!  Recognition of the fact your problems don't exist in the now can completely dissolve the ego.
+In fact, it you break down most of your problems, they only exist in the past or the future.  Recognition of that fact can completely dissolve the ego.
 
 Yes, the past and future can be useful as a practical tool, for learning or scheduling.  Forming attachments to them, will ultimately only lead to more suffering.
 
