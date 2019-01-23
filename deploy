@@ -1,6 +1,6 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
-if [ "$1" -eq "force" ]; then
+if [ "$1" == "force" ]; then
 
   git push dokku `git subtree split --prefix server master`:master --force
 
