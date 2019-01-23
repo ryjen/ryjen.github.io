@@ -16,7 +16,7 @@ categories: [spirituality]
 
 His books [The Power of Now](https://en.wikipedia.org/wiki/The_Power_of_Now) and [A New Earth](https://en.wikipedia.org/wiki/A_New_Earth) have been #1 on the New York Times best seller list. He has been on Oprah and Larry King and travels the world giving talks and helping people realize they can live without their own suffering.  He has even done [a talk at google](https://youtu.be/qE1dWwoJPU0). 
 
-The proceeds from the [Eckhart Tolle Foundation](https://www.eckharttollefoundation.org/) go towards awakening conciousness and creating a new earth.
+The proceeds from the [Eckhart Tolle Foundation](https://www.eckharttollefoundation.org/) go towards awakening consciousness and creating a new earth.
 
 I'm going to attempt paraphrasing the major takeaways I've received after following, reading and watching Eckhart Tolle over the last 4 years. But seriously read the books, I will only slightly do them justice. 
 
@@ -30,7 +30,7 @@ Eckhart defines the ego as such: "Identification of the self in form, as a thoug
 
 According to Eckhart, and it is really hard to disagree with him, the ego is a fundamental dysfunction of humans and we all suffer from it, including Eckhart.  
 
-A few enlightened individuals have appeared about 2500 years ago (Budda, Jesus, Laozi).  The basic dysfunction has not really needed to evolve until the time we are presently in.   Given the amount of dysfunction in the recent history with world wars, population, technological and environmental doomsdays humans face a stark choice.  Evolve beyond the Ego or die.
+A few enlightened individuals have appeared about 2500 years ago (Budda, Jesus, Laozi).  The basic dysfunction has not really needed to evolve until the time we are presently in.   Given the amount of dysfunction in the recent history with world wars, population, technological and environmental doomsday scenarios.... humans face a stark choice.  Evolve beyond the Ego or die.
 
 Eckhart likes to depict the ego as a mind-made entity, a "little me" that lives inside us, that forms a fictional self.  Most people "identify" with it and are completely wrapped up in satisfying its needs as if without it, they would cease to exist.   It is always needy, comparing, always causing suffering to its host and others in very cunning ways.  It can be hard to distinguish.  Some common food for ego are roles, like job function, gender, parent and child.
 
@@ -40,7 +40,7 @@ Einstein's quote on the ego implies that you should think more.... but in fact i
 
 Its also important to identify the collective human ego as well. As anything that separates you and others from the "oneness" of all things in the universe.  Things like gender, race, wealth, location, politics, etc, are all things that the ego will use.
 
-In Jungian terms, introverts have an "ambivalent ego" that both "craves and fears attention".  Extrovert ego is the classic ego - loud, demanding attention - both are unconcious.
+In Jungian terms, introverts have an "ambivalent ego" that both "craves and fears attention".  Extrovert ego is the classic ego - loud, demanding attention - both are unconscious.
 
 The sad part about humanity is that being in service of the ego is considered completely normal despite its pathological tendencies.
 
@@ -50,13 +50,13 @@ The sad part about humanity is that being in service of the ego is considered co
 <img alt="pain body" src="/image/blog/pain-body.png" />
 </div>
 
-If you've ever felt like you were acting out uncontrollably, as if something just didn't feel right. Ekhart has given it a name - "the Pain Body" so its easier to identify.
+If you've ever felt like you were acting out uncontrollably, as if something just didn't feel right. Eckhart has given it a name - "the Pain Body" so its easier to identify.
 
 The pain body is "accumulated old emotional pain" that resonates with negative thinking like a psychic parasite.  Like the ego it operates at an individual and collective level. 
 
-When the pain body is active, you are not present, you are unconcious.  You are completely and totally identified with the pain.  In some senses, the definition of evil.
+When the pain body is active, you are not present, you are unconscious.  You are completely and totally identified with the pain.  In some senses, the definition of evil.
 
-Recomendations for dealing with the pain body is to be aware of it as what it is and feel your inner body.  It helps in relationships to say "oh that triggered my pain body" or to another as "your pain body is active".  You can teach children about it by asking questions like "do you remember when you acted out like that?  How did it feel?  Do you rememer why?  Could you name it?"
+Recommendations for dealing with the pain body is to be aware of it as what it is and feel your inner body.  It helps in relationships to say "oh that triggered my pain body" or to another as "your pain body is active".  You can teach children about it by asking questions like "do you remember when you acted out like that?  How did it feel?  Do you remember why?  Could you name it?"
 
 ## The present momemt
 
@@ -64,7 +64,7 @@ Eckhart suggests salvation is always in the present moment.  He reminds you that
 
 In fact, it you break down most of your problems, they only exist in the past or the future.  Recognition of that fact can completely dissolve the ego.
 
-Yes, the past and future can be useful as a practical tool, for learning or scheduling.  Forming attachments to them, will ultimately only lead to more suffering.
+Yes, the past and future can be useful as a practical tool, for learning or scheduling.  Forming attachments to the past or future, however, will ultimately only lead to more suffering.
 
 ## Who am I?
 
@@ -74,7 +74,7 @@ If your essense is not in the world of form - thoughts or physical - who are you
 <img alt="thought in mouse hole" src="/image/blog/mouse-hole.jpg" class="image" />
 </div>
 
-Eckhart says the answer is awareness.  Unclouded awareness and conciousness are one in the same.
+Eckhart says the answer is awareness.  Unclouded awareness and consciousness are one in the same.
 
 Try this:  watch your mind like a cat waiting on a mouse hole in the wall... when the next thought pops out catch it. How long did you have to wait?
 
@@ -82,11 +82,11 @@ A good meditation is to try and get the wait as long as possible.
 
 ## Conclusion
 
-As someone who has had a somewhat difficult past with a lot of suffering and shame.... Eckharts teachings were like turning on a lightbulb in a basement.
+As someone who has had a somewhat difficult past with a lot of suffering and shame.... Eckhart's teachings were like turning on a light bulb in a basement.
 
 His teachings have radically transformed how "I" think about existence and my role in it.
 
-I've travelled to some of his retreats, explored books he's read and found inspiring, watched countless videos and it all points to the same truth.  
+I've traveled to some of his retreats, explored books he's read and found inspiring, watched countless videos and it all points to the same truth.  
 
 I'm hoping now that I'm able to deal my own inner state better, I can make the best of the rest.
 
