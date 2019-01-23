@@ -195,12 +195,12 @@ td {
 
   a {
     font-weight: normal;
-    color: $green;
+    color: $base00;
   }
 
   #menu-toggle {
     display: none;
-    color: $green;
+    color: $base00;
   }
 
   #brand {
@@ -233,14 +233,14 @@ td {
     border-radius: 5px;
 
     i {
-      color: $green;
+      color: $base00;
     }
 
     &:last-child {
       margin-right: inherit;
     }
     &:hover, &.active {
-      background-color: rgba($green,0.1);
+      background-color: rgba($base00,0.1);
     }
   }
 
@@ -249,7 +249,7 @@ td {
   }
 
   &.solid {
-    background-color: $green;
+    background-color: $base00;
     color: $background-color;
     a {
       color: $background-color;

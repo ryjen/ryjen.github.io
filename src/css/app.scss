@@ -27,6 +27,31 @@ ul {
   opacity: 0;
 }
 
+#header {
+  #brand img {
+    display: none;
+  }
+}
+
+#header.home {
+
+  #brand {
+    display: none;
+  }
+
+  >div {
+    text-align: center;
+  }
+
+  nav {
+    float: none;
+  }
+}
+
+#intro h3 {
+  display: none;
+}
+
 #doodles {
 
   margin: 0 auto;

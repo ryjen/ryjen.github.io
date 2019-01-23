@@ -23,13 +23,19 @@
       your browser</a> to improve your experience and security.</p>
     <![endif]-->
 
+    {{ if .IsHome }}
+    <div id="header" class="clearfix home">
+      {{ else }}
     <div id="header" class="clearfix">
+    {{ end }}
+
       <!-- Add your site or application content here -->
       <div class="container clearfix">
         <div id="brand">
           {{ partial "brand" . }}
         </div>
-        <div id="menu-toggle"><i class="fa fa-bars"></i></div>
+        <div id="menu-toggle">
+        <i class="fa fa-bars"></i></div>
         <nav>
           {{ if .Site.Menus.main }}
           <ul class="nav navbar-nav">
@@ -45,7 +51,6 @@
             {{ end }}
           </ul>
           {{ end }}
-
 
           {{ if .Site.Menus.icons }}
           <ul class="nav navbar-icons">
