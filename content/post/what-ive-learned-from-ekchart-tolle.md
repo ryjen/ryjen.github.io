@@ -30,15 +30,17 @@ Eckhart defines the ego as such: "Identification of the self in form, as a thoug
 
 According to Eckhart, and it is really hard to disagree with him, the ego is a fundamental dysfunction of humans and we all suffer from it, including Eckhart.  
 
-A few enlightened individuals have appeared about 2500 years ago (Budda, Jesus, Laozi).  The basic dysfunction has not really needed to evolve until the time we are presently in.   Given the amount of dysfunction in the recent history with world wars, population, technological and environmental doomsday scenarios.... humans face a stark choice.  Evolve beyond the Ego or die.
+A few enlightened individuals have appeared about 2500 years ago (Budda, Jesus, Laozi).  The basic dysfunction has not really needed to evolve until the time we are presently in.  
 
-Eckhart likes to depict the ego as a mind-made entity, a "little me" that lives inside us, that forms a fictional self.  Most people "identify" with it and are completely wrapped up in satisfying its needs as if without it, they would cease to exist.   It is always needy, comparing, always causing suffering to its host and others in very cunning ways.  It can be hard to distinguish.  Some common food for ego are roles, like job function, gender, parent and child.
+Given the amount of dysfunction in the recent history with world wars, population, technological and environmental doomsday scenarios.... humans face a stark choice.  Evolve beyond the ego or die.
 
-Most people are unaware of or deny a stream of "thinking" in their heads.  The fact is, thinking is a body function you have little control over. You can only  be aware of it.
+Eckhart likes to depict the ego as a mind-made entity, a "little me" that lives inside us, that forms a fictional self.  Most people "identify" with it and are completely wrapped up in satisfying its needs as if without it, they would cease to exist.   It is always needy, comparing, always causing suffering to its host and others in very cunning ways.  It can be hard to distinguish. 
 
-Einstein's quote on the ego implies that you should think more.... but in fact identifying with thinking is the fundamental problem.  And yes, you can have an ego about being so "ego-less".
+Most people are unaware of or deny a stream of "thinking" in their heads.  Thinking is a body function you have little control over. You can only  be aware of it.
 
-Its also important to identify the collective human ego as well. As anything that separates you and others from the "oneness" of all things in the universe.  Things like gender, race, wealth, location, politics, etc, are all things that the ego will use.
+Einstein's quote on the ego seemed to imply that you should think more.... but identifying with thinking is the fundamental problem.  And yes, you can have an ego about being so "ego-less".
+
+Its also important to identify the collective human ego as well.  As anything that separates you and others from the "oneness" of all things in the universe.  Schisms and roles like gender, race, wealth, location, politics, etc, are all things that the ego will use.
 
 In Jungian terms, introverts have an "ambivalent ego" that both "craves and fears attention".  Extrovert ego is the classic ego - loud, demanding attention - both are unconscious.
 
