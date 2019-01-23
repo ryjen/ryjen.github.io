@@ -34,7 +34,7 @@ According to Eckhart, and it is really hard to disagree with him, the ego is a f
 <img class="image" alt="Einstein Ego Equation" src="/image/blog/Ego-Knowledge.jpg"/>
 </div>
 
-Einstein's quote on the ego seemed to imply that you should think more.... but identifying with thinking is the fundamental problem.  And yes, you can have an ego about being so "ego-less".
+Einstein's quote on the ego seemed to imply that you should think more.... but identifying with thinking is the problem.  And yes, you can have an ego about being so "ego-less".
 
 Most people are unaware of or deny a stream of "thinking" in their heads.  Thinking is a body function you have little control over. You can only  be aware of it.
 
