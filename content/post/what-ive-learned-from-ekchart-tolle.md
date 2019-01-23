@@ -34,7 +34,7 @@ A few enlightened individuals have appeared about 2500 years ago (Budda, Jesus, 
 
 Given the amount of dysfunction in the recent history with world wars, population, technological and environmental doomsday scenarios.... humans face a stark choice.  Evolve beyond the ego or die.
 
-Eckhart likes to depict the ego as a mind-made entity, a "little me" that lives inside us, that forms a fictional self.  Most people "identify" with it and are completely wrapped up in satisfying its needs as if without it, they would cease to exist.   It is always needy, comparing, always causing suffering to its host and others in very cunning ways.  It can be hard to distinguish. 
+Eckhart likes to depict the ego as a mind-made entity, a "little me" that lives inside us, that forms a fictional self.  Most people "identify" with it and are completely wrapped up in satisfying its needs as if without it, they would cease to exist.   
 
 Most people are unaware of or deny a stream of "thinking" in their heads.  Thinking is a body function you have little control over. You can only  be aware of it.
 
@@ -58,7 +58,9 @@ The pain body is "accumulated old emotional pain" that resonates with negative t
 
 When the pain body is active, you are not present, you are unconscious.  You are completely and totally identified with the pain.  In some senses, the definition of evil.
 
-Recommendations for dealing with the pain body is to be aware of it as what it is and feel your inner body.  It helps in relationships to say "oh that triggered my pain body" or to another as "your pain body is active".  You can teach children about it by asking questions like "do you remember when you acted out like that?  How did it feel?  Do you remember why?  Could you name it?"
+Recommendations for dealing with the pain body is to practice becoming more aware of the present moment and feel your inner body. 
+
+It helps in relationships to say "oh that triggered my pain body" or to another as "your pain body is active".  You can teach children about it by asking questions like "do you remember when you acted out like that?  How did it feel?  Do you remember why?  Could you name it?"
 
 ## The present momemt
 
