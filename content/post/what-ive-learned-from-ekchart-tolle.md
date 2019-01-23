@@ -24,27 +24,27 @@ I'm going to attempt paraphrasing the major takeaways I've received after follow
 
 Eckhart defines the ego as such: "Identification of the self in form, as a thought form or a physical form". 
 
+A mind-made entity, a "little me" that lives inside us, that forms a fictional self.  Most people "identify" with it and are completely wrapped up in satisfying its needs as if without it, they would cease to exist.   
+
+In Jungian terms, introverts have an "ambivalent ego" that both "craves and fears attention".  Extrovert ego is the classic ego - loud, demanding attention - both are unconscious.
+
+According to Eckhart, and it is really hard to disagree with him, the ego is a fundamental dysfunction of humans and we all suffer from it (including Eckhart).  
+
 <div class="pull-right">
 <img class="image" alt="Einstein Ego Equation" src="/image/blog/Ego-Knowledge.jpg"/>
 </div>
 
-According to Eckhart, and it is really hard to disagree with him, the ego is a fundamental dysfunction of humans and we all suffer from it, including Eckhart.  
-
-A few enlightened individuals have appeared about 2500 years ago (Budda, Jesus, Laozi).  The basic dysfunction has not really needed to evolve until the time we are presently in.  
-
-Given the amount of dysfunction in the recent history with world wars, population, technological and environmental doomsday scenarios.... humans face a stark choice.  Evolve beyond the ego or die.
-
-Eckhart likes to depict the ego as a mind-made entity, a "little me" that lives inside us, that forms a fictional self.  Most people "identify" with it and are completely wrapped up in satisfying its needs as if without it, they would cease to exist.   
+Einstein's quote on the ego seemed to imply that you should think more.... but identifying with thinking is the fundamental problem.  And yes, you can have an ego about being so "ego-less".
 
 Most people are unaware of or deny a stream of "thinking" in their heads.  Thinking is a body function you have little control over. You can only  be aware of it.
 
-Einstein's quote on the ego seemed to imply that you should think more.... but identifying with thinking is the fundamental problem.  And yes, you can have an ego about being so "ego-less".
+It is also important to identify the collective human ego as well.  As anything that separates you and others from the "oneness" of all things in the universe.  Schisms and roles like gender, race, wealth, location, politics, etc, are all things that the ego will use.
 
-Its also important to identify the collective human ego as well.  As anything that separates you and others from the "oneness" of all things in the universe.  Schisms and roles like gender, race, wealth, location, politics, etc, are all things that the ego will use.
+The sad part about humanity is that being in service of the ego is still considered completely normal despite its pathological tendencies.
 
-In Jungian terms, introverts have an "ambivalent ego" that both "craves and fears attention".  Extrovert ego is the classic ego - loud, demanding attention - both are unconscious.
+A few enlightened individuals have appeared about 2500 years ago (Budda, Jesus, Laozi).  The basic dysfunction has not really needed to evolve until the time we are presently in.  
 
-The sad part about humanity is that being in service of the ego is considered completely normal despite its pathological tendencies.
+Given the amount of collective dysfunction in recent human history with world wars, population, technological and environmental doomsday scenarios.... humans face a stark choice.  Evolve beyond the ego or die.
 
 ## Pain Body
 
@@ -54,11 +54,11 @@ The sad part about humanity is that being in service of the ego is considered co
 
 If you've ever felt like you were acting out uncontrollably, as if something just didn't feel right. Eckhart has given it a name - "the Pain Body" so its easier to identify.
 
-The pain body is "accumulated old emotional pain" that resonates with negative thinking like a psychic parasite.  Like the ego it operates at an individual and collective level. 
+The pain body is "accumulated old emotional pain" that resonates with negative thinking like a psychic parasite.  Dense pain bodies can cause physical health problems.
 
 When the pain body is active, you are not present, you are unconscious.  You are completely and totally identified with the pain.  In some senses, the definition of evil.
 
-Recommendations for dealing with the pain body is to practice becoming more aware of the present moment and feel your inner body. 
+Recommendations for dealing with the pain body is to practice becoming more aware of the present moment and feel your inner body.
 
 It helps in relationships to say "oh that triggered my pain body" or to another as "your pain body is active".  You can teach children about it by asking questions like "do you remember when you acted out like that?  How did it feel?  Do you remember why?  Could you name it?"
 
