@@ -52,7 +52,7 @@ The sad part about humanity is that being in service of the ego is considered co
 
 If you've ever felt like you were acting out uncontrollably, as if something just didn't feel right. Ekhart has given it a name - "the Pain Body" so its easier to identify.
 
-Eckhart defines the pain body as "accumulated old emotional pain".  Like the ego it operates at an individual and collective level. 
+The pain body is "accumulated old emotional pain" that resonates with negative thinking like a psychic parasite.  Like the ego it operates at an individual and collective level. 
 
 When the pain body is active, you are not present, you are unconcious.  You are completely and totally identified with the pain.  In some senses, the definition of evil.
 
