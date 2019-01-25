@@ -40,10 +40,19 @@ I've decided to keep a collection of my favourites here (in no particular order)
 
 *   Worrying is like rocking in a rocking chair &ndash; It gives you something to do, but it doesn't get you anywhere.
 
-*   Have you reconsidered a computer career?
+*   "Simpicity is prerequisite for reliability." - E. W. Dijkstra
+
+*   "The cheapest, fastest, and most reliable components are those that aren't there." - Gordon Bell
+
+*   "Code is like humor.  When you have to explain it, it's bad." - Cory House
+
+*   "Programs must be written for people to read, and only incidentally for machines to execute." - Harold Abelson
+
+*   Joy's Law: No matter why you are, most of the smartest people work for someone else.
+
+*   "Have you reconsidered a computer career?" - Interviewer
 
 *   Lieberman's Law: Everybody lies, but it doesn't matter since nobody listens.
 
-*   Be different: conform.
+*   "Never underestimate the power of human stupidity." - Robert A. Heinlein
 
-*   Never underestimate the power of human stupidity.
