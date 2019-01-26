@@ -116,19 +116,23 @@
 
     <div class="text-justify">
 
-<h4 id="introduction">Introduction</h4>
+<h2 id="introduction">Introduction</h2>
 
-<p>Saw a post on reddit about this new web framework <a href="http://phoenixframework.org">phoenix</a>.  It is an <a href="http://elixir-lang.org">elixir</a> based framework.  Elixir is based upon <a href="http://erlang.org">erlang</a>.  Erlang has been around a while (open-sourced in 1998) and is a massively scalable and highly reliable language used in telecoms, banking and instant messaging (among others).</p>
+<p><a href="https://emotext.micrantha.com">
+<img src="/image/blog/emotext_screen.png" height=349 width=680 alt="Emotext Session" />
+</a></p>
 
-<p>Elixir brings very ruby-ish syntax to the language.  Phoenix framework is like rails for elixir, and is pretty full featured.</p>
+<p>If you dont know <a href="http://phoenixframework.org">phoenix</a> framework, I&rsquo;d describe it as rails for elixir.  If you dont know <a href="http://elixir-lang.org">Elixir</a> I&rsquo;d describe it as a <a href="https://en.wikipedia.org/wiki/Functional_programming">functional</a> language that feels like ruby for <a href="http://erlang.org">erlang</a>.</p>
 
-<h4 id="experimenting">Experimenting</h4>
+<p>If you don&rsquo;t know erlang it has been around a while (open-sourced in 1998) and the virtual machine is designed to be highly fault tolerant and scalable for use in telecoms, banking and instant messaging (WhatsApp).</p>
 
-<p>To exercise the framework, I wanted to create yet another chat app.</p>
+<h2 id="experimenting">Experimenting</h2>
 
-<p>This time using slash commands for text-based social actions.</p>
+<p>To exercise the framework, I created yet another chat app (I know, I know).</p>
 
-<p>For example typing <strong>:) Fred</strong> or <strong>/smile Fred</strong> the following would happen (assuming your username is Bob):</p>
+<p>The premise is it will use slash commands for text-based social actions.</p>
+
+<p>For example typing <strong>/smile Fred</strong> the following would happen (assuming your username is Bob):</p>
 
 <div class="card bg-default">
 <ul>
@@ -138,9 +142,13 @@
 </ul>
 </div>
 
-<h4 id="technical-details">Technical Details</h4>
+<p>Aliases were added as well, so <strong>:) Fred</strong> would do the same as above.</p>
 
-<p>Not much to say, using a pure functional language was tricky but doable once you get the hang of it. Going to leave it closed source for now.  Will put more info here if that changes.</p>
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Not much to say technically for now, using a pure functional language was tricky but doable once you get the hang of it.  It does require a different mindset, but its a nice change.  Did not take that long to make.</p>
+
+<p>Am also going to leave it closed source for now.  Will put more info here if that changes, or ask me too see it.  Would be happy to share.</p>
 
 <p>In the meantime there are some good tutorials out there:</p>
 
@@ -151,15 +159,9 @@
 <li><a href="http://codetunes.com/2015/phoenix-blog/">building a phoenix blog</a></li>
 </ul>
 
-<h4 id="todo">Todo</h4>
+<h2 id="todo">Todo</h2>
 
-<p>I did not get around to testing the scalability of phoenix and the erlang virtual machine.   I&rsquo;ll just take their word for it for now.</p>
-
-<h4 id="conclusion">Conclusion</h4>
-
-<p>Overall, if your used to ruby and rails, phoenix is not a far leap.  Going functional requires a different mindset (its not like C).</p>
-
-<p><img src="/image/blog/emotext_screen.png" height=349 width=680 alt="Emotext Session" /></p>
+<p>I did not get around to testing the scale ability of phoenix and the erlang virtual machine.   I&rsquo;ll just take their word for it.</p>
 </div>
 
 </div>

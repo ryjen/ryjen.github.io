@@ -11,20 +11,24 @@ description: "erlang vm chat application"
 banner: /images/blog/emotext_screen.png
 ---
 
-#### Introduction
+## Introduction
 
-Saw a post on reddit about this new web framework [phoenix](http://phoenixframework.org).  It is an [elixir](http://elixir-lang.org) based framework.  Elixir is based upon [erlang](http://erlang.org).  Erlang has been around a while (open-sourced in 1998) and is a massively scalable and highly reliable language used in telecoms, banking and instant messaging (among others).
+<a href="https://emotext.micrantha.com">
+<img src="/image/blog/emotext_screen.png" height=349 width=680 alt="Emotext Session" />
+</a>
 
-Elixir brings very ruby-ish syntax to the language.  Phoenix framework is like rails for elixir, and is pretty full featured.
+If you dont know [phoenix](http://phoenixframework.org) framework, I'd describe it as rails for elixir.  If you dont know [Elixir](http://elixir-lang.org) I'd describe it as a [functional](https://en.wikipedia.org/wiki/Functional_programming) language that feels like ruby for [erlang](http://erlang.org).  
+
+If you don't know erlang it has been around a while (open-sourced in 1998) and the virtual machine is designed to be highly fault tolerant and scalable for use in telecoms, banking and instant messaging (WhatsApp).
 
 
-#### Experimenting
+## Experimenting
 
-To exercise the framework, I wanted to create yet another chat app.
+To exercise the framework, I created yet another chat app (I know, I know).
 
-This time using slash commands for text-based social actions.  
+The premise is it will use slash commands for text-based social actions.  
 
-For example typing **:) Fred** or **/smile Fred** the following would happen (assuming your username is Bob):
+For example typing **/smile Fred** the following would happen (assuming your username is Bob):
 
 <div class="card bg-default">
 <ul>
@@ -34,10 +38,13 @@ For example typing **:) Fred** or **/smile Fred** the following would happen (as
 </ul>
 </div>
 
+Aliases were added as well, so **:) Fred** would do the same as above.
 
-#### Technical Details
+## Conclusion
 
-Not much to say, using a pure functional language was tricky but doable once you get the hang of it. Going to leave it closed source for now.  Will put more info here if that changes.
+Not much to say technically for now, using a pure functional language was tricky but doable once you get the hang of it.  It does require a different mindset, but its a nice change.  Did not take that long to make.
+
+Am also going to leave it closed source for now.  Will put more info here if that changes, or ask me too see it.  Would be happy to share.
 
 In the meantime there are some good tutorials out there:
 
@@ -46,12 +53,7 @@ In the meantime there are some good tutorials out there:
 *   [realtime todo list](http://learnelixir.com/blog/2014/10/30/real-time-to-do-list-with-phoenix-channel/)
 *   [building a phoenix blog](http://codetunes.com/2015/phoenix-blog/)
 
-#### Todo
+## Todo
 
-I did not get around to testing the scalability of phoenix and the erlang virtual machine.   I'll just take their word for it for now.
-
-#### Conclusion
-
-Overall, if your used to ruby and rails, phoenix is not a far leap.  Going functional requires a different mindset (its not like C).
+I did not get around to testing the scale ability of phoenix and the erlang virtual machine.   I'll just take their word for it.
   
-<img src="/image/blog/emotext_screen.png" height=349 width=680 alt="Emotext Session" />

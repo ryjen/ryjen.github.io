@@ -85,8 +85,9 @@ Development Environment  macOS, XCode Android SDK Dotnet core Visual Studio for 
       <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate>
       
       <guid>https://nullstruct.com/2015/09/09/elixir-and-phoenix/</guid>
-      <description>Introduction Saw a post on reddit about this new web framework phoenix. It is an elixir based framework. Elixir is based upon erlang. Erlang has been around a while (open-sourced in 1998) and is a massively scalable and highly reliable language used in telecoms, banking and instant messaging (among others).
-Elixir brings very ruby-ish syntax to the language. Phoenix framework is like rails for elixir, and is pretty full featured.</description>
+      <description>Introduction 
+If you dont know phoenix framework, I&amp;rsquo;d describe it as rails for elixir. If you dont know Elixir I&amp;rsquo;d describe it as a functional language that feels like ruby for erlang.
+If you don&amp;rsquo;t know erlang it has been around a while (open-sourced in 1998) and the virtual machine is designed to be highly fault tolerant and scalable for use in telecoms, banking and instant messaging (WhatsApp).</description>
     </item>
     
     <item>
