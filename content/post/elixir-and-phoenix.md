@@ -28,7 +28,7 @@ To exercise the framework, I created yet another chat app (I know, I know).
 
 The premise is it will use slash commands for text-based social actions.  
 
-For example typing **/smile Fred** the following would happen (assuming your username is Bob):
+For example typing `/smile Fred` the following would happen (assuming your username is Bob):
 
 <div class="card bg-default">
 <ul>
@@ -38,13 +38,15 @@ For example typing **/smile Fred** the following would happen (assuming your use
 </ul>
 </div>
 
-Aliases were added as well, so **:) Fred** would do the same as above.
+Aliases were added as well, so `:) Fred` would do the same as above.
 
-## Conclusion
+## More to come?
 
-Not much to say technically for now, using a pure functional language was tricky but doable once you get the hang of it.  It does require a different mindset, but its a nice change.  Did not take that long to make.
+Not much to say technically for now, using a pure functional language was tricky but doable once you get the hang of it.  
 
-Am also going to leave it closed source for now.  Will put more info here if that changes, or ask me too see it.  Would be happy to share.
+It does require a different mindset, but its a nice change.  Did not take that long to make.
+
+Am going to leave it closed source for now.  Will put more info here if that changes, or ask me too see it.  Would be happy to share.
 
 In the meantime there are some good tutorials out there:
 
@@ -55,5 +57,6 @@ In the meantime there are some good tutorials out there:
 
 ## Todo
 
-I did not get around to testing the scale ability of phoenix and the erlang virtual machine.   I'll just take their word for it.
+* I did not get around to testing the scale ability of phoenix and the erlang virtual machine.   I'll just take their word for it.
+* Slack addon?
   
