@@ -5,13 +5,16 @@ tags:
   - polymorphism
   - programming
 date: 2012-11-30
-description: "hacking in c"
+updated: 2019-01-26
+description: "c wierdness"
 aliases:
   - blog/2012/11/30/poor-mans-polymorphism/
 ---
 
 
-Like c++ without a virtual table, C structs can be casted between each other if the **field types and ordering are the same**.  This is entirely not portable across systems.
+Found out that C structs can be casted between each other if the **field types and ordering are the same**.  It is not portable code, but you can start too see how and why the virtual table and object oriented programming evolved in c++.
+
+As far as I know it would still be possible to write this in c++, but as always, you should definitely not.
 
 
 #### A Quick Example
@@ -34,16 +37,16 @@ struct Human{
 }
 ```
 
-We can pass humans or dogs to any function that takes an animal.
+Passing humans or dogs to any function that takes an animal with a cast.
 
 ```
-int look(Animal this, int object) {
-  this.eyes = object;
+int look(Animal *this, int object) {
+  this->eyes = object;
 }
 
-Dog dog;
+Dog *dog = new_dog();
 
-look(dog);
+look((Animal*) dog, obj);
 ```
 
 

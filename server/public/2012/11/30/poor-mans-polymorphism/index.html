@@ -116,7 +116,9 @@
 
     <div class="text-justify">
 
-<p>Like c++ without a virtual table, C structs can be casted between each other if the <strong>field types and ordering are the same</strong>.  This is entirely not portable across systems.</p>
+<p>Found out that C structs can be casted between each other if the <strong>field types and ordering are the same</strong>.  It is not portable code, but you can start too see how and why the virtual table and object oriented programming evolved in c++.</p>
+
+<p>As far as I know it would still be possible to write this in c++, but as always, you should definitely not.</p>
 
 <h4 id="a-quick-example">A Quick Example</h4>
 
@@ -137,15 +139,15 @@ struct Human{
 }
 </code></pre>
 
-<p>We can pass humans or dogs to any function that takes an animal.</p>
+<p>Passing humans or dogs to any function that takes an animal with a cast.</p>
 
-<pre><code>int look(Animal this, int object) {
-  this.eyes = object;
+<pre><code>int look(Animal *this, int object) {
+  this-&gt;eyes = object;
 }
 
-Dog dog;
+Dog *dog = new_dog();
 
-look(dog);
+look((Animal*) dog, obj);
 </code></pre>
 </div>
 
