@@ -114,112 +114,33 @@
 
     <div class="text-justify">
 
-<p>Just when you think you know everything about C&hellip; a way to polymorph C data structures.</p>
+<p>Like c++ without a virtual table, C structs can be casted between each other if the <strong>field types and ordering are the same</strong>.  This is entirely not portable across systems.</p>
 
-<p>How?  Structs with the same field types and ordering can be casted.</p>
+<h4 id="a-quick-example">A Quick Example</h4>
 
-<p>This is an attempt at an example.</p>
+<pre><code class="language-c">struct Animal {
+  int eyes;
+}
 
-<div class="card bg-default">
-<span class="larger"><b>Note:</b></span> Don't do anything like this in the real world.
-</div>
+struct Dog {
+  int eyes;
+  /* dog specific */
+  int tail;
+}
 
-<h4 id="example-story">Example Story</h4>
-
-<p>Given a base structure called vehicle&hellip;</p>
-
-<pre><code class="language-c">typedef struct 
-{
+struct Human{
   int key;
-} 
-Vehicle;
-</code></pre>
-
-<p>Sub structures must implement the exact types and order to cast it.</p>
-
-<p>and a similar structure called car&hellip;.</p>
-
-<pre><code class="language-c">typedef struct
-{
-  int key;
-  /* car specific */
-  int doors;
-  int wheels;
-}
-Car;
-</code></pre>
-
-<p>and a third structure called boat&hellip;</p>
-
-<pre><code class="language-c">typedef struct 
-{
-  int key;
-  /* boat specific */
-  int life_jackets;
-  int anchors;
-}
-Boat;
-</code></pre>
-
-<p>We can use a function designed for the base type with the two subtypes.</p>
-
-<div class="card bg-default">
-    <b>Note</b>: this is copy by value, not a pointer, but it shouldn't matter
-</div>
-
-<pre><code class="language-c">int key_fits_vehicle(Vehicle this, int key)
-{
-  /* check for the right key */
-  return this.key == key;
+  /* human specific */
+  int brain;
 }
 </code></pre>
 
-<h5 id="test-the-ignition">Test the Ignition</h5>
+<p>We can pass human&rsquo;s or dog&rsquo;s to any function that takes an animal.</p>
 
-<p>This is really what the black magic is all about.  We can cast a Car or Plane to a Vehicle because the field type and order is the same.</p>
-
-<pre><code class="language-c">Car car;
-car.key = key1;
-car.doors = 4;
-car.wheels = 4;
-
-Boat boat;
-boat.key = boat;
-boat.life_jackets = 6;
-boat.anchors = 1;
-
-if (key_fits_vehicle((Vehicle) car, key1)) {
-  puts(&quot;key1 fits the car&quot;);
-} else {
-  puts(&quot;key2 does not fit the car&quot;);
+<p>int look(Animal this, int object) {
+  this.eyes = object;
 }
-
-if (key_fits_vehicle((Vehicle) car, key2)) {
-  puts(&quot;key2 fits the car&quot;);
-} else {
-  puts(&quot;key2 does not fit the car&quot;);
-}
-
-if (key_fits_vehicle((Vehicle) boat, key1)) {
-  puts(&quot;key1 fits the boat&quot;);
-} else {
-  puts(&quot;key1 does not fit the boat&quot;);
-}
-
-if (key_fits_vehicle((Vehicle) boat, key2)) {
-  puts(&quot;key2 fits the boat&quot;);
-} else {
-  puts(&quot;key2 does not fit the boat&quot;);
-}
-</code></pre>
-
-<h4 id="output">Output</h4>
-
-<pre><code class="language-bash">key1 fits the car
-key2 does not fit the car
-key1 does not fit the boat
-key2 fits the boat
-</code></pre>
+```</p>
 </div>
 
 </div>

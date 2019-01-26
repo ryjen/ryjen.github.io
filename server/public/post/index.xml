@@ -95,11 +95,8 @@ Elixir brings very ruby-ish syntax to the language. Phoenix framework is like ra
       <pubDate>Fri, 30 Nov 2012 00:00:00 +0000</pubDate>
       
       <guid>https://nullstruct.com/2012/11/30/poor-mans-polymorphism/</guid>
-      <description>Just when you think you know everything about C&amp;hellip; a way to polymorph C data structures.
-How? Structs with the same field types and ordering can be casted.
-This is an attempt at an example.
-Note: Don&#39;t do anything like this in the real world.  Example Story Given a base structure called vehicle&amp;hellip;
-typedef struct { int key; } Vehicle;  Sub structures must implement the exact types and order to cast it.</description>
+      <description>Like c++ without a virtual table, C structs can be casted between each other if the field types and ordering are the same. This is entirely not portable across systems.
+A Quick Example struct Animal { int eyes; } struct Dog { int eyes; /* dog specific */ int tail; } struct Human{ int key; /* human specific */ int brain; }  We can pass human&amp;rsquo;s or dog&amp;rsquo;s to any function that takes an animal.</description>
     </item>
     
     <item>
