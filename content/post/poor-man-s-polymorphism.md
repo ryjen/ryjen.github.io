@@ -28,7 +28,7 @@ struct Dog {
 }
 
 struct Human{
-  int key;
+  int eyes;
   /* human specific */
   int brain;
 }

@@ -96,7 +96,7 @@ Elixir brings very ruby-ish syntax to the language. Phoenix framework is like ra
       
       <guid>https://nullstruct.com/2012/11/30/poor-mans-polymorphism/</guid>
       <description>Like c++ without a virtual table, C structs can be casted between each other if the field types and ordering are the same. This is entirely not portable across systems.
-A Quick Example struct Animal { int eyes; } struct Dog { int eyes; /* dog specific */ int tail; } struct Human{ int key; /* human specific */ int brain; }  We can pass humans or dogs to any function that takes an animal.</description>
+A Quick Example struct Animal { int eyes; } struct Dog { int eyes; /* dog specific */ int tail; } struct Human{ int eyes; /* human specific */ int brain; }  We can pass humans or dogs to any function that takes an animal.</description>
     </item>
     
     <item>
