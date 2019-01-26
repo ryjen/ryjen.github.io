@@ -34,7 +34,7 @@ struct Human{
 }
 ```
 
-We can pass human's or dog's to any function that takes an animal.
+We can pass humans or dogs to any function that takes an animal.
 
 ```
 int look(Animal this, int object) {
