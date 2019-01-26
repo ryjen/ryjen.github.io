@@ -55,7 +55,8 @@ $(function() {
   var overrides = { 
     "ryanjennin.gs": "ryan jennings", 
     "www.ryanjennin.gs": "ryan jennings", 
-    "localhost": "ryan jennings"
+    "localhost": "ryan jennings",
+    "ryjen.github.io": "ryan jennings"
   }
 
   var hostname = window.location.hostname
