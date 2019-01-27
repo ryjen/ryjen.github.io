@@ -26,13 +26,11 @@ Eckhart defines the ego as such: "Identification of the self in form, as a thoug
 
 It can be depicted as a mind-made entity, a "little me" that lives inside us, that forms a fictional self.  Most people identify with it and are completely wrapped up in satisfying its needs as if without it, they would cease to exist.   
 
-According to Eckhart, and it is really hard to disagree with him, the ego is a fundamental dysfunction of humans and we all suffer from it in one form or another.  
+According to Eckhart, and it is really hard to disagree with him, the ego is a fundamental dysfunction of humans and we all suffer from it in one form or another without being aware of it.
 
 <div class="pull-right">
-<img class="image" alt="Einstein Ego Equation" src="/image/blog/Ego-Knowledge.jpg"/>
+<img class="image" alt="Einstein Ego Equation" src="/image/blog/Ego.jpg"/>
 </div>
-
-Einstein's quote on the ego seemed to imply that you should think more.... but identifying with thinking is the problem.  And yes, you can have an ego about being so ego-less.
 
 Most people are unaware of or deny a stream of thinking in their heads.  Thinking is a body function you have little control over. You can only  be aware of it.
 
