@@ -52,9 +52,9 @@ Given the amount of collective dysfunction in recent human history with world wa
 
 If you've ever felt like you were acting out uncontrollably, as if something just didn't feel right. Eckhart has given it a name - the Pain Body - so its easier to identify.
 
-The pain body is "accumulated old emotional pain" that resonates with negative thinking like a psychic parasite.  Dense pain bodies can cause physical health problems.
+The pain body is "accumulated old emotional pain" that resides in the body.  It resonates with negative thinking like a psychic parasite.  Dense pain bodies can cause physical health problems.  Like the ego, it operates at an individual and collective level.
 
-When the pain body has two states: active and dormant.  When active, you are not present, you are unconscious.  You are completely and totally identified with the pain.  In some senses, the definition of evil.
+The pain body has two states: active and dormant.  When active, you are not present, you are unconscious.  You are completely and totally identified with the pain.  In some senses, the definition of evil.
 
 Recommendations for dealing with the pain body is to practice becoming more aware of the present moment and feel your inner body.
 
