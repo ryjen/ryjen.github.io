@@ -34,7 +34,7 @@ According to Eckhart, and it is really hard to disagree with him, the ego is a f
 
 Most people are unaware of or deny a stream of thinking in their heads.  Thinking is a body function you have little control over. You can only  be aware of it.
 
-It is important to identify the collective human ego as well as the ego is more destructive and stronger as a group.
+It is important to identify the collective human ego as well, the ego is more destructive and stronger as a group.
 
 Schisms and roles like gender, race, profession, location, politics, etc, are all things that the ego will use.  A favorite role of the ego is victim and will be quite cunning in its attempts to strengthen its position.
 
