@@ -64,6 +64,8 @@ It helps in relationships to say "oh that triggered my pain body" or to another 
 
 Eckhart suggests salvation is always in the present moment.  He reminds you that both the past, and present, don't exist.  Where is the past?  Where is the future and does it ever appear as expected?  
 
+Your entire life only ever consists of the present moment.
+
 In fact, it you break down most of your problems, they only exist in the past or the future.  Recognition of that fact can completely dissolve the ego.
 
 Yes, the past and future can be useful as a practical tool, for learning or scheduling.  Forming attachments to the past or future, however, will ultimately only lead to more suffering.
