@@ -26,9 +26,7 @@ Eckhart defines the ego as such: "Identification of the self in form, as a thoug
 
 A mind-made entity, a "little me" that lives inside us, that forms a fictional self.  Most people "identify" with it and are completely wrapped up in satisfying its needs as if without it, they would cease to exist.   
 
-In Jungian terms, introverts have an "ambivalent ego" that both "craves and fears attention".  Extrovert ego is the classic ego - loud, demanding attention - both are unconscious.
-
-According to Eckhart, and it is really hard to disagree with him, the ego is a fundamental dysfunction of humans and we all suffer from it (including Eckhart).  
+According to Eckhart, and it is really hard to disagree with him, the ego is a fundamental dysfunction of humans and we all suffer from it.  
 
 <div class="pull-right">
 <img class="image" alt="Einstein Ego Equation" src="/image/blog/Ego-Knowledge.jpg"/>
@@ -38,7 +36,9 @@ Einstein's quote on the ego seemed to imply that you should think more.... but i
 
 Most people are unaware of or deny a stream of "thinking" in their heads.  Thinking is a body function you have little control over. You can only  be aware of it.
 
-It is also important to identify the collective human ego as well.  As anything that separates you and others from the "oneness" of all things in the universe.  Schisms and roles like gender, race, wealth, location, politics, etc, are all things that the ego will use.
+It is important to identify the collective human ego as well.  As anything that separates you and others from the "oneness" of all things in the universe.  
+
+Schisms and roles like gender, race, location, politics, etc, are all things that the ego will use.  Another role of the ego is victim, and the ego will be quite cunning in its attempts to strengthen its false self.
 
 The sad part about humanity is that being in service of the ego is still considered completely normal despite its pathological tendencies.
 
