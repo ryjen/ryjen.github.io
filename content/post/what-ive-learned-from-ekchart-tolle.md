@@ -38,7 +38,7 @@ Most people are unaware of or deny a stream of "thinking" in their heads.  Think
 
 It is important to identify the collective human ego as well.  As anything that separates you and others from the "oneness" of all things in the universe.  
 
-Schisms and roles like gender, race, location, politics, etc, are all things that the ego will use.  Another role of the ego is victim, and the ego will be quite cunning in its attempts to strengthen its false self.
+Schisms and roles like gender, race, location, politics, etc, are all things that the ego will use.  Another role of the ego is victim, and will be quite cunning in its attempts to strengthen its false self.
 
 The sad part about humanity is that being in service of the ego is still considered completely normal despite its pathological tendencies.
 
