@@ -22,25 +22,25 @@ I'm going to attempt paraphrasing the major takeaways I've received after follow
 
 ## Ego
 
-Eckhart defines the ego as such: "Identification of the self in form, as a thought form or a physical form". 
+Eckhart defines the ego as such: "Identification of the self in form, as a thought form or a physical form".   This definition explains how the ego separates you and others from the oneness of all things in the universe.
 
-A mind-made entity, a "little me" that lives inside us, that forms a fictional self.  Most people "identify" with it and are completely wrapped up in satisfying its needs as if without it, they would cease to exist.   
+It can be depicted as a mind-made entity, a "little me" that lives inside us, that forms a fictional self.  Most people identify with it and are completely wrapped up in satisfying its needs as if without it, they would cease to exist.   
 
-According to Eckhart, and it is really hard to disagree with him, the ego is a fundamental dysfunction of humans and we all suffer from it.  
+According to Eckhart, and it is really hard to disagree with him, the ego is a fundamental dysfunction of humans and we all suffer from it in one form or another.  
 
 <div class="pull-right">
 <img class="image" alt="Einstein Ego Equation" src="/image/blog/Ego-Knowledge.jpg"/>
 </div>
 
-Einstein's quote on the ego seemed to imply that you should think more.... but identifying with thinking is the problem.  And yes, you can have an ego about being so "ego-less".
+Einstein's quote on the ego seemed to imply that you should think more.... but identifying with thinking is the problem.  And yes, you can have an ego about being so ego-less.
 
-Most people are unaware of or deny a stream of "thinking" in their heads.  Thinking is a body function you have little control over. You can only  be aware of it.
+Most people are unaware of or deny a stream of thinking in their heads.  Thinking is a body function you have little control over. You can only  be aware of it.
 
-It is important to identify the collective human ego as well.  As anything that separates you and others from the "oneness" of all things in the universe.  
+It is important to identify the collective human ego as well as the ego is more destructive and stronger as a group.
 
-Schisms and roles like gender, race, location, politics, etc, are all things that the ego will use.  Another role of the ego is victim, and will be quite cunning in its attempts to strengthen its false self.
+Schisms and roles like gender, race, profession, location, politics, etc, are all things that the ego will use.  A favorite role of the ego is victim and will be quite cunning in its attempts to strengthen its position.
 
-The sad part about humanity is that being in service of the ego is still considered completely normal despite its pathological tendencies.
+Not only is most of humanity still in the service of the ego, it is considered completely normal despite its pathological tendencies.
 
 A few enlightened individuals have appeared about 2500 years ago (Budda, Jesus, Laozi).  The basic dysfunction has not really needed to evolve until the time we are presently in.  
 
@@ -52,11 +52,11 @@ Given the amount of collective dysfunction in recent human history with world wa
 <img alt="pain body" src="/image/blog/pain-body.png" />
 </div>
 
-If you've ever felt like you were acting out uncontrollably, as if something just didn't feel right. Eckhart has given it a name - "the Pain Body" so its easier to identify.
+If you've ever felt like you were acting out uncontrollably, as if something just didn't feel right. Eckhart has given it a name - the Pain Body - so its easier to identify.
 
 The pain body is "accumulated old emotional pain" that resonates with negative thinking like a psychic parasite.  Dense pain bodies can cause physical health problems.
 
-When the pain body is active, you are not present, you are unconscious.  You are completely and totally identified with the pain.  In some senses, the definition of evil.
+When the pain body has two states: active and dormant.  When active, you are not present, you are unconscious.  You are completely and totally identified with the pain.  In some senses, the definition of evil.
 
 Recommendations for dealing with the pain body is to practice becoming more aware of the present moment and feel your inner body.
 
