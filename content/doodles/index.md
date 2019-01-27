@@ -4,7 +4,7 @@ title: Doodles
 
 <table id="doodles">
 <tr>
-<td class="prev"><span class="fg-green">&#x2B9C;</span></td>
+<td class="prev"><span>&#x2B9C;</span></td>
 <td>
 <ul id="doodle-gallery">
 <li>
@@ -26,7 +26,7 @@ title: Doodles
 </li>
 </ul>
 </td>
-<td class="next"><span class="fg-green">&#x2B9E;</span></td>
+<td class="next"><span>&#x2B9E;</span></td>
 </table>
 
 
