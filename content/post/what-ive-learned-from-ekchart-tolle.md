@@ -40,9 +40,9 @@ Schisms and roles like gender, race, profession, location, politics, etc, are al
 
 Not only is most of humanity still in the service of the ego, it is considered completely normal despite its pathological tendencies.
 
-A few enlightened individuals have appeared about 2500 years ago (Budda, Jesus, Laozi).  The basic dysfunction has not really needed to evolve until the time we are presently in.  
+A few enlightened individuals have appeared about 2500 years ago (Buddha, Jesus, Lao).  The basic dysfunction has not really needed to evolve until the time we are presently in.  
 
-Given the amount of collective dysfunction in recent human history with world wars, population, technological and environmental doomsday scenarios.... humans face a stark choice.  Evolve beyond the ego or die.
+Given the amount of collective dysfunction in recent human history with world wars, population, technological and environmental doomsday scenarios.... Humans face a stark choice.  Evolve beyond the ego or die.
 
 ## Pain Body
 
@@ -60,7 +60,7 @@ Recommendations for dealing with the pain body is to practice becoming more awar
 
 It helps in relationships to say "oh that triggered my pain body" or to another as "your pain body is active".  You can teach children about it by asking questions like "do you remember when you acted out like that?  How did it feel?  Do you remember why?  Could you name it?"
 
-## The present momemt
+## The present moment
 
 Eckhart suggests salvation is always in the present moment.  He reminds you that both the past, and present, don't exist.  Where is the past?  Where is the future and does it ever appear as expected?  
 
@@ -72,7 +72,7 @@ Yes, the past and future can be useful as a practical tool, for learning or sche
 
 ## Who am I?
 
-If your essense is not in the world of form - thoughts or physical - who are you?
+If your essence is not in the world of form - thoughts or physical - who are you?
 
 <div class="pull-right">
 <img alt="thought in mouse hole" src="/image/blog/mouse-hole.jpg" class="image" />
@@ -80,7 +80,7 @@ If your essense is not in the world of form - thoughts or physical - who are you
 
 Eckhart says the answer is awareness.  Unclouded awareness and consciousness are one in the same.
 
-Try this:  watch your mind like a cat waiting on a mouse hole in the wall... when the next thought pops out catch it. How long did you have to wait?
+Try this:  watch your mind like a cat waiting on a mouse hole in the wall... When the next thought pops out catch it. How long did you have to wait?
 
 A good meditation is to try and get the wait as long as possible.
 
