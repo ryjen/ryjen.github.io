@@ -68,7 +68,7 @@ Your entire life only ever consists of the present moment.
 
 In fact, it you break down most of your problems, they only exist in the past or the future.  Recognition of that fact can completely dissolve the ego.
 
-Yes, the past and future can be useful as a practical tool, for learning or scheduling.  Forming attachments to the past or future, however, will ultimately only lead to more suffering.
+Yes, the past and future can be useful as a practical tool, for learning or scheduling.  Forming attachments to them, however, will ultimately only lead to more suffering.
 
 ## Who am I?
 
