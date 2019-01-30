@@ -171,7 +171,7 @@ Mapping The core of my data access is the FieldMap structure, which determines h
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://nullstruct.com/about/</guid>
-      <description> &amp;nbsp; 778-240-3248  &amp;nbsp; ryan@coda.life  &amp;nbsp; [github.com/ryjen](https://github.com/ryjen?tab=repositories)   &amp;nbsp; [ca.linkedin.com/in/ryjen](http://ca.linkedin.com/in/ryjen)  &amp;nbsp; [coda.life](http://coda.life)  I currently work as a mobile application developer for a respectable software company. If you’d like, you can view my [resume](/about/resume). </description>
+      <description>  &amp;nbsp; 778-240-3248  &amp;nbsp; ryan@coda.life  &amp;nbsp; [github.com/ryjen](https://github.com/ryjen?tab=repositories)   &amp;nbsp; [ca.linkedin.com/in/ryjen](http://ca.linkedin.com/in/ryjen)  &amp;nbsp; [coda.life](http://coda.life)  I currently work as a mobile application developer for a respectable software company. If you’d like, you can view my [resume](/about/resume). </description>
     </item>
     
     <item>
@@ -189,7 +189,7 @@ Mapping The core of my data access is the FieldMap structure, which determines h
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://nullstruct.com/resume/</guid>
-      <description>Ryan Jennings    778-240-3248   ryan78j@gmail.com   github.com/ryjen   ryanjennin.gs    As an online hobbyist software enthusiast since 1999, I&#39;ve accumulated a formal part-time education and a successful career since 2005.  Currently seeking a senior or challenging software engineer role to make the best use of my experience and knowledge. Self-taught programmer since 2002, formally educated with distinction in Computer Systems at BCIT.</description>
+      <description>Ryan Jennings    778-240-3248   ryan78j@gmail.com   github.com/ryjen   ryanjennin.gs    An online software enthusiast since 1999, I&#39;ve accumulated formal part-time education and a successful career since 2005.  Currently seeking a senior or challenging software engineer role to make the best use of my experience and knowledge. Self-taught programmer since 2002, formally educated with distinction in Computer Systems at BCIT. Started professionally in quality assurance and embedded systems.</description>
     </item>
     
   </channel>

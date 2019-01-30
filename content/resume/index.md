@@ -34,7 +34,7 @@ is_home: true
 
 <div class="card bg-default">
 
-As an online hobbyist software enthusiast since 1999, I've accumulated a formal part-time education and a successful career since 2005.
+An online software enthusiast since 1999, I've accumulated formal part-time education and a successful career since 2005.
 <br/><br/>
 Currently seeking a senior or challenging software engineer role to make the best use of my experience and knowledge.
 
