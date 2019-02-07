@@ -31,6 +31,8 @@ Tools like Chef, Ansible or straight up custom scripting can create server-in-a-
 
 In terms of servers, I can only choose to host on Canadian soil through infrastructure services. Can I haz my email Google?
 
+Having also abstained from all social media, I will prefer journalling in a non-judgmental way. On the rare occasions something is actually worth sharing, [Mastodon](https://mastodon.social/) an open source Twitter clone, is a fine alternative that allows hosting your own server instance.  (#Tweets2Toots)
+
 ## Security
 
 It is difficult to let go of enterprise invisible hand for security.  But its not uncommon for big company silos to be unaware of holes in thier black box because it is not open source.
