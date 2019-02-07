@@ -13,11 +13,11 @@ In terms of privacy, I used to believe that I have nothing to hide and it doesn'
 
 A few things have changed my thinking.  Mostly:
 
-- Learning about canadian and bc regulations for public data
-- Learning about internet law and jurisdiction
+- Learning about Canadian and bc regulations for public data
+- Learning about Internet law and jurisdiction
 - Increasing reliance on cloud data and the possibility of AI using it
 - Talks from privacy concerned projects like [Tor](https://torproject.org)
-- The swarm of internet educated black hatters in modern era and security breaches
+- The swarm of Internet educated black hatters in modern era and security breaches
 - The political climate in the US, China, Russia, etc.
 - My niece and her safety/future
 
@@ -29,13 +29,13 @@ The other appealing factor is that most of the solutions can be containerized an
 
 Tools like Chef, Ansible or straight up custom scripting can create server-in-a-box.
 
-In terms of servers, I can only choose to host on canadian soil through infrastructure services. Can I haz my email Google?
+In terms of servers, I can only choose to host on Canadian soil through infrastructure services. Can I haz my email Google?
 
 ## Security
 
-It is difficult to let go of enterprise invisible hand for security.  But its not uncommon for big company silos to be inaware of holes in thier black box because it is not open source.
+It is difficult to let go of enterprise invisible hand for security.  But its not uncommon for big company silos to be unaware of holes in thier black box because it is not open source.
 
-Common internet standards are more mature than they used to be and self-hosting seems feasible for a small time person like myself... (ie - no spearphishing).
+Common Internet standards are more mature than they used to be and self-hosting seems feasible for a small time person like myself... (ie - no spearphishing).
 
 Having run security audit tools on my setup gives me further confidence.  
 
@@ -49,9 +49,9 @@ Another concern is financial.  I will be dependent on an income but most of life
 
 My setup so far includes a few things but there is much to do.  I won't bore you listing out the specifics and leave it as an exercise for yourself.
 
-I prefer to host containers through Dokku, so it makes a typical setup more complicated anyway, and I still have to finaize my mail hosting as there is so much involved.
+I prefer to host containers through Dokku, so it makes a typical setup more complicated anyway, and I still have to finalize my mail hosting as there is so much involved.
 
-But, in general, I find a certain satisfaction from it. If it does't work out, no big deal, I learned something.
+But, in general, I find a certain satisfaction from it. If it doest work out, no big deal, I learned something.
 
 
 

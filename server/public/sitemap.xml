@@ -120,14 +120,14 @@
   </url>
   
   <url>
-    <loc>https://nullstruct.com/tags/development/</loc>
-    <lastmod>2012-04-10T00:00:00+00:00</lastmod>
+    <loc>https://nullstruct.com/categories/development/</loc>
+    <lastmod>2018-02-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://nullstruct.com/categories/development/</loc>
-    <lastmod>2018-02-19T00:00:00+00:00</lastmod>
+    <loc>https://nullstruct.com/tags/development/</loc>
+    <lastmod>2012-04-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -244,13 +244,13 @@
   </url>
   
   <url>
-    <loc>https://nullstruct.com/tags/linux/</loc>
+    <loc>https://nullstruct.com/categories/linux/</loc>
     <lastmod>2018-11-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://nullstruct.com/categories/linux/</loc>
+    <loc>https://nullstruct.com/tags/linux/</loc>
     <lastmod>2018-11-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -274,14 +274,14 @@
   </url>
   
   <url>
-    <loc>https://nullstruct.com/tags/mobile/</loc>
-    <lastmod>2016-11-27T00:00:00+00:00</lastmod>
+    <loc>https://nullstruct.com/categories/mobile/</loc>
+    <lastmod>2018-05-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://nullstruct.com/categories/mobile/</loc>
-    <lastmod>2018-05-16T00:00:00+00:00</lastmod>
+    <loc>https://nullstruct.com/tags/mobile/</loc>
+    <lastmod>2016-11-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -352,13 +352,13 @@
   </url>
   
   <url>
-    <loc>https://nullstruct.com/tags/self-hosting/</loc>
+    <loc>https://nullstruct.com/categories/self-hosting/</loc>
     <lastmod>2019-02-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://nullstruct.com/categories/self-hosting/</loc>
+    <loc>https://nullstruct.com/tags/self-hosting/</loc>
     <lastmod>2019-02-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -388,13 +388,13 @@
   </url>
   
   <url>
-    <loc>https://nullstruct.com/tags/spirituality/</loc>
+    <loc>https://nullstruct.com/categories/spirituality/</loc>
     <lastmod>2019-01-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://nullstruct.com/categories/spirituality/</loc>
+    <loc>https://nullstruct.com/tags/spirituality/</loc>
     <lastmod>2019-01-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
