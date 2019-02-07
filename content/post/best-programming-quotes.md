@@ -6,6 +6,7 @@ tags:
   - quotes
   - software
 date: 2012-04-10
+updated: 2019-02-01
 description: quotes used in software development
 ---
 

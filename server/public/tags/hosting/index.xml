@@ -6,18 +6,20 @@
     <description>Recent content in Hosting on coda.life</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 05 Nov 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 07 Feb 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://nullstruct.com/tags/hosting/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>A selfhosting journey</title>
-      <link>https://nullstruct.com/2018/11/05/a-selfhosting-journey/</link>
-      <pubDate>Mon, 05 Nov 2018 00:00:00 +0000</pubDate>
+      <link>https://nullstruct.com/2019/02/07/a-selfhosting-journey/</link>
+      <pubDate>Thu, 07 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://nullstruct.com/2018/11/05/a-selfhosting-journey/</guid>
-      <description></description>
+      <guid>https://nullstruct.com/2019/02/07/a-selfhosting-journey/</guid>
+      <description>Introduction In terms of privacy, I used to believe that I have nothing to hide and it doesn&amp;rsquo;t concern me. Or at least if I did have something to hide it was generally not my fault.
+A few things have changed my thinking. Mostly:
+ Learning about canadian and bc regulations for public data Learning about internet law and jurisdiction Increasing reliance on cloud data and the possibility of AI using it Talks from privacy concerned projects like Tor The swarm of internet educated black hatters in modern era and security breaches The political climate in the US, China, Russia, etc.</description>
     </item>
     
   </channel>

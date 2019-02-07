@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://nullstruct.com/2019/02/07/a-selfhosting-journey/</loc>
+    <lastmod>2019-02-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://nullstruct.com/2019/01/12/what-ive-learned-from-4-years-of-eckhart-tolle/</loc>
     <lastmod>2019-01-12T00:00:00+00:00</lastmod>
   </url>
@@ -97,6 +102,12 @@
   </url>
   
   <url>
+    <loc>https://nullstruct.com/tags/cloud/</loc>
+    <lastmod>2019-02-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://nullstruct.com/categories/containerization/</loc>
     <lastmod>2018-02-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -122,7 +133,7 @@
   
   <url>
     <loc>https://nullstruct.com/tags/docker/</loc>
-    <lastmod>2018-02-19T00:00:00+00:00</lastmod>
+    <lastmod>2019-02-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -215,6 +226,12 @@
   </url>
   
   <url>
+    <loc>https://nullstruct.com/tags/hosting/</loc>
+    <lastmod>2019-02-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://nullstruct.com/tags/http/</loc>
     <lastmod>2018-01-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -294,7 +311,7 @@
   
   <url>
     <loc>https://nullstruct.com/post/</loc>
-    <lastmod>2019-01-12T00:00:00+00:00</lastmod>
+    <lastmod>2019-02-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -331,6 +348,30 @@
   <url>
     <loc>https://nullstruct.com/tags/security/</loc>
     <lastmod>2018-05-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nullstruct.com/tags/self-hosting/</loc>
+    <lastmod>2019-02-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nullstruct.com/categories/self-hosting/</loc>
+    <lastmod>2019-02-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nullstruct.com/tags/server/</loc>
+    <lastmod>2019-02-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://nullstruct.com/tags/services/</loc>
+    <lastmod>2019-02-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -422,7 +463,7 @@
   
   <url>
     <loc>https://nullstruct.com/</loc>
-    <lastmod>2019-01-12T00:00:00+00:00</lastmod>
+    <lastmod>2019-02-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
