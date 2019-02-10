@@ -68,7 +68,7 @@ $(function() {
       document.title = overrides[hostname]
     } else {
       var parts = hostname.split('.')
-      document.title = parts.length >= 3 ? parts[2] : parts.length >= 2 ? parts[1] : parts[0]
+      document.title = parts[0]
     }
     items.text(document.title)
   }
