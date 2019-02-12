@@ -37,6 +37,8 @@ is_home: true
 An online software enthusiast since 1999, I've accumulated formal part-time education and a successful career since 2005.
 <br/><br/>
 Currently seeking a senior or challenging software engineer role to make the best use of my experience and knowledge.
+<br/><br/>
+Passionate about solving challenging problems, and keeping up to date with the industry.
 
 <!--
 <p>Self-taught programmer since 2002, formally educated with distinction in Computer Systems at BCIT.  Started professionally in quality assurance and embedded systems.  Have successfully been a part of the mobile revolution for 8 years on multiple platforms and languages.</p><p>Hobbies include learning different technologies, guitar/jazz and biking.
@@ -53,9 +55,9 @@ Currently seeking a senior or challenging software engineer role to make the bes
 <h4>Problem</h4>
 <p>The company had a need for more help maintaining existing client applications and growing the product framework.</p>
 <h4>Action</h4>
-<p>Working cross platform on Windows, iOS and Android, existing applications were maintained.  Participate in Iterative Agile offering several stabilizing fixes and improvements to the Android product framework, including Beacon support.</p>
+<p>Working cross platform on Windows, iOS and Android, existing legacy applications were maintained.  Participate in Iterative Agile offering several stabilizing fixes and improvements to the Android product framework and new features like Beacon support.</p><p> Participated in learning new technologies like Couchbase, Typescript and React Native.</p>
 <h4>Result</h4>
-<p>Legacy platforms successfully sunsetted and product platform quality improved with less support tickets.  Better Android resource usage resulting in no random memory crashes.  Improved UX experience with side-transitions.  The beacon experience at conferences performed reliably. Played a role in a successful acquisition by Cvent.  Participated in learning new technologies like Couchbase, Typescript and React Native.</p>
+<p>Legacy platforms successfully sunsetted and product platform quality improved with less support tickets.  Better Android resource usage resulting in no random memory crashes.  Improved android UX experience with better use of fragments and animations.  The beacon experience at conferences performed reliably. Played a role in a successful acquisition by Cvent. Improved knowledge of process.</p>
 <h5>Keywords</h5>
 <!--
 <h3> Mobile Application Developer, July 2015 - Present </h3>
@@ -278,9 +280,9 @@ Extended API features for mobile development
 <h4>Problem</h4>
 <p>The company wanted to expand their traffic controller operations into several pilot projects for public transit traffic signal priority and configurable pedestrian push buttons.</p>
 <h4>Action</h4>
-<p>My role in quality assurance helped ensure the consistency of receivers and signal generators on buses by developing a system test plan, test cases, and test beds in a complex embedded network Linux environment.</p>
+<p>My role in quality assurance helped ensure the consistency of receivers and signal generators on buses by developing a system test plan, test cases, and test beds in a complex embedded network Linux environment, that provided consistency in development and release.</p>
 <br>
-<p>My role as a software engineer ensured a successful customization of transit priority using GPIO for the city of Chicago.  Worked closely with pedestrian push button engineers to develop a configuration application.  The application was for windows mobile and communicated over the zigbee protocol.</p>
+<p>My role as a software engineer ensured a successful customization of transit priority using GPIO for the city of Chicago.  Also worked closely with pedestrian push button engineers to develop a configuration application.  The application was for windows mobile in C# and communicated over the zigbee protocol.</p>
 <h4>Result</h4>
 <p>The end result saw the pilot projects run successfully with different organizations like Translink and Richmond municipality, Chicago transit and others.</p>
 <h5>Keywords</h5>
@@ -373,17 +375,13 @@ C, C++, GPS, Linux, Embedded Systems, Distributed Systems, Shell Scripting, SQL,
 <div class="card bg-default">
 <h3> <a href="http://www.bcit.ca/">British Columbia Institute of Technology</a></h3>
 <ul>
-<li>Diploma of Technology in Computer Systems (2019)
-    <div class="smaller">Current knowledge of mobile, security fundamentals and UX along with classical knowledge of algorithms and operating systems</div>
+<li>Diploma of Technology in Computer Systems
 </li>
 <li>Certificate of Technology in Computer Systems
-    <div class="smaller">Knowledge of discreet and applied math, architecture and business communication</div>
 </li>
 <li>Associate in Applied Software Development
-    <div class="smaller">Knowledge of software languages and testing</div>
 </li>
 <li>Associate in Computer Information Systems
-    <div class="smaller">Knowledge of databases and business concepts</div>
 </li>
 </ul>
 </div>
@@ -401,14 +399,15 @@ C, C++, GPS, Linux, Embedded Systems, Distributed Systems, Shell Scripting, SQL,
 </ul>
 </div>
 
-<h2> Other / Hobby </h2>
+<h2> Other / Hobby / Balance </h2>
 
 <div class="card bg-default">
 <ul>
 <li>Playing guitar/bass and recording songs</li>
-<li>Cycling and hockey</li>
-<li>Reading about technology, psychology and enlightenment</li>
-<li><a href="https://fortunes.micrantha.com/">Fortunes</a> : Slack App, Microservice, and Android app</li>
+<li>Playing hockey or cycing</li>
+<li>Reading about technology, psychology or music</li>
+<li><a href="https://fortunes.micrantha.com/">Fortunes</a> : Slack App, Microservice, and mobile apps</li>
+<li><a href="https://emotext.micrantha.com/">Emotext</a> : An experiment in Erlang as a chat app</li>
 <li><a href="https://github.com/ryjen/prep">Prep</a> a dependency manager (and build tool) for c/c++ projects</li>
 <li><a href="https://micrantha.com">Micrantha software solutions</a> a registered business for contracting needs</li>
 </ul>
