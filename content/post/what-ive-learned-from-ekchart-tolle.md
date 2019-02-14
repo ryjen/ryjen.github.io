@@ -24,7 +24,7 @@ I'm going to attempt paraphrasing the major takeaways I've received after follow
 
 Eckhart defines the ego as such: "Identification of the self in form, as a thought form or a physical form".  
 
-It is most important to recognize the ego in yourself and requires a high degree of awareness of your thoughts and separatenes from the oneness of all things in the universe.
+It is most important to recognize the ego in yourself and requires a high degree of awareness of your thoughts and how they separate you or others from the oneness of all things in the universe.
 
 It can be depicted as a mind-made entity, a "little me" that lives inside us, that forms a fictional self.  Most people identify with it and are completely wrapped up in satisfying its needs as if without it, they would cease to exist.   
 

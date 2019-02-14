@@ -19,7 +19,7 @@ A few things have changed my thinking.  Mostly:
 - Talks from privacy concerned projects like [Tor](https://torproject.org)
 - The swarm of Internet educated black hatters in modern era and security breaches
 - The political climate in the US, China, Russia, etc.
-- My niece and her safety/future
+- My niece and her well being
 
 ## Time for action
 
