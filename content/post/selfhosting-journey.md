@@ -31,13 +31,27 @@ Tools like Chef, Ansible or straight up custom scripting can create server-in-a-
 
 In terms of servers, I can only choose to host on Canadian soil through infrastructure services. Can I haz my email Google?
 
-Also abstained from all social media for the last few years, prefering journaling in a non-judgmental way. This also has a benefit of avoiding social engineering attacks. 
+Also abstained from all social media for the last few years, preferring journaling in a non-judgmental way. This also has a benefit of avoiding social engineering attacks. 
 
 On the rare occasions something is actually worth sharing, [Mastodon](https://mastodon.social/) an open source Twitter clone, is a fine alternative that allows hosting your own server instance.  (#Tweets2Toots)
 
+## Notable mentions
+
+* [Matomo Analytics](https://matomo.org/) and related mobile app
+* [ZNC](https://wiki.znc.in/ZNC) irc server and weechat
+* [Portainer](https://www.portainer.io/) for container management
+* [Gitea](https://gitea.io/) for version control
+* [Nextcloud](https://nextcloud.com/) for cloud storage and related mobile app
+* [Bitwarden](https://bitwarden.com/) password management and related mobile app
+* [Emby](https://emby.media/) media server and related mobile app
+* [Syncthing](https://syncthing.net/) and related mobile app
+* [Jenkins](https://jenkins.io/) for continuous integration
+
+Super nice that a lot of these solutions include mobile.
+
 ## Security
 
-It is difficult to let go of enterprise invisible hand for security.  But its not uncommon for big company silos to be unaware of holes in thier black box because it is not open source.
+It is difficult to let go of enterprise invisible hand for security.  But its not uncommon for big company silos to be unaware of holes in their black box because it is not open source.
 
 Common Internet standards are more mature than they used to be and self-hosting seems feasible for a small time person like myself... (ie - no spearphishing).
 
@@ -45,17 +59,18 @@ Having run security audit tools on my setup gives me further confidence.
 
 ## Other concerns
 
-Email spam is a large problem that google solves very well.  The open source solutions, while advanced and up to date, probably won't benefit from AI.  I can balance this with the fact I'm pretty good at identifying spam and it won't be long before some open source AI anti-spam will emerge.
+Email spam is a large problem - that google solves very well.  The open source solutions, while advanced and up to date, probably won't benefit from AI.  I can balance this with the fact I'm pretty good at identifying spam myself and it won't be long before some open source AI anti-spam will emerge.
 
-Another concern is financial.  I will be dependent on an income but most of life is anyway.  Hosting costs are cheaper these days but might want some sort of archival compression task anyway.
+Another concern is financial compared to free solutions like gmail and google drive.  My data will be dependent on an income but most of life is anyway.  
+Hosting costs are relatively cheaper these days but I'm also using an external drive connected to my router for media.
+
 
 ## Conclusion
 
-My setup so far includes a few things but there is much to do.  I won't bore you listing out the specifics and leave it as an exercise for yourself.
+In general, I find a certain satisfaction from it. If it doesn't work out, no big deal, I learned something.
 
-I prefer to host containers through Dokku, so it makes a typical setup more complicated anyway, and I still have to finalize my mail hosting as there is so much involved.
+My setup so far includes a few things but there is much to do, especially around mail hosting and keeping the system reproducible. I prefer to keep my Dokku setup with containers so scripting involves creating the related Dokku metadata.
 
-But, in general, I find a certain satisfaction from it. If it doest work out, no big deal, I learned something.
-
+I won't bore you listing out the specifics and leave it as an exercise for yourself.  
 
 
