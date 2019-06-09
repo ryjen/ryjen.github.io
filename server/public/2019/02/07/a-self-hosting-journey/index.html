@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Deploy Docker Registry with Dokku</title>
+    <title>A self hosting journey</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta name="google-site-verification" content="jkdqcIgCmfBgfd8S0WbF3CqZ-TXSSayerVq4mqO0Fc0" />
@@ -110,136 +110,82 @@
 
 <div id="main">
 
-    <h1>Deploy Docker Registry with Dokku</h1>
+    <h1>A self hosting journey</h1>
 
-    <p class="timestamps">Created: February 19, 2018 </p>
+    <p class="timestamps">Created: February 7, 2019 </p>
 
     <div class="text-justify">
 
-<h4 id="prerequisites">Prerequisites</h4>
+<h2 id="introduction">Introduction</h2>
 
-<p>You&rsquo;ll need to prepare a bit.</p>
+<p>Would like to say that I have valid privacy or security concerns. Or because it can be done better.
+But the reality is, I just want to self host because I can.</p>
 
-<hr />
+<h2 id="where-to-start">Where to start?</h2>
 
-<ol>
-<li>A local path on the server to store registry data. For example: <code>/mydir/registry</code></li>
-<li><a href="https://www.docker.com/community-edition#/download">Docker</a> installed on the client and server machine</li>
-<li><a href="http://dokku.viewdocs.io/dokku/">Dokku</a> installed on the server</li>
-</ol>
+<p>The <a href="https://github.com/Kickball/awesome-selfhosted">awesome self hosted</a> page lists just about every cloud service I use with a replaceable near-quality solution, if your willing to sacrifice a bit for it.</p>
 
-<h5 id="for-authentication">For Authentication</h5>
+<p>The other appealing factor is that most of the solutions can be containerized and reproducible across servers - meaning more availability.</p>
 
-<ol>
-<li>httpasswd command is installed</li>
-</ol>
+<p>Tools like Chef, Ansible or straight up custom scripting can create server-in-a-box, ready to deploy.  Backups and a data migration plan is another story.</p>
 
-<h5 id="for-an-external-registry">For an External Registry</h5>
+<p>In terms of servers, choosing hosting located in your country of origin is a safe bet for taking advantage of privacy laws for your data.</p>
 
-<ol>
-<li>Dokku <a href="https://github.com/dokku/dokku-letsencrypt">letsencrypt plugin</a> installed</li>
-<li>A working domain name pointing to the dokku app. For example, <em><a href="https://registry.mydomain.com">https://registry.mydomain.com</a></em></li>
-</ol>
+<p>As side note I have already abstained from all social media for the last few years, preferring journaling in a non-judgmental way. This also has a benefit of avoiding social engineering attacks.</p>
 
-<h3 id="create-the-dokku-app">Create the dokku app</h3>
+<p>On the rare occasions something is actually worth sharing, <a href="https://mastodon.social/">Mastodon</a> an open source Twitter clone, is a fine alternative that allows hosting your own server instance.  (#Tweets2Toots)</p>
 
-<p>Create the dokku app and retag a pre-existing repository image to it.
-To persist data, a volume is used.</p>
+<h2 id="notable-mentions-for-services">Notable mentions for services</h2>
 
-<hr />
+<ul>
+<li><a href="https://matomo.org/">Matomo Analytics</a> and related mobile app for replacing google analytics</li>
+<li><a href="https://wiki.znc.in/ZNC">ZNC</a> always connected irc server/bouncer for chatting</li>
+<li><a href="https://www.portainer.io/">Portainer</a> for docker container management</li>
+<li><a href="https://gitea.io/">Gitea</a> for version control replacing github/bitbucket</li>
+<li><a href="https://nextcloud.com/">Nextcloud</a> for cloud storage and related mobile app</li>
+<li><a href="https://bitwarden.com/">Bitwarden</a> password management and related mobile app</li>
+<li><a href="https://emby.media/">Emby</a> media server and related mobile app</li>
+<li><a href="https://syncthing.net/">Syncthing</a> device synchronization and related mobile app</li>
+<li><a href="https://jenkins.io/">Jenkins</a> for continuous integration</li>
+</ul>
 
-<ol>
-<li><p>Create a new app named &ldquo;registry&rdquo; in dokku: <code>dokku apps:create registry</code></p></li>
+<p>Super nice that a lot of these solutions include mobile.</p>
 
-<li><p>Go ahead an pull the docker registry image (using alpine for reduced size): <code>docker pull ses1er/alpine-registry</code></p></li>
+<h2 id="disadvantages">Disadvantages</h2>
 
-<li><p>Now retag the image so dokku knows about it: <code>docker tag ses1er/alpine-registry dokku/registry</code></p></li>
+<ul>
+<li><p>The invisible hand of enterprise is hard to let go of for security[^1], availability[^2] and capability[^3].</p></li>
 
-<li><p>Deploy the image to dokku: <code>dokku tags:deploy registry</code></p></li>
-</ol>
+<li><p>Have to pay for server costs compared to ad-based services[^4].</p></li>
+</ul>
 
-<h5 id="configure-the-app">Configure the app</h5>
+<p>[^1] But it is also not uncommon for big company silos to be unaware of holes in their black box.  Security standards have been increasing steadily.</p>
 
-<ol>
-<li><p>Configure the local storage directory for the registry: <code>dokku config:set --no-restart registry REGISTRY_STORAGE_FILESYSTEM_ROOTDIRECTORY=&quot;/container/dir/registry&quot;</code></p></li>
+<p>[^2] To serve the most amount of customers, you need the high availability.  If your serving yourself, family, team or friends, might not need to go beyond a recovery plan.</p>
 
-<li><p>Now add an application mount point for the local storage directory: <code>dokku storage:mount registry /mydir/registry:/container/dir/registry</code>  <em>(note: the default container location is /var/lib/registry)</em></p></li>
+<p>[^3] Specifically ground breaking research like machine learning, or just the sheer depth of experience and time put in.</p>
 
-<li><p>Now remove the default http port mapping: <code>dokku proxy:ports-remove registry 80</code></p></li>
+<p>[^4] Doing this anyway and it makes my data dependent on my income&hellip;. But there is not much in this world that isn&rsquo;t.</p>
 
-<li><p>And and a new one pointing to the repository: <code>dokku proxy:ports-add registry 80:5000 5000:5000</code></p></li>
-</ol>
+<h2 id="advantages">Advantages</h2>
 
-<h3 id="authorization">Authorization</h3>
+<ul>
+<li><p>Reduced dependency on foreign parties.</p></li>
 
-<p>Require a valid login to create a repository.</p>
+<li><p>Knowledge and experience acquired setting up and maintaining.</p></li>
 
-<hr />
+<li><p>Increased privacy.</p></li>
+</ul>
 
-<ol>
-<li><p>Create a directory for authorization data in the local application volume: <code>mkdir -p /mydir/registry/auth</code></p></li>
+<h2 id="conclusion">Conclusion</h2>
 
-<li><p>Create a username/password file: <code>htpasswd -Bn username &gt; /mydir/registry/auth/htpasswd</code> <em>(will prompt for password)</em></p></li>
+<p>I find a certain sense of satisfaction from being in control of all my services.</p>
 
-<li><p>Add configuration variables to dokku registry app: <code>dokku config:set --no-restart registry REGISTRY_AUTH=htpasswd REGISTRY_AUTH_HTPASSWD_REALM=&quot;My Registry&quot; REGISTRY_AUTH_HTPASSWD_PATH=/container/dir/registry/auth/htpasswd</code></p></li>
-</ol>
+<p>Deploying and maintaining servers is a pretty good DevOps/Software Release Engineer skill and could be useful in the future when machines do all the software development.</p>
 
-<h3 id="external-registry">External Registry</h3>
+<p>There is much to do in my setup, especially around mail hosting and keeping the system reproducible.  Using <a href="http://dokku.viewdocs.io/dokku/">dokku</a> for a PaaS still enables easy deployment of git projects.</p>
 
-<p>To allow your registry to be remotely accessible.</p>
-
-<hr />
-
-<ol>
-<li><p>Add your domain to the registry dokku app: <code>dokku domains:add registry https://registry.mydomain.com</code></p></li>
-
-<li><p>Add letsencrypt to the app: <code>dokku letsencrypt registry</code> and ensure a valid certificate is always available: <code>dokku letsencrypt:auto-renew registry</code></p></li>
-
-<li><p>Remove the default HTTPS port mapping: <code>dokku proxy:ports-remove 443</code></p></li>
-
-<li><p>And add a new port mapping to the repository: <code>dokku proxy:ports-add 443:5000</code></p></li>
-</ol>
-
-<h3 id="testing">Testing</h3>
-
-<p>Does it work?</p>
-
-<hr />
-
-<ol>
-<li><p>Restart the server: <code>dokku ps:restart registry</code></p></li>
-
-<li><p>You can test it by logging in from a remote machine (or local if not external facing): <code>docker login --username &lt;username&gt; https://registry.mydomain.com</code></p></li>
-
-<li><p>Retag an image: <code>docker tag myimage registry.mydomain.com/username/myimage</code> and push it: <code>docker push registry.mydomain.com/username/myimage</code></p></li>
-</ol>
-
-<h4 id="gotchas">Gotchas</h4>
-
-<p>There is always at least one.</p>
-
-<hr />
-
-<p>NGINX by default will throw an HTTP 413 error if your image is too big.  To fix that we have to disable the max HTTP body size.</p>
-
-<ol>
-<li><p>Edit the configuration for the repository app: <code>vim /home/dokku/registry/nginx.conf</code></p></li>
-
-<li><p>In any server{} blocks add: <code>client_max_body_size 0;</code> which will disable the max body size limitation.</p></li>
-</ol>
-
-<h4 id="conclusion">Conclusion</h4>
-
-<p>Super easy to get a private docker repository running on dokku.   Why would you want to?</p>
-
-<ol>
-<li>Because you can</li>
-<li>Private registries are generally not free</li>
-<li>Sometimes doesn&rsquo;t make sense for an image to be public</li>
-<li>Control over your data from another country&rsquo;s jurisdiction</li>
-</ol>
-
-<p>For example, I have a docker image to run weechat with very customized configuration and only usable by me.  I only want to run it on my server and attach to it when I need to.</p>
+<p>I won&rsquo;t bore you listing out the specifics and leave it as an exercise for yourself!</p>
 </div>
 
 </div>
@@ -265,11 +211,11 @@ To persist data, a volume is used.</p>
 
       
 
-    <p class="pull-right">February 7, 2019</p>
-    <h4><a href="/2019/02/07/a-self-hosting-journey/">A self hosting journey</a></h4>
-    <h5>Setting up your own cloud services</h5>
+    <p class="pull-right">February 19, 2018</p>
+    <h4><a href="/2018/02/19/deploy-docker-registry-with-dokku/">Deploy Docker Registry with Dokku</a></h4>
+    <h5>Put your own docker registry in a dokku app</h5>
 
-     <span class="item-tag">self-hosting</span>  <span class="item-tag">hosting</span>  <span class="item-tag">docker</span>  <span class="item-tag">cloud</span>  <span class="item-tag">services</span>  <span class="item-tag">server</span> 
+     <span class="item-tag">docker</span>  <span class="item-tag">registry</span>  <span class="item-tag">dokku</span> 
 
 </div>
   <div class="card item bg-default clearfix">

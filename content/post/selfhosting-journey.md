@@ -1,5 +1,5 @@
 ---
-title: A selfhosting journey
+title: A self hosting journey
 description: Setting up your own cloud services
 date: 2019-02-07
 draft: false
@@ -10,18 +10,18 @@ categories: [self-hosting]
 ## Introduction
 
 
-Would like to say that I have valid privacy concerns, or because it can be done better,
-but the reality is, I just want to self host because I can.
+Would like to say that I have valid privacy or security concerns. Or because it can be done better.
+But the reality is, I just want to self host because I can.
 
 ## Where to start?
 
-The [awsome self hosted](https://github.com/Kickball/awesome-selfhosted) page lists just about every cloud service I use with a replaceable near-quality solution, if your willing to sacrifice a bit for it.
+The [awesome self hosted](https://github.com/Kickball/awesome-selfhosted) page lists just about every cloud service I use with a replaceable near-quality solution, if your willing to sacrifice a bit for it.
 
 The other appealing factor is that most of the solutions can be containerized and reproducible across servers - meaning more availability. 
 
-Tools like Chef, Ansible or straight up custom scripting can create server-in-a-box, ready to deploy.  A possible good idea would be to have backups and a data migration plan... but lets just get setup first, ok?
+Tools like Chef, Ansible or straight up custom scripting can create server-in-a-box, ready to deploy.  Backups and a data migration plan is another story.
 
-In terms of servers, choosing hosting located in your country of origin is a safe bet against an privacy laws for yourself.
+In terms of servers, choosing hosting located in your country of origin is a safe bet for taking advantage of privacy laws for your data.
 
 As side note I have already abstained from all social media for the last few years, preferring journaling in a non-judgmental way. This also has a benefit of avoiding social engineering attacks. 
 
@@ -30,43 +30,51 @@ On the rare occasions something is actually worth sharing, [Mastodon](https://ma
 
 ## Notable mentions for services
 
-* [Matomo Analytics](https://matomo.org/) and related mobile app
-* [ZNC](https://wiki.znc.in/ZNC) always connected irc server/bouncer
-* [Portainer](https://www.portainer.io/) for container management
-* [Gitea](https://gitea.io/) for version control
+* [Matomo Analytics](https://matomo.org/) and related mobile app for replacing google analytics
+* [ZNC](https://wiki.znc.in/ZNC) always connected irc server/bouncer for chatting
+* [Portainer](https://www.portainer.io/) for docker container management 
+* [Gitea](https://gitea.io/) for version control replacing github/bitbucket
 * [Nextcloud](https://nextcloud.com/) for cloud storage and related mobile app
 * [Bitwarden](https://bitwarden.com/) password management and related mobile app
 * [Emby](https://emby.media/) media server and related mobile app
-* [Syncthing](https://syncthing.net/) and related mobile app
+* [Syncthing](https://syncthing.net/) device synchronization and related mobile app
 * [Jenkins](https://jenkins.io/) for continuous integration
 
 Super nice that a lot of these solutions include mobile.
 
 ## Disadvantages
 
-It is difficult to let go of enterprise invisible hand for security.  But its not uncommon for big company silos to be unaware of holes in their black box because it is not open source.
+* The invisible hand of enterprise is hard to let go of for security[^1], availability[^2] and capability[^3].  
 
-Common Internet standards are more mature than they used to be and self-hosting seems feasible for a small time person like myself... (ie - no spearphishing).
-Having the ablilty to run security audit tools, and passing my setup gives further confidence. 
+* Have to pay for server costs compared to ad-based services[^4].
 
-Another disadvantage is that enterprise services are ahead of the game and can afford latest tech like machine learning to enhance thier capabilities.  
 
-But like I said, I'm just doing this for fun and I'm sure that the open source world will catchup if their not already ahead (in things like machine learning).
+[^1] But it is also not uncommon for big company silos to be unaware of holes in their black box.  Security standards have been increasing steadily.
 
-Email spam is a large problem - that google solves very well.  The open source solutions, while advanced and up to date, probably won't benefit from AI.  I can balance this with the fact I'm pretty good at identifying spam myself and it won't be long before some open source AI anti-spam will emerge.
+[^2] To serve the most amount of customers, you need the high availability.  If your serving yourself, family, team or friends, might not need to go beyond a recovery plan.
 
-Another concern is financial compared to free solutions like gmail and google drive.  My data will be dependent on an income but most of life is anyway.  
-Hosting costs are relatively cheaper these days but I'm also using an external drive connected to my router for media.
+[^3] Specifically ground breaking research like machine learning, or just the sheer depth of experience and time put in.
+
+[^4] Doing this anyway and it makes my data dependent on my income.... But there is not much in this world that isn't. 
+
+
+## Advantages
+
+* Reduced dependency on foreign parties.
+
+* Knowledge and experience acquired setting up and maintaining.
+
+* Increased privacy.
 
 
 ## Conclusion
 
-In general, I find a certain satisfaction from it. If it doesn't work out, no big deal, I learned something.  
+I find a certain sense of satisfaction from being in control of all my services.
 
-Deploying and maintaining servers is a pretty good DevOps/Software Release Engineer skill and could be useful in the future when machines do all the development.
+Deploying and maintaining servers is a pretty good DevOps/Software Release Engineer skill and could be useful in the future when machines do all the software development.
 
-My setup so far includes a few things but there is much to do, especially around mail hosting and keeping the system reproducible.  Using [dokku](http://dokku.viewdocs.io/dokku/) for a PaaS still enables easy deployment of git projects.
+There is much to do in my setup, especially around mail hosting and keeping the system reproducible.  Using [dokku](http://dokku.viewdocs.io/dokku/) for a PaaS still enables easy deployment of git projects.
 
-I won't bore you listing out the specifics and leave it as an exercise for yourself.  
+I won't bore you listing out the specifics and leave it as an exercise for yourself!
 
 
