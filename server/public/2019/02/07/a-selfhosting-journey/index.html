@@ -118,39 +118,28 @@
 
 <h2 id="introduction">Introduction</h2>
 
-<p>In terms of privacy, I used to believe that I have nothing to hide and it doesn&rsquo;t concern me. Or at least if I did have something to hide it was generally not my fault.</p>
+<p>Would like to say that I have valid privacy concerns, or because it can be done better,
+but the reality is, I just want to self host because I can.</p>
 
-<p>A few things have changed my thinking.  Mostly:</p>
+<h2 id="where-to-start">Where to start?</h2>
 
-<ul>
-<li>Learning about Canadian and bc regulations for public data</li>
-<li>Learning about Internet law and jurisdiction</li>
-<li>Increasing reliance on cloud data and the possibility of AI using it</li>
-<li>Talks from privacy concerned projects like <a href="https://torproject.org">Tor</a></li>
-<li>The swarm of Internet educated black hatters in modern era and security breaches</li>
-<li>The political climate in the US, China, Russia, etc.</li>
-<li>My niece and her well being</li>
-</ul>
+<p>The <a href="https://github.com/Kickball/awesome-selfhosted">awsome self hosted</a> page lists just about every cloud service I use with a replaceable near-quality solution, if your willing to sacrifice a bit for it.</p>
 
-<h2 id="time-for-action">Time for action</h2>
+<p>The other appealing factor is that most of the solutions can be containerized and reproducible across servers - meaning more availability.</p>
 
-<p>The <a href="https://github.com/Kickball/awesome-selfhosted">awsome self hosted</a> page opened my eyes to the fact that just about every cloud service I use can be replaced in a near-quality solution, if your willing to sacrifice a bit for it.</p>
+<p>Tools like Chef, Ansible or straight up custom scripting can create server-in-a-box, ready to deploy.  A possible good idea would be to have backups and a data migration plan&hellip; but lets just get setup first, ok?</p>
 
-<p>The other appealing factor is that most of the solutions can be containerized and reproducible across servers - meaning more security and availability.</p>
+<p>In terms of servers, choosing hosting located in your country of origin is a safe bet against an privacy laws for yourself.</p>
 
-<p>Tools like Chef, Ansible or straight up custom scripting can create server-in-a-box.</p>
-
-<p>In terms of servers, I can only choose to host on Canadian soil through infrastructure services. Can I haz my email Google?</p>
-
-<p>Also abstained from all social media for the last few years, preferring journaling in a non-judgmental way. This also has a benefit of avoiding social engineering attacks.</p>
+<p>As side note I have already abstained from all social media for the last few years, preferring journaling in a non-judgmental way. This also has a benefit of avoiding social engineering attacks.</p>
 
 <p>On the rare occasions something is actually worth sharing, <a href="https://mastodon.social/">Mastodon</a> an open source Twitter clone, is a fine alternative that allows hosting your own server instance.  (#Tweets2Toots)</p>
 
-<h2 id="notable-mentions">Notable mentions</h2>
+<h2 id="notable-mentions-for-services">Notable mentions for services</h2>
 
 <ul>
 <li><a href="https://matomo.org/">Matomo Analytics</a> and related mobile app</li>
-<li><a href="https://wiki.znc.in/ZNC">ZNC</a> irc server and weechat</li>
+<li><a href="https://wiki.znc.in/ZNC">ZNC</a> always connected irc server/bouncer</li>
 <li><a href="https://www.portainer.io/">Portainer</a> for container management</li>
 <li><a href="https://gitea.io/">Gitea</a> for version control</li>
 <li><a href="https://nextcloud.com/">Nextcloud</a> for cloud storage and related mobile app</li>
@@ -162,15 +151,16 @@
 
 <p>Super nice that a lot of these solutions include mobile.</p>
 
-<h2 id="security">Security</h2>
+<h2 id="disadvantages">Disadvantages</h2>
 
 <p>It is difficult to let go of enterprise invisible hand for security.  But its not uncommon for big company silos to be unaware of holes in their black box because it is not open source.</p>
 
-<p>Common Internet standards are more mature than they used to be and self-hosting seems feasible for a small time person like myself&hellip; (ie - no spearphishing).</p>
+<p>Common Internet standards are more mature than they used to be and self-hosting seems feasible for a small time person like myself&hellip; (ie - no spearphishing).
+Having the ablilty to run security audit tools, and passing my setup gives further confidence.</p>
 
-<p>Having run security audit tools on my setup gives me further confidence.</p>
+<p>Another disadvantage is that enterprise services are ahead of the game and can afford latest tech like machine learning to enhance thier capabilities.</p>
 
-<h2 id="other-concerns">Other concerns</h2>
+<p>But like I said, I&rsquo;m just doing this for fun and I&rsquo;m sure that the open source world will catchup if their not already ahead (in things like machine learning).</p>
 
 <p>Email spam is a large problem - that google solves very well.  The open source solutions, while advanced and up to date, probably won&rsquo;t benefit from AI.  I can balance this with the fact I&rsquo;m pretty good at identifying spam myself and it won&rsquo;t be long before some open source AI anti-spam will emerge.</p>
 
@@ -181,7 +171,9 @@ Hosting costs are relatively cheaper these days but I&rsquo;m also using an exte
 
 <p>In general, I find a certain satisfaction from it. If it doesn&rsquo;t work out, no big deal, I learned something.</p>
 
-<p>My setup so far includes a few things but there is much to do, especially around mail hosting and keeping the system reproducible. I prefer to keep my Dokku setup with containers so scripting involves creating the related Dokku metadata.</p>
+<p>Deploying and maintaining servers is a pretty good DevOps/Software Release Engineer skill and could be useful in the future when machines do all the development.</p>
+
+<p>My setup so far includes a few things but there is much to do, especially around mail hosting and keeping the system reproducible.  Using <a href="http://dokku.viewdocs.io/dokku/">dokku</a> for a PaaS still enables easy deployment of git projects.</p>
 
 <p>I won&rsquo;t bore you listing out the specifics and leave it as an exercise for yourself.</p>
 </div>

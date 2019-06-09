@@ -38,9 +38,9 @@ function initDoodles() {
 
 $(function() {
 
-  if (redirect_business_card_url()) {
-    return
-  }
+  //if (redirect_business_card_url()) {
+  //  return
+  //}
 
   $(window).resize(function() {
     initDoodles();
@@ -50,7 +50,7 @@ $(function() {
 
   var items = $("#intro .brand, #brand .brand")
 
-  var exclude = ["coda.life", "www.coda.life"]
+  var exclude = []
 
   var overrides = { 
     "ryanjennin.gs": "ryan jennings", 
