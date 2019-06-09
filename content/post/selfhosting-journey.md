@@ -44,18 +44,9 @@ Super nice that a lot of these solutions include mobile.
 
 ## Disadvantages
 
-* The invisible hand of enterprise is hard to let go of for security[^1], availability[^2] and capability[^3].  
+* The invisible hand of enterprise is hard to let go of for security<sup>[1](#foot1)</sup>, availability<sup>[2](#foot2)</sup> and capability<sup>[3](#foot3)</sup>.  
 
-* Have to pay for server costs compared to ad-based services[^4].
-
-
-[^1] But it is also not uncommon for big company silos to be unaware of holes in their black box.  Security standards have been increasing steadily.
-
-[^2] To serve the most amount of customers, you need the high availability.  If your serving yourself, family, team or friends, might not need to go beyond a recovery plan.
-
-[^3] Specifically ground breaking research like machine learning, or just the sheer depth of experience and time put in.
-
-[^4] Doing this anyway and it makes my data dependent on my income.... But there is not much in this world that isn't. 
+* Have to pay for server costs compared to ad-based services<sup>[4](#foot4)</sup>.
 
 
 ## Advantages
@@ -77,4 +68,15 @@ There is much to do in my setup, especially around mail hosting and keeping the 
 
 I won't bore you listing out the specifics and leave it as an exercise for yourself!
 
+<hr>
+
+<small>
+<a href="#foot1">1</a>: But it is also not uncommon for big company silos to be unaware of holes in their black box.  Security standards have been increasing steadily.
+
+<a href="#foot2">2</a>: To serve the most amount of customers, you need the high availability.  If your serving yourself, family, team or friends, might not need to go beyond a recovery plan.
+
+<a href="#foot3">3</a>: Specifically ground breaking research like machine learning, or just the sheer depth of experience and time put in.
+
+<a href="#foot4">4</a>: Doing this anyway and it makes my data dependent on my income.... But there is not much in this world that isn't. 
+</small>
 
