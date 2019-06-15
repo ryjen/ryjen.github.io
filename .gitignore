@@ -1,3 +1,4 @@
 node_modules
+static/css/maps
+static/js/maps
 .DS_Store
-data
