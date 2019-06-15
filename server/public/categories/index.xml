@@ -1,66 +1,66 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on coda.life</title>
-    <link>https://nullstruct.com/categories/</link>
-    <description>Recent content in Categories on coda.life</description>
+    <title>Categories on ryan jennings</title>
+    <link>https://ryanjennin.gs/categories/</link>
+    <description>Recent content in Categories on ryan jennings</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://nullstruct.com/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ryanjennin.gs/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Containerization</title>
-      <link>https://nullstruct.com/categories/containerization/</link>
+      <link>https://ryanjennin.gs/categories/containerization/</link>
       <pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://nullstruct.com/categories/containerization/</guid>
+      <guid>https://ryanjennin.gs/categories/containerization/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Development</title>
-      <link>https://nullstruct.com/categories/development/</link>
+      <link>https://ryanjennin.gs/categories/development/</link>
       <pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://nullstruct.com/categories/development/</guid>
+      <guid>https://ryanjennin.gs/categories/development/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Linux</title>
-      <link>https://nullstruct.com/categories/linux/</link>
+      <link>https://ryanjennin.gs/categories/linux/</link>
       <pubDate>Mon, 05 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://nullstruct.com/categories/linux/</guid>
+      <guid>https://ryanjennin.gs/categories/linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Mobile</title>
-      <link>https://nullstruct.com/categories/mobile/</link>
+      <link>https://ryanjennin.gs/categories/mobile/</link>
       <pubDate>Wed, 16 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://nullstruct.com/categories/mobile/</guid>
+      <guid>https://ryanjennin.gs/categories/mobile/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Self Hosting</title>
-      <link>https://nullstruct.com/categories/self-hosting/</link>
+      <link>https://ryanjennin.gs/categories/self-hosting/</link>
       <pubDate>Thu, 07 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://nullstruct.com/categories/self-hosting/</guid>
+      <guid>https://ryanjennin.gs/categories/self-hosting/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Spirituality</title>
-      <link>https://nullstruct.com/categories/spirituality/</link>
+      <link>https://ryanjennin.gs/categories/spirituality/</link>
       <pubDate>Sat, 12 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://nullstruct.com/categories/spirituality/</guid>
+      <guid>https://ryanjennin.gs/categories/spirituality/</guid>
       <description></description>
     </item>
     

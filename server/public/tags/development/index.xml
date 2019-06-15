@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Development on coda.life</title>
-    <link>https://nullstruct.com/tags/development/</link>
-    <description>Recent content in Development on coda.life</description>
+    <title>Development on ryan jennings</title>
+    <link>https://ryanjennin.gs/tags/development/</link>
+    <description>Recent content in Development on ryan jennings</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 10 Apr 2012 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://nullstruct.com/tags/development/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ryanjennin.gs/tags/development/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Best Programming Quotes</title>
-      <link>https://nullstruct.com/2012/04/10/best-programming-quotes/</link>
+      <link>https://ryanjennin.gs/2012/04/10/best-programming-quotes/</link>
       <pubDate>Tue, 10 Apr 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://nullstruct.com/2012/04/10/best-programming-quotes/</guid>
+      <guid>https://ryanjennin.gs/2012/04/10/best-programming-quotes/</guid>
       <description>Quotes that relate to software engineering always humble me with their laser-like honesty. I&amp;rsquo;ve decided to keep a collection of my favorites here (in no particular order).
 &#34;The only real education is self-education&#34; - Aristotle If I&#39;d known computer science was going to be like this, I&#39;d never have given up being a rock &amp;lsquo;n&#39; roll star. &amp;ndash; G. Hirst Lubarsky&#39;s Law of Cybernetic Entomology: There&#39;s always one more bug &#34;</description>
     </item>

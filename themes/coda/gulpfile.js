@@ -11,10 +11,10 @@ var bust = require("gulp-buster");
 var del = require("del");
 
 gulp.task('clean', function() {
-  del(['static/css/**/*'])
-  del(['static/js/**/*'])
-  del(['static/font/**/*'])
-  del(['static/image/**/*'])
+  return del(['static/css/**/*',
+    'static/js/**/*',
+    'static/font/**/*',
+    'static/image/**/*'])
 });
 
 gulp.task('css', function(){
@@ -88,4 +88,4 @@ gulp.task('watch', function() {
     gulp.watch('src/fonts/**/*', ['font']);
 });
 
-gulp.task('default', [ 'clean', 'css', 'js', 'image', 'font' ]);
+gulp.task('default', gulp.series('clean', gulp.parallel('css', 'js', 'image', 'font')));

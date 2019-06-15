@@ -1,6 +1,6 @@
-baseurl = "https://nullstruct.com/"
+baseurl = "https://ryanjennin.gs/"
 languageCode = "en-us"
-title = "coda.life"
+title = "ryan jennings"
 publishDir = "server/public"
 buildDrafts = false
 
@@ -20,12 +20,11 @@ theme = "coda"
     author = "Ryan Jennings"
     description = "a namespace for technical and musical musings"
     introURL = "/post"
-    motto = "sometimes an ending is a new beginning"
     githubUsername = "ryjen"
     copyright  = "&copy; all rights reserved, ryan jennings"
     highlight = true
     highlightStyle = "solarized-dark"
-    brandName = "coda.life"
+    brandName = "ryan jennings"
 
 [[menu.main]]
     name  = "blog"
@@ -39,10 +38,6 @@ theme = "coda"
     url   = "/music"
     weight = 3
 
-#[[menu.main]]
-#    name  = "projects"
-#    url   = "/projects"
-
 [[menu.main]]
     name   = "doodles"
     identifier = "paint-brush"
@@ -54,10 +49,6 @@ theme = "coda"
     identifier  = "object-ungroup"
     url   = "/things"
     weight = 5
-
-#[[menu.main]]
-#    name  = "resume"
-#    url   = "/about/resume"
 
 [[menu.icons]]
     url = "/resume/"
@@ -73,20 +64,5 @@ theme = "coda"
     url = "https://github.com/ryjen/"
     name = "github"
     weight = 3
-
-#[[menu.icon]]
-#    url = "https://twitter.com/ryjen78/"
-#    name = "twitter"
-#    weight = 3
-
-#[[menu.icon]]
-#    url = "https://www.linkedin.com/in/ryjen/"
-#    name = "linkedin"
-#    weight = 4
-
-#[[menu.icon]]
-#    url = "https://www.stackoverflow.com/username/"
-#    name = "stack-overflow"
-#    weight = 5
 
 

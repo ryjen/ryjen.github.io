@@ -9,8 +9,13 @@ var order = require('gulp-order');
 var uglify = require('gulp-uglify');
 var del = require('del');
 
+gulp.task('clean', function() {
+  return del(['static/css/**/*',
+    'static/js/**/*'
+  ]);
+});
+
 gulp.task('css', function(){
-  del(['static/css/**/*'])
 
   var cssSrc = gulp.src([
     'src/css/*.css',
@@ -28,7 +33,6 @@ gulp.task('css', function(){
 });
 
 gulp.task('js', function(){
-  del(['static/js/**/*'])
 
   return gulp.src([
       'src/js/*.js',
@@ -50,5 +54,5 @@ gulp.task('watch', function() {
     gulp.watch('src/js/*.js', ['js']);
 });
 
-gulp.task('default', [ 'css', 'js' ]);
+gulp.task('default', gulp.series('clean', gulp.parallel('css', 'js')));
 
