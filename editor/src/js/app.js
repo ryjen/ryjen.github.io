@@ -7,8 +7,8 @@ $(function() {
       type: "POST",
       url: "https://jenkins.micrantha.com/generic-webhook-trigger/invoke",
       data: {
-        content: $("post-content").text(),
-        file_name: $("post-file-name").text()
+        content: $("post").text(),
+        file_name: $("post-file").text()
       },
       dataType: "json",
       beforeSend: function(xhr) {
