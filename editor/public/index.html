@@ -37,8 +37,22 @@
       </div>
   </header>
 
+  <div id="messages"></div>
+  
   <div class="container">
+
+    <input id="post-file" type="text" placeholder="Enter the file name." />
+
   <textarea id="post">
+---
+title: A test post
+description: Automatically create a blog post
+date: 2019-06-06
+draft: true
+tags: [testing, jenkins, git, javascript]
+categories: [automation]
+---
+    
 # Intro
 write the introduction to the post here
 
@@ -46,12 +60,12 @@ write the introduction to the post here
 write the content of the post here
 
 # Conclusion
- write some final thoughts here
+write some final thoughts here
   </textarea>
 
-  </div>
-
   <button id="post-submit">Post</button>
+
+  </div>
 
   <footer id="footer">
      <hr>

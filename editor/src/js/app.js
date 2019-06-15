@@ -1,24 +1,49 @@
 const authToken = "8E75C69C881A472F3F563835D6A89";
 
+const validFileName = /[a-z\-]+/;
+
+function showMessage(msg, type = "success") {
+
+  var msgs = $("#messages");
+
+  var err = msgs.append(document.createElement("div"))
+    .addClass(type).text(msg);
+
+  msgs.slideDown().delay(2000).slideUp(function() {
+    err.remove();
+  });
+}
+
 $(function() {
+
   $("#post-submit").click(function(e) {
     e.preventDefault();
+
+    if (!validFileName.test($("#post-file").val())) {
+      showMessage("invalid file name", "error");
+      return;
+    }
+
     $.ajax({
       type: "POST",
-      url: "https://jenkins.micrantha.com/generic-webhook-trigger/invoke",
-      data: {
-        content: $("post").text(),
-        file_name: $("post-file").text()
-      },
-      dataType: "json",
-      beforeSend: function(xhr) {
-        xhr.setRequestHeader('X-Auth-Token', authToken);
+      url: "https://jenkins.micrantha.com/webhook/invoke",
+      crossDomain: true,
+      data: JSON.stringify({
+        content: btoa($("#post").text()),
+        file_name: $("#post-file").val()
       }),
+      contentType: "application/json; charset=utf-8",
+      dataType: "json",
+      headers: {
+        'Authorization': "Bearer " + authToken
+      },
       success: function(result) {
-        alert("Posted.");
+        console.log(result);
+        showMessage("Posted.");
       },
       failure: function(result) {
-        alert("An error occured posting.");
+        console.log(result);
+        showMessage("An error occured posting.", "error");
       }
     });
   });
