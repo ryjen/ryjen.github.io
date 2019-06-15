@@ -9,6 +9,8 @@ var order = require('gulp-order');
 var uglify = require('gulp-uglify');
 var del = require('del');
 
+const isProduction = process.env.NODE_ENV == 'production'
+
 gulp.task('clean', function() {
   return del(['static/css/**/*',
     'static/js/**/*'
@@ -24,28 +26,43 @@ gulp.task('css', function(){
   var sasSrc = gulp.src('src/css/*.scss')
     .pipe(sass({errLogToConsole: true}))
     
-  return merge(cssSrc, sasSrc)
-    .pipe(sourcemaps.init())
-    .pipe(minifyCSS())
+  var sources = merge(cssSrc, sasSrc)
+
+  if (!isProduction) {
+    sources = sources.pipe(sourcemaps.init())
+  }
+  
+  sources = sources.pipe(minifyCSS())
     .pipe(concat('app.min.css'))
-    .pipe(sourcemaps.write('maps'))
-    .pipe(gulp.dest('static/css'))
+
+  if (!isProduction) {
+    sources = sources.pipe(sourcemaps.write('maps'))
+  }
+    
+  return sources.pipe(gulp.dest('static/css'))
 });
 
 gulp.task('js', function(){
 
-  return gulp.src([
+  var sources = gulp.src([
       'src/js/*.js',
     ])
     .pipe(order([
         'simple.carousel.js',
         'app.js',
-     ]))
-    .pipe(sourcemaps.init())
-    .pipe(uglify())
+    ]))
+
+  if (!isProduction) {
+    sources = sources.pipe(sourcemaps.init())
+  }
+  
+  sources = sources.pipe(uglify())
     .pipe(concat('app.min.js'))
-    .pipe(sourcemaps.write('maps'))
-    .pipe(gulp.dest('static/js'))
+
+  if (!isProduction) {
+    sources = sources.pipe(sourcemaps.write('maps'))
+  }
+  return sources.pipe(gulp.dest('static/js'))
 });
 
 

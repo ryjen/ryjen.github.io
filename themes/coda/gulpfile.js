@@ -10,6 +10,8 @@ var uglify = require("gulp-uglify");
 var bust = require("gulp-buster");
 var del = require("del");
 
+const isProduction = process.env.NODE_ENV == 'production'
+
 gulp.task('clean', function() {
   return del(['static/css/**/*',
     'static/js/**/*',
@@ -30,7 +32,7 @@ gulp.task('css', function(){
     ])
     .pipe(sass({errLogToConsole: true}))
     
-  return merge(cssSrc, sasSrc)
+  var sources = merge(cssSrc, sasSrc)
     .pipe(order([
         "normalize.css",
         "skeleton.css",
@@ -38,18 +40,26 @@ gulp.task('css', function(){
         "coda.css",
         "print.css"
     ]))
-    .pipe(sourcemaps.init())
-    .pipe(minifyCSS())
+
+  if (!isProduction) {
+    sources = sources.pipe(sourcemaps.init())
+  }
+  
+  sources = sources.pipe(minifyCSS())
     .pipe(concat('theme.min.css'))
-    .pipe(sourcemaps.write('maps'))
-    .pipe(gulp.dest('static/css'))
+
+  if (!isProduction) {
+    sources = sources.pipe(sourcemaps.write('maps'))
+  }
+    
+  return sources.pipe(gulp.dest('static/css'))
     .pipe(bust({ fileName: 'hash.json' }))
     .pipe(gulp.dest('data/css'))
 });
 
 gulp.task('js', function(){
 
-  return gulp.src([
+  var sources = gulp.src([
       'src/js/*.js',
       'node_modules/particles.js/particles.js',
       'node_modules/jquery/dist/jquery.js',
@@ -60,11 +70,19 @@ gulp.task('js', function(){
       'highlight.pack.js',
       'jquery.js',
     ]))
-    .pipe(sourcemaps.init())
-    .pipe(uglify())
+
+  if (!isProduction) {
+    sources = sources.pipe(sourcemaps.init())
+  }
+  
+  sources = sources.pipe(uglify())
     .pipe(concat('theme.min.js'))
-    .pipe(sourcemaps.write('maps'))
-    .pipe(gulp.dest('static/js'))
+
+  if (!isProduction) {
+    sources = sources.pipe(sourcemaps.write('maps'))
+  }
+  
+  return sources.pipe(gulp.dest('static/js'))
     .pipe(bust({ fileName: 'hash.json'}))
     .pipe(gulp.dest('data/js'))
 });
