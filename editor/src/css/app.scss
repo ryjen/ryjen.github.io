@@ -120,8 +120,12 @@ body {
 
     #messages {
       display: none;
-      div {
-        border-radius: 5px;
+      .container {
+        div {
+          border-radius: 5px;
+          margin: 18px;
+          padding: 12px;
+        }
       }
     }
 

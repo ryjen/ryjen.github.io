@@ -4,12 +4,12 @@ const validFileName = /[a-z\-]+/;
 
 function showMessage(msg, type = "success") {
 
-  var msgs = $("#messages");
+  var msgs = $("#messages .container");
 
   var err = msgs.append(document.createElement("div"))
     .addClass(type).text(msg);
 
-  msgs.slideDown().delay(2000).slideUp(function() {
+  $("#messages").slideDown().delay(2000).slideUp(function() {
     err.remove();
   });
 }
