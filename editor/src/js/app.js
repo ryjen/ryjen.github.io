@@ -7,7 +7,7 @@ function showMessage(msg, type = "success") {
   var msgs = $("#messages .container");
 
   var err = msgs.append(document.createElement("div"))
-    .addClass(type).text(msg);
+    .addClass(type).addClass("message").text(msg);
 
   $("#messages").slideDown().delay(2000).slideUp(function() {
     err.remove();
