@@ -26,4 +26,4 @@ gulp.task('js', function(){
     .pipe(gulp.dest('public/js'))
 });
 
-gulp.task('default', [ 'css', 'js' ]);
+gulp.task('default', gulp.parallel( 'css', 'js' ));
