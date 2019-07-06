@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Fortunes on Slack</title>
+    <title>Mirroring git with jenkins</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta name="google-site-verification" content="jkdqcIgCmfBgfd8S0WbF3CqZ-TXSSayerVq4mqO0Fc0" />
@@ -110,79 +110,123 @@
 
 <div id="main">
 
-    <h1>Fortunes on Slack</h1>
+    <h1>Mirroring git with jenkins</h1>
 
-    <p class="timestamps">Created: January 22, 2018 </p>
+    <p class="timestamps">Created: July 5, 2019 </p>
 
     <div class="text-justify">
 
-<p><a href="https://fortunes.micrantha.com">view the service homepage</a></p>
+<h2 id="introduction">Introduction</h2>
 
-<h4 id="introduction">Introduction</h4>
+<p>For some software development projects, there may be a need to backup or mirror the repository to a different location.</p>
 
-<p>Have always enjoyed the <a href="https://en.wikipedia.org/wiki/Fortune_%28Unix%29">UNIX fortunes</a> program, ever since I was a wee <a href="https://en.wikipedia.org/wiki/Newbie">newbie</a>.  If you aren&rsquo;t familiar with it (sad), yes, its like a fortune cookie.</p>
+<p>Jenkins or other continuous integration (CI) can automate this. This log is a brief summary of how in case I need to reproduce.</p>
 
-<p>It can be more technical in nature but not always.  It also has poems, quotations, and if enabled - offensive content.</p>
+<h2 id="workflow">Workflow</h2>
 
-<p>Often I would find a fortune I&rsquo;d like to share and pipe it to a snippet from the terminal.  There has to and must be a better way!</p>
+<p>The requirement is to have a single jenkins job that synchronizes various other projects and repositories.</p>
 
-<p>This time a Slack application has appeared on my radar as a target.</p>
+<p>To do this, the job calls another job to mirror any source repository to any set of destination repositories.</p>
 
-<h4 id="man-the-sonar">Man the Sonar</h4>
+<h2 id="git-mirroring">Git Mirroring</h2>
 
-<p>Cannot engage the target without some information.</p>
+<p>Git has mirroring capability built into <a href="https://www.git-scm.com/docs/git-clone#Documentation/git-clone.txt---mirror">cloning</a> and <a href="https://www.git-scm.com/docs/git-push#Documentation/git-push.txt---mirror">pushing</a>.</p>
 
-<p>The existing fortunes database will provide plenty of content.  Fortunately (no pun intended), I&rsquo;ve already extracted the legacy flat file storage system into SQL for another project.</p>
+<p>To make the Jenkins script easier you can also pass the remote URL to push, instead of adding a remote configuration.</p>
 
-<p><code>TODO: add conversion to SQL details</code></p>
+<p><code>git push git@host.org:user/repo</code></p>
 
-<p>Had to make a few changes, a link table here, few fields there, but the gist is I have a PostgreSQL initialization script of fortunes.</p>
+<h2 id="jenkins">Jenkins</h2>
 
-<h4 id="cut-me-some-slack">Cut me some Slack</h4>
+<p>You should have a list of the possible repositories you would use.</p>
 
-<p>Got the data (got the life), how does Slack care?</p>
+<p>To allow for multiple destination repositories, add the <a href="https://wiki.jenkins.io/display/JENKINS/Extended+Choice+Parameter+plugin">Extended Choice Parameter</a>.</p>
 
-<p>The user enters a slash command and Slack will send a torpedo to my server by means of an HTTP JSON post.</p>
+<p>To keep things simple, all repositories should have the same <code>user/project</code> path.</p>
 
-<p>My server will then typically counter measure with what they call an &ldquo;Ephemeral Message&rdquo;.</p>
+<h3 id="job-git-mirror">Job: Git Mirror</h3>
 
-<p>The counter measure will have an attachment to give an option to make the message visible to the current channel (by means of another torpedo and counter measure).</p>
+<p>A new pipeline job configured with the parameters:</p>
 
-<p><code>TODO: detail more the key parts, json and oauth</code></p>
+<ul>
+<li>the source repository as a single selection from a list of repositories</li>
+<li>the destination repository as a multi selection from the list of repositories.</li>
+<li>the project path in the repositories</li>
+</ul>
 
-<h4 id="alright-captain-tell-me-about-your-ship">Alright Captain, Tell me About Your Ship</h4>
+<p>The pipeline script looks like this:</p>
 
-<p>First, say &ldquo;I was born on a pirate ship&rdquo; 5 times fast. OK, never mind.</p>
+<pre><code>node {
+  stage (&quot;Prepare&quot;) {
+    deleteDir()
+    dest = sh(returnStdout: true, script: 'echo &quot;${destination}&quot;').trim().tokenize(',')
 
-<p>This is a story about a gopher and a whale in a secure proxy.</p>
+    // skip adding new host key to jenkins
+    sh 'git config --global core.sshCommand &quot;ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no&quot;'
+  }
 
-<p>In other words, I&rsquo;m just running golang, in a docker container, behind NGINX with lets-encrypt.</p>
+  stage (&quot;Build&quot;) {
+    // create ssh key credentials for jenkins
+    sshagent(credentials: ['jenkins']) {
 
-<p><img src="/image/blog/architecture.png" alt="fortunes architecture" /></p>
+    sh 'git clone --mirror ${source}/${project_path} .'
 
-<h4 id="ok-what-if-a-torpedo-hits">OK, What if a Torpedo Hits?</h4>
+    for (int i = 0; i &lt; dest.size(); i++) {
+      sh &quot;git push --mirror ${dest[i]}/${project_path}&quot;
+    }
+  }
+}
+</code></pre>
 
-<p>Yeah, I don&rsquo;t think the world will be falling over itself to use the fortunes service, but if they do, I will start charging to spin up more droplets and a load balancer.</p>
+<h3 id="job-mirror-repositories">Job: Mirror Repositories</h3>
 
-<p>As I&rsquo;m using docker, switching to AWS Fargate is possible too with a Docker Compose file.</p>
+<p>Another pipeline job, this one configured to run on a schedule (example: every day at 12:00AM).</p>
 
-<h4 id="for-the-code-or-gopher-geeks">For the Code or Gopher Geeks</h4>
+<p>The pipeline script defines the repositories and a few functions to simplify:</p>
 
-<p>As most gophers already know, the beauty of go besides its concurrency is its simplicity and its awesome packages.</p>
+<pre><code>def dest(String... repos) {
+  return string(name: &quot;destination&quot;, value: repos.join(','))
+}
 
-<p>For HTTP is you really don&rsquo;t need anything.  The standard library is so simple yet so effective.  Your endpoints become functions, your functions become routed to paths, and you serve. The standard template packages work great for layouts in the endpoint functions.</p>
+def src(repo) {
+  return string(name: &quot;source&quot;, value: repo)
+}
 
-<p>The server has two restful API&rsquo;s - the standard API and the Slack API. Both use the same process of serializing from the database to JSON by typical means of attributed data models.</p>
+def path(val) {
+  return string(name: &quot;project_path&quot;, value: val)
+}
 
-<p><code>TODO: add some code architecture details</code></p>
+node {
+  def github = 'ssh://git@github.com'
+  def bitbucket = 'ssh://git@bitbucket.org'
+  def micrantha = 'ssh://git@git.micrantha.com:2222'
 
-<h4 id="conclusion">Conclusion</h4>
+  build job: 'git_mirror', parameters: [
+    src(github),
+    dest(bitbucket, micrantha),
+    path(&quot;ryjen/blog&quot;)
+  ]
 
-<p>Random fortune cookies are fun.  Slack is fun.  Golang is awesome.  Docker is pleasing.</p>
+  build job: 'git_mirror', parameters: [
+    src(github), dest(bitbucket, micrantha),
+    path(&quot;ryjen/dotfiles&quot;)
+  ]
 
-<p>Check out <a href="https://fortunes.micrantha.com">the final solution</a> page.</p>
+  // etc...
+}
+</code></pre>
 
-<p><code>TODO: implement mobile apps</code></p>
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Not bad for a few jenkins jobs. I will enjoy the</p>
+
+<ul>
+<li>data loss redundancy</li>
+<li>organization (housekeeping)</li>
+<li>scheduling</li>
+</ul>
+
+<p>Maybe you will too. 😎</p>
 </div>
 
 </div>
@@ -208,39 +252,11 @@
 
       
 
-    <p class="pull-right">July 5, 2019</p>
-    <h4><a href="/2019/07/05/mirroring-git-with-jenkins/">Mirroring git with jenkins</a></h4>
-    <h5>A short look at automating git repository mirroring.</h5>
+    <p class="pull-right">January 22, 2018</p>
+    <h4><a href="/2018/01/22/fortunes-on-slack/">Fortunes on Slack</a></h4>
+    <h5>witty antidotes in a service</h5>
 
-     <span class="item-tag">git</span>  <span class="item-tag">mirror</span>  <span class="item-tag">jenkins</span> 
-
-</div>
-  <div class="card item bg-default clearfix">
-
-    
-    
-
-      
-
-    <p class="pull-right">February 7, 2019</p>
-    <h4><a href="/2019/02/07/a-self-hosting-journey/">A self hosting journey</a></h4>
-    <h5>Setting up your own cloud services</h5>
-
-     <span class="item-tag">self-hosting</span>  <span class="item-tag">hosting</span>  <span class="item-tag">docker</span>  <span class="item-tag">cloud</span>  <span class="item-tag">services</span>  <span class="item-tag">server</span> 
-
-</div>
-  <div class="card item bg-default clearfix">
-
-    
-    
-
-      
-
-    <p class="pull-right">February 19, 2018</p>
-    <h4><a href="/2018/02/19/deploy-docker-registry-with-dokku/">Deploy Docker Registry with Dokku</a></h4>
-    <h5>Put your own docker registry in a dokku app</h5>
-
-     <span class="item-tag">docker</span>  <span class="item-tag">registry</span>  <span class="item-tag">dokku</span> 
+     <span class="item-tag">golang</span>  <span class="item-tag">slack</span>  <span class="item-tag">api</span>  <span class="item-tag">droplet</span>  <span class="item-tag">micro-service</span>  <span class="item-tag">docker</span>  <span class="item-tag">dokku</span>  <span class="item-tag">HTTP</span>  <span class="item-tag">rest</span>  <span class="item-tag">go</span>  <span class="item-tag">fortunes</span>  <span class="item-tag">micrantha</span>  <span class="item-tag">postgres</span>  <span class="item-tag">git</span> 
 
 </div>
  
