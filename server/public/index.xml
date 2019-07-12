@@ -165,8 +165,8 @@ Mapping The core of my data access is the FieldMap structure, which determines h
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ryanjennin.gs/things/</guid>
-      <description>Books A New Earth An amazing book on consciousness and your purpose. Really formalizes subjects mentioned in Eckhart&#39;s first book the Power of Now. This is my goto read on public transit because the presence of his writing cuts through so much noise.
- Cracking the Coding Interview Found this book to be very useful, good example problems and content. Use just for your own enjoyment of solving if your not interviewing.</description>
+      <description>Tech Cross Platform Mobile Frameworks React Native, Flutter and Xamarin are most interesting to me. It is a hard task to create the holy grail framework across products you have no control over, but they seem to do it pretty well.  Blockchain A secure decentralized tech for alt-currency tech, its quite amazing what netgineers have done with it. Notably cryptokitties and for music artists Ujo.
+ Interplanetary File System Peer-to-peer for the web.</description>
     </item>
     
     <item>
@@ -193,7 +193,7 @@ Mapping The core of my data access is the FieldMap structure, which determines h
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ryanjennin.gs/resume/</guid>
-      <description>Ryan Jennings    778-240-3248   ryan78j@gmail.com   github.com/ryjen   ryanjennin.gs    An online software enthusiast since 1999, educated in computer systems from BCIT part time, experienced in the industry since 2005.  Passionate about solving problems so others do not have to, elegant simple code and learning. Mobile focused career and very well rounded technologist. Self-taught programmer since 2002, formally educated with distinction in Computer Systems at BCIT.</description>
+      <description>Ryan Jennings    778-240-3248   ryan78j@gmail.com   github.com/ryjen   ryanjennin.gs    An online software enthusiast since 1999, educated in computer systems from BCIT part time, experienced in the industry since 2007.  Passionate about solving problems, elegant simple code and learning. Mobile focused career and very well rounded technologist. Self-taught programmer since 2002, formally educated with distinction in Computer Systems at BCIT.</description>
     </item>
     
   </channel>
