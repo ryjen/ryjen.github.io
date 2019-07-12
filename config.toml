@@ -43,7 +43,7 @@ theme = "coda"
     identifier = "paint-brush"
     url    = "/doodles"
     weight = 4
-    
+
 [[menu.main]]
     name  = "things"
     identifier  = "object-ungroup"
@@ -51,18 +51,25 @@ theme = "coda"
     weight = 5
 
 [[menu.icons]]
-    url = "/resume/"
-    name = "file-o"
+    url = "https://mastodon.social/@ryjen"
+    name = "fab fa-mastodon"
+    type = "fab"
     weight = 1
 
 [[menu.icons]]
-    url = "mailto:ryan@coda.life"
-    name = "envelope-o"
-    weight = 2
-
-[[menu.icons]]
-    url = "https://github.com/ryjen/"
-    name = "github"
+    url = "https://github.com/ryjen"
+    name = "fab fa-github"
+    type = "fab"
     weight = 3
 
+[[menu.icons]]
+    url = "/resume/"
+    name = "fas fa-file"
+    weight = 1
+
+[[menu.icons]]
+    url = "mailto:robert@ryanjennin.gs"
+    name = "fas fa-envelope"
+    type = "fas"
+    weight = 2
 

@@ -8,7 +8,7 @@
 
     {{ partial "meta" . }}
 
-    {{ partial "css_theme" . }} 
+    {{ partial "css_theme" . }}
 
     {{ .Hugo.Generator }}
 
@@ -35,7 +35,7 @@
           {{ partial "brand" . }}
         </div>
         <div id="menu-toggle">
-        <i class="fa fa-bars"></i></div>
+        <i class="fas fa-bars"></i></div>
         <nav>
           {{ if .Site.Menus.main }}
           <ul class="nav navbar-nav">
@@ -43,7 +43,7 @@
             <li class="nav-toggle {{ .Name }}">
               <a href="{{ .URL }}">
                 {{ if .Identifier }}
-                <i class="fa fa-{{ .Identifier }}"></i> 
+                <i class="fas fa-{{ .Identifier }}"></i>
                 {{ end }}
                 <span class="nav-name">{{ .Name }}</span>
               </a>
@@ -55,7 +55,7 @@
           {{ if .Site.Menus.icons }}
           <ul class="nav navbar-icons">
             {{ range sort .Site.Menus.icons }}
-            <li class="navbar-icon"><a href="{{ .URL }}"><i class="fa fa-{{ .Name }}"></i></a></li>
+            <li class="navbar-icon"><a href="{{ .URL }}"><i class="{{ .Name }}"></i></a></li>
             {{ end }}
           </ul>
           {{ end }}

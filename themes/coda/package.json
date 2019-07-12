@@ -4,13 +4,13 @@
   "description": "a theme for hugo",
   "main": "gulpfile.js",
   "dependencies": {
-    "font-awesome": "^4.7.0",
     "highlightjs": "^9.10.0",
     "jquery": "^3.3.1",
     "particles.js": "^2.0.0",
     "skeleton-css": "^2.0.4"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.9.0",
     "del": "^3.0.0",
     "graceful-fs": "4.1.11",
     "gulp": "^4.0.2",

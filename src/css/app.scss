@@ -1,8 +1,6 @@
-
-$blue:      #268bd2;
+$blue: #268bd2;
 
 .thing {
-
   h4 {
     font-size: 1.2em;
     margin-top: 0;
@@ -10,23 +8,24 @@ $blue:      #268bd2;
   }
 
   p {
-    font-size:  0.8em;
+    font-size: 0.8em;
   }
 
   img {
-    width:  3em;
+    width: 3em;
     height: 4em;
     margin-right: 1em;
-    float:  left;
+    float: left;
   }
 }
 
 ul {
-  list-style: disc outside url('/image/bullet.gif');
+  list-style: disc outside url("/image/bullet.gif");
   margin-left: 12px;
 }
 
-#brand .brand, #intro .brand {
+#brand .brand,
+#intro .brand {
   opacity: 0;
 }
 
@@ -34,15 +33,17 @@ ul {
   #brand img {
     display: none;
   }
+  ul {
+    margin: auto;
+  }
 }
 
 #header.home {
-
   #brand {
     display: none;
   }
 
-  >div {
+  > div {
     text-align: center;
   }
 
@@ -56,7 +57,6 @@ ul {
 }
 
 #doodles {
-
   margin: 0 auto;
   border: none;
 
@@ -104,7 +104,8 @@ ul {
     }
   }
 
-  .next, .prev {
+  .next,
+  .prev {
     cursor: pointer;
     vertical-align: middle;
   }
@@ -119,5 +120,3 @@ ul {
   border: 1px solid silver;
   border-radius: 12px;
 }
-
-

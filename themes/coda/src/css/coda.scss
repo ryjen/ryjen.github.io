@@ -1,36 +1,35 @@
-
 // dark background tones
-$base03:    #002b36;
-$base02:    #073642;
+$base03: #002b36;
+$base02: #073642;
 
 // dark content tones
-$base01:    #586e75;
-$base00:    #657b83;
+$base01: #586e75;
+$base00: #657b83;
 
 // light content tones
-$base0:     #839496;
-$base1:     #93a1a1;
+$base0: #839496;
+$base1: #93a1a1;
 
 // light background tones
-$base2:     #eee8d5;
-$base3:     #fdf6e3;
+$base2: #eee8d5;
+$base3: #fdf6e3;
 
 // colors
-$yellow:    #b58900;
-$orange:    #cb4b16;
-$red:       #dc322f;
-$magenta:   #d33682;
-$violet:    #6c71c4;
-$blue:      #268bd2;
-$cyan:      #2aa198;
-$green:     #859900;
+$yellow: #b58900;
+$orange: #cb4b16;
+$red: #dc322f;
+$magenta: #d33682;
+$violet: #6c71c4;
+$blue: #268bd2;
+$cyan: #2aa198;
+$green: #859900;
 
 $brand-color: $green;
 $background-color: #fefefe;
 
 body {
   background-color: $background-color;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   color: $base00;
 }
 
@@ -48,15 +47,17 @@ html body a.no-link {
 }
 
 html body a.no-link:hover {
-  color:$background-color !important;
+  color: $background-color !important;
 }
 
-pre, code, kbd {
-  white-space: pre-wrap;       /* Since CSS 2.1 */
-  white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
-  white-space: -pre-wrap;      /* Opera 4-6 */
-  white-space: -o-pre-wrap;    /* Opera 7 */
-  word-wrap: break-word;       /* Internet Explorer 5.5+ */
+pre,
+code,
+kbd {
+  white-space: pre-wrap; /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+  white-space: -pre-wrap; /* Opera 4-6 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  word-wrap: break-word; /* Internet Explorer 5.5+ */
 }
 
 form {
@@ -65,7 +66,7 @@ form {
 
 #footer {
   font-size: 0.6em;
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Source Code Pro", monospace;
   margin-top: 3em;
 }
 
@@ -74,7 +75,7 @@ hr {
 }
 
 td {
-  border: none
+  border: none;
 }
 
 /* Utilities */
@@ -143,29 +144,44 @@ td {
 /* Cards */
 
 .card {
-  padding:  1em;
+  padding: 1em;
   border-radius: 10px;
-  margin-bottom:  1.5em;
+  margin-bottom: 1.5em;
 
-  h1, h2, h3, h4, h5 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
     margin: 0;
   }
 
   /* Card Customizations */
 
-  &.bg-blue, &.bg-green, &.bg-red, &.bg-orange, &.bg-brown {
+  &.bg-blue,
+  &.bg-green,
+  &.bg-red,
+  &.bg-orange,
+  &.bg-brown {
     padding: 1.5em;
   }
 
-  &.bg-orange a, &.bg-brown a {
+  &.bg-orange a,
+  &.bg-brown a {
     color: #ffd15d;
   }
 
-  &.bg-red a, &.bg-blue a, &.bg-green a {
+  &.bg-red a,
+  &.bg-blue a,
+  &.bg-green a {
     color: navajowhite;
   }
 
-  &.bg-blue a, &.bg-red a, &.bg-green a, &.bg-orange a, &.bg-brown a {
+  &.bg-blue a,
+  &.bg-red a,
+  &.bg-green a,
+  &.bg-orange a,
+  &.bg-brown a {
     &:hover {
       color: #f9b54c;
     }
@@ -175,7 +191,6 @@ td {
     margin: 0;
   }
 }
-
 
 /* Header and Navigation */
 
@@ -190,7 +205,7 @@ td {
   transition: all 0.5s ease;
 
   .nav {
-    display:  inline-block;
+    display: inline-block;
   }
 
   a {
@@ -239,13 +254,15 @@ td {
     &:last-child {
       margin-right: inherit;
     }
-    &:hover, &.active {
-      background-color: rgba($base00,0.1);
+    &:hover,
+    &.active {
+      background-color: rgba($base00, 0.1);
     }
   }
 
   .navbar-icons li {
     padding: 0;
+    min-width: 42px;
   }
 
   &.solid {
@@ -256,8 +273,9 @@ td {
     }
 
     li {
-      &:hover, &.active {
-        background-color: rgba(255,255,255,0.1);
+      &:hover,
+      &.active {
+        background-color: rgba(255, 255, 255, 0.1);
       }
 
       i {
@@ -268,11 +286,10 @@ td {
       color: $background-color;
     }
   }
-
 }
 
 .brand {
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Source Code Pro", monospace;
   font-weight: bold;
 }
 
@@ -289,8 +306,11 @@ td {
 }
 
 #main {
-
-  h1, h2, h3, h4, h5 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
     margin-top: 1em;
   }
 
@@ -307,7 +327,7 @@ td {
   .card {
     &.bg-default {
       &:nth-child(3n-2) {
-        background-color: rgba($blue,0.08);
+        background-color: rgba($blue, 0.08);
         h4 a {
           color: $blue;
         }
@@ -317,11 +337,11 @@ td {
         background-color: rgba($orange, 0.08);
         h4 a {
           color: $orange;
-        } 
+        }
       }
 
       &:nth-child(3n) {
-        background-color: rgba($green,0.08);
+        background-color: rgba($green, 0.08);
         h4 a {
           color: $green;
         }
@@ -362,18 +382,18 @@ td {
     }
 
     h5 {
-      font-size:  1em;
+      font-size: 1em;
       margin-bottom: 1em;
     }
 
     p {
-      font-size:  0.7em;
+      font-size: 0.7em;
     }
   }
 
   .item-tag {
-    font-size:  0.7em;
-    float:  left;
+    font-size: 0.7em;
+    float: left;
     margin-right: 8px;
     margin-bottom: 8px;
     padding-left: 8px;
@@ -383,19 +403,19 @@ td {
   }
 
   #related {
-    >h5 {
-      font-size:  1.2em;
+    > h5 {
+      font-size: 1.2em;
     }
 
     .item {
       background: none;
-      margin:  0 0 1em 0;
+      margin: 0 0 1em 0;
       padding: 0;
       h4 {
         font-size: 1em;
       }
       h5 {
-        font-size:  0.8em;
+        font-size: 0.8em;
       }
 
       p {
@@ -407,7 +427,7 @@ td {
     }
 
     .item-tag {
-      display:  none;
+      display: none;
     }
   }
 
@@ -428,19 +448,19 @@ td {
       padding-top: 14vh;
       font-size: 3em;
       font-weight: bold;
-      color:  $green;
+      color: $green;
       margin-bottom: 4px;
     }
 
     h3 {
-      font-size:  1.2em;
-      color:  $green;
+      font-size: 1.2em;
+      color: $green;
       margin-bottom: 2em;
     }
 
     h2 {
-      font-size:  1.5em;
-      color:  $green;
+      font-size: 1.5em;
+      color: $green;
     }
   }
 }
@@ -448,7 +468,6 @@ td {
 /* Responsiveness */
 
 @media (max-width: 1210px) {
-
   #header {
     nav {
       .nav-name {
@@ -458,9 +477,7 @@ td {
   }
 }
 
-
 @media (max-width: 1010px) {
-
   #header {
     #menu-toggle {
       display: inline-block;
@@ -500,11 +517,9 @@ td {
       display: block;
 
       li {
-        display:  inline-block;
-        padding-left:  1em;
+        display: inline-block;
+        padding-left: 1em;
       }
-
     }
   }
 }
-
