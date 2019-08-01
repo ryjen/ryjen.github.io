@@ -50,10 +50,10 @@ theme = "coda"
     url   = "/things"
     weight = 5
 
-[[menu.icons]]
-    url = "https://mastodon.social/@ryjen"
-    name = "fab fa-mastodon"
-    weight = 1
+#[[menu.icons]]
+#    url = "https://mastodon.social/@ryjen"
+#    name = "fab fa-mastodon"
+#    weight = 1
 
 [[menu.icons]]
     url = "https://github.com/ryjen"
