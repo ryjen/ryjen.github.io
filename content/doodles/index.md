@@ -22,11 +22,11 @@ title: Doodles
 </li><li>
 <img class="doodle imgbox" src="/image/doodles/doodle10.jpeg"/>
 </li><li>
+<img class="doogle imgbox" src="/image/doodles/doodle2.jpg" />
+</li><li>
 <img class="doodle imgbox" src="/image/doodles/doodle1.png" />
 </li>
 </ul>
 </td>
 <td class="next"><span>&#x2B9E;</span></td>
 </table>
-
-
