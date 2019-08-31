@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>docker on ryan jennings</title>
+    <title>Docker on ryan jennings</title>
     <link>https://ryanjennin.gs/tags/docker/</link>
-    <description>Recent content in docker on ryan jennings</description>
+    <description>Recent content in Docker on ryan jennings</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 07 Feb 2019 00:00:00 +0000</lastBuildDate>
