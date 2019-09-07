@@ -1,7 +1,7 @@
 baseurl = "https://ryanjennin.gs/"
 languageCode = "en-us"
 title = "ryan jennings"
-publishDir = "server/public"
+publishDir = "public"
 buildDrafts = false
 
 ## Enable comments by entering your Disqus shortname
