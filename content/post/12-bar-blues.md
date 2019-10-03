@@ -72,13 +72,13 @@ Applying note values to the previous pattern in the key of **C**, the 12 bar blu
 
 To break that down:
 
-1. 4 bars of I (C)
-2. 2 bars of IV (F)
-3. 2 bars of I (C)
-4. 1 bar of V (G)
-5. 1 bar of IV (F)
-6. 1 bar of I (C)
-7. 1 bar of V (G) also called the 'turnaround' back to the beginning.
+1. 4 bars of C (I)
+2. 2 bars of F (IV)
+3. 2 bars of C (I)
+4. 1 bar of G (V)
+5. 1 bar of F (IV)
+6. 1 bar of C (I)
+7. 1 bar of G (V) also called the 'turnaround' back to the beginning.
 
 Oh, how convenient, that is also **7 key changes**, just like the number of notes in a scale. **Lucky 7** I guess.
 
