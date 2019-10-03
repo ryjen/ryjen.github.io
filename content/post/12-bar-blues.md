@@ -1,0 +1,98 @@
+---
+title: 12 Bar Blues
+description: A gentle introduction to the 12 bar blues.
+date: 2019-10-02
+tags: [music, blues, lessons]
+categories: [music]
+---
+
+You might have heard of the blues, made famous as a way to make a living in the US for marginalized citizens.
+
+The story goes that the French taught the Black community music theory and unlocked a creative juice thirsting for expression.
+
+12 bar blues is very basic music lesson and is known universally by musicians who need a way to quickly join other musicians musically on the road.
+
+It is called 12 bar blues from the number of bars used to play one repetition in common time.
+
+## Scales: a quick primer
+
+The most common western scale - the major scale - has **7** notes representing **pitch**.
+
+In **any key or scale**, they can be referred to by **roman numerals**: `I-II-III-IV-V-VI-VII`
+
+In **C major** the note names are: `C-D-E-F-G-A-B`
+
+In **A major** the note names are:
+
+<pre>
+A: <b>the root</b>
+B: the second
+C: the third
+D: <b>the fourth</b>
+E: <b>the fifth</b>
+F: the sixth
+G: the seventh
+</pre>
+
+## Rhythm: a quick primer
+
+Rhythm time signatures consist of **beats** per **bar**.
+
+A **bar** is a measure of **time** for beat **duration**'s (quarter note, half note, full note).
+
+The most popular time signature **4/4** is also called common time. Each bar consists of **4 beats** of **quarter notes (1/4)**.
+
+One bar of **4/4** rhythm can be vocalized as `one and two and three and four`.
+
+## 12 bar blues: Notes
+
+The notes used in the 12 bar blues are the **root**, **fourth** and **fifth** (I - IV - V).
+
+In key of **A** from the example on scales, the notes used would be: **A** - **D** - **E**.
+
+## 12 bar blues: Rhythm
+
+The rhythm formula in terms of **bars per key change**:
+
+`4 - 2 - 2 - 1 - 1 - 1 - 1`
+
+The total of those numbers is **12**.
+
+You might also see a pattern with **4** and its sums: `4 = 2 + 2 = 1 + 1 + 1 + 1`
+
+If we apply the roman numerals **I - IV - V** from a scale to this pattern it looks like:
+
+`I I I I - IV IV - I I - V - IV - I - V`
+
+That is how the rhythm pattern looks in any key or scale.
+
+## Bringing it on home
+
+Applying note values to the previous pattern in the key of **A**, the 12 bar blues now looks like:
+
+`A A A A - D D - A A - E - D - A - E`
+
+To break that down:
+
+1. 4 bars of I (A)
+2. 2 bars of IV (D)
+3. 2 bars of I (A)
+4. 1 bar of V (E)
+5. 1 bar of IV (D)
+6. 1 bar of I (A)
+7. 1 bar of V (E) also called the 'turnaround' back to the beginning.
+
+Oh, how convenient, that is also **7 key changes**, just like the number of notes in a scale. **Lucky 7** I guess.
+
+## Practising and Next
+
+Get a feel for the notes, and use a metronome to count the rhythm per bar as you play them.
+
+There is a lot of things you can do to add flavor to the blues.
+
+- solo in major/minor scales or different modes
+- 'Walking' the notes in the scale
+- lead in/lead out notes on beats
+- 'turnaround' riffs
+- rhythm changes
+- pattern variations
