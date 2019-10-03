@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://ryanjennin.gs/2019/10/02/12-bar-blues/</loc>
+    <lastmod>2019-10-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ryanjennin.gs/2019/07/05/mirroring-git-with-jenkins/</loc>
     <lastmod>2019-07-05T00:00:00+00:00</lastmod>
   </url>
@@ -76,6 +81,12 @@
   <url>
     <loc>https://ryanjennin.gs/tags/api/</loc>
     <lastmod>2018-01-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ryanjennin.gs/tags/blues/</loc>
+    <lastmod>2019-10-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -261,6 +272,12 @@
   </url>
   
   <url>
+    <loc>https://ryanjennin.gs/tags/lessons/</loc>
+    <lastmod>2019-10-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://ryanjennin.gs/tags/linux/</loc>
     <lastmod>2018-11-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -309,6 +326,18 @@
   </url>
   
   <url>
+    <loc>https://ryanjennin.gs/tags/music/</loc>
+    <lastmod>2019-10-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ryanjennin.gs/categories/music/</loc>
+    <lastmod>2019-10-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://ryanjennin.gs/tags/network/</loc>
     <lastmod>2018-05-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -334,7 +363,7 @@
   
   <url>
     <loc>https://ryanjennin.gs/post/</loc>
-    <lastmod>2019-07-05T00:00:00+00:00</lastmod>
+    <lastmod>2019-10-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -492,7 +521,7 @@
   
   <url>
     <loc>https://ryanjennin.gs/</loc>
-    <lastmod>2019-07-05T00:00:00+00:00</lastmod>
+    <lastmod>2019-10-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
