@@ -66,7 +66,7 @@ That is how the rhythm pattern looks in any key or scale.
 
 ## Bringing it on home
 
-Applying note values to the previous pattern in the key of **A**, the 12 bar blues now looks like:
+Applying note values to the previous pattern in the key of **C**, the 12 bar blues now looks like:
 
 `C C C C - F F - C C - G - F - C - G`
 
