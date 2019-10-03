@@ -20,18 +20,16 @@ The most common western scale - the major scale - has **7** notes representing *
 
 In **any key or scale**, they can be referred to by **roman numerals**: `I-II-III-IV-V-VI-VII`
 
-In **C major** the note names are: `C-D-E-F-G-A-B`
-
-In **A major** the note names are:
+In **C major** the note names are:
 
 <pre>
-A: <b>the root</b>
-B: the second
-C: the third
-D: <b>the fourth</b>
-E: <b>the fifth</b>
-F: the sixth
-G: the seventh
+C: <b>the root</b>
+D: the second
+E: the third
+F: <b>the fourth</b>
+G: <b>the fifth</b>
+A: the sixth
+B: the seventh
 </pre>
 
 ## Rhythm: a quick primer
@@ -48,7 +46,7 @@ One bar of **4/4** rhythm can be vocalized as `one and two and three and four`.
 
 The notes used in the 12 bar blues are the **root**, **fourth** and **fifth** (I - IV - V).
 
-In key of **A** from the example on scales, the notes used would be: **A** - **D** - **E**.
+In key of **C** from the example on scales, the notes used would be: **C** - **F** - **G**.
 
 ## 12 bar blues: Rhythm
 
@@ -70,17 +68,17 @@ That is how the rhythm pattern looks in any key or scale.
 
 Applying note values to the previous pattern in the key of **A**, the 12 bar blues now looks like:
 
-`A A A A - D D - A A - E - D - A - E`
+`C C C C - F F - C C - G - F - C - G`
 
 To break that down:
 
-1. 4 bars of I (A)
-2. 2 bars of IV (D)
-3. 2 bars of I (A)
-4. 1 bar of V (E)
-5. 1 bar of IV (D)
-6. 1 bar of I (A)
-7. 1 bar of V (E) also called the 'turnaround' back to the beginning.
+1. 4 bars of I (C)
+2. 2 bars of IV (F)
+3. 2 bars of I (C)
+4. 1 bar of V (G)
+5. 1 bar of IV (F)
+6. 1 bar of I (C)
+7. 1 bar of V (G) also called the 'turnaround' back to the beginning.
 
 Oh, how convenient, that is also **7 key changes**, just like the number of notes in a scale. **Lucky 7** I guess.
 
