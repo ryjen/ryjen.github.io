@@ -18,7 +18,7 @@ It is called 12 bar blues from the number of bars used to play one repetition in
 
 The most common western scale - the major scale - has **7** notes representing **pitch**.
 
-In **any key or scale**, they can be referred to by **roman numerals**: `I-II-III-IV-V-VI-VII`
+In **any key or scale**, they can be referred to by **roman numerals**: `I · II · III · IV · V · VI · VII`
 
 In **C major** the note names are:
 
@@ -44,7 +44,7 @@ A time signature of **5/8** would mean **5 beats** of **eighth notes (♪ = 1/8)
 
 ## 12 bar blues: Chords
 
-The chords used in the 12 bar blues are the **root**, **fourth** and **fifth** (I - IV - V).
+The chords used in the 12 bar blues are the **root**, **fourth** and **fifth** (I · IV · V).
 
 Using these basic melodic notes we can create a rythm pattern for any key.
 
@@ -54,11 +54,15 @@ The **chord progression** starts out simple and progressively gets more complica
 
 ## 12 bar blues: Rhythm and Changes
 
-The 12 bar blues rhythm formula: `4 - 2 - 2 - 1 - 1 - 1 - 1` is in terms of **bars per chord progression**, meaning each value is a complete **bar** of `one two three four` in common time.
+As a intro, the 12 bar blues rhythm formula looks like
 
-If we apply the roman numerals **I - IV - V** from a scale to this pattern it looks like:
+`4 · 2 · 2 · 1 · 1 · 1 · 1`
 
-`I I I I - IV IV - I I - V - IV - I - V`
+It is in terms of **bars per chord progression**, meaning each value is a complete **bar** of `one two three four` in common time.
+
+If we apply the roman numerals **I - IV - V** from a scale to this pattern it looks more like:
+
+`I I I I · IV IV · I I · V · IV · I · V`
 
 It will make more sense in the next section so just remember the fist _chord progression_ (I to IV) is four bars followed by two bars and so on.
 
@@ -70,7 +74,7 @@ You might also see a pattern with **4** and its sums: `4 = 2 + 2 = 1 + 1 + 1 + 1
 
 Applying note values to the previous pattern in the key of **C**, the 12 bar blues now looks like:
 
-`C C C C - F F - C C - G - F - C - G`
+`C C C C · F F · C C · G · F · C · G`
 
 To break that down:
 
