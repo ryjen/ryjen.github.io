@@ -14,7 +14,7 @@ The story goes that the French taught the Black community music theory and unloc
 
 It is called 12 bar blues from the number of bars used to play one repetition in common time.
 
-## Scales: a quick primer 🎹
+## Scales: a quick primer 🎼
 
 The most common western scale - the major scale - has **7** notes representing **pitch**.
 
@@ -23,7 +23,7 @@ In **any key or scale**, they can be referred to by **roman numerals**: `I-II-II
 In **C major** the note names are:
 
 <pre>
-C: <b>the first, root or *tonic*</b>
+C: <b>the first, root or _tonic_</b>
 D: the second
 E: the third
 F: <b>the fourth</b>
@@ -34,13 +34,15 @@ B: the seventh
 
 ## Rhythm: a quick primer 🥁
 
-Rhythm time signatures consist of **beats** per **bar** 🎼.
+Rhythm time signatures consist of **beats** per **bar**.
 
-A **bar** is a measure of **time** for beat **duration**'s (quarter note, half note, full note).
+A **bar** is a measure of **time** for beat **duration**'s (quarter note ♩, eighth note ♪, etc).
+
+A time signature of **5/8** would mean **5 beats** of **eighth notes (♪ = 1/8)**. It can be vocalized as `one and two and three and four and five`.
 
 The most popular time signature **4/4** is also called common time. Each bar consists of **4 beats** of **quarter notes (♩ = 1/4)**. It can be vocalized simply as `one, two, three, four`.
 
-A time signature of **5/8** would mean **7 beats** of **eighth notes (♪ = 1/8)**. It can be vocalized as `one and two and three and four and five`.
+A time signature of **5/8** would mean **5 beats** of **eighth notes (♪ = 1/8)**. It can be vocalized as `one and two and three and four and five`.
 
 ## 12 bar blues: Notes
 
