@@ -142,14 +142,14 @@
   </url>
   
   <url>
-    <loc>https://ryanjennin.gs/tags/development/</loc>
-    <lastmod>2012-04-10T00:00:00+00:00</lastmod>
+    <loc>https://ryanjennin.gs/categories/development/</loc>
+    <lastmod>2018-02-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ryanjennin.gs/categories/development/</loc>
-    <lastmod>2018-02-19T00:00:00+00:00</lastmod>
+    <loc>https://ryanjennin.gs/tags/development/</loc>
+    <lastmod>2012-04-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -278,13 +278,13 @@
   </url>
   
   <url>
-    <loc>https://ryanjennin.gs/tags/linux/</loc>
+    <loc>https://ryanjennin.gs/categories/linux/</loc>
     <lastmod>2018-11-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ryanjennin.gs/categories/linux/</loc>
+    <loc>https://ryanjennin.gs/tags/linux/</loc>
     <lastmod>2018-11-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -314,25 +314,25 @@
   </url>
   
   <url>
-    <loc>https://ryanjennin.gs/tags/mobile/</loc>
-    <lastmod>2016-11-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://ryanjennin.gs/categories/mobile/</loc>
     <lastmod>2018-05-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ryanjennin.gs/tags/music/</loc>
-    <lastmod>2019-10-02T00:00:00+00:00</lastmod>
+    <loc>https://ryanjennin.gs/tags/mobile/</loc>
+    <lastmod>2016-11-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://ryanjennin.gs/categories/music/</loc>
+    <lastmod>2019-10-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ryanjennin.gs/tags/music/</loc>
     <lastmod>2019-10-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -404,13 +404,13 @@
   </url>
   
   <url>
-    <loc>https://ryanjennin.gs/tags/self-hosting/</loc>
+    <loc>https://ryanjennin.gs/categories/self-hosting/</loc>
     <lastmod>2019-02-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ryanjennin.gs/categories/self-hosting/</loc>
+    <loc>https://ryanjennin.gs/tags/self-hosting/</loc>
     <lastmod>2019-02-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -440,13 +440,13 @@
   </url>
   
   <url>
-    <loc>https://ryanjennin.gs/tags/spirituality/</loc>
+    <loc>https://ryanjennin.gs/categories/spirituality/</loc>
     <lastmod>2019-01-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://ryanjennin.gs/categories/spirituality/</loc>
+    <loc>https://ryanjennin.gs/tags/spirituality/</loc>
     <lastmod>2019-01-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>

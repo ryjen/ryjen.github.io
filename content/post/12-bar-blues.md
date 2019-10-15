@@ -10,9 +10,7 @@ You might have heard of the blues, made famous as a way to make a living in the 
 
 The story goes that the French taught the Black community music theory and unlocked a creative juice thirsting for expression.
 
-12 bar blues is very basic music lesson and is known universally by musicians who need a way to quickly join other musicians musically on the road.
-
-It is called 12 bar blues from the number of bars used to play one repetition in common time.
+12 bar blues is very basic music lesson and is known universally by musicians as a way to quickly join other musicians musically.
 
 ## Scales: a quick primer 🎼
 
