@@ -23,7 +23,7 @@ In **any key or scale**, they can be referred to by **roman numerals**: `I-II-II
 In **C major** the note names are:
 
 <pre>
-C: <b>the first, root or _tonic_</b>
+C: <b>the first, root or <i>tonic</i></b>
 D: the second
 E: the third
 F: <b>the fourth</b>
@@ -37,8 +37,6 @@ B: the seventh
 Rhythm time signatures consist of **beats** per **bar**.
 
 A **bar** is a measure of **time** for beat **duration**'s (quarter note ♩, eighth note ♪, etc).
-
-A time signature of **5/8** would mean **5 beats** of **eighth notes (♪ = 1/8)**. It can be vocalized as `one and two and three and four and five`.
 
 The most popular time signature **4/4** is also called common time. Each bar consists of **4 beats** of **quarter notes (♩ = 1/4)**. It can be vocalized simply as `one, two, three, four`.
 
