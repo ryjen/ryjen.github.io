@@ -88,13 +88,15 @@ Oh, how convenient, that is also **7 key changes**, just like the number of note
 
 ## Practising and Next
 
-Get a feel for the notes, and use a metronome to count the rhythm per bar as you play them.
+Get a feel for the notes, and use a metronome to count the rhythm per bar as you play them. Most people will play using the minor pentonic scale (I · flat III · IV · V · flat VII).
 
-There is a lot of things you can do to add flavor to the blues.
+**Jazz Blues** is a variation that I will leave to another post. Not quite sure which came first, but I would wager it would be a predecessor to the 12 bar blues.
 
-- solo in major/minor scales or different modes
+There is also a lot of other things you can do to add flavor to the blues.
+
 - 'Walking' the notes in the scale
 - lead in/lead out notes
 - 'turnaround' riffs
 - rhythm changes
 - pattern variations
+- solo in different modes (dorian is nice)
