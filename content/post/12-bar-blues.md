@@ -46,7 +46,7 @@ A time signature of **5/8** would mean **5 beats** of **eighth notes (♪ = 1/8)
 
 The chords used in the 12 bar blues are the **root**, **fourth** and **fifth** (I · IV · V).
 
-Using these basic melodic notes we can create a rythm pattern for any key.
+Using these basic melodic notes we can create a rhythm pattern for any key.
 
 In key of **C** from the example on scales, the notes used would be: **C** - **F** - **G**.
 
@@ -58,17 +58,15 @@ As a intro, the 12 bar blues rhythm formula looks like
 
 `4 · 2 · 2 · 1 · 1 · 1 · 1`
 
-It is in terms of **bars per chord progression**, meaning each value is a complete **bar** of `one two three four` in common time.
+It is in terms of **bars per chord progression** (4 bars of a chord followed by two bars of another and so on). The total of these values is **12** hence the title **12 bar blues**
 
-If we apply the roman numerals **I - IV - V** from a scale to this pattern it looks more like:
+If we apply the roman numerals **I - IV - V** from the 12 bar chords to this pattern it looks more like:
 
 `I I I I · IV IV · I I · V · IV · I · V`
 
-It will make more sense in the next section so just remember the fist _chord progression_ (I to IV) is four bars followed by two bars and so on.
+Which is four bars of the first, two bars of the fourth, and so on.
 
-It is also intersting that the total of those numbers is **12**, hence the name **12 bar blues**.
-
-You might also see a pattern with **4** and its sums: `4 = 2 + 2 = 1 + 1 + 1 + 1`
+You might also find it interesting to see a pattern with **4** and its sums: `4 = 2 + 2 = 1 + 1 + 1 + 1`
 
 ## Bringing it on home 🎸
 
@@ -78,13 +76,13 @@ Applying note values to the previous pattern in the key of **C**, the 12 bar blu
 
 To break that down:
 
-1. 4 bars of C (I)
-2. 2 bars of F (IV)
-3. 2 bars of C (I)
-4. 1 bar of G (V)
-5. 1 bar of F (IV)
-6. 1 bar of C (I)
-7. 1 bar of G (V) also called the 'turnaround' back to the beginning.
+1. four bars of C (I)
+2. two bars of F (IV)
+3. two bars of C (I)
+4. one bar of G (V)
+5. one bar of F (IV)
+6. one bar of C (I)
+7. one bar of G (V) - also called the 'turnaround' back to the beginning.
 
 Oh, how convenient, that is also **7 key changes**, just like the number of notes in a scale. **Lucky 7** I guess.
 
@@ -96,7 +94,7 @@ There is a lot of things you can do to add flavor to the blues.
 
 - solo in major/minor scales or different modes
 - 'Walking' the notes in the scale
-- lead in/lead out notes on beats
+- lead in/lead out notes
 - 'turnaround' riffs
 - rhythm changes
 - pattern variations
