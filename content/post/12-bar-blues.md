@@ -48,7 +48,7 @@ The chords used in the 12 bar blues are the **root**, **fourth** and **fifth** (
 
 Using these basic melodic notes we can create a rhythm pattern for any key.
 
-In key of **C** from the example on scales, the notes used would be: **C** - **F** - **G**.
+In key of **C** from the example on scales, the notes used would be: **C** · **F** · **G**.
 
 The **chord progression** starts out simple and progressively gets more complicated before repeating.
 
@@ -60,7 +60,7 @@ As a intro, the 12 bar blues rhythm formula looks like
 
 It is in terms of **bars per chord progression** (4 bars of a chord followed by two bars of another and so on). The total of these values is **12** hence the title **12 bar blues**
 
-If we apply the roman numerals **I - IV - V** from the 12 bar chords to this pattern it looks more like:
+If we apply the roman numerals **I · IV · V** from the 12 bar chords to this pattern it looks more like:
 
 `I I I I · IV IV · I I · V · IV · I · V`
 
