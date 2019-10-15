@@ -42,27 +42,29 @@ The most popular time signature **4/4** is also called common time. Each bar con
 
 A time signature of **5/8** would mean **5 beats** of **eighth notes (♪ = 1/8)**. It can be vocalized as `one and two and three and four and five`.
 
-## 12 bar blues: Notes
+## 12 bar blues: Chords
 
-The notes used in the 12 bar blues are the **root**, **fourth** and **fifth** (I - IV - V).
+The chords used in the 12 bar blues are the **root**, **fourth** and **fifth** (I - IV - V).
+
+Using these basic melodic notes we can create a rythm pattern for any key.
 
 In key of **C** from the example on scales, the notes used would be: **C** - **F** - **G**.
 
-## 12 bar blues: Rhythm
+The **chord progression** starts out simple and progressively gets more complicated before repeating.
 
-The rhythm formula in terms of **bars per key change**:
+## 12 bar blues: Rhythm and Changes
 
-`4 - 2 - 2 - 1 - 1 - 1 - 1`
-
-The total of those numbers is **12**.
-
-You might also see a pattern with **4** and its sums: `4 = 2 + 2 = 1 + 1 + 1 + 1`
+The 12 bar blues rhythm formula: `4 - 2 - 2 - 1 - 1 - 1 - 1` is in terms of **bars per chord progression**, meaning each value is a complete **bar** of `one two three four` in common time.
 
 If we apply the roman numerals **I - IV - V** from a scale to this pattern it looks like:
 
 `I I I I - IV IV - I I - V - IV - I - V`
 
-That is how the rhythm pattern looks in any key or scale.
+It will make more sense in the next section so just remember the fist _chord progression_ (I to IV) is four bars followed by two bars and so on.
+
+It is also intersting that the total of those numbers is **12**, hence the name **12 bar blues**.
+
+You might also see a pattern with **4** and its sums: `4 = 2 + 2 = 1 + 1 + 1 + 1`
 
 ## Bringing it on home 🎸
 
