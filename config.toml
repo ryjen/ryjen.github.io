@@ -65,10 +65,10 @@ theme = "coda"
     name = "fas fa-building"
     weight = 3
 
-[[menu.icons]]
-    url = "/resume/"
-    name = "fas fa-file"
-    weight = 5
+#[[menu.icons]]
+#    url = "/resume/"
+#    name = "fas fa-file"
+#    weight = 5
 
 #[[menu.icons]]
 #    url = "mailto:robert@ryanjennin.gs"
