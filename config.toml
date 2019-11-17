@@ -18,7 +18,7 @@ theme = "coda"
 
 [params]
     author = "Ryan Jennings"
-    description = "a namespace for technical and musical musings"
+    description = "burned out software industry victim extroidinaire"
     introURL = "/post"
     githubUsername = "ryjen"
     copyright  = "&copy; all rights reserved, ryan jennings"

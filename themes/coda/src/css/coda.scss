@@ -443,18 +443,26 @@ td {
     min-width: 45vh;
     min-height: 45vh;
     text-align: center;
+    padding-top: 16vh;
 
+  #avatar {
+      border-radius: 50%;
+      height: 4.5em;
+      width: 4.5em;
+      border: 15px solid $green;
+      vertical-align: sub;
+    }
     h1 {
-      padding-top: 14vh;
       font-size: 3em;
       font-weight: bold;
       color: $green;
+      margin-top: auto;
       margin-bottom: 4px;
     }
 
     h3 {
       font-size: 1.2em;
-      color: $green;
+      color: $base00;
       margin-bottom: 2em;
     }
 
