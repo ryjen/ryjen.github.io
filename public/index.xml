@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ryan jennings</title>
@@ -191,21 +191,21 @@ Mapping The core of my data access is the FieldMap structure, which determines h
     </item>
     
     <item>
-      <title>resume</title>
-      <link>https://ryanjennin.gs/resume/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ryanjennin.gs/resume/</guid>
-      <description>Ryan Jennings    778-240-3248   ryan78j@gmail.com   github.com/ryjen   ryanjennin.gs    An online software enthusiast since 1999, educated in computer systems from BCIT part time, experienced in the industry since 2007.  Passionate about solving problems, elegant simple code and learning. Mobile focused career and very well rounded technologist. Self-taught programmer since 2002, formally educated with distinction in Computer Systems at BCIT.</description>
-    </item>
-    
-    <item>
       <title>Videos</title>
       <link>https://ryanjennin.gs/music/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ryanjennin.gs/music/</guid>
       <description> SoundCloud  Videos  </description>
+    </item>
+    
+    <item>
+      <title>resume</title>
+      <link>https://ryanjennin.gs/resume/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/resume/</guid>
+      <description>Ryan Jennings    778-240-3248   ryan78j@gmail.com   github.com/ryjen   ryanjennin.gs    An online software enthusiast since 1999, educated in computer systems from BCIT part time, experienced in the industry since 2007.  Passionate about solving problems, elegant simple code and learning. Mobile focused career and very well rounded technologist. Self-taught programmer since 2002, formally educated with distinction in Computer Systems at BCIT.</description>
     </item>
     
   </channel>

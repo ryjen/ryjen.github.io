@@ -23,7 +23,7 @@
 
 
 
-    <meta name="generator" content="Hugo 0.59.1" />
+    <meta name="generator" content="Hugo 0.40.1" />
 
   </head>
   <body>
@@ -325,45 +325,44 @@ res = db_load_by_id(account_values, ACCOUNT_TABLE, acc-&gt;id);
 
 <ol>
 <li>loading columns into the field map</li>
-
-<li><p>issues the callback if provided</p>
+<li>issues the callback if provided</li>
+</ol>
 
 <pre><code class="language-c">int sql_select_query(FieldMap *table, const char *tablename, DbCallback callback, const char *constraints)
 {
-sqlite3_stmt *stmt;
-char buf[1024] = { 0 };
-char columns[1024] = { 0 };
-int column, len;
+  sqlite3_stmt *stmt;
+  char buf[1024] = { 0 };
+  char columns[1024] = { 0 };
+  int column, len;
 
-/* creates a csv list of columns */
-db_build_columns(table, columns);
+  /* creates a csv list of columns */
+  db_build_columns(table, columns);
 
-len = sprintf(buf, &quot;SELECT %s,%s FROM %s %s&quot;,
-        tablenameId(tablename), columns,
-        tablename,
-        constraints ? constraints : &quot;&quot;);
+  len = sprintf(buf, &quot;SELECT %s,%s FROM %s %s&quot;,
+            tablenameId(tablename), columns,
+            tablename,
+            constraints ? constraints : &quot;&quot;);
 
-if (sqlite3_query(buf, len, &amp;stmt) != SQL_OK) {
+  if (sqlite3_query(buf, len, &amp;stmt) != SQL_OK) {
+      return sqlite3_finalize(stmt);
+  }
+  for (err = sqlite3_step(stmt); err != SQL_DONE; err = sqlite3_step(stmt)) {
+
+      /* check for a table to load */
+      for (column = 0; table &amp;&amp; table[column].name != 0; column++) {
+
+          /* pass a pointer to the current position in the table */
+          db_load_column(stmt, column+1, &amp;table[column]);
+      }
+
+      /* check for a callback */
+      if(callback) {
+          callback(stmt);
+      }
+  }
   return sqlite3_finalize(stmt);
 }
-for (err = sqlite3_step(stmt); err != SQL_DONE; err = sqlite3_step(stmt)) {
-
-  /* check for a table to load */
-  for (column = 0; table &amp;&amp; table[column].name != 0; column++) {
-
-      /* pass a pointer to the current position in the table */
-      db_load_column(stmt, column+1, &amp;table[column]);
-  }
-
-  /* check for a callback */
-  if(callback) {
-      callback(stmt);
-  }
-}
-return sqlite3_finalize(stmt);
-}
-</code></pre></li>
-</ol>
+</code></pre>
 
 <h4 id="example-6-deeper-into-querying">Example 6 - Deeper into Querying</h4>
 
@@ -462,7 +461,7 @@ void db_load_column(sqlite3_stmt *stmt, int column, FieldMap *field)
 
 	
 	  <div id="disqus_thread"></div>
-<script type="application/javascript">
+<script>
     var disqus_config = function () {
     
     
