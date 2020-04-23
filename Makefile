@@ -4,8 +4,12 @@
 all: theme blog
 
 theme:
-	@gulp --cwd themes/coda
+	@yarn build:theme
 
 blog:
-	@gulp
-	@hugo
+	@yarn build
+
+update:
+	@yarn --cwd themes/coda
+	@yarn
+

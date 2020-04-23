@@ -19,6 +19,8 @@
     "merge-stream": "^2.0.0"
   },
   "scripts": {
+    "build:theme": "gulp --cwd themes/coda && gulp",
+    "build": "hugo",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
