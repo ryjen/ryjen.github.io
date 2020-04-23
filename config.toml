@@ -50,10 +50,10 @@ theme = "coda"
     url   = "/things"
     weight = 5
 
-[[menu.icons]]
-    url = "https://mastodon.social/@ryjen"
-    name = "fab fa-mastodon"
-    weight = 1
+#[[menu.icons]]
+#    url = "https://mastodon.social/@ryjen"
+#    name = "fab fa-mastodon"
+#    weight = 1
 
 [[menu.icons]]
     url = "https://github.com/ryjen"
@@ -70,9 +70,9 @@ theme = "coda"
 #    name = "fas fa-file"
 #    weight = 5
 
-#[[menu.icons]]
-#    url = "mailto:robert@ryanjennin.gs"
-#    name = "fas fa-envelope"
-#    type = "fas"
-#    weight = 2
+[[menu.icons]]
+    url = "mailto:robert@ryanjennin.gs"
+    name = "fas fa-envelope"
+    type = "fas"
+    weight = 2
 
