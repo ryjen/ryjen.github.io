@@ -2,6 +2,9 @@
 
 <div id="main">
 
+    {{ if .Params.ShowTitle  }}
+      <h1>{{ .Title }}</h1>
+    {{ end }}
     {{ range (.Paginator 6).Pages }} {{ partial "list-item" . }} {{ end }}
 
 </div>
@@ -16,6 +19,7 @@
             </a>
         {{ end }}
 
+
         {{ if .Paginator.HasNext }}
             <a class="pull-right" href="{{ .Paginator.Next.URL }}" rel="next">
                 <i class="fa fa-arrow-right"></i>
@@ -24,6 +28,7 @@
 
     </div>
 
+    <div class="center"><a href="/post/archive">archives</a></div>
 {{ end }}
 
 {{ partial "footer" . }}

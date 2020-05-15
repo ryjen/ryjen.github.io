@@ -44,7 +44,7 @@ A new pipeline job configured with the parameters:
 
 The pipeline script looks like this:
 
-```
+```groovy
 node {
   stage ("Prepare") {
     deleteDir()

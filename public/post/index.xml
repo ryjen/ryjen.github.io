@@ -82,16 +82,6 @@ Steps 1) mitmproxy Choose a port (ex. 8888) and start the program: mitmproxy -p 
     </item>
     
     <item>
-      <title>Deploy Docker Registry with Dokku</title>
-      <link>https://ryanjennin.gs/2018/02/19/deploy-docker-registry-with-dokku/</link>
-      <pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://ryanjennin.gs/2018/02/19/deploy-docker-registry-with-dokku/</guid>
-      <description>Prerequisites You&amp;rsquo;ll need to prepare a bit.
- A local path on the server to store registry data. For example: /mydir/registry Docker installed on the client and server machine Dokku installed on the server  For Authentication  httpasswd command is installed  For an External Registry  Dokku letsencrypt plugin installed A working domain name pointing to the dokku app. For example, https://registry.mydomain.com  Create the dokku app Create the dokku app and retag a pre-existing repository image to it.</description>
-    </item>
-    
-    <item>
       <title>Fortunes on Slack</title>
       <link>https://ryanjennin.gs/2018/01/22/fortunes-on-slack/</link>
       <pubDate>Mon, 22 Jan 2018 00:00:00 +0000</pubDate>
@@ -104,17 +94,6 @@ Often I would find a fortune I&amp;rsquo;d like to share and pipe it to a snippe
     </item>
     
     <item>
-      <title>Microsoft Dev Stack on macOS</title>
-      <link>https://ryanjennin.gs/2016/11/27/microsoft-dev-stack-on-macos/</link>
-      <pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://ryanjennin.gs/2016/11/27/microsoft-dev-stack-on-macos/</guid>
-      <description>Gonna evangelize a little bit.
-When Microsoft bought Xamarin, they did not underestimate the power of Xamarin.Forms for building cross platform UIs. Now with the release of Visual Studio for macOS and the Dotnet Core, its looks like its going to stay alive.
-Development Environment  macOS, XCode Android SDK Dotnet core Visual Studio for macOS nuget  Web ASP.NET Production Environment  Digital Ocean Dotnet core on Docker Dokku, docker based heroku  Platforms Targeted in One Solution  iOS Android Web ASP.</description>
-    </item>
-    
-    <item>
       <title>Elixir and Phoenix</title>
       <link>https://ryanjennin.gs/2015/09/09/elixir-and-phoenix/</link>
       <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate>
@@ -123,17 +102,6 @@ Development Environment  macOS, XCode Android SDK Dotnet core Visual Studio for 
       <description>Introduction 
 If you dont know phoenix framework, I&amp;rsquo;d describe it as rails for elixir. If you dont know Elixir I&amp;rsquo;d describe it as a functional language that feels like ruby for erlang.
 If you don&amp;rsquo;t know erlang it has been around a while (open-sourced in 1998) and the virtual machine is designed to be highly fault tolerant and scalable for use in telecoms, banking and instant messaging (WhatsApp).</description>
-    </item>
-    
-    <item>
-      <title>Poor Man&#39;s Polymorphism</title>
-      <link>https://ryanjennin.gs/2012/11/30/poor-mans-polymorphism/</link>
-      <pubDate>Fri, 30 Nov 2012 00:00:00 +0000</pubDate>
-      
-      <guid>https://ryanjennin.gs/2012/11/30/poor-mans-polymorphism/</guid>
-      <description>Found out that C structs can be casted between each other if the field types and ordering are the same. It is not portable code, but you can start too see how and why the virtual table and object oriented programming evolved in c++.
-As far as I know it would still be possible to write this in c++, but as always, you should definitely not.
-A Quick Example struct Animal { int eyes; } struct Dog { int eyes; /* dog specific */ int tail; } struct Human{ int eyes; /* human specific */ int brain; }  Passing humans or dogs to any function that takes an animal with a cast.</description>
     </item>
     
     <item>

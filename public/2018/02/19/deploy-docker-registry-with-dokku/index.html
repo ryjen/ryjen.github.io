@@ -116,7 +116,7 @@
 
     <div class="text-justify">
 
-<h4 id="prerequisites">Prerequisites</h4>
+<h2 id="prerequisites">Prerequisites</h2>
 
 <p>You&rsquo;ll need to prepare a bit.</p>
 
@@ -128,13 +128,13 @@
 <li><a href="http://dokku.viewdocs.io/dokku/">Dokku</a> installed on the server</li>
 </ol>
 
-<h5 id="for-authentication">For Authentication</h5>
+<h3 id="for-authentication">For Authentication</h3>
 
 <ol>
 <li>httpasswd command is installed</li>
 </ol>
 
-<h5 id="for-an-external-registry">For an External Registry</h5>
+<h3 id="for-an-external-registry">For an External Registry</h3>
 
 <ol>
 <li>Dokku <a href="https://github.com/dokku/dokku-letsencrypt">letsencrypt plugin</a> installed</li>
@@ -163,7 +163,7 @@ To persist data, a volume is used.</p>
 <ol>
 <li><p>Configure the local storage directory for the registry: <code>dokku config:set --no-restart registry REGISTRY_STORAGE_FILESYSTEM_ROOTDIRECTORY=&quot;/container/dir/registry&quot;</code></p></li>
 
-<li><p>Now add an application mount point for the local storage directory: <code>dokku storage:mount registry /mydir/registry:/container/dir/registry</code>  <em>(note: the default container location is /var/lib/registry)</em></p></li>
+<li><p>Now add an application mount point for the local storage directory: <code>dokku storage:mount registry /mydir/registry:/container/dir/registry</code> <em>(note: the default container location is /var/lib/registry)</em></p></li>
 
 <li><p>Now remove the default http port mapping: <code>dokku proxy:ports-remove registry 80</code></p></li>
 
@@ -220,7 +220,7 @@ To persist data, a volume is used.</p>
 
 <hr />
 
-<p>NGINX by default will throw an HTTP 413 error if your image is too big.  To fix that we have to disable the max HTTP body size.</p>
+<p>NGINX by default will throw an HTTP 413 error if your image is too big. To fix that we have to disable the max HTTP body size.</p>
 
 <ol>
 <li><p>Edit the configuration for the repository app: <code>vim /home/dokku/registry/nginx.conf</code></p></li>
@@ -230,7 +230,7 @@ To persist data, a volume is used.</p>
 
 <h4 id="conclusion">Conclusion</h4>
 
-<p>Super easy to get a private docker repository running on dokku.   Why would you want to?</p>
+<p>Super easy to get a private docker repository running on dokku. Why would you want to?</p>
 
 <ol>
 <li>Because you can</li>
@@ -239,7 +239,7 @@ To persist data, a volume is used.</p>
 <li>Control over your data from another country&rsquo;s jurisdiction</li>
 </ol>
 
-<p>For example, I have a docker image to run weechat with very customized configuration and only usable by me.  I only want to run it on my server and attach to it when I need to.</p>
+<p>For example, I have a docker image to run weechat with very customized configuration and only usable by me. I only want to run it on my server and attach to it when I need to.</p>
 </div>
 
 </div>

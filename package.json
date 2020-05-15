@@ -21,7 +21,7 @@
   "scripts": {
     "build:theme": "gulp --cwd themes/coda && gulp",
     "build": "hugo",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "hugo server -p 1337"
   },
   "repository": {
     "type": "git",

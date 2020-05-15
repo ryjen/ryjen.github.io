@@ -156,7 +156,7 @@
 
 <p>The pipeline script looks like this:</p>
 
-<pre><code>node {
+<pre><code class="language-groovy">node {
   stage (&quot;Prepare&quot;) {
     deleteDir()
     dest = sh(returnStdout: true, script: 'echo &quot;${destination}&quot;').trim().tokenize(',')
