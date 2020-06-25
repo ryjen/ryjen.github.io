@@ -20,7 +20,7 @@ $blue: #268bd2;
 }
 
 ul {
-  list-style: disc outside url("/image/bullet.gif");
+  list-style: disc inside;// outside url("/image/bullet.gif");
   margin-left: 12px;
 }
 

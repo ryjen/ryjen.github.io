@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Fortunes on Slack</title>
+    <title>git notes as a storage mechanism</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta name="google-site-verification" content="jkdqcIgCmfBgfd8S0WbF3CqZ-TXSSayerVq4mqO0Fc0" />
@@ -110,79 +110,100 @@
 
 <div id="main">
 
-    <h1>Fortunes on Slack</h1>
+    <h1>git notes as a storage mechanism</h1>
 
-    <p class="timestamps">Created: January 22, 2018 </p>
+    <p class="timestamps">Created: June 25, 2020 </p>
 
     <div class="text-justify">
 
-<p><a href="https://fortunes.micrantha.com">view the service homepage</a></p>
+<p>Am working on a project build tool to make repeatable tasks for <a href="https://micrantha.com">Micrantha</a> projects easier.</p>
 
-<h4 id="introduction">Introduction</h4>
+<p>A module of this tool is automatic versioning using <a href="https://semver.org/">semantic version</a>.</p>
 
-<p>Have always enjoyed the <a href="https://en.wikipedia.org/wiki/Fortune_%28Unix%29">UNIX fortunes</a> program, ever since I was a wee <a href="https://en.wikipedia.org/wiki/Newbie">newbie</a>.  If you aren&rsquo;t familiar with it (sad), yes, its like a fortune cookie.</p>
+<h2 id="the-versioning">The versioning</h2>
 
-<p>It can be more technical in nature but not always.  It also has poems, quotations, and if enabled - offensive content.</p>
+<p>The way I wanted the versioning to work is to have <strong>thresholds</strong> for when a version component auto-increments.</p>
 
-<p>Often I would find a fortune I&rsquo;d like to share and pipe it to a snippet from the terminal.  There has to and must be a better way!</p>
+<p>For example:</p>
 
-<p>This time a Slack application has appeared on my radar as a target.</p>
+<ul>
+<li>A <strong>patch</strong> version will increment after <strong>300</strong> builds</li>
+<li>A <strong>minor</strong> version will increment after <strong>100</strong> patch builds</li>
+</ul>
 
-<h4 id="man-the-sonar">Man the Sonar</h4>
+<p>This is almost like a feature that some projects can use as a reminder to bump a version if there are breaking changes.</p>
 
-<p>Cannot engage the target without some information.</p>
+<p>For every build, the build number is incremented, and thus potentially the rest of the version.</p>
 
-<p>The existing fortunes database will provide plenty of content.  Fortunately (no pun intended), I&rsquo;ve already extracted the legacy flat file storage system into SQL for another project.</p>
+<p>A question that arose, is where does one store a build number that:</p>
 
-<p><code>TODO: add conversion to SQL details</code></p>
+<ol>
+<li>Changes often</li>
+<li>Differentiates between users?</li>
+</ol>
 
-<p>Had to make a few changes, a link table here, few fields there, but the gist is I have a PostgreSQL initialization script of fortunes.</p>
+<h2 id="storing-a-build-number">Storing a build number</h2>
 
-<h4 id="cut-me-some-slack">Cut me some Slack</h4>
+<p>My initial attempt was to store the build number is a hidden file in the project.</p>
 
-<p>Got the data (got the life), how does Slack care?</p>
+<p>Which is fine and worked, but the sheer amount of foreseeable conflicts is enough to make anyone rethink that approach.</p>
 
-<p>The user enters a slash command and Slack will send a torpedo to my server by means of an HTTP JSON post.</p>
+<p>And really, why should build information exist in a source repository.  A build is the action with the object, not the object.</p>
 
-<p>My server will then typically counter measure with what they call an &ldquo;Ephemeral Message&rdquo;.</p>
+<h3 id="tags-attempt">Tags Attempt</h3>
 
-<p>The counter measure will have an attachment to give an option to make the message visible to the current channel (by means of another torpedo and counter measure).</p>
+<p>Storing release versions in <strong>git-tags</strong> is accepted practice.</p>
 
-<p><code>TODO: detail more the key parts, json and oauth</code></p>
+<p>It was conceivable that tags could also be used for a build number.</p>
 
-<h4 id="alright-captain-tell-me-about-your-ship">Alright Captain, Tell me About Your Ship</h4>
+<p>Experimenting a bit I tried tagging from a release tag with a build number under a prefix (like <strong>build/20</strong>).</p>
 
-<p>First, say &ldquo;I was born on a pirate ship&rdquo; 5 times fast. OK, never mind.</p>
+<p>But to retrieve the build number, one would have to rely on <strong>git-describe</strong> or a sorted tag list to pop from.</p>
 
-<p>This is a story about a gopher and a whale in a secure proxy.</p>
+<p>a)  I could not get git-describe to use the latest build tag
+b)  why do I need a list of tags for every build?</p>
 
-<p>In other words, I&rsquo;m just running golang, in a docker container, behind NGINX with lets-encrypt.</p>
+<p>In any case, it was not fruitful and I looked for alternatives.</p>
 
-<p><img src="/image/blog/architecture.png" alt="fortunes architecture" /></p>
+<h3 id="git-notes">Git Notes</h3>
 
-<h4 id="ok-what-if-a-torpedo-hits">OK, What if a Torpedo Hits?</h4>
+<p>Using <a href="https://git-scm.com/docs/git-notes">git-notes</a> as a secondary storage method could better separate the building from the source.</p>
 
-<p>Yeah, I don&rsquo;t think the world will be falling over itself to use the fortunes service, but if they do, I will start charging to spin up more droplets and a load balancer.</p>
+<p>There are some obvious advantages:</p>
 
-<p>As I&rsquo;m using docker, switching to AWS Fargate is possible too with a Docker Compose file.</p>
+<ol>
+<li>Git notes can be created on a file in the repository (the project configuration file)</li>
+<li>They are not pushed by default.</li>
+<li>They have separate merge strategies when conflicts occur</li>
+</ol>
 
-<h4 id="for-the-code-or-gopher-geeks">For the Code or Gopher Geeks</h4>
+<h2 id="the-proto">The Proto</h2>
 
-<p>As most gophers already know, the beauty of go besides its concurrency is its simplicity and its awesome packages.</p>
+<p>A quick proto in my build tool now has different storage methods.</p>
 
-<p>For HTTP is you really don&rsquo;t need anything.  The standard library is so simple yet so effective.  Your endpoints become functions, your functions become routed to paths, and you serve. The standard template packages work great for layouts in the endpoint functions.</p>
+<ol>
+<li>The <strong>library</strong> or file system in users home path <strong>~/.local</strong></li>
+<li>The <strong>repository</strong> or <strong>git-notes</strong></li>
+</ol>
 
-<p>The server has two restful API&rsquo;s - the standard API and the Slack API. Both use the same process of serializing from the database to JSON by typical means of attributed data models.</p>
+<p>I now store a JSON of a semantic version for the project configuration file that gets updated every build.</p>
 
-<p><code>TODO: add some code architecture details</code></p>
+<p>And I can sync between storage methods if necessary.</p>
 
-<h4 id="conclusion">Conclusion</h4>
+<h2 id="the-reality-and-todo">The Reality and TODO</h2>
 
-<p>Random fortune cookies are fun.  Slack is fun.  Golang is awesome.  Docker is pleasing.</p>
+<p>I have not tested merge conflicts with git notes.</p>
 
-<p>Check out <a href="https://fortunes.micrantha.com">the final solution</a> page.</p>
+<p>If they prove to be just as problematic as a file in the repository there is a backup plan:</p>
 
-<p><code>TODO: implement mobile apps</code></p>
+<ol>
+<li>Have a note just for the build numbers in a line based record</li>
+<li>Change the merge strategy to <strong>cat_sort_uniq</strong> to take the diff and sort removing duplicates</li>
+<li>The build number is the last/first record</li>
+<li>Reset/clear when the patch version increments</li>
+</ol>
+
+<p>Eventually will write some unit tests 🤦 or hit a conflict between my machines and see.</p>
 </div>
 
 </div>
@@ -208,20 +229,6 @@
 
       
 
-    <p class="pull-right">June 25, 2020</p>
-    <h4><a href="/2020/06/25/git-notes-as-a-storage-mechanism/">git notes as a storage mechanism</a></h4>
-    <h5>a small blurb on using git notes for versioning</h5>
-
-     <span class="item-tag">git</span>  <span class="item-tag">version</span>  <span class="item-tag">notes</span> 
-
-</div>
-  <div class="card item bg-default clearfix">
-
-    
-    
-
-      
-
     <p class="pull-right">July 5, 2019</p>
     <h4><a href="/2019/07/05/mirroring-git-with-jenkins/">Mirroring git with jenkins</a></h4>
     <h5>A short look at automating git repository mirroring.</h5>
@@ -236,11 +243,11 @@
 
       
 
-    <p class="pull-right">February 7, 2019</p>
-    <h4><a href="/2019/02/07/a-self-hosting-journey/">A self hosting journey</a></h4>
-    <h5>Setting up your own cloud services</h5>
+    <p class="pull-right">January 22, 2018</p>
+    <h4><a href="/2018/01/22/fortunes-on-slack/">Fortunes on Slack</a></h4>
+    <h5>witty antidotes in a service</h5>
 
-     <span class="item-tag">self-hosting</span>  <span class="item-tag">hosting</span>  <span class="item-tag">docker</span>  <span class="item-tag">cloud</span>  <span class="item-tag">services</span>  <span class="item-tag">server</span> 
+     <span class="item-tag">golang</span>  <span class="item-tag">slack</span>  <span class="item-tag">api</span>  <span class="item-tag">droplet</span>  <span class="item-tag">micro-service</span>  <span class="item-tag">docker</span>  <span class="item-tag">dokku</span>  <span class="item-tag">HTTP</span>  <span class="item-tag">rest</span>  <span class="item-tag">go</span>  <span class="item-tag">fortunes</span>  <span class="item-tag">micrantha</span>  <span class="item-tag">postgres</span>  <span class="item-tag">git</span> 
 
 </div>
  

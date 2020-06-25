@@ -124,6 +124,10 @@ html body {
   }
 
   a:hover {
+    color: $red;
+  }
+
+  a:visited {
     color: $violet;
   }
 
@@ -462,6 +466,8 @@ td {
 
   h3 {
     font-size: 1.75rem;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed rgba($green, 0.3);
   }
 
   h4 {
@@ -499,34 +505,6 @@ td {
     background-color: RGBA($highlight, 0.1);
   }
 
-  #related {
-    > h5 {
-      font-size: 1.2rem;
-    }
-
-    .item {
-      background: none;
-      margin: 0 0 1em 0;
-      padding: 0;
-      h4 {
-        font-size: 1rem;
-      }
-      h5 {
-        font-size: 0.8rem;
-      }
-
-      p {
-        float: none;
-        margin: 0;
-        font-size: 0.7rem;
-        font-style: italic;
-      }
-    }
-
-    .item-tag {
-      display: none;
-    }
-  }
 
   .logo {
     width: 2rem;
@@ -567,6 +545,34 @@ td {
       font-size: 1.5rem;
       color: $green;
     }
+  }
+}
+#related {
+  > h5 {
+    font-size: 1.5rem;
+  }
+
+  .item {
+    background: none;
+    margin: 0 0 1em 0;
+    padding: 0;
+    h4 {
+      font-size: 1.3rem;
+    }
+    h5 {
+      font-size: 1rem;
+    }
+
+    p {
+      float: none;
+      margin: 0;
+      font-size: 0.8rem;
+      font-style: italic;
+    }
+  }
+
+  .item-tag {
+    display: none;
   }
 }
 
