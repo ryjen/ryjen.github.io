@@ -20,7 +20,7 @@ For example:
 - A **patch** version will increment after **300** builds
 - A **minor** version will increment after **100** patch builds
 
-This is almost like a feature that some projects can use as a reminder to bump a version if there are breaking changes.
+This is a potential feature that projects can use as a reminder to bump a version if there are breaking changes.
 
 For every build, the build number is incremented, and thus potentially the rest of the version.
 
@@ -31,7 +31,7 @@ A question that arose, is where does one store a build number that:
 
 ## Storing a build number
 
-My initial attempt was to store the build number is a hidden file in the project.
+My initial attempt was to store the build number as a hidden file in the project.
 
 Which is fine and worked, but the sheer amount of foreseeable conflicts is enough to make anyone rethink that approach.
 
@@ -47,8 +47,8 @@ Experimenting a bit I tried tagging from a release tag with a build number under
 
 But to retrieve the build number, one would have to rely on **git-describe** or a sorted tag list to pop from.
 
-a)  I could not get git-describe to use the latest build tag
-b)  why do I need a list of tags for every build?
+1.  I could not get git-describe to use the latest build tag
+2.  why do I need a list of tags for every build?
 
 In any case, it was not fruitful and I looked for alternatives.
 
@@ -59,8 +59,12 @@ Using [git-notes](https://git-scm.com/docs/git-notes) as a secondary storage met
 There are some obvious advantages:
 
 1.  Git notes can be created on a file in the repository (the project configuration file)
-2.  They are not pushed by default.
+2.  They are not pushed by default
 3.  They have separate merge strategies when conflicts occur
+
+This seems ideal. Might as well put notes with the current version on commits too with a hook.
+
+To push the notes is a little ugly, put doable with an alias/subcommand or by configuration (part of the project init step).
 
 ## The Proto
 
@@ -69,7 +73,7 @@ A quick proto in my build tool now has different storage methods.
 1. The **library** or file system in users home path **~/.local**
 2. The **repository** or **git-notes**
 
-I now store a JSON of a semantic version for the project configuration file that gets updated every build.
+The note is a JSON of a semantic version for the project configuration file that gets updated every build.
 
 And I can sync between storage methods if necessary.
 

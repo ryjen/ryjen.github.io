@@ -21,7 +21,7 @@
 A module of this tool is automatic versioning using semantic version.
 The versioning The way I wanted the versioning to work is to have thresholds for when a version component auto-increments.
 For example:
- A patch version will increment after 300 builds A minor version will increment after 100 patch builds  This is almost like a feature that some projects can use as a reminder to bump a version if there are breaking changes.</description>
+ A patch version will increment after 300 builds A minor version will increment after 100 patch builds  This is a potential feature that projects can use as a reminder to bump a version if there are breaking changes.</description>
     </item>
     
   </channel>
