@@ -1,7 +1,6 @@
 ---
 title: git notes as a storage mechanism
 description: a small blurb on using git notes for versioning
-draft: true
 date: 2020-06-25
 tags: [git, version, notes]
 categories: [programming, software]
@@ -67,6 +66,8 @@ This seems ideal. Might as well put notes with the current version on commits to
 
 To push the notes is a little ugly, put doable with an alias/subcommand or by configuration (part of the project init step).
 
+As the build versions must be semi consistent and sequential, the note must be created on a reference that will not change.
+
 ## The Proto
 
 A quick proto in my build tool now has different storage methods.
@@ -74,9 +75,11 @@ A quick proto in my build tool now has different storage methods.
 1. The **library** or file system in users home path **~/.local**
 2. The **repository** or **git-notes**
 
-The note is a JSON of a semantic version for the project configuration file that gets updated every build.
+If the repository storage will try to use build notes on the first commit.  One could use release tags as well but I am not sure if there is a benefit to having more than one build note.
 
-And I can sync between storage methods if necessary.
+If there are no commits, then versioning switches back to the library.
+
+And syncing between or specifying storage methods is possible.
 
 ## The Reality and TODO
 

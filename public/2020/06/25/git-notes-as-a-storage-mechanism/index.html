@@ -183,6 +183,8 @@
 
 <p>To push the notes is a little ugly, put doable with an alias/subcommand or by configuration (part of the project init step).</p>
 
+<p>As the build versions must be semi consistent and sequential, the note must be created on a reference that will not change.</p>
+
 <h2 id="the-proto">The Proto</h2>
 
 <p>A quick proto in my build tool now has different storage methods.</p>
@@ -192,9 +194,11 @@
 <li>The <strong>repository</strong> or <strong>git-notes</strong></li>
 </ol>
 
-<p>The note is a JSON of a semantic version for the project configuration file that gets updated every build.</p>
+<p>If the repository storage will try to use build notes on the first commit.  One could use release tags as well but I am not sure if there is a benefit to having more than one build note.</p>
 
-<p>And I can sync between storage methods if necessary.</p>
+<p>If there are no commits, then versioning switches back to the library.</p>
+
+<p>And syncing between or specifying storage methods is possible.</p>
 
 <h2 id="the-reality-and-todo">The Reality and TODO</h2>
 
