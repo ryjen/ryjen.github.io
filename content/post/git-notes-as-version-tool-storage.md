@@ -1,6 +1,7 @@
 ---
 title: git notes as a storage mechanism
 description: a small blurb on using git notes for versioning
+draft: true
 date: 2020-06-25
 tags: [git, version, notes]
 categories: [programming, software]
