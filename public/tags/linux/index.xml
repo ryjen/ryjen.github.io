@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Linux on ryan jennings</title>
+    <title>linux on ryan jennings</title>
     <link>https://ryanjennin.gs/tags/linux/</link>
-    <description>Recent content in Linux on ryan jennings</description>
+    <description>Recent content in linux on ryan jennings</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 05 Nov 2018 00:00:00 +0000</lastBuildDate>
@@ -18,8 +18,7 @@
       
       <guid>https://ryanjennin.gs/2018/11/05/favourite-nixisms/</guid>
       <description>Introduction A log to myself of things I like about Unix type systems. In case I forget why someday.
-Dotfiles files in braille? are they for the blind?
-Dotfiles in Linux are hidden files preceded with a period. Depending on the program, they are used for configuration in your home directory.
+Dotfiles files in braille? are they for the blind?Dotfiles in Linux are hidden files preceded with a period. Depending on the program, they are used for configuration in your home directory.
 It is common to have a set of dotfiles that you use regularly on different computer systems.
 There are many ways and tools to manage your dotfiles.</description>
     </item>

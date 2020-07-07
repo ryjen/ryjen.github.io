@@ -8,6 +8,7 @@ var merge = require('merge-stream');
 var order = require('gulp-order');
 var uglify = require('gulp-uglify');
 var del = require('del');
+var imagemin = require('gulp-imagemin');
 
 const isProduction = process.env.NODE_ENV == 'production'
 
@@ -65,11 +66,20 @@ gulp.task('js', function(){
   return sources.pipe(gulp.dest('static/js'))
 });
 
+gulp.task('img', function() {
+  var sources = gulp.src([
+    'src/img/**',
+  ])
+
+  sources = sources.pipe(imagemin())
+
+  return sources.pipe(gulp.dest('static/image'))
+});
 
 gulp.task('watch', function() {
     gulp.watch('src/css/*.scss', ['css']);
     gulp.watch('src/js/*.js', ['js']);
 });
 
-gulp.task('default', gulp.series('clean', gulp.parallel('css', 'js')));
+gulp.task('default', gulp.series('clean', gulp.parallel('css', 'js', 'img')));
 

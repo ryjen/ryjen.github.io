@@ -23,7 +23,7 @@
 
 
 
-    <meta name="generator" content="Hugo 0.40.1" />
+    <meta name="generator" content="Hugo 0.73.0" />
 
   </head>
   <body>
@@ -114,33 +114,25 @@
 
     <p class="timestamps">Created: November 30, 2012  &nbsp; | &nbsp; Updated: January 26, 2019 </p>
 
-    <div class="text-justify">
-
-<p>Found out that C structs can be casted between each other if the <strong>field types and ordering are the same</strong>.  It is not portable code, but you can start too see how and why the virtual table and object oriented programming evolved in c++.</p>
-
+    <div class="text-justify"><p>Found out that C structs can be casted between each other if the <strong>field types and ordering are the same</strong>.  It is not portable code, but you can start too see how and why the virtual table and object oriented programming evolved in c++.</p>
 <p>As far as I know it would still be possible to write this in c++, but as always, you should definitely not.</p>
-
 <h4 id="a-quick-example">A Quick Example</h4>
-
-<pre><code class="language-c">struct Animal {
-  int eyes;
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#66d9ef">struct</span> Animal {
+  <span style="color:#66d9ef">int</span> eyes;
 }
 
-struct Dog {
-  int eyes;
-  /* dog specific */
-  int tail;
+<span style="color:#66d9ef">struct</span> Dog {
+  <span style="color:#66d9ef">int</span> eyes;
+  <span style="color:#75715e">/* dog specific */</span>
+  <span style="color:#66d9ef">int</span> tail;
 }
 
-struct Human{
-  int eyes;
-  /* human specific */
-  int brain;
+<span style="color:#66d9ef">struct</span> Human{
+  <span style="color:#66d9ef">int</span> eyes;
+  <span style="color:#75715e">/* human specific */</span>
+  <span style="color:#66d9ef">int</span> brain;
 }
-</code></pre>
-
-<p>Passing humans or dogs to any function that takes an animal with a cast.</p>
-
+</code></pre></div><p>Passing humans or dogs to any function that takes an animal with a cast.</p>
 <pre><code>int look(Animal *this, int object) {
   this-&gt;eyes = object;
 }
@@ -148,8 +140,7 @@ struct Human{
 Dog *dog = new_dog();
 
 look((Animal*) dog, obj);
-</code></pre>
-</div>
+</code></pre></div>
 
 </div>
 
@@ -210,7 +201,7 @@ look((Animal*) dog, obj);
 
 	
 	  <div id="disqus_thread"></div>
-<script>
+<script type="application/javascript">
     var disqus_config = function () {
     
     
@@ -266,7 +257,7 @@ look((Animal*) dog, obj);
 
 
 <div class="center">
-	&copy; all rights reserved, ryan jennings
+	© all rights reserved, ryan jennings
 </div>
 
 </div>

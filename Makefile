@@ -1,7 +1,11 @@
 
-.PHONY: theme blog all
+.PHONY: setup theme blog all
 
-all: theme blog
+all: setup theme blog
+
+setup:
+	@yarn install
+	@yarn --cwd themes/coda install
 
 theme:
 	@yarn build:theme
