@@ -6,10 +6,37 @@
     <description>Recent content in Tags on ryan jennings</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 02 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 25 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://ryanjennin.gs/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>git</title>
+      <link>https://ryanjennin.gs/tags/git/</link>
+      <pubDate>Thu, 25 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>notes</title>
+      <link>https://ryanjennin.gs/tags/notes/</link>
+      <pubDate>Thu, 25 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/tags/notes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>version</title>
+      <link>https://ryanjennin.gs/tags/version/</link>
+      <pubDate>Thu, 25 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/tags/version/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>blues</title>
@@ -35,15 +62,6 @@
       <pubDate>Wed, 02 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://ryanjennin.gs/tags/music/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>git</title>
-      <link>https://ryanjennin.gs/tags/git/</link>
-      <pubDate>Fri, 05 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://ryanjennin.gs/tags/git/</guid>
       <description></description>
     </item>
     
@@ -201,19 +219,9 @@
     </item>
     
     <item>
-<<<<<<< HEAD
-      <title>Git</title>
-      <link>https://ryanjennin.gs/tags/git/</link>
-      <pubDate>Thu, 25 Jun 2020 00:00:00 +0000</pubDate>
-||||||| constructed merge base
-      <title>Git</title>
-      <link>https://ryanjennin.gs/tags/git/</link>
-      <pubDate>Fri, 05 Jul 2019 00:00:00 +0000</pubDate>
-=======
       <title>unix</title>
       <link>https://ryanjennin.gs/tags/unix/</link>
       <pubDate>Mon, 05 Nov 2018 00:00:00 +0000</pubDate>
->>>>>>> new post, minify images
       
       <guid>https://ryanjennin.gs/tags/unix/</guid>
       <description></description>
@@ -391,28 +399,9 @@
     </item>
     
     <item>
-<<<<<<< HEAD
-      <title>Notes</title>
-      <link>https://ryanjennin.gs/tags/notes/</link>
-      <pubDate>Thu, 25 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://ryanjennin.gs/tags/notes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Phoenix</title>
-      <link>https://ryanjennin.gs/tags/phoenix/</link>
-      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate>
-||||||| constructed merge base
-      <title>Phoenix</title>
-      <link>https://ryanjennin.gs/tags/phoenix/</link>
-      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate>
-=======
       <title>dotnet</title>
       <link>https://ryanjennin.gs/tags/dotnet/</link>
       <pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate>
->>>>>>> new post, minify images
       
       <guid>https://ryanjennin.gs/tags/dotnet/</guid>
       <description></description>
@@ -572,28 +561,9 @@
     </item>
     
     <item>
-<<<<<<< HEAD
-      <title>Version</title>
-      <link>https://ryanjennin.gs/tags/version/</link>
-      <pubDate>Thu, 25 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://ryanjennin.gs/tags/version/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Visual Studio</title>
-      <link>https://ryanjennin.gs/tags/visual-studio/</link>
-      <pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate>
-||||||| constructed merge base
-      <title>Visual Studio</title>
-      <link>https://ryanjennin.gs/tags/visual-studio/</link>
-      <pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate>
-=======
       <title>software</title>
       <link>https://ryanjennin.gs/tags/software/</link>
       <pubDate>Tue, 10 Apr 2012 00:00:00 +0000</pubDate>
->>>>>>> new post, minify images
       
       <guid>https://ryanjennin.gs/tags/software/</guid>
       <description></description>

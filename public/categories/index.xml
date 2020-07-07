@@ -6,10 +6,28 @@
     <description>Recent content in Categories on ryan jennings</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 02 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 25 Jun 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://ryanjennin.gs/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>programming</title>
+      <link>https://ryanjennin.gs/categories/programming/</link>
+      <pubDate>Thu, 25 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/categories/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>software</title>
+      <link>https://ryanjennin.gs/categories/software/</link>
+      <pubDate>Thu, 25 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/categories/software/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>music</title>
@@ -84,56 +102,18 @@
     </item>
     
     <item>
-<<<<<<< HEAD
-      <title>Programming</title>
-      <link>https://ryanjennin.gs/categories/programming/</link>
-      <pubDate>Thu, 25 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://ryanjennin.gs/categories/programming/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Self Hosting</title>
-      <link>https://ryanjennin.gs/categories/self-hosting/</link>
-      <pubDate>Thu, 07 Feb 2019 00:00:00 +0000</pubDate>
-||||||| constructed merge base
-      <title>Self Hosting</title>
-      <link>https://ryanjennin.gs/categories/self-hosting/</link>
-      <pubDate>Thu, 07 Feb 2019 00:00:00 +0000</pubDate>
-=======
       <title>development</title>
       <link>https://ryanjennin.gs/categories/development/</link>
       <pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate>
->>>>>>> new post, minify images
       
       <guid>https://ryanjennin.gs/categories/development/</guid>
       <description></description>
     </item>
     
     <item>
-<<<<<<< HEAD
-      <title>Software</title>
-      <link>https://ryanjennin.gs/categories/software/</link>
-      <pubDate>Thu, 25 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://ryanjennin.gs/categories/software/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Spirituality</title>
-      <link>https://ryanjennin.gs/categories/spirituality/</link>
-      <pubDate>Sat, 12 Jan 2019 00:00:00 +0000</pubDate>
-||||||| constructed merge base
-      <title>Spirituality</title>
-      <link>https://ryanjennin.gs/categories/spirituality/</link>
-      <pubDate>Sat, 12 Jan 2019 00:00:00 +0000</pubDate>
-=======
       <title>philosophy</title>
       <link>https://ryanjennin.gs/categories/philosophy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
->>>>>>> new post, minify images
       
       <guid>https://ryanjennin.gs/categories/philosophy/</guid>
       <description></description>

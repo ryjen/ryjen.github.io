@@ -3,7 +3,52 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://ryanjennin.gs/categories/</loc>
+    <lastmod>2020-06-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ryanjennin.gs/tags/git/</loc>
+    <lastmod>2020-06-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ryanjennin.gs/2020/06/25/git-notes-as-a-storage-mechanism/</loc>
+    <lastmod>2020-06-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ryanjennin.gs/tags/notes/</loc>
+    <lastmod>2020-06-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ryanjennin.gs/post/</loc>
+    <lastmod>2020-06-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ryanjennin.gs/categories/programming/</loc>
+    <lastmod>2020-06-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ryanjennin.gs/</loc>
+    <lastmod>2020-06-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ryanjennin.gs/categories/software/</loc>
+    <lastmod>2020-06-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ryanjennin.gs/tags/</loc>
+    <lastmod>2020-06-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ryanjennin.gs/tags/version/</loc>
     <lastmod>2020-06-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -14,11 +59,6 @@
   
   <url>
     <loc>https://ryanjennin.gs/tags/blues/</loc>
-    <lastmod>2019-10-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ryanjennin.gs/categories/</loc>
     <lastmod>2019-10-02T00:00:00+00:00</lastmod>
   </url>
   
@@ -38,27 +78,7 @@
   </url>
   
   <url>
-    <loc>https://ryanjennin.gs/post/</loc>
-    <lastmod>2019-10-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ryanjennin.gs/</loc>
-    <lastmod>2019-10-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ryanjennin.gs/tags/</loc>
-    <lastmod>2019-10-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ryanjennin.gs/categories/continuous-integration/</loc>
-    <lastmod>2019-07-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ryanjennin.gs/tags/git/</loc>
     <lastmod>2019-07-05T00:00:00+00:00</lastmod>
   </url>
   
@@ -218,18 +238,8 @@
   </url>
   
   <url>
-<<<<<<< HEAD
-    <loc>https://ryanjennin.gs/tags/git/</loc>
-    <lastmod>2020-06-25T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-||||||| constructed merge base
-    <loc>https://ryanjennin.gs/tags/git/</loc>
-    <lastmod>2019-07-05T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-=======
     <loc>https://ryanjennin.gs/tags/proxy/</loc>
     <lastmod>2018-05-16T00:00:00+00:00</lastmod>
->>>>>>> new post, minify images
   </url>
   
   <url>
@@ -358,24 +368,8 @@
   </url>
   
   <url>
-<<<<<<< HEAD
-    <loc>https://ryanjennin.gs/tags/notes/</loc>
-    <lastmod>2020-06-25T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ryanjennin.gs/tags/phoenix/</loc>
-    <lastmod>2015-09-09T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-||||||| constructed merge base
-    <loc>https://ryanjennin.gs/tags/phoenix/</loc>
-    <lastmod>2015-09-09T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-=======
     <loc>https://ryanjennin.gs/tags/xamarin/</loc>
     <lastmod>2016-11-27T00:00:00+00:00</lastmod>
->>>>>>> new post, minify images
   </url>
   
   <url>
@@ -389,18 +383,8 @@
   </url>
   
   <url>
-<<<<<<< HEAD
-    <loc>https://ryanjennin.gs/post/</loc>
-    <lastmod>2020-06-25T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-||||||| constructed merge base
-    <loc>https://ryanjennin.gs/post/</loc>
-    <lastmod>2019-10-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-=======
     <loc>https://ryanjennin.gs/2015/09/09/elixir-and-phoenix/</loc>
     <lastmod>2015-09-09T00:00:00+00:00</lastmod>
->>>>>>> new post, minify images
   </url>
   
   <url>
@@ -409,24 +393,8 @@
   </url>
   
   <url>
-<<<<<<< HEAD
-    <loc>https://ryanjennin.gs/categories/programming/</loc>
-    <lastmod>2020-06-25T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ryanjennin.gs/tags/proxy/</loc>
-    <lastmod>2018-05-16T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-||||||| constructed merge base
-    <loc>https://ryanjennin.gs/tags/proxy/</loc>
-    <lastmod>2018-05-16T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-=======
     <loc>https://ryanjennin.gs/tags/phoenix/</loc>
     <lastmod>2015-09-09T00:00:00+00:00</lastmod>
->>>>>>> new post, minify images
   </url>
   
   <url>
@@ -480,24 +448,8 @@
   </url>
   
   <url>
-<<<<<<< HEAD
-    <loc>https://ryanjennin.gs/categories/software/</loc>
-    <lastmod>2020-06-25T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ryanjennin.gs/tags/spirituality/</loc>
-    <lastmod>2019-01-12T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-||||||| constructed merge base
-    <loc>https://ryanjennin.gs/tags/spirituality/</loc>
-    <lastmod>2019-01-12T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-=======
     <loc>https://ryanjennin.gs/2012/04/10/best-programming-quotes/</loc>
     <lastmod>2012-04-10T00:00:00+00:00</lastmod>
->>>>>>> new post, minify images
   </url>
   
   <url>
@@ -528,23 +480,7 @@
   </url>
   
   <url>
-<<<<<<< HEAD
-    <loc>https://ryanjennin.gs/tags/version/</loc>
-    <lastmod>2020-06-25T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://ryanjennin.gs/categories/version-control/</loc>
-    <lastmod>2019-07-05T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-||||||| constructed merge base
-    <loc>https://ryanjennin.gs/categories/version-control/</loc>
-    <lastmod>2019-07-05T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-=======
     <loc>https://ryanjennin.gs/1/01/01/ego-fading-direction-of-evolution/</loc>
->>>>>>> new post, minify images
   </url>
   
   <url>
@@ -568,17 +504,7 @@
   </url>
   
   <url>
-<<<<<<< HEAD
-    <loc>https://ryanjennin.gs/</loc>
-    <lastmod>2020-06-25T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-||||||| constructed merge base
-    <loc>https://ryanjennin.gs/</loc>
-    <lastmod>2019-10-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-=======
     <loc>https://ryanjennin.gs/categories/spiritualism/</loc>
->>>>>>> new post, minify images
   </url>
   
 </urlset>
