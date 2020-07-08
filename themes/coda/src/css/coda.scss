@@ -560,31 +560,37 @@ td {
       color: $green;
     }
   }
+
   blockquote {
     display: inline-block;
     position: relative;
     margin-left: 0;
     margin-right: 0;
     padding-left: 60px;
-    padding-right: 30px;
-
-    @extend %fa-icon;
-    @extend .fas;
-
-    &::before {
-      font-size: 30px;
-      content: fa-content($fa-var-quote-left);
-      position: absolute;
-      top: -4px;
-      left: 10px;
-    }
-
-    &::after {
-      content: fa-content($fa-var-quote-right);
-      font-size: 30px;
-      position: absolute;
-      top: 4px;
-      right: 10px;
+    padding-right: 40px;
+    margin-bottom: auto;
+  
+    span {
+      &.quote {
+        @extend %fa-icon;
+        @extend .fas;
+        font-size: 30px;
+        position: absolute;
+      }
+      &.left {
+        top: -4px;
+        left: 10px;
+        &:before {
+          content: fa-content($fa-var-quote-left);
+        }
+      }
+      &.right {
+        top: 4px;
+        right: 10px;
+        &:before {
+          content: fa-content($fa-var-quote-right);
+        }
+      }
     }
   }
 }
