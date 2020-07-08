@@ -20,9 +20,7 @@ It is apparent that **human communication** keeps **improving on a logarithmic s
 
 In the last century to today we have seen communication grow with technology. 
 
-Artificial intelligence aims to bring the mass amounts of technological data into something consumable and communicable.
-
-5g aims to increase the speed of our technological communication.
+Artificial intelligence and 5g seem to promise faster and more consumable data for communication
 
 ### Combining
 
@@ -30,7 +28,7 @@ The **strength of the ego** that enabled us to **survive without much communicat
 
 The more interconnected we become the more we cannot ignore **previously unseen problems** or rely on **physical borders to keep out change**.
 
-Most of the dysfunction we see happening today is the **unconscious reaction** to strengthen the diminishing ego (we know not what we do!).
+Most of the **dysfunction** we see happening today is the **unconscious reaction** to strengthen the diminishing ego (we know not what we do!).
 
 We have been a witness to the horrors of multiple global wars in just the latest century.
 
@@ -46,10 +44,9 @@ It is getting better (ego diminishing) and worse (reaction) at the same time, as
 
 Institutions and countries seem to either:
 
-* transfer the ownership to its people in avoidance, who are no different, so same result
+* transfer the ownership to its people in avoidance, who are no different, so same problem (and sadly more justification of the collective).
 
-* rule with a heavy hand or fear to avoid the loss of its people, but same result
-
+* rule with a heavy hand and attempt to manage ownership themselves, so same problem (and sadly more of a split that feeds back into a heavy hand)
 
 ### Outro
 
@@ -60,6 +57,8 @@ The next evolution in human communication may be more disruptive than AI or 5g w
 My personal opinion is that continuing to try and strengthen fragile cathedral like myths and institutions is dangerous and futile.  Serving only personal or collective identities.
 
 Apple's 2014 slogan "You are more powerful than you think" is an interesting one.
+
+It starts with your self.  
 
 Earth deserves better for keeping us, evolve!
 
