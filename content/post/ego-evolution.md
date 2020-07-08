@@ -18,35 +18,50 @@ And the definition of ego by [ET](https://eckharttolle.com/) 👽:
 
 It is apparent that **human communication** keeps **improving on a logarithmic scale**, starting with cave drawings, language, writing, phone, tv, internet, etc.
 
-In the last 20th century we have seen communication grow with technology. 
+In the last century to today we have seen communication grow with technology. 
 
-### Combine
+Artificial intelligence aims to bring the mass amounts of technological data into something consumable and communicable.
 
-The conclusion is that the **strength of the ego** that enabled us to **survive without communication**, is ironically somewhat **diminished with more of it**.
+5g aims to increase the speed of our technological communication.
 
-The more interconnected we become the more we cannot ignore previously unseen problems or rely on physical borders to keep out change.
+### Combining
+
+The **strength of the ego** that enabled us to **survive without much communication**, is ironically somewhat **diminished with more of it**.
+
+The more interconnected we become the more we cannot ignore **previously unseen problems** or rely on **physical borders to keep out change**.
+
+Most of the dysfunction we see happening today is the **unconscious reaction** to strengthen the diminishing ego (we know not what we do!).
+
+We have been a witness to the horrors of multiple global wars in just the latest century.
 
 ### Result
-
-The result is things are getting better (ego diminishing) and worse (reaction to strengthen) at the same time (and the worse is louder than the good, as 👽 points out).
 
 The **choices in evolution**:
 
 * continue to strengthen the egoic collectives and myths
 
-* recognize it as not who we are and unnecessary
+* recognize it, and as not who we are or unnecessary
 
-Most of the dysfunction we see happening today is the unconscious reaction to strengthen the diminishing ego.
+It is getting better (ego diminishing) and worse (reaction) at the same time, as 👽 puts it.
 
-We have been a witness to the horrors of multiple global wars in just the latest century.
- 
+Institutions and countries seem to either:
+
+* transfer the ownership to its people in avoidance, who are no different, so same result
+
+* rule with a heavy hand or fear to avoid the loss of its people, but same result
+
+
 ### Outro
 
-I feel we are on a tight rope in a circus of humanity, a balancing act trying not to annihilate ourselves
+We are on a tight rope in a circus of humanity. A balancing act trying not to annihilate ourselves.
 
-...before the next evolution in human communication becomes clear (bigger than 5g).
+The next evolution in human communication may be more disruptive than AI or 5g with nanotechnology.
 
-Continuing to try and strengthen fragile cathedral like myths and institutions is dangerous and futile serving only personal identities for the sake of the earth.
+My personal opinion is that continuing to try and strengthen fragile cathedral like myths and institutions is dangerous and futile.  Serving only personal or collective identities.
+
+Apple's 2014 slogan "You are more powerful than you think" is an interesting one.
+
+Earth deserves better for keeping us, evolve!
 
 
 
