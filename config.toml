@@ -61,6 +61,11 @@ theme = "coda"
     weight = 4
 
 [[menu.icons]]
+    url = "https://linkedin.com/in/ryjen"
+    name = "fab fa-linkedin"
+    weight = 5
+
+[[menu.icons]]
     url = "https://micrantha.com"
     name = "fas fa-building"
     weight = 3
