@@ -22,6 +22,7 @@
   "scripts": {
     "build:theme": "gulp --cwd themes/coda && gulp",
     "build": "hugo",
+    "build:dist": "hugo --minify --gc --cleanDestinationDir",
     "test": "hugo server -p 1337"
   },
   "repository": {

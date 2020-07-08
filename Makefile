@@ -13,6 +13,9 @@ theme:
 blog:
 	@yarn build
 
+dist: setup theme
+	@yarn build:dist
+
 update:
 	@yarn --cwd themes/coda
 	@yarn

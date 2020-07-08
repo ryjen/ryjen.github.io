@@ -1,5 +1,5 @@
 ---
-title: Ego Fading, Direction of Evolution
+title: Myths Fading, Direction of Evolution
 description: a look at the current state of humanity
 date: 2020-07-07
 tags: [consciousness, ego, evolution, spirituality, philosophy]
@@ -24,7 +24,7 @@ Artificial intelligence and 5g seem to promise faster and more consumable data f
 
 ### Combining
 
-The **strength of the ego** that enabled us to **survive without much communication**, is ironically somewhat **diminished with more of it**.
+The **strength of the ego** and other collective myths that enabled us to **survive without much communication**, is ironically somewhat **diminished with more of it**.
 
 The more interconnected we become the more we cannot ignore **previously unseen problems** or rely on **physical borders to keep out change**.
 
@@ -44,9 +44,9 @@ It is getting better (ego diminishing) and worse (reaction) at the same time, as
 
 Institutions and countries seem to either:
 
-* transfer the ownership to its people in avoidance, who are no different, so same problem (and sadly more justification of the collective).
+* transfer the ownership to its people in avoidance, who are no different so same problem (and sadly more justification of the collective).
 
-* rule with a heavy hand and attempt to manage ownership themselves, so same problem (and sadly more of a split that feeds back into a heavy hand)
+* rule with a heavy hand and attempt to manage ownership themselves, so same problem (and sadly more of a split that justifies a heavy hand)
 
 ### Outro
 
