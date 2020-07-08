@@ -30,6 +30,14 @@ $background-color: $base03;
 $foreground-color: $base2;
 $highlight: $base1;
 
+$fa-font-path:        "../fonts";
+
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/brands";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/regular";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/solid";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/v4-shims";
+
 @mixin rebase(
   $rebase03,
   $rebase02,
@@ -162,6 +170,7 @@ form {
 
 hr {
   margin: 2em 0;
+  border-top: 1px solid $base0;
 }
 
 td {
@@ -293,6 +302,10 @@ td {
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
+
+  .container {
+    max-width: 1300px
+  }
 
   .nav {
     display: inline-block;
@@ -539,6 +552,7 @@ td {
       font-size: 1.2rem;
       color: $base00;
       margin-bottom: 2rem;
+      border: none;
     }
 
     h2 {
@@ -546,7 +560,35 @@ td {
       color: $green;
     }
   }
+  blockquote {
+    display: inline-block;
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 60px;
+    padding-right: 30px;
+
+    @extend %fa-icon;
+    @extend .fas;
+
+    &::before {
+      font-size: 30px;
+      content: fa-content($fa-var-quote-left);
+      position: absolute;
+      top: -4px;
+      left: 10px;
+    }
+
+    &::after {
+      content: fa-content($fa-var-quote-right);
+      font-size: 30px;
+      position: absolute;
+      top: 4px;
+      right: 10px;
+    }
+  }
 }
+
 #related {
   > h5 {
     font-size: 1.5rem;
@@ -578,7 +620,7 @@ td {
 
 /* Responsiveness */
 
-@media (max-width: 1400px) {
+@media (max-width: 1300px) {
   #header {
     nav {
       .nav-name {

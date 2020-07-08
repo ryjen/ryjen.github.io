@@ -22,13 +22,14 @@ gulp.task("clean", function() {
 
 gulp.task("css", function() {
   var cssSrc = gulp.src([
-    "src/css/*.css",
     "node_modules/skeleton-css/css/*.css",
-    "node_modules/@fortawesome/fontawesome-free/css/all.css"
+    "src/css/*.css",
   ]);
 
   var sasSrc = gulp
-    .src(["src/css/*.scss"])
+    .src([
+      "src/css/*.scss",
+    ])
     .pipe(sass({ errLogToConsole: true }));
 
   var sources = merge(cssSrc, sasSrc).pipe(

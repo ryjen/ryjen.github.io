@@ -1,16 +1,17 @@
 ---
 title: Ego Fading, Direction of Evolution
-date: 2020-07-07 4:20PM
+description: a look at the current state of humanity
+date: 2020-07-07
 tags: [consciousness, ego, evolution, spirituality, philosophy]
 categories: [spiritualism, philosophy]
 ---
 Remembering a concept from the book [Sapiens](https://www.amazon.com/Sapiens-Humankind-Yuval-Noah-Harari/dp/0062316095) (paraphrasing):
 
-Ape hierarchy only existed in small groups with a limit (150 or so) with a dominant leader (alpha). This applies to humans as well, but we were able so surpass the threshold with myths and better communication.
+> Ape hierarchy only existed in small groups with a limit (150 or so) with a dominant leader (alpha). This applies to humans as well, but we were able so surpass the threshold with myths and better communication.
 
 And a [ET](https://eckharttolle.com/)'s 👽 definition of the ego:
 
-> A complete and total identification with form - a thought form or a physical form - as who you are
+> A complete and total identification with form as who you are - a thought form or a physical form.
 
 And given it seems to me **human communication** keeps **improving on a logarithmic scale**, starting with cave drawings, language, writing, phone, internet, etc.
 
