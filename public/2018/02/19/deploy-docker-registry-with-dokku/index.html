@@ -22,7 +22,7 @@
 
 
 
-    <meta name="generator" content="Hugo 0.40.1" />
+    <meta name="generator" content="Hugo 0.73.0" />
 
   </head>
   <body>
@@ -115,131 +115,121 @@
 
     <p class="timestamps">Created: February 19, 2018 </p>
 
-    <div class="text-justify">
-
-<h2 id="prerequisites">Prerequisites</h2>
-
+    <div class="text-justify"><h2 id="prerequisites">Prerequisites</h2>
 <p>You&rsquo;ll need to prepare a bit.</p>
-
-<hr />
-
+<hr>
 <ol>
 <li>A local path on the server to store registry data. For example: <code>/mydir/registry</code></li>
 <li><a href="https://www.docker.com/community-edition#/download">Docker</a> installed on the client and server machine</li>
 <li><a href="http://dokku.viewdocs.io/dokku/">Dokku</a> installed on the server</li>
 </ol>
-
 <h3 id="for-authentication">For Authentication</h3>
-
 <ol>
 <li>httpasswd command is installed</li>
 </ol>
-
 <h3 id="for-an-external-registry">For an External Registry</h3>
-
 <ol>
 <li>Dokku <a href="https://github.com/dokku/dokku-letsencrypt">letsencrypt plugin</a> installed</li>
 <li>A working domain name pointing to the dokku app. For example, <em><a href="https://registry.mydomain.com">https://registry.mydomain.com</a></em></li>
 </ol>
-
 <h3 id="create-the-dokku-app">Create the dokku app</h3>
-
 <p>Create the dokku app and retag a pre-existing repository image to it.
 To persist data, a volume is used.</p>
-
-<hr />
-
+<hr>
 <ol>
-<li><p>Create a new app named &ldquo;registry&rdquo; in dokku: <code>dokku apps:create registry</code></p></li>
-
-<li><p>Go ahead an pull the docker registry image (using alpine for reduced size): <code>docker pull ses1er/alpine-registry</code></p></li>
-
-<li><p>Now retag the image so dokku knows about it: <code>docker tag ses1er/alpine-registry dokku/registry</code></p></li>
-
-<li><p>Deploy the image to dokku: <code>dokku tags:deploy registry</code></p></li>
+<li>
+<p>Create a new app named &ldquo;registry&rdquo; in dokku: <code>dokku apps:create registry</code></p>
+</li>
+<li>
+<p>Go ahead an pull the docker registry image (using alpine for reduced size): <code>docker pull ses1er/alpine-registry</code></p>
+</li>
+<li>
+<p>Now retag the image so dokku knows about it: <code>docker tag ses1er/alpine-registry dokku/registry</code></p>
+</li>
+<li>
+<p>Deploy the image to dokku: <code>dokku tags:deploy registry</code></p>
+</li>
 </ol>
-
 <h5 id="configure-the-app">Configure the app</h5>
-
 <ol>
-<li><p>Configure the local storage directory for the registry: <code>dokku config:set --no-restart registry REGISTRY_STORAGE_FILESYSTEM_ROOTDIRECTORY=&quot;/container/dir/registry&quot;</code></p></li>
-
-<li><p>Now add an application mount point for the local storage directory: <code>dokku storage:mount registry /mydir/registry:/container/dir/registry</code> <em>(note: the default container location is /var/lib/registry)</em></p></li>
-
-<li><p>Now remove the default http port mapping: <code>dokku proxy:ports-remove registry 80</code></p></li>
-
-<li><p>And and a new one pointing to the repository: <code>dokku proxy:ports-add registry 80:5000 5000:5000</code></p></li>
+<li>
+<p>Configure the local storage directory for the registry: <code>dokku config:set --no-restart registry REGISTRY_STORAGE_FILESYSTEM_ROOTDIRECTORY=&quot;/container/dir/registry&quot;</code></p>
+</li>
+<li>
+<p>Now add an application mount point for the local storage directory: <code>dokku storage:mount registry /mydir/registry:/container/dir/registry</code> <em>(note: the default container location is /var/lib/registry)</em></p>
+</li>
+<li>
+<p>Now remove the default http port mapping: <code>dokku proxy:ports-remove registry 80</code></p>
+</li>
+<li>
+<p>And and a new one pointing to the repository: <code>dokku proxy:ports-add registry 80:5000 5000:5000</code></p>
+</li>
 </ol>
-
 <h3 id="authorization">Authorization</h3>
-
 <p>Require a valid login to create a repository.</p>
-
-<hr />
-
+<hr>
 <ol>
-<li><p>Create a directory for authorization data in the local application volume: <code>mkdir -p /mydir/registry/auth</code></p></li>
-
-<li><p>Create a username/password file: <code>htpasswd -Bn username &gt; /mydir/registry/auth/htpasswd</code> <em>(will prompt for password)</em></p></li>
-
-<li><p>Add configuration variables to dokku registry app: <code>dokku config:set --no-restart registry REGISTRY_AUTH=htpasswd REGISTRY_AUTH_HTPASSWD_REALM=&quot;My Registry&quot; REGISTRY_AUTH_HTPASSWD_PATH=/container/dir/registry/auth/htpasswd</code></p></li>
+<li>
+<p>Create a directory for authorization data in the local application volume: <code>mkdir -p /mydir/registry/auth</code></p>
+</li>
+<li>
+<p>Create a username/password file: <code>htpasswd -Bn username &gt; /mydir/registry/auth/htpasswd</code> <em>(will prompt for password)</em></p>
+</li>
+<li>
+<p>Add configuration variables to dokku registry app: <code>dokku config:set --no-restart registry REGISTRY_AUTH=htpasswd REGISTRY_AUTH_HTPASSWD_REALM=&quot;My Registry&quot; REGISTRY_AUTH_HTPASSWD_PATH=/container/dir/registry/auth/htpasswd</code></p>
+</li>
 </ol>
-
 <h3 id="external-registry">External Registry</h3>
-
 <p>To allow your registry to be remotely accessible.</p>
-
-<hr />
-
+<hr>
 <ol>
-<li><p>Add your domain to the registry dokku app: <code>dokku domains:add registry https://registry.mydomain.com</code></p></li>
-
-<li><p>Add letsencrypt to the app: <code>dokku letsencrypt registry</code> and ensure a valid certificate is always available: <code>dokku letsencrypt:auto-renew registry</code></p></li>
-
-<li><p>Remove the default HTTPS port mapping: <code>dokku proxy:ports-remove 443</code></p></li>
-
-<li><p>And add a new port mapping to the repository: <code>dokku proxy:ports-add 443:5000</code></p></li>
+<li>
+<p>Add your domain to the registry dokku app: <code>dokku domains:add registry https://registry.mydomain.com</code></p>
+</li>
+<li>
+<p>Add letsencrypt to the app: <code>dokku letsencrypt registry</code> and ensure a valid certificate is always available: <code>dokku letsencrypt:auto-renew registry</code></p>
+</li>
+<li>
+<p>Remove the default HTTPS port mapping: <code>dokku proxy:ports-remove 443</code></p>
+</li>
+<li>
+<p>And add a new port mapping to the repository: <code>dokku proxy:ports-add 443:5000</code></p>
+</li>
 </ol>
-
 <h3 id="testing">Testing</h3>
-
 <p>Does it work?</p>
-
-<hr />
-
+<hr>
 <ol>
-<li><p>Restart the server: <code>dokku ps:restart registry</code></p></li>
-
-<li><p>You can test it by logging in from a remote machine (or local if not external facing): <code>docker login --username &lt;username&gt; https://registry.mydomain.com</code></p></li>
-
-<li><p>Retag an image: <code>docker tag myimage registry.mydomain.com/username/myimage</code> and push it: <code>docker push registry.mydomain.com/username/myimage</code></p></li>
+<li>
+<p>Restart the server: <code>dokku ps:restart registry</code></p>
+</li>
+<li>
+<p>You can test it by logging in from a remote machine (or local if not external facing): <code>docker login --username &lt;username&gt; https://registry.mydomain.com</code></p>
+</li>
+<li>
+<p>Retag an image: <code>docker tag myimage registry.mydomain.com/username/myimage</code> and push it: <code>docker push registry.mydomain.com/username/myimage</code></p>
+</li>
 </ol>
-
 <h4 id="gotchas">Gotchas</h4>
-
 <p>There is always at least one.</p>
-
-<hr />
-
+<hr>
 <p>NGINX by default will throw an HTTP 413 error if your image is too big. To fix that we have to disable the max HTTP body size.</p>
-
 <ol>
-<li><p>Edit the configuration for the repository app: <code>vim /home/dokku/registry/nginx.conf</code></p></li>
-
-<li><p>In any server{} blocks add: <code>client_max_body_size 0;</code> which will disable the max body size limitation.</p></li>
+<li>
+<p>Edit the configuration for the repository app: <code>vim /home/dokku/registry/nginx.conf</code></p>
+</li>
+<li>
+<p>In any server{} blocks add: <code>client_max_body_size 0;</code> which will disable the max body size limitation.</p>
+</li>
 </ol>
-
 <h4 id="conclusion">Conclusion</h4>
-
 <p>Super easy to get a private docker repository running on dokku. Why would you want to?</p>
-
 <ol>
 <li>Because you can</li>
 <li>Private registries are generally not free</li>
 <li>Sometimes doesn&rsquo;t make sense for an image to be public</li>
 <li>Control over your data from another country&rsquo;s jurisdiction</li>
 </ol>
-
 <p>For example, I have a docker image to run weechat with very customized configuration and only usable by me. I only want to run it on my server and attach to it when I need to.</p>
 </div>
 
@@ -302,7 +292,7 @@ To persist data, a volume is used.</p>
 
 	
 	  <div id="disqus_thread"></div>
-<script>
+<script type="application/javascript">
     var disqus_config = function () {
     
     
@@ -358,7 +348,7 @@ To persist data, a volume is used.</p>
 
 
 <div class="center">
-	&copy; all rights reserved, ryan jennings
+	© all rights reserved, ryan jennings
 </div>
 
 </div>

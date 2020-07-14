@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on ryan jennings</title>
@@ -77,7 +77,8 @@ The other appealing factor is that most of the solutions can be containerized an
       <pubDate>Sat, 12 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>https://ryanjennin.gs/2019/01/12/what-ive-learned-from-4-years-of-eckhart-tolle/</guid>
-      <description>Major Lessons  Eckhart Tolle or ET is a unique individual, author and orator. After a suicidal night where he thought &amp;ldquo;I cannot live with myself any longer&amp;rdquo; and recognized the oddity of thought, as if there were two people &amp;ldquo;I&amp;rdquo; and &amp;ldquo;myself&amp;rdquo;. That recognition brought a radical inner transformation and years of intense bliss. He later learned more about what happened to him and became a &amp;ldquo;spiritual teacher&amp;rdquo;.</description>
+      <description>Major Lessons Eckhart Tolle or ET is a unique individual, author and orator. After a suicidal night where he thought &amp;ldquo;I cannot live with myself any longer&amp;rdquo; and recognized the oddity of thought, as if there were two people &amp;ldquo;I&amp;rdquo; and &amp;ldquo;myself&amp;rdquo;. That recognition brought a radical inner transformation and years of intense bliss. He later learned more about what happened to him and became a &amp;ldquo;spiritual teacher&amp;rdquo;.
+His books The Power of Now and A New Earth have been #1 on the New York Times best seller list.</description>
     </item>
     
     <item>
@@ -87,8 +88,7 @@ The other appealing factor is that most of the solutions can be containerized an
       
       <guid>https://ryanjennin.gs/2018/11/05/favourite-nixisms/</guid>
       <description>Introduction A log to myself of things I like about Unix type systems. In case I forget why someday.
-Dotfiles files in braille? are they for the blind?
-Dotfiles in Linux are hidden files preceded with a period. Depending on the program, they are used for configuration in your home directory.
+Dotfiles files in braille? are they for the blind?Dotfiles in Linux are hidden files preceded with a period. Depending on the program, they are used for configuration in your home directory.
 It is common to have a set of dotfiles that you use regularly on different computer systems.
 There are many ways and tools to manage your dotfiles.</description>
     </item>
@@ -100,7 +100,7 @@ There are many ways and tools to manage your dotfiles.</description>
       
       <guid>https://ryanjennin.gs/2018/05/16/mitmproxy-and-android/</guid>
       <description>Introduction Debugging network traffic for your app can be useful, and sometimes necessary if the data is not what is expected or inconsistent.
-The Proxy I prefer the open source proxy mitmproxy. Easy to install on OSX with homebrew.
+The Proxy I prefer the open source proxy [mitmproxy](https://mitmproxy.org =300x203). Easy to install on OSX with homebrew.
 brew install mitmproxy
 I&amp;rsquo;ll leave it up to you to explore its greatness, I just wanna clarify the android setup.
 Steps 1) mitmproxy Choose a port (ex. 8888) and start the program: mitmproxy -p 8888:</description>
@@ -124,9 +124,9 @@ Often I would find a fortune I&amp;rsquo;d like to share and pipe it to a snippe
       <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate>
       
       <guid>https://ryanjennin.gs/2015/09/09/elixir-and-phoenix/</guid>
-      <description>Introduction 
-If you dont know phoenix framework, I&amp;rsquo;d describe it as rails for elixir. If you dont know Elixir I&amp;rsquo;d describe it as a functional language that feels like ruby for erlang.
-If you don&amp;rsquo;t know erlang it has been around a while (open-sourced in 1998) and the virtual machine is designed to be highly fault tolerant and scalable for use in telecoms, banking and instant messaging (WhatsApp).</description>
+      <description>Introduction If you dont know phoenix framework, I&amp;rsquo;d describe it as rails for elixir. If you dont know Elixir I&amp;rsquo;d describe it as a functional language that feels like ruby for erlang.
+If you don&amp;rsquo;t know erlang it has been around a while (open-sourced in 1998) and the virtual machine is designed to be highly fault tolerant and scalable for use in telecoms, banking and instant messaging (WhatsApp).
+Experimenting To exercise the framework, I created yet another chat app (I know, I know).</description>
     </item>
     
     <item>
@@ -151,7 +151,7 @@ I knew that I wanted a scrolling background of some sort - in other words - para
       <description>Introduction Thought I would share some tricks I use for easy data CRUD&amp;rsquo;s in C. I&amp;rsquo;m using Sqlite here, but could apply to any database.
 Not saying its the best approach at all (nor ryjen/db), this is just how it evolved for me.
 Mapping The core of my data access is the FieldMap structure, which determines how to save each field to the database.
-/* * this is the magical table used to communicate between memory and the database */ typedef struct FieldMap { const char *name; /* name of the field */ void *value; /* a pointer to the value of the field */ int type; /* type of value */ const void *arg1; /* additional argument */ const void *arg2; /* additional argument */ int flags; /* usage flags */ } FieldMap; /* callback for custom field types */ typedef int (*CustomField) (sqlite3_stmt *, int column, FieldMap *field); typedef void (*DbCallback) (sqlite3_stmt *);  Note: these examples will create this table dynamically with an object, however this can be used as a static table.</description>
+/* * this is the magical table used to communicate between memory and the database */ typedef struct FieldMap { const char *name; /* name of the field */ void *value; /* a pointer to the value of the field */ int type; /* type of value */ const void *arg1; /* additional argument */ const void *arg2; /* additional argument */ int flags; /* usage flags */ } FieldMap; /* callback for custom field types */ typedef int (*CustomField) (sqlite3_stmt *, int column, FieldMap *field); typedef void (*DbCallback) (sqlite3_stmt *); Basically you would have to:Example 1 - Saving This high level example shows building a quick table for each field we want to save in the database.</description>
     </item>
     
     <item>
@@ -160,8 +160,7 @@ Mapping The core of my data access is the FieldMap structure, which determines h
       <pubDate>Tue, 10 Apr 2012 00:00:00 +0000</pubDate>
       
       <guid>https://ryanjennin.gs/2012/04/10/best-programming-quotes/</guid>
-      <description>Quotes that relate to software engineering always humble me with their laser-like honesty. I&amp;rsquo;ve decided to keep a collection of my favorites here (in no particular order).
-&#34;The only real education is self-education&#34; - Aristotle If I&#39;d known computer science was going to be like this, I&#39;d never have given up being a rock &amp;lsquo;n&#39; roll star. &amp;ndash; G. Hirst Lubarsky&#39;s Law of Cybernetic Entomology: There&#39;s always one more bug &#34;</description>
+      <description>Quotes that relate to software engineering always humble me with their laser-like honesty. I&amp;rsquo;ve decided to keep a collection of my favorites here (in no particular order).</description>
     </item>
     
   </channel>

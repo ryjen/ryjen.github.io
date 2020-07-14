@@ -22,7 +22,7 @@
 
 
 
-    <meta name="generator" content="Hugo 0.40.1" />
+    <meta name="generator" content="Hugo 0.73.0" />
 
   </head>
   <body>
@@ -115,47 +115,28 @@
 
     <p class="timestamps">Created: November 5, 2018 </p>
 
-    <div class="text-justify">
-
-<h2 id="introduction">Introduction</h2>
-
+    <div class="text-justify"><h2 id="introduction">Introduction</h2>
 <p>A log to myself of things I like about Unix type systems.  In case I forget why someday.</p>
-
 <h2 id="dotfiles">Dotfiles</h2>
-
-<p><code class="header">files in braille? are they for the blind?</code></p>
-
+<p><!-- raw HTML omitted -->files in braille? are they for the blind?<!-- raw HTML omitted --></p>
 <p>Dotfiles in Linux are hidden files preceded with a period. Depending on the program, they are used for configuration in your home directory.</p>
-
 <p>It is common to have a set of dotfiles that you use regularly on different computer systems.</p>
-
 <p>There are many ways and tools to manage your dotfiles. A good one to use is <a href="https://www.gnu.org/s/stow/manual/stow.html">GNU stow</a>.</p>
-
 <p>One can create a modular and secure repository with a set of conventions and rules enforced with ignore files and rc files.</p>
-
 <p>Dotfile repositories are usually personalized, however I forked <a href="https://github.com/ryjen/dotfiles">mine</a> from a repository that implemented the above.</p>
-
 <h4 id="helpful-links">Helpful links:</h4>
-
 <ul>
 <li><a href="https://www.gnu.org/software/stow/manual/stow.html">stow documentation</a>: how to use stow</li>
 <li><a href="https://github.com/webpro/awesome-dotfiles">awesome dotfiles</a>: a list of awesome for dotfiles</li>
 <li><a href="https://github.com/Kraymer/F-dotfiles">F-dotfiles</a>: a dotfile repo with conventions</li>
 </ul>
-
 <h2 id="environment-shims">Environment shims</h2>
-
-<p><code class="header">a thin layer above your path to keep a level surface across versions.</code></p>
-
+<p><!-- raw HTML omitted -->a thin layer above your path to keep a level surface across versions.<!-- raw HTML omitted --></p>
 <p>Have you ever had to solve an issue using a different version than your environment?  You might have wanted a way to keep the stability of your system.</p>
-
 <p>Enter environment <a href="https://en.wikipedia.org/wiki/Shim_(computing)">shim</a>s that sit at the front of your path, intercepting tools and forwarding
 to the right version.</p>
-
 <p>A side effect of using shims is that package manager installs are limited to the project or a global version and don&rsquo;t need priviledges to interfere with the system version.</p>
-
 <p>Maybe not uniquely a Unix solution (all you need is a CLI path), nonetheless, they fit well in the ecosystem.</p>
-
 <ul>
 <li><a href="https://github.com/pyenv/pyenv">pyenv</a> for python</li>
 <li><a href="https://github.com/rbenv/rbenv">rbenv</a> for ruby</li>
@@ -163,45 +144,26 @@ to the right version.</p>
 <li><a href="https://github.com/syndbg/goenv">goenv</a> for golang</li>
 <li><a href="https://github.com/nodenv/nodenv">nodenv</a> for node</li>
 </ul>
-
-<h2 id="linux-namespaces-containers">Linux namespaces / containers</h2>
-
-<p><code class="header">container of system resources isolated from the pirates.</code></p>
-
+<h2 id="linux-namespaces--containers">Linux namespaces / containers</h2>
+<p><!-- raw HTML omitted -->container of system resources isolated from the pirates.<!-- raw HTML omitted --></p>
 <p><a href="https://en.wikipedia.org/wiki/Linux_namespaces">Namespaces</a> were an addition to the Linux kernel that enable <strong>partitioning of kernel resources</strong>.  Namespaces isolate everything at a system level (processes, network, users, etc).  This is different from <em>chroot</em> which isolates at a file hierarchy level.</p>
-
 <p>They could be considered like a virtual machine without the virtual hardware.  More efficient without the extra security of a hypervisor.</p>
-
 <p>Namespaces can be used in C code via corresponding <a href="http://man7.org/linux/man-pages/man7/namespaces.7.html">system commands and C api</a>.</p>
-
 <p>Using the first namespace mount allows a process to create new mount points that don&rsquo;t affect the rest of the system.</p>
-
 <p>An important namespace was user, which allowed isolation of user privileges.  It&rsquo;s because of this namespaces container software like <a href="https://www.docker.com/">docker</a> and <a href="https://linuxcontainers.org/lxd/">lxc</a> were able to form.</p>
-
 <p>There were some neat LXC sessions at the recent <a href="https://events.linuxfoundation.org/events/open-source-summit-north-america-2018/">Open Source Summit 2018</a> in Vancouver, I recommend the conference if you get a chance.</p>
-
 <p>For me containers have been helpful in cross-compiler and cross-platform testing.  Has also opened a lot of doors in Platform as a Service such as <a href="http://dokku.viewdocs.io/dokku/">Dokku</a> which is a few lines of bash and docker containers (good for homebrew types that want to keep usage down).</p>
-
 <p>The Linux tech has even spawned a new OS, <a href="https://rancher.com/rancher-os/">Rancher OS</a> where the entire host system is in docker containers.  For example systemd is a container.  Having tried it, it makes me wonder what more can be done with it.</p>
-
 <h4 id="helpful-links-1">Helpful links</h4>
-
 <ul>
 <li><a href="https://github.com/Friz-zy/awesome-linux-containers">awesome containers</a>: a list of awesome for containers</li>
 </ul>
-
 <h2 id="vim">Vim</h2>
-
-<p><code class="header">Oh vim&hellip;. you&rsquo;re like a complicated lover, hard to get, and with a few accessories - so worth it.</code></p>
-
+<p><!-- raw HTML omitted -->Oh vim&hellip;. you&rsquo;re like a complicated lover, hard to get, and with a few accessories - so worth it.<!-- raw HTML omitted --></p>
 <p><a href="https://neovim.io/">neovim</a> is my fork of choice.</p>
-
 <p>The <a href="https://en.wikibooks.org/wiki/Learning_the_vi_Editor/Vim/Modes">editing modes</a> and <a href="https://www.thegeekstuff.com/2009/03/8-essential-vim-editor-navigation-fundamentals/">navigation</a> using keystrokes in Vim are useful for <strong>never having to use a mouse again</strong>. Once you get the hang of it, your wrists are happier.  Especially if you combine with an ergonomic keyboard layout like <a href="https://www.dvorak-keyboard.com/">Dvorak</a> or <a href="https://en.wikipedia.org/wiki/Colemak">Colemak</a>.</p>
-
 <p>Try the <a href="https://www.openvim.com/">interactive vim tutorial</a> for a better example of vims capabilities.</p>
-
 <p><strong>Plugins and/or syntax highlighting</strong> are usually needed for anything serious.  Some included in my <a href="https://github.com/ryjen/dotfiles/blob/master/vim/.vim/config/plug.vim">dotfiles</a> are:</p>
-
 <ul>
 <li><a href="https://github.com/wincent/command-t">command-t</a>: fuzzy search for files and tags (ctags)</li>
 <li><a href="https://github.com/terryma/vim-multiple-cursors">multi cursors</a>: edit text at the same time in multiple places</li>
@@ -209,91 +171,66 @@ to the right version.</p>
 <li><a href="https://github.com/Valloric/YouCompleteMe">YouCompleteMe</a>: intellisense and auto completion</li>
 <li><a href="https://github.com/itchyny/lightline.vim">lightline</a>: editing status bar</li>
 </ul>
-
 <h4 id="helpful-links-2">Helpful links</h4>
-
 <ul>
 <li><a href="https://github.com/akrawchyk/awesome-vim">awesome vim</a>: a list of awesome for vim</li>
 <li><a href="https://github.com/alevchuk/vim-clutch">vim-clutch</a>: a hardware clutch for vim escape key</li>
 </ul>
-
-<h2 id="shells-unix-philosphy-multiplexing">Shells / unix philosphy / multiplexing</h2>
-
-<p><code class="header">Who doesn&rsquo;t love piping a solution to your problems?</code></p>
-
+<h2 id="shells--unix-philosphy--multiplexing">Shells / unix philosphy / multiplexing</h2>
+<p><!-- raw HTML omitted -->Who doesn&rsquo;t love piping a solution to your problems?<!-- raw HTML omitted --></p>
 <p>Being productive on the command line comes down to a few things: <strong>multitasking, piping/redirect, multiplexing</strong></p>
-
 <p><strong>Multitasking</strong> involves foreground and background jobs in the shell:</p>
-
 <ol>
 <li>suspending the current foreground process using <strong>CTRL-Z</strong></li>
 <li>do some other stuff, like restarting services or checking mail</li>
 <li>returning to the suspended process with the <strong>fg</strong> command</li>
 </ol>
-
 <p><strong>Shell piping and redirection</strong> is the glue that makes the <a href="https://en.wikipedia.org/wiki/Unix_philosophy">Unix Philosophy</a> of concise modular programs work. Piping basically means taking the output of program and using it as the input for another program.   You can solve a wide variety of problems this way.</p>
-
 <p><a href="https://github.com/ryjen/os/tree/master/shell">Writing your own shell</a> is good fun and practice.  I usually rate software as more sophisticated if it includes a CLI toolset.</p>
-
 <p>To get a better idea of Unix philosophy in action, check out <a href="https://www.commandlinefu.com/commands/browse/sort-by-votes">CommandLine Fu</a>.  Commands like <strong>cut, cat, more, uniq, sed, parallel, xargs, wc, find, sort, rev, tr, echo, curl, jq</strong> and others are all modular programs that work together.</p>
-
 <p>Another common thing to do with shells is <strong>multiplex</strong> them (usually with <a href="https://en.wikipedia.org/wiki/Tmux">tmux</a>).  This is sort of like <strong>piping the entire shell into different views</strong>.</p>
-
 <p>It can be handy to quickly <strong>split screen</strong> with another shell, <strong>zoom</strong> a split pane to full, switch between <strong>virtual views</strong>, or <strong>detach/retach</strong> sessions with a <strong>persistent state</strong> (SSH).  Like vim, this is all done with key strokes, saving the mouse effort.</p>
-
 <p>Some people prefer <a href="http://www.byobu.co/">byobu</a> as a layer over tmux or screen. Either way, if your new to multiplexing it will take some getting used to.</p>
-
 <h4 id="helpful-links-3">Helpful links</h4>
-
 <ul>
 <li><a href="http://linuxreviews.org/beginner/jobs/">job control</a></li>
 <li><a href="https://danielmiessler.com/study/tmux/">tmux tutorial</a></li>
 <li><a href="https://github.com/alebcay/awesome-shell">awesome shell</a></li>
 </ul>
-
 <h2 id="everything-is-a-file-and-interprocess-communication">Everything is a file and interprocess communication</h2>
-
-<p><code class="header">hippie: &ldquo;how does the system communicate to us?&rdquo;  nerd: &ldquo;with files&rdquo;</code></p>
-
+<p><!-- raw HTML omitted -->hippie: &ldquo;how does the system communicate to us?&rdquo;  nerd: &ldquo;with files&quot;<!-- raw HTML omitted --></p>
 <p>Your entire system is available to you as a file, meaning the same C API and kernel calls that opens, reads and writes files can also be used for sockets, processes, devices, etc.</p>
-
 <p>The <a href="https://en.wikipedia.org/wiki/Procfs">proc filesystem</a> exposes kernel information to user land as files. Information like <strong>cpuinfo</strong>, <strong>memory</strong>, <strong>battery</strong>, and more is all available to you as a file.</p>
-
 <p><a href="http://man7.org/linux/man-pages/man7/fifo.7.html">Fifo files</a> are basically pipes as a file and are used as a communication channel (IPC).</p>
-
 <p>A use case of FIFOs could be testing client/server applications communicating over a socket (another file), you would pass your programs a FIFO instead and simulate the server output and the client input.</p>
-
 <p><a href="http://man7.org/linux/man-pages/man7/shm_overview.7.html">Shared memory / mmap</a> also returns a file descriptor that can be mapped to a block of memory instead of a file and also used for IPC.</p>
-
-<h2 id="open-source-c-security">Open source / C / Security</h2>
-
-<p><code class="header">The source of life must be open as nothing is separate from it.</code></p>
-
+<h2 id="open-source--c--security">Open source / C / Security</h2>
+<p><!-- raw HTML omitted -->The source of life must be open as nothing is separate from it.<!-- raw HTML omitted --></p>
 <p>Basically, my life as I know it, would not exist without open source, C and Linux.  As a young high-school grad with nothing to live for, hacking code and having people use it was immensely more exciting than real world life.  Too much for my poor parents, who did not understand, and it turns out neither did I.</p>
-
 <p>The past aside, people nowadays will complain about C as dangerous. Especially since the <a href="http://heartbleed.com/">heartbleed</a> bug and recent <a href="https://en.wikipedia.org/wiki/Fuzzing">open source bugs</a> found with <a href="https://en.wikipedia.org/wiki/Fuzzing">fuzz testing</a> tools.  But the reality is, if you deeply understand buffer overflows, pointers and you are a proactive tester, C is quite manageable.</p>
-
 <p>But humans are what they are, imperfect as the software they create.  I believe C is like the matrix in that it has just enough flaws for humans to accept it as a challenge and not too many that we&rsquo;ll reject it.</p>
-
 <h4 id="helpful-links-4">Helpful links</h4>
-
 <ul>
 <li><a href="https://github.com/sbilly/awesome-security">awesome security</a></li>
 <li><a href="https://github.com/aleksandar-todorovic/awesome-c">awesome c</a></li>
 </ul>
-
 <h2 id="downsides">Downsides?</h2>
-
 <ul>
-<li><p>Distribution fragmentation, but I think this can be broken down into packaging differences which <a href="https://www.flatpak.org/">flatpak</a> and <a href="https://snapcraft.io/">snap</a> packages seemed to have solved.</p></li>
-
-<li><p>User experience fragmentation because the users system and workflow can be so heavily customized.  Which is a good segue to the next one.</p></li>
-
-<li><p>Complex configuration can be annoying, there are times when you need to do something pronto and some time consuming configuration thing will be blocking you.  Thankfully using containers solves most of this for enterprise needs.</p></li>
-
-<li><p>Can be a messy or unorganized file system, but its not too bad.  <a href="https://gobolinux.org/">Gobo Linux</a> has redefined the standard file system hierarchy to something that makes more sense to me.</p></li>
-
-<li><p>Nix is mostly only friends with technical people.  This is a feature though, not a downside.</p></li>
+<li>
+<p>Distribution fragmentation, but I think this can be broken down into packaging differences which <a href="https://www.flatpak.org/">flatpak</a> and <a href="https://snapcraft.io/">snap</a> packages seemed to have solved.</p>
+</li>
+<li>
+<p>User experience fragmentation because the users system and workflow can be so heavily customized.  Which is a good segue to the next one.</p>
+</li>
+<li>
+<p>Complex configuration can be annoying, there are times when you need to do something pronto and some time consuming configuration thing will be blocking you.  Thankfully using containers solves most of this for enterprise needs.</p>
+</li>
+<li>
+<p>Can be a messy or unorganized file system, but its not too bad.  <a href="https://gobolinux.org/">Gobo Linux</a> has redefined the standard file system hierarchy to something that makes more sense to me.</p>
+</li>
+<li>
+<p>Nix is mostly only friends with technical people.  This is a feature though, not a downside.</p>
+</li>
 </ul>
 </div>
 
@@ -312,7 +249,7 @@ to the right version.</p>
 
 	
 	  <div id="disqus_thread"></div>
-<script>
+<script type="application/javascript">
     var disqus_config = function () {
     
     
@@ -368,7 +305,7 @@ to the right version.</p>
 
 
 <div class="center">
-	&copy; all rights reserved, ryan jennings
+	© all rights reserved, ryan jennings
 </div>
 
 </div>
