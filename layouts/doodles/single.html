@@ -1,0 +1,34 @@
+{{ partial "header" . }}
+
+<div id="main">
+
+    <div class="text-justify">
+      <table id="doodles">
+      <tr>
+      <td class="prev"><span>&#x2B9C;</span></td>
+      <td>
+      <ul id="doodle-gallery">
+          {{ range $.Site.Data.doodles.urls }}
+          <li>
+            <img class="doodle imgbox" src="{{ . }}" />
+          </li>
+          {{ end }}
+      </ul>
+      </td>
+      <td class="next"><span>&#x2B9E;</span></td>
+      </table>
+    </div>
+
+</div>
+
+<hr>
+
+<div class="container">
+
+{{ if .Site.DisqusShortname }}
+  {{ template "_internal/disqus.html" . }}
+{{ end }}
+
+</div>
+
+{{ partial "footer" . }}

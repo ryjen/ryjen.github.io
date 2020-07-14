@@ -44,9 +44,9 @@ It is getting better (ego diminishing) and worse (reaction) at the same time, as
 
 Institutions and countries seem to either:
 
-* transfer the ownership to its people in avoidance, who are no different so same problem (and sadly more justification of the collective).
+* transfer the ownership to its people in avoidance, who are no different so same problem and more justification of the collective as self.
 
-* rule with a heavy hand and attempt to manage ownership themselves, so same problem (and sadly more of a split that justifies a heavy hand)
+* rule with a heavy hand and attempt to manage ownership themselves, so same problem and more of a split that justifies a heavy hand.
 
 ### Outro
 
@@ -58,7 +58,7 @@ My personal opinion is that continuing to try and strengthen fragile cathedral l
 
 Apple's 2014 slogan "You are more powerful than you think" is an interesting one.
 
-It starts with your self.  
+It starts with your self, the micro-universe.  A less sociopathic self is conducive to a less insane macro-universe.  The goal being to be less at the mercy of form to define who you are and your state of consciousness.  The less the need of form, the less dysfunction.
 
 Earth deserves better for keeping us, evolve!
 

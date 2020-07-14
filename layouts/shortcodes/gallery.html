@@ -1,0 +1,15 @@
+      <table id="doodles">
+      <tr>
+      <td class="prev"><span>ᐊ</span></td>
+      <td>
+      <ul id="doodle-gallery">
+          {{ range $.Site.Data.doodles.urls }}
+          <li>
+            <img class="doodle imgbox" src="{{ . }}" />
+          </li>
+          {{ end }}
+      </ul>
+      </td>
+      <td class="next"><span>ᐅ</span></td>
+      </table>
+

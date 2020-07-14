@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "personal blog",
   "main": "gulpfile.js",
-  "dependencies": {
-    "slick-carousel": "^1.8.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "del": "^3.0.0",
     "graceful-fs": "4.1.11",
