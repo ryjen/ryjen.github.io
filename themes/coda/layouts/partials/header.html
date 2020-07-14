@@ -41,7 +41,7 @@
           <ul class="nav navbar-nav menu">
             {{ range sort .Site.Menus.main }}
             <li class="nav-toggle {{ .Name }}">
-              <a href="{{ .URL }}">
+              <a href="{{ .URL }}" title="{{ .Name }}">
                 {{ if .Identifier }}
                 <i class="fas fa-{{ .Identifier }}"></i>
                 {{ end }}

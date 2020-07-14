@@ -10,9 +10,15 @@ title: Doodles
 <li>
 <img class="doodle imgbox" src="/image/doodles/doodle7.jpeg"/>
 </li><li>
-<img class="doodle imgbox" src="/image/doodles/doodle4.jpeg"/>
-</li><li>
 <img class="doodle imgbox" src="/image/doodles/doodle5.jpeg"/>
+</li><li>
+<img class="doodle imgbox" src="/image/doodles/card1.png"/>
+</li><li>
+<img class="doodle imgbox" src="/image/doodles/card2.png"/>
+</li><li>
+<img class="doodle imgbox" src="/image/doodles/pi.png"/>
+</li><li>
+<img class="doodle imgbox" src="/image/doodles/doodle4.jpeg"/>
 </li><li>
 <img class="doodle imgbox" src="/image/doodles/doodle6.jpeg"/>
 </li><li>

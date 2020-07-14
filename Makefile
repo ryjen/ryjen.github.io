@@ -1,5 +1,5 @@
 
-.PHONY: setup theme blog all
+.PHONY: setup theme blog all test
 
 all: setup theme blog
 
@@ -20,3 +20,8 @@ update:
 	@yarn --cwd themes/coda
 	@yarn
 
+test:
+	@yarn test
+
+image:
+	@create-registry-image -r registry.micrantha.com ryjen/blog

@@ -94,31 +94,31 @@ $blue: #268bd2;
       }
     }
   }
-}
 
-#doodle-gallery {
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
+  #doodle-gallery {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
 
-  li {
-    text-align: center;
+    li {
+      text-align: center;
 
-    span {
-      display: block;
-      margin: 5px;
+      span {
+        display: block;
+        margin: 5px;
+      }
     }
-  }
 
-  .next,
-  .prev {
-    cursor: pointer;
-    vertical-align: middle;
-  }
+    .next,
+    .prev {
+      cursor: pointer;
+      vertical-align: middle;
+    }
 
-  img {
-    max-height: 95%;
-    max-width: 95%;
+    img {
+      max-height: 95%;
+      max-width: 95%;
+    }
   }
 }
 

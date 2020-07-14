@@ -1,6 +1,48 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>programming on ryan jennings</title><link>https://ryanjennin.gs/tags/programming/</link><description>Recent content in programming on ryan jennings</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 30 Nov 2012 00:00:00 +0000</lastBuildDate><atom:link href="https://ryanjennin.gs/tags/programming/index.xml" rel="self" type="application/rss+xml"/><item><title>Poor Man's Polymorphism</title><link>https://ryanjennin.gs/2012/11/30/poor-mans-polymorphism/</link><pubDate>Fri, 30 Nov 2012 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/2012/11/30/poor-mans-polymorphism/</guid><description>Found out that C structs can be casted between each other if the field types and ordering are the same. It is not portable code, but you can start too see how and why the virtual table and object oriented programming evolved in c++.
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programming on ryan jennings</title>
+    <link>https://ryanjennin.gs/tags/programming/</link>
+    <description>Recent content in Programming on ryan jennings</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 30 Nov 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://ryanjennin.gs/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Poor Man&#39;s Polymorphism</title>
+      <link>https://ryanjennin.gs/2012/11/30/poor-mans-polymorphism/</link>
+      <pubDate>Fri, 30 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/2012/11/30/poor-mans-polymorphism/</guid>
+      <description>Found out that C structs can be casted between each other if the field types and ordering are the same. It is not portable code, but you can start too see how and why the virtual table and object oriented programming evolved in c++.
 As far as I know it would still be possible to write this in c++, but as always, you should definitely not.
-A Quick Example struct Animal { int eyes; } struct Dog { int eyes; /* dog specific */ int tail; } struct Human{ int eyes; /* human specific */ int brain; } Passing humans or dogs to any function that takes an animal with a cast.</description></item><item><title>C Sqlite Tricks</title><link>https://ryanjennin.gs/2012/05/15/c-sqlite-tricks/</link><pubDate>Tue, 15 May 2012 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/2012/05/15/c-sqlite-tricks/</guid><description>Introduction Thought I would share some tricks I use for easy data CRUD&amp;rsquo;s in C. I&amp;rsquo;m using Sqlite here, but could apply to any database.
+A Quick Example struct Animal { int eyes; } struct Dog { int eyes; /* dog specific */ int tail; } struct Human{ int eyes; /* human specific */ int brain; }  Passing humans or dogs to any function that takes an animal with a cast.</description>
+    </item>
+    
+    <item>
+      <title>C Sqlite Tricks</title>
+      <link>https://ryanjennin.gs/2012/05/15/c-sqlite-tricks/</link>
+      <pubDate>Tue, 15 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/2012/05/15/c-sqlite-tricks/</guid>
+      <description>Introduction Thought I would share some tricks I use for easy data CRUD&amp;rsquo;s in C. I&amp;rsquo;m using Sqlite here, but could apply to any database.
 Not saying its the best approach at all (nor ryjen/db), this is just how it evolved for me.
 Mapping The core of my data access is the FieldMap structure, which determines how to save each field to the database.
-/* * this is the magical table used to communicate between memory and the database */ typedef struct FieldMap { const char *name; /* name of the field */ void *value; /* a pointer to the value of the field */ int type; /* type of value */ const void *arg1; /* additional argument */ const void *arg2; /* additional argument */ int flags; /* usage flags */ } FieldMap; /* callback for custom field types */ typedef int (*CustomField) (sqlite3_stmt *, int column, FieldMap *field); typedef void (*DbCallback) (sqlite3_stmt *); Basically you would have to:Example 1 - Saving This high level example shows building a quick table for each field we want to save in the database.</description></item><item><title>Best Programming Quotes</title><link>https://ryanjennin.gs/2012/04/10/best-programming-quotes/</link><pubDate>Tue, 10 Apr 2012 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/2012/04/10/best-programming-quotes/</guid><description>Quotes that relate to software engineering always humble me with their laser-like honesty. I&amp;rsquo;ve decided to keep a collection of my favorites here (in no particular order).</description></item></channel></rss>
+/* * this is the magical table used to communicate between memory and the database */ typedef struct FieldMap { const char *name; /* name of the field */ void *value; /* a pointer to the value of the field */ int type; /* type of value */ const void *arg1; /* additional argument */ const void *arg2; /* additional argument */ int flags; /* usage flags */ } FieldMap; /* callback for custom field types */ typedef int (*CustomField) (sqlite3_stmt *, int column, FieldMap *field); typedef void (*DbCallback) (sqlite3_stmt *);  Note: these examples will create this table dynamically with an object, however this can be used as a static table.</description>
+    </item>
+    
+    <item>
+      <title>Best Programming Quotes</title>
+      <link>https://ryanjennin.gs/2012/04/10/best-programming-quotes/</link>
+      <pubDate>Tue, 10 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/2012/04/10/best-programming-quotes/</guid>
+      <description>Quotes that relate to software engineering always humble me with their laser-like honesty. I&amp;rsquo;ve decided to keep a collection of my favorites here (in no particular order).
+&#34;The only real education is self-education&#34; - Aristotle If I&#39;d known computer science was going to be like this, I&#39;d never have given up being a rock &amp;lsquo;n&#39; roll star. &amp;ndash; G. Hirst Lubarsky&#39;s Law of Cybernetic Entomology: There&#39;s always one more bug &#34;</description>
+    </item>
+    
+  </channel>
+</rss>

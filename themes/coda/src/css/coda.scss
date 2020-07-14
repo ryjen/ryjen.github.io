@@ -368,7 +368,7 @@ td {
 
   .navbar-icons li {
     padding: 0;
-    min-width: 42px;
+    min-width: 50px;
   }
 
   &.solid {
@@ -630,11 +630,17 @@ td {
 
 /* Responsiveness */
 
-@media (max-width: 1300px) {
+@media (max-width: 1450px) {
   #header {
     nav {
       .nav-name {
         display: none;
+      }
+      .navbar-nav {
+        li {
+          padding-left: 0;
+          padding-right: 0;
+        }
       }
     }
   }
