@@ -1,39 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>web on ryan jennings</title>
-    <link>https://ryanjennin.gs/tags/web/</link>
-    <description>Recent content in web on ryan jennings</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 27 Nov 2016 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://ryanjennin.gs/tags/web/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Microsoft Dev Stack on macOS</title>
-      <link>https://ryanjennin.gs/2016/11/27/microsoft-dev-stack-on-macos/</link>
-      <pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://ryanjennin.gs/2016/11/27/microsoft-dev-stack-on-macos/</guid>
-      <description>Gonna evangelize a little bit.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>web on ryan jennings</title><link>https://ryanjennin.gs/tags/web/</link><description>Recent content in web on ryan jennings</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 27 Nov 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://ryanjennin.gs/tags/web/index.xml" rel="self" type="application/rss+xml"/><item><title>Microsoft Dev Stack on macOS</title><link>https://ryanjennin.gs/2016/11/27/microsoft-dev-stack-on-macos/</link><pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/2016/11/27/microsoft-dev-stack-on-macos/</guid><description>Gonna evangelize a little bit.
 When Microsoft bought Xamarin, they did not underestimate the power of Xamarin.Forms for building cross platform UIs. Now with the release of Visual Studio for macOS and the Dotnet Core, its looks like its going to stay alive.
-Development Environment  macOS, XCode Android SDK Dotnet core Visual Studio for macOS nuget  Web ASP.NET Production Environment  Digital Ocean Dotnet core on Docker Dokku, docker based heroku  Platforms Targeted in One Solution  iOS Android Web ASP.</description>
-    </item>
-    
-    <item>
-      <title>Crafting a Game With CraftyJS</title>
-      <link>https://ryanjennin.gs/2012/11/17/crafting-a-game-with-craftyjs/</link>
-      <pubDate>Sat, 17 Nov 2012 00:00:00 +0000</pubDate>
-      
-      <guid>https://ryanjennin.gs/2012/11/17/crafting-a-game-with-craftyjs/</guid>
-      <description>Introduction Briefly going to mention a javascript game engine called CraftyJS that I&amp;rsquo;ve been playing with the past couple of days.
+Development Environment macOS, XCode Android SDK Dotnet core Visual Studio for macOS nuget Web ASP.NET Production Environment Digital Ocean Dotnet core on Docker Dokku, docker based heroku Platforms Targeted in One Solution iOS Android Web ASP.</description></item><item><title>Crafting a Game With CraftyJS</title><link>https://ryanjennin.gs/2012/11/17/crafting-a-game-with-craftyjs/</link><pubDate>Sat, 17 Nov 2012 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/2012/11/17/crafting-a-game-with-craftyjs/</guid><description>Introduction Briefly going to mention a javascript game engine called CraftyJS that I&amp;rsquo;ve been playing with the past couple of days.
 Has the usual suspects like Entity Component System, Collision, Sprite Maps, etc.
-The Project 
+The Project
 Amos the Alien is a small demo I made.
-I knew that I wanted a scrolling background of some sort - in other words - parallax scrolling. I also knew that I wanted two modes of scrolling: A) automatic background scrollin (clouds, etc) and character movement scrolling.</description>
-    </item>
-    
-  </channel>
-</rss>
+I knew that I wanted a scrolling background of some sort - in other words - parallax scrolling. I also knew that I wanted two modes of scrolling: A) automatic background scrollin (clouds, etc) and character movement scrolling.</description></item></channel></rss>
