@@ -28,7 +28,9 @@ Databases have introduced JSON a while back and have been around for quite a few
 
 ### Micrantha
 
-This is very inline with what I am doing at [micrantha](https://micrantha.com/labratory) labs.  **Garden** as is is called, is currently an experimental extension that makes it easier to perform basic CRUD using schemaless JSON on postgres.
+This is very inline with what I am doing at [micrantha](https://micrantha.com/labratory) labs.  
+
+**Garden** as is is called, is currently an experimental extension that makes it easier to perform basic CRUD using schemaless JSON on postgres (in theory any JSON extended database).
 
 I have plans for a hash based mobile synchronization piece based on my experience with the same in SQLite.
 
