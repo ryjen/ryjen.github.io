@@ -32,5 +32,6 @@ This is very inline with what I am doing at [micrantha](https://micrantha.com/la
 
 I have plans for a hash based mobile synchronization piece based on my experience with the same in SQLite.
 
-The reasoning is because I just found solutions like Firebase or Couchbase way to heavy for my needs running in a docker container or your data is too locked into the company.  Wanted a more open source friendly solution.
+The reasoning is frankly, because I am a hugely egoic when it comes to tech and think I can do something more lightweight or better. 
+
 
