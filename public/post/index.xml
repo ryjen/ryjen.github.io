@@ -12,15 +12,14 @@
     
     
     <item>
-      <title>schemaless databases</title>
+      <title>Schemaless Databases</title>
       <link>https://ryanjennin.gs/2020/08/03/schemaless-databases/</link>
       <pubDate>Mon, 03 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>https://ryanjennin.gs/2020/08/03/schemaless-databases/</guid>
-      <description>Schemaless databases came into my radar with MongoDB, Redis and such. I have often admired the ability to alter schema on fly.
+      <description>Schemaless databases came into my radar with MongoDB, Redis and such. I have often admired the ability to alter schema on fly and enjoyed experimenting with the possibilities.
 Solutions like the now defunct cparse, couchbase and Firebase have been big successes.
-The success of schemaless databases makes a lot of sense in part because of API consumption and mobile devices if you can get the synchronization part right.
-At a startup I worked at for a few years, I experimented with a hybrid relational database and schemaless using JSON extensions for SQLite.</description>
+Why? The success of schemaless databases makes a lot of sense in part because of API consumption as JSON and mobile devices if you can get the synchronization part right.</description>
     </item>
     
     <item>

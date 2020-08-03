@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>schemaless databases</title>
+    <title>Schemaless Databases</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta name="google-site-verification" content="jkdqcIgCmfBgfd8S0WbF3CqZ-TXSSayerVq4mqO0Fc0" />
@@ -111,17 +111,21 @@
 
 <div id="main">
 
-    <h1>schemaless databases</h1>
+    <h1>Schemaless Databases</h1>
 
     <p class="timestamps">Created: August 3, 2020 </p>
 
-    <div class="text-justify"><p>Schemaless databases came into my radar with MongoDB, Redis and such.  I have often admired the ability to alter schema on fly.</p>
+    <div class="text-justify"><p>Schemaless databases came into my radar with <a href="https://www.mongodb.com/">MongoDB</a>, <a href="https://redis.io/">Redis</a> and such.  I have often admired the ability to alter schema on fly and enjoyed experimenting with the possibilities.</p>
 <p>Solutions like the now defunct <a href="https://github.com/cparse/cparse">cparse</a>, <a href="https://www.couchbase.com/">couchbase</a> and <a href="https://firebase.google.com/">Firebase</a> have been big successes.</p>
-<p>The success of schemaless databases makes a lot of sense in part because of API consumption and mobile devices if you can get the synchronization part right.</p>
-<p>At a startup I worked at for a few years, I experimented with a hybrid relational database and schemaless using JSON extensions for SQLite.</p>
+<h3 id="why">Why?</h3>
+<p>The success of schemaless databases makes a lot of sense in part because of API consumption as JSON and mobile devices if you can get the synchronization part right.</p>
+<p>At <a href="https://www.epactnetwork.com/">a startup I worked at for a few years</a>, I experimented with a hybrid relational database and schemaless using <a href="https://www.sqlite.org/json1.html">JSON extensions for SQLite</a> - the industry de facto mobile database.</p>
 <p>This was quite fascinating and enabled serving queryable dynamic data very easily from an engineering perspective without changing to much of the underlying core architecture.</p>
-<p>Not too long ago I read an article from <a href="https://eng.uber.com/schemaless-part-one-mysql-datastore/">Uber engineering</a> describing how they transitioned from postgres to a hybrid schemaless using MySQL and JSON.</p>
-<p>Postgres also has JSON extensions for querying and storage, but I believe Uber went with MySQL for some replication features needed for scalability.</p>
+<h3 id="recently">Recently</h3>
+<p>Not too long ago I read an article from <a href="https://eng.uber.com/schemaless-part-one-mysql-datastore/">Uber engineering</a> describing how they transitioned from postgres to a hybrid schemaless using <a href="https://dev.mysql.com/doc/refman/8.0/en/json.html">MySQL and JSON</a>.</p>
+<p>Databases have introduced JSON a while back and have been around for quite a few years.  They could definitely be considered a stable feature.</p>
+<p><a href="https://www.postgresql.org/docs/9.3/functions-json.html">Postgres also has JSON extensions</a> for querying and storage, but I believe Uber went with MySQL for some replication features needed for scalability.</p>
+<h3 id="micrantha">Micrantha</h3>
 <p>This is very inline with what I am doing at <a href="https://micrantha.com/labratory">micrantha</a> labs.  <strong>Garden</strong> as is is called, is currently an experimental extension that makes it easier to perform basic CRUD using schemaless JSON on postgres.</p>
 <p>I have plans for a hash based mobile synchronization piece based on my experience with the same in SQLite.</p>
 <p>The reasoning is because I just found solutions like Firebase or Couchbase way to heavy for my needs running in a docker container or your data is too locked into the company.  Wanted a more open source friendly solution.</p>
