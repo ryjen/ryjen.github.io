@@ -36,4 +36,4 @@ I have plans for a hash based mobile synchronization piece based on my experienc
 
 The reasoning is frankly, because I am a hugely egoic when it comes to tech and think I can do something more lightweight or better. 
 
-
+Anyway, do not quit your day job, as they say in the music industry!
