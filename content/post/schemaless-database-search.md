@@ -1,7 +1,7 @@
 ---
 title: Schemaless Databases
 description: a look into the trend
-tags: [database, schema, data]
+tags: [database, schema, data, pwa, json]
 categories: [software engineering]
 date: 2020-08-03
 ---
@@ -32,8 +32,10 @@ This is very inline with what I am doing at [micrantha](https://micrantha.com/la
 
 **Garden** as is is called, is currently an experimental extension that makes it easier to perform basic CRUD using schemaless JSON on postgres (in theory any JSON extended database).
 
-I have plans for a hash based mobile synchronization piece based on my experience with the same in SQLite.
+I have plans for a hash based mobile synchronization piece based on my experience with the same in SQLite (might change to [storage api](https://developers.google.com/web/fundamentals/instant-and-offline/web-storage/cache-api) or [indexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API) with [progressive web apps](https://en.wikipedia.org/wiki/Progressive_web_application))
+
+### Onward and Upwards
 
 The reasoning is frankly, because I am a hugely egoic when it comes to tech and think I can do something more lightweight or better. 
 
-Anyway, do not quit your day job, as they say in the music industry!
+As they say in the music industry: "do not quit your day job!"
