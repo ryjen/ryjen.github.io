@@ -3,8 +3,10 @@ title: Schemaless Databases
 description: a look into the trend
 tags: [database, schema, data, pwa, json]
 categories: [software engineering]
-date: 2020-08-03
+date: 2020-08-04
 ---
+
+TL;DR - Hydrid relational schemaless databases are quite awesome, with a little bit of icing on the cake.
 
 Schemaless databases came into my radar with [MongoDB](https://www.mongodb.com/), [Redis](https://redis.io/) and such.  I have often admired the ability to alter schema on fly and enjoyed experimenting with the possibilities.
 

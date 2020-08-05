@@ -6,18 +6,19 @@
     <description>Recent content in Posts on ryan jennings</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 04 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://ryanjennin.gs/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Schemaless Databases</title>
-      <link>https://ryanjennin.gs/2020/08/03/schemaless-databases/</link>
-      <pubDate>Mon, 03 Aug 2020 00:00:00 +0000</pubDate>
+      <link>https://ryanjennin.gs/2020/08/04/schemaless-databases/</link>
+      <pubDate>Tue, 04 Aug 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://ryanjennin.gs/2020/08/03/schemaless-databases/</guid>
-      <description>Schemaless databases came into my radar with MongoDB, Redis and such. I have often admired the ability to alter schema on fly and enjoyed experimenting with the possibilities.
+      <guid>https://ryanjennin.gs/2020/08/04/schemaless-databases/</guid>
+      <description>TL;DR - Hydrid relational schemaless databases are quite awesome, with a little bit of icing on the cake.
+Schemaless databases came into my radar with MongoDB, Redis and such. I have often admired the ability to alter schema on fly and enjoyed experimenting with the possibilities.
 Solutions like the now defunct cparse, couchbase and Firebase have been big successes.
 Why? The success of schemaless databases makes a lot of sense in part because of API consumption as JSON and mobile devices if you can get the synchronization part right.</description>
     </item>
