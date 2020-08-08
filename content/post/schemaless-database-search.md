@@ -16,45 +16,46 @@ Enterprise solutions like [Couchbase](https://www.couchbase.com/) and [Firebase]
 
 The success of schemaless databases makes a lot of sense in part because of API consumption of JSON and mobile devices if you can get the synchronization part right.
 
-At [a startup I worked at for a few years](https://www.epactnetwork.com/), I experimented with a **hybrid relational database and schemaless** using [JSON extensions for SQLite](https://www.sqlite.org/json1.html) - the industry de facto mobile database.  
+At [a startup I worked at](https://www.epactnetwork.com/), I experimented with a **hybrid relational database and schemaless** using [JSON extensions for SQLite](https://www.sqlite.org/json1.html) - the industry de facto mobile database.  
 
-This was quite fascinating and enabled serving queryable and dynamic data very easily from an engineering perspective without changing to much of the underlying core architecture.
+This was quite exciting to enable serving queryable and dynamic data without changing to much of the architecture.
+
+Using JSON as a single column for data has some interesting features for hashing to detect changes easier.  
+
+The [JSON merge patch RFC](https://tools.ietf.org/html/rfc7396) makes it simple to keep the data integrity.
 
 ### Recently
 
-Not too long ago I read an article from [Uber engineering](https://eng.uber.com/schemaless-part-one-mysql-datastore/) describing how they transitioned from postgres to a hybrid schemaless using [MySQL and JSON](https://dev.mysql.com/doc/refman/8.0/en/json.html).  
-Databases have introduced JSON a while back and have been around for quite a few years.  They could definitely be considered a stable feature.  
+Not too long ago an article from [Uber engineering](https://eng.uber.com/schemaless-part-one-mysql-datastore/) described how they transitioned from postgres to a hybrid schemaless using [MySQL and JSON](https://dev.mysql.com/doc/refman/8.0/en/json.html). 
 
-[Postgres also has JSON extensions](https://www.postgresql.org/docs/9.3/functions-json.html) for querying and storage, but I believe Uber went with MySQL for some replication features needed for scalability.
+[Postgres also has JSON extensions](https://www.postgresql.org/docs/9.3/functions-json.html) for querying and storage, but I believe Uber went with MySQL for some replication or scalability features needed.
 
-Using JSON as a single column for data has some interesting features for hashing to detect changes easier.  The [JSON merge patch RFC](https://tools.ietf.org/html/rfc7396) is critical for keep a json data column up to date.
+The JSON data types where introduced a while back and have been around for quite a few years.  They could definitely be considered a stable feature.  
   
 ### Micrantha
 
-This is very inline with what I am doing at [micrantha labs](https://micrantha.com/labratory).  
+This is very inline with what I am attempting at [micrantha labs](https://micrantha.com/labratory).  
 
-**Garden** as is is called, is currently an experimental extension that makes it easier to perform basic CRUD using schemaless JSON on postgres (in theory any JSON extended database).
-  e
-The **Pathway** is a mobile synchronization piece leveraging industry standard protocols in [IoT](https://en.wikipedia.org/wiki/Internet_of_things).  
+**Garden** as is is called, is currently a extension that makes it easier to perform basic CRUD using schemaless JSON on postgres (or any JSON extended database).
 
-Using IoT network protocols saves a lot of time and have good features.  They do make sense from a mobile phone device (a thing wih internet). 
+The **Pathway** is a mobile synchronization piece leveraging industry standard protocols in [IoT](https://en.wikipedia.org/wiki/Internet_of_things) and focusing on data.
 
 The **Nursery** is the web frontend for users.
 
 ### Onward and Upwards
 
-Having the flexibility of schemaless, while keeping the tried and tested features of a relational database is quite powerful and exciting. 
+I love the flexibility of schemaless with the tried and tested features of a relational database in one package.
 
-I would like to see a hybrid schemaless DIY offering with paid services for customized relational database and mobile work (scaling, referential integrity, backups), but who knows.
+Using IoT network protocols saves a lot of time with good features and experience.  They do make sense from a mobile phone device (a thing with internet).
 
-Even as I move towards [progressive web apps](https://en.wikipedia.org/wiki/Progressive_web_application) for mobile, the [storage api](https://developers.google.com/web/fundamentals/instant-and-offline/web-storage/cache-api) or [indexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API) should still grow nicely the garden.
+Even potentially moving towards [progressive web apps](https://en.wikipedia.org/wiki/Progressive_web_application) for mobile, the [storage api](https://developers.google.com/web/fundamentals/instant-and-offline/web-storage/cache-api) or [indexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API) should be able to grow nicely the garden.
 
 ### Disclaimer
 
-The reasoning is frankly, because I am a hugely egoic when it comes to technology. My day jobs typically do not allow me to flex said ego safely. 
+The reasoning is frankly, is my day jobs typically do not allow me to flex technically. And because I am a hugely egoic when it comes to technology.
 
-Creating something lightweight and without too much scope by leveraging more open source seems very doable to a solo proprietary.
+Have always preferred programming, data, protocols and algorithms to user interface.  Which is so ironic to a UI focused career.
 
-If any of this sounds interesting to you, feel free to [ping me](mailto:ryan78j@gmail.com?subject=RE:%20Hybrid%20Schemaless%20Databases) to discuss.
+A complex and daunting project with little reward and a fun endeavour.  Micrantha is just a facade to justify my pandemic time.
 
-But as they say in the music industry: "do not quit your day job!"
+As they say in the music industry: "do not quit your day job!"

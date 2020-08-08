@@ -57,69 +57,6 @@
     </item>
     
     <item>
-      <title>go</title>
-      <link>https://ryanjennin.gs/tags/go/</link>
-      <pubDate>Fri, 24 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://ryanjennin.gs/tags/go/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>golang</title>
-      <link>https://ryanjennin.gs/tags/golang/</link>
-      <pubDate>Fri, 24 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://ryanjennin.gs/tags/golang/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>guru</title>
-      <link>https://ryanjennin.gs/tags/guru/</link>
-      <pubDate>Fri, 24 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://ryanjennin.gs/tags/guru/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>philosophy</title>
-      <link>https://ryanjennin.gs/tags/philosophy/</link>
-      <pubDate>Fri, 24 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://ryanjennin.gs/tags/philosophy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>programming</title>
-      <link>https://ryanjennin.gs/tags/programming/</link>
-      <pubDate>Fri, 24 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://ryanjennin.gs/tags/programming/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>programming language</title>
-      <link>https://ryanjennin.gs/tags/programming-language/</link>
-      <pubDate>Fri, 24 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://ryanjennin.gs/tags/programming-language/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>c</title>
-      <link>https://ryanjennin.gs/tags/c/</link>
-      <pubDate>Tue, 07 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://ryanjennin.gs/tags/c/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>consciousness</title>
       <link>https://ryanjennin.gs/tags/consciousness/</link>
       <pubDate>Tue, 07 Jul 2020 00:00:00 +0000</pubDate>
@@ -143,6 +80,15 @@
       <pubDate>Tue, 07 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>https://ryanjennin.gs/tags/evolution/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>philosophy</title>
+      <link>https://ryanjennin.gs/tags/philosophy/</link>
+      <pubDate>Tue, 07 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/tags/philosophy/</guid>
       <description></description>
     </item>
     
@@ -444,6 +390,24 @@
     </item>
     
     <item>
+      <title>go</title>
+      <link>https://ryanjennin.gs/tags/go/</link>
+      <pubDate>Mon, 22 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/tags/go/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>golang</title>
+      <link>https://ryanjennin.gs/tags/golang/</link>
+      <pubDate>Mon, 22 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/tags/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>HTTP</title>
       <link>https://ryanjennin.gs/tags/http/</link>
       <pubDate>Mon, 22 Jan 2018 00:00:00 +0000</pubDate>
@@ -597,11 +561,29 @@
     </item>
     
     <item>
+      <title>c</title>
+      <link>https://ryanjennin.gs/tags/c/</link>
+      <pubDate>Fri, 30 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/tags/c/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>polymorphism</title>
       <link>https://ryanjennin.gs/tags/polymorphism/</link>
       <pubDate>Fri, 30 Nov 2012 00:00:00 +0000</pubDate>
       
       <guid>https://ryanjennin.gs/tags/polymorphism/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>programming</title>
+      <link>https://ryanjennin.gs/tags/programming/</link>
+      <pubDate>Fri, 30 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/tags/programming/</guid>
       <description></description>
     </item>
     

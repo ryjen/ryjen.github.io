@@ -12,29 +12,11 @@
     
     
     <item>
-      <title>software</title>
-      <link>https://ryanjennin.gs/categories/software/</link>
-      <pubDate>Tue, 04 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://ryanjennin.gs/categories/software/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>software engineering</title>
       <link>https://ryanjennin.gs/categories/software-engineering/</link>
       <pubDate>Tue, 04 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>https://ryanjennin.gs/categories/software-engineering/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>programming</title>
-      <link>https://ryanjennin.gs/categories/programming/</link>
-      <pubDate>Fri, 24 Jul 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://ryanjennin.gs/categories/programming/</guid>
       <description></description>
     </item>
     
@@ -53,6 +35,24 @@
       <pubDate>Tue, 07 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>https://ryanjennin.gs/categories/spiritualism/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>programming</title>
+      <link>https://ryanjennin.gs/categories/programming/</link>
+      <pubDate>Thu, 25 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/categories/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>software</title>
+      <link>https://ryanjennin.gs/categories/software/</link>
+      <pubDate>Thu, 25 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/categories/software/</guid>
       <description></description>
     </item>
     

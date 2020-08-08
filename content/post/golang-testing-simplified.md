@@ -2,6 +2,7 @@
 title: why golang
 description: why golang is a guru language
 date: 2020-07-24
+draft: true
 tags: [golang, programming language, philosophy, guru]
 categories: [programming]
 ---

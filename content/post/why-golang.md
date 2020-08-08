@@ -2,6 +2,7 @@
 title: why golang
 description: why golang is a guru language
 date: 2020-07-24
+draft: true
 tags: [golang, programming language, philosophy, guru]
 categories: [programming]
 ---
@@ -13,7 +14,6 @@ As it stands now, I am somewhat burned out in the depths of a mid-life crisis an
 A language like go meets these soft skill requirements more than others:
 
 - is not verbose
-- does not mix strict object oriented principles with other principles (functional, extensions)
 - implementations from different people are mostly consistent
 - sufficient tooling
 - efficient with no virtual machine or binary dependency

@@ -22,7 +22,7 @@
 
 
 
-    <meta name="generator" content="Hugo 0.68.3" />
+    <meta name="generator" content="Hugo 0.74.2" />
 
   </head>
   <body>
@@ -120,29 +120,28 @@
 <p>Enterprise solutions like <a href="https://www.couchbase.com/">Couchbase</a> and <a href="https://firebase.google.com/">Firebase</a> have been big successes (even the now defunct <a href="https://github.com/cparse/cparse">Cparse</a>).</p>
 <h3 id="why">Why?</h3>
 <p>The success of schemaless databases makes a lot of sense in part because of API consumption of JSON and mobile devices if you can get the synchronization part right.</p>
-<p>At <a href="https://www.epactnetwork.com/">a startup I worked at for a few years</a>, I experimented with a <strong>hybrid relational database and schemaless</strong> using <a href="https://www.sqlite.org/json1.html">JSON extensions for SQLite</a> - the industry de facto mobile database.</p>
-<p>This was quite fascinating and enabled serving queryable and dynamic data very easily from an engineering perspective without changing to much of the underlying core architecture.</p>
+<p>At <a href="https://www.epactnetwork.com/">a startup I worked at</a>, I experimented with a <strong>hybrid relational database and schemaless</strong> using <a href="https://www.sqlite.org/json1.html">JSON extensions for SQLite</a> - the industry de facto mobile database.</p>
+<p>This was quite exciting to enable serving queryable and dynamic data without changing to much of the architecture.</p>
+<p>Using JSON as a single column for data has some interesting features for hashing to detect changes easier.</p>
+<p>The <a href="https://tools.ietf.org/html/rfc7396">JSON merge patch RFC</a> makes it simple to keep the data integrity.</p>
 <h3 id="recently">Recently</h3>
-<p>Not too long ago I read an article from <a href="https://eng.uber.com/schemaless-part-one-mysql-datastore/">Uber engineering</a> describing how they transitioned from postgres to a hybrid schemaless using <a href="https://dev.mysql.com/doc/refman/8.0/en/json.html">MySQL and JSON</a>.<br>
-Databases have introduced JSON a while back and have been around for quite a few years.  They could definitely be considered a stable feature.</p>
-<p><a href="https://www.postgresql.org/docs/9.3/functions-json.html">Postgres also has JSON extensions</a> for querying and storage, but I believe Uber went with MySQL for some replication features needed for scalability.</p>
-<p>Using JSON as a single column for data has some interesting features for hashing to detect changes easier.  The <a href="https://tools.ietf.org/html/rfc7396">JSON merge patch RFC</a> is critical for keep a json data column up to date.</p>
+<p>Not too long ago an article from <a href="https://eng.uber.com/schemaless-part-one-mysql-datastore/">Uber engineering</a> described how they transitioned from postgres to a hybrid schemaless using <a href="https://dev.mysql.com/doc/refman/8.0/en/json.html">MySQL and JSON</a>.</p>
+<p><a href="https://www.postgresql.org/docs/9.3/functions-json.html">Postgres also has JSON extensions</a> for querying and storage, but I believe Uber went with MySQL for some replication or scalability features needed.</p>
+<p>The JSON data types where introduced a while back and have been around for quite a few years.  They could definitely be considered a stable feature.</p>
 <h3 id="micrantha">Micrantha</h3>
-<p>This is very inline with what I am doing at <a href="https://micrantha.com/labratory">micrantha labs</a>.</p>
-<p><strong>Garden</strong> as is is called, is currently an experimental extension that makes it easier to perform basic CRUD using schemaless JSON on postgres (in theory any JSON extended database).
-e
-The <strong>Pathway</strong> is a mobile synchronization piece leveraging industry standard protocols in <a href="https://en.wikipedia.org/wiki/Internet_of_things">IoT</a>.</p>
-<p>Using IoT network protocols saves a lot of time and have good features.  They do make sense from a mobile phone device (a thing wih internet).</p>
+<p>This is very inline with what I am attempting at <a href="https://micrantha.com/labratory">micrantha labs</a>.</p>
+<p><strong>Garden</strong> as is is called, is currently a extension that makes it easier to perform basic CRUD using schemaless JSON on postgres (or any JSON extended database).</p>
+<p>The <strong>Pathway</strong> is a mobile synchronization piece leveraging industry standard protocols in <a href="https://en.wikipedia.org/wiki/Internet_of_things">IoT</a> and focusing on data.</p>
 <p>The <strong>Nursery</strong> is the web frontend for users.</p>
 <h3 id="onward-and-upwards">Onward and Upwards</h3>
-<p>Having the flexibility of schemaless, while keeping the tried and tested features of a relational database is quite powerful and exciting.</p>
-<p>I would like to see a hybrid schemaless DIY offering with paid services for customized relational database and mobile work (scaling, referential integrity, backups), but who knows.</p>
-<p>Even as I move towards <a href="https://en.wikipedia.org/wiki/Progressive_web_application">progressive web apps</a> for mobile, the <a href="https://developers.google.com/web/fundamentals/instant-and-offline/web-storage/cache-api">storage api</a> or <a href="https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API">indexedDB</a> should still grow nicely the garden.</p>
+<p>I love the flexibility of schemaless with the tried and tested features of a relational database in one package.</p>
+<p>Using IoT network protocols saves a lot of time with good features and experience.  They do make sense from a mobile phone device (a thing with internet).</p>
+<p>Even potentially moving towards <a href="https://en.wikipedia.org/wiki/Progressive_web_application">progressive web apps</a> for mobile, the <a href="https://developers.google.com/web/fundamentals/instant-and-offline/web-storage/cache-api">storage api</a> or <a href="https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API">indexedDB</a> should be able to grow nicely the garden.</p>
 <h3 id="disclaimer">Disclaimer</h3>
-<p>The reasoning is frankly, because I am a hugely egoic when it comes to technology. My day jobs typically do not allow me to flex said ego safely.</p>
-<p>Creating something lightweight and without too much scope by leveraging more open source seems very doable to a solo proprietary.</p>
-<p>If any of this sounds interesting to you, feel free to <a href="mailto:ryan78j@gmail.com?subject=RE:%20Hybrid%20Schemaless%20Databases">ping me</a> to discuss.</p>
-<p>But as they say in the music industry: &ldquo;do not quit your day job!&rdquo;</p>
+<p>The reasoning is frankly, is my day jobs typically do not allow me to flex technically. And because I am a hugely egoic when it comes to technology.</p>
+<p>Have always preferred programming, data, protocols and algorithms to user interface.  Which is so ironic to a UI focused career.</p>
+<p>A complex and daunting project with little reward and a fun endeavour.  Micrantha is just a facade to justify my pandemic time.</p>
+<p>As they say in the music industry: &ldquo;do not quit your day job!&rdquo;</p>
 </div>
 
 </div>
