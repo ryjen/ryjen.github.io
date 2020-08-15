@@ -1,5 +1,7 @@
 $blue: #268bd2;
 
+@import "themes/coda/src/css/mixins";
+
 #main {
 
   .thing {
@@ -41,6 +43,9 @@ $blue: #268bd2;
 }
 
 #header.home {
+
+  @include header-norm;
+
   #brand {
     display: none;
   }
@@ -54,6 +59,19 @@ $blue: #268bd2;
     span.nav-name {
       display: inline-block;
     }
+  }
+
+}
+
+@media (max-width: 1275px) {
+  #header.home {
+    @include header-nameless;
+  }
+}
+
+@media (max-width: 800px) {
+  #header.home {
+    @include header-menu;
   }
 }
 
