@@ -1,28 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>javascript on ryan jennings</title>
-    <link>https://ryanjennin.gs/tags/javascript/</link>
-    <description>Recent content in javascript on ryan jennings</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 17 Nov 2012 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://ryanjennin.gs/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Crafting a Game With CraftyJS</title>
-      <link>https://ryanjennin.gs/2012/11/17/crafting-a-game-with-craftyjs/</link>
-      <pubDate>Sat, 17 Nov 2012 00:00:00 +0000</pubDate>
-      
-      <guid>https://ryanjennin.gs/2012/11/17/crafting-a-game-with-craftyjs/</guid>
-      <description>Introduction Briefly going to mention a javascript game engine called CraftyJS that I&amp;rsquo;ve been playing with the past couple of days.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>javascript on ryan jennings</title><link>https://ryanjennin.gs/tags/javascript/</link><description>Recent content in javascript on ryan jennings</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 17 Nov 2012 00:00:00 +0000</lastBuildDate><atom:link href="https://ryanjennin.gs/tags/javascript/index.xml" rel="self" type="application/rss+xml"/><item><title>Crafting a Game With CraftyJS</title><link>https://ryanjennin.gs/2012/11/17/crafting-a-game-with-craftyjs/</link><pubDate>Sat, 17 Nov 2012 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/2012/11/17/crafting-a-game-with-craftyjs/</guid><description>Introduction Briefly going to mention a javascript game engine called CraftyJS that I&amp;rsquo;ve been playing with the past couple of days.
 Has the usual suspects like Entity Component System, Collision, Sprite Maps, etc.
-The Project 
+The Project
 Amos the Alien is a small demo I made.
-I knew that I wanted a scrolling background of some sort - in other words - parallax scrolling. I also knew that I wanted two modes of scrolling: A) automatic background scrollin (clouds, etc) and character movement scrolling.</description>
-    </item>
-    
-  </channel>
-</rss>
+I knew that I wanted a scrolling background of some sort - in other words - parallax scrolling. I also knew that I wanted two modes of scrolling: A) automatic background scrollin (clouds, etc) and character movement scrolling.</description></item></channel></rss>

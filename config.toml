@@ -18,7 +18,7 @@ theme = "coda"
 
 [params]
     author = "Ryan Jennings"
-    description = "burned out software industry victim extraordinaire"
+    description = "a cog in the machine, functioning not impressing"
     introURL = "/post"
     githubUsername = "ryjen"
     copyright  = "&copy; all rights reserved, ryan jennings"
@@ -80,4 +80,9 @@ theme = "coda"
     name = "fas fa-envelope"
     type = "fas"
     weight = 2
+
+[[menu.icons]]
+    url = "https://www.reddit.com/user/ryjen78"
+    name = "fab fa-reddit"
+    weight = 7
 

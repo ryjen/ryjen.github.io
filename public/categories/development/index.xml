@@ -1,25 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>development on ryan jennings</title>
-    <link>https://ryanjennin.gs/categories/development/</link>
-    <description>Recent content in development on ryan jennings</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 19 Feb 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://ryanjennin.gs/categories/development/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Deploy Docker Registry with Dokku</title>
-      <link>https://ryanjennin.gs/2018/02/19/deploy-docker-registry-with-dokku/</link>
-      <pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://ryanjennin.gs/2018/02/19/deploy-docker-registry-with-dokku/</guid>
-      <description>Prerequisites You&amp;rsquo;ll need to prepare a bit.
-  A local path on the server to store registry data. For example: /mydir/registry Docker installed on the client and server machine Dokku installed on the server  For Authentication  httpasswd command is installed  For an External Registry  Dokku letsencrypt plugin installed A working domain name pointing to the dokku app. For example, https://registry.mydomain.com  Create the dokku app Create the dokku app and retag a pre-existing repository image to it.</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>development on ryan jennings</title><link>https://ryanjennin.gs/categories/development/</link><description>Recent content in development on ryan jennings</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 19 Feb 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://ryanjennin.gs/categories/development/index.xml" rel="self" type="application/rss+xml"/><item><title>Deploy Docker Registry with Dokku</title><link>https://ryanjennin.gs/2018/02/19/deploy-docker-registry-with-dokku/</link><pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/2018/02/19/deploy-docker-registry-with-dokku/</guid><description>Prerequisites You&amp;rsquo;ll need to prepare a bit.
+A local path on the server to store registry data. For example: /mydir/registry Docker installed on the client and server machine Dokku installed on the server For Authentication httpasswd command is installed For an External Registry Dokku letsencrypt plugin installed A working domain name pointing to the dokku app. For example, https://registry.mydomain.com Create the dokku app Create the dokku app and retag a pre-existing repository image to it.</description></item></channel></rss>
