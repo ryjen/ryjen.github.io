@@ -389,21 +389,21 @@ td {
     &.bg-default {
       &:nth-child(3n-2) {
         background-color: rgba($blue, 0.08);
-        h4 a {
+        h4, a {
           color: $blue;
         }
       }
 
       &:nth-child(3n-1) {
         background-color: rgba($orange, 0.08);
-        h4 a {
+        h4, a {
           color: $orange;
         }
       }
 
       &:nth-child(3n) {
         background-color: rgba($green, 0.08);
-        h4 a {
+        h4, a {
           color: $green;
         }
       }
