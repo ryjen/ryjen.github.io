@@ -129,6 +129,12 @@ hr {
   border-top: 1px solid $base0;
 }
 
+pre {
+  hr {
+    margin: 0;
+  }
+}
+
 td {
   border: none;
 }
