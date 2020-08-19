@@ -21,15 +21,6 @@
     </item>
     
     <item>
-      <title>software</title>
-      <link>https://ryanjennin.gs/categories/software/</link>
-      <pubDate>Tue, 04 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://ryanjennin.gs/categories/software/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>software engineering</title>
       <link>https://ryanjennin.gs/categories/software-engineering/</link>
       <pubDate>Tue, 04 Aug 2020 00:00:00 +0000</pubDate>
@@ -62,6 +53,15 @@
       <pubDate>Thu, 25 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://ryanjennin.gs/categories/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>software</title>
+      <link>https://ryanjennin.gs/categories/software/</link>
+      <pubDate>Thu, 25 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/categories/software/</guid>
       <description></description>
     </item>
     
