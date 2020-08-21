@@ -6,7 +6,7 @@ tags: [software, process, methodology, development]
 categories: [engineering]
 ---
 
-At the end of the day, software methodologies is all some form of [Development Lifecycle](https://en.wikipedia.org/wiki/Systems_development_life_cycle).
+At the end of the day, software methodologies are all some form of [Development Lifecycle](https://en.wikipedia.org/wiki/Systems_development_life_cycle).
 
 That is to say, the *individuals* unit of work, the *team's* unit of work and the *business*, are in one of several stages.
 
@@ -26,13 +26,13 @@ The **methodology** describes how you use the SDLC with some common properties:
 
 1. The **length and frequency** you iterate the SDLC
 2. How other disciplines and teams claim a stake
-3. What frameworks or practices are used
+3. What frameworks or practises are used
 
 There are 3 main methodologies to use as an example: waterfall, iterative and agile.
 
 ## [Waterfall](https://en.wikipedia.org/wiki/Waterfall_model)
 
-The waterfall method probably has roots in military and hardware. Where heirarchy is the dominant organizing factor and the final result is not expected to be mutable.
+The waterfall method probably has roots in military and hardware. Where hierarchy is the dominant organizing factor and the final result is not expected to be mutable.
 
 ### Iterations
 
@@ -69,7 +69,7 @@ The frequency of iterations also fluctuates.  Most jobs keep iterating anyway to
 <img class="blog imgbox" height="380" align="right" src="/image/blog/methodology.jpg" alt="methodology">
 {{< /rawhtml >}}
 
-With incremental processes, unknown complexities are learned quicker and re-incorporated back into the process in the next iteration.
+With incremental processes, unknown complexities are learnt quicker and re-incorporated back into the process in the next iteration.
 
 
 Resources spent on each iteration are focused, modular, and done with less.
@@ -138,9 +138,9 @@ Shorter iterations in agile allow risk management as either **adaptive ephemeral
 
 ### Frame the Work
 
-Agile has many frameworks and practices like:
+Agile has many frameworks and practises like:
 
-* [Scrum](https://en.wikipedia.org/wiki/Scrum_(software_development)): defines team roles, workflows and project artifacts
+* [Scrum](https://en.wikipedia.org/wiki/Scrum_(software_development)): defines team roles, work flows and project artifacts
 * [Kanban](https://en.wikipedia.org/wiki/Kanban_(development)): visualized capacity tasks instead of requested tasks
 * [Continuous Integration](https://en.wikipedia.org/wiki/Continuous_integration): automated unit test verification
 * [Test Driven Development](https://en.wikipedia.org/wiki/Test-driven_development): writing tests before implementation
