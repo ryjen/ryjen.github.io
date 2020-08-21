@@ -217,7 +217,7 @@ Perhaps someone out there in the outer mess (so called internet) would have a be
 
 My primal wounding has not allowed me to figured out how behave properly with work conflict.  In an environment promoted as social or not.  Suffering needlessly to great annoyance.  The father-like role of a lead or senior person is typically younger and less experienced than me.  The few people with real wisdom are nothing at all like my father.
 
-For me, its pure.  It is simple.  It is about quality, it is about cost and it is about time.  You cannot have your cake and eat it too.
+For me, its pure.  It is simple.  It is about [quality, it is about cost and it is about time](https://micrantha.com/philosophy).  You cannot have your cake and eat it too.
 
 The easiest way to achieve all three is still by iterating the same damn gobbledy gook (SDLC) every damn day.
 
