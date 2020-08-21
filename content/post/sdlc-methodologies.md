@@ -184,6 +184,8 @@ If you have experience developing software in the industry you will know that ev
 
 When all your human interactions involve being reduced to a means to an end, your challenges are only problems you did not create, no amount of methodology or team spirit will save you.
 
+You will revert back to some cowboy coding hybrid newbie and burnout.
+
 ## Out
 
 For me, its pure.  It is simple.  It is about quality, it is about cost and it is about time.  You cannot have your cake and eat it too.
