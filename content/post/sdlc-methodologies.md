@@ -63,7 +63,7 @@ An iteration length varies with the project or team.  NASA used ~8 week iteratio
 The frequency of iterations also fluctuates.  Most jobs keep iterating anyway to maximize human resources.
 
 
-### It strives for excellence
+### It strives for excellence (erates)
 
 {{< rawhtml >}}
 <img class="blog imgbox" height="380" align="right" src="/image/blog/methodology.jpg" alt="methodology">
@@ -71,10 +71,9 @@ The frequency of iterations also fluctuates.  Most jobs keep iterating anyway to
 
 With incremental processes, unknown complexities are learnt quicker and re-incorporated back into the process in the next iteration.
 
-
 Resources spent on each iteration are focused, modular, and done with less.
 
-Even with no changes in requirements, the knowledge gained from each iteration helps the next one.
+In the end it is a more natural approach to developing mutable software.
 
 ## [Unified Process](https://en.wikipedia.org/wiki/Unified_Process)
 
