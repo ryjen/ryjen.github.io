@@ -3,17 +3,62 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://ryanjennin.gs/categories/</loc>
+    <lastmod>2020-08-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ryanjennin.gs/tags/development/</loc>
+    <lastmod>2020-08-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ryanjennin.gs/categories/engineering/</loc>
+    <lastmod>2020-08-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ryanjennin.gs/tags/methodology/</loc>
+    <lastmod>2020-08-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ryanjennin.gs/post/</loc>
+    <lastmod>2020-08-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ryanjennin.gs/tags/process/</loc>
+    <lastmod>2020-08-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ryanjennin.gs/</loc>
+    <lastmod>2020-08-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ryanjennin.gs/tags/software/</loc>
+    <lastmod>2020-08-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ryanjennin.gs/2020/08/20/software-methodologies/</loc>
+    <lastmod>2020-08-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ryanjennin.gs/tags/</loc>
+    <lastmod>2020-08-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ryanjennin.gs/tags/art/</loc>
     <lastmod>2020-08-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://ryanjennin.gs/categories/art/</loc>
-    <lastmod>2020-08-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ryanjennin.gs/categories/</loc>
     <lastmod>2020-08-08T00:00:00+00:00</lastmod>
   </url>
   
@@ -33,27 +78,12 @@
   </url>
   
   <url>
-    <loc>https://ryanjennin.gs/post/</loc>
-    <lastmod>2020-08-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ryanjennin.gs/tags/psychology/</loc>
     <lastmod>2020-08-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://ryanjennin.gs/</loc>
-    <lastmod>2020-08-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ryanjennin.gs/tags/shadow/</loc>
-    <lastmod>2020-08-08T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ryanjennin.gs/tags/</loc>
     <lastmod>2020-08-08T00:00:00+00:00</lastmod>
   </url>
   
@@ -553,17 +583,7 @@
   </url>
   
   <url>
-    <loc>https://ryanjennin.gs/tags/development/</loc>
-    <lastmod>2012-04-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ryanjennin.gs/tags/quotes/</loc>
-    <lastmod>2012-04-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ryanjennin.gs/tags/software/</loc>
     <lastmod>2012-04-10T00:00:00+00:00</lastmod>
   </url>
   

@@ -6,10 +6,46 @@
     <description>Recent content in Tags on ryan jennings</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 20 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://ryanjennin.gs/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>development</title>
+      <link>https://ryanjennin.gs/tags/development/</link>
+      <pubDate>Thu, 20 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/tags/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>methodology</title>
+      <link>https://ryanjennin.gs/tags/methodology/</link>
+      <pubDate>Thu, 20 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/tags/methodology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>process</title>
+      <link>https://ryanjennin.gs/tags/process/</link>
+      <pubDate>Thu, 20 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/tags/process/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>software</title>
+      <link>https://ryanjennin.gs/tags/software/</link>
+      <pubDate>Thu, 20 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/tags/software/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>art</title>
@@ -660,29 +696,11 @@
     </item>
     
     <item>
-      <title>development</title>
-      <link>https://ryanjennin.gs/tags/development/</link>
-      <pubDate>Tue, 10 Apr 2012 00:00:00 +0000</pubDate>
-      
-      <guid>https://ryanjennin.gs/tags/development/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>quotes</title>
       <link>https://ryanjennin.gs/tags/quotes/</link>
       <pubDate>Tue, 10 Apr 2012 00:00:00 +0000</pubDate>
       
       <guid>https://ryanjennin.gs/tags/quotes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>software</title>
-      <link>https://ryanjennin.gs/tags/software/</link>
-      <pubDate>Tue, 10 Apr 2012 00:00:00 +0000</pubDate>
-      
-      <guid>https://ryanjennin.gs/tags/software/</guid>
       <description></description>
     </item>
     

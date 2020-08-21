@@ -10,91 +10,118 @@ At the end of the day, software methodologies is all some form of [Development L
 
 That is to say, the *individuals* unit of work, the *team's* unit of work and the *business*, are in one of several stages.
 
-### Software Development Life Cycle
+{{< rawhtml >}}
+<img class="blog" align="left" src="/image/blog/sdlc.png" alt="sdlc">
+{{< /rawhtml >}}
+
 1. Requirements and Planning
 2. Analysis and Design
 3. Implementation
 4. Testing and Verification
-5. Deployment and Integration
-7. Maintenance and Evolution
+5. Deployment and Maintenance
 
 That is it.  We all know it. The steps may vary but the core ones remain the same.
 
-## Methodologies
+The **methodology** describes how you use the SDLC with some common properties:
 
-The **methodology** describes how you use the SDLC.  Typically:
-
-1. How often you iterate
+1. The **length and frequency** you iterate the SDLC
 2. How other disciplines and teams claim a stake
 3. What frameworks or practices are used
 
-There are 3 main methodologies to use as an example.
+There are 3 main methodologies to use as an example: waterfall, iterative and agile.
 
-### [Waterfall](https://en.wikipedia.org/wiki/Waterfall_model)
+## [Waterfall](https://en.wikipedia.org/wiki/Waterfall_model)
 
-Each step in the SDLC is done only **once and completely** with a finished system at the end. 
+The waterfall method probably has roots in military and hardware. Where heirarchy is the dominant organizing factor and the final result is not expected to be mutable.
 
-Department members who are not actively participating in outputs are providing input (usually meetings) to make the stage as successful as it can be.
+### Iterations
+
+The waterfall SDLC is completed in 1 iteration.  Each stage in the cycle can take months.  When the last stage is complete there is a finished system. 
+
+### Stakeholders
+
+Department members who are not actively participating in outputs are providing input.  Usually during meetings aimed at making the stage successful but having the opposite effect.
+
+### Stick to the Streams and Rivers You Know
 
 Participants may require a lot of experience to foresee a successful stage. 
 
 Turned out to be a very naive approach due to the difficulty of making changes.
 
-Probably has roots in hardware where the final result is not as mutable as software.  You may still see the process in such companies.
-
 I have worked in waterfall where the complete manual was handed to our team before implementation.
 
-### [Iterative](https://en.wikipedia.org/wiki/Iterative_and_incremental_development)
+## [Iterative](https://en.wikipedia.org/wiki/Iterative_and_incremental_development)
 
 The idea with this approach is to *improve the cost of changes*.
 
-To develop a complete system, the stages of the SDLC are *repeated in iterations* or increments.
+To develop a complete system, the stages of the SDLC are *repeated in increments*.
 
-Unknown complexities are learned quicker and re-incorporated back into the process in the next iteration.
+### Iterations
+
+An iteration length varies with the project or team.  NASA used ~8 week iterations.  I have worked in ~4 week iterations.
+
+The frequency of iterations also fluctuates.  Most jobs keep iterating anyway to maximize human resources.
+
+
+### It strives for excellence
+
+{{< rawhtml >}}
+<img class="blog imgbox" height="380" align="right" src="/image/blog/methodology.jpg" alt="methodology">
+{{< /rawhtml >}}
+
+With incremental processes, unknown complexities are learned quicker and re-incorporated back into the process in the next iteration.
+
 
 Resources spent on each iteration are focused, modular, and done with less.
 
 Even with no changes in requirements, the knowledge gained from each iteration helps the next one.
 
-An iteration length varies with the project.  NASA used ~8 week iterations.  I have worked in ~4 week iterations.
+## [Unified Process](https://en.wikipedia.org/wiki/Unified_Process)
 
-### [Unified Process](https://en.wikipedia.org/wiki/Unified_Process)
+The unified process **framework** expands on the iterative methodology by defining four **phases**.
 
-The unified process expands on the iterative methodology.  It defines four **phases** during multiple iterations.
+The phased approach is aimed at addressing risk for project management and providing an operational view for the business.
 
-The phases are aimed at addressing risk for project management.  
+### Iterations
 
-The **framework** allows for a reliable view of operations for the business quarter cycle.
+The phases themselves define the frequency of iterations and **goals** with related SDLC stages for input. 
 
-Each phase has project **goals** that include different stages in the SDLC for input. 
+The length of iterations still depends on the team or project.
 
-The benefit of a phased approach is that cross-discipline teams have their stakes accounted for during a time period.
+### Inception phase
 
-#### Inception phase
+Lasts ~1 iteration involving requirements and analysis stages.
+Goal is do determines feasibility and estimates of cost and schedule.
 
-Determines feasibility and estimates. Lasts ~1 iteration involving requirements and analysis stages.
+### Elaboration phase
 
-#### Elaboration phase
-
-Produces a milestone of captured requirements, validated architecture, and addressed risk.
 Lasts ~2 iterations involving requirements, analysis, implementation, and testing stages.
+Produces a milestone of captured requirements, validated architecture, and addressed risk.
 
-#### Construction
+### Construction phase
 
-Produces a release each iteration. Lasts ~4 iterations involving analysis, implementation, and testing stages.
+Lasts ~4 iterations involving analysis, implementation, and testing stages.
+Produces a release each iteration. 
 
-#### Transition
+### Transition phase
 
-Produces a final production release and maintenance. Lasts ~2 iterations involving testing and deployment stages.
+Lasts ~2 iterations involving testing and deployment stages.
+Produces a final production release and maintenance. 
 
 
-### [Agile](https://en.wikipedia.org/wiki/Agile_software_development)
+## [Agile](https://en.wikipedia.org/wiki/Agile_software_development)
 
-The practice of software engineering evolved in the late 20th and 21st century, with more people, better internet, memory, speed and tools.
+Software engineering evolved in the late 20th and 21st century, with more people, better internet, memory, speed and tools.  Mitigating risk so aggressively became less of a need.
 
-Mitigating risk so aggressively became less of a need to some and desired to be less mundane.
+A **simplified unified process** was desired to improve productivity of stagnant workers.  
 
-A **simplified unified process** was desired to improve productivity.  The [manifesto for agile development](https://en.wikipedia.org/wiki/Agile_software_development#The_Agile_Manifesto) was popularized as a way forward.
+### Manifest the Method
+
+{{< rawhtml >}}
+<img class="blog imgbox" align="right" height="400" src="/image/blog/agile.jpg" alt="agile">
+{{< /rawhtml >}}
+
+The [manifesto for agile development](https://en.wikipedia.org/wiki/Agile_software_development#The_Agile_Manifesto) was popularized as a way forward.
 
 The agile manifesto declares values like:
 
@@ -103,11 +130,15 @@ The agile manifesto declares values like:
 * customer collaboration over contracts
 * adaptability over a plan
 
-Agile development is typically shorter iterations of the SDLC around 1 or 2 weeks.
+### Iterations
+
+Agile has typically shorter iterations of the SDLC around 1 or 2 weeks.
 
 Shorter iterations in agile allow risk management as either **adaptive ephemeral milestones**, or **predictive analysis**.
 
-Agile methodologies incorporate frameworks and practices like:
+### Frame the Work
+
+Agile has many frameworks and practices like:
 
 * [Scrum](https://en.wikipedia.org/wiki/Scrum_(software_development)): defines team roles, workflows and project artifacts
 * [Kanban](https://en.wikipedia.org/wiki/Kanban_(development)): visualized capacity tasks instead of requested tasks
@@ -119,13 +150,17 @@ I have worked in ~1.5 week agile and in my honest opinion, it is a very construc
 
 ## Next?
 
-Software engineering sees another increase of people and transition of experience to managerial type roles in its next evolution.
+In its next evolution of generations, software engineering sees another increase of people and transition of experience to managerial type roles.
 
 All have high hopes of fame and greater riches.  How do businesses manage such expectations?  How do managerial type roles satisfy the needs of technical people?
 
+What could possibly come next after Agile if anything?
+
+### Methodology Manuals
+
 One answer is, satirically, with an *increase of methodology complexity*.
 
-Think of the benefits:
+The benefits are a shift back away from construction oriented agile:
 
 1. Satisfy the complexity equals knowledge work cash syndrome for the non-technical
 2. Transform engineering into a point based statistical game for political gain
@@ -133,12 +168,18 @@ Think of the benefits:
 4. Delay ambitious promotions for longevity
 5. A revolving door of humans to keep actual work tasks simple
 
-Or a few alternates:
+### The Whole Rotten Pear
 
-2. Mature as a profession like accounting with oversight and regulatory associations
-3. Teach Artificial Intelligence how to develop software
+One can also think of a few interesting possibilities for the profession as a whole.
 
-### The shadow
+1. Mature as a profession like accounting with oversight and regulatory associations
+2. Teach Artificial Intelligence how to develop software
+
+## The Robot's Shadow
+
+{{< rawhtml >}}
+<img class="blog imgbox" align="right" width="400" src="/image/blog/gamification.jpg" alt="gamification">
+{{< /rawhtml >}}
 
 If you have experience developing software in the industry you will know that even the most passionate engineer will turn to a bitter vegetable. 
 

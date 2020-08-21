@@ -6,10 +6,19 @@
     <description>Recent content in Categories on ryan jennings</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 20 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://ryanjennin.gs/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>engineering</title>
+      <link>https://ryanjennin.gs/categories/engineering/</link>
+      <pubDate>Thu, 20 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/categories/engineering/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>art</title>
