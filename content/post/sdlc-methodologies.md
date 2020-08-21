@@ -145,31 +145,46 @@ Agile has many frameworks and practises like:
 * [Test Driven Development](https://en.wikipedia.org/wiki/Test-driven_development): writing tests before implementation
 * [Retrospectives](https://en.wikipedia.org/wiki/Retrospective) and [Daily Standups](https://en.wikipedia.org/wiki/Stand-up_meeting): humanized meetings
 
-I have worked in ~1.5 week agile and in my honest opinion, it is a very construction phase oriented methodology lacking emphasis on design and verification on complex solutions as a whole.
+I have worked in ~1.5 week agile and in my honest opinion, it is a **very construction phase oriented methodology lacking emphasis on design and verification on complex solutions as a whole**.
 
 ## Next?
 
-In its next evolution of generations, software engineering sees another increase of people and transition of experience to managerial type roles.
+At best we have about 3-5 generations in the industry since the 1950s.
+Every generation seems to be the same.  Youth are hard wired to rebel against the absent older role models who claim to know more.
 
-All have high hopes of fame and greater riches.  How do businesses manage such expectations?  How do managerial type roles satisfy the needs of technical people?
+The evolution of software engineering methodologies sees another increase of people, the transition of experience to managerial type roles and increased need for quality and security.
+
+How do new people with high hopes of fame, riches and meaning find it?  How do businesses manage expectations?  How do managerial type roles satisfy the needs of technical people?
 
 What could possibly come next after Agile if anything?
 
 ### Methodology Manuals
 
-One answer is, satirically, with an *increase of methodology complexity*.
+One answer has been, satirically, with an *increase of methodology complexity*.
 
-The benefits are a shift back away from construction oriented agile:
+The benefits are a *shift* or pendulum swing back away from *construction oriented* agile:
 
 1. Satisfy the complexity equals knowledge work cash syndrome for the non-technical
-2. Transform engineering into a point based statistical game for political gain
+2. Transform engineering into a point based statistical game
 3. Turn fatigued people relationships into competition
-4. Delay ambitious promotions for longevity
-5. A revolving door of humans to keep actual work tasks simple
+4. Delay ambitious promotions for longevity with complexity
+5. Use a revolving door of humans to keep actual work tasks simple
+
+### Social Security
+
+A topic worth considering is *increased socialization of teams* and the industry into the real world.
+
+Open source social development has shown how successful bazaar projects can be in comparison with cathedral like enterprises.
+
+Socialized networks for business feel like brothels for reliable work.
+
+Communication tools are more advanced and useful but do not solve basic human dynamics.
+
+For example, teams with a *wisdom vs ambition* gap will be less cohesive, fearing of degradation back to the dreaded waterfall.
 
 ### The Whole Rotten Pear
 
-One can also think of a few interesting possibilities for the profession as a whole.
+Other interesting possibilities for the profession as a whole:
 
 1. Mature as a profession like accounting with oversight and regulatory associations
 2. Teach Artificial Intelligence how to develop software
@@ -182,11 +197,25 @@ One can also think of a few interesting possibilities for the profession as a wh
 
 If you have experience developing software in the industry you will know that even the most passionate engineer will turn to a bitter vegetable. 
 
-When all your human interactions involve being reduced to a means to an end, your challenges are only problems you did not create, no amount of methodology or team spirit will save you.
+When all your interactions involve being reduced to a means to an end, with your competition more valued, and your challenges only problems you did not create... Then no amount of methodology or team spirit will save you.
 
 You will revert back to some cowboy coding hybrid newbie and burnout.
 
-## Out
+### Psych Cop Empathy
+
+The incomplete-child culture of youthful unconscious ego is built into the business, as becoming sort of a metro nerd clone used to extract momentum. 
+
+The value a clone adds in social comparison with competition, is arguably more than actual output.
+
+Using likes, stars, karma, word-of-mouth, trends or meaningless positivity as a way to determine a correct technical direction is lost to me.  As is the fun in team play dealt with political agendas.
+
+Perhaps someone out there in the outer mess (so called internet) would have a better perspective on social software engineering.
+
+## Over and Out
+
+> Reduced, Rejected and Ejected. - Henry Rollins
+
+My primal wounding has not allowed me to figured out how behave properly with work conflict.  In an environment promoted as social or not.  Suffering needlessly to great annoyance.  The father-like role of a lead or senior person is typically younger and less experienced than me.  The few people with real wisdom are nothing at all like my father.
 
 For me, its pure.  It is simple.  It is about quality, it is about cost and it is about time.  You cannot have your cake and eat it too.
 

@@ -527,8 +527,7 @@ td {
   }
 
   blockquote {
-    display: inline-block;
-    position: relative;
+    display: flex;
     margin-left: 0;
     margin-right: 0;
     padding-left: 60px;
@@ -540,18 +539,15 @@ td {
         @extend %fa-icon;
         @extend .fas;
         font-size: 30px;
-        position: absolute;
       }
       &.left {
-        top: -4px;
-        left: 10px;
+        margin-right: 1rem;
         &:before {
           content: fa-content($fa-var-quote-left);
         }
       }
       &.right {
-        top: 4px;
-        right: 10px;
+        margin-left: 1rem;
         &:before {
           content: fa-content($fa-var-quote-right);
         }
