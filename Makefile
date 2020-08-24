@@ -23,5 +23,7 @@ update:
 test:
 	@yarn test
 
+retest: theme blog test
+
 image:
 	@create-registry-image -r registry.micrantha.com ryjen/blog
