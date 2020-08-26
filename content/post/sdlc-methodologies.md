@@ -156,7 +156,9 @@ The evolution of software engineering methodologies sees another increase of peo
 
 How do new people with high hopes of fame, riches and meaning find it?  How do businesses manage expectations?  How do managerial type roles satisfy the needs of technical people?
 
-What could possibly come next after Agile if anything?  If negative opinions are too threatening to your fantasy of interconnectedness... Please [return to normal technological browsing](https://www.google.com/search?q=barney)
+What could possibly come next after Agile if anything?  
+
+If negative opinions or psychology are too threatening to your fantasy of interconnectedness... Please [return to normal technological browsing](https://www.google.com/search?q=barney)!
 
 ### Methodology Manuals
 
