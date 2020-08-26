@@ -182,6 +182,8 @@ Communication tools are more advanced and useful but do not solve basic human dy
 
 For example, teams with a *wisdom vs ambition* gap will be less cohesive, fearing of degradation back to the dreaded waterfall.
 
+As I was open-sourcing before things like github, perhaps someone out there in the outer mess (so called internet) would have a better perspective on social software engineering.  
+
 ### The Whole Rotten Pear
 
 Other interesting possibilities for the profession as a whole:
@@ -208,8 +210,6 @@ The incomplete-child culture of youthful unconscious ego is built into the busin
 The value a clone adds in social comparison with competition, is arguably more than actual output.
 
 Using likes, stars, karma, word-of-mouth, trends or meaningless positivity as a way to determine a correct technical direction is lost to me.  As is the fun in team play dealt with political agendas.
-
-Perhaps someone out there in the outer mess (so called internet) would have a better perspective on social software engineering.
 
 ## Over and Out
 
