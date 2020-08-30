@@ -180,6 +180,8 @@ Open source social development has shown how successful bazaar projects can be i
 
 Socialized networks for business feel like brothels for reliable work.
 
+The chemical soup you get from socializing creates a delusion that everything is ok, but it might not be.
+
 Communication tools are more advanced and useful but do not solve basic human dynamics.
 
 For example, teams with a *wisdom vs ambition* gap will be less cohesive, fearing of degradation back to the dreaded waterfall.
