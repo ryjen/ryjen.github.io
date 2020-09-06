@@ -1,1 +1,159 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Categories on ryan jennings</title><link>https://ryanjennin.gs/categories/</link><description>Recent content in Categories on ryan jennings</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 20 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://ryanjennin.gs/categories/index.xml" rel="self" type="application/rss+xml"/><item><title>engineering</title><link>https://ryanjennin.gs/categories/engineering/</link><pubDate>Thu, 20 Aug 2020 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/categories/engineering/</guid><description/></item><item><title>art</title><link>https://ryanjennin.gs/categories/art/</link><pubDate>Sat, 08 Aug 2020 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/categories/art/</guid><description/></item><item><title>software engineering</title><link>https://ryanjennin.gs/categories/software-engineering/</link><pubDate>Tue, 04 Aug 2020 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/categories/software-engineering/</guid><description/></item><item><title>philosophy</title><link>https://ryanjennin.gs/categories/philosophy/</link><pubDate>Tue, 07 Jul 2020 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/categories/philosophy/</guid><description/></item><item><title>spiritualism</title><link>https://ryanjennin.gs/categories/spiritualism/</link><pubDate>Tue, 07 Jul 2020 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/categories/spiritualism/</guid><description/></item><item><title>programming</title><link>https://ryanjennin.gs/categories/programming/</link><pubDate>Thu, 25 Jun 2020 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/categories/programming/</guid><description/></item><item><title>software</title><link>https://ryanjennin.gs/categories/software/</link><pubDate>Thu, 25 Jun 2020 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/categories/software/</guid><description/></item><item><title>music</title><link>https://ryanjennin.gs/categories/music/</link><pubDate>Wed, 02 Oct 2019 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/categories/music/</guid><description/></item><item><title>continuous integration</title><link>https://ryanjennin.gs/categories/continuous-integration/</link><pubDate>Fri, 05 Jul 2019 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/categories/continuous-integration/</guid><description/></item><item><title>version control</title><link>https://ryanjennin.gs/categories/version-control/</link><pubDate>Fri, 05 Jul 2019 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/categories/version-control/</guid><description/></item><item><title>self-hosting</title><link>https://ryanjennin.gs/categories/self-hosting/</link><pubDate>Thu, 07 Feb 2019 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/categories/self-hosting/</guid><description/></item><item><title>spirituality</title><link>https://ryanjennin.gs/categories/spirituality/</link><pubDate>Sat, 12 Jan 2019 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/categories/spirituality/</guid><description/></item><item><title>linux</title><link>https://ryanjennin.gs/categories/linux/</link><pubDate>Mon, 05 Nov 2018 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/categories/linux/</guid><description/></item><item><title>mobile</title><link>https://ryanjennin.gs/categories/mobile/</link><pubDate>Wed, 16 May 2018 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/categories/mobile/</guid><description/></item><item><title>containerization</title><link>https://ryanjennin.gs/categories/containerization/</link><pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/categories/containerization/</guid><description/></item><item><title>development</title><link>https://ryanjennin.gs/categories/development/</link><pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/categories/development/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on ryan jennings</title>
+    <link>https://ryanjennin.gs/categories/</link>
+    <description>Recent content in Categories on ryan jennings</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 20 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://ryanjennin.gs/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>engineering</title>
+      <link>https://ryanjennin.gs/categories/engineering/</link>
+      <pubDate>Thu, 20 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/categories/engineering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>art</title>
+      <link>https://ryanjennin.gs/categories/art/</link>
+      <pubDate>Sat, 08 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/categories/art/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>software</title>
+      <link>https://ryanjennin.gs/categories/software/</link>
+      <pubDate>Tue, 04 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/categories/software/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>software engineering</title>
+      <link>https://ryanjennin.gs/categories/software-engineering/</link>
+      <pubDate>Tue, 04 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/categories/software-engineering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>philosophy</title>
+      <link>https://ryanjennin.gs/categories/philosophy/</link>
+      <pubDate>Tue, 07 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/categories/philosophy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>spiritualism</title>
+      <link>https://ryanjennin.gs/categories/spiritualism/</link>
+      <pubDate>Tue, 07 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/categories/spiritualism/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>programming</title>
+      <link>https://ryanjennin.gs/categories/programming/</link>
+      <pubDate>Thu, 25 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/categories/programming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>music</title>
+      <link>https://ryanjennin.gs/categories/music/</link>
+      <pubDate>Wed, 02 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/categories/music/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>continuous integration</title>
+      <link>https://ryanjennin.gs/categories/continuous-integration/</link>
+      <pubDate>Fri, 05 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/categories/continuous-integration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>version control</title>
+      <link>https://ryanjennin.gs/categories/version-control/</link>
+      <pubDate>Fri, 05 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/categories/version-control/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>self-hosting</title>
+      <link>https://ryanjennin.gs/categories/self-hosting/</link>
+      <pubDate>Thu, 07 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/categories/self-hosting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>spirituality</title>
+      <link>https://ryanjennin.gs/categories/spirituality/</link>
+      <pubDate>Sat, 12 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/categories/spirituality/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://ryanjennin.gs/categories/linux/</link>
+      <pubDate>Mon, 05 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/categories/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mobile</title>
+      <link>https://ryanjennin.gs/categories/mobile/</link>
+      <pubDate>Wed, 16 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/categories/mobile/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>containerization</title>
+      <link>https://ryanjennin.gs/categories/containerization/</link>
+      <pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/categories/containerization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>development</title>
+      <link>https://ryanjennin.gs/categories/development/</link>
+      <pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/categories/development/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
