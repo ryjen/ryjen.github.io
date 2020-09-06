@@ -140,11 +140,11 @@ one's true consciousness.
 
 ---
 
-The distorted reality of an addictive search for unmitigated happiness,
+In the distorted reality of an addictive search for unmitigated happiness,
 
-one who finds the truth in surviving the dead triplets,
+one who finds the truth in surviving the dead triplets
 
-is conflicted with an opportunity for a richer life,
+is conflicted between an opportunity for a richer life,
 
 and the reality of how estranged
 
