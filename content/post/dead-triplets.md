@@ -20,6 +20,8 @@ And the dead triplets of **depression**, **[desuetude](https://www.merriam-webst
 
 Lurking in the shadows{{<rawhtml>}}<sub><a href="#shadow-self">[2]</a></sub>{{</rawhtml>}},
 
+Waiting for us to falter and become theirs.
+
 ## the depression triplet 
 
 It is a 3 headed beast,
