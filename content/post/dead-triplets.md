@@ -6,9 +6,9 @@ category: [psychology]
 date: 2020-09-05
 ---
 
-This post could about music theory and rhythm, such as the triplet guitar riffs in [invincible](https://www.youtube.com/watch?v=hxsld16TjSU) or even the lyrics from the whole chart busting album.
+This post could about music theory and rhythm, such as the triplet guitar riffs in [invincible](https://www.youtube.com/watch?v=hxsld16TjSU)...
 
-But this about a single chapter, in a single from a book from the swamp from which I quote liberally.  It is probably already a more influential book than I realize.
+But this about a single chapter, in a single from a book from the swamp.  It is probably already a more influential book than I realize, from which I quote liberally and implicitly.
 
 As monks say, the soul is wet (thus presumably messy) and a dry soul is lacking life. 
 
@@ -18,37 +18,37 @@ Our society emphasizes the external{{<rawhtml>}}<sub><a href="#external-society"
 
 And the dead triplets of **depression**, **[desuetude](https://www.merriam-webster.com/dictionary/desuetude)** and **despair**
 
-Sit on the tree outside our window,
-
-Waiting for us to falter and become theirs. {{<rawhtml>}}<sub><a href="#crows">[2]</a></sub>{{</rawhtml>}}
+Lurking in the shadows{{<rawhtml>}}<sub><a href="#shadow-self">[2]</a></sub>{{</rawhtml>}},
 
 ## the depression triplet 
 
 It is a 3 headed beast,
 
-One head is reactive to the world of form,
+One head is **reactive to the world of form**,
 
-Another head originates from our internal body{{<rawhtml>}}<sub><a href="#internal-body">[3]</a></sub>{{</rawhtml>}},
+Another head originates **from our internal body**{{<rawhtml>}}<sub><a href="#internal-body">[3]</a></sub>{{</rawhtml>}},
 
-And another head originates from your mind.
+And another head **originates from your mind**.
 
 The entire beast may breed and pass its self on
 
-If your conflict with it is strong.
+if your conflict with it is strong.
 
 ### defeating the depression triplet
 
-To defeat this 3 headed monster, you must use your axe
+To defeat this 3 headed monster you must use your axe.
 
-Cutting the heads off into the past, future and present.
+By cutting the heads off into the **past**, **future** and **present**
 
-Then you can say you are not your external,
+you can then say **you are not your past**, **you are not your mind**, 
 
-You are not your mind, and you can choose what to feel in the present.
+and in the **power of the present** moment, you can **choose** how you feel.
 
-To face, value or respect the depression beast takes great courage
+To face, value or respect the depression beast
 
-And to not distract ourselves away from its misery.
+and to not distract ourselves away from its misery
+
+takes great courage.
 
 ## the desuetude triplet
 
@@ -58,50 +58,52 @@ and creates the desuetude triplet.
 
 The desuetude triplet is an unseen ghost like spirit,
 
-that that unknowingly removes energy from us
+that that unknowingly **removes energy** from us
 
-because it does not approve of how our ego is investing it.
+because it **does not approve of how our ego is investing** it.
 
-The spirit will bring a progressive withdraw of enthusiasm or desire.
+The spirit will bring a **progressive withdraw of enthusiasm or desire**.
 
 ### defeating the ghost
 
-To defeat the spirit, you must recognize the lost energy
+To defeat the spirit, you must **recognize the lost energy**
 
-in service to something that is not your true nature.
+in service to something that is **not your true nature**.
+
+Then you may be able to **choose** differently or **accept what already is**.
 
 At its peak of energy drain you are
 
-obliged by a conditioned reward
+**obliged** by a **conditioned reward**
 
 to putting energy into a soulless task
 
-and feeling shame if you are not productive.
+and feeling **shame** if you are not productive.
 
 
 ## the despair triplet
 
-When the spirit of desuetude has drained all the energy it can... the third triplet is created.
+When the spirit of desuetude has drained enough energy... the third triplet is created.
 
 The despair triplet is a shadow beast with giant consuming jaws.
 
-It makes the soul want to end the agony of ambiguity
+It makes the soul want to **end the agony of ambiguity**
 
 by fleeing into its jaws, becoming it,
 
-preferring the "horror known, over the horror imagined".
+preferring **the horror known, over the horror imagined**.
 
 When the despair triplet consumes you
 
-it manifests either as tragedy, an active suffering
+it manifests either as **tragedy**, an **active suffering**
 
-or its opposite, a pathetic victimage, a passive suffering.
+or its opposite, a **pathetic victimage** and a **passive suffering**.
 
 ### defeating the shadow beast
 
-To defeat the despair beast, one must not deny the suffering
+To defeat the despair beast, one **must not deny the suffering**
 
-while retaining the modest dignity of humanity
+while retaining the **modest dignity of parts of humanity**
 
 and suffer through toward whatever awaits
 
@@ -132,7 +134,7 @@ Attempting a rite of passage,
 
 that does not involve betraying,
 
-their true consciousness.
+one's true consciousness.
 
 ---
 
@@ -144,7 +146,7 @@ is conflicted with an opportunity for a richer life,
 
 and the reality of how estranged
 
-one still is in the world of form.
+they still are in the world of form.
 
 ---
 
@@ -174,7 +176,7 @@ unconscious repressed material into consciousness.
 
 {{<rawhtml>}}<sub>[1]</sub>{{</rawhtml>}} <a name="external-society">like the roman empire at its peak of its orgy, porn-like obsession</a>
 
-{{<rawhtml>}}<sub>[2]</sub>{{</rawhtml>}} <a name="crows">like the raven by Poe</a>
+{{<rawhtml>}}<sub>[2]</sub>{{</rawhtml>}} <a name="crows">the shadow cast from the light of positivity, shadow self</a>
 
 {{<rawhtml>}}<sub>[3]</sub>{{</rawhtml>}} <a name="internal-body">internal feelings, state or pain</a>
 
