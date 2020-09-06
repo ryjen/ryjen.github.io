@@ -178,7 +178,7 @@ helps the psyche heal and move on.
 
 ---
 
-{{<rawhtml>}}<sub><a name="external-society">[1]</a></sub>{{</rawhtml>}} like the roman empire at its peak of its orgy, porn-like obsession</a>
+{{<rawhtml>}}<sub><a name="external-society">[1]</a></sub>{{</rawhtml>}} like the roman empire at the peak of its orgy, porn-like obsession of external self</a>
 
 {{<rawhtml>}}<sub><a name="shadow-self">[2]</a></sub>{{</rawhtml>}} the shadow cast from the light of positivity, shadow self
 
