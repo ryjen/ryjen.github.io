@@ -170,9 +170,11 @@ As sleep serves healing of the body, or a pain flags a wound
 
 Jungians see depression as a balance and healing of the psyche or a signal of something profoundly wrong.
 
-And the use of imagination or art to activate
+The use of imagination or art to activate
 
-unconscious repressed material into consciousness.
+unconscious repressed material into consciousness
+
+helps the psyche heal and move on.
 
 ---
 
