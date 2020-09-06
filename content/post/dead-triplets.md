@@ -8,7 +8,7 @@ date: 2020-09-05
 
 This post could about music theory and rhythm, such as the triplet guitar riffs in [invincible](https://www.youtube.com/watch?v=hxsld16TjSU)...
 
-But this about a single chapter, in a single from a [book from the swamp](https://www.amazon.ca/dp/0919123740/ref=cm_sw_em_r_mt_dp_OgrvFbQY1J529).  It is probably already a more influential book than I realize, from which I quote liberally and implicitly.
+But this about a single chapter, in a single [book from the swamp](https://www.amazon.ca/dp/0919123740/ref=cm_sw_em_r_mt_dp_OgrvFbQY1J529).  It is probably already a more influential book than I realize, from which I quote liberally and implicitly.
 
 As monks say, the soul is wet (thus presumably messy) and a dry soul is lacking life. 
 
