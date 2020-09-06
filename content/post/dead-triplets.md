@@ -110,6 +110,18 @@ beyond the dead triplets{{<rawhtml>}}<sub><a href="#shadow-poop">[4]</a></sub>{{
 
 ## other triplet non-cents
 
+The winged harpies of **stigma** are a constant barrage
+
+of fatigued, angry and insincere guilt
+
+while exploring the swamp.
+
+They live above the swamp and are not of it
+
+but neither are they of this world.
+
+---
+
 The solitude and angst from an absent family,
 
 and ultimately, the lost society that created them,

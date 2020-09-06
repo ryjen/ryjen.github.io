@@ -138,18 +138,8 @@
   </url>
   
   <url>
-    <loc>https://ryanjennin.gs/categories/software/</loc>
-    <lastmod>2020-08-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ryanjennin.gs/categories/software-engineering/</loc>
     <lastmod>2020-08-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ryanjennin.gs/tags/c/</loc>
-    <lastmod>2020-07-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -209,6 +199,11 @@
   
   <url>
     <loc>https://ryanjennin.gs/categories/programming/</loc>
+    <lastmod>2020-06-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ryanjennin.gs/categories/software/</loc>
     <lastmod>2020-06-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -555,6 +550,11 @@
   <url>
     <loc>https://ryanjennin.gs/tags/web-framework/</loc>
     <lastmod>2015-09-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ryanjennin.gs/tags/c/</loc>
+    <lastmod>2012-11-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
