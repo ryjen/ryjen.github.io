@@ -26,4 +26,4 @@ test:
 retest: theme blog test
 
 image:
-	@create-registry-image -r registry.micrantha.com ryjen/blog
+	@create-registry-image -r registry.gitlab.com ryjen/blog

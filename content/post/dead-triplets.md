@@ -8,7 +8,7 @@ date: 2020-09-05
 
 This post could about music theory and rhythm, such as the triplet guitar riffs in [invincible](https://www.youtube.com/watch?v=hxsld16TjSU)...
 
-But this about a single chapter, in a single from a book from the swamp.  It is probably already a more influential book than I realize, from which I quote liberally and implicitly.
+But this about a single chapter, in a single from a [book from the swamp](https://www.amazon.ca/dp/0919123740/ref=cm_sw_em_r_mt_dp_OgrvFbQY1J529).  It is probably already a more influential book than I realize, from which I quote liberally and implicitly.
 
 As monks say, the soul is wet (thus presumably messy) and a dry soul is lacking life. 
 
@@ -174,10 +174,10 @@ unconscious repressed material into consciousness.
 
 ---
 
-{{<rawhtml>}}<sub>[1]</sub>{{</rawhtml>}} <a name="external-society">like the roman empire at its peak of its orgy, porn-like obsession</a>
+{{<rawhtml>}}<sub><a name="external-society">[1]</a></sub>{{</rawhtml>}} like the roman empire at its peak of its orgy, porn-like obsession</a>
 
-{{<rawhtml>}}<sub>[2]</sub>{{</rawhtml>}} <a name="crows">the shadow cast from the light of positivity, shadow self</a>
+{{<rawhtml>}}<sub><a name="shadow-self">[2]</a></sub>{{</rawhtml>}} the shadow cast from the light of positivity, shadow self
 
-{{<rawhtml>}}<sub>[3]</sub>{{</rawhtml>}} <a name="internal-body">internal feelings, state or pain</a>
+{{<rawhtml>}}<sub><a name="internal-body">[3]</a></sub>{{</rawhtml>}} internal feelings, state or pain
 
-{{<rawhtml>}}<sub>[4]</sub>{{</rawhtml>}} <a name="shadow-poop">like being shadow beast excrement</a>
+{{<rawhtml>}}<sub><a name="shadow-poop">[4]</a></sub>{{</rawhtml>}} like being shadow beast excrement
