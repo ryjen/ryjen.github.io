@@ -38,11 +38,11 @@ if your conflict with it is strong.
 
 ### defeating the depression triplet
 
-To defeat this 3 headed monster you must use your axe.
+Defeating this 3 headed monster you must use your axe
 
-By cutting the heads off into the **past**, **future** and **present**
+to cut the heads off into the **past**, **future** and **present**
 
-you can then say **you are not your past**, **you are not your mind**, 
+Then you are able to lose identities that may exist in the past or future
 
 and in the **power of the present** moment, you can **choose** how you feel.
 
@@ -56,15 +56,15 @@ takes great courage.
 
 Energy lost from the depression triplet still exists,
 
-and creates the desuetude triplet.
+accumulating to create another monster.
 
-The desuetude triplet is an unseen ghost like spirit,
+The desuetude triplet is an unseen ghost-like spirit,
 
-that that unknowingly **removes energy** from us
+that autonomously, and unknown to us, **drains our spirit**.
 
-because it **does not approve of how our ego is investing** it.
+It **does not approve of how our ego is investing** our energy
 
-The spirit will bring a **progressive withdraw of enthusiasm or desire**.
+and brings a **progressive withdraw of enthusiasm or desire**.
 
 ### defeating the ghost
 
@@ -85,7 +85,7 @@ and feeling **shame** if you are not productive.
 
 ## the despair triplet
 
-When the spirit of desuetude has drained enough energy... the third triplet is created.
+When the drained energy of desuetude has accumulated even more... the third triplet arrives.
 
 The despair triplet is a shadow beast with giant consuming jaws.
 
