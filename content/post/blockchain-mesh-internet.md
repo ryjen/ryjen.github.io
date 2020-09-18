@@ -12,6 +12,8 @@ The underlying core of bitcoin, the blockchain is a system that can be applied t
 
 One particular disruptive use, that is not mentioned on the wiki, is **mesh networks**.
 
+Like AI, nanotech or self driving cars, the technology has it's criticisms of being advantageous to criminals (IMHO the lesser of evils).
+
 ## Concept
 
 The idea and benefits are simple enough:
@@ -34,7 +36,7 @@ If you are curious check these providers and their whitepapers.  It will take a 
 
 ## [Ammbr](https://www.ammbr.com/)
 
-Has the most interesting modular mesh device and mobile app.
+Has the most interesting modular mesh device and mobile app in my opinion.  
 
 ## [Althea](https://althea.net/)
 
