@@ -1,5 +1,5 @@
 ---
-title: blockchain mesh networks
+title: Blockchain Mesh Networks
 description: an exciting use of the blockchain technology
 date: 2020-09-18
 tags: [blockchain, internet, networks]
