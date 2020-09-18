@@ -6,19 +6,20 @@ tags: [blockchain, internet, networks]
 categories: [blockchain]
 ---
 
-The underlying core of bitcoin, [the blockchain](https://en.wikipedia.org/wiki/Blockchain) is a great system that can be applied to a variety of uses.
+Using [the blockchain](https://en.wikipedia.org/wiki/Blockchain) mesh network routers allow freedom and payments.
+
+The underlying core of bitcoin, the blockchain is a system that can be applied to a variety of uses.
 
 One particular disruptive use, that is not mentioned on the wiki, is **mesh networks**.
-
 
 ## Concept
 
 The idea and benefits are simple enough:
 
 1. a hardware router/device that shares a network
-2. blockchain payment system software
-3. internet free digital payments and transactions
-4. Intenet of things boundary expanded
+2. blockchain network protocols system software
+3. network payments and transactions free of the internet
+4. boundary expanded for the internet of things (IoT) devices
 5. self-forming and healing networks
 6. get paid for expanding the network
 7. local communities cut out the middleman
