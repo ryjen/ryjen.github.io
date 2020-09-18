@@ -1,28 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>certificates on ryan jennings</title>
-    <link>https://ryanjennin.gs/tags/certificates/</link>
-    <description>Recent content in certificates on ryan jennings</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 16 May 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://ryanjennin.gs/tags/certificates/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Mitmproxy and Android</title>
-      <link>https://ryanjennin.gs/2018/05/16/mitmproxy-and-android/</link>
-      <pubDate>Wed, 16 May 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://ryanjennin.gs/2018/05/16/mitmproxy-and-android/</guid>
-      <description>Introduction Debugging network traffic for your app can be useful, and sometimes necessary if the data is not what is expected or inconsistent.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>certificates on ryan jennings</title><link>https://ryanjennin.gs/tags/certificates/</link><description>Recent content in certificates on ryan jennings</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 16 May 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://ryanjennin.gs/tags/certificates/index.xml" rel="self" type="application/rss+xml"/><item><title>Mitmproxy and Android</title><link>https://ryanjennin.gs/2018/05/16/mitmproxy-and-android/</link><pubDate>Wed, 16 May 2018 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/2018/05/16/mitmproxy-and-android/</guid><description>Introduction Debugging network traffic for your app can be useful, and sometimes necessary if the data is not what is expected or inconsistent.
 The Proxy I prefer the open source proxy [mitmproxy](https://mitmproxy.org =300x203). Easy to install on OSX with homebrew.
 brew install mitmproxy
 I&amp;rsquo;ll leave it up to you to explore its greatness, I just wanna clarify the android setup.
-Steps 1) mitmproxy Choose a port (ex. 8888) and start the program: mitmproxy -p 8888:</description>
-    </item>
-    
-  </channel>
-</rss>
+Steps 1) mitmproxy Choose a port (ex. 8888) and start the program: mitmproxy -p 8888:</description></item></channel></rss>

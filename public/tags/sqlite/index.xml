@@ -1,27 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>sqlite on ryan jennings</title>
-    <link>https://ryanjennin.gs/tags/sqlite/</link>
-    <description>Recent content in sqlite on ryan jennings</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 15 May 2012 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://ryanjennin.gs/tags/sqlite/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>C Sqlite Tricks</title>
-      <link>https://ryanjennin.gs/2012/05/15/c-sqlite-tricks/</link>
-      <pubDate>Tue, 15 May 2012 00:00:00 +0000</pubDate>
-      
-      <guid>https://ryanjennin.gs/2012/05/15/c-sqlite-tricks/</guid>
-      <description>Introduction Thought I would share some tricks I use for easy data CRUD&amp;rsquo;s in C. I&amp;rsquo;m using Sqlite here, but could apply to any database.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sqlite on ryan jennings</title><link>https://ryanjennin.gs/tags/sqlite/</link><description>Recent content in sqlite on ryan jennings</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 15 May 2012 00:00:00 +0000</lastBuildDate><atom:link href="https://ryanjennin.gs/tags/sqlite/index.xml" rel="self" type="application/rss+xml"/><item><title>C Sqlite Tricks</title><link>https://ryanjennin.gs/2012/05/15/c-sqlite-tricks/</link><pubDate>Tue, 15 May 2012 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/2012/05/15/c-sqlite-tricks/</guid><description>Introduction Thought I would share some tricks I use for easy data CRUD&amp;rsquo;s in C. I&amp;rsquo;m using Sqlite here, but could apply to any database.
 Not saying its the best approach at all (nor ryjen/db), this is just how it evolved for me.
 Mapping The core of my data access is the FieldMap structure, which determines how to save each field to the database.
-/* * this is the magical table used to communicate between memory and the database */ typedef struct FieldMap { const char *name; /* name of the field */ void *value; /* a pointer to the value of the field */ int type; /* type of value */ const void *arg1; /* additional argument */ const void *arg2; /* additional argument */ int flags; /* usage flags */ } FieldMap; /* callback for custom field types */ typedef int (*CustomField) (sqlite3_stmt *, int column, FieldMap *field); typedef void (*DbCallback) (sqlite3_stmt *); Basically you would have to:Example 1 - Saving This high level example shows building a quick table for each field we want to save in the database.</description>
-    </item>
-    
-  </channel>
-</rss>
+/* * this is the magical table used to communicate between memory and the database */ typedef struct FieldMap { const char *name; /* name of the field */ void *value; /* a pointer to the value of the field */ int type; /* type of value */ const void *arg1; /* additional argument */ const void *arg2; /* additional argument */ int flags; /* usage flags */ } FieldMap; /* callback for custom field types */ typedef int (*CustomField) (sqlite3_stmt *, int column, FieldMap *field); typedef void (*DbCallback) (sqlite3_stmt *); Basically you would have to:Example 1 - Saving This high level example shows building a quick table for each field we want to save in the database.</description></item></channel></rss>
