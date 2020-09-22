@@ -81,8 +81,8 @@ theme = "coda"
     type = "fas"
     weight = 2
 
-[[menu.icons]]
-    url = "https://www.reddit.com/user/ryjen78"
-    name = "fab fa-reddit"
-    weight = 7
+#[[menu.icons]]
+#    url = "https://www.reddit.com/user/ryjen78"
+#    name = "fab fa-reddit"
+#    weight = 7
 
