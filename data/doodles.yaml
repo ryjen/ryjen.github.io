@@ -1,16 +1,49 @@
 ---
+items:
+  - gerty
+  - stardum
+  - dinorock
+  - droid
+  - pi
+  - penelopy
+  - clouds
+  - bones
+  - enlightenment
+  - joker
+  - canada
+  - crapola
+  - treble
+  - sabateur
+
 urls:
-  - /image/doodles/doodle7.jpeg
-  - /image/doodles/card1.png
-  - /image/doodles/card2.png
-  - /image/doodles/pi.png
-  - /image/doodles/doodle4.jpeg
-  - /image/doodles/doodle6.jpeg
-  - /image/doodles/doodle8.jpeg
-  - /image/doodles/doodle9.jpeg
-  - /image/doodles/doodle5.jpeg
-  - /image/doodles/doodle10.jpeg
-  - /image/doodles/doodle2.jpg
-  - /image/doodles/doodle1.png
-  - /image/doodles/enlightenment.png
-  - /image/doodles/crapola.png
+  gerty: /image/doodles/gerty.jpg
+  clouds: /image/doodles/clouds.png
+  droid: /image/doodles/droid.png
+  pi: /image/doodles/pi.png
+  bones: /image/doodles/bones.jpg
+  canada: /image/doodles/ca-nada.jpg
+  crapola: /image/doodles/crapola.png
+  dinorock: /image/doodles/dino-rock-sex.jpg
+  enlightenment: /image/doodles/enlightenment.png
+  joker: /image/doodles/joker.png
+  penelopy: /image/doodles/penelopy.jpg
+  sabateur: /image/doodles/sabateur.jpg
+  stardum: /image/doodles/stardum.jpg
+  treble: /image/doodles/treble.jpg
+
+titles:
+  gerty: "Gerty: A Portrait"
+  clouds: "Clouds, Card, Watercolour"
+  droid: "Droid, Card, Watercolour"
+  pi: "Greek Upside Down Smile Pi"
+  bones: "Brain Casing, Cracked"
+  canada: "Can, but Nada"
+  crapola: "Life for Breakfast"
+  dinorock: "Dinosaurus, Rock, Sex Transfusion"
+  enlightenment: "Freedom of Self Baggage"
+  joker: "Joker and the Theif"
+  penelopy: "Penelopy: A Rough Trade"
+  sabateur: "Sabateur, Unconsciousness"
+  stardum: "Stardum: Eating Non-Shooting Stars"
+  treble: "Treble Clef: Art in itself"
+

@@ -84,67 +84,73 @@ $blue: #268bd2;
   }
 }
 
-#doodles {
-  margin: 0 auto;
-  border: none;
+$imgHeight: 30rem;
+$slideContainer: 35rem;
 
-  td {
-    &.next {
-      span {
-        font-size: 2rem;
-        min-width: 80px;
-        padding: 10px 10px 10px 10px;
-        cursor: pointer;
-        min-height: 80px;
-        border-radius: 50%;
-        &:hover {
-          color: $blue;
-        }
-      }
-    }
-    &.prev {
-      span {
-        font-size: 2rem;
-        border-radius: 50%;
-        padding: 10px 10px 10px 10px;
-        cursor: pointer;
-        min-width: 80px;
-        min-height: 80px;
-        &:hover {
-          color: $blue;
-        }
+#doodles {
+ 
+  .controls {
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 3;
+    div {
+      cursor: pointer;
+      height: 2rem;
+      width: 2rem;
+      font-size: 1rem;
+      padding: 10px 10px 10px 10px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:hover {
+        background-color: rgba(127, 127, 127, 0.2);
       }
     }
   }
 
-  #doodle-gallery {
-    list-style: none;
+  .slider {
     padding: 0;
     margin: 0 auto;
+    height: $slideContainer;
+    max-height: $slideContainer;
+    overflow: hidden;
 
-    li {
-      text-align: center;
+    .slide {
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0;
+      width: 100%;
+      z-index: 1;
+      -webkit-transition: opacity 1s;
+      -moz-transition: opacity 1s;
+      -o-transition: opacity 1s;
+      transition: opacity 1s;
 
-      span {
-        display: block;
-        margin: 5px;
+      img {
+        object-fit: contain;
+        width: 100%;
+        height: $imgHeight;
+
+        &.expand {
+          position: fixed;
+          top: 0;
+          left: 0;
+          height: 100vh;
+        }
+      }
+
+      div {
+        text-align: center;
+        height: 1rem;
+        margin-top: 1rem;
       }
     }
-
-    .next,
-    .prev {
-      cursor: pointer;
-      vertical-align: middle;
-    }
-
-    img {
-      max-height: 95%;
-      max-width: 95%;
+    .showing {
+      opacity: 1;
+      z-index: 2;
     }
   }
 }
 
-.imgbox {
-  border: 1px solid silver;
-  border-radius: 12px;
-}

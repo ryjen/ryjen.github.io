@@ -49,7 +49,6 @@ gulp.task('js', function(){
       'src/js/*.js',
     ])
     .pipe(order([
-        'simple.carousel.js',
         'app.js',
     ]))
 
