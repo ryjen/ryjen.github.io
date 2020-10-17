@@ -7,25 +7,27 @@ tags: [art, futurism]
 
 The [wikipedia on art in the 21st century](https://en.wikipedia.org/wiki/21st_century#Arts_and_entertainment) is hilariously lacking.
 
-There are some great artists out there, who get overlooked compared to disasters, in-equality or technology.  The art itself is reflected by that as resembling pornography or violence.
+Curious how distracted it all feels, rebounding in trauma from the constant suffering and crises. 
 
-The mediums in which art is delivered has a digital / non-digital divide that correlates with the 21st century.  
+There are some great artists who get overlooked compared to *economics, disasters, in-equality or technology*.  The art itself is reflected by that merely resembles pornography or violence.
 
-The first 20 years have been a digital revolution, allowing greater quality and delivery of digitized content.  The next are prepped for adding automated intelligence to that.
+Art delivery has a digital / non-digital divide that correlates with the 21st century.  
 
-Curious how distracted it feels, rebounding in trauma from the constant suffering and crises. 
+The first 20 years have been a digital revolution.   Greater quality and delivery of digitized content.    The next, adding automated intelligence.
 
 ## What is art anyway?
 
-To me, and perhaps others, art is all about content for the human senses that is pleasing to an individual in some way.  Through meaning, emotions, activity, memory or experience.
+Content for the human senses that is pleasing to an individual in some way.  
+
+Through meaning, emotions, activity, memory or experience.
 
 The ability to recreate reality in an alternate or skillful way.
 
 ### Audio
 
-Our ancestor's have categorized acoustic pitches into scales and developed genius ways of transcribing them and understanding how the interact together with many different instruments.
+Our ancestor's have categorized acoustic pitches into scales.  Developing genius ways of transcribing them and how they interact together across instruments.
 
-The natural human voice and acoustic instruments, tube amplifiers and that creamy smooth wave sound.  Also live performances.
+The analog world of natural human voices, live performances and tube amplifiers and that creamy smooth wave sound.
 
 ### Visual
 
@@ -33,14 +35,20 @@ Video art is more or less about some sort of plot, content or communication.   A
 
 ### Other
 
-Sounds wonderful, but the shadow side is that when humans are the subject of art, there is an undesired effect of emphasizing the past or biasing something that is temporary or you cannot control, as who you are.  It is not quite vanity, it is deeper and less obvious.
+There is always a shadow side, as when humans are the subject of art.
+
+*Emphasizing the form, the temporary or the past is a recipe for suffering for others and your self*.
+
+It is not quite vanity, it is deeper and less obvious.  The 21st century and the internet has lifted the carpet and exposed the dirt.
 
 
 ## How has the 21st century changed art?
 
-The digital realm was induced with [moore's law](https://en.wikipedia.org/wiki/Moore%27s_law) and the exponential increase of storage capacity and computing speed.
+The digital realm was induced with [moore's law](https://en.wikipedia.org/wiki/Moore%27s_law) and an exponential increase of storage capacity and computing speed.
 
-The inefficiencies associated with creating, editing and distributing content were improved.  Distribution over the internet became disruptive to existing industries.
+The inefficiencies associated with creating, editing and distributing content were vastly improved.  
+
+Distribution over the internet became disruptive to existing industries.
 
 Streaming content became feasible with faster connection speeds.
 
@@ -57,13 +65,11 @@ Consider a few examples:
 ### Audio
 
 - [Creating human voices that sound exactly like a real person](https://youtu.be/DWK_iYBl8cA)
-- Audio recognition
-- Autonomous song generation that is pleasing to an audience, or makes the top 10 (Deep Fake Music, Milli Vanilli AI)
+- Autonomous song generation that is pleasing to an audience, or makes the top 10
 
 ### Photo
 
-- [auto-generated realistic human face photos](https://generated.photos/faces)
-- The more scary aspects are from image recognition as it relates to privacy, law-enforcement, Captcha breaking.
+- [Auto-generated realistic human face photos](https://generated.photos/faces)
 
 ### Video 
 
@@ -71,4 +77,9 @@ Consider a few examples:
 - Hybrid human / animated films and animated films that seemly completely realistic.
 - Autonomous generation of entire stories, actors and the associated audio/video.
 
+## Conclusion
+
+There is none.  Nobody can predict the future and the past is a reflection of an ignorance we are incapable of escaping.
+
+The challenge is how the monetary system and the psychology of alternate realities play into it.
 
