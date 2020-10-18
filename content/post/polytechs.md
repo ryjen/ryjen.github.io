@@ -35,13 +35,13 @@ They will cultivate biases of oppression, intolerance and people not in touch wi
 
 Really good accountants and perfect for government, but a too weird on the religion and intolerance.
 
-They will cultivate biases instability, irresponsibility, insecure and a lack of safety to obtain power.
+They will cultivate biases of instability, irresponsibility, insecure and a lack of safety to obtain power.
 
 ### NDP
 
 The socialist alternative, will balance saving the puppies with real issues, but always lack lasting power
 
-They will cultivate biases a lack of caring, and injustice to obtain power.
+They will cultivate biases of a lack of caring, and injustice to obtain power.
 
 ### Green
 
