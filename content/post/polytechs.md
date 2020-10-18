@@ -10,26 +10,26 @@ Politics is always a **power struggle** to have the **ability** to make things *
 
 There is no shortage of people who demand **action**.  Usually unconscious action.
 
-This is not a revelation, politics is the **art of cultivating biases**.  It is great that the human condition is suffering, as there is a plethora of issues to take action on.
+Not really a revelation, politics is the **art of cultivating biases**.  
 
-When it comes down to actionable issues that are most common, it is **children**.  **Save the puppies** first and foremost.  It all kind of bubbles up to that.
+It is great that the **human condition is suffering**, as there is a plethora of issues to take action on.
 
-**Real change** like saving the environment, transcending ego, and peace will always conflict with that.
+When it comes down to actionable issues that are most common, it is **children**.  
+
+**Save the puppies** first and foremost.  It all kind of bubbles up to that.
+
+**Real change** like saving the environment, transcending ego, or peace always conflicts with the puppies.
 
 Great politician's know that *if you save enough puppies, you might have enough power to make the necessary disruptive changes*.
 
-Given the *short term nature of service*, it is their destiny to fail once the *real change* is implemented and they are no longer saving the puppies.
+Given the *short term nature of service*, it destiny to fail once the *real change* is implemented. Or the *economics* were a problem.
 
-**Real change** has another problem.  It is constrained by economics.  You may obtain the necessary power to make real change, but is useless without the economics to support it. 
-
-Perhaps, the economic factor is just another way out of making the necessary disruptive changes.
-
-Such was the **golden era of baby boomers** who's mass accumulated enough give power to change.  And also their failure for not making enough (Good thing Trudy has a last kick at the can while he could).
+Such was the **golden era of baby boomers** who's mass accumulated enough give power to change.  And also their failure for not making enough.  Good thing Trudy has a last kick at the can while he could, it was obvious to me his unpopular policies were only to build an economic war chest for **real change**.
 
 
 ## The Canadian Parties
 
-So this is my view:
+So for what it is worth, this is my view:
 
 ### Liberals
 
@@ -49,48 +49,43 @@ The socialist alternative, will balance saving the puppies with real issues, but
 
 They will cultivate biases a lack of caring, and injustice to obtain power.
 
-Green: 
+### Green
 
 The environment alternative, your puppies are better in the long run, but nobody has time for it.
 
 They will cultivate biases of corporate ignorance.
 
 
-[Rhino Party](https://www.partyrhino.ca/en/)
+### [Rhino Party](https://www.partyrhino.ca/en/)
 
 A joke party, with hilarious agendas that make fun of real ones. And they are **horny**!
 
 They will cultivate biases of the irrelevance of politics.
 
 
-## My Values
+## Single People
 
-These days, I am sick of the common issues.  And I think most the actions we take in good faith, are either completely unnecessary or have very undesirable consequences.
+In acceptance with my current life circumstances, my main grief is that **single people** need some help.  
 
-My main grief though is that **single people** get screwed every time.
+Am not talking about *child support* in *broken co-dependent relationships*
 
-The average person lives, what, 80 years?
+Why should only one income have more difficulty *financially* or finding a place to live? With or without children.
+
+The average person lives, what, 80 years more or less hard labour?  With no hope for parole.
 
 How much *pollution* do think that person produces in this society in time?
 
-How many *resources* does that person require, 3 meals a day?
+How many *resources* does that person requires, 3 meals a day, etc?
 
-How much space does that person require to be free?
+How much *space* does that person require to be **free**?
+
+How much *money* does that person require to live that long?
 
 How much suffering does that person feel themselves or cause to others in that time?
 
-Why should a **single person** by choice or not, have more difficulty financially or finding a place to live?
+Politicians should **add up that cost** and give that to me in a **tax break** instead.  Why should only the non-upper class families get the extra relief?
 
-Politicians should **add up the cost of a child** and give that to me in a **tax break**.
+Yes, I suppose, I just feel cut off from any reality that would support **baby RJ**, and find it a joke promoting a family life in death row.
 
-Or find me a better half to make the mating decision with,
-
-Because I would rather **save baby RJ** from a life sentence of 80 years hard labour with no parole.
-
-And that actually leads me down another path of sexist inequality, child support or alimony.
-
-Because if I was a woman, I would trick a man into impregnating me and then say:
-
-"Beat it, give me a free pay cheque and I will keep the new company and caretaker when I am old."
-
+Perhaps a female polarity would show me the light, but I think society threw my rib to some animals, distracting them to get theirs.
 
