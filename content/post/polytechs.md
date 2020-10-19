@@ -6,20 +6,21 @@ tags: [politics]
 categories: [politics]
 ---
 
+Politics.  Does it matter?  Why?
 
-Politics.  **Save the puppies** first and foremost.  It all kind of bubbles up to that.
+It is great that the **human condition is suffering**, as there is a plethora of issues to take unconscious action on.
 
-**Real change** like saving the environment, technology, transcending ego, or peace always conflicts with the puppies.
+When it comes down to actionable issues that are most common, it is always **children**.
+
+**Save the puppies** first and foremost.  It all kind of bubbles up to that.
+
+**Real change** like saving the environment, technology, inequality, transcending the ego or peace always has an undesired effect that conflicts with the puppies.
 
 Great politician's know that *if you save enough puppies, you might have enough power to make the necessary disruptive changes*.
 
 Given the *short term nature of service*, it destiny to fail. Once the *real change* is implemented, you lose power, or the *economics* were a problem.
 
 Such was the **golden era of baby boomers** who's mass accumulated enough give power to change.  And also their failure for not making enough.  Good thing Trudy has a last kick at the can while he could eh?  It seemed to me his unpopular policies were only to build an economic war chest for **real change**.
-
-It is great that the **human condition is suffering**, as there is a plethora of issues to take action on.  Usually unconscious action that bears no real fruit.
-
-When it comes down to actionable issues that are most common, it is always **children**.  Is it because we can avoid our ego through them?
 
 ## The Canadian Parties
 
@@ -77,7 +78,9 @@ How much *money* does that person require to live that long?
 
 How much suffering does that person feel themselves or cause to others in that time?
 
-Politicians should **add up that cost** and give that to me in a **tax break** instead.  Why should only the non-upper class families get the extra relief?
+Politicians should **add up that cost** and give that to me in a **tax break** instead.  
+
+Why should only the non-upper class families get the extra relief?
 
 Yes, I suppose I just feel cut off from any reality that would support **baby RJ**.
 
