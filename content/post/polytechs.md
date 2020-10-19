@@ -18,7 +18,7 @@ When it comes down to actionable issues that are most common, it is always **chi
 
 Great politician's know that *if you save enough puppies, you might have enough power to make the necessary disruptive changes*.
 
-Given the *short term nature of service*, it destiny to fail. Once the *real change* is implemented, you lose power, or the *economics* were a problem.
+Given the *short term nature of service*, it is destiny to fail. Once the *real change* is implemented, you lose power, or the *economics* were a problem.
 
 Such was the **golden era of baby boomers** who's mass accumulated enough give power to change.  And also their failure for not making enough.  Good thing Trudy has a last kick at the can while he could eh?  It seemed to me his unpopular policies were only to build an economic war chest for **real change**.
 
