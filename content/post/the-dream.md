@@ -1,67 +1,53 @@
 ---
-title: the dreams
-description: a look at the dreams life sells
+title: The Dreams
+description: a look at what the dream of humanity is
 date: 2020-10-31
 ---
 
 >  Life is a like a dream, a background awareness of reality.…. as a nightmare at worst and a delusion at best.  You can guide your self down the stream, but you do not know where you are going and you cannot go back.
 
-Caught somewhere in between the *trickle of survival*, *getting ahead*, *a social life*, and *a personal life* - the dream of solid ground seems a myth.  The energy spent on all, too little for any.
-
-So one must analyze the possible dreams available right?  Have you ever tried taking a hard look at some of the most common dreams of people's lives?
+Caught somewhere in between the *trickle of survival*, *getting ahead*, *a social life*, and *a personal life* - the dream of **solid ground seems a myth**.  The energy spent on all, too little for any.
 
 
-## Examples: 
+## Question
 
-> It is about sex, family, children. 
+Have you ever wondered what dream humanity is trying to achieve?  Or why?
 
-This is great.  Has a biological directive to obey.
+### It is about sex, family, children. 
 
-It justifies almost every need in a positive light.
-
-The sense of belonging is joy, the loss of a source of tremendous pain.
-
-And thus the competition to obtain and the protection of, can be as deadly as war.  
-
-Saving the environment from our species makes no sense.
-
-
-> It is about the mind and science.
-
-This is great.  It explains almost everything and who we are as well.
-
-It justifies almost anything as long as it can be proven.
-
-The competition of is even more frustrating and diabolical than a physical competition and we pursue with typical recklessness and sacrifice.
-
-Yet we still find it difficult to know what a thought is, and if it is who we are.
-
-And thus it is questionable if we have evolved to wield world destructive power like atomic and internet (and now quantum, nanotech, and AI)
+- has a biological directive to obey.
+- justifies almost every need in a positive light.
+- the competition to obtain remains a challenge with growth.
+- the protection of, can be as deadly as war.
+- the individual roles are disconnected.
+- species is disastrous for the earth and other species
+- creates a kind of chemical bubble of happiness or grief over loss
 
 
-> It is about money.
+### It is about the mind and science.
 
-This is great.  At least it is scalable for populating.
+- explains almost everything and who we are as well.
+- justifies almost anything as long as it can be proven.
+- competition is even more frustrating and diabolical than physical.
+- pursue with recklessness and sacrifice.
+- still difficult to know what a thought is, and if it is who we are.
+- questionable if we have evolved to wield world destructive power like atomic and internet (and now quantum, nanotech, and AI).
 
-It can justify almost any wrong as reality.  Which is ironic given that it is ultimately fictional.
+### It is about money.
 
-Inequality just means your not trying hard enough.  Try joining a brothel like linked in for help.
+- scalable for populating over physical trade
+- ironically justify almost any wrong as reality, given that it is ultimately fictional.
+- relationships reduced to a means to an end.
+- creates inequality (meaning your not trying hard enough, join a brothel like linked in for help).
+- convenience of an abundance of unhealthy crap and a vehicular jungle
+- environmental disasters and resource consumption loss greater than without
 
-The convenience of an abundance of unhealthy crap, makes up for the inhumanity of taking advantage of and reducing each other to a means to an end.
+### It is about religion
 
-The environmental disasters and the mass vehicle jungle with its effects are only necessary.
-
-> It is about religion
-
-This is great.  A true positive solution.
-
-Our souls will become closer to God and thus the world will become a better place.
-
-It breaks down when we again fail to account for the ego.
-
-Creating religious identities to defend and attack.
-
-And reducing others to good and bad, in vanity like good looking and bad looking.
+- a positive purpose
+- our souls will become closer to God and thus the world will become a better place.
+- breaks down when we again fail to account for the ego. Creating religious identities to defend and attack.
+- reducing others to good and bad, in vanity like good looking and bad looking.
 
 ## Conclusion
 
@@ -69,8 +55,14 @@ I do not like green eggs and ham, nor pipe dreams and scams.
 
 I do not like busting my balls or wasting my time, for someone to achieve their dream.
 
+I do not like the collective dysfunction that enjoys suffering and making others suffer.
+
+I do not like wanting candy I cannot have, in a candy store I do not belong in.
+
+I do not like being judged in ignorance or vice versa.
+
 My frustration I have to let go, and go on with the flow.
 
-For my dreams have changed in awakening to their loss, as mere obstacles down the stream.
+For the background consciousness of the dream is the only thing that is real.
 
 Happy Hallow Weenie.
