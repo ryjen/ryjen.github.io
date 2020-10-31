@@ -20,33 +20,33 @@ Have you ever wondered what dream humanity is trying to achieve?  Or why?
 - the competition to obtain remains a challenge with growth.
 - the protection of, can be as deadly as war.
 - the individual roles are disconnected.
-- species is disastrous for the earth and other species
-- creates a kind of chemical bubble of happiness or grief over loss
-
+- species is disastrous for the earth and other species.
+- creates a kind of chemical bubble of happiness or grief over loss.
 
 ### It is about the mind and science.
 
 - explains almost everything and who we are as well.
 - justifies almost anything as long as it can be proven.
 - competition is even more frustrating and diabolical than physical.
-- pursue with recklessness and sacrifice.
+- pursued with recklessness and sacrifice.
 - still difficult to know what a thought is, and if it is who we are.
 - questionable if we have evolved to wield world destructive power like atomic and internet (and now quantum, nanotech, and AI).
 
 ### It is about money.
 
-- scalable for populating over physical trade
-- ironically justify almost any wrong as reality, given that it is ultimately fictional.
+- scalable for populating over physical trade.
+- justifies almost any wrong as reality, given that it is ultimately fictional, ironically.
 - relationships reduced to a means to an end.
 - creates inequality (meaning your not trying hard enough, join a brothel like linked in for help).
-- convenience of an abundance of unhealthy crap and a vehicular jungle
-- environmental disasters and resource consumption loss greater than without
+- convenience of an abundance of unhealthy crap and a vehicular jungle.
+- environmental disasters and resource consumption loss greater than without.
 
 ### It is about religion
 
-- a positive purpose
+- a positive purpose.
 - our souls will become closer to God and thus the world will become a better place.
-- breaks down when we again fail to account for the ego. Creating religious identities to defend and attack.
+- breaks down when we again fail to account for the ego.
+- creates religious identities to defend and attack.
 - reducing others to good and bad, in vanity like good looking and bad looking.
 
 ## Conclusion
