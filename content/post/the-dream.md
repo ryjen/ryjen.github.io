@@ -35,7 +35,7 @@ Have you ever wondered what dream humanity is trying to achieve?  Or why?
 ### It is about money.
 
 - scalable for populating over physical trade.
-- justifies almost any wrong as reality, given that it is ultimately fictional, ironically.
+- justifies almost any wrong as reality, ironically, given that it is ultimately fictional.
 - relationships reduced to a means to an end.
 - creates inequality (meaning your not trying hard enough, join a brothel like linked in for help).
 - convenience of an abundance of unhealthy crap and a vehicular jungle.
