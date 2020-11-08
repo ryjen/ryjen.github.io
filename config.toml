@@ -1,4 +1,4 @@
-baseurl = "https://ryanjennin.gs/"
+baseURL = "https://ryanjennin.gs/"
 languageCode = "en-us"
 title = "ryan jennings"
 publishDir = "public"
@@ -23,7 +23,7 @@ theme = "coda"
     githubUsername = "ryjen"
     copyright  = "&copy; all rights reserved, ryan jennings"
     highlight = true
-    highlightStyle = "solarized-dark"
+    highlightStyle = "solarized"
     brandName = "ryan jennings"
 
 [[menu.main]]

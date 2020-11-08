@@ -6,16 +6,19 @@ var SLIDE_TIME = 10000;
 
 
 function changeSlide(getter) {
+  if (!slides) { return; }
   slides[currentSlide].className = 'slide';
   currentSlide = getter()
   slides[currentSlide].className = 'slide showing';
 }
 
 function nextSlideIndex() {
+  if (!slides) { return 0; }
   return (currentSlide+1)%slides.length;
 }
 
 function prevSlideIndex() {
+  if (!slides) { return 0; }
   var value = currentSlide;
   if (--value < 0) {
     value = slides.length-1;
@@ -50,8 +53,10 @@ function scaleImage() {
 
 var images = document.querySelectorAll('#doodles .slider .slide img');
 
-for (var i = 0; i < images.length; i++) {
-  images[i].onclick = scaleImage.bind(images[i]);
+if (images) {
+  for (var i = 0; i < images.length; i++) {
+    images[i].onclick = scaleImage.bind(images[i]);
+  }
 }
 
 var nextButton = document.getElementById('next')

@@ -25,10 +25,11 @@ $cyan: #2aa198;
 $green: #859900;
 
 $brand-color: $green;
-//$background-color: #fefefe;
-$background-color: $base03;
-$foreground-color: $base3;
-$highlight: $base1;
+$background-color: $base3;
+$foreground-color: $base03;
+$border-color: $base0;
+$highlight: $base01;
+$link-color: $base00;
 
 $fa-font-path:        "../fonts";
 
@@ -68,11 +69,6 @@ html,
 }
 html {
   font-size: 16px;
-}
-
-html * {
-  color-profile: sRGB;
-  rendering-intent: auto;
 }
 
 html body {
@@ -126,7 +122,7 @@ form {
 
 hr {
   margin: 2em 0;
-  border-top: 1px solid $base0;
+  border-top: 1px solid $border-color;
 }
 
 pre {
@@ -198,10 +194,6 @@ td {
   color: $background-color;
 }
 
-.bg-default {
-  //background-color: #efefef;
-}
-
 /* Cards */
 
 .card {
@@ -235,7 +227,7 @@ td {
   &.bg-red a,
   &.bg-blue a,
   &.bg-green a {
-    color: navajowhite;
+    color: #ffdead;
   }
 
   &.bg-blue a,
@@ -259,8 +251,8 @@ td {
 
   @include header-norm;
 
-  padding-top: 10px;
-  padding-bottom: 13px;
+  padding-top: 0.6rem;
+  padding-bottom: 0.8rem;
   margin-bottom: 2rem;
 
   -webkit-transition: all 0.5s ease;
@@ -269,27 +261,24 @@ td {
   transition: all 0.5s ease;
 
   .container {
-    max-width: 1300px
+    max-width: 1300px;
   }
 
   a {
     font-weight: normal;
-    color: $base00;
+    color: $link-color;
   }
 
   #menu-toggle {
     float: right;
-    color: $base00;
+    color: $link-color;
   }
 
   #brand {
     font-size: 2rem;
     font-weight: bold;
     margin-top: 8px;
-
-    img {
-      margin-right: 8px;
-    }
+    text-overflow: ellipsis;
   }
   nav {
     float: right;
@@ -315,7 +304,7 @@ td {
     margin-right: 10px;
 
     i {
-      color: $base00;
+      color: $link-color;
     }
 
     &:last-child {
@@ -333,7 +322,7 @@ td {
   }
 
   &.solid {
-    background-color: $base00;
+    background-color: $link-color;
     color: $background-color;
     a {
       color: $background-color;
@@ -387,7 +376,7 @@ td {
 
   .image {
     border-radius: 1rem;
-    border: 1px solid $base1;
+    border: 1px solid $border-color;
     margin: 1rem;
   }
 
@@ -491,10 +480,6 @@ td {
   }
 
   #intro {
-    //background: url(/image/logo-bg.svg) no-repeat center;
-    //background-size: 45vh;
-    //min-width: 45vh;
-    //min-height: 45vh;
     text-align: center;
     padding-top: 16vh;
 
@@ -508,7 +493,6 @@ td {
     h1 {
       font-size: 3rem;
       font-weight: bold;
-      //color: $green;
       margin-top: auto;
       margin-bottom: 4px;
     }
