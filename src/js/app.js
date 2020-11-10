@@ -4,7 +4,14 @@ var App = (function () {
   var app = {};
 
   app.start = function() {
-    //Gallery.start();
-  }
-}
+    Gallery.start();
+    Themer.start();
+  };
+
+  return app;
+})();
+
+$(document).ready(function () {
+  App.start();
+});
 

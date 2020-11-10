@@ -51,6 +51,7 @@ gulp.task('js', function(){
     ])
     .pipe(order([
       'gallery.js',
+      'theme_switch.js',
       'app.js',
     ]))
 
