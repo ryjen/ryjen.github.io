@@ -23,6 +23,9 @@ update:
 test:
 	@yarn test
 
+certs:
+	@mkcert -install -cert-file test/ssl/cert.pem -key-file test/ssl/key.pem micrantha.test labratory localhost 127.0.0.1 ::1
+
 retest: theme blog test
 
 image:

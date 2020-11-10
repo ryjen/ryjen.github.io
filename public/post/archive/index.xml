@@ -1,43 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Blog Archives on ryan jennings</title>
-    <link>https://ryanjennin.gs/post/archive/</link>
-    <description>Recent content in Blog Archives on ryan jennings</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 19 Feb 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://ryanjennin.gs/post/archive/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Deploy Docker Registry with Dokku</title>
-      <link>https://ryanjennin.gs/2018/02/19/deploy-docker-registry-with-dokku/</link>
-      <pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://ryanjennin.gs/2018/02/19/deploy-docker-registry-with-dokku/</guid>
-      <description>Prerequisites You&amp;rsquo;ll need to prepare a bit.
-  A local path on the server to store registry data. For example: /mydir/registry Docker installed on the client and server machine Dokku installed on the server  For Authentication  httpasswd command is installed  For an External Registry  Dokku letsencrypt plugin installed A working domain name pointing to the dokku app. For example, https://registry.mydomain.com  Create the dokku app Create the dokku app and retag a pre-existing repository image to it.</description>
-    </item>
-    
-    <item>
-      <title>Microsoft Dev Stack on macOS</title>
-      <link>https://ryanjennin.gs/2016/11/27/microsoft-dev-stack-on-macos/</link>
-      <pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://ryanjennin.gs/2016/11/27/microsoft-dev-stack-on-macos/</guid>
-      <description>Gonna evangelize a little bit.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog Archives on ryan jennings</title><link>https://ryanjennin.gs/post/archive/</link><description>Recent content in Blog Archives on ryan jennings</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 19 Feb 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://ryanjennin.gs/post/archive/index.xml" rel="self" type="application/rss+xml"/><item><title>Deploy Docker Registry with Dokku</title><link>https://ryanjennin.gs/2018/02/19/deploy-docker-registry-with-dokku/</link><pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/2018/02/19/deploy-docker-registry-with-dokku/</guid><description>Prerequisites You&amp;rsquo;ll need to prepare a bit.
+A local path on the server to store registry data. For example: /mydir/registry Docker installed on the client and server machine Dokku installed on the server For Authentication httpasswd command is installed For an External Registry Dokku letsencrypt plugin installed A working domain name pointing to the dokku app. For example, https://registry.mydomain.com Create the dokku app Create the dokku app and retag a pre-existing repository image to it.</description></item><item><title>Microsoft Dev Stack on macOS</title><link>https://ryanjennin.gs/2016/11/27/microsoft-dev-stack-on-macos/</link><pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/2016/11/27/microsoft-dev-stack-on-macos/</guid><description>Gonna evangelize a little bit.
 When Microsoft bought Xamarin, they did not underestimate the power of Xamarin.Forms for building cross platform UIs. Now with the release of Visual Studio for macOS and the Dotnet Core, its looks like its going to stay alive.
-Development Environment  macOS, XCode Android SDK Dotnet core Visual Studio for macOS nuget  Web ASP.NET Production Environment  Digital Ocean Dotnet core on Docker Dokku, docker based heroku  Platforms Targeted in One Solution  iOS Android Web ASP.</description>
-    </item>
-    
-    <item>
-      <title>Poor Man&#39;s Polymorphism</title>
-      <link>https://ryanjennin.gs/2012/11/30/poor-mans-polymorphism/</link>
-      <pubDate>Fri, 30 Nov 2012 00:00:00 +0000</pubDate>
-      
-      <guid>https://ryanjennin.gs/2012/11/30/poor-mans-polymorphism/</guid>
-      <description>Found out that C structs can be casted between each other if the field types and ordering are the same. It is not portable code, but you can start too see how and why the virtual table and object oriented programming evolved in c++.
+Development Environment macOS, XCode Android SDK Dotnet core Visual Studio for macOS nuget Web ASP.NET Production Environment Digital Ocean Dotnet core on Docker Dokku, docker based heroku Platforms Targeted in One Solution iOS Android Web ASP.</description></item><item><title>Poor Man's Polymorphism</title><link>https://ryanjennin.gs/2012/11/30/poor-mans-polymorphism/</link><pubDate>Fri, 30 Nov 2012 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/2012/11/30/poor-mans-polymorphism/</guid><description>Found out that C structs can be casted between each other if the field types and ordering are the same. It is not portable code, but you can start too see how and why the virtual table and object oriented programming evolved in c++.
 As far as I know it would still be possible to write this in c++, but as always, you should definitely not.
-A Quick Example struct Animal { int eyes; } struct Dog { int eyes; /* dog specific */ int tail; } struct Human{ int eyes; /* human specific */ int brain; } Passing humans or dogs to any function that takes an animal with a cast.</description>
-    </item>
-    
-  </channel>
-</rss>
+A Quick Example struct Animal { int eyes; } struct Dog { int eyes; /* dog specific */ int tail; } struct Human{ int eyes; /* human specific */ int brain; } Passing humans or dogs to any function that takes an animal with a cast.</description></item></channel></rss>

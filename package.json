@@ -20,7 +20,7 @@
     "build:theme": "gulp --cwd themes/coda && gulp",
     "build": "hugo",
     "build:dist": "hugo --minify --gc --cleanDestinationDir",
-    "test": "http-server -p 1337 -S -C test/cert.pem -K test/key.pem"
+    "test": "http-server -p 1337 -S -C test/ssl/cert.pem -K test/ssl/key.pem"
   },
   "repository": {
     "type": "git",

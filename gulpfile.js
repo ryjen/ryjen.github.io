@@ -13,7 +13,8 @@ var imagemin = require('gulp-imagemin');
 const isProduction = process.env.NODE_ENV == 'production'
 
 gulp.task('clean', function() {
-  return del(['static/css/**/*',
+  return del([
+    'static/css/**/*',
     'static/js/**/*'
   ]);
 });
@@ -49,7 +50,8 @@ gulp.task('js', function(){
       'src/js/*.js',
     ])
     .pipe(order([
-        'app.js',
+      'gallery.js',
+      'app.js',
     ]))
 
   if (!isProduction) {

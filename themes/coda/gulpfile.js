@@ -37,7 +37,7 @@ gulp.task("css", function() {
       "normalize.css",
       "skeleton.css",
       "main.css",
-      "coda.css",
+      "coda.scss",
       "print.css"
     ])
   );

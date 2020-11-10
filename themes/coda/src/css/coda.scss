@@ -41,7 +41,6 @@ $fa-font-path:        "../fonts";
 
 @import "mixins";
 
-/* light is default mode, so pair with general html definition */
 .light {
   @include rebase(
     $base3,
@@ -67,6 +66,7 @@ html,
     $base3
   );
 }
+
 html {
   font-size: 16px;
 }
@@ -280,6 +280,7 @@ td {
     margin-top: 8px;
     text-overflow: ellipsis;
   }
+
   nav {
     float: right;
     margin-top: 12px;
@@ -316,9 +317,12 @@ td {
     }
   }
 
-  .navbar-icons li {
-    padding: 0;
-    min-width: 50px;
+  .navbar-icons {
+    margin-left: 10px;
+    li {
+      padding: 0;
+      min-width: 50px;
+    }
   }
 
   &.solid {
@@ -499,7 +503,7 @@ td {
 
     h3 {
       font-size: 1.2rem;
-      color: $base00;
+      color: $link-color;
       margin-bottom: 2rem;
       border: none;
     }
@@ -586,6 +590,7 @@ td {
   }
 }
 
+// utils
 .pull-right {
   float: right;
 }

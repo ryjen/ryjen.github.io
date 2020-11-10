@@ -3,14 +3,15 @@
 
 <div id="footer">
 
-{{ partial "ads" . }}
+  {{ partial "ads" . }}
 
-{{ block "content-footer" . }}
-{{ end }}
+  {{ block "content-footer" . }}
+  {{ end }}
 
-<div class="center">
-	{{ .Site.Params.copyright | default "© All Rights Reserved" | markdownify }}
-</div>
+  <div class="center">
+    <p id="themer">enlighten</p>
+    {{ .Site.Params.copyright | default "© All Rights Reserved" | markdownify }} 
+  </div>
 
 </div>
 
