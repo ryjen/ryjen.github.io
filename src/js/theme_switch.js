@@ -14,25 +14,25 @@ var Themer = (function() {
   }
 
   function toggle() {
-
     newTheme = isLight() ? 'dark' : 'light';
     localStorage.setItem('theme', newTheme);
-
     $('body').removeClass(currTheme).addClass(newTheme);
-    $('#themer').html(toggleName());
-
     currTheme = newTheme;
+    $('#themer').html(toggleName());
   }
+
+  themer.toggle = toggle
 
   themer.start = function() {
     if (!currTheme) {
-      currTheme = 'dark';
+      currTheme = 'light';
     }
     button = $("#themer");
-    button.on('click', toggle);
+    button.click(toggle);
     button.html(toggleName());
     $('body').addClass(currTheme);
   }
+
   return themer;
 })();
     

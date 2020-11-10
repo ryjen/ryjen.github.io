@@ -20,25 +20,33 @@ We were always already living on the edge of collapse: environmental, economic, 
 
 It could be that is just feels that way as the human condition manifesting.  
 
-Or perhaps it is because external life is or was a series of repressed moments in slavery to money, time, social embarrassment and pain.  
+Or perhaps it is because external life is like a series of repressed moments to money, time, social embarrassment and pain.  
 
-Will life go back to normal?  **No**, because *it (human life) was never normal*!  It is completely out of sync with the nature of beings!
+Will life go back to normal?  Not in my opinion, because human life was never normal.  It is completely out of sync with the nature.
 
-The only thing normal will be *moving on*… to the next self-made, human-made, *mind-made problem*.
+The only thing normal will be: *moving on to the next self-made, human-made, mind-made problem*.
 
 ## Other potential problems
 
 ### Technological 
 
-Does the fact it uses *nano-tech* bother anyone?  How is its use justified without a pandemic?
+Does the fact the vaccine uses *nano-tech* bother anyone?  
 
-It is still a technology we know nothing about in the *human body*.
+How is its use justified without a pandemic?
 
-What if it creates a super-super bug (if covid was not already)?
+What if it creates a super-super bug?
 
-Having researched nano-technology I know somewhat about it's massively disruptive potential.
+Nanotechnology is still a technology we know nothing about in the *human body*.  
+
+The general public seems to be ignorant to the shadows of new technology in the face of their immediate needs.
+
+#### Going Forward
+
+Nano technology has greater potential to destroy than the atomic bomb, yet greater potential for the benefits of humanity than the digital revolution.
 
 A full-fledged *nano-society* will polarize the heaven and hell duality or inequality even more.
+
+This is why evolving as a species beyond **ego** is so important, so we do not suffer and kill each other trying to alleviate it.
 
 ### Environment / Population
 
@@ -63,7 +71,7 @@ Well, Canadians have opened Pandora's box on nano-tech into mainstream.
 ## Conclusion
 
 - Nano-tech is not to be taken lightly at all.
-- I still don't trust the US.
+- I still don't trust the US, corporations, or any other collective ego driven by profit.
 - Normal life sucks whether its new-normal, new-new-normal or just abnormal.
 - Pandemics, super bugs, global population and un-sustainability will continue.
  

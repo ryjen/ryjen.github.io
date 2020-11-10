@@ -25,7 +25,7 @@
 ) {
   background-color: $rebase03;
   color: $rebase0;
-  * {
+  #header a {
     color: $rebase0;
   }
   h1,
@@ -34,12 +34,6 @@
   h4,
   h5,
   h6 {
-    color: $rebase1;
-    border-color: $rebase0;
-  }
-  a,
-  a:active,
-  a:visited {
     color: $rebase1;
   }
 }

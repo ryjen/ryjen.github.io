@@ -19,6 +19,7 @@ theme = "coda"
 [params]
     author = "Ryan Jennings"
     description = "a cog in the machine, functioning and meaningless"
+    subdescription = "ramblings of an engineer, musician and madman"
     introURL = "/post"
     githubUsername = "ryjen"
     copyright  = "&copy; all rights reserved, ryan jennings"

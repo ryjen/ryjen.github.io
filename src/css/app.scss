@@ -155,11 +155,13 @@ $slideContainer: 35rem;
 }
 
 #themer {
-  cursor: pointer !important;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 1rem auto;
   font-size: 0.8rem;
   height: inherit;
   line-height: inherit;
   text-transform: lowercase; 
+  &:hover {
+    color: inherit;
+  }
 }
