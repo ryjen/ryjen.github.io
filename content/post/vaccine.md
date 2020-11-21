@@ -26,9 +26,7 @@ Will life go back to normal?  Not in my opinion, because human life was never no
 
 The only thing normal will be: *moving on to the next self-made, human-made, mind-made problem*.
 
-## Other potential problems
-
-### Technological 
+## Technological 
 
 Does the fact the vaccine uses *nano-tech* bother anyone?  
 
@@ -40,7 +38,7 @@ Nanotechnology is still a technology we know nothing about in the *human body*.
 
 The general public seems to be ignorant to the shadows of new technology in the face of their immediate needs.
 
-#### Going Forward
+### Going Forward
 
 Nano technology has greater potential to destroy than the atomic bomb, yet greater potential for the benefits of humanity than the digital revolution.
 
@@ -48,7 +46,7 @@ A full-fledged *nano-society* will polarize the heaven and hell duality or inequ
 
 This is why evolving as a species beyond **ego** is so important, so we do not suffer and kill each other trying to alleviate it.
 
-### Environment / Population
+## Environment / Population
 
 Does global population bother any of the *hypnotised unconscious problematic humans*, such as my "self"?
 
@@ -56,17 +54,19 @@ Does the vaccine have an effect on the environment?  What scenarios would play o
 
 How much will it cost?  Does it have inequality implications?
 
-### Politics
+## Politics
 
-Does the political timing of it bother anyone?
+Does the political timing of the vaccine bother anyone?
 
-Perhaps it was released now in a *democratic US* as more *favourable* to its potential failure.
+Perhaps it was released now in a *democratic US* as more *favourable* to its potential negative and positive outcomes.
 
 Does anyone wonder why its a Canadian company developing the nano-tech?  Or why the US does not have nano technology to do it themselves? 
 
-Perhaps a strategic advantage to maintain unity in the US upon disaster or more inequality.  Or maybe competition to produce more.
+Perhaps a strategic advantage to maintain *unity* in the US upon possible negative outcomes. 
 
 Well, Canadians have opened Pandora's box on nano-tech into mainstream.
+
+And the competition to enable the US to produce more.
 
 ## Conclusion
 
