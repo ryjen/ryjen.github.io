@@ -56,6 +56,8 @@ I see the drug overdoses and the poverty and I look at the history of heroin.  H
 
 I look at the pandemic struggles and how the winners suffer and how the losers enjoy it and my socialist tendencies think "Yah, that is correct."
 
+I look at social lives of others and see that everyone is trying extremely hard to be a winner to get revenge.  Or being so distraught by people who's circumstances are just right to fit the cookie-cutter.
+
 My old victimage says to me, Canada is a loser, America is a winner, and nobody is waking up from it.
 
 At the end of the day, we are just the 'Mericas and I have no idea who Mexico is or why countries still exist in a inter-connected planet that is dying from such collective competition.
