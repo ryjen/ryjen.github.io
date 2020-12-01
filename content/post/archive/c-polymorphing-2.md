@@ -8,7 +8,6 @@ tags:
    - polymorphism
    - cparse
 description: "c struct reuse"
-draft: true
 ---
 
 While working on [cparse](http://github.com/ryjen/cparse) I found another nifty way to sort of simulate polymorphism.

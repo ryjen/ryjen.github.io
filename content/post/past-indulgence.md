@@ -1,13 +1,14 @@
 ---
 title: Indulgence into the past
-draft: true
+date: 2020-10-01
+description: hunting for motivation
 ---
 
 ## Hello, World
 
 Trying to find at least zero motivation for the tech industry instead of negative infinity.
 
-I do not normally focus too much on the past, but it might be worth investigating for a source redemption from the conditions that negate me.
+Do not normally focus too much on the past, but it might be worth investigating for a source redemption from the conditions that negate me.
 
 But if you cannot be bothered to read more than 500 characters about someone else, here is the TL;DR:
 
@@ -47,9 +48,9 @@ Internet of phones! (TCP!)
 
 ## Current
 
-Now the Apple has been bit.
+Now the mobile Apple has been bit.
 
-My ed was disappointing, and the jobs were too.
+My edu was disappointing, and the jobs, more so.
 
 The stratosphere of ego is extra ordinary (and more intolerant).
 
