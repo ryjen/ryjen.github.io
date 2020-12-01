@@ -68,9 +68,9 @@ Gophers to me are the meek, that will inherit the earth, when the ego dinosaurs,
 
 I cannot really see myself enjoying the industry or its people again.
 
-But maybe thats why its called "Work", but its like the alien in American Dad, where not allowed to be a jerk is like poison.
+That is why its called "Work".  Like the alien in American Dad, where being not allowed to be a jerk is like poison.
 
-A dream scenario would be something like a "lighthouse maintainer" on a remote island somewhere with satalite.
+A dream scenario would be something like a "lighthouse maintainer" on a remote island somewhere with satellite.
 
 Where I can piddle away on side stuff in "off time" as needed and retire on a gov pension.
 
