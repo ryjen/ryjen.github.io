@@ -9,6 +9,16 @@
   {{ end }}
 
   <button id="themer" class="center" type="button">enlighten</button>
+
+  <div class="menu center">
+    {{ if .Site.Menus.icons }}
+      <ul>
+        {{ range sort .Site.Menus.icons }}
+          <li><a href="{{ .URL }}"><i class="fa-3x {{ .Name }}"></i></a></li>
+        {{ end }}
+      </ul>
+    {{ end }}
+  </div>
     
   <div class="center">
     {{ .Site.Params.copyright | default "© All Rights Reserved" | markdownify }} 

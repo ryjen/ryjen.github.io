@@ -7,6 +7,9 @@ var merge = require("merge-stream");
 var order = require("gulp-order");
 var uglify = require("gulp-uglify");
 var bust = require("gulp-buster");
+var autoprefixer = require("autoprefixer");
+var postcss = require("gulp-postcss");
+var imgmin = require("gulp-imagemin");
 var del = require("del");
 
 const isProduction = process.env.NODE_ENV == "production";
@@ -46,7 +49,9 @@ gulp.task("css", function() {
     sources = sources.pipe(sourcemaps.init());
   }
 
-  sources = sources.pipe(minifyCSS()).pipe(concat("theme.min.css"));
+  sources = sources
+    .pipe(postcss([ autoprefixer() ]))
+    .pipe(minifyCSS()).pipe(concat("theme.min.css"));
 
   if (!isProduction) {
     sources = sources.pipe(sourcemaps.write("maps"));
@@ -86,7 +91,7 @@ gulp.task("js", function() {
 });
 
 gulp.task("image", function() {
-  return gulp.src("src/image/**/*").pipe(gulp.dest("static/image"));
+  return gulp.src("src/image/**/*").pipe(imgmin()).pipe(gulp.dest("static/image"));
 });
 
 gulp.task("font", function() {

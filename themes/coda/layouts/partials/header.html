@@ -48,13 +48,6 @@
           </ul>
           {{ end }}
 
-          {{ if .Site.Menus.icons }}
-          <ul class="nav navbar-icons context-menu">
-            {{ range sort .Site.Menus.icons }}
-            <li class="navbar-icon"><a href="{{ .URL }}"><i class="{{ .Name }}"></i></a></li>
-            {{ end }}
-          </ul>
-          {{ end }}
         </nav>
       </div>
     </div>

@@ -8,7 +8,9 @@ description: hunting for motivation
 
 Trying to find at least zero motivation for the tech industry instead of negative infinity.
 
-Do not normally focus too much on the past, but it might be worth investigating for a source redemption from the conditions that negate me.
+Do not normally focus too much on the past, in fact I tend to block out most of the bad parts.
+
+But it might be worth investigating for a source redemption from the conditions that negate me.
 
 But if you cannot be bothered to read more than 500 characters about someone else, here is the TL;DR:
 

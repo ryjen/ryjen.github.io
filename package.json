@@ -33,5 +33,10 @@
   ],
   "author": "Ryan Jennings",
   "license": "MIT",
-  "homepage": "https://bitbucket.org/ryjen/blog#readme"
+  "homepage": "https://bitbucket.org/ryjen/blog#readme",
+  "dependencies": {
+    "autoprefixer": "^10.0.4",
+    "gulp-postcss": "^9.0.0",
+    "postcss": "^8.1.10"
+  }
 }

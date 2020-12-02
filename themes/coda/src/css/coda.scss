@@ -1,35 +1,4 @@
-// dark background tones
-$base03: #002b36;
-$base02: #073642;
-
-// dark content tones
-$base01: #586e75;
-$base00: #657b83;
-
-// light content tones
-$base0: #839496;
-$base1: #93a1a1;
-
-// light background tones
-$base2: #eee8d5;
-$base3: #fdf6e3;
-
-// colors
-$yellow: #b58900;
-$orange: #cb4b16;
-$red: #dc322f;
-$magenta: #d33682;
-$violet: #6c71c4;
-$blue: #268bd2;
-$cyan: #2aa198;
-$green: #859900;
-
-$brand-color: $green;
-$background-color: $base03;
-$foreground-color: $base3;
-$border-color: $base0;
-$highlight: $base01;
-$link-color: $blue;
+@import "color";
 
 $fa-font-path:        "../fonts";
 
@@ -41,6 +10,7 @@ $fa-font-path:        "../fonts";
 
 @import "mixins";
 
+html,
 .light {
   @include rebase(
     $base3,
@@ -53,7 +23,6 @@ $fa-font-path:        "../fonts";
     $base03
   );
 }
-html,
 .dark {
   @include rebase(
     $base03,
@@ -113,6 +82,36 @@ kbd {
 
 form {
   margin-bottom: inherit;
+}
+
+#footer, #header {
+  ul {
+    margin-bottom: 0;
+
+    li {
+      list-style: none;
+      display: inline-block;
+      padding-left: 10px;
+      padding-right: 10px;
+      min-width: 50px;
+      text-align: center;
+      border-radius: 5px;
+      margin-right: 10px;
+
+      i {
+        color: $foreground-color;
+      }
+
+      &:last-child {
+        margin-right: inherit;
+      }
+
+      &:hover,
+      &.active {
+        background-color: rgba($highlight, 0.1);
+      }
+    }
+  }
 }
 
 #footer {
@@ -287,33 +286,6 @@ td {
 
     .nav-name {
       margin-left: 8px;
-    }
-  }
-
-  ul {
-    margin-bottom: 0;
-  }
-
-  li {
-    list-style: none;
-    display: inline-block;
-    padding-left: 10px;
-    padding-right: 10px;
-    min-width: 50px;
-    text-align: center;
-    border-radius: 5px;
-    margin-right: 10px;
-
-    i {
-      color: $link-color;
-    }
-
-    &:last-child {
-      margin-right: inherit;
-    }
-    &:hover,
-    &.active {
-      background-color: rgba($highlight, 0.1);
     }
   }
 
@@ -538,6 +510,15 @@ td {
   }
 }
 
+#themer {
+  display: block;
+  margin: 0 auto 1rem auto;
+  font-size: 0.8rem;
+  height: inherit;
+  line-height: inherit;
+  text-transform: lowercase; 
+}
+
 #related {
   > h5 {
     font-size: 1.5rem;
@@ -569,7 +550,7 @@ td {
 
 /* Responsiveness */
 
-@media (max-width: 1620px) {
+@media (max-width: 1220px) {
   #header:not(.home) {
     @include header-nameless;
     #brand {
@@ -578,7 +559,7 @@ td {
   }
 }
 
-@media (max-width: 1120px) {
+@media (max-width: 720px) {
   #header:not(.home) {
     @include header-menu;
   }

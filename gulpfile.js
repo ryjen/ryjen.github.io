@@ -9,6 +9,8 @@ var order = require('gulp-order');
 var uglify = require('gulp-uglify');
 var del = require('del');
 var imagemin = require('gulp-imagemin');
+var postcss = require('gulp-postcss');
+var autoprefixer = require('autoprefixer');
 
 const isProduction = process.env.NODE_ENV == 'production'
 
@@ -34,7 +36,7 @@ gulp.task('css', function(){
     sources = sources.pipe(sourcemaps.init())
   }
   
-  sources = sources.pipe(minifyCSS())
+  sources = sources.pipe(postcss([ autoprefixer() ])).pipe(minifyCSS())
     .pipe(concat('app.min.css'))
 
   if (!isProduction) {

@@ -34,6 +34,12 @@ theme = "coda"
     weight = 2
 
 [[menu.main]]
+    name  = "poems"
+    url   = "/post/poems"
+    identifier = "pen-nib"
+    weight = 3
+
+[[menu.main]]
     name  = "music"
     identifier  = "music"
     url   = "/music"

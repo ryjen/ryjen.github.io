@@ -1,6 +1,6 @@
 ---
-title: git notes as a storage mechanism
-description: a small blurb on using git notes for versioning
+title: Git Notes Storage
+description: a small blurb on using git notes for versioning and a storage mechanism
 date: 2020-06-25
 tags: [git, version, notes]
 categories: [programming, software]
@@ -20,7 +20,7 @@ For example:
 - A **patch** version will increment after **300** builds
 - A **minor** version will increment after **100** patch builds
 
-This is a potential feature that projects can use as a reminder to bump a version if there are breaking changes.
+This use as a reminder to bump a version if there are breaking changes or if you need to do more design.
 
 For every build, the build number is incremented, and thus potentially the rest of the version.
 
@@ -82,6 +82,8 @@ If there are no commits, then versioning switches back to the library.
 And syncing between or specifying storage methods is possible.
 
 ## The Reality and TODO
+
+This is still pretty hacky and pointless.
 
 I have not tested merge conflicts with git notes.  
 
