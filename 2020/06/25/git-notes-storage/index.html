@@ -1,0 +1,310 @@
+<!doctype html>
+<html class="no-js" lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Git Notes Storage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="google-site-verification" content="Crk6W-ckoApRrOZrv23ngLwPPTbzjzfZ4AQPElgS0pw" />
+<meta name="description" content="personal blog of an engineer, musician, and madman" />
+<meta name="ROBOTS" CONTENT="INDEX, FOLLOW">
+
+    
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/theme.min.css">
+
+<link href="/css/app.min.css" rel="stylesheet">
+
+
+
+
+    <meta name="generator" content="Hugo 0.79.0" />
+
+  </head>
+  <body>
+    
+
+    
+    <div id="header" class="clearfix">
+    
+
+      
+      <div class="container clearfix">
+        <div id="brand">
+          <a href="/">
+  <span class="brand">ryan jennings</span>
+</a>
+
+        </div>
+        <div id="menu-toggle">
+        <i class="fas fa-bars"></i></div>
+        <nav>
+          
+          <ul class="nav navbar-nav menu">
+            
+            <li class="nav-toggle blog">
+              <a href="/post" title="blog">
+                
+                <i class="fas fa-rss"></i>
+                
+                <span class="nav-name">blog</span>
+              </a>
+            </li>
+            
+            <li class="nav-toggle music">
+              <a href="/music" title="music">
+                
+                <i class="fas fa-music"></i>
+                
+                <span class="nav-name">music</span>
+              </a>
+            </li>
+            
+            <li class="nav-toggle poems">
+              <a href="/post/poems" title="poems">
+                
+                <i class="fas fa-pen-nib"></i>
+                
+                <span class="nav-name">poems</span>
+              </a>
+            </li>
+            
+            <li class="nav-toggle doodles">
+              <a href="/doodles" title="doodles">
+                
+                <i class="fas fa-paint-brush"></i>
+                
+                <span class="nav-name">doodles</span>
+              </a>
+            </li>
+            
+            <li class="nav-toggle things">
+              <a href="/things" title="things">
+                
+                <i class="fas fa-object-ungroup"></i>
+                
+                <span class="nav-name">things</span>
+              </a>
+            </li>
+            
+          </ul>
+          
+
+        </nav>
+      </div>
+    </div>
+
+    <div class="container">
+
+
+<div id="main">
+
+    <h1>Git Notes Storage</h1>
+
+    <p class="timestamps">Created: June 25, 2020 </p>
+
+    <div class="text-justify"><p>Am working on a project build tool to make repeatable tasks for <a href="https://micrantha.com">Micrantha</a> projects easier.</p>
+<p>A module of this tool is automatic versioning using <a href="https://semver.org/">semantic version</a>.</p>
+<h2 id="the-versioning">The versioning</h2>
+<p>The way I wanted the versioning to work is to have <strong>thresholds</strong> for when a version component auto-increments.</p>
+<p>For example:</p>
+<ul>
+<li>A <strong>patch</strong> version will increment after <strong>300</strong> builds</li>
+<li>A <strong>minor</strong> version will increment after <strong>100</strong> patch builds</li>
+</ul>
+<p>This use as a reminder to bump a version if there are breaking changes or if you need to do more design.</p>
+<p>For every build, the build number is incremented, and thus potentially the rest of the version.</p>
+<p>A question that arose, is where does one store a build number that:</p>
+<ol>
+<li>Changes often</li>
+<li>Differentiates between users?</li>
+</ol>
+<h2 id="storing-a-build-number">Storing a build number</h2>
+<p>My initial attempt was to store the build number as a hidden file in the project.</p>
+<p>Which is fine and worked, but the sheer amount of foreseeable conflicts is enough to make anyone rethink that approach.</p>
+<p>And really, why should build information exist in a source repository.  A build is the action with the object, not the object.</p>
+<h3 id="tags-attempt">Tags Attempt</h3>
+<p>Storing release versions in <strong>git-tags</strong> is accepted practice.</p>
+<p>It was conceivable that tags could also be used for a build number.</p>
+<p>Experimenting a bit I tried tagging from a release tag with a build number under a prefix (like <strong>build/20</strong>).</p>
+<p>But to retrieve the build number, one would have to rely on <strong>git-describe</strong> or a sorted tag list to pop from.</p>
+<ol>
+<li>I could not get git-describe to use the latest build tag</li>
+<li>why do I need a list of tags for every build?</li>
+</ol>
+<p>In any case, it was not fruitful and I looked for alternatives.</p>
+<h3 id="git-notes">Git Notes</h3>
+<p>Using <a href="https://git-scm.com/docs/git-notes">git-notes</a> as a secondary storage method could better separate the building from the source.</p>
+<p>There are some obvious advantages:</p>
+<ol>
+<li>Git notes can be created on a file in the repository (the project configuration file)</li>
+<li>They are not pushed by default</li>
+<li>They have separate merge strategies when conflicts occur</li>
+</ol>
+<p>This seems ideal. Might as well put notes with the current version on commits too with a hook.</p>
+<p>To push the notes is a little ugly, put doable with an alias/subcommand or by configuration (part of the project init step).</p>
+<p>As the build versions must be semi consistent and sequential, the note must be created on a reference that will not change.</p>
+<h2 id="the-proto">The Proto</h2>
+<p>A quick proto in my build tool now has different storage methods.</p>
+<ol>
+<li>The <strong>library</strong> or file system in users home path <strong>~/.local</strong></li>
+<li>The <strong>repository</strong> or <strong>git-notes</strong></li>
+</ol>
+<p>If the repository storage will try to use build notes on the first commit.  One could use release tags as well but I am not sure if there is a benefit to having more than one build note.</p>
+<p>If there are no commits, then versioning switches back to the library.</p>
+<p>And syncing between or specifying storage methods is possible.</p>
+<h2 id="the-reality-and-todo">The Reality and TODO</h2>
+<p>This is still pretty hacky and pointless.</p>
+<p>I have not tested merge conflicts with git notes.</p>
+<p>If they prove to be just as problematic as a file in the repository there is a backup plan:</p>
+<ol>
+<li>Have a note just for the build numbers in a line based record</li>
+<li>Change the merge strategy to <strong>cat_sort_uniq</strong> to take the diff and sort removing duplicates</li>
+<li>The build number is the last/first record</li>
+<li>Reset/clear when the patch version increments</li>
+</ol>
+<p>Eventually will write some unit tests 🤦 or hit a conflict between my machines and see.</p>
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+<hr>
+
+<div class="container">
+
+
+    <div id="related">
+        <h5>Related:</h5>
+
+         <div class="card item bg-default clearfix">
+
+    
+    
+
+      
+
+    <p class="pull-right">July 5, 2019</p>
+    <h4><a href="/2019/07/05/mirroring-git-with-jenkins/">Mirroring git with jenkins</a></h4>
+    <h5>A short look at automating git repository mirroring.</h5>
+
+     <span class="item-tag">git</span>  <span class="item-tag">mirror</span>  <span class="item-tag">jenkins</span> 
+
+</div>
+  <div class="card item bg-default clearfix">
+
+    
+    
+
+      
+
+    <p class="pull-right">January 22, 2018</p>
+    <h4><a href="/2018/01/22/fortunes-on-slack/">Fortunes on Slack</a></h4>
+    <h5>witty antidotes in a service</h5>
+
+     <span class="item-tag">golang</span>  <span class="item-tag">slack</span>  <span class="item-tag">api</span>  <span class="item-tag">droplet</span>  <span class="item-tag">micro-service</span>  <span class="item-tag">docker</span>  <span class="item-tag">dokku</span>  <span class="item-tag">HTTP</span>  <span class="item-tag">rest</span>  <span class="item-tag">go</span>  <span class="item-tag">fortunes</span>  <span class="item-tag">micrantha</span>  <span class="item-tag">postgres</span>  <span class="item-tag">git</span> 
+
+</div>
+ 
+
+    </div>
+
+
+</div>
+
+
+
+<hr>
+
+<div class="container">
+
+	
+	  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "arg3" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+	
+
+</div>
+
+
+</div>
+
+<div id="footer">
+
+  
+<script data-goatcounter="https://analytics.micrantha.com/count"
+        async src="//analytics.micrantha.com/count.js"></script>
+
+
+
+  
+  
+
+  <button id="themer" class="center" type="button">enlighten</button>
+
+  <div class="menu center">
+    
+      <ul>
+        
+          <li><a href="mailto:robert@ryanjennin.gs"><i class="fa-3x fas fa-envelope"></i></a></li>
+        
+          <li><a href="https://micrantha.com"><i class="fa-3x fas fa-building"></i></a></li>
+        
+          <li><a href="https://github.com/ryjen"><i class="fa-3x fab fa-github"></i></a></li>
+        
+          <li><a href="https://linkedin.com/in/ryjen"><i class="fa-3x fab fa-linkedin"></i></a></li>
+        
+      </ul>
+    
+  </div>
+    
+  <div class="center">
+    © all rights reserved, ryan jennings 
+  </div>
+
+</div>
+
+
+<script src="/js/theme.min.js"></script>
+
+
+<script src="/js/app.min.js"></script>
+<script data-goatcounter="https://analytics.micrantha.com/count"
+        async src="//analytics.micrantha.com/count.js"></script>
+
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+</body>
+</html>
+
+

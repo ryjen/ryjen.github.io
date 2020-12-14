@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cparse on ryan jennings</title>
+    <link>https://ryanjennin.gs/tags/cparse/</link>
+    <description>Recent content in cparse on ryan jennings</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 02 Dec 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://ryanjennin.gs/tags/cparse/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>c hacking: polymorphing 2</title>
+      <link>https://ryanjennin.gs/2015/12/02/c-hacking-polymoriphing-2/</link>
+      <pubDate>Wed, 02 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/2015/12/02/c-hacking-polymoriphing-2/</guid>
+      <description>While working on cparse I found another nifty way to sort of simulate polymorphism.
+cparse Another exercise in futility, a C implementation for the REST api at parse.com. Really the core of it is a web client and an object structure using json.
+polymorphing I started off by having separate structure for the different type of objects, but I quickly realized there was a lot of code duplication. To solve this I used a combination of type defines and function pointers to the library API appear to be working with a seperate type, but are indeed still working with the base object type.</description>
+    </item>
+    
+  </channel>
+</rss>
