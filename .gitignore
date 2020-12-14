@@ -1,4 +1,7 @@
 node_modules
-static/css/maps
-static/js/maps
+**/maps
+**/maps
 .DS_Store
+public
+**/hash.json
+**/*.min.*
