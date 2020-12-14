@@ -2,6 +2,5 @@ node_modules
 **/maps
 **/maps
 .DS_Store
-public
 **/hash.json
 **/*.min.*
