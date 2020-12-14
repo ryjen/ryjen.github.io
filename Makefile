@@ -13,7 +13,7 @@ theme:
 blog:
 	@yarn build
 
-dist: setup theme
+dist: setup
 	@yarn build:dist
 
 update:
