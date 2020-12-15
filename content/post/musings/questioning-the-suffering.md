@@ -8,11 +8,11 @@ Do you feel entitled to be a victim of someone or something else?
 
 Do you think your mind or the situation generates more suffering?
 
-That you deserve better?  That you are overlooked?
+Do you think that you deserve better?  That you are overlooked?
 
 That your perception of reality is absolute?
 
-That you might physically die if you are not what you believe?
+That you might physically die if you are not what you think?
 
 Do people take advantage of your suffering?  Or challenge it?
 
@@ -22,7 +22,7 @@ Do you think there is a "mind behind the mind" that sees with pureness (awarenes
 
 Do you think prayers make you live in the future?
 
-Do you think projecting what want will make it happen? Or create an egoic identity?
+Do you think projecting what you want will make it happen? Or transfer to an egoic identity?
 
 Do you think that your ego is "the secret" sauce in your capitalization of dysfunction?
 
