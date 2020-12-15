@@ -1,8 +1,16 @@
-$blue: #268bd2;
-
 @import "themes/coda/src/css/mixins";
+@import "themes/coda/src/css/color";
 
 #main {
+
+  p.subtitle {
+    font-style: italic;
+  }
+
+  p.timestamps {
+    text-align: right;
+    border-top: 1px solid $border-color;
+  }
 
   .thing {
     h4 {

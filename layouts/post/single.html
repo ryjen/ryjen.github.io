@@ -2,9 +2,15 @@
 
 <div id="main">
 
+    <div class="header">
+
     <h1>{{ .Title }}</h1>
 
+    <p class="subtitle">{{ .Description }}</p>
+
     <p class="timestamps">Created: {{ .Date.Format "January 2, 2006" }} {{ if .Params.Updated }} &nbsp; | &nbsp; Updated: {{ dateFormat "January 2, 2006" .Params.Updated }} {{ end }}</p>
+
+    </div>
 
     <div class="text-justify">{{ .Content }}</div>
 

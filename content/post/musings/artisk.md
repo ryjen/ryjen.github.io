@@ -1,5 +1,5 @@
 ---
-title: Artist, Art tisk.
+title: Artist, Art tisk
 description: a look at art forms in the early 21st century
 date: 2020-10-10
 tags: [art, futurism]
