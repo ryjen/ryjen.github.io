@@ -6,7 +6,7 @@ date: 2020-12-15
 
 Do you feel entitled to be a victim of someone or something else?
 
-Do you think you mind or the situation generates more suffering?
+Do you think your mind or the situation generates more suffering?
 
 That you deserve better?  That you are overlooked?
 
@@ -22,7 +22,7 @@ Do you think there is a "mind behind the mind" that sees with pureness (awarenes
 
 Do you think prayers make you live in the future?
 
-Do you think projecting what want will make it happen? Or create an egoic identity to transfer the lack somewhere else?
+Do you think projecting what want will make it happen? Or create an egoic identity?
 
 Do you think that your ego is "the secret" sauce in your capitalization of dysfunction?
 
