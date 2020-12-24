@@ -63,7 +63,7 @@ The newbie is extremely passionate about the power of programming and believes t
 
 They want to engage in it constantly and resist anyone who does not agree.
 
-They do no realize that their passion is slowly being capitalized on by the enemy who knows it will pass.
+They do not realize that their passion is slowly being capitalized on by the enemy who knows it will pass.
 
 When their own peers do not want to engage with them or the winners, the programmer is forced to do as a solitary pursuit.
 
