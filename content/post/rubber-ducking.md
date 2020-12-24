@@ -30,9 +30,9 @@ While most programmers know the problems they solve are not insignificant, it is
 
 Some spend a lifetime solving them with little to show for it, thinking things will change.
 
-It is at this point, a programmer will turn to the dark side and on their own kind.
-
 One day while giving their kids a bath with a yellow submarine and fretting over problems, they realize they are in the bathtub with a computer.
+
+It is at this point, a programmer will turn to the dark side and on their own kind.
 
 Deciding enough is enough, they effectively duck out of any responsibility to the skillful lost art.
 
@@ -53,7 +53,7 @@ It is destiny for them not to receive it, at least in the way they want, so they
 
 After a while, the manager becomes hardened as their job position becomes threatened.
 
-Anyone trying to discuss programming problems become a part of the resistance, and thus told to **go tell it to a rubber duck in the bathtub, because that is what that stuff makes me want to do**.
+Anyone trying to discuss programming problems becomes a part of the resistance, and thus told to **go tell it to a rubber duck in the bathtub, because that is what that stuff makes me want to do**.
 
 ### Scenario 3:  The newbie
 
