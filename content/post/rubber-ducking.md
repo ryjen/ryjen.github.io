@@ -26,13 +26,13 @@ Nobody in the business world, or the user world gives a rats ass about programme
 
 {{<rawhtml>}}<img alt="yellow submarine" style="float: left" src="/image/blog/sub.png" />{{</rawhtml>}}
 
-While most programmers know the problems they solve are not insignificant, it is ultimately irrelevant in duality and the fast paced world.
+While most programmers know the problems they solve are not insignificant, it is ultimately irrelevant in the fast paced world and duality.
 
 Some spend a lifetime solving them with little to show for it, thinking things will change.
 
-It is at this point, a programmer will turn to the dark side and their own kind.
+It is at this point, a programmer will turn to the dark side and on their own kind.
 
-One day while giving his kids a bath with a yellow submarine and fretting over problems, they realize they are in the bathtub with a computer.
+One day while giving their kids a bath with a yellow submarine and fretting over problems, they realize they are in the bathtub with a computer.
 
 Deciding enough is enough, they effectively duck out of any responsibility to the skillful lost art.
 
