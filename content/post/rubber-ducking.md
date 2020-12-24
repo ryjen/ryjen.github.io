@@ -5,7 +5,7 @@ date: 2020-12-23
 tags: [methodology, debugging, guru]
 ---
 
-Yes, [rubber duck debugging](https://en.wikipedia.org/wiki/Rubber_duck_debugging) is really funny.
+Yes, [rubber duck debugging](https://en.wikipedia.org/wiki/Rubber_duck_debugging) is really funny (post it on quack overflow!).
 
 {{<rawhtml>}}<img alt="rubber duck" class="pull-right" src="/image/blog/duck.png">{{</rawhtml>}}
 
