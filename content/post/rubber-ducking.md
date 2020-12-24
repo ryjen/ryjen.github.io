@@ -13,7 +13,7 @@ The [wiki](https://rubberduckdebugging.com/), a [dedicated site](https://rubberd
 
 It is a fantastic methodology because there is no other human to try and take advantage of your stupidity - implicitly (unconsciously) or explicitly (capitalism).
 
-Like media and technology which this world unconsciously loves and wants to be.... There is a shadow side.
+Like media and technology which this world loves and wants to be (metro techno star).... There is a shadow side.
 
 To me the story says something about doing programming in the bathtub with a computer.
 
