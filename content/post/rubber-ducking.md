@@ -45,7 +45,7 @@ Again a story of the ancient duality of go(o)d (gooooooo-gle) and (e)vil (eVILLI
 
 The manager has intentions of being organized and everyone being happy.
 
-If there is money in allowing others do things, why not.
+If there is money in allowing others to do things, why not.
 
 But the programmers are a needy bunch.  They require constant recognition of their meaningless suffering.
 
