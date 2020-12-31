@@ -84,3 +84,21 @@ So when I put you down,
 Down into the ground,
 
 I hurts me too.
+
+---
+
+You say I do not know love,
+
+Or deserve it too.
+
+The levels of existence,
+
+I had to accept,
+
+Prove it so.
+
+So when things don't love,
+
+Don't love you,
+
+I don't care too.
