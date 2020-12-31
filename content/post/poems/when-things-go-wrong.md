@@ -1,6 +1,6 @@
 ---
-title: when things go wrong
-description: inspiration from elmore james
+title: When Things Go Wrong
+description: Inspiration from Elmore James
 date: 2020-12-30
 ---
 
