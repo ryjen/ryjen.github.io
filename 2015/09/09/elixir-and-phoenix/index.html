@@ -1,1 +1,207 @@
-<!doctype html><html class=no-js lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><title>Elixir and Phoenix</title><meta name=viewport content="width=device-width,initial-scale=1"><meta name=google-site-verification content="Crk6W-ckoApRrOZrv23ngLwPPTbzjzfZ4AQPElgS0pw"><meta name=description content="personal blog of an engineer, musician, and madman"><meta name=ROBOTS content="INDEX, FOLLOW"><link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel=stylesheet><link rel=stylesheet href=/css/theme.min.css><link href=/css/app.min.css rel=stylesheet><meta name=generator content="Hugo 0.79.0"></head><body><div id=header class=clearfix><div class="container clearfix"><div id=brand><a href=/><span class=brand>ryan jennings</span></a></div><div id=menu-toggle><i class="fas fa-bars"></i></div><nav><ul class="nav navbar-nav menu"><li class="nav-toggle blog"><a href=/post title=blog><i class="fas fa-rss"></i><span class=nav-name>blog</span></a></li><li class="nav-toggle music"><a href=/music title=music><i class="fas fa-music"></i><span class=nav-name>music</span></a></li><li class="nav-toggle doodles"><a href=/doodles title=doodles><i class="fas fa-paint-brush"></i><span class=nav-name>doodles</span></a></li><li class="nav-toggle things"><a href=/things title=things><i class="fas fa-object-ungroup"></i><span class=nav-name>things</span></a></li></ul></nav></div></div><div class=container><div id=main><div class=header><h1>Elixir and Phoenix</h1><p class=subtitle>erlang vm chat application</p><p class=timestamps>Created: September 9, 2015</p></div><div class=text-justify><h2 id=introduction>Introduction</h2><p>If you dont know <a href=http://phoenixframework.org>phoenix</a> framework, I&rsquo;d describe it as rails for elixir. If you dont know <a href=http://elixir-lang.org>Elixir</a> I&rsquo;d describe it as a <a href=https://en.wikipedia.org/wiki/Functional_programming>functional</a> language that feels like ruby for <a href=http://erlang.org>erlang</a>.</p><p>If you don&rsquo;t know erlang it has been around a while (open-sourced in 1998) and the virtual machine is designed to be highly fault tolerant and scalable for use in telecoms, banking and instant messaging (WhatsApp).</p><h2 id=experimenting>Experimenting</h2><p>To exercise the framework, I created yet another chat app (I know, I know).</p><p>The premise is it will use slash commands for text-based social actions.</p><p>For example typing <code>/smile Fred</code> the following would happen (assuming your username is Bob):</p><p>Aliases were added as well, so <code>:) Fred</code> would do the same as above.</p><h2 id=more-to-come>More to come?</h2><p>Not much to say technically for now, using a pure functional language was tricky but doable once you get the hang of it.</p><p>It does require a different mindset, but its a nice change. Did not take that long to make.</p><p>Am going to leave it closed source for now. Will put more info here if that changes, or ask me too see it. Would be happy to share.</p><p>In the meantime there are some good tutorials out there:</p><ul><li><a href=http://gogogarrett.sexy/programming-in-elixir-with-the-phoenix-framework-building-a-basic-CRUD-app/>building a crud phoenix app</a></li><li><a href=https://robots.thoughtbot.com/testing-a-phoenix-elixir-json-api>building a phoenix json api</a></li><li><a href=http://learnelixir.com/blog/2014/10/30/real-time-to-do-list-with-phoenix-channel/>realtime todo list</a></li><li><a href=http://codetunes.com/2015/phoenix-blog/>building a phoenix blog</a></li></ul><h2 id=todo>Todo</h2><ul><li>I did not get around to testing the scale ability of phoenix and the erlang virtual machine. I&rsquo;ll just take their word for it.</li><li>Slack addon?</li></ul></div></div></div><hr><div class=container></div></div><div id=footer><script data-goatcounter=https://analytics.micrantha.com/count async src=//analytics.micrantha.com/count.js></script><button id=themer class=center type=button>enlighten</button><div class="menu center"><ul><li><a href=mailto:robert@ryanjennin.gs><i class="fa-3x fas fa-envelope"></i></a></li><li><a href=https://micrantha.com><i class="fa-3x fas fa-building"></i></a></li><li><a href=https://github.com/ryjen><i class="fa-3x fab fa-github"></i></a></li><li><a href=https://linkedin.com/in/ryjen><i class="fa-3x fab fa-linkedin"></i></a></li></ul></div><div class=center>© all rights reserved, ryan jennings</div></div><script src=/js/theme.min.js></script><script src=/js/app.min.js></script><script data-goatcounter=https://analytics.micrantha.com/count async src=//analytics.micrantha.com/count.js></script><script>hljs.initHighlightingOnLoad();</script></body></html>
+<!doctype html>
+<html class="no-js" lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Elixir and Phoenix</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="google-site-verification" content="Crk6W-ckoApRrOZrv23ngLwPPTbzjzfZ4AQPElgS0pw" />
+<meta name="description" content="personal blog of an engineer, musician, and madman" />
+<meta name="ROBOTS" CONTENT="INDEX, FOLLOW">
+
+    
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/theme.min.css">
+
+<link href="/css/app.min.css" rel="stylesheet">
+
+
+
+
+    <meta name="generator" content="Hugo 0.79.0" />
+
+  </head>
+  <body>
+    
+
+    
+    <div id="header" class="clearfix">
+    
+
+      
+      <div class="container clearfix">
+        <div id="brand">
+          <a href="/">
+  <span class="brand">ryan jennings</span>
+</a>
+
+        </div>
+        <div id="menu-toggle">
+        <i class="fas fa-bars"></i></div>
+        <nav>
+          
+          <ul class="nav navbar-nav menu">
+            
+            <li class="nav-toggle blog">
+              <a href="/post" title="blog">
+                
+                <i class="fas fa-rss"></i>
+                
+                <span class="nav-name">blog</span>
+              </a>
+            </li>
+            
+            <li class="nav-toggle music">
+              <a href="/music" title="music">
+                
+                <i class="fas fa-music"></i>
+                
+                <span class="nav-name">music</span>
+              </a>
+            </li>
+            
+            <li class="nav-toggle doodles">
+              <a href="/doodles" title="doodles">
+                
+                <i class="fas fa-paint-brush"></i>
+                
+                <span class="nav-name">doodles</span>
+              </a>
+            </li>
+            
+            <li class="nav-toggle things">
+              <a href="/things" title="things">
+                
+                <i class="fas fa-object-ungroup"></i>
+                
+                <span class="nav-name">things</span>
+              </a>
+            </li>
+            
+          </ul>
+          
+
+        </nav>
+      </div>
+    </div>
+
+    <div class="container">
+
+
+<div id="main">
+
+    <div class="header">
+
+    <h1>Elixir and Phoenix</h1>
+
+    <p class="subtitle">erlang vm chat application</p>
+
+    <p class="timestamps">Created: September 9, 2015 </p>
+
+    </div>
+
+    <div class="text-justify"><h2 id="introduction">Introduction</h2>
+<!-- raw HTML omitted -->
+<p>If you dont know <a href="http://phoenixframework.org">phoenix</a> framework, I&rsquo;d describe it as rails for elixir.  If you dont know <a href="http://elixir-lang.org">Elixir</a> I&rsquo;d describe it as a <a href="https://en.wikipedia.org/wiki/Functional_programming">functional</a> language that feels like ruby for <a href="http://erlang.org">erlang</a>.</p>
+<p>If you don&rsquo;t know erlang it has been around a while (open-sourced in 1998) and the virtual machine is designed to be highly fault tolerant and scalable for use in telecoms, banking and instant messaging (WhatsApp).</p>
+<h2 id="experimenting">Experimenting</h2>
+<p>To exercise the framework, I created yet another chat app (I know, I know).</p>
+<p>The premise is it will use slash commands for text-based social actions.</p>
+<p>For example typing <code>/smile Fred</code> the following would happen (assuming your username is Bob):</p>
+<!-- raw HTML omitted -->
+<p>Aliases were added as well, so <code>:) Fred</code> would do the same as above.</p>
+<h2 id="more-to-come">More to come?</h2>
+<p>Not much to say technically for now, using a pure functional language was tricky but doable once you get the hang of it.</p>
+<p>It does require a different mindset, but its a nice change.  Did not take that long to make.</p>
+<p>Am going to leave it closed source for now.  Will put more info here if that changes, or ask me too see it.  Would be happy to share.</p>
+<p>In the meantime there are some good tutorials out there:</p>
+<ul>
+<li><a href="http://gogogarrett.sexy/programming-in-elixir-with-the-phoenix-framework-building-a-basic-CRUD-app/">building a crud phoenix app</a></li>
+<li><a href="https://robots.thoughtbot.com/testing-a-phoenix-elixir-json-api">building a phoenix json api</a></li>
+<li><a href="http://learnelixir.com/blog/2014/10/30/real-time-to-do-list-with-phoenix-channel/">realtime todo list</a></li>
+<li><a href="http://codetunes.com/2015/phoenix-blog/">building a phoenix blog</a></li>
+</ul>
+<h2 id="todo">Todo</h2>
+<ul>
+<li>I did not get around to testing the scale ability of phoenix and the erlang virtual machine.   I&rsquo;ll just take their word for it.</li>
+<li>Slack addon?</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+
+<hr>
+
+<div class="container">
+
+	
+
+</div>
+
+
+</div>
+
+<div id="footer">
+
+  
+<script data-goatcounter="https://analytics.micrantha.com/count"
+        async src="//analytics.micrantha.com/count.js"></script>
+
+
+
+  
+  
+
+  <button id="themer" class="center" type="button">enlighten</button>
+
+  <div class="menu center">
+    
+      <ul>
+        
+          <li><a href="mailto:robert@ryanjennin.gs"><i class="fa-3x fas fa-envelope"></i></a></li>
+        
+          <li><a href="https://micrantha.com"><i class="fa-3x fas fa-building"></i></a></li>
+        
+          <li><a href="https://github.com/ryjen"><i class="fa-3x fab fa-github"></i></a></li>
+        
+          <li><a href="https://linkedin.com/in/ryjen"><i class="fa-3x fab fa-linkedin"></i></a></li>
+        
+      </ul>
+    
+  </div>
+    
+  <div class="center">
+    © all rights reserved, ryan jennings 
+  </div>
+
+</div>
+
+
+<script src="/js/theme.min.js"></script>
+
+
+<script src="/js/app.min.js"></script>
+<script data-goatcounter="https://analytics.micrantha.com/count"
+        async src="//analytics.micrantha.com/count.js"></script>
+
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+</body>
+</html>
+
+

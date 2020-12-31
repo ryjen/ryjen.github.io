@@ -1,4 +1,135 @@
-<!doctype html><html class=no-js lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><title>Mitmproxy and Android</title><meta name=viewport content="width=device-width,initial-scale=1"><meta name=google-site-verification content="Crk6W-ckoApRrOZrv23ngLwPPTbzjzfZ4AQPElgS0pw"><meta name=description content="personal blog of an engineer, musician, and madman"><meta name=ROBOTS content="INDEX, FOLLOW"><link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel=stylesheet><link rel=stylesheet href=/css/theme.min.css><link href=/css/app.min.css rel=stylesheet><meta name=generator content="Hugo 0.79.0"></head><body><div id=header class=clearfix><div class="container clearfix"><div id=brand><a href=/><span class=brand>ryan jennings</span></a></div><div id=menu-toggle><i class="fas fa-bars"></i></div><nav><ul class="nav navbar-nav menu"><li class="nav-toggle blog"><a href=/post title=blog><i class="fas fa-rss"></i><span class=nav-name>blog</span></a></li><li class="nav-toggle music"><a href=/music title=music><i class="fas fa-music"></i><span class=nav-name>music</span></a></li><li class="nav-toggle doodles"><a href=/doodles title=doodles><i class="fas fa-paint-brush"></i><span class=nav-name>doodles</span></a></li><li class="nav-toggle things"><a href=/things title=things><i class="fas fa-object-ungroup"></i><span class=nav-name>things</span></a></li></ul></nav></div></div><div class=container><div id=main><div class=header><h1>Mitmproxy and Android</h1><p class=subtitle>Some notes on using a network sniffer with android</p><p class=timestamps>Created: May 16, 2018</p></div><div class=text-justify><h2 id=introduction>Introduction</h2><p>Debugging network traffic for your app can be useful, and sometimes necessary if the data is not what is expected or inconsistent.</p><h2 id=the-proxy>The Proxy</h2><p>I prefer the open source proxy [mitmproxy](<a href=https://mitmproxy.org>https://mitmproxy.org</a> =300x203). Easy to install on OSX with <a href=https://brew.sh>homebrew</a>.</p><p><code>brew install mitmproxy</code></p><p>I&rsquo;ll leave it up to you to explore its greatness, I just wanna clarify the android setup.</p><h2 id=steps>Steps</h2><h3 id=1-mitmproxy>1) mitmproxy</h3><p>Choose a port (ex. 8888) and start the program: <code>mitmproxy -p 8888</code>:</p><p><img src=/image/blog/mitmproxy.png alt=mitmproxy></p><p>If you prefer a web interface <code>mitmweb</code>:</p><p><img src=/image/blog/mitmweb.png alt=mitmweb></p><h3 id=2-android>2) Android</h3><p>Find your local machine IP address, on OSX this can be found in network preferences. For example <code>192.168.1.55</code>.</p><p>Alternatively, find your public IP address on <a href=https://whatismyip.com>whatismyip.com</a>. For example <code>55.55.55.55</code>.</p><h4 id=21-emulator>2.1) Emulator</h4><p>a) Open the extended controls from the emulator.</p><p><img src=/image/blog/extended_controls.png alt="extended controls"></p><p>b) Go to Settings and click on the Proxy tab. Enter your IP address and a port. <img src=/image/blog/emulator_proxy.png alt="emulator proxy"></p><h4 id=22-device>2.2) Device</h4><p>Download a <a href="https://play.google.com/store/apps/details?id=org.proxydroid&hl=en">proxy app</a> and enter the same settings.</p><h4 id=23-certificates>2.3) Certificates</h4><p>a) Open the mitmproxy portal to download its HTTPS certificate: <code>https://mitm.it</code></p><p><img src=/image/blog/mitm_cert.png alt="mitm cert"></p><p>b) Download the Android certificate and install it. Name it whatever your want.</p><h2 id=gotcha>Gotcha</h2><p>Starting in Android N, <a href=https://android-developers.googleblog.com/2016/07/changes-to-trusted-certificate.html>user certificates are not used by default</a>. Your app will have to define a <a href=https://developer.android.com/training/articles/security-config>network configuration</a> to use the certificate.</p><p>Configuring this is possible only during debugging using the <code>debug-overrides</code> directive.</p><pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+<!doctype html>
+<html class="no-js" lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Mitmproxy and Android</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="google-site-verification" content="Crk6W-ckoApRrOZrv23ngLwPPTbzjzfZ4AQPElgS0pw" />
+<meta name="description" content="personal blog of an engineer, musician, and madman" />
+<meta name="ROBOTS" CONTENT="INDEX, FOLLOW">
+
+    
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/theme.min.css">
+
+<link href="/css/app.min.css" rel="stylesheet">
+
+
+
+
+    <meta name="generator" content="Hugo 0.79.0" />
+
+  </head>
+  <body>
+    
+
+    
+    <div id="header" class="clearfix">
+    
+
+      
+      <div class="container clearfix">
+        <div id="brand">
+          <a href="/">
+  <span class="brand">ryan jennings</span>
+</a>
+
+        </div>
+        <div id="menu-toggle">
+        <i class="fas fa-bars"></i></div>
+        <nav>
+          
+          <ul class="nav navbar-nav menu">
+            
+            <li class="nav-toggle blog">
+              <a href="/post" title="blog">
+                
+                <i class="fas fa-rss"></i>
+                
+                <span class="nav-name">blog</span>
+              </a>
+            </li>
+            
+            <li class="nav-toggle music">
+              <a href="/music" title="music">
+                
+                <i class="fas fa-music"></i>
+                
+                <span class="nav-name">music</span>
+              </a>
+            </li>
+            
+            <li class="nav-toggle doodles">
+              <a href="/doodles" title="doodles">
+                
+                <i class="fas fa-paint-brush"></i>
+                
+                <span class="nav-name">doodles</span>
+              </a>
+            </li>
+            
+            <li class="nav-toggle things">
+              <a href="/things" title="things">
+                
+                <i class="fas fa-object-ungroup"></i>
+                
+                <span class="nav-name">things</span>
+              </a>
+            </li>
+            
+          </ul>
+          
+
+        </nav>
+      </div>
+    </div>
+
+    <div class="container">
+
+
+<div id="main">
+
+    <div class="header">
+
+    <h1>Mitmproxy and Android</h1>
+
+    <p class="subtitle">Some notes on using a network sniffer with android</p>
+
+    <p class="timestamps">Created: May 16, 2018 </p>
+
+    </div>
+
+    <div class="text-justify"><h2 id="introduction">Introduction</h2>
+<p>Debugging network traffic for your app can be useful, and sometimes necessary if the data is not what is expected or inconsistent.</p>
+<h2 id="the-proxy">The Proxy</h2>
+<p>I prefer the open source proxy [mitmproxy](<a href="https://mitmproxy.org">https://mitmproxy.org</a> =300x203).  Easy to install on OSX with <a href="https://brew.sh">homebrew</a>.</p>
+<p><code>brew install mitmproxy</code></p>
+<p>I&rsquo;ll leave it up to you to explore its greatness, I just wanna clarify the android setup.</p>
+<h2 id="steps">Steps</h2>
+<h3 id="1-mitmproxy">1) mitmproxy</h3>
+<p>Choose a port (ex. 8888)  and start the program: <code>mitmproxy -p 8888</code>:</p>
+<p><img src="/image/blog/mitmproxy.png" alt="mitmproxy"></p>
+<p>If you prefer a web interface <code>mitmweb</code>:</p>
+<p><img src="/image/blog/mitmweb.png" alt="mitmweb"></p>
+<h3 id="2-android">2) Android</h3>
+<p>Find your local machine IP address, on OSX this can be found in network preferences.  For example <code>192.168.1.55</code>.</p>
+<p>Alternatively, find your public IP address on <a href="https://whatismyip.com">whatismyip.com</a>.  For example <code>55.55.55.55</code>.</p>
+<h4 id="21-emulator">2.1) Emulator</h4>
+<p>a) Open the extended controls from the emulator.</p>
+<p><img src="/image/blog/extended_controls.png" alt="extended controls"></p>
+<p>b) Go to Settings and click on the Proxy tab. Enter your IP address and a port. <img src="/image/blog/emulator_proxy.png" alt="emulator proxy"></p>
+<h4 id="22-device">2.2) Device</h4>
+<p>Download a <a href="https://play.google.com/store/apps/details?id=org.proxydroid&amp;hl=en">proxy app</a> and enter the same settings.</p>
+<h4 id="23-certificates">2.3) Certificates</h4>
+<p>a) Open the mitmproxy portal to download its HTTPS certificate: <code>https://mitm.it</code></p>
+<p><img src="/image/blog/mitm_cert.png" alt="mitm cert"></p>
+<p>b) Download the Android certificate and install it.  Name it whatever your want.</p>
+<h2 id="gotcha">Gotcha</h2>
+<p>Starting in Android N, <a href="https://android-developers.googleblog.com/2016/07/changes-to-trusted-certificate.html">user certificates are not used by default</a>.  Your app will have to define a <a href="https://developer.android.com/training/articles/security-config">network configuration</a> to use the certificate.</p>
+<p>Configuring this is possible only during debugging using the <code>debug-overrides</code> directive.</p>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
 &lt;network-security-config&gt;
     &lt;debug-overrides&gt;
         &lt;trust-anchors&gt;
@@ -9,4 +140,81 @@
         &lt;/trust-anchors&gt;
     &lt;/debug-overrides&gt;
 &lt;/network-security-config&gt;
-</code></pre></div></div></div><hr><div class=container></div></div><div id=footer><script data-goatcounter=https://analytics.micrantha.com/count async src=//analytics.micrantha.com/count.js></script><button id=themer class=center type=button>enlighten</button><div class="menu center"><ul><li><a href=mailto:robert@ryanjennin.gs><i class="fa-3x fas fa-envelope"></i></a></li><li><a href=https://micrantha.com><i class="fa-3x fas fa-building"></i></a></li><li><a href=https://github.com/ryjen><i class="fa-3x fab fa-github"></i></a></li><li><a href=https://linkedin.com/in/ryjen><i class="fa-3x fab fa-linkedin"></i></a></li></ul></div><div class=center>© all rights reserved, ryan jennings</div></div><script src=/js/theme.min.js></script><script src=/js/app.min.js></script><script data-goatcounter=https://analytics.micrantha.com/count async src=//analytics.micrantha.com/count.js></script><script>hljs.initHighlightingOnLoad();</script></body></html>
+</code></pre></div>
+
+</div>
+
+</div>
+
+
+
+
+
+
+<hr>
+
+<div class="container">
+
+	
+
+</div>
+
+
+</div>
+
+<div id="footer">
+
+  
+<script data-goatcounter="https://analytics.micrantha.com/count"
+        async src="//analytics.micrantha.com/count.js"></script>
+
+
+
+  
+  
+
+  <button id="themer" class="center" type="button">enlighten</button>
+
+  <div class="menu center">
+    
+      <ul>
+        
+          <li><a href="mailto:robert@ryanjennin.gs"><i class="fa-3x fas fa-envelope"></i></a></li>
+        
+          <li><a href="https://micrantha.com"><i class="fa-3x fas fa-building"></i></a></li>
+        
+          <li><a href="https://github.com/ryjen"><i class="fa-3x fab fa-github"></i></a></li>
+        
+          <li><a href="https://linkedin.com/in/ryjen"><i class="fa-3x fab fa-linkedin"></i></a></li>
+        
+      </ul>
+    
+  </div>
+    
+  <div class="center">
+    © all rights reserved, ryan jennings 
+  </div>
+
+</div>
+
+
+<script src="/js/theme.min.js"></script>
+
+
+<script src="/js/app.min.js"></script>
+<script data-goatcounter="https://analytics.micrantha.com/count"
+        async src="//analytics.micrantha.com/count.js"></script>
+
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+</body>
+</html>
+
+
