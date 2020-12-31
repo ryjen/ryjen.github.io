@@ -33,11 +33,11 @@ theme = "coda"
     identifier  = "rss"
     weight = 2
 
-#[[menu.main]]
-#    name  = "poems"
-#    url   = "/post/poems"
-#    identifier = "pen-nib"
-#    weight = 3
+[[menu.main]]
+    name  = "poems"
+    url   = "/post/poems"
+    identifier = "pen-nib"
+    weight = 3
 
 [[menu.main]]
     name  = "music"
