@@ -3,6 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://ryanjennin.gs/post/musings/</loc>
+    <lastmod>2020-12-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ryanjennin.gs/post/</loc>
+    <lastmod>2020-12-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ryanjennin.gs/</loc>
+    <lastmod>2020-12-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ryanjennin.gs/2020/12/30/when-things-go-wrong/</loc>
+    <lastmod>2020-12-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ryanjennin.gs/tags/debugging/</loc>
     <lastmod>2020-12-23T00:00:00+00:00</lastmod>
   </url>
@@ -18,17 +38,7 @@
   </url>
   
   <url>
-    <loc>https://ryanjennin.gs/post/</loc>
-    <lastmod>2020-12-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ryanjennin.gs/2020/12/23/rubber-ducking/</loc>
-    <lastmod>2020-12-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ryanjennin.gs/</loc>
     <lastmod>2020-12-23T00:00:00+00:00</lastmod>
   </url>
   
@@ -38,22 +48,12 @@
   </url>
   
   <url>
-    <loc>https://ryanjennin.gs/post/musings/</loc>
-    <lastmod>2020-12-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ryanjennin.gs/2020/12/15/questioning-the-queue/</loc>
     <lastmod>2020-12-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://ryanjennin.gs/2020/12/01/a-tale-of-belonging/</loc>
-    <lastmod>2020-12-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ryanjennin.gs/post/poems/</loc>
     <lastmod>2020-12-01T00:00:00+00:00</lastmod>
   </url>
   

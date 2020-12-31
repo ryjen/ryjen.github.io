@@ -1,6 +1,6 @@
 ---
-title: A tale of Belonging
-description: From the perspective of suffering but with positivity
+title: A tale of belonging
+description: A sarcastic tale of being a loser
 date: 2020-12-01
 ---
 
