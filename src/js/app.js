@@ -11,7 +11,5 @@ var App = (function () {
   return app;
 })();
 
-$(document).ready(function () {
-  App.start();
-});
+App.start();
 
