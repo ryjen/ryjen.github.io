@@ -53,9 +53,7 @@ I feel it too.
 
 ---
 
-You cannot be
-
-What you want,
+You cannot be what you want,
 
 To make it happen.
 
@@ -73,7 +71,7 @@ It kills me too.
 
 You always find a reason,
 
-To deny me dignity.
+To be denied dignity.
 
 Your fragile construct,
 
@@ -83,7 +81,7 @@ So when I put you down,
 
 Down into the ground,
 
-I hurts me too.
+It hurts me too.
 
 ---
 
