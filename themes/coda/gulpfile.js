@@ -64,15 +64,21 @@ gulp.task("css", function() {
 });
 
 gulp.task("js", function() {
+
+  gulp.src([
+    "node_modules/@fortawesome/fontawesome-free/js/all.js",
+    "node_modules/jquery/dist/jquery.js",
+    "node_modules/highlightjs/highlight.pack.js"
+  ])
+    .pipe(order(["highlight.pack.js", "jquery.js", "all.js"]))
+    .pipe(uglify())
+    .pipe(concat("vendor.min.js"))
+    .pipe(gulp.dest("static/js"));
+
   var sources = gulp
     .src([
       "src/js/*.js",
-      "node_modules/particles.js/particles.js",
-      "node_modules/jquery/dist/jquery.js",
-      "node_modules/highlightjs/highlight.pack.js",
-      "node_modules/@fortawesome/fontawesome-free/js/all.js"
     ])
-    .pipe(order(["modernizr.js", "highlight.pack.js", "jquery.js"]));
 
   if (!isProduction) {
     sources = sources.pipe(sourcemaps.init());

@@ -1,24 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>guru on ryan jennings</title>
-    <link>https://ryanjennin.gs/tags/guru/</link>
-    <description>Recent content in guru on ryan jennings</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 23 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://ryanjennin.gs/tags/guru/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Rubber Ducking</title>
-      <link>https://ryanjennin.gs/2020/12/23/rubber-ducking/</link>
-      <pubDate>Wed, 23 Dec 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://ryanjennin.gs/2020/12/23/rubber-ducking/</guid>
-      <description>Yes, rubber duck debugging is really funny (post it on quack overflow!).
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>guru on ryan jennings</title><link>https://ryanjennin.gs/tags/guru/</link><description>Recent content in guru on ryan jennings</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 23 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://ryanjennin.gs/tags/guru/index.xml" rel="self" type="application/rss+xml"/><item><title>Rubber Ducking</title><link>https://ryanjennin.gs/2020/12/23/rubber-ducking/</link><pubDate>Wed, 23 Dec 2020 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/2020/12/23/rubber-ducking/</guid><description>Yes, rubber duck debugging is really funny (post it on quack overflow!).
 The wiki, a dedicated site or coding horror explain it pretty well.
 It is a fantastic methodology because there is no other human to try and take advantage of your stupidity - implicitly (unconsciously) or explicitly (capitalism).
 Like media and technology which this world loves and wants to be (metro techno star)&amp;hellip;. There is a shadow side.
-To me the story says something about doing programming in the bathtub with a computer.</description>
-    </item>
-    
-  </channel>
-</rss>
+To me the story says something about doing programming in the bathtub with a computer.</description></item></channel></rss>

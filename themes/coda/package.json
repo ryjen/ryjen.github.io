@@ -4,27 +4,26 @@
   "description": "a theme for hugo",
   "main": "gulpfile.js",
   "dependencies": {
-    "autoprefixer": "^10.0.4",
-    "gulp-htmlclean": "^2.7.22",
-    "gulp-postcss": "^9.0.0",
-    "gulp-purgecss": "^3.0.0",
     "highlightjs": "^9.10.0",
     "jquery": "^3.3.1",
-    "particles.js": "^2.0.0",
-    "postcss": "^8.1.10",
     "skeleton-css": "^2.0.4"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.9.0",
+    "autoprefixer": "^10.0.4",
     "del": "^3.0.0",
     "graceful-fs": "4.1.11",
     "gulp": "^4.0.2",
     "gulp-buster": "^1.1.0",
     "gulp-concat": "^2.6.1",
     "gulp-csso": "^3.0.1",
+    "gulp-htmlclean": "^2.7.22",
     "gulp-order": "^1.1.1",
+    "gulp-postcss": "^9.0.0",
+    "gulp-purgecss": "^3.0.0",
     "gulp-sass": "^4.0.1",
-    "gulp-uglify": "^3.0.1"
+    "gulp-uglify": "^3.0.1",
+    "postcss": "^8.1.10"
   },
   "scripts": {
     "build": "gulp",

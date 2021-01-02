@@ -1,5 +1,5 @@
 
-.PHONY: setup theme blog all test
+.PHONY: setup theme blog all test clean
 
 all: setup theme blog
 
@@ -15,6 +15,10 @@ blog:
 
 dist: setup
 	@yarn build:dist
+
+clean:
+	@yarn clean
+	@rm -rf public/*
 
 update:
 	@yarn --cwd themes/coda

@@ -1,15 +1,14 @@
-
 var App = (function () {
   // modules
-  var app = {};
+  var app = {}
 
   app.start = function() {
-    Gallery.start();
-    Themer.start();
-  };
+    Gallery.start()
+    Themer.start()
+  }
 
-  return app;
-})();
+  return app
+})()
 
-App.start();
+App.start()
 

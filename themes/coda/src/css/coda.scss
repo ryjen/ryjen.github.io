@@ -8,9 +8,9 @@ $fa-font-path:        "../fonts";
 @import "../../node_modules/@fortawesome/fontawesome-free/scss/solid";
 @import "../../node_modules/@fortawesome/fontawesome-free/scss/v4-shims";
 
+
 @import "mixins";
 
-html,
 .light {
   @include rebase(
     $base3,
@@ -23,7 +23,8 @@ html,
     $base03
   );
 }
-.dark {
+
+html, .dark {
   @include rebase(
     $base03,
     $base02,
@@ -133,6 +134,10 @@ pre {
 
 td {
   border: none;
+}
+
+[data-link] {
+  cursor: pointer;
 }
 
 /* Utilities */
@@ -287,6 +292,22 @@ td {
     .nav-name {
       margin-left: 8px;
     }
+    
+    .nav-sub-menu {
+      display: block;
+      position: absolute;
+      z-index: 100;
+
+      li {
+        display: block;
+      }
+    }
+
+
+    .nav-toggle + ul.nav-sub-menu {
+      display: none;
+    }
+
   }
 
   .navbar-icons {
@@ -346,8 +367,16 @@ td {
     margin-top: 1rem;
   }
 
-  .timestamps {
-    font-size: 0.8rem;
+  .subheader {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.95rem;
+    margin-bottom: 2.5rem;
+    border-top: 1px solid $border-color;
+  }
+
+  ol {
+    list-style-position: outside;
   }
 
   .image {
@@ -360,21 +389,21 @@ td {
     &.bg-default {
       &:nth-child(3n-2) {
         background-color: rgba($blue, 0.08);
-        h4, a {
+        h1, a {
           color: $blue;
         }
       }
 
       &:nth-child(3n-1) {
         background-color: rgba($orange, 0.08);
-        h4, a {
+        h1, a {
           color: $orange;
         }
       }
 
       &:nth-child(3n) {
         background-color: rgba($green, 0.08);
-        h4, a {
+        h1, a {
           color: $green;
         }
       }
@@ -401,7 +430,7 @@ td {
     font-size: 2.5rem;
   }
 
-  h2 {
+  h2, h1.header {
     font-size: 2.1rem;
     border-bottom: 1px dashed $green;
     padding-bottom: 10px;
@@ -422,14 +451,16 @@ td {
   }
 
   .item {
-    h4 {
+    h1 {
       font-size: 1.7rem;
       margin-top: 0;
+      margin-bottom: 1rem;
     }
 
-    h5 {
+    h2 {
       font-size: 1.5rem;
       margin-bottom: 1rem;
+      border: none;
     }
 
     p {
@@ -550,7 +581,7 @@ td {
 
 /* Responsiveness */
 
-@media (max-width: 1320px) {
+@media (max-width: 900px) {
   #header:not(.home) {
     @include header-nameless;
     #brand {
@@ -568,4 +599,5 @@ td {
 // utils
 .pull-right {
   float: right;
+  text-align: right;
 }

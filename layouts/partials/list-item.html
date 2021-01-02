@@ -1,14 +1,26 @@
-<div class="card item bg-default clearfix">
-
-    {{ $.Scratch.Set "link" .RelPermalink }}
-    {{ with .Params.repo }} {{ printf "https://github.com/%s/%s/" $.Site.Params.githubUsername . | $.Scratch.Set "link" }} {{ end }}
-
-    {{ with .Description }} {{ $.Scratch.Set "subtitle" . }} {{ end }}
-
+{{ if .Parent.Params.Indexing }}
+  {{ $.Scratch.Set "link" .RelPermalink }}
+  {{ printf "%d %s" .WordCount (cond (eq .WordCount 1) "word" "words") | $.Scratch.Set "wordCount" }}
+  {{ printf "%#v min read" .ReadingTime | $.Scratch.Set "readTime" }}
+{{ end }}
+{{ with .Params.xref }} {{ $.Scratch.Set "link" . }} {{ end }}
+<div class="card item bg-default {{ with .File }}{{ path.Base .Dir }}{{ end }} clearfix"{{ with $.Scratch.Get "link" }}data-link="{{ . }}"{{ end }}>
+    {{ if .Date }}
     <p class="pull-right">{{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006") }}</p>
-    <h4><a href="{{ .Scratch.Get "link" }}">{{ .Title }}</a></h4>
-    <h5>{{ $.Scratch.Get "subtitle" }}</h5>
+    {{ end }}
+    <h1>
+        {{ if .Params.icon }}<i class="fas fa-{{ .Params.icon }}"></i>{{ end }}
+        {{ .Title }}
+    </h1>
+    {{ if .Parent.Params.Indexing }}
+    <p class="pull-right">{{ $.Scratch.Get "wordCount" }}<br>{{ $.Scratch.Get "readTime" }}
+    {{ end }}
+    {{ if .Params.Image }}
+      <img class="pull-left" src="{{ .Params.Image }}" alt="{{ .Name }}">
+    {{ end }}
+    <p class="clearfix">{{ .Description | markdownify }}<p>
 
-    {{ range .Params.tags }} <span class="item-tag">{{ . }}</span> {{ end }}
-
+    {{ range .Params.tags }} 
+       <span class="item-tag">{{ . }}</span> 
+    {{ end }}
 </div>

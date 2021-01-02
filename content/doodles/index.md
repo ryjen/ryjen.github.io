@@ -2,4 +2,4 @@
 title: Doodles
 ---
 
-{{< gallery >}}
+{{<gallery>}}
