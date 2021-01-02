@@ -1,0 +1,56 @@
+{{ partial "header" . }}
+
+<div id="main">
+
+    <div class="header">
+
+    <h1>{{ .Title }}</h1>
+
+    <p class="subtitle">{{ .Description }}</p>
+
+    <div class="subheader clearfix">
+      <div class="readinfo">
+         ETA: {{ .WordCount }} {{ cond (eq 1 .WordCount) "word" "words" }}, {{ .ReadingTime }} {{ cond (eq 1 .ReadingTime) "minute" "minutes" }}
+      </div> &nbsp;|&nbsp; 
+      <div class="timestamps">Created: {{ .Date.Format "January 2, 2006" }} {{ if .Params.Updated }} &nbsp; | &nbsp; Updated: {{ dateFormat "January 2, 2006" .Params.Updated }} {{ end }}</div>
+    </div>
+    </div>
+
+    <div class="text-justify">{{ .Content }}</div>
+
+</div>
+
+</div>
+
+<!-- related posts with the same tags -->
+{{ $related := first 3 (where (where (where .Site.Pages.ByDate.Reverse ".Type" "==" "post") ".Params.tags" "intersect" .Params.tags) "Permalink" "!=" .Permalink) }}
+
+{{ if $related }}
+<hr>
+
+<div class="container">
+
+
+    <div id="related">
+        <h5>Related:</h5>
+
+        {{ range $related }} {{ partial "list-item" . }} {{ end }}
+
+    </div>
+
+
+</div>
+
+{{ end }}
+
+<hr>
+
+<div class="container">
+
+	{{ if .Site.DisqusShortname }}
+	  {{ template "_internal/disqus.html" . }}
+	{{ end }}
+
+</div>
+
+{{ partial "footer" . }}
