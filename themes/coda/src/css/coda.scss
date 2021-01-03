@@ -602,7 +602,7 @@ td {
 
 /* Responsiveness */
 
-@media (max-width: 900px) {
+@media (max-width: 750px) {
   #header:not(.home) {
     @include header-nameless;
     #brand {
@@ -611,7 +611,7 @@ td {
   }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 500px) {
   #header:not(.home) {
     @include header-menu;
   }

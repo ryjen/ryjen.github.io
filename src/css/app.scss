@@ -80,13 +80,13 @@
 
 }
 
-@media (max-width: 1275px) {
+@media (max-width: 750px) {
   #header.home {
     @include header-nameless;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 500px) {
   #header.home {
     @include header-menu;
   }
