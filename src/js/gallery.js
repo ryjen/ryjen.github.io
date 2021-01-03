@@ -79,11 +79,13 @@ var Gallery = (function() {
         if ($(this).hasClass("fa-pause")) {
           pauseSliding()
           $(this).find('[data-fa-i2svg]')
-            .toggleClass("fa-play")
+            .removeClass("fa-pause")
+            .addClass("fa-play")
         } else {
           resumeSliding()
           $(this).find('[data-fa-i2svg]')
-            .toggleClass("fa-pause")
+            .removeClass("fa-play")
+            .addClass("fa-pause")
         }
       })
     }

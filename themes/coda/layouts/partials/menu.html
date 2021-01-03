@@ -6,7 +6,7 @@
 
   {{ .Page }}
 
-  <li class="nav-item{{ if .HasChildren }} nav-toggle{{ end }}{{ if ($currentPage.HasMenuCurrent "main" .) or ($currentPage.IsMenuCurrent "main" .) }} active{{ end }}">
+  <li class="nav-item{{ if .HasChildren }} nav-toggle{{ end }}{{ if $currentPage.IsMenuCurrent "main" . }} active{{ end }}">
     {{ partial "menu-item" . }}
   </li>
 

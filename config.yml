@@ -85,16 +85,19 @@ menu:
       parent: things
   icons:
     - url: 'https://github.com/ryjen'
-      name: fab fa-github
+      name: github
+      pre: fab fa-github
       weight: 4
     - url: 'https://linkedin.com/in/ryjen'
-      name: fab fa-linkedin
+      name: linkedin
+      pre: fab fa-linkedin
       weight: 5
     - url: 'https://micrantha.com'
-      name: fas fa-building
+      name: biz
+      pre: fas fa-building
       weight: 3
     - url: 'mailto:robert@ryanjennin.gs'
-      name: fas fa-envelope
-      type: fas
+      name: email
+      pre: fas fa-envelope
       weight: 2
 

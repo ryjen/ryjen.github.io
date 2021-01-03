@@ -17,7 +17,8 @@ const isProduction = process.env.NODE_ENV == 'production'
 gulp.task('clean', function() {
   return del([
     'static/css/**/*',
-    'static/js/**/*'
+    'static/js/**/*',
+    'static/img/**/*'
   ]);
 });
 

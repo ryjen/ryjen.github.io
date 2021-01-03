@@ -4,11 +4,13 @@
 
   <div id="intro">
 
-    <img id="avatar" alt="ryan jennings" src="/image/profile.jpeg" height="4" width="4" />
+    <img id="avatar" alt="ryan jennings" src="/image/profile.jpg" height="4" width="4" />
+    
+    <h1 class="brand">
+      <a href="{{ markdownify .Site.Params.IntroURL }}">{{ .Site.Params.BrandName | markdownify }}</a>
+    </h1>
 
-    <a href="{{ markdownify .Site.Params.IntroURL }}"><h1 class="brand">{{ .Site.Params.BrandName | markdownify }}</h1></a>
-
-    <h3>{{ markdownify .Site.Params.Description }}</h3>
+    <h2>{{ markdownify .Site.Params.Description }}</h2>
     <h3>{{ markdownify .Site.Params.SubDescription }}</h3>
 
   </div>

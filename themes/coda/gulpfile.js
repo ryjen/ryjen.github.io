@@ -66,11 +66,13 @@ gulp.task("css", function() {
 gulp.task("js", function() {
 
   gulp.src([
-    "node_modules/@fortawesome/fontawesome-free/js/all.js",
-    "node_modules/jquery/dist/jquery.js",
-    "node_modules/highlightjs/highlight.pack.js"
+    "node_modules/@fortawesome/fontawesome-free/js/brands.js",
+    "node_modules/@fortawesome/fontawesome-free/js/solid.js",
+    "node_modules/@fortawesome/fontawesome-free/js/regular.js",
+    "node_modules/@fortawesome/fontawesome-free/js/fontawesome.js",
+    "node_modules/jquery/dist/jquery.slim.js"
   ])
-    .pipe(order(["highlight.pack.js", "jquery.js", "all.js"]))
+    .pipe(order(["jquery.slim.js"]))
     .pipe(uglify())
     .pipe(concat("vendor.min.js"))
     .pipe(gulp.dest("static/js"));

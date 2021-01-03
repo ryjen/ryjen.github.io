@@ -24,15 +24,15 @@
   $rebase3
 ) {
   background-color: $rebase03;
-  color: $rebase0;
+  color: $rebase3;
   #header a {
-    color: $rebase0;
+    color: $rebase3;
   }
   #footer li a { 
-    color: $rebase0;
+    color: $rebase3;
   }
   #themer {
-    color: $rebase0;
+    color: $rebase3;
   }
   h1,
   h2,
@@ -40,7 +40,7 @@
   h4,
   h5,
   h6 {
-    color: $rebase1;
+    color: $rebase3;
   }
 }
 @mixin accentize($accent) {
