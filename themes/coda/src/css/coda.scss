@@ -256,6 +256,12 @@ td {
   .card-header {
     display: flex;
     justify-content: space-between;
+
+    h1 {
+      svg {
+        margin-right: 0.7rem;
+      }
+    }
   }
 
   .card-content {

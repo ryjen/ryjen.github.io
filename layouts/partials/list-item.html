@@ -8,8 +8,7 @@
    
   <div class="card-header">
     <h1>
-        {{ if .Params.icon }}<i class="fas fa-{{ .Params.icon }}"></i>{{ end }}
-        {{ .Title }}
+        {{ if .Params.icon }}<i class="fas fa-{{ .Params.icon }}"></i>{{ end }}{{ .Title }}
     </h1>
     {{ if .Date }}
     <div class="card-date">{{ .Date.Format (.Site.Params.dateFormat | default "Jan 2, 2006") }}</div>
