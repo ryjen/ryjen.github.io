@@ -1,0 +1,47 @@
+<!doctype html><html class=no-js lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><title>c hacking: polymorphing 2</title><meta name=viewport content="width=device-width,initial-scale=1"><meta name=google-site-verification content="Crk6W-ckoApRrOZrv23ngLwPPTbzjzfZ4AQPElgS0pw"><meta name=description content="personal blog of an engineer, musician, and madman"><meta name=ROBOTS content="INDEX, FOLLOW"><link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet preload"><link rel="stylesheet preload" href=/css/theme.min.css><link href=/css/app.min.css rel=stylesheet></head><body><div id=header class=clearfix><div class="container clearfix"><div id=brand><a href=/><span class=brand>ryan jennings</span></a></div><div id=menu-toggle><i class="fas fa-bars"></i></div><nav><ul class="nav navbar-nav menu"><li class="nav-item nav-toggle"><a href=/verbage><i class="fas fa-newspaper"></i><span class=nav-name>verbage</span></a></li><ul class=nav-sub-menu><li class=nav-item><a href=/post><i class="fas fa-rss"></i><span class=nav-name>blog</span></a></li><li class=nav-item><a href=/musings><i class="fas fa-comment-dots"></i><span class=nav-name>musings</span></a></li></ul><li class="nav-item nav-toggle"><a href=/art><i class="fas fa-icons"></i><span class=nav-name>art</span></a></li><ul class=nav-sub-menu><li class=nav-item><a href=/music><i class="fas fa-music"></i><span class=nav-name>music</span></a></li><li class=nav-item><a href=/doodles><i class="fas fa-image"></i><span class=nav-name>doodles</span></a></li><li class=nav-item><a href=/post/poems><i class="fas fa-pen-nib"></i><span class=nav-name>poems</span></a></li></ul><li class="nav-item nav-toggle"><a href=/things><i class="fas fa-object-ungroup"></i><span class=nav-name>things</span></a></li><ul class=nav-sub-menu><li class=nav-item><a href=/things/books><i class="fas fa-book"></i><span class=nav-name>books</span></a></li><li class=nav-item><a href=/things/tech><i class="fas fa-robot"></i><span class=nav-name>tech</span></a></li></ul></ul></nav></div></div><div class=container><div id=main><div class=text-justify><p>While working on <a href=http://github.com/ryjen/cparse>cparse</a> I found another nifty way to sort of simulate polymorphism.</p><h1 id=cparse>cparse</h1><p>Another exercise in futility, a C implementation for the REST api at <a href=http://parse.com>parse.com</a>. Really the core of it is a web client and an object structure using json.</p><h1 id=polymorphing>polymorphing</h1><p>I started off by having separate structure for the different type of objects, but I quickly realized there was a lot of code duplication.
+To solve this I used a combination of type defines and function pointers to the library API appear to be working with a seperate type, but are indeed still working with the base object type.</p><p>So for an example, I&rsquo;ll explain an object and user types.</p><h2 id=object>object</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c><span style=color:#75715e>/* the alias */</span>
+<span style=color:#66d9ef>typedef</span> <span style=color:#66d9ef>struct</span> cparse_object cParseObject;
+
+<span style=color:#75715e>/* the definition */</span>
+<span style=color:#66d9ef>struct</span> cparse_object
+{
+	<span style=color:#66d9ef>char</span> <span style=color:#f92672>*</span>objectId;
+	cParseJson <span style=color:#f92672>*</span>attributes;
+	<span style=color:#75715e>/* etc. */</span>
+};
+
+<span style=color:#75715e>/* functions to operate on objects */</span>
+
+<span style=color:#66d9ef>bool</span> <span style=color:#a6e22e>cparse_object_save</span>(cParseObject <span style=color:#f92672>*</span>obj, cParseError <span style=color:#f92672>**</span>error);
+
+<span style=color:#66d9ef>bool</span> <span style=color:#a6e22e>cparse_object_delete</span>(cParseObject <span style=color:#f92672>*</span>obj, cParseError <span style=color:#f92672>**</span>error);
+
+<span style=color:#75715e>/* etc */</span>
+
+</code></pre></div><h2 id=user>user</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c><span style=color:#75715e>/* the alias: note that it is aliasing an object */</span>
+<span style=color:#66d9ef>typedef</span> <span style=color:#66d9ef>struct</span> cparse_object cParseUser;
+
+<span style=color:#75715e>/* implementation of functions to operator on users: note that they point to object functions */</span>
+
+<span style=color:#66d9ef>bool</span> (<span style=color:#f92672>*</span>cparse_user_save)(cParseUser <span style=color:#f92672>*</span>obj, cParseError <span style=color:#f92672>**</span>error) <span style=color:#f92672>=</span> cparse_object_save;
+
+<span style=color:#66d9ef>bool</span> (<span style=color:#f92672>*</span>cparse_user_delete)(cParseUser <span style=color:#f92672>*</span>obj, cParseError <span style=color:#f92672>**</span>error) <span style=color:#f92672>=</span> cparse_object_delete;
+
+<span style=color:#75715e>/* etc */</span>
+
+</code></pre></div><h2 id=example-usage>example usage</h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c>
+<span style=color:#75715e>/* example object */</span>
+cParseObject <span style=color:#f92672>*</span>obj <span style=color:#f92672>=</span> cparse_object_new();
+
+cparse_object_save(obj, <span style=color:#f92672>&amp;</span>error);
+
+
+<span style=color:#75715e>/* example user */</span>
+cParseUser <span style=color:#f92672>*</span>user <span style=color:#f92672>=</span> cparse_user_new();
+
+cparse_user_save(user, <span style=color:#f92672>&amp;</span>error);
+
+</code></pre></div><h2 id=conclusion>Conclusion</h2><p>As you can see from the example, the library API appears to be working with two distinct objects. Using JSON as an object structure allows the object type to be resused (aliased) into other types this way without worrying about its members. User objects can be passed directly to object functions as parameters without any issues.</p><p>Another benefit of this implementation is if the user object ever does become a distinct seperate object, the library API does not change or affect existing code!</p><p>Cheers!</p></div></div></div><hr><div class=container><div id=related><h5>Related:</h5><div class="card item bg-default post clearfix" data-link=/2012/04/10/best-programming-quotes/><div class=card-header><h1>Best Programming Quotes</h1><div class=card-date>Apr 10, 2012</div></div><div class=card-content><p>quotes used in software development</p></div><div class=card-footer><div class=item-tags><span class=item-tag>development</span>
+<span class=item-tag>programming</span>
+<span class=item-tag>quotes</span>
+<span class=item-tag>software</span></div><div>1 min read</div></div></div></div></div><hr><div class=container></div></div><div id=footer><script data-goatcounter=https://analytics.micrantha.com/count async src=//analytics.micrantha.com/count.js></script><button id=themer class=center type=button>enlighten</button><div class="menu center"><ul><li><a href=mailto:robert@ryanjennin.gs aria-label=email><i class="fa-3x fas fa-envelope"></i></a></li><li><a href=https://micrantha.com aria-label=biz><i class="fa-3x fas fa-building"></i></a></li><li><a href=https://github.com/ryjen aria-label=github><i class="fa-3x fab fa-github"></i></a></li><li><a href=https://linkedin.com/in/ryjen aria-label=linkedin><i class="fa-3x fab fa-linkedin"></i></a></li></ul></div><div class=center>© all rights reserved, ryan jennings</div></div><script src=/js/vendor.min.js defer></script><script src=/js/theme.min.js defer></script><script src=/js/app.min.js defer></script><script data-goatcounter=https://analytics.micrantha.com/count async src=//analytics.micrantha.com/count.js></script></body></html>

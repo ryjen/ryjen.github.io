@@ -1,0 +1,201 @@
+<!doctype html><html class=no-js lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><title>C Sqlite Tricks</title><meta name=viewport content="width=device-width,initial-scale=1"><meta name=google-site-verification content="Crk6W-ckoApRrOZrv23ngLwPPTbzjzfZ4AQPElgS0pw"><meta name=description content="personal blog of an engineer, musician, and madman"><meta name=ROBOTS content="INDEX, FOLLOW"><link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet preload"><link rel="stylesheet preload" href=/css/theme.min.css><link href=/css/app.min.css rel=stylesheet></head><body><div id=header class=clearfix><div class="container clearfix"><div id=brand><a href=/><span class=brand>ryan jennings</span></a></div><div id=menu-toggle><i class="fas fa-bars"></i></div><nav><ul class="nav navbar-nav menu"><li class="nav-item nav-toggle"><a href=/verbage><i class="fas fa-newspaper"></i><span class=nav-name>verbage</span></a></li><ul class=nav-sub-menu><li class=nav-item><a href=/post><i class="fas fa-rss"></i><span class=nav-name>blog</span></a></li><li class=nav-item><a href=/musings><i class="fas fa-comment-dots"></i><span class=nav-name>musings</span></a></li></ul><li class="nav-item nav-toggle"><a href=/art><i class="fas fa-icons"></i><span class=nav-name>art</span></a></li><ul class=nav-sub-menu><li class=nav-item><a href=/music><i class="fas fa-music"></i><span class=nav-name>music</span></a></li><li class=nav-item><a href=/doodles><i class="fas fa-image"></i><span class=nav-name>doodles</span></a></li><li class=nav-item><a href=/post/poems><i class="fas fa-pen-nib"></i><span class=nav-name>poems</span></a></li></ul><li class="nav-item nav-toggle"><a href=/things><i class="fas fa-object-ungroup"></i><span class=nav-name>things</span></a></li><ul class=nav-sub-menu><li class=nav-item><a href=/things/books><i class="fas fa-book"></i><span class=nav-name>books</span></a></li><li class=nav-item><a href=/things/tech><i class="fas fa-robot"></i><span class=nav-name>tech</span></a></li></ul></ul></nav></div></div><div class=container><div id=main><div class=text-justify><h4 id=introduction>Introduction</h4><p>Thought I would share some tricks I use for easy data CRUD&rsquo;s in C. I&rsquo;m using Sqlite here, but could apply to any database.</p><p>Not saying its the best approach at all (nor <a href=https://github.com/ryjen/db>ryjen/db</a>), this is just how it evolved for me.</p><h4 id=mapping>Mapping</h4><p>The core of my data access is the FieldMap structure, which determines how to save each field to the database.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c>    <span style=color:#75715e>/*
+</span><span style=color:#75715e>     * this is the magical table used to communicate between memory and the database
+</span><span style=color:#75715e>     */</span>
+    <span style=color:#66d9ef>typedef</span> <span style=color:#66d9ef>struct</span> FieldMap {
+      <span style=color:#66d9ef>const</span> <span style=color:#66d9ef>char</span>   <span style=color:#f92672>*</span>name;        <span style=color:#75715e>/* name of the field */</span>
+      <span style=color:#66d9ef>void</span>        <span style=color:#f92672>*</span>value;        <span style=color:#75715e>/* a pointer to the value of the field */</span>
+      <span style=color:#66d9ef>int</span>         type;          <span style=color:#75715e>/* type of value */</span>
+      <span style=color:#66d9ef>const</span> <span style=color:#66d9ef>void</span>   <span style=color:#f92672>*</span>arg1;        <span style=color:#75715e>/* additional argument */</span>
+      <span style=color:#66d9ef>const</span> <span style=color:#66d9ef>void</span>   <span style=color:#f92672>*</span>arg2;        <span style=color:#75715e>/* additional argument */</span>
+      <span style=color:#66d9ef>int</span>         flags;         <span style=color:#75715e>/* usage flags */</span>
+    } FieldMap;
+
+    <span style=color:#75715e>/* callback for custom field types */</span>
+    <span style=color:#66d9ef>typedef</span> <span style=color:#a6e22e>int</span> (<span style=color:#f92672>*</span>CustomField) (sqlite3_stmt <span style=color:#f92672>*</span>, <span style=color:#66d9ef>int</span> column, FieldMap <span style=color:#f92672>*</span>field);
+
+    <span style=color:#66d9ef>typedef</span> <span style=color:#a6e22e>void</span> (<span style=color:#f92672>*</span>DbCallback) (sqlite3_stmt <span style=color:#f92672>*</span>);
+</code></pre></div><p>Basically you would have to:</p><h5 id=example-1---saving>Example 1 - Saving</h5><p>This high level example shows building a quick table for each field we want to save in the database. In this case, an account object.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c><span style=color:#75715e>/* The account table name */</span>
+<span style=color:#75715e>#define ACCOUNT_TABLE &#34;account&#34;
+</span><span style=color:#75715e></span>
+<span style=color:#75715e>/* a structure representing the account fields */</span>
+FieldMap account_values[] <span style=color:#f92672>=</span> {
+  {<span style=color:#e6db74>&#34;login&#34;</span>, <span style=color:#f92672>&amp;</span>acc<span style=color:#f92672>-&gt;</span>login, SQL_TEXT},
+  {<span style=color:#e6db74>&#34;email&#34;</span>, <span style=color:#f92672>&amp;</span>acc<span style=color:#f92672>-&gt;</span>email, SQL_TEXT},
+  {<span style=color:#e6db74>&#34;password&#34;</span>, <span style=color:#f92672>&amp;</span>acc<span style=color:#f92672>-&gt;</span>password, SQL_TEXT},
+  {<span style=color:#e6db74>&#34;timezone&#34;</span>, <span style=color:#f92672>&amp;</span>acc<span style=color:#f92672>-&gt;</span>timezone, SQL_INT},
+  {<span style=color:#ae81ff>0</span>}
+};
+
+<span style=color:#75715e>/* saves the fields to the database */</span>
+acc<span style=color:#f92672>-&gt;</span>id <span style=color:#f92672>=</span> db_save(account_values, ACCOUNT_TABLE, acc<span style=color:#f92672>-&gt;</span>id);
+</code></pre></div><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c>sqlite3_int64 <span style=color:#a6e22e>db_save</span>(FieldMap <span style=color:#f92672>*</span>table, <span style=color:#66d9ef>const</span> <span style=color:#66d9ef>char</span> <span style=color:#f92672>*</span>tableName, sqlite3_int64 <span style=color:#f92672>*</span>id)
+{
+  <span style=color:#66d9ef>if</span> (id <span style=color:#f92672>==</span> <span style=color:#ae81ff>0</span>) {
+    <span style=color:#66d9ef>if</span> (db_insert_query(table, tableName) <span style=color:#f92672>!=</span> SQL_OK)
+        error(<span style=color:#e6db74>&#34;could not insert&#34;</span>);
+    <span style=color:#66d9ef>return</span> db_last_insert_rowid();
+  } <span style=color:#66d9ef>else</span> {
+    <span style=color:#66d9ef>if</span> (db_update_query(table, tableName, <span style=color:#f92672>*</span>id) <span style=color:#f92672>!=</span> SQL_OK)
+        error(<span style=color:#e6db74>&#34;could not update&#34;</span>,);
+    <span style=color:#66d9ef>return</span> id;
+  }
+}
+</code></pre></div><h4 id=example-2---deeper-into-saving>Example 2 - Deeper into Saving</h4><p>The first part of saving is inserting. The steps are to build a query, bind the values, and execute. In the case the values from the field map table for an account.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c><span style=color:#66d9ef>int</span> <span style=color:#a6e22e>sql_insert_query</span>(FieldMap <span style=color:#f92672>*</span>table, <span style=color:#66d9ef>const</span> <span style=color:#66d9ef>char</span> <span style=color:#f92672>*</span>tablename)
+{
+  sqlite3_stmt <span style=color:#f92672>*</span>stmt;
+  <span style=color:#66d9ef>char</span> buf[<span style=color:#ae81ff>1024</span>] <span style=color:#f92672>=</span> { <span style=color:#ae81ff>0</span> };
+  <span style=color:#66d9ef>char</span> columns[<span style=color:#ae81ff>1024</span>] <span style=color:#f92672>=</span> { <span style=color:#ae81ff>0</span> };
+  <span style=color:#66d9ef>char</span> params[<span style=color:#ae81ff>1024</span>] <span style=color:#f92672>=</span> { <span style=color:#ae81ff>0</span> };
+  <span style=color:#66d9ef>int</span> len;
+
+  <span style=color:#75715e>/* create a csv list of columns and params */</span>
+  db_build_columns(table, columns);
+  db_build_params(table, params);
+
+  len <span style=color:#f92672>=</span>  sprintf(buf, <span style=color:#e6db74>&#34;INSERT INTO %s (%s) VALUES(%s)&#34;</span>, tablename, columns,
+        params);
+
+  <span style=color:#66d9ef>if</span> (sqlite3_query(buf, len, <span style=color:#f92672>&amp;</span>stmt) <span style=color:#f92672>!=</span> SQL_OK) {
+    <span style=color:#66d9ef>return</span> sql_finalize(stmt);
+  }
+
+  <span style=color:#66d9ef>if</span> (sqlite3_bind_values(stmt, table) <span style=color:#f92672>!=</span> SQL_OK) {
+    <span style=color:#66d9ef>return</span> sql_finalize(stmt);
+  }
+
+  <span style=color:#75715e>/* execute */</span>
+  sqlite3_step(stmt);
+
+  <span style=color:#66d9ef>return</span> sqlite3_finalize(stmt);
+}
+</code></pre></div><h4 id=example-3---binding>Example 3 - Binding</h4><p>Have to have a way to bind the FieldMap to the queries, so the following implementations take care of that.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c><span style=color:#66d9ef>int</span> <span style=color:#a6e22e>db_bind_values</span>(sql_stmt <span style=color:#f92672>*</span>stmt, FieldMap <span style=color:#f92672>*</span>table)
+{
+  <span style=color:#66d9ef>for</span> (<span style=color:#66d9ef>int</span> i <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>; table[i].name <span style=color:#f92672>!=</span> <span style=color:#ae81ff>0</span>; i<span style=color:#f92672>++</span>) {
+    <span style=color:#66d9ef>int</span> err <span style=color:#f92672>=</span> sql_bind_table_value(stmt, i<span style=color:#f92672>+</span><span style=color:#ae81ff>1</span>, <span style=color:#f92672>&amp;</span>table[i]);
+
+    <span style=color:#66d9ef>if</span> (err <span style=color:#f92672>!=</span> SQL_OK)
+        <span style=color:#66d9ef>return</span> err;
+  }
+
+  <span style=color:#66d9ef>return</span> SQL_OK;
+}
+</code></pre></div><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c><span style=color:#75715e>/*
+</span><span style=color:#75715e> * binds a single FieldMap value to a query
+</span><span style=color:#75715e> */</span>
+<span style=color:#66d9ef>int</span> <span style=color:#a6e22e>db_bind_table_value</span>(sqlite3_stmt <span style=color:#f92672>*</span>stmt, <span style=color:#66d9ef>int</span> column, FieldMap <span style=color:#f92672>*</span>field)
+{
+  <span style=color:#66d9ef>if</span> (field<span style=color:#f92672>-&gt;</span>value <span style=color:#f92672>==</span> <span style=color:#ae81ff>0</span>) {
+    <span style=color:#66d9ef>return</span> sqlite3_bind_null(stmt, column);
+  }
+
+  <span style=color:#66d9ef>switch</span> (field<span style=color:#f92672>-&gt;</span>type) {
+  <span style=color:#66d9ef>case</span> SQL_INT:
+    <span style=color:#66d9ef>return</span> sqlite3_bind_int(stmt, column, <span style=color:#f92672>*</span>((<span style=color:#66d9ef>int</span><span style=color:#f92672>*</span>) field<span style=color:#f92672>-&gt;</span>value));
+  <span style=color:#66d9ef>case</span> SQL_TEXT:
+    {
+        <span style=color:#66d9ef>const</span> <span style=color:#66d9ef>char</span> <span style=color:#f92672>*</span>str <span style=color:#f92672>=</span> <span style=color:#f92672>*</span>((<span style=color:#66d9ef>const</span> <span style=color:#66d9ef>char</span> <span style=color:#f92672>*</span>) field<span style=color:#f92672>-&gt;</span>value);
+        <span style=color:#66d9ef>return</span> sqlite3_bind_text(stmt, column, str, strlen(str), <span style=color:#ae81ff>0</span>);
+    }
+  <span style=color:#66d9ef>case</span> SQL_DOUBLE:
+    <span style=color:#66d9ef>return</span> sqlite3_bind_double(stmt, column, <span style=color:#f92672>*</span>((<span style=color:#66d9ef>double</span><span style=color:#f92672>*</span>) field<span style=color:#f92672>-&gt;</span>value));
+  <span style=color:#66d9ef>case</span> SQL_FLOAT:
+    <span style=color:#66d9ef>return</span> sqlite3_bind_float(stmt, column, <span style=color:#f92672>*</span>((<span style=color:#66d9ef>float</span><span style=color:#f92672>*</span>) field<span style=color:#f92672>-&gt;</span>value));
+  <span style=color:#66d9ef>case</span> SQL_CUSTOM:
+    {
+        custom_sql func <span style=color:#f92672>=</span> (custom_sql) (field<span style=color:#f92672>-&gt;</span>arg1);
+        assert(func <span style=color:#f92672>!=</span> <span style=color:#ae81ff>0</span>);
+        <span style=color:#66d9ef>return</span> (<span style=color:#f92672>*</span>func) (stmt, column, field);
+    }
+  <span style=color:#66d9ef>default</span><span style=color:#f92672>:</span>
+    error(<span style=color:#e6db74>&#34;unknown save type for field %s&#34;</span>, field<span style=color:#f92672>-&gt;</span>name);
+    <span style=color:#66d9ef>return</span> SQL_NONTYPE;
+  }
+}
+</code></pre></div><h4 id=example-4---loading>Example 4 - Loading</h4><p>This high level example shows loading an account by an id using the same table.</p><p>The the query results are assigned to the pointers in the table.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c><span style=color:#75715e>/* loads one account by id */</span>
+res <span style=color:#f92672>=</span> db_load_by_id(account_values, ACCOUNT_TABLE, acc<span style=color:#f92672>-&gt;</span>id);
+</code></pre></div><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c><span style=color:#66d9ef>int</span> <span style=color:#a6e22e>db_load_by_id</span>(FieldMap <span style=color:#f92672>*</span>table, <span style=color:#66d9ef>const</span> <span style=color:#66d9ef>char</span> <span style=color:#f92672>*</span>tablename, sql_int64 id)
+{
+  <span style=color:#66d9ef>char</span> buf[<span style=color:#ae81ff>1024</span>] <span style=color:#f92672>=</span> {<span style=color:#ae81ff>0</span>};
+
+  sprintf(buf, <span style=color:#e6db74>&#34;where %s=&#39;%lld&#39;&#34;</span>, tablenameId(tablename), id);
+
+  <span style=color:#66d9ef>if</span>(db_select_query(<span style=color:#ae81ff>0</span>, table, tablename, <span style=color:#ae81ff>0</span>, buf) <span style=color:#f92672>!=</span> SQL_OK) {
+    error(<span style=color:#e6db74>&#34;could not load&#34;</span>);
+    <span style=color:#66d9ef>return</span> <span style=color:#ae81ff>0</span>;
+  }
+
+  <span style=color:#66d9ef>return</span> <span style=color:#ae81ff>1</span>;
+}
+</code></pre></div><p>Load multiple accounts by using a callback method.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c>res <span style=color:#f92672>=</span> db_load_all(ACCOUNT_TABLE, load_account_callback);
+</code></pre></div><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c><span style=color:#66d9ef>int</span> <span style=color:#a6e22e>db_load_all</span>(<span style=color:#66d9ef>const</span> <span style=color:#66d9ef>char</span> <span style=color:#f92672>*</span>tableName, DbCallback callback)
+{
+  <span style=color:#66d9ef>if</span> (db_select_query(<span style=color:#ae81ff>0</span>, tableName, callback, <span style=color:#ae81ff>0</span>) <span style=color:#f92672>!=</span> SQL_OK) {
+    error(<span style=color:#e6db74>&#34;could not load&#34;</span>);
+    <span style=color:#66d9ef>return</span> <span style=color:#ae81ff>0</span>;
+  }
+
+  <span style=color:#66d9ef>return</span> <span style=color:#ae81ff>1</span>;
+}
+</code></pre></div><h4 id=example-5---querying>Example 5 - Querying</h4><p>Querying is not too complicated. Its the typical process of create and execute looping the results. For each row it will:</p><ol><li>loading columns into the field map</li><li>issues the callback if provided</li></ol><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c><span style=color:#66d9ef>int</span> <span style=color:#a6e22e>sql_select_query</span>(FieldMap <span style=color:#f92672>*</span>table, <span style=color:#66d9ef>const</span> <span style=color:#66d9ef>char</span> <span style=color:#f92672>*</span>tablename, DbCallback callback, <span style=color:#66d9ef>const</span> <span style=color:#66d9ef>char</span> <span style=color:#f92672>*</span>constraints)
+{
+  sqlite3_stmt <span style=color:#f92672>*</span>stmt;
+  <span style=color:#66d9ef>char</span> buf[<span style=color:#ae81ff>1024</span>] <span style=color:#f92672>=</span> { <span style=color:#ae81ff>0</span> };
+  <span style=color:#66d9ef>char</span> columns[<span style=color:#ae81ff>1024</span>] <span style=color:#f92672>=</span> { <span style=color:#ae81ff>0</span> };
+  <span style=color:#66d9ef>int</span> column, len;
+
+  <span style=color:#75715e>/* creates a csv list of columns */</span>
+  db_build_columns(table, columns);
+
+  len <span style=color:#f92672>=</span> sprintf(buf, <span style=color:#e6db74>&#34;SELECT %s,%s FROM %s %s&#34;</span>,
+            tablenameId(tablename), columns,
+            tablename,
+            constraints <span style=color:#f92672>?</span> constraints : <span style=color:#e6db74>&#34;&#34;</span>);
+
+  <span style=color:#66d9ef>if</span> (sqlite3_query(buf, len, <span style=color:#f92672>&amp;</span>stmt) <span style=color:#f92672>!=</span> SQL_OK) {
+      <span style=color:#66d9ef>return</span> sqlite3_finalize(stmt);
+  }
+  <span style=color:#66d9ef>for</span> (err <span style=color:#f92672>=</span> sqlite3_step(stmt); err <span style=color:#f92672>!=</span> SQL_DONE; err <span style=color:#f92672>=</span> sqlite3_step(stmt)) {
+
+      <span style=color:#75715e>/* check for a table to load */</span>
+      <span style=color:#66d9ef>for</span> (column <span style=color:#f92672>=</span> <span style=color:#ae81ff>0</span>; table <span style=color:#f92672>&amp;&amp;</span> table[column].name <span style=color:#f92672>!=</span> <span style=color:#ae81ff>0</span>; column<span style=color:#f92672>++</span>) {
+
+          <span style=color:#75715e>/* pass a pointer to the current position in the table */</span>
+          db_load_column(stmt, column<span style=color:#f92672>+</span><span style=color:#ae81ff>1</span>, <span style=color:#f92672>&amp;</span>table[column]);
+      }
+
+      <span style=color:#75715e>/* check for a callback */</span>
+      <span style=color:#66d9ef>if</span>(callback) {
+          callback(stmt);
+      }
+  }
+  <span style=color:#66d9ef>return</span> sqlite3_finalize(stmt);
+}
+</code></pre></div><h4 id=example-6---deeper-into-querying>Example 6 - Deeper into Querying</h4><p>You saw that querying will load each column in a row. This function shows how that is done.</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c>
+<span style=color:#66d9ef>void</span> <span style=color:#a6e22e>db_load_column</span>(sqlite3_stmt <span style=color:#f92672>*</span>stmt, <span style=color:#66d9ef>int</span> column, FieldMap <span style=color:#f92672>*</span>field)
+{
+  <span style=color:#66d9ef>switch</span> (field<span style=color:#f92672>-&gt;</span>type) {
+  <span style=color:#66d9ef>case</span> SQL_INT:
+      field_value(<span style=color:#66d9ef>int</span>, field) <span style=color:#f92672>=</span>  sqlite3_column_int(stmt, column);
+      <span style=color:#66d9ef>break</span>;
+  <span style=color:#66d9ef>case</span> SQL_TEXT:
+      field_value(<span style=color:#66d9ef>const</span> <span style=color:#66d9ef>char</span> <span style=color:#f92672>*</span>, field) <span style=color:#f92672>=</span> str_dup(sqlite3_column_str(stmt, column));
+      <span style=color:#66d9ef>break</span>;
+  <span style=color:#66d9ef>case</span> SQL_FLOAT:
+      field_value(<span style=color:#66d9ef>float</span>, field) <span style=color:#f92672>=</span> sqlite3_column_float(stmt, column);
+      <span style=color:#66d9ef>break</span>;
+  <span style=color:#66d9ef>case</span> SQL_DOUBLE:
+      field_value(<span style=color:#66d9ef>double</span>, field) <span style=color:#f92672>=</span> sqlite3_column_double(stmt, column);
+      <span style=color:#66d9ef>break</span>;
+  <span style=color:#66d9ef>case</span> SQL_CUSTOM:
+      {
+          custom_sql <span style=color:#f92672>*</span>func <span style=color:#f92672>=</span>  (custom_sql <span style=color:#f92672>*</span>) field<span style=color:#f92672>-&gt;</span>arg1;
+          assert(func <span style=color:#f92672>!=</span> <span style=color:#ae81ff>0</span>);
+          (<span style=color:#f92672>*</span>func) (stmt, column, field);
+          <span style=color:#66d9ef>break</span>;
+      }
+  }
+}
+</code></pre></div><p>The <code>field_value</code> macro turns the field map into something we can assign a result to.</p><h4 id=conclusion>Conclusion</h4><p>C is already a very verbose language, but defining and using a table structure for database operations saves a lot of boiler plate code.</p></div></div></div><hr><div class=container><div id=related><h5>Related:</h5><div class="card item bg-default post clearfix" data-link=/2012/04/10/best-programming-quotes/><div class=card-header><h1>Best Programming Quotes</h1><div class=card-date>Apr 10, 2012</div></div><div class=card-content><p>quotes used in software development</p></div><div class=card-footer><div class=item-tags><span class=item-tag>development</span>
+<span class=item-tag>programming</span>
+<span class=item-tag>quotes</span>
+<span class=item-tag>software</span></div><div>1 min read</div></div></div></div></div><hr><div class=container></div></div><div id=footer><script data-goatcounter=https://analytics.micrantha.com/count async src=//analytics.micrantha.com/count.js></script><button id=themer class=center type=button>enlighten</button><div class="menu center"><ul><li><a href=mailto:robert@ryanjennin.gs aria-label=email><i class="fa-3x fas fa-envelope"></i></a></li><li><a href=https://micrantha.com aria-label=biz><i class="fa-3x fas fa-building"></i></a></li><li><a href=https://github.com/ryjen aria-label=github><i class="fa-3x fab fa-github"></i></a></li><li><a href=https://linkedin.com/in/ryjen aria-label=linkedin><i class="fa-3x fab fa-linkedin"></i></a></li></ul></div><div class=center>© all rights reserved, ryan jennings</div></div><script src=/js/vendor.min.js defer></script><script src=/js/theme.min.js defer></script><script src=/js/app.min.js defer></script><script data-goatcounter=https://analytics.micrantha.com/count async src=//analytics.micrantha.com/count.js></script></body></html>

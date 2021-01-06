@@ -1,7 +1,0 @@
-node_modules
-**/maps
-**/maps
-.DS_Store
-**/hash.json
-**/*.min.*
-*.log
