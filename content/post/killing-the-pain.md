@@ -1,15 +1,7 @@
 ---
-title: killing the pain
-description: a shift in career and prototypical death rant
+title: Killing the Pain
+description: A shift in career and prototypical death rant
 date: 2021-01-05
----
-
-TL;DR
-
-- software engineering culture is like poison
-- media life is the primary driver of anything in modern world
-- happiness is not listed in any discriminatory policy but it exists
-
 ---
 
 Pain is the only lens from which I can view the software industry.
@@ -50,17 +42,19 @@ I knew from the relief I felt, that there would probably be some sort of failed 
 
 ---
 
-Companies are in need of good people and want to weed out bad ones.  
+Companies are in need of good people and want to weed out bad ones. 
 
-Happiness and hair are not something listed in any discrimination policy.  But its there.
+I hate it when companies try to make work like a family.  There is nothing I like about a dysfunctional family - personal of work.
 
-I hate it when companies try to make work like a family.  There is nothing I like about a dysfunctional family - personal of work.  There is nothing I like about being unhappy because my personal "pedigree" is lacking.
+I usually end up on the losing end of the dysfunctional family stick.  Always half pulling you out of the shit but not enough.
 
 People often think recruiters are used for incoming, but I suspect they could be used for outgoing as well.  "Butter up" a person into thinking they are quite something, and send in a recruiter.
 
 ---
 
 Thus, I do declare, I need some dignity, a career change and some help.
+
+A bully can be confident or not, I find the need for happiness and confidence and being a winner all the time - weak.
 
 To get away from the happy phonies, the abuse and not be contributing to someones ego, career, partner or family would be like HEAVEN.
 
