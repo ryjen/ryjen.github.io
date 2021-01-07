@@ -30,3 +30,8 @@ date: 2021-01-01
 
 12.  Happiness has devolved into a means to end for success, business, survival and revenge.  It is no longer acceptable to fail at happiness - an impossible feat in life.  The true causes are also impossible to deal with, so drugs or die.
 
+13. Confidence is a bully or rapist just the same as an unconfident person.
+
+14. Turbans seem like the greatest thing ever for society.  Must I change religion to wear one?
+
+
