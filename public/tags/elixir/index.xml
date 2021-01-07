@@ -1,3 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>elixir on ryan jennings</title><link>https://ryanjennin.gs/tags/elixir/</link><description>Recent content in elixir on ryan jennings</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 09 Sep 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://ryanjennin.gs/tags/elixir/index.xml" rel="self" type="application/rss+xml"/><item><title>Elixir and Phoenix</title><link>https://ryanjennin.gs/2015/09/09/elixir-and-phoenix/</link><pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/2015/09/09/elixir-and-phoenix/</guid><description>Introduction If you dont know phoenix framework, I&amp;rsquo;d describe it as rails for elixir. If you dont know Elixir I&amp;rsquo;d describe it as a functional language that feels like ruby for erlang.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>elixir on ryan jennings</title>
+    <link>https://ryanjennin.gs/tags/elixir/</link>
+    <description>Recent content in elixir on ryan jennings</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 09 Sep 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://ryanjennin.gs/tags/elixir/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Elixir and Phoenix</title>
+      <link>https://ryanjennin.gs/2015/09/09/elixir-and-phoenix/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/2015/09/09/elixir-and-phoenix/</guid>
+      <description>Introduction If you dont know phoenix framework, I&amp;rsquo;d describe it as rails for elixir. If you dont know Elixir I&amp;rsquo;d describe it as a functional language that feels like ruby for erlang.
 If you don&amp;rsquo;t know erlang it has been around a while (open-sourced in 1998) and the virtual machine is designed to be highly fault tolerant and scalable for use in telecoms, banking and instant messaging (WhatsApp).
-Experimenting To exercise the framework, I created yet another chat app (I know, I know).</description></item></channel></rss>
+Experimenting To exercise the framework, I created yet another chat app (I know, I know).</description>
+    </item>
+    
+  </channel>
+</rss>
