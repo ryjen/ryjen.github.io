@@ -26,9 +26,9 @@ A Resource based economy simply involves treating earth like it is a spaceship.
 
 The monetary system stopped being backed by physical currency a long time ago and is ultimately "fictional".
 
-It is even "stranger than fiction" because it has real world consequences despite being mind-made.  As such, capable of wreaking havoc that any being of the Earth space ship would not normally do.
+It is even "stranger than fiction" because it has real world consequences despite being mind-made.  As such, is capable of wreaking havoc that any planetary being would not normally do.
 
-We have a limited number of resources on our Earth space ship and we must stop the bullshit, take stock of what we have left, and allocate an plan accordingly. 
+We have a limited number of resources on our Earth space ship and we must stop the bullshit, take stock of what we have left, allocate and plan accordingly. 
 
 Obviously, I am not sure how this would solve any drama with limited resources, and still requires governance, but maybe that is not the point.
 
@@ -61,5 +61,7 @@ Do you feel deeply offended by the Imperial Trumpist Quartet's tune or their bac
 Are you tired of the good guy fight that keeps fucking you in the arse like a piece of shit because he is so much better than you?
 
 Are you tired of feeling like you are alone in a connected world because people are too fucking brainwashed with a shit culture you cannot relate to them?
+
+Are you tired of of the mad cows and environment cost of eating hormone fueled, chemicalized sugar shit produced in mass cruelty and insanity just for the luxury of it?
 
 **Lets Tax America For It.**
