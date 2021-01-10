@@ -64,4 +64,6 @@ Are you tired of feeling like you are alone in a connected world because people 
 
 Are you tired of of the mad cows and environment cost of eating hormone fueled, chemicalized sugar shit produced in mass cruelty and insanity just for the luxury of it?
 
+Are you tired of wasting time not dealing with real problems?
+
 **Lets Tax America For It.**
