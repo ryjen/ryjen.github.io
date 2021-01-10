@@ -70,8 +70,15 @@ Are you tired of the mad cows and environment cost of eating hormone fueled, che
 
 Are you tired of being insane, following a path you did not choose, being treated like an idiot or you don't matter?
 
+Did art and music get reduced to fucking irrelevant bullshit?
+
 Are you tired of war, manipulation and over competition?
 
 Are you tired of wasting time not dealing with real problems?
 
+Are you tired of a cultural link in your own home but you have no vote? While being told to look at problems within yourself?  Like living in a pseudo polygamous marriage with an asshole who says tough shit?
+
+Are you tired of your good stuff being bought up and being thrown crap?
+
 **Lets Tax America For It.**
+
