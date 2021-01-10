@@ -40,9 +40,9 @@ I know how flaky it sounds, like environmentalists trying to avoid turning Earth
 
 We have already starting taxing countries that opt-in to environmental treaties, but they have not been very successful in my opinion because you have to balance the survival of the puppies and the families.
 
-Lets take that hit tune or jab from the Imperial Trumpist Quartet called "Tax China for Covid-19".
+Lets take that hit tune or jab from the Imperial Trumpist Quartet called "Tax/Sue China for Covid-19".
 
-Pretty moronic taxing for something unintentional, but it got me thinking about some of the things I would tax America for.
+Pretty moronic for something unintentional, but it got me thinking about some of the things I would tax America for.
 
 ### The Petition: A Sample Flyer
 
@@ -62,7 +62,9 @@ Are you tired of the good guy fight that keeps fucking you in the arse like a pi
 
 Are you tired of feeling like you are alone in a connected world because people are too fucking brainwashed with a shit culture you cannot relate to them?
 
-Are you tired of of the mad cows and environment cost of eating hormone fueled, chemicalized sugar shit produced in mass cruelty and insanity just for the luxury of it?
+Are you tired of the mad cows and environment cost of eating hormone fueled, chemicalized sugar shit produced in mass cruelty and insanity just for the luxury of it?
+
+Are you tired of being insane, following a path you did not choose, being treated like an idiot or you don't matter?
 
 Are you tired of wasting time not dealing with real problems?
 
