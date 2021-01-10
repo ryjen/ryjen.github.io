@@ -52,7 +52,7 @@ Did you report your college sexual assault in a monotone voice?  Were the confid
 
 Did your religion get reduced to a bunch of TV infomercial fanatics, bigotry, dogmatism, chauvinism and frankly, insanity?
 
-Are you tired of greed being protected by legalese and inequality?
+Are you tired of greed and inequality being protected by legalese?
 
 Do you suffer existing in avoidance of all those great fucking cars and their infrastructure, even though you do so for safety of body and mind?
 
@@ -65,6 +65,8 @@ Are you tired of feeling like you are alone in a connected world because people 
 Are you tired of the mad cows and environment cost of eating hormone fueled, chemicalized sugar shit produced in mass cruelty and insanity just for the luxury of it?
 
 Are you tired of being insane, following a path you did not choose, being treated like an idiot or you don't matter?
+
+Are you tired of war, manipulation and over competition?
 
 Are you tired of wasting time not dealing with real problems?
 
