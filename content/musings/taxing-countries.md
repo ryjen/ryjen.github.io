@@ -10,6 +10,8 @@ The rule of law for governing works at different levels.
 
 Am sure you are aware how globalization and the internet have exposed how difficult it is for countries to integrate with each other without some sort of super world organization governing that.
 
+Even as individuals, we live in our little "me" movies where we are the star, but cannot integrate with other people in their movies without not being the star.  Same concept.
+
 It becomes so apparent that a super world governing organization is not only extremely risky and difficult, it is undesirable given any current governments performance in the world.
 
 Einstein said, **"You cannot fix a problem using the same consciousness that created it."**
