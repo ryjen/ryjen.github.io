@@ -12,11 +12,13 @@ Am sure you are aware how globalization and the internet have exposed how diffic
 
 Even as individuals, we live in our little "me" movies where we are the star, but cannot integrate with other people in their movies without not being the star.  Same concept.
 
-It becomes so apparent that a super world governing organization is not only extremely risky and difficult, it is undesirable given any current governments performance in the world.
+It becomes so apparent that a world governing organization is not only extremely risky in terms of power and difficult in terms of fairness, it is also undesirable given any current governments performance in the world.
+
+The world organizations that exist today like the World Bank, International Monetary Fund or even United Nations just seem to be a next-level pat-on-the-back retreats for bureaucrats in love with the system that serves them.
 
 Einstein said, **"You cannot fix a problem using the same consciousness that created it."**
 
-It is the same problem with governments really, case in point with that god awful Trumpist in the Imperial Quartet.
+Same problem with governments really, case in point with that god awful Trumpist in the Imperial Quartet.
 
 ## New World Order
 
@@ -28,13 +30,13 @@ A Resource based economy simply involves treating earth like it is a spaceship.
 
 The monetary system stopped being backed by physical currency a long time ago and is ultimately "fictional".
 
-It is even "stranger than fiction" because it has real world consequences despite being mind-made.  As such, is capable of wreaking havoc that any planetary being would not normally do.
+It is even "stranger than fiction" because it has real world consequences despite being mind-made.  As such, is capable of wreaking havoc that any planetary being would not normally intend.
 
 We have a limited number of resources on our Earth space ship and we must stop the bullshit, take stock of what we have left, allocate and plan accordingly. 
 
 Obviously, I am not sure how this would solve any drama with limited resources, and still requires governance, but maybe that is not the point.
 
-In fact, my final opinion on the Venus Project is that the monetary world can still exist at a country level for the ego kids to play in.  But not at the world organization level.
+In fact, my final opinion on the Venus Project is that the monetary world can still exist at a country level for the ego kids to play in and hopefully evolve out of.
 
 I know how flaky it sounds, like environmentalists trying to avoid turning Earth into an uninhabitable Venus.  But honestly, I don't see a more logical approach.
 
