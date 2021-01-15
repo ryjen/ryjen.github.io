@@ -1,11 +1,271 @@
-<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><title>cross platform</title><meta name=viewport content="width=device-width,initial-scale=1"><meta name=google-site-verification content="Crk6W-ckoApRrOZrv23ngLwPPTbzjzfZ4AQPElgS0pw"><meta name=description content="personal blog of an engineer, musician, and madman"><meta name=ROBOTS content="INDEX, FOLLOW"><meta http-equiv=cache-control content="no-cache, no-store, must-revalidate"><meta http-equiv=pragma content="no-cache"><meta http-equiv=expires content="0"><link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel=preload type=font/otf as=font><link rel=stylesheet href=/css/theme.min.css type=text/css as=style><link href=/css/app.min.css rel=stylesheet type=text/css as=style></head><body><header id=header class=shoulders><nav class=navbar role=navigation aria-label="main navigation"><div class=navbar-brand><a class=navbar-item href=/><span class=brand>ryan jennings</span></a>
-<a role=button class=navbar-burger aria-label=menu aria-expanded=false data-target=#nav><span aria-hidden=true></span><span aria-hidden=true></span><span aria-hidden=true></span></a></div><div id=nav class=navbar-menu><div class=navbar-end><a class=navbar-item href=/posts><svg viewBox="0 0 48 48"><use xlink:href="/fonts/solid.svg#rss"/></svg>blog</a><div class="navbar-item has-dropdown"><a class=navbar-link><svg viewBox="0 0 48 48"><use xlink:href="/fonts/solid.svg#icons"/></svg>art</a><div class=navbar-dropdown><a class=navbar-item href=/art/music><svg viewBox="0 0 48 48"><use xlink:href="/fonts/solid.svg#music"/></svg>music</a>
-<a class=navbar-item href=/art/doodles><svg viewBox="0 0 48 48"><use xlink:href="/fonts/solid.svg#image"/></svg>doodles</a>
-<a class=navbar-item href=/art/poems><svg viewBox="0 0 48 48"><use xlink:href="/fonts/solid.svg#pen-nib"/></svg>poems</a></div></div><div class="navbar-item has-dropdown"><a class=navbar-link><svg viewBox="0 0 48 48"><use xlink:href="/fonts/solid.svg#object-ungroup"/></svg>things</a><div class=navbar-dropdown><a class=navbar-item href=/things/books><svg viewBox="0 0 48 48"><use xlink:href="/fonts/solid.svg#book"/></svg>books</a>
-<a class=navbar-item href=/things/tech><svg viewBox="0 0 48 48"><use xlink:href="/fonts/solid.svg#robot"/></svg>tech</a></div></div><a class=navbar-item href=/about><svg viewBox="0 0 48 48"><use xlink:href="/fonts/solid.svg#question"/></svg>about</a></div></div></div></nav></header><section id=main class=abdomen><div class="card item bg-default archive clearfix"><div class=card-header><h1>Microsoft Dev Stack on macOS</h1><div class=card-sub-header><div>Nov 27, 2016 12:00AM</div></div></div><div class=card-content><p>a microsoft cross-platform mobile and cloud first development stack on macOS</p></div><div class=card-footer><div class=item-tags><span class=item-tag>dotnet</span>
-<span class=item-tag>xamarin</span>
-<span class=item-tag>visual studio</span>
-<span class=item-tag>cross platform</span>
-<span class=item-tag>mobile</span>
-<span class=item-tag>web</span></div></div></div></section><footer id=footer class=legs><button id=themer class=center type=button>enlighten</button><div class="has-text-centered content"><a href=https://github.com/ryjen/ryjen.github.io/issues/new>See an issue?</a>
-© all rights reserved, ryan jennings</div></footer><script src=/js/vendor.min.js defer></script><script src=/js/theme.min.js defer></script><script src=/js/app.min.js defer></script><script data-goatcounter=https://analytics.micrantha.com/count async src=//analytics.micrantha.com/count.js></script></body></html>
+<!doctype html>
+<html lang="en-us">
+  <head>
+    
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>cross platform</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="google-site-verification" content="Crk6W-ckoApRrOZrv23ngLwPPTbzjzfZ4AQPElgS0pw" />
+<meta name="description" content="personal blog of an engineer, musician, and madman" />
+<meta name="ROBOTS" CONTENT="INDEX, FOLLOW">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+
+
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="preload" type="font/otf" as="font">
+<link rel="stylesheet" href="/css/theme.min.css" type="text/css" as="style">
+
+
+<link href="/css/app.min.css" rel="stylesheet" type="text/css" as="style">
+
+
+
+  </head>
+  <body>
+    <header id="header" class="shoulders">
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+
+    <a class="navbar-item" href="/">
+      <figure class="image is-32x32 mr-3">
+        <img class="is-rounded" src="/image/logo-profile.png" alt="logo">
+      </figure>
+      ryan jennings
+    </a>
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="#nav">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div id="nav" class="navbar-menu">
+    
+    
+
+
+
+
+
+
+
+
+
+<div class="navbar-end">
+
+
+
+    
+  <a class="navbar-item" href="/posts">
+    <span class="icon is-small mr-3">
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <use xlink:href="/fonts/solid.svg#rss"></use>
+  </svg>
+</span>
+    blog
+  </a>
+
+
+
+
+    
+  <a class="navbar-item" href="/art">
+    <span class="icon is-small mr-3">
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <use xlink:href="/fonts/solid.svg#icons"></use>
+  </svg>
+</span>
+    art
+  </a>
+
+
+
+
+    
+  <a class="navbar-item" href="/things">
+    <span class="icon is-small mr-3">
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <use xlink:href="/fonts/solid.svg#object-ungroup"></use>
+  </svg>
+</span>
+    things
+  </a>
+
+
+
+
+    
+  <a class="navbar-item" href="/about">
+    <span class="icon is-small mr-3">
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <use xlink:href="/fonts/solid.svg#question"></use>
+  </svg>
+</span>
+    about
+  </a>
+
+
+
+
+</div>
+
+    
+  </div>
+</div>
+</nav>
+
+
+    </header>
+
+    <section id="main" class="abdomen">
+      <div class="container p-5">
+      
+
+  
+<nav class="breadcrumb is-small is-right" aria-label="breadcrumbs">
+  <ul>
+    
+
+
+
+
+
+
+
+
+
+<li>
+  2
+    <a href="/">ryan jennings</a>
+</li>
+
+
+
+
+<li>
+  1
+    <a href="/tags/">Tags</a>
+</li>
+
+
+
+
+<li class="is-active">
+  0
+    <a href="/tags/cross-platform/">cross platform</a>
+</li>
+
+
+  </ul>
+</nav>
+
+
+
+
+  
+
+   
+
+
+<div class="box m-5 p-5" >
+
+  
+
+  <div class="header is-flex is-align-items-center">
+    <h1 class="title is-5 is-flex-grow-1">
+      <span class="is-flex is-align-items-center">
+        
+      <span class="ml-4">
+      Microsoft Dev Stack on MacOS
+      </span>
+      </span>
+    </h1>
+    <div class="has-text-right is-size-7">
+      
+      <div>
+        Nov 27, 2016 12:00AM
+      </div>
+      
+      
+     </div>
+  </div>
+
+  <div class="is-flex">
+    
+    <div class="content is-flex-grow-1 is-size-5 mb-4">
+      a microsoft cross-platform mobile and cloud first development stack on macOS
+    </div>
+  </div>
+
+    
+      <div class="tags">
+       
+         <span class="tag is-rounded">dotnet</span> 
+       
+         <span class="tag is-rounded">xamarin</span> 
+       
+         <span class="tag is-rounded">visual studio</span> 
+       
+         <span class="tag is-rounded">cross platform</span> 
+       
+         <span class="tag is-rounded">mobile</span> 
+       
+         <span class="tag is-rounded">web</span> 
+      
+      </div>
+    
+</div>
+ 
+
+  
+
+      </div>
+    </section>
+
+    <footer id="footer" class="legs">
+      
+
+
+
+
+
+<div class="has-text-centered">
+  <button id="themer" type="button">enlighten</button>
+</div>
+
+
+
+
+
+<div class="has-text-centered content">
+  <a href="https://github.com/ryjen/ryjen.github.io/issues/new">See an issue?</a>
+  © all rights reserved, ryan jennings 
+</div>
+
+
+    </footer>
+
+    
+<script src="/js/vendor.min.js" defer></script>
+<script src="/js/theme.min.js" defer></script>
+
+
+<script src="/js/app.min.js" defer></script>
+
+
+
+
+<script data-goatcounter="https://analytics.micrantha.com/count"
+        async src="//analytics.micrantha.com/count.js"></script>
+
+
+
+
+
+
+  </body>
+</html>

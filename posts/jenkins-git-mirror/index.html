@@ -1,28 +1,220 @@
-<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><title>Mirroring git with jenkins</title><meta name=viewport content="width=device-width,initial-scale=1"><meta name=google-site-verification content="Crk6W-ckoApRrOZrv23ngLwPPTbzjzfZ4AQPElgS0pw"><meta name=description content="personal blog of an engineer, musician, and madman"><meta name=ROBOTS content="INDEX, FOLLOW"><meta http-equiv=cache-control content="no-cache, no-store, must-revalidate"><meta http-equiv=pragma content="no-cache"><meta http-equiv=expires content="0"><link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel=preload type=font/otf as=font><link rel=stylesheet href=/css/theme.min.css type=text/css as=style><link href=/css/app.min.css rel=stylesheet type=text/css as=style></head><body><header id=header class=shoulders><nav class=navbar role=navigation aria-label="main navigation"><div class=navbar-brand><a class=navbar-item href=/><span class=brand>ryan jennings</span></a>
-<a role=button class=navbar-burger aria-label=menu aria-expanded=false data-target=#nav><span aria-hidden=true></span><span aria-hidden=true></span><span aria-hidden=true></span></a></div><div id=nav class=navbar-menu><div class=navbar-end><a class=navbar-item href=/posts><svg viewBox="0 0 48 48"><use xlink:href="/fonts/solid.svg#rss"/></svg>blog</a><div class="navbar-item has-dropdown"><a class=navbar-link><svg viewBox="0 0 48 48"><use xlink:href="/fonts/solid.svg#icons"/></svg>art</a><div class=navbar-dropdown><a class=navbar-item href=/art/music><svg viewBox="0 0 48 48"><use xlink:href="/fonts/solid.svg#music"/></svg>music</a>
-<a class=navbar-item href=/art/doodles><svg viewBox="0 0 48 48"><use xlink:href="/fonts/solid.svg#image"/></svg>doodles</a>
-<a class=navbar-item href=/art/poems><svg viewBox="0 0 48 48"><use xlink:href="/fonts/solid.svg#pen-nib"/></svg>poems</a></div></div><div class="navbar-item has-dropdown"><a class=navbar-link><svg viewBox="0 0 48 48"><use xlink:href="/fonts/solid.svg#object-ungroup"/></svg>things</a><div class=navbar-dropdown><a class=navbar-item href=/things/books><svg viewBox="0 0 48 48"><use xlink:href="/fonts/solid.svg#book"/></svg>books</a>
-<a class=navbar-item href=/things/tech><svg viewBox="0 0 48 48"><use xlink:href="/fonts/solid.svg#robot"/></svg>tech</a></div></div><a class=navbar-item href=/about><svg viewBox="0 0 48 48"><use xlink:href="/fonts/solid.svg#question"/></svg>about</a></div></div></div></nav></header><section id=main class=abdomen><h2 id=introduction>Introduction</h2><p>For some software development projects, there may be a need to backup or mirror the repository to a different location.</p><p>Jenkins or other continuous integration (CI) can automate this. This log is a brief summary of how in case I need to reproduce.</p><h2 id=workflow>Workflow</h2><p>The requirement is to have a single jenkins job that synchronizes various other projects and repositories.</p><p>To do this, the job calls another job to mirror any source repository to any set of destination repositories.</p><h2 id=git-mirroring>Git Mirroring</h2><p>Git has mirroring capability built into <a href=https://www.git-scm.com/docs/git-clone#Documentation/git-clone.txt---mirror>cloning</a> and <a href=https://www.git-scm.com/docs/git-push#Documentation/git-push.txt---mirror>pushing</a>.</p><p>To make the Jenkins script easier you can also pass the remote URL to push, instead of adding a remote configuration.</p><p><code>git push git@host.org:user/repo</code></p><h2 id=jenkins>Jenkins</h2><p>You should have a list of the possible repositories you would use.</p><p>To allow for multiple destination repositories, add the <a href=https://wiki.jenkins.io/display/JENKINS/Extended+Choice+Parameter+plugin>Extended Choice Parameter</a>.</p><p>To keep things simple, all repositories should have the same <code>user/project</code> path.</p><h3 id=job-git-mirror>Job: Git Mirror</h3><p>A new pipeline job configured with the parameters:</p><ul><li>the source repository as a single selection from a list of repositories</li><li>the destination repository as a multi selection from the list of repositories.</li><li>the project path in the repositories</li></ul><p>The pipeline script looks like this:</p><div class=highlight><pre style=color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-groovy data-lang=groovy>node {
-  stage (<span style=color:#0ff;font-weight:700>&#34;Prepare&#34;</span>) {
-    deleteDir()
-    dest = sh(returnStdout: <span style=color:#fff;font-weight:700>true</span>, script: <span style=color:#0ff;font-weight:700>&#39;echo &#34;${destination}&#34;&#39;</span>).<span style=color:#007f7f>trim</span>().<span style=color:#007f7f>tokenize</span>(<span style=color:#0ff;font-weight:700>&#39;,&#39;</span>)
+<!doctype html>
+<html lang="en-us">
+  <head>
+    
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Mirroring git with jenkins</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <span style=color:#007f7f>// skip adding new host key to jenkins
-</span><span style=color:#007f7f></span>    sh <span style=color:#0ff;font-weight:700>&#39;git config --global core.sshCommand &#34;ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no&#34;&#39;</span>
+
+<meta name="google-site-verification" content="Crk6W-ckoApRrOZrv23ngLwPPTbzjzfZ4AQPElgS0pw" />
+<meta name="description" content="personal blog of an engineer, musician, and madman" />
+<meta name="ROBOTS" CONTENT="INDEX, FOLLOW">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+
+
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="preload" type="font/otf" as="font">
+<link rel="stylesheet" href="/css/theme.min.css" type="text/css" as="style">
+
+
+<link href="/css/app.min.css" rel="stylesheet" type="text/css" as="style">
+
+
+
+  </head>
+  <body>
+    <header id="header" class="shoulders">
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+
+    <a class="navbar-item" href="/">
+      <figure class="image is-32x32 mr-3">
+        <img class="is-rounded" src="/image/logo-profile.png" alt="logo">
+      </figure>
+      ryan jennings
+    </a>
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="#nav">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div id="nav" class="navbar-menu">
+    
+    
+
+
+
+
+
+
+
+
+
+<div class="navbar-end">
+
+
+
+    
+  <a class="navbar-item" href="/posts">
+    <span class="icon is-small mr-3">
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <use xlink:href="/fonts/solid.svg#rss"></use>
+  </svg>
+</span>
+    blog
+  </a>
+
+
+
+
+    
+  <a class="navbar-item" href="/art">
+    <span class="icon is-small mr-3">
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <use xlink:href="/fonts/solid.svg#icons"></use>
+  </svg>
+</span>
+    art
+  </a>
+
+
+
+
+    
+  <a class="navbar-item" href="/things">
+    <span class="icon is-small mr-3">
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <use xlink:href="/fonts/solid.svg#object-ungroup"></use>
+  </svg>
+</span>
+    things
+  </a>
+
+
+
+
+    
+  <a class="navbar-item" href="/about">
+    <span class="icon is-small mr-3">
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <use xlink:href="/fonts/solid.svg#question"></use>
+  </svg>
+</span>
+    about
+  </a>
+
+
+
+
+</div>
+
+    
+  </div>
+</div>
+</nav>
+
+
+    </header>
+
+    <section id="main" class="abdomen">
+      <div class="container p-5">
+      
+
+  
+<nav class="breadcrumb is-small is-right" aria-label="breadcrumbs">
+  <ul>
+    
+
+
+
+
+
+
+
+
+
+<li>
+  2
+    <a href="/">ryan jennings</a>
+</li>
+
+
+
+
+<li>
+  1
+    <a href="/posts/">Software Industry Blog</a>
+</li>
+
+
+
+
+<li class="is-active">
+  0
+    <a href="/posts/jenkins-git-mirror/">Mirroring git with jenkins</a>
+</li>
+
+
+  </ul>
+</nav>
+
+
+
+
+  <h1 class="title">Mirroring git with jenkins</h1>
+
+  <div class="content">
+    <h2 id="introduction">Introduction</h2>
+<p>For some software development projects, there may be a need to backup or mirror the repository to a different location.</p>
+<p>Jenkins or other continuous integration (CI) can automate this. This log is a brief summary of how in case I need to reproduce.</p>
+<h2 id="workflow">Workflow</h2>
+<p>The requirement is to have a single jenkins job that synchronizes various other projects and repositories.</p>
+<p>To do this, the job calls another job to mirror any source repository to any set of destination repositories.</p>
+<h2 id="git-mirroring">Git Mirroring</h2>
+<p>Git has mirroring capability built into <a href="https://www.git-scm.com/docs/git-clone#Documentation/git-clone.txt---mirror">cloning</a> and <a href="https://www.git-scm.com/docs/git-push#Documentation/git-push.txt---mirror">pushing</a>.</p>
+<p>To make the Jenkins script easier you can also pass the remote URL to push, instead of adding a remote configuration.</p>
+<p><code>git push git@host.org:user/repo</code></p>
+<h2 id="jenkins">Jenkins</h2>
+<p>You should have a list of the possible repositories you would use.</p>
+<p>To allow for multiple destination repositories, add the <a href="https://wiki.jenkins.io/display/JENKINS/Extended+Choice+Parameter+plugin">Extended Choice Parameter</a>.</p>
+<p>To keep things simple, all repositories should have the same <code>user/project</code> path.</p>
+<h3 id="job-git-mirror">Job: Git Mirror</h3>
+<p>A new pipeline job configured with the parameters:</p>
+<ul>
+<li>the source repository as a single selection from a list of repositories</li>
+<li>the destination repository as a multi selection from the list of repositories.</li>
+<li>the project path in the repositories</li>
+</ul>
+<p>The pipeline script looks like this:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-groovy" data-lang="groovy">node {
+  stage (<span style="color:#0ff;font-weight:bold">&#34;Prepare&#34;</span>) {
+    deleteDir()
+    dest = sh(returnStdout: <span style="color:#fff;font-weight:bold">true</span>, script: <span style="color:#0ff;font-weight:bold">&#39;echo &#34;${destination}&#34;&#39;</span>).<span style="color:#007f7f">trim</span>().<span style="color:#007f7f">tokenize</span>(<span style="color:#0ff;font-weight:bold">&#39;,&#39;</span>)
+
+    <span style="color:#007f7f">// skip adding new host key to jenkins
+</span><span style="color:#007f7f"></span>    sh <span style="color:#0ff;font-weight:bold">&#39;git config --global core.sshCommand &#34;ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no&#34;&#39;</span>
   }
 
-  stage (<span style=color:#0ff;font-weight:700>&#34;Build&#34;</span>) {
-    <span style=color:#007f7f>// create ssh key credentials for jenkins
-</span><span style=color:#007f7f></span>    sshagent(credentials: [<span style=color:#0ff;font-weight:700>&#39;jenkins&#39;</span>]) {
+  stage (<span style="color:#0ff;font-weight:bold">&#34;Build&#34;</span>) {
+    <span style="color:#007f7f">// create ssh key credentials for jenkins
+</span><span style="color:#007f7f"></span>    sshagent(credentials: [<span style="color:#0ff;font-weight:bold">&#39;jenkins&#39;</span>]) {
 
-    sh <span style=color:#0ff;font-weight:700>&#39;git clone --mirror ${source}/${project_path} .&#39;</span>
+    sh <span style="color:#0ff;font-weight:bold">&#39;git clone --mirror ${source}/${project_path} .&#39;</span>
 
-    <span style=color:#fff;font-weight:700>for</span> (<span style=color:#fff;font-weight:700>int</span> i = <span style=color:#ff0;font-weight:700>0</span>; i &lt; dest.<span style=color:#007f7f>size</span>(); i++) {
-      sh <span style=color:#0ff;font-weight:700>&#34;git push --mirror ${dest[i]}/${project_path}&#34;</span>
+    <span style="color:#fff;font-weight:bold">for</span> (<span style="color:#fff;font-weight:bold">int</span> i = <span style="color:#ff0;font-weight:bold">0</span>; i &lt; dest.<span style="color:#007f7f">size</span>(); i++) {
+      sh <span style="color:#0ff;font-weight:bold">&#34;git push --mirror ${dest[i]}/${project_path}&#34;</span>
     }
   }
 }
-</code></pre></div><h3 id=job-mirror-repositories>Job: Mirror Repositories</h3><p>Another pipeline job, this one configured to run on a schedule (example: every day at 12:00AM).</p><p>The pipeline script defines the repositories and a few functions to simplify:</p><pre><code>def dest(String... repos) {
+</code></pre></div><h3 id="job-mirror-repositories">Job: Mirror Repositories</h3>
+<p>Another pipeline job, this one configured to run on a schedule (example: every day at 12:00AM).</p>
+<p>The pipeline script defines the repositories and a few functions to simplify:</p>
+<pre><code>def dest(String... repos) {
   return string(name: &quot;destination&quot;, value: repos.join(','))
 }
 
@@ -52,5 +244,69 @@ node {
 
   // etc...
 }
-</code></pre><h2 id=conclusion>Conclusion</h2><p>Not bad for a few jenkins jobs. I will enjoy the</p><ul><li>data loss redundancy</li><li>organization (housekeeping)</li><li>scheduling</li></ul><p>Maybe you will too. 😎</p></section><footer id=footer class=legs><button id=themer class=center type=button>enlighten</button><div class="has-text-centered content"><a href=https://github.com/ryjen/ryjen.github.io/issues/new>See an issue?</a>
-© all rights reserved, ryan jennings</div></footer><script src=/js/vendor.min.js defer></script><script src=/js/theme.min.js defer></script><script src=/js/app.min.js defer></script><script data-goatcounter=https://analytics.micrantha.com/count async src=//analytics.micrantha.com/count.js></script></body></html>
+</code></pre><h2 id="conclusion">Conclusion</h2>
+<p>Not bad for a few jenkins jobs. I will enjoy the</p>
+<ul>
+<li>data loss redundancy</li>
+<li>organization (housekeeping)</li>
+<li>scheduling</li>
+</ul>
+<p>Maybe you will too. 😎</p>
+
+  </div>
+
+  
+
+
+
+  
+
+
+
+
+      </div>
+    </section>
+
+    <footer id="footer" class="legs">
+      
+
+
+
+
+
+<div class="has-text-centered">
+  <button id="themer" type="button">enlighten</button>
+</div>
+
+
+
+
+
+<div class="has-text-centered content">
+  <a href="https://github.com/ryjen/ryjen.github.io/issues/new">See an issue?</a>
+  © all rights reserved, ryan jennings 
+</div>
+
+
+    </footer>
+
+    
+<script src="/js/vendor.min.js" defer></script>
+<script src="/js/theme.min.js" defer></script>
+
+
+<script src="/js/app.min.js" defer></script>
+
+
+
+
+<script data-goatcounter="https://analytics.micrantha.com/count"
+        async src="//analytics.micrantha.com/count.js"></script>
+
+
+
+
+
+
+  </body>
+</html>

@@ -1,3 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>process on ryan jennings</title><link>https://ryanjennin.gs/tags/process/</link><description>Recent content in process on ryan jennings</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 20 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://ryanjennin.gs/tags/process/index.xml" rel="self" type="application/rss+xml"/><item><title>Software Methodologies</title><link>https://ryanjennin.gs/posts/sdlc-methodologies/</link><pubDate>Thu, 20 Aug 2020 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/sdlc-methodologies/</guid><description>At the end of the day, software methodologies are all some form of Development Lifecycle.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>process on ryan jennings</title>
+    <link>https://ryanjennin.gs/tags/process/</link>
+    <description>Recent content in process on ryan jennings</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 20 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://ryanjennin.gs/tags/process/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Software Methodologies</title>
+      <link>https://ryanjennin.gs/posts/sdlc-methodologies/</link>
+      <pubDate>Thu, 20 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/posts/sdlc-methodologies/</guid>
+      <description>At the end of the day, software methodologies are all some form of Development Lifecycle.
 That is to say, the individuals unit of work, the team&amp;rsquo;s unit of work and the business, are in one of several stages.
-Requirements and Planning Analysis and Design Implementation Testing and Verification Deployment and Maintenance That is it.</description></item></channel></rss>
+ Requirements and Planning Analysis and Design Implementation Testing and Verification Deployment and Maintenance  That is it.</description>
+    </item>
+    
+  </channel>
+</rss>
