@@ -1,21 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>sqlite on ryan jennings</title>
-    <link>https://ryanjennin.gs/tags/sqlite/</link>
-    <description>Recent content in sqlite on ryan jennings</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 15 May 2012 00:00:00 +0000</lastBuildDate><atom:link href="https://ryanjennin.gs/tags/sqlite/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>C Sqlite Tricks</title>
-      <link>https://ryanjennin.gs/archive/c-sqlite-tricks/</link>
-      <pubDate>Tue, 15 May 2012 00:00:00 +0000</pubDate>
-      
-      <guid>https://ryanjennin.gs/archive/c-sqlite-tricks/</guid>
-      <description>Introduction Thought I would share some tricks I use for easy data CRUD&amp;rsquo;s in C. I&amp;rsquo;m using Sqlite here, but could apply to any database.
-Not saying its the best approach at all (nor ryjen/db), this is just how it evolved for me.</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sqlite on Home</title><link>https://ryanjennin.gs/tags/sqlite/</link><description>Recent content in sqlite on Home</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 15 May 2012 00:00:00 +0000</lastBuildDate><atom:link href="https://ryanjennin.gs/tags/sqlite/index.xml" rel="self" type="application/rss+xml"/><item><title>C Sqlite Tricks</title><link>https://ryanjennin.gs/archive/c-sqlite-tricks/</link><pubDate>Tue, 15 May 2012 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/archive/c-sqlite-tricks/</guid><description>Introduction Thought I would share some tricks I use for easy data CRUD&amp;rsquo;s in C. I&amp;rsquo;m using Sqlite here, but could apply to any database.
+Not saying its the best approach at all (nor ryjen/db), this is just how it evolved for me.</description></item></channel></rss>
