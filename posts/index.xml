@@ -1,146 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Blog on Home</title>
-    <link>https://ryanjennin.gs/posts/</link>
-    <description>Recent content in Blog on Home</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 11 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ryanjennin.gs/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Old Demos</title>
-      <link>https://ryanjennin.gs/posts/old-demos/</link>
-      <pubDate>Mon, 11 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://ryanjennin.gs/posts/old-demos/</guid>
-      <description>Found an old demo of an App from 2010.
- Brings back fond memories of hacking away to The Resistance by Muse.
-You can still get an updated version on the app store.</description>
-    </item>
-    
-    <item>
-      <title>Rubber Ducking</title>
-      <link>https://ryanjennin.gs/posts/rubber-ducking/</link>
-      <pubDate>Wed, 23 Dec 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://ryanjennin.gs/posts/rubber-ducking/</guid>
-      <description>Yes, rubber duck debugging is really funny (post it on quack overflow!).
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog on Home</title><link>https://ryanjennin.gs/posts/</link><description>Recent content in Blog on Home</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 11 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://ryanjennin.gs/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Old Demos</title><link>https://ryanjennin.gs/posts/old-demos/</link><pubDate>Mon, 11 Jan 2021 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/old-demos/</guid><description>Found an old demo of an App from 2010.
+Brings back fond memories of hacking away to The Resistance by Muse.
+You can still get an updated version on the app store.</description></item><item><title>Rubber Ducking</title><link>https://ryanjennin.gs/posts/rubber-ducking/</link><pubDate>Wed, 23 Dec 2020 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/rubber-ducking/</guid><description>Yes, rubber duck debugging is really funny (post it on quack overflow!).
 The wiki, a dedicated site or coding horror explain it pretty well.
-It is a fantastic methodology because there is no other human to try and take advantage of your stupidity - implicitly (unconsciously) or explicitly (capitalism).</description>
-    </item>
-    
-    <item>
-      <title>Blockchain Mesh Networks</title>
-      <link>https://ryanjennin.gs/posts/blockchain-mesh-internet/</link>
-      <pubDate>Fri, 18 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://ryanjennin.gs/posts/blockchain-mesh-internet/</guid>
-      <description>Using the blockchain mesh network routers allow freedom and payments.
+It is a fantastic methodology because there is no other human to try and take advantage of your stupidity - implicitly (unconsciously) or explicitly (capitalism).</description></item><item><title>Blockchain Mesh Networks</title><link>https://ryanjennin.gs/posts/blockchain-mesh-internet/</link><pubDate>Fri, 18 Sep 2020 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/blockchain-mesh-internet/</guid><description>Using the blockchain mesh network routers allow freedom and payments.
 The underlying core of bitcoin, the blockchain is a system that can be applied to a variety of uses.
-One particular disruptive use, that is not mentioned on the wiki, is mesh networks.</description>
-    </item>
-    
-    <item>
-      <title>Software Methodologies</title>
-      <link>https://ryanjennin.gs/posts/sdlc-methodologies/</link>
-      <pubDate>Thu, 20 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://ryanjennin.gs/posts/sdlc-methodologies/</guid>
-      <description>At the end of the day, software methodologies are all some form of Development Lifecycle.
+One particular disruptive use, that is not mentioned on the wiki, is mesh networks.</description></item><item><title>Software Methodologies</title><link>https://ryanjennin.gs/posts/sdlc-methodologies/</link><pubDate>Thu, 20 Aug 2020 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/sdlc-methodologies/</guid><description>At the end of the day, software methodologies are all some form of Development Lifecycle.
 That is to say, the individuals unit of work, the team&amp;rsquo;s unit of work and the business, are in one of several stages.
- Requirements and Planning Analysis and Design Implementation Testing and Verification Deployment and Maintenance  That is it.</description>
-    </item>
-    
-    <item>
-      <title>Hybrid Schemaless Databases</title>
-      <link>https://ryanjennin.gs/posts/schemaless-database-search/</link>
-      <pubDate>Tue, 04 Aug 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://ryanjennin.gs/posts/schemaless-database-search/</guid>
-      <description>TL;DR - Hydrid relational schemaless databases are quite awesome, with a little bit flowers in the garden.
-True schemaless databases came into my radar with MongoDB, Redis and such. I have often admired the ability to alter schema on fly and enjoyed experimenting with the possibilities.</description>
-    </item>
-    
-    <item>
-      <title>Git Notes Storage</title>
-      <link>https://ryanjennin.gs/posts/git-notes-as-version-tool-storage/</link>
-      <pubDate>Thu, 25 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://ryanjennin.gs/posts/git-notes-as-version-tool-storage/</guid>
-      <description>Am working on a project build tool to make repeatable tasks for Micrantha projects easier.
+Requirements and Planning Analysis and Design Implementation Testing and Verification Deployment and Maintenance That is it.</description></item><item><title>Hybrid Schemaless Databases</title><link>https://ryanjennin.gs/posts/schemaless-database-search/</link><pubDate>Tue, 04 Aug 2020 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/schemaless-database-search/</guid><description>TL;DR - Hydrid relational schemaless databases are quite awesome, with a little bit flowers in the garden.
+True schemaless databases came into my radar with MongoDB, Redis and such. I have often admired the ability to alter schema on fly and enjoyed experimenting with the possibilities.</description></item><item><title>Git Notes Storage</title><link>https://ryanjennin.gs/posts/git-notes-as-version-tool-storage/</link><pubDate>Thu, 25 Jun 2020 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/git-notes-as-version-tool-storage/</guid><description>Am working on a project build tool to make repeatable tasks for Micrantha projects easier.
 A module of this tool is automatic versioning using semantic version.
-The versioning The way I wanted the versioning to work is to have thresholds for when a version component auto-increments.</description>
-    </item>
-    
-    <item>
-      <title>Mirroring git with jenkins</title>
-      <link>https://ryanjennin.gs/posts/jenkins-git-mirror/</link>
-      <pubDate>Fri, 05 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://ryanjennin.gs/posts/jenkins-git-mirror/</guid>
-      <description>Introduction For some software development projects, there may be a need to backup or mirror the repository to a different location.
-Jenkins or other continuous integration (CI) can automate this. This log is a brief summary of how in case I need to reproduce.</description>
-    </item>
-    
-    <item>
-      <title>A self hosting journey</title>
-      <link>https://ryanjennin.gs/posts/selfhosting-journey/</link>
-      <pubDate>Thu, 07 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://ryanjennin.gs/posts/selfhosting-journey/</guid>
-      <description>Introduction Would like to say that I have valid privacy or security concerns. Or because it can be done better. But the reality is, I just want to self host because I can.
-Where to start? The awesome self hosted page lists just about every cloud service I use with a replaceable near-quality solution, if your willing to sacrifice a bit for it.</description>
-    </item>
-    
-    <item>
-      <title>Favourite &#39;nixisms</title>
-      <link>https://ryanjennin.gs/posts/favourite-nixisms/</link>
-      <pubDate>Mon, 05 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://ryanjennin.gs/posts/favourite-nixisms/</guid>
-      <description>Introduction A log to myself of things I like about Unix type systems. In case I forget why someday.
-Dotfiles files in braille? are they for the blind?Dotfiles in Linux are hidden files preceded with a period. Depending on the program, they are used for configuration in your home directory.</description>
-    </item>
-    
-    <item>
-      <title>Mitmproxy and Android</title>
-      <link>https://ryanjennin.gs/posts/mitmproxy-and-android/</link>
-      <pubDate>Wed, 16 May 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://ryanjennin.gs/posts/mitmproxy-and-android/</guid>
-      <description>Introduction Debugging network traffic for your app can be useful, and sometimes necessary if the data is not what is expected or inconsistent.
-The Proxy I prefer the open source proxy [mitmproxy](https://mitmproxy.org =300x203). Easy to install on OSX with homebrew.</description>
-    </item>
-    
-    <item>
-      <title>Fortunes on Slack</title>
-      <link>https://ryanjennin.gs/posts/fortunes-microservice/</link>
-      <pubDate>Mon, 22 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://ryanjennin.gs/posts/fortunes-microservice/</guid>
-      <description>view the service homepage
+The versioning The way I wanted the versioning to work is to have thresholds for when a version component auto-increments.</description></item><item><title>Mirroring git with jenkins</title><link>https://ryanjennin.gs/posts/jenkins-git-mirror/</link><pubDate>Fri, 05 Jul 2019 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/jenkins-git-mirror/</guid><description>Introduction For some software development projects, there may be a need to backup or mirror the repository to a different location.
+Jenkins or other continuous integration (CI) can automate this. This log is a brief summary of how in case I need to reproduce.</description></item><item><title>A self hosting journey</title><link>https://ryanjennin.gs/posts/selfhosting-journey/</link><pubDate>Thu, 07 Feb 2019 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/selfhosting-journey/</guid><description>Introduction Would like to say that I have valid privacy or security concerns. Or because it can be done better. But the reality is, I just want to self host because I can.
+Where to start? The awesome self hosted page lists just about every cloud service I use with a replaceable near-quality solution, if your willing to sacrifice a bit for it.</description></item><item><title>Favourite 'nixisms</title><link>https://ryanjennin.gs/posts/favourite-nixisms/</link><pubDate>Mon, 05 Nov 2018 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/favourite-nixisms/</guid><description>Introduction A log to myself of things I like about Unix type systems. In case I forget why someday.
+Dotfiles files in braille? are they for the blind?Dotfiles in Linux are hidden files preceded with a period. Depending on the program, they are used for configuration in your home directory.</description></item><item><title>Mitmproxy and Android</title><link>https://ryanjennin.gs/posts/mitmproxy-and-android/</link><pubDate>Wed, 16 May 2018 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/mitmproxy-and-android/</guid><description>Introduction Debugging network traffic for your app can be useful, and sometimes necessary if the data is not what is expected or inconsistent.
+The Proxy I prefer the open source proxy [mitmproxy](https://mitmproxy.org =300x203). Easy to install on OSX with homebrew.</description></item><item><title>Fortunes on Slack</title><link>https://ryanjennin.gs/posts/fortunes-microservice/</link><pubDate>Mon, 22 Jan 2018 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/fortunes-microservice/</guid><description>view the service homepage
 Introduction Have always enjoyed the UNIX fortunes program, ever since I was a wee newbie. If you aren&amp;rsquo;t familiar with it (sad), yes, its like a fortune cookie.
-It can be more technical in nature but not always.</description>
-    </item>
-    
-    <item>
-      <title>Elixir and Phoenix</title>
-      <link>https://ryanjennin.gs/posts/elixir-and-phoenix/</link>
-      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://ryanjennin.gs/posts/elixir-and-phoenix/</guid>
-      <description>Introduction If you dont know phoenix framework, I&amp;rsquo;d describe it as rails for elixir. If you dont know Elixir I&amp;rsquo;d describe it as a functional language that feels like ruby for erlang.
-If you don&amp;rsquo;t know erlang it has been around a while (open-sourced in 1998) and the virtual machine is designed to be highly fault tolerant and scalable for use in telecoms, banking and instant messaging (WhatsApp).</description>
-    </item>
-    
-    <item>
-      <title>Best Programming Quotes</title>
-      <link>https://ryanjennin.gs/posts/best-programming-quotes/</link>
-      <pubDate>Tue, 10 Apr 2012 00:00:00 +0000</pubDate>
-      
-      <guid>https://ryanjennin.gs/posts/best-programming-quotes/</guid>
-      <description>Quotes that relate to software engineering always humble me with their laser-like honesty. I&amp;rsquo;ve decided to keep a collection of my favorites here (in no particular order).</description>
-    </item>
-    
-  </channel>
-</rss>
+It can be more technical in nature but not always.</description></item><item><title>Elixir and Phoenix</title><link>https://ryanjennin.gs/posts/elixir-and-phoenix/</link><pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/elixir-and-phoenix/</guid><description>Introduction If you dont know phoenix framework, I&amp;rsquo;d describe it as rails for elixir. If you dont know Elixir I&amp;rsquo;d describe it as a functional language that feels like ruby for erlang.
+If you don&amp;rsquo;t know erlang it has been around a while (open-sourced in 1998) and the virtual machine is designed to be highly fault tolerant and scalable for use in telecoms, banking and instant messaging (WhatsApp).</description></item><item><title>Best Programming Quotes</title><link>https://ryanjennin.gs/posts/best-programming-quotes/</link><pubDate>Tue, 10 Apr 2012 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/best-programming-quotes/</guid><description>Quotes that relate to software engineering always humble me with their laser-like honesty. I&amp;rsquo;ve decided to keep a collection of my favorites here (in no particular order).</description></item></channel></rss>
