@@ -1,6 +1,43 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>git on Home</title><link>https://ryanjennin.gs/tags/git/</link><description>Recent content in git on Home</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 25 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://ryanjennin.gs/tags/git/index.xml" rel="self" type="application/rss+xml"/><item><title>Git Notes Storage</title><link>https://ryanjennin.gs/posts/git-notes-as-version-tool-storage/</link><pubDate>Thu, 25 Jun 2020 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/git-notes-as-version-tool-storage/</guid><description>Am working on a project build tool to make repeatable tasks for Micrantha projects easier.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>git on Home</title>
+    <link>https://ryanjennin.gs/tags/git/</link>
+    <description>Recent content in git on Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 25 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://ryanjennin.gs/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git Notes Storage</title>
+      <link>https://ryanjennin.gs/posts/git-notes-as-version-tool-storage/</link>
+      <pubDate>Thu, 25 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/posts/git-notes-as-version-tool-storage/</guid>
+      <description>Am working on a project build tool to make repeatable tasks for Micrantha projects easier.
 A module of this tool is automatic versioning using semantic version.
-The versioning The way I wanted the versioning to work is to have thresholds for when a version component auto-increments.</description></item><item><title>Mirroring git with jenkins</title><link>https://ryanjennin.gs/posts/jenkins-git-mirror/</link><pubDate>Fri, 05 Jul 2019 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/jenkins-git-mirror/</guid><description>Introduction For some software development projects, there may be a need to backup or mirror the repository to a different location.
-Jenkins or other continuous integration (CI) can automate this. This log is a brief summary of how in case I need to reproduce.</description></item><item><title>Fortunes on Slack</title><link>https://ryanjennin.gs/posts/fortunes-microservice/</link><pubDate>Mon, 22 Jan 2018 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/fortunes-microservice/</guid><description>view the service homepage
+The versioning The way I wanted the versioning to work is to have thresholds for when a version component auto-increments.</description>
+    </item>
+    
+    <item>
+      <title>Mirroring git with jenkins</title>
+      <link>https://ryanjennin.gs/posts/jenkins-git-mirror/</link>
+      <pubDate>Fri, 05 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/posts/jenkins-git-mirror/</guid>
+      <description>Introduction For some software development projects, there may be a need to backup or mirror the repository to a different location.
+Jenkins or other continuous integration (CI) can automate this. This log is a brief summary of how in case I need to reproduce.</description>
+    </item>
+    
+    <item>
+      <title>Fortunes on Slack</title>
+      <link>https://ryanjennin.gs/posts/fortunes-microservice/</link>
+      <pubDate>Mon, 22 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/posts/fortunes-microservice/</guid>
+      <description>view the service homepage
 Introduction Have always enjoyed the UNIX fortunes program, ever since I was a wee newbie. If you aren&amp;rsquo;t familiar with it (sad), yes, its like a fortune cookie.
-It can be more technical in nature but not always.</description></item></channel></rss>
+It can be more technical in nature but not always.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,11 +1,314 @@
-<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><title>hosting</title><meta name=viewport content="width=device-width,initial-scale=1"><meta name=google-site-verification content="Crk6W-ckoApRrOZrv23ngLwPPTbzjzfZ4AQPElgS0pw"><meta name=description content="personal blog of an engineer, musician, and madman"><meta name=robots content="index, follow"><meta http-equiv=cache-control content="no-cache"><meta http-equiv=pragma content="no-cache"><meta http-equiv=expires content="0"><link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel=preload type=font/otf as=font><link rel=stylesheet href=/css/theme.min.css type=text/css as=style><link href=/css/app.min.css rel=stylesheet type=text/css as=style></head><body class=dark><header id=header class=shoulders><nav class=navbar role=navigation aria-label="main navigation"><div class=navbar-brand><a class=navbar-item href=/><figure class="image is-32x32 mr-3"><img class=is-rounded src=/image/logo-profile.png alt=logo></figure>ryan jennings</a>
-<a role=button class=navbar-burger aria-label=menu aria-expanded=false data-target=#nav><span aria-hidden=true></span><span aria-hidden=true></span><span aria-hidden=true></span></a></div><div id=nav class=navbar-menu><div class=navbar-end><a class=navbar-item href=/verbage><span class="icon is-small mr-3"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#newspaper"/></svg></span>verbage</a>
-<a class=navbar-item href=/art><span class="icon is-small mr-3"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#icons"/></svg></span>art</a>
-<a class=navbar-item href=/things><span class="icon is-small mr-3"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#object-ungroup"/></svg></span>things</a>
-<a class=navbar-item href=/about><span class="icon is-small mr-3"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#info-circle"/></svg></span>about</a>
-<a role=button class="navbar-item themer" href=#><span class="icon is-small"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#yin-yang"/></svg></span></a></div></div></div></nav></header><section id=main class=abdomen><nav class="breadcrumb ml-4 is-small" aria-label=breadcrumbs><ul><li><a href=/>Home</a></li><li><a href=/tags/>Tags</a></li><li class=is-active><a href=/tags/hosting/>Hosting</a></li></ul></nav><div class=container><h1 class=title>Hosting</h1><div class="box m-5 p-5" data-link=/posts/selfhosting-journey/><div class="header is-flex is-align-items-center"><h1 class="title is-5 is-flex-grow-1">A Self Hosting Journey</h1><div class="has-text-right is-size-7"><div>Feb 7, 2019 12:00AM</div><div>3 min read</div><div>468 words</div></div></div><div class=container><div class="content is-size-5">Setting up your own cloud services</div></div><div class="tags mt-4"><span class="tag is-rounded">self-hosting</span>
-<span class="tag is-rounded">hosting</span>
-<span class="tag is-rounded">docker</span>
-<span class="tag is-rounded">cloud</span>
-<span class="tag is-rounded">services</span>
-<span class="tag is-rounded">server</span></div></div></div></section><footer id=footer class=legs><div class="has-text-centered content"><div class="is-flex is-align-items-center is-justify-content-center"><div class="has-text-centered m-3"><button id=themer class=themer type=button>enlighten</button></div><a href=https://github.com/ryjen/ryjen.github.io/issues/new>See an issue?</a></div><div class=copyright>© all rights reserved, ryan jennings</div></div></footer><script src=/js/vendor.min.js defer></script><script src=/js/theme.min.js defer></script><script src=/js/app.min.js defer></script><script data-goatcounter=https://analytics.micrantha.com/count async src=//analytics.micrantha.com/count.js></script></body></html>
+<!doctype html>
+<html lang="en-us">
+  <head>
+    
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>hosting</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="google-site-verification" content="Crk6W-ckoApRrOZrv23ngLwPPTbzjzfZ4AQPElgS0pw" />
+<meta name="description" content="personal blog of an engineer, musician, and madman" />
+<meta name="robots" content="index, follow">
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+
+
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="preload" type="font/otf" as="font">
+<link rel="stylesheet" href="/css/theme.min.css" type="text/css" as="style">
+
+
+<link href="/css/app.min.css" rel="stylesheet" type="text/css" as="style">
+
+
+
+  </head>
+  <body  class="dark" >
+    <header id="header" class="shoulders">
+      
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+
+    <a class="navbar-item" href="/">
+      <figure class="image is-32x32 mr-3">
+        <img class="is-rounded" src="/image/logo-profile.png" alt="logo">
+      </figure>
+      ryan jennings
+    </a>
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="#nav">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div id="nav" class="navbar-menu">
+    
+    <div class="navbar-end">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  <a class="navbar-item" href="/verbage">
+    <span class="icon is-small mr-3">
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <use xlink:href="/fonts/solid.svg#newspaper"></use>
+  </svg>
+</span>
+    verbage
+  </a>
+
+
+
+
+    
+  <a class="navbar-item" href="/art">
+    <span class="icon is-small mr-3">
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <use xlink:href="/fonts/solid.svg#icons"></use>
+  </svg>
+</span>
+    art
+  </a>
+
+
+
+
+    
+  <a class="navbar-item" href="/things">
+    <span class="icon is-small mr-3">
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <use xlink:href="/fonts/solid.svg#object-ungroup"></use>
+  </svg>
+</span>
+    things
+  </a>
+
+
+
+
+    
+  <a class="navbar-item" href="/about">
+    <span class="icon is-small mr-3">
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <use xlink:href="/fonts/solid.svg#info-circle"></use>
+  </svg>
+</span>
+    about
+  </a>
+
+
+
+
+<a role="button" class="navbar-item themer" href="#">
+  <span class="icon is-small">
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <use xlink:href="/fonts/solid.svg#yin-yang"></use>
+  </svg>
+</span>
+</a>
+
+
+
+    </div>
+    
+  </div>
+</div>
+</nav>
+
+
+      
+    </header>
+
+    <section id="main" class="abdomen">
+      
+
+  
+  
+<nav class="breadcrumb ml-4 is-small" aria-label="breadcrumbs">
+  <ul>
+    
+
+
+
+
+
+
+
+
+
+<li>
+    <a href="/">Home</a>
+</li>
+
+
+
+
+<li>
+    <a href="/tags/">Tags</a>
+</li>
+
+
+
+
+<li class="is-active">
+    <a href="/tags/hosting/">Hosting</a>
+</li>
+
+
+  </ul>
+</nav>
+
+
+
+
+
+  <div class="container">
+
+  
+
+    <h1 class="title">Hosting</h1>
+
+    
+      
+    
+
+  
+
+   
+  
+  
+  
+
+
+
+
+
+<div class="box m-5 p-5" data-link="/posts/selfhosting-journey/">
+
+  
+
+  <div class="header is-flex is-align-items-center">
+    <h1 class="title is-5 is-flex-grow-1">
+      
+        A Self Hosting Journey
+      
+    </h1>
+    <div class="has-text-right is-size-7">
+      
+      <div>
+        Feb 7, 2019 12:00AM
+      </div>
+      
+      
+         <div>3 min read</div>
+         <div>468 words</div>
+      
+     </div>
+  </div>
+
+  <div class="container">
+
+  
+
+    
+  <div class="content is-size-5">
+    Setting up your own cloud services
+  </div>
+
+
+  
+
+  </div>
+
+  
+
+    <div class="tags mt-4">
+
+     
+       <span class="tag is-rounded">self-hosting</span> 
+     
+       <span class="tag is-rounded">hosting</span> 
+     
+       <span class="tag is-rounded">docker</span> 
+     
+       <span class="tag is-rounded">cloud</span> 
+     
+       <span class="tag is-rounded">services</span> 
+     
+       <span class="tag is-rounded">server</span> 
+    
+
+    </div>
+
+  
+</div>
+ 
+
+  
+
+  </div>
+
+    </section>
+
+    <footer id="footer" class="legs">
+      
+
+
+
+
+
+
+
+
+
+<div class="has-text-centered content">
+
+  <div class="is-flex is-align-items-center is-justify-content-center">
+    
+    <div class="has-text-centered m-3">
+      <button id="themer" class="themer" type="button">enlighten</button>
+    </div>
+    <a href="https://github.com/ryjen/ryjen.github.io/issues/new">See an issue?</a> 
+  </div>
+
+  <div class="copyright">
+  © all rights reserved, ryan jennings 
+  </div>
+</div>
+
+
+    </footer>
+
+    
+<script src="/js/vendor.min.js" defer></script>
+<script src="/js/theme.min.js" defer></script>
+
+
+<script src="/js/app.min.js" defer></script>
+
+
+
+
+<script data-goatcounter="https://analytics.micrantha.com/count"
+        async src="//analytics.micrantha.com/count.js"></script>
+
+
+
+
+
+
+  </body>
+</html>
