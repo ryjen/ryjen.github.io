@@ -1,18 +1,147 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog on Home</title><link>https://ryanjennin.gs/posts/</link><description>Recent content in Blog on Home</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 31 Jan 2021 14:46:43 -0800</lastBuildDate><atom:link href="https://ryanjennin.gs/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>modd: daemon for reloading</title><link>https://ryanjennin.gs/posts/modd-live-coding/</link><pubDate>Sun, 31 Jan 2021 14:46:43 -0800</pubDate><guid>https://ryanjennin.gs/posts/modd-live-coding/</guid><description>One of my favourite tools now is modd.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on Home</title>
+    <link>https://ryanjennin.gs/posts/</link>
+    <description>Recent content in Blog on Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 18 Feb 2021 11:18:10 -0800</lastBuildDate><atom:link href="https://ryanjennin.gs/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Man-in-the-Middle</title>
+      <link>https://ryanjennin.gs/posts/mitm/</link>
+      <pubDate>Thu, 18 Feb 2021 11:18:10 -0800</pubDate>
+      
+      <guid>https://ryanjennin.gs/posts/mitm/</guid>
+      <description>A man-in-the-middle (MITM) attack is a network security attack where a malicious device enters a network and intercepts traffic between nodes or components.
+To accomplish access to a network an attacker needs an entry point.
+There are many ways for a malicious device to accomplish access into a network.</description>
+    </item>
+    
+    <item>
+      <title>modd: daemon for reloading</title>
+      <link>https://ryanjennin.gs/posts/modd-live-coding/</link>
+      <pubDate>Sun, 31 Jan 2021 14:46:43 -0800</pubDate>
+      
+      <guid>https://ryanjennin.gs/posts/modd-live-coding/</guid>
+      <description>One of my favourite tools now is modd.
 Why is it so great? It does one job, and it does it well, in proper unix fashion.
 Monitoring a file-system and running a daemon that reloads if anything changes.
-Also in proper Unix fashion, the daemon is sent a configurable SIGHUP when a file changes.</description></item><item><title>Audit</title><link>https://ryanjennin.gs/posts/audit/</link><pubDate>Wed, 27 Jan 2021 22:14:09 -0800</pubDate><guid>https://ryanjennin.gs/posts/audit/</guid><description>Have removed some incomplete content that was incomplete or did not make sense anymore.
-The URL&amp;rsquo;s are now aliased here for reference.</description></item><item><title>Alternate Keyboard</title><link>https://ryanjennin.gs/posts/alternate-keyboard/</link><pubDate>Tue, 19 Jan 2021 15:08:38 -0800</pubDate><guid>https://ryanjennin.gs/posts/alternate-keyboard/</guid><description>Decided to switch to using a alternate keyboard layout, not too long ago&amp;hellip;. Well I guess it has been a couple of years now. But I love it.
-Always heard about others using the Dvorak keyboard layout and thought, &amp;ldquo;boy that is really neat, but too much work to change&amp;rdquo;.</description></item><item><title>Old Demos</title><link>https://ryanjennin.gs/posts/old-demos/</link><pubDate>Mon, 11 Jan 2021 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/old-demos/</guid><description>Found an old demo of an App from 2010.
-Brings back fond memories of hacking away to The Resistance by Muse.
-You can still get an updated version on the app store.</description></item><item><title>Blockchain Mesh Networks</title><link>https://ryanjennin.gs/posts/blockchain-mesh-internet/</link><pubDate>Fri, 18 Sep 2020 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/blockchain-mesh-internet/</guid><description>Using the blockchain mesh network routers allow freedom and payments.
+Also in proper Unix fashion, the daemon is sent a configurable SIGHUP when a file changes.</description>
+    </item>
+    
+    <item>
+      <title>Audit</title>
+      <link>https://ryanjennin.gs/posts/audit/</link>
+      <pubDate>Wed, 27 Jan 2021 22:14:09 -0800</pubDate>
+      
+      <guid>https://ryanjennin.gs/posts/audit/</guid>
+      <description>Have removed some incomplete content that was incomplete or did not make sense anymore.
+The URL&amp;rsquo;s are now aliased here for reference.</description>
+    </item>
+    
+    <item>
+      <title>Alternate Keyboard</title>
+      <link>https://ryanjennin.gs/posts/alternate-keyboard/</link>
+      <pubDate>Tue, 19 Jan 2021 15:08:38 -0800</pubDate>
+      
+      <guid>https://ryanjennin.gs/posts/alternate-keyboard/</guid>
+      <description>Decided to switch to using a alternate keyboard layout, not too long ago&amp;hellip;. Well I guess it has been a couple of years now. But I love it.
+Always heard about others using the Dvorak keyboard layout and thought, &amp;ldquo;boy that is really neat, but too much work to change&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Old Demos</title>
+      <link>https://ryanjennin.gs/posts/old-demos/</link>
+      <pubDate>Mon, 11 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/posts/old-demos/</guid>
+      <description>Found an old demo of an App from 2010.
+ Brings back fond memories of hacking away to The Resistance by Muse.
+You can still get an updated version on the app store.</description>
+    </item>
+    
+    <item>
+      <title>Blockchain Mesh Networks</title>
+      <link>https://ryanjennin.gs/posts/blockchain-mesh-internet/</link>
+      <pubDate>Fri, 18 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/posts/blockchain-mesh-internet/</guid>
+      <description>Using the blockchain mesh network routers allow freedom and payments.
 The underlying core of bitcoin, the blockchain is a system that can be applied to a variety of uses.
-One particular disruptive use, that is not mentioned on the wiki, is mesh networks.</description></item><item><title>Git Notes Storage</title><link>https://ryanjennin.gs/posts/git-notes-as-version-tool-storage/</link><pubDate>Thu, 25 Jun 2020 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/git-notes-as-version-tool-storage/</guid><description>Am working on a project build tool to make repeatable tasks for Micrantha projects easier.
+One particular disruptive use, that is not mentioned on the wiki, is mesh networks.</description>
+    </item>
+    
+    <item>
+      <title>Git Notes Storage</title>
+      <link>https://ryanjennin.gs/posts/git-notes-as-version-tool-storage/</link>
+      <pubDate>Thu, 25 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/posts/git-notes-as-version-tool-storage/</guid>
+      <description>Am working on a project build tool to make repeatable tasks for Micrantha projects easier.
 A module of this tool is automatic versioning using semantic version.
-The versioning The way I wanted the versioning to work is to have thresholds for when a version component auto-increments.</description></item><item><title>Mirroring git with jenkins</title><link>https://ryanjennin.gs/posts/jenkins-git-mirror/</link><pubDate>Fri, 05 Jul 2019 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/jenkins-git-mirror/</guid><description>Introduction For some software development projects, there may be a need to backup or mirror the repository to a different location.
-Jenkins or other continuous integration (CI) can automate this. This log is a brief summary of how in case I need to reproduce.</description></item><item><title>Favourite 'nixisms</title><link>https://ryanjennin.gs/posts/favourite-nixisms/</link><pubDate>Mon, 05 Nov 2018 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/favourite-nixisms/</guid><description>Introduction A log to myself of things I like about Unix type systems. In case I forget why someday.
-Dotfiles files in braille? are they for the blind?Dotfiles in Linux are hidden files preceded with a period. Depending on the program, they are used for configuration in your home directory.</description></item><item><title>Mitmproxy and Android</title><link>https://ryanjennin.gs/posts/mitmproxy-and-android/</link><pubDate>Wed, 16 May 2018 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/mitmproxy-and-android/</guid><description>Introduction Debugging network traffic for your app can be useful, and sometimes necessary if the data is not what is expected or inconsistent.
-The Proxy I prefer the open source proxy [mitmproxy](https://mitmproxy.org =300x203). Easy to install on OSX with homebrew.</description></item><item><title>Fortunes on Slack</title><link>https://ryanjennin.gs/posts/fortunes-microservice/</link><pubDate>Mon, 22 Jan 2018 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/fortunes-microservice/</guid><description>view the service homepage
+The versioning The way I wanted the versioning to work is to have thresholds for when a version component auto-increments.</description>
+    </item>
+    
+    <item>
+      <title>Mirroring git with jenkins</title>
+      <link>https://ryanjennin.gs/posts/jenkins-git-mirror/</link>
+      <pubDate>Fri, 05 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/posts/jenkins-git-mirror/</guid>
+      <description>Introduction For some software development projects, there may be a need to backup or mirror the repository to a different location.
+Jenkins or other continuous integration (CI) can automate this. This log is a brief summary of how in case I need to reproduce.</description>
+    </item>
+    
+    <item>
+      <title>Favourite &#39;nixisms</title>
+      <link>https://ryanjennin.gs/posts/favourite-nixisms/</link>
+      <pubDate>Mon, 05 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/posts/favourite-nixisms/</guid>
+      <description>Introduction A log to myself of things I like about Unix type systems. In case I forget why someday.
+Dotfiles files in braille? are they for the blind?Dotfiles in Linux are hidden files preceded with a period. Depending on the program, they are used for configuration in your home directory.</description>
+    </item>
+    
+    <item>
+      <title>Mitmproxy and Android</title>
+      <link>https://ryanjennin.gs/posts/mitmproxy-and-android/</link>
+      <pubDate>Wed, 16 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/posts/mitmproxy-and-android/</guid>
+      <description>Introduction Debugging network traffic for your app can be useful, and sometimes necessary if the data is not what is expected or inconsistent.
+The Proxy I prefer the open source proxy [mitmproxy](https://mitmproxy.org =300x203). Easy to install on OSX with homebrew.</description>
+    </item>
+    
+    <item>
+      <title>Fortunes on Slack</title>
+      <link>https://ryanjennin.gs/posts/fortunes-microservice/</link>
+      <pubDate>Mon, 22 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/posts/fortunes-microservice/</guid>
+      <description>view the service homepage
 Introduction Have always enjoyed the UNIX fortunes program, ever since I was a wee newbie. If you aren&amp;rsquo;t familiar with it (sad), yes, its like a fortune cookie.
-It can be more technical in nature but not always.</description></item><item><title>Elixir and Phoenix</title><link>https://ryanjennin.gs/posts/elixir-and-phoenix/</link><pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/elixir-and-phoenix/</guid><description>Introduction If you dont know phoenix framework, I&amp;rsquo;d describe it as rails for elixir. If you dont know Elixir I&amp;rsquo;d describe it as a functional language that feels like ruby for erlang.
-If you don&amp;rsquo;t know erlang it has been around a while (open-sourced in 1998) and the virtual machine is designed to be highly fault tolerant and scalable for use in telecoms, banking and instant messaging (WhatsApp).</description></item><item><title>Best Programming Quotes</title><link>https://ryanjennin.gs/posts/best-programming-quotes/</link><pubDate>Tue, 10 Apr 2012 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/best-programming-quotes/</guid><description>Quotes that relate to software engineering always humble me with their laser-like honesty. I&amp;rsquo;ve decided to keep a collection of my favorites here (in no particular order).</description></item></channel></rss>
+It can be more technical in nature but not always.</description>
+    </item>
+    
+    <item>
+      <title>Elixir and Phoenix</title>
+      <link>https://ryanjennin.gs/posts/elixir-and-phoenix/</link>
+      <pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/posts/elixir-and-phoenix/</guid>
+      <description>Introduction If you dont know phoenix framework, I&amp;rsquo;d describe it as rails for elixir. If you dont know Elixir I&amp;rsquo;d describe it as a functional language that feels like ruby for erlang.
+If you don&amp;rsquo;t know erlang it has been around a while (open-sourced in 1998) and the virtual machine is designed to be highly fault tolerant and scalable for use in telecoms, banking and instant messaging (WhatsApp).</description>
+    </item>
+    
+    <item>
+      <title>Best Programming Quotes</title>
+      <link>https://ryanjennin.gs/posts/best-programming-quotes/</link>
+      <pubDate>Tue, 10 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/posts/best-programming-quotes/</guid>
+      <description>Quotes that relate to software engineering always humble me with their laser-like honesty. I&amp;rsquo;ve decided to keep a collection of my favorites here (in no particular order).</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,2 +1,32 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>security on Home</title><link>https://ryanjennin.gs/tags/security/</link><description>Recent content in security on Home</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 16 May 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://ryanjennin.gs/tags/security/index.xml" rel="self" type="application/rss+xml"/><item><title>Mitmproxy and Android</title><link>https://ryanjennin.gs/posts/mitmproxy-and-android/</link><pubDate>Wed, 16 May 2018 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/mitmproxy-and-android/</guid><description>Introduction Debugging network traffic for your app can be useful, and sometimes necessary if the data is not what is expected or inconsistent.
-The Proxy I prefer the open source proxy [mitmproxy](https://mitmproxy.org =300x203). Easy to install on OSX with homebrew.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>security on Home</title>
+    <link>https://ryanjennin.gs/tags/security/</link>
+    <description>Recent content in security on Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 18 Feb 2021 11:18:10 -0800</lastBuildDate><atom:link href="https://ryanjennin.gs/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Man-in-the-Middle</title>
+      <link>https://ryanjennin.gs/posts/mitm/</link>
+      <pubDate>Thu, 18 Feb 2021 11:18:10 -0800</pubDate>
+      
+      <guid>https://ryanjennin.gs/posts/mitm/</guid>
+      <description>A man-in-the-middle (MITM) attack is a network security attack where a malicious device enters a network and intercepts traffic between nodes or components.
+To accomplish access to a network an attacker needs an entry point.
+There are many ways for a malicious device to accomplish access into a network.</description>
+    </item>
+    
+    <item>
+      <title>Mitmproxy and Android</title>
+      <link>https://ryanjennin.gs/posts/mitmproxy-and-android/</link>
+      <pubDate>Wed, 16 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/posts/mitmproxy-and-android/</guid>
+      <description>Introduction Debugging network traffic for your app can be useful, and sometimes necessary if the data is not what is expected or inconsistent.
+The Proxy I prefer the open source proxy [mitmproxy](https://mitmproxy.org =300x203). Easy to install on OSX with homebrew.</description>
+    </item>
+    
+  </channel>
+</rss>

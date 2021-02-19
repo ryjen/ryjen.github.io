@@ -1,6 +1,263 @@
-<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><title>Alternate Keyboard</title><meta name=viewport content="width=device-width,initial-scale=1"><meta name=google-site-verification content="Crk6W-ckoApRrOZrv23ngLwPPTbzjzfZ4AQPElgS0pw"><meta name=description content="personal blog of an engineer, musician, and madman"><meta name=robots content="index, follow"><meta http-equiv=cache-control content="no-cache"><meta http-equiv=pragma content="no-cache"><meta http-equiv=expires content="0"><link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel=preload type=font/otf as=font><link rel=stylesheet href=/css/theme.min.css type=text/css as=style><link href=/css/app.min.css rel=stylesheet type=text/css as=style></head><body><header id=header class=shoulders><nav class=navbar role=navigation aria-label="main navigation"><div class=navbar-brand><a class=navbar-item href=/><figure class="image is-32x32 mr-3"><img class=is-rounded src=/image/logo-profile.png alt=logo></figure>ryan jennings</a>
-<a role=button class=navbar-burger aria-label=menu aria-expanded=false data-target=#nav><span aria-hidden=true></span><span aria-hidden=true></span><span aria-hidden=true></span></a></div><div id=nav class=navbar-menu><div class=navbar-end><a class=navbar-item href=/posts><span class="icon is-small mr-3"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#rss"/></svg></span>blog</a>
-<a class=navbar-item href=/art><span class="icon is-small mr-3"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#icons"/></svg></span>art</a>
-<a class=navbar-item href=/things><span class="icon is-small mr-3"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#object-ungroup"/></svg></span>things</a>
-<a class=navbar-item href=/about><span class="icon is-small mr-3"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#info-circle"/></svg></span>about</a>
-<a role=button class="navbar-item themer" href=#><span class="icon is-small"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#yin-yang"/></svg></span></a></div></div></div></nav></header><section id=main class=abdomen><nav class="breadcrumb ml-4 is-small" aria-label=breadcrumbs><ul><li><a href=/>Home</a></li><li><a href=/posts/>Blog</a></li><li class=is-active><a href=/posts/alternate-keyboard/>Alternate Keyboard</a></li></ul></nav><div class=container><h1 class=title>Alternate Keyboard</h1><div class=content><p>Decided to switch to using a alternate keyboard layout, not too long ago&mldr;. Well I guess it has been a couple of years now. But I love it.</p><p>Always heard about others using the <a href=https://www.dvorak-keyboard.com/>Dvorak keyboard layout</a> and thought, &ldquo;boy that is really neat, but too much work to change&rdquo;.</p><p>Well, not too hard really, was comfortable after 3 months.</p><p>The main argument for switching is to type faster. The default <em>Qwerty keyboard was designed to accommodate the slow typing</em> of typewriters from the 1870s!</p><p>To make it a little easier, one can use <a href=https://colemak.com/>Colemak</a> which is apparently easier to learn than Dvorak when coming from Qwerty.</p><p>One can also purchase keyboard stickers for your existing qwerty keyboard for reference (<a href=https://keyshorts.com>keyshorts</a> is a good place).</p><h2 id=the-secret-ingredient>The secret ingredient</h2><p>The secret ingredient is <a href=http://www.gnu.org/software/gtypist/>GNU Typist</a>.</p><p>This handy little program has Colemak and Dvorak specific typing drills, along with speed and basic drills.</p><p><code>brew install gnu-typist</code> or <code>gtypist</code> on a Linux distribution <code>yay -S gtypist</code>.</p><p>Make use of heavy gnu typist drills to convert faster. I actually like typing drills, its like a game.</p><h2 id=conclusion>Conclusion</h2><p>Colemak really does make typing easier and faster. My keyboard movements are all very short home row finger movements without using my wrists.</p><p>Combine that with VIM editing and you are completely <a href=https://themouseless.dev/>mouse-less</a>, more efficient, and I swear <em>once you get the knack, you wont want to go back</em>.</p><p>Passwords can be tricky, so having a good password manager like <a href=https://bitwarden.com/>bitwarden</a> is essential.</p></div></div></section><footer id=footer class=legs><div class="has-text-centered content"><div class="is-flex is-align-items-center is-justify-content-center"><div class="has-text-centered m-3"><button id=themer class=themer type=button>enlighten</button></div><a href=https://github.com/ryjen/ryjen.github.io/issues/new>See an issue?</a></div><div class=copyright>© all rights reserved, ryan jennings</div></div></footer><script src=/js/vendor.min.js defer></script><script src=/js/theme.min.js defer></script><script src=/js/app.min.js defer></script><script data-goatcounter=https://analytics.micrantha.com/count async src=//analytics.micrantha.com/count.js></script></body></html>
+<!doctype html>
+<html lang="en-us">
+  <head>
+    
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Alternate Keyboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="google-site-verification" content="Crk6W-ckoApRrOZrv23ngLwPPTbzjzfZ4AQPElgS0pw" />
+<meta name="description" content="personal blog of an engineer, musician, and madman" />
+<meta name="robots" content="index, follow">
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+
+
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="preload" type="font/otf" as="font">
+<link rel="stylesheet" href="/css/theme.min.css" type="text/css" as="style">
+
+
+<link href="/css/app.min.css" rel="stylesheet" type="text/css" as="style">
+
+
+
+  </head>
+  <body >
+    <header id="header" class="shoulders">
+      
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+
+    <a class="navbar-item" href="/">
+      <figure class="image is-32x32 mr-3">
+        <img class="is-rounded" src="/image/logo-profile.png" alt="logo">
+      </figure>
+      ryan jennings
+    </a>
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="#nav">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div id="nav" class="navbar-menu">
+    
+    <div class="navbar-end">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  <a class="navbar-item" href="/posts">
+    <span class="icon is-small mr-3">
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <use xlink:href="/fonts/solid.svg#rss"></use>
+  </svg>
+</span>
+    blog
+  </a>
+
+
+
+
+    
+  <a class="navbar-item" href="/art">
+    <span class="icon is-small mr-3">
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <use xlink:href="/fonts/solid.svg#icons"></use>
+  </svg>
+</span>
+    art
+  </a>
+
+
+
+
+    
+  <a class="navbar-item" href="/things">
+    <span class="icon is-small mr-3">
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <use xlink:href="/fonts/solid.svg#object-ungroup"></use>
+  </svg>
+</span>
+    things
+  </a>
+
+
+
+
+    
+  <a class="navbar-item" href="/about">
+    <span class="icon is-small mr-3">
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <use xlink:href="/fonts/solid.svg#info-circle"></use>
+  </svg>
+</span>
+    about
+  </a>
+
+
+
+
+<a role="button" class="navbar-item themer" href="#">
+  <span class="icon is-small">
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <use xlink:href="/fonts/solid.svg#yin-yang"></use>
+  </svg>
+</span>
+</a>
+
+
+
+    </div>
+    
+  </div>
+</div>
+</nav>
+
+
+      
+    </header>
+
+    <section id="main" class="abdomen">
+      
+
+  
+<nav class="breadcrumb ml-4 is-small" aria-label="breadcrumbs">
+  <ul>
+    
+
+
+
+
+
+
+
+
+
+<li>
+    <a href="/">Home</a>
+</li>
+
+
+
+
+<li>
+    <a href="/posts/">Blog</a>
+</li>
+
+
+
+
+<li class="is-active">
+    <a href="/posts/alternate-keyboard/">Alternate Keyboard</a>
+</li>
+
+
+  </ul>
+</nav>
+
+
+
+
+
+  <div class="container">
+
+  
+  <h1 class="title">Alternate Keyboard</h1>
+  
+
+  <div class="content">
+    <p>Decided to switch to using a alternate keyboard layout, not too long ago&hellip;. Well I guess it has been a couple of years now.  But I love it.</p>
+<p>Always heard about others using the <a href="https://www.dvorak-keyboard.com/">Dvorak keyboard layout</a> and thought, &ldquo;boy that is really neat, but too much work to change&rdquo;.</p>
+<p>Well, not too hard really, was comfortable after 3 months.</p>
+<p>The main argument for switching is to type faster.  The default <em>Qwerty keyboard was designed to accommodate the slow typing</em> of typewriters from the 1870s!</p>
+<p>To make it a little easier, one can use <a href="https://colemak.com/">Colemak</a> which is apparently easier to learn than Dvorak when coming from Qwerty.</p>
+<p>One can also purchase keyboard stickers for your existing qwerty keyboard for reference (<a href="https://keyshorts.com">keyshorts</a> is a good place).</p>
+<h2 id="the-secret-ingredient">The secret ingredient</h2>
+<p>The secret ingredient is <a href="http://www.gnu.org/software/gtypist/">GNU Typist</a>.</p>
+<p>This handy little program has Colemak and Dvorak specific typing drills, along with speed and basic drills.</p>
+<p><code>brew install gnu-typist</code> or <code>gtypist</code> on a Linux distribution <code>yay -S gtypist</code>.</p>
+<p>Make use of heavy gnu typist drills to convert faster.  I actually like typing drills, its like a game.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Colemak really does make typing easier and faster. My keyboard movements are all very short home row finger movements without using my wrists.</p>
+<p>Combine that with VIM editing and you are completely <a href="https://themouseless.dev/">mouse-less</a>, more efficient, and I swear <em>once you get the knack, you wont want to go back</em>.</p>
+<p>Passwords can be tricky, so having a good password manager like <a href="https://bitwarden.com/">bitwarden</a> is essential.</p>
+
+  </div>
+
+  
+
+
+
+  
+
+
+
+  </div>
+
+
+    </section>
+
+    <footer id="footer" class="legs">
+      
+
+
+
+
+
+
+
+
+
+<div class="has-text-centered content">
+
+  <div class="is-flex is-align-items-center is-justify-content-center">
+    
+    <div class="has-text-centered m-3">
+      <button id="themer" class="themer" type="button">enlighten</button>
+    </div>
+    <a href="https://github.com/ryjen/ryjen.github.io/issues/new">See an issue?</a> 
+  </div>
+
+  <div class="copyright">
+  © all rights reserved, ryan jennings 
+  </div>
+</div>
+
+
+    </footer>
+
+    
+<script src="/js/vendor.min.js" defer></script>
+<script src="/js/theme.min.js" defer></script>
+
+
+<script src="/js/app.min.js" defer></script>
+
+
+
+
+<script data-goatcounter="https://analytics.micrantha.com/count"
+        async src="//analytics.micrantha.com/count.js"></script>
+
+
+
+
+
+
+  </body>
+</html>
