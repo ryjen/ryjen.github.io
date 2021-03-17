@@ -1,304 +1,49 @@
-<!doctype html>
-<html lang="en-us">
-  <head>
-    
-<meta charset="utf-8">
-<meta http-equiv="x-ua-compatible" content="ie=edge">
-<title>c hacking: polymorphing 2</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-<meta name="google-site-verification" content="Crk6W-ckoApRrOZrv23ngLwPPTbzjzfZ4AQPElgS0pw" />
-<meta name="description" content="personal blog of an engineer, musician, and madman" />
-<meta name="robots" content="index, follow">
-<meta http-equiv="Cache-Control" content="no-cache" />
-<meta http-equiv="Pragma" content="no-cache" />
-<meta http-equiv="Expires" content="0" />
-
-
-<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="preload" type="font/otf" as="font">
-<link rel="stylesheet" href="/css/theme.min.css" type="text/css" as="style">
-
-
-<link href="/css/app.min.css" rel="stylesheet" type="text/css" as="style">
-
-
-
-  </head>
-  <body >
-    <header id="header" class="shoulders">
-      
-        <nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-
-    <a class="navbar-item" href="/">
-      <figure class="image is-32x32 mr-3">
-        <img class="is-rounded" src="/image/logo-profile.png" alt="logo">
-      </figure>
-      ryan jennings
-    </a>
-
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="#nav">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div id="nav" class="navbar-menu">
-    
-    <div class="navbar-end">
-      
-
-
-
-
-
-
-
-
-
-
-
-
-    
-  <a class="navbar-item" href="/posts">
-    <span class="icon is-small mr-3">
-  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <use xlink:href="/fonts/solid.svg#rss"></use>
-  </svg>
-</span>
-    blog
-  </a>
-
-
-
-
-    
-  <a class="navbar-item" href="/art">
-    <span class="icon is-small mr-3">
-  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <use xlink:href="/fonts/solid.svg#icons"></use>
-  </svg>
-</span>
-    art
-  </a>
-
-
-
-
-    
-  <a class="navbar-item" href="/things">
-    <span class="icon is-small mr-3">
-  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <use xlink:href="/fonts/solid.svg#object-ungroup"></use>
-  </svg>
-</span>
-    things
-  </a>
-
-
-
-
-    
-  <a class="navbar-item" href="/about">
-    <span class="icon is-small mr-3">
-  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <use xlink:href="/fonts/solid.svg#info-circle"></use>
-  </svg>
-</span>
-    about
-  </a>
-
-
-
-
-<a role="button" class="navbar-item themer" href="#">
-  <span class="icon is-small">
-  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <use xlink:href="/fonts/solid.svg#yin-yang"></use>
-  </svg>
-</span>
-</a>
-
-
-
-    </div>
-    
-  </div>
-</div>
-</nav>
-
-
-      
-    </header>
-
-    <section id="main" class="abdomen">
-      
-
-  
-<nav class="breadcrumb ml-4 is-small" aria-label="breadcrumbs">
-  <ul>
-    
-
-
-
-
-
-
-
-
-
-<li>
-    <a href="/">Home</a>
-</li>
-
-
-
-
-<li>
-    <a href="/archive/">Blog Archives</a>
-</li>
-
-
-
-
-<li class="is-active">
-    <a href="/archive/c-hacking-polymoriphing-2/">C Hacking: Polymorphing 2</a>
-</li>
-
-
-  </ul>
-</nav>
-
-
-
-
-
-  <div class="container">
-
-  
-  <h1 class="title">C Hacking: Polymorphing 2</h1>
-  
-
-  <div class="content">
-    <p>While working on <a href="http://github.com/ryjen/cparse">cparse</a> I found another nifty way to sort of simulate polymorphism.</p>
-<h1 id="cparse">cparse</h1>
-<p>Another exercise in futility, a C implementation for the  REST api at <a href="http://parse.com">parse.com</a>.  Really the core of it is a web client and an object structure using json.</p>
-<h1 id="polymorphing">polymorphing</h1>
-<p>I started off by having separate structure for the different type of objects, but I quickly realized there was a lot of code duplication.
-To solve this I used a combination of type defines and function pointers to the library API appear to be working with a seperate type, but are indeed still working with the base object type.</p>
-<p>So for an example, I&rsquo;ll explain an object and user types.</p>
-<h2 id="object">object</h2>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#007f7f">/* the alias */</span>
-<span style="color:#fff;font-weight:bold">typedef</span> <span style="color:#fff;font-weight:bold">struct</span> cparse_object cParseObject;
-
-<span style="color:#007f7f">/* the definition */</span>
-<span style="color:#fff;font-weight:bold">struct</span> cparse_object
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><title>c hacking: polymorphing 2</title><meta name=viewport content="width=device-width,initial-scale=1"><meta name=google-site-verification content="Crk6W-ckoApRrOZrv23ngLwPPTbzjzfZ4AQPElgS0pw"><meta name=description content="personal blog of an engineer, musician, and madman"><meta name=robots content="index, follow"><meta http-equiv=cache-control content="no-cache"><meta http-equiv=pragma content="no-cache"><meta http-equiv=expires content="0"><link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel=preload type=font/otf as=font><link rel=stylesheet href=/css/theme.min.css type=text/css as=style><link href=/css/app.min.css rel=stylesheet type=text/css as=style></head><body><header id=header class=shoulders><nav class=navbar role=navigation aria-label="main navigation"><div class=navbar-brand><a class=navbar-item href=/><figure class="image is-32x32 mr-3"><img class=is-rounded src=/image/logo-profile.png alt=logo></figure>ryan jennings</a>
+<a role=button class=navbar-burger aria-label=menu aria-expanded=false data-target=#nav><span aria-hidden=true></span><span aria-hidden=true></span><span aria-hidden=true></span></a></div><div id=nav class=navbar-menu><div class=navbar-end><a class=navbar-item href=/posts><span class="icon is-small mr-3"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#rss"/></svg></span>blog</a>
+<a class=navbar-item href=/art><span class="icon is-small mr-3"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#icons"/></svg></span>art</a>
+<a class=navbar-item href=/things><span class="icon is-small mr-3"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#object-ungroup"/></svg></span>things</a>
+<a class=navbar-item href=/about><span class="icon is-small mr-3"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#info-circle"/></svg></span>about</a>
+<a role=button class="navbar-item themer" href=#><span class="icon is-small"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#yin-yang"/></svg></span></a></div></div></div></nav></header><section id=main class=abdomen><nav class="breadcrumb ml-4 is-small" aria-label=breadcrumbs><ul><li><a href=/>Home</a></li><li><a href=/archive/>Blog Archives</a></li><li class=is-active><a href=/archive/c-hacking-polymoriphing-2/>C Hacking: Polymorphing 2</a></li></ul></nav><div class=container><h1 class=title>C Hacking: Polymorphing 2</h1><div class=content><p>While working on <a href=http://github.com/ryjen/cparse>cparse</a> I found another nifty way to sort of simulate polymorphism.</p><h1 id=cparse>cparse</h1><p>Another exercise in futility, a C implementation for the REST api at <a href=http://parse.com>parse.com</a>. Really the core of it is a web client and an object structure using json.</p><h1 id=polymorphing>polymorphing</h1><p>I started off by having separate structure for the different type of objects, but I quickly realized there was a lot of code duplication.
+To solve this I used a combination of type defines and function pointers to the library API appear to be working with a seperate type, but are indeed still working with the base object type.</p><p>So for an example, I&rsquo;ll explain an object and user types.</p><h2 id=object>object</h2><div class=highlight><pre style=color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c><span style=color:#007f7f>/* the alias */</span>
+<span style=color:#fff;font-weight:700>typedef</span> <span style=color:#fff;font-weight:700>struct</span> cparse_object cParseObject;
+
+<span style=color:#007f7f>/* the definition */</span>
+<span style=color:#fff;font-weight:700>struct</span> cparse_object
 {
-	<span style="color:#fff;font-weight:bold">char</span> *objectId;
+	<span style=color:#fff;font-weight:700>char</span> *objectId;
 	cParseJson *attributes;
-	<span style="color:#007f7f">/* etc. */</span>
+	<span style=color:#007f7f>/* etc. */</span>
 };
 
-<span style="color:#007f7f">/* functions to operate on objects */</span>
+<span style=color:#007f7f>/* functions to operate on objects */</span>
 
-<span style="color:#fff;font-weight:bold">bool</span> cparse_object_save(cParseObject *obj, cParseError **error);
+<span style=color:#fff;font-weight:700>bool</span> cparse_object_save(cParseObject *obj, cParseError **error);
 
-<span style="color:#fff;font-weight:bold">bool</span> cparse_object_delete(cParseObject *obj, cParseError **error);
+<span style=color:#fff;font-weight:700>bool</span> cparse_object_delete(cParseObject *obj, cParseError **error);
 
-<span style="color:#007f7f">/* etc */</span>
+<span style=color:#007f7f>/* etc */</span>
 
-</code></pre></div><h2 id="user">user</h2>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c"><span style="color:#007f7f">/* the alias: note that it is aliasing an object */</span>
-<span style="color:#fff;font-weight:bold">typedef</span> <span style="color:#fff;font-weight:bold">struct</span> cparse_object cParseUser;
+</code></pre></div><h2 id=user>user</h2><div class=highlight><pre style=color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c><span style=color:#007f7f>/* the alias: note that it is aliasing an object */</span>
+<span style=color:#fff;font-weight:700>typedef</span> <span style=color:#fff;font-weight:700>struct</span> cparse_object cParseUser;
 
-<span style="color:#007f7f">/* implementation of functions to operator on users: note that they point to object functions */</span>
+<span style=color:#007f7f>/* implementation of functions to operator on users: note that they point to object functions */</span>
 
-<span style="color:#fff;font-weight:bold">bool</span> (*cparse_user_save)(cParseUser *obj, cParseError **error) = cparse_object_save;
+<span style=color:#fff;font-weight:700>bool</span> (*cparse_user_save)(cParseUser *obj, cParseError **error) = cparse_object_save;
 
-<span style="color:#fff;font-weight:bold">bool</span> (*cparse_user_delete)(cParseUser *obj, cParseError **error) = cparse_object_delete;
+<span style=color:#fff;font-weight:700>bool</span> (*cparse_user_delete)(cParseUser *obj, cParseError **error) = cparse_object_delete;
 
-<span style="color:#007f7f">/* etc */</span>
+<span style=color:#007f7f>/* etc */</span>
 
-</code></pre></div><h2 id="example-usage">example usage</h2>
-<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c" data-lang="c">
-<span style="color:#007f7f">/* example object */</span>
+</code></pre></div><h2 id=example-usage>example usage</h2><div class=highlight><pre style=color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c>
+<span style=color:#007f7f>/* example object */</span>
 cParseObject *obj = cparse_object_new();
 
 cparse_object_save(obj, &amp;error);
 
 
-<span style="color:#007f7f">/* example user */</span>
+<span style=color:#007f7f>/* example user */</span>
 cParseUser *user = cparse_user_new();
 
 cparse_user_save(user, &amp;error);
 
-</code></pre></div><h2 id="conclusion">Conclusion</h2>
-<p>As you can see from the example, the library API appears to be working with two distinct objects.  Using JSON as an object structure allows the object type to be resused (aliased) into other types this way without worrying about its members.  User objects can be passed directly to object functions as parameters without any issues.</p>
-<p>Another benefit of this implementation is if the user object ever does become a distinct seperate object, the library API does not change or affect existing code!</p>
-<p>Cheers!</p>
-
-  </div>
-
-  
-
-
-
-  
-
-
-
-  </div>
-
-
-    </section>
-
-    <footer id="footer" class="legs">
-      
-
-
-
-
-
-
-
-
-
-<div class="has-text-centered content">
-
-  <div class="is-flex is-align-items-center is-justify-content-center">
-    
-    <div class="has-text-centered m-3">
-      <button id="themer" class="themer" type="button">enlighten</button>
-    </div>
-    <a href="https://github.com/ryjen/ryjen.github.io/issues/new">See an issue?</a> 
-  </div>
-
-  <div class="copyright">
-  © all rights reserved, ryan jennings 
-  </div>
-</div>
-
-
-    </footer>
-
-    
-<script src="/js/vendor.min.js" defer></script>
-<script src="/js/theme.min.js" defer></script>
-
-
-<script src="/js/app.min.js" defer></script>
-
-
-
-
-<script data-goatcounter="https://analytics.micrantha.com/count"
-        async src="//analytics.micrantha.com/count.js"></script>
-
-
-
-
-
-
-  </body>
-</html>
+</code></pre></div><h2 id=conclusion>Conclusion</h2><p>As you can see from the example, the library API appears to be working with two distinct objects. Using JSON as an object structure allows the object type to be resused (aliased) into other types this way without worrying about its members. User objects can be passed directly to object functions as parameters without any issues.</p><p>Another benefit of this implementation is if the user object ever does become a distinct seperate object, the library API does not change or affect existing code!</p><p>Cheers!</p></div></div></section><footer id=footer class=legs><div class="has-text-centered content"><div class="is-flex is-align-items-center is-justify-content-center"><div class="has-text-centered m-3"><button id=themer class=themer type=button>enlighten</button></div><a href=https://github.com/ryjen/ryjen.github.io/issues/new>See an issue?</a></div><div class=copyright>© all rights reserved, ryan jennings</div></div></footer><script src=/js/vendor.min.js defer></script><script src=/js/theme.min.js defer></script><script src=/js/app.min.js defer></script><script data-goatcounter=https://analytics.micrantha.com/count async src=//analytics.micrantha.com/count.js></script></body></html>

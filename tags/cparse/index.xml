@@ -1,21 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>cparse on Home</title>
-    <link>https://ryanjennin.gs/tags/cparse/</link>
-    <description>Recent content in cparse on Home</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 02 Dec 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://ryanjennin.gs/tags/cparse/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>c hacking: polymorphing 2</title>
-      <link>https://ryanjennin.gs/archive/c-hacking-polymoriphing-2/</link>
-      <pubDate>Wed, 02 Dec 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://ryanjennin.gs/archive/c-hacking-polymoriphing-2/</guid>
-      <description>While working on cparse I found another nifty way to sort of simulate polymorphism.
-cparse Another exercise in futility, a C implementation for the REST api at parse.com. Really the core of it is a web client and an object structure using json.</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>cparse on Home</title><link>https://ryanjennin.gs/tags/cparse/</link><description>Recent content in cparse on Home</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 02 Dec 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://ryanjennin.gs/tags/cparse/index.xml" rel="self" type="application/rss+xml"/><item><title>c hacking: polymorphing 2</title><link>https://ryanjennin.gs/archive/c-hacking-polymoriphing-2/</link><pubDate>Wed, 02 Dec 2015 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/archive/c-hacking-polymoriphing-2/</guid><description>While working on cparse I found another nifty way to sort of simulate polymorphism.
+cparse Another exercise in futility, a C implementation for the REST api at parse.com. Really the core of it is a web client and an object structure using json.</description></item></channel></rss>
