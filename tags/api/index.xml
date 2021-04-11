@@ -1,32 +1,3 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>api on Home</title>
-    <link>https://ryanjennin.gs/tags/api/</link>
-    <description>Recent content in api on Home</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 22 Jan 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://ryanjennin.gs/tags/api/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Fortunes on Slack</title>
-      <link>https://ryanjennin.gs/posts/fortunes-microservice/</link>
-      <pubDate>Mon, 22 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://ryanjennin.gs/posts/fortunes-microservice/</guid>
-      <description>view the service homepage
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>api on Home</title><link>https://ryanjennin.gs/tags/api/</link><description>Recent content in api on Home</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 22 Jan 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://ryanjennin.gs/tags/api/index.xml" rel="self" type="application/rss+xml"/><item><title>Fortunes on Slack</title><link>https://ryanjennin.gs/posts/fortunes-microservice/</link><pubDate>Mon, 22 Jan 2018 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/fortunes-microservice/</guid><description>view the service homepage
 Introduction Have always enjoyed the UNIX fortunes program, ever since I was a wee newbie. If you aren&amp;rsquo;t familiar with it (sad), yes, its like a fortune cookie.
-It can be more technical in nature but not always.</description>
-    </item>
-    
-    <item>
-      <title>OpenAPI Directory &amp; Swagger</title>
-      <link>https://ryanjennin.gs/posts/openapi-swagger/</link>
-      <pubDate>Sat, 10 Jun 2017 01:33:30 -0700</pubDate>
-      
-      <guid>https://ryanjennin.gs/posts/openapi-swagger/</guid>
-      <description>Was browsing github and I came across the OpenAPI Directory. A good directory of API&amp;rsquo;s will help in thinking of a mobile app idea.
-Couldn&amp;rsquo;t help but notice that all the API&amp;rsquo;s implement something called OpenAPI (&amp;quot;Swagger&amp;quot;) 2.0. Ok, great, consistency in API specs, that will help if you had to write one.</description>
-    </item>
-    
-  </channel>
-</rss>
+It can be more technical in nature but not always.</description></item></channel></rss>
