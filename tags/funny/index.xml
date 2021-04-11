@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>funny on Home</title>
+    <link>https://ryanjennin.gs/tags/funny/</link>
+    <description>Recent content in funny on Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 28 Apr 2012 00:00:00 +0000</lastBuildDate><atom:link href="https://ryanjennin.gs/tags/funny/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tired of Version Control Commit Messages?</title>
+      <link>https://ryanjennin.gs/posts/tired-of-version-control-commit-messages/</link>
+      <pubDate>Sat, 28 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/posts/tired-of-version-control-commit-messages/</guid>
+      <description>Ran across this absurd version control commit message generator message generator. Even has a plugin for the best code editor around Sublime Text 2. The api is a simple index.txt for scripting: ``python req = urllib2.Request(&amp;lsquo;http://whatthecommit.com/index.txt&#39;) res = urllib2.urlopen(req, timeout=5) message = res.</description>
+    </item>
+    
+  </channel>
+</rss>

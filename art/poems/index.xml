@@ -1,9 +1,60 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Poems on Home</title><link>https://ryanjennin.gs/art/poems/</link><description>Recent content in Poems on Home</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 30 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://ryanjennin.gs/art/poems/index.xml" rel="self" type="application/rss+xml"/><item><title>When Things Go Wrong</title><link>https://ryanjennin.gs/art/poems/when-things-go-wrong/</link><pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/art/poems/when-things-go-wrong/</guid><description>I watch them beat you,
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Poems on Home</title>
+    <link>https://ryanjennin.gs/art/poems/</link>
+    <description>Recent content in Poems on Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 30 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://ryanjennin.gs/art/poems/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>When Things Go Wrong</title>
+      <link>https://ryanjennin.gs/art/poems/when-things-go-wrong/</link>
+      <pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/art/poems/when-things-go-wrong/</guid>
+      <description>I watch them beat you,
 Watch them beat you down.
 There is nothing I can do,
 Brother, just like you.
 So when things go wrong,
 Go wrong with you,
 It hurts me too.
-They say you know,
-You know what to do.</description></item></channel></rss>
+ They say you know,
+You know what to do.</description>
+    </item>
+    
+    <item>
+      <title>A tale of belonging</title>
+      <link>https://ryanjennin.gs/art/poems/a-tale-of-belonging/</link>
+      <pubDate>Tue, 01 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/art/poems/a-tale-of-belonging/</guid>
+      <description>To belong in the world
+One must display a belief
+In of love
+Without risk
+ To belong in the world
+One must display
+Kindness and responsibility
+Being the bringer of life.
+ To belong in this world
+One must display</description>
+    </item>
+    
+    <item>
+      <title>Poems of Form and Duality</title>
+      <link>https://ryanjennin.gs/art/poems/poems-of-duality-and-form/</link>
+      <pubDate>Sat, 08 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/art/poems/poems-of-duality-and-form/</guid>
+      <description>Love Poem Love is at the mercy of form,
+Without, may as not be real.
+Form is merciless,
+At its peak and as it degrades.  Love is a chemical delusion,
+That is dependent on others,
+To keep the chemicals flowing.</description>
+    </item>
+    
+  </channel>
+</rss>

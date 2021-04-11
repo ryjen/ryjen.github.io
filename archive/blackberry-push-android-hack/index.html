@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    
+<meta charset="UTF-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Blackberry &#43; Push &#43; Android Hacking</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="google-site-verification" content="Crk6W-ckoApRrOZrv23ngLwPPTbzjzfZ4AQPElgS0pw" />
+<meta name="description" content="personal blog of an engineer, musician, and madman" />
+<meta name="robots" content="index, follow">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="preload" type="font/otf" as="font">
+<link rel="stylesheet" href="/css/theme.min.css" type="text/css">
+
+
+<link href="/css/app.min.css" rel="stylesheet" type="text/css">
+
+
+
+  </head>
+  <body >
+    <header id="header" class="shoulders">
+      
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+
+    <a class="navbar-item" href="/">
+      <figure class="image is-32x32 mr-3">
+        <img class="is-rounded" src="/image/logo-profile.png" alt="logo">
+      </figure>
+      ryan jennings
+    </a>
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="#nav">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div id="nav" class="navbar-menu">
+    
+    <div class="navbar-end">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  <a class="navbar-item" href="/posts">
+    <span class="icon is-small mr-3">
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <use xlink:href="/fonts/solid.svg#rss"></use>
+  </svg>
+</span>
+    blog
+  </a>
+
+
+
+
+    
+  <a class="navbar-item" href="/art">
+    <span class="icon is-small mr-3">
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <use xlink:href="/fonts/solid.svg#icons"></use>
+  </svg>
+</span>
+    art
+  </a>
+
+
+
+
+    
+  <a class="navbar-item" href="/things">
+    <span class="icon is-small mr-3">
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <use xlink:href="/fonts/solid.svg#object-ungroup"></use>
+  </svg>
+</span>
+    things
+  </a>
+
+
+
+
+    
+  <a class="navbar-item" href="/about">
+    <span class="icon is-small mr-3">
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <use xlink:href="/fonts/solid.svg#info-circle"></use>
+  </svg>
+</span>
+    about
+  </a>
+
+
+
+
+<a role="button" class="navbar-item themer" href="#">
+  <span class="icon is-small">
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <use xlink:href="/fonts/solid.svg#yin-yang"></use>
+  </svg>
+</span>
+</a>
+
+
+
+    </div>
+    
+  </div>
+</nav>
+
+
+      
+    </header>
+
+    <section id="main" class="abdomen">
+      
+
+  
+<nav class="breadcrumb ml-4 is-small" aria-label="breadcrumbs">
+  <ul>
+    
+
+
+
+
+
+
+
+
+
+<li>
+    <a href="/">Home</a>
+</li>
+
+
+
+
+<li>
+    <a href="/archive/">Blog Archives</a>
+</li>
+
+
+
+
+<li class="is-active">
+    <a href="/archive/blackberry-push-android-hack/">Blackberry &#43; Push &#43; Android Hacking</a>
+</li>
+
+
+  </ul>
+</nav>
+
+
+
+
+
+  <div class="container">
+
+  
+  <h1 class="title">Blackberry &#43; Push &#43; Android Hacking</h1>
+  
+
+  <div class="content">
+    <p>I would like to track my experience with setting up push messaging for blackberry using an android application.</p>
+<p>The main <a href="http://developer.blackberry.com/android/apisupport/creating_push-enabled_android_apps.html">blackberry link on this subject</a> provides some basics, however I will try go into some detail on the process I used.</p>
+<p>There is an accompanying <a href="http://github.com/ryjen/droidBBpush">github project</a> for this post you can reference.</p>
+<h3 id="phase-1-client-side-build-configuration">Phase 1: Client Side Build Configuration</h3>
+<p>The android api for push messaging is now included in the Google Play Services, which is not supported on blackberry devices.   The <a href="http://developer.blackberry.com/android/apisupport/creating_push-enabled_android_apps.html">word from Blackberry</a> is to use the legacy stand-alone SDK which they say is still supported <em>(2014-09-14)</em>.</p>
+<p>Normal android builds should use Google Play Services to I&rsquo;m going to split the project using Gradle build variants.</p>
+<p><strong>1)</strong> First thing to do is to create two seperate source code folders.  One for google play services, and another for the legacy SDK blackberry will use.  So this is what our src directory will look like:</p>
+<pre><code>    - main
+        - java
+        - res
+        - ApplicationManifest.xml
+    - blackberry    // legacy gcm
+        - java
+      - assets
+           - android.cfg
+           - MANIFEST.MF
+    - googlePlay    // google play gcm
+        - java
+        - ApplicationManifest.xml
+    - libs
+    - gcm.jar   // legacy gcm sdk for blackberry
+</code></pre><p><strong>2)</strong> Now add a new product flavor in your build.gradle.  Note that I am using flavors with the same name as the folders I created above.  You can use different folders/flavours but you must then assign a source folder to a flavor</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-groovy" data-lang="groovy">    productFlavors {
+        blackberry {}
+        googlePlay {}
+    }
+</code></pre></div><p><strong>3)</strong> Add the <a href="https://code.google.com/p/gcm/">legacy GCM SDK</a> to your project. It is available <a href="https://gcm.googlecode.com/git/gcm-client-deprecated/dist/gcm.jar">from this link</a>. Download it and put in the libs directory.</p>
+<p><strong>4)</strong> Now configure build dependencies per flavor by adding the google play services and the legacy sdk for blackberry:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-groovy" data-lang="groovy">    dependencies {
+      compile fileTree(dir: <span style="color:#0ff;font-weight:bold">&#39;libs&#39;</span>, include: [<span style="color:#0ff;font-weight:bold">&#39;*.jar&#39;</span>], exclude: [<span style="color:#0ff;font-weight:bold">&#39;gcm.jar&#39;</span>]) <span style="color:#007f7f">// be sure to exclude the legacy sdk
+</span><span style="color:#007f7f"></span>        googlePlayCompile <span style="color:#0ff;font-weight:bold">&#39;com.google.android.gms:play-services:4.3.+&#39;</span>
+        blackberryCompile files(<span style="color:#0ff;font-weight:bold">&#39;libs/gcm.jar&#39;</span>)
+    }
+</code></pre></div><p><strong>5)</strong> The <em>main</em> source folder&rsquo;s AndroidManifest.xml contains the following common configuration for push messaging. Don&rsquo;t forget to replace package names as appropriate:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml">    <span style="font-weight:bold">&lt;uses-permission</span> <span style="color:#007f7f">android:name=</span><span style="color:#0ff;font-weight:bold">&#34;com.google.android.c2dm.permission.RECEIVE&#34;</span> <span style="font-weight:bold">/&gt;</span>
+
+    <span style="font-weight:bold">&lt;uses-permission</span> <span style="color:#007f7f">android:name=</span><span style="color:#0ff;font-weight:bold">&#34;com.arg3.examples.droidbb.permission.C2D_MESSAGE&#34;</span> <span style="font-weight:bold">/&gt;</span>
+
+    <span style="font-weight:bold">&lt;permission</span>
+        <span style="color:#007f7f">android:name=</span><span style="color:#0ff;font-weight:bold">&#34;com.arg3.examples.droidbb.permission.C2D_MESSAGE&#34;</span>
+        <span style="color:#007f7f">android:protectionLevel=</span><span style="color:#0ff;font-weight:bold">&#34;signature&#34;</span> <span style="font-weight:bold">/&gt;</span>
+
+    <span style="font-weight:bold">&lt;service</span> <span style="color:#007f7f">android:name=</span><span style="color:#0ff;font-weight:bold">&#34;.gcm.GCMIntentService&#34;</span> <span style="font-weight:bold">/&gt;</span>
+
+    <span style="font-weight:bold">&lt;receiver</span>
+            <span style="color:#007f7f">android:name=</span><span style="color:#0ff;font-weight:bold">&#34;.gcm.GCMBroadcastReceiver&#34;</span>
+            <span style="color:#007f7f">android:permission=</span><span style="color:#0ff;font-weight:bold">&#34;com.google.android.c2dm.permission.SEND&#34;</span><span style="font-weight:bold">&gt;</span>
+        <span style="font-weight:bold">&lt;intent-filter&gt;</span>
+            <span style="font-weight:bold">&lt;action</span> <span style="color:#007f7f">android:name=</span><span style="color:#0ff;font-weight:bold">&#34;com.google.android.c2dm.intent.RECEIVE&#34;</span> <span style="font-weight:bold">/&gt;</span>
+
+            <span style="font-weight:bold">&lt;action</span> <span style="color:#007f7f">android:name=</span><span style="color:#0ff;font-weight:bold">&#34;com.google.android.c2dm.intent.REGISTRATION&#34;</span> <span style="font-weight:bold">/&gt;</span>
+
+            <span style="font-weight:bold">&lt;category</span> <span style="color:#007f7f">android:name=</span><span style="color:#0ff;font-weight:bold">&#34;com.arg3.examples.droidbb&#34;</span> <span style="font-weight:bold">/&gt;</span>
+        <span style="font-weight:bold">&lt;/intent-filter&gt;</span>
+    <span style="font-weight:bold">&lt;/receiver&gt;</span>
+</code></pre></div><p><strong>6)</strong> The <em>googlePlay</em> source folder should contain an AndroidManifest.xml with the following:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml">    <span style="font-weight:bold">&lt;meta-data</span> <span style="color:#007f7f">android:name=</span><span style="color:#0ff;font-weight:bold">&#34;com.google.android.gms.version&#34;</span>
+        <span style="color:#007f7f">android:value=</span><span style="color:#0ff;font-weight:bold">&#34;@integer/google_play_services_version&#34;</span> <span style="font-weight:bold">/&gt;</span>
+</code></pre></div><p>You do not need to include any other configuration, AndroidManifest&rsquo;s in different source folders get merged.</p>
+<p><strong>7)</strong> Add two files to the blackberry specific build.  They are not part of the build but they will get used when creating a BAR file in phase 3. First file is &lsquo;android.cfg&rsquo; with the following:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml">    <span style="color:#0f0;font-weight:bold">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
+    <span style="font-weight:bold">&lt;android&gt;</span>
+       <span style="font-weight:bold">&lt;push&gt;</span>
+          <span style="font-weight:bold">&lt;appid&gt;</span>some_appID<span style="font-weight:bold">&lt;/appid&gt;</span>
+          <span style="font-weight:bold">&lt;ppgurl&gt;</span>http://cpXXX.pushapi.eval.blackberry.com<span style="font-weight:bold">&lt;/ppgurl&gt;</span>
+          <span style="font-weight:bold">&lt;tokenprefix&gt;</span>bb-<span style="font-weight:bold">&lt;/tokenprefix&gt;</span>
+       <span style="font-weight:bold">&lt;/push&gt;</span>
+    <span style="font-weight:bold">&lt;/android&gt;</span>
+</code></pre></div><p><strong>appId</strong> and <strong>ppgurl</strong> should the the values give to you when you register for blackbery push messaging.  The token prefix, will prefix the android GCM token when returned to you, it is not required.</p>
+<p><strong>8)</strong> The second file is &lsquo;MANIFEST.MF&rsquo; with the following:</p>
+<pre><code>    Entry-Point-System-Actions: _sys_use_consumer_push
+</code></pre><p>Which will allow the application to consume push messages.</p>
+<h3 id="phase-2-client-side-source-code">Phase 2: Client Side Source Code</h3>
+<p>Check the <a href="http://github.com/ryjen/droidBBpush">complete project</a> for this post which contains all the source code.</p>
+<p>The brief version is that there are two version of the code, each containing three classes:</p>
+<p><strong>GCMBroadcastReceiver</strong> which receives a push request and deploys to the service.</p>
+<p><strong>GCMHandler</strong> which initializes the service and posts to the registrar.</p>
+<p>and <strong>GCMIntentService</strong> which does something with the message.</p>
+<p>There are also <strong>PushNotifier</strong> which displays the notification, <strong>PushRegistrar</strong> with registers a device with your server.</p>
+<h3 id="phase-3-the-bar-file">Phase 3: The BAR File</h3>
+<p><em>Step 1:</em></p>
+<p>First assemble your blackberry apk:</p>
+<pre><code>    ./gradlew assembleBlackberryRelease
+</code></pre><p>From Android Studio you also run “Build -&gt; Generate Signed APK”.</p>
+<p><em>Step 2:</em></p>
+<p>Fire up the GUI version of APK Packager from the <a href="https://developer.blackberry.com/android/tools/">blackberry command line tools</a> for android.  If you have the blackberry plugin for android studio installed you can access it from “Build -&gt; Package APK to BAR”</p>
+<p><em>Step 3:</em></p>
+<p>Specify the input apk (should be in <em>build/outputs/apk/blackberry-release.apk</em>) and output bar file.</p>
+<p><em>Step 4:</em></p>
+<p>Click advanced settings and add the android.cfg file and the custom manifest file we defined in Phase 1. Make sure you check the checkbox to <em>merge</em> the manifest files.</p>
+<p><em>Step 5:</em></p>
+<p><a href="/images/blog/bb_apk_packager.png"><img src="/images/blog/bb_apk_packager.png" alt="APK Packager"></a></p>
+<p>The end result should look something like this:</p>
+<p>Package the app.  Sign it if you have a signing keys, and deploy it if you have a device connected.</p>
+<p>This of course can all be scripted on the command line as well, which QA likes.</p>
+<h3 id="phase-4-server-side-code">Phase 4: Server Side Code</h3>
+<p>Again refer to the <a href="http://github.com/ryjen/droidBBpush">github project for this post</a> for the backend code.</p>
+<p>I used the java Push SDK available from blackberry, if you&rsquo;re not using java you will have to implement the <a href="http://en.wikipedia.org/wiki/Password_authentication_protocol">PAP protocol</a> and <a href="http://help.blackberry.com/en/developers/deliverables/51382/">Push Access Protocol</a> yourself.  I initially tried to do this, but the service is kinda fussy how arguments work together and the SDK did alot of the validation for me.</p>
+<p>Notes on the implementation:</p>
+<ul>
+<li>if you specified the “bb-” or whatever prefix for your push tokens to identify them as blackberry, you will have to remove those when you send it through the backend SDK.</li>
+<li>Be warned the Mac installer for the Blackberry PushSDK doesn&rsquo;t work it says that its damaged (at least for me on Mavericks). You can get around it by executing the inner app from the command line:</li>
+</ul>
+<pre><code>    ~/Downloads/bpss-1.2.0.29.app/Contents/MacOS/bpss-1.2.0.29
+</code></pre>
+  </div>
+
+  
+
+
+
+  
+
+
+
+  </div>
+
+
+    </section>
+
+    <footer id="footer" class="legs">
+      
+
+
+
+
+
+
+
+
+
+<div class="has-text-centered content">
+
+  <div class="is-flex is-align-items-center is-justify-content-center">
+    
+    <div class="has-text-centered m-3">
+      <button id="themer" class="themer" type="button">enlighten</button>
+    </div>
+    <a href="https://github.com/ryjen/ryjen.github.io/issues/new">See an issue?</a> 
+  </div>
+
+  <div class="copyright">
+  © all rights reserved, ryan jennings 
+  </div>
+</div>
+
+
+    </footer>
+
+    
+<script src="/js/vendor.min.js" defer></script>
+<script src="/js/theme.min.js" defer></script>
+
+
+<script src="/js/app.min.js" defer></script>
+
+
+
+
+<script data-goatcounter="https://analytics.micrantha.com/count"
+        async src="//analytics.micrantha.com/count.js"></script>
+
+
+
+
+
+
+  </body>
+</html>

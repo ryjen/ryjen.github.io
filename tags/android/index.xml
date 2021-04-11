@@ -1,2 +1,40 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>android on Home</title><link>https://ryanjennin.gs/tags/android/</link><description>Recent content in android on Home</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 16 May 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://ryanjennin.gs/tags/android/index.xml" rel="self" type="application/rss+xml"/><item><title>Mitmproxy and Android</title><link>https://ryanjennin.gs/posts/mitmproxy-and-android/</link><pubDate>Wed, 16 May 2018 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/mitmproxy-and-android/</guid><description>Introduction Debugging network traffic for your app can be useful, and sometimes necessary if the data is not what is expected or inconsistent.
-The Proxy I prefer the open source proxy [mitmproxy](https://mitmproxy.org =300x203). Easy to install on OSX with homebrew.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>android on Home</title>
+    <link>https://ryanjennin.gs/tags/android/</link>
+    <description>Recent content in android on Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 16 May 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://ryanjennin.gs/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mitmproxy and Android</title>
+      <link>https://ryanjennin.gs/posts/mitmproxy-and-android/</link>
+      <pubDate>Wed, 16 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/posts/mitmproxy-and-android/</guid>
+      <description>Introduction Debugging network traffic for your app can be useful, and sometimes necessary if the data is not what is expected or inconsistent.
+The Proxy I prefer the open source proxy [mitmproxy](https://mitmproxy.org =300x203). Easy to install on OSX with homebrew.</description>
+    </item>
+    
+    <item>
+      <title>Blackberry &#43; Push &#43; Android Hacking</title>
+      <link>https://ryanjennin.gs/archive/blackberry-push-android-hack/</link>
+      <pubDate>Sun, 14 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/archive/blackberry-push-android-hack/</guid>
+      <description>I would like to track my experience with setting up push messaging for blackberry using an android application.
+The main blackberry link on this subject provides some basics, however I will try go into some detail on the process I used.</description>
+    </item>
+    
+    <item>
+      <title>Droid Fortunes: An Experiment in Android Widgets</title>
+      <link>https://ryanjennin.gs/archive/droid-fortunes-an-experiment-in-android-widgets/</link>
+      <pubDate>Wed, 04 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/archive/droid-fortunes-an-experiment-in-android-widgets/</guid>
+      <description>Background I have it set up on my OSX machine to give me a random fortune when I log into the shell. I thought it would be a good idea to port this to Android in the form of a widget and Droid Fortunes was born!</description>
+    </item>
+    
+  </channel>
+</rss>

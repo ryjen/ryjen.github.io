@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>key path on Home</title>
+    <link>https://ryanjennin.gs/tags/key-path/</link>
+    <description>Recent content in key path on Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 20 Feb 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://ryanjennin.gs/tags/key-path/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java Key Path Json Objects</title>
+      <link>https://ryanjennin.gs/posts/java-key-path-json-objects/</link>
+      <pubDate>Thu, 20 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/posts/java-key-path-json-objects/</guid>
+      <description>After using apple&amp;rsquo;s key-value coding to basically have models without writing models, I decided to write rewrite a simple wrapper for java&amp;rsquo;s JSONObject that will allow similar functionality.
+I&amp;rsquo;m aware that this method and apple&amp;rsquo;s key value coding has a performance cost.</description>
+    </item>
+    
+  </channel>
+</rss>

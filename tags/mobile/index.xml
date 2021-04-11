@@ -1,2 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>mobile on Home</title><link>https://ryanjennin.gs/tags/mobile/</link><description>Recent content in mobile on Home</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 27 Nov 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://ryanjennin.gs/tags/mobile/index.xml" rel="self" type="application/rss+xml"/><item><title>Microsoft Dev Stack on macOS</title><link>https://ryanjennin.gs/archive/microsoft-dev-stack-macos/</link><pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/archive/microsoft-dev-stack-macos/</guid><description>Gonna evangelize a little bit.
-When Microsoft bought Xamarin, they did not underestimate the power of Xamarin.Forms for building cross platform UIs. Now with the release of Visual Studio for macOS and the Dotnet Core, its looks like its going to stay alive.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mobile on Home</title>
+    <link>https://ryanjennin.gs/tags/mobile/</link>
+    <description>Recent content in mobile on Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 05 Feb 2021 02:21:42 -0800</lastBuildDate><atom:link href="https://ryanjennin.gs/tags/mobile/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>React vs Flutter</title>
+      <link>https://ryanjennin.gs/posts/react-vs-flutter/</link>
+      <pubDate>Fri, 05 Feb 2021 02:21:42 -0800</pubDate>
+      
+      <guid>https://ryanjennin.gs/posts/react-vs-flutter/</guid>
+      <description>The big trade off between Flutter and React is:
+web support vs spread operator
+Sound silly? Let me elaborate&amp;hellip;
+flutter / dart The main advantage here is web support. With react the mobile and web components are not compatible without some experimental library to translate them.</description>
+    </item>
+    
+    <item>
+      <title>Microsoft Dev Stack on macOS</title>
+      <link>https://ryanjennin.gs/archive/microsoft-dev-stack-macos/</link>
+      <pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/archive/microsoft-dev-stack-macos/</guid>
+      <description>Gonna evangelize a little bit.
+When Microsoft bought Xamarin, they did not underestimate the power of Xamarin.Forms for building cross platform UIs. Now with the release of Visual Studio for macOS and the Dotnet Core, its looks like its going to stay alive.</description>
+    </item>
+    
+  </channel>
+</rss>

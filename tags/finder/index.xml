@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>finder on Home</title>
+    <link>https://ryanjennin.gs/tags/finder/</link>
+    <description>Recent content in finder on Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 07 Mar 2012 00:00:00 +0000</lastBuildDate><atom:link href="https://ryanjennin.gs/tags/finder/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>merge folders AppleScript service</title>
+      <link>https://ryanjennin.gs/archive/merge-folders-applescript-service/</link>
+      <pubDate>Wed, 07 Mar 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/archive/merge-folders-applescript-service/</guid>
+      <description>I recently tried to merge folders in OSX Lion using copy/paste in finder. To my surprise, the only action I could perform was to replace the folder.
+I came up with a little AppleScript to create a Finder service for merging folders.</description>
+    </item>
+    
+  </channel>
+</rss>

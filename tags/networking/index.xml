@@ -1,3 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>networking on Home</title><link>https://ryanjennin.gs/tags/networking/</link><description>Recent content in networking on Home</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 18 Feb 2021 11:18:10 -0800</lastBuildDate><atom:link href="https://ryanjennin.gs/tags/networking/index.xml" rel="self" type="application/rss+xml"/><item><title>Man-in-the-Middle</title><link>https://ryanjennin.gs/posts/mitm/</link><pubDate>Thu, 18 Feb 2021 11:18:10 -0800</pubDate><guid>https://ryanjennin.gs/posts/mitm/</guid><description>A man-in-the-middle (MITM) attack is a network security attack where a malicious device enters a network and intercepts traffic between nodes or components.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>networking on Home</title>
+    <link>https://ryanjennin.gs/tags/networking/</link>
+    <description>Recent content in networking on Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 18 Feb 2021 11:18:10 -0800</lastBuildDate><atom:link href="https://ryanjennin.gs/tags/networking/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Man-in-the-Middle</title>
+      <link>https://ryanjennin.gs/posts/mitm/</link>
+      <pubDate>Thu, 18 Feb 2021 11:18:10 -0800</pubDate>
+      
+      <guid>https://ryanjennin.gs/posts/mitm/</guid>
+      <description>A man-in-the-middle (MITM) attack is a network security attack where a malicious device enters a network and intercepts traffic between nodes or components.
 To accomplish access to a network an attacker needs an entry point.
-There are many ways for a malicious device to accomplish access into a network.</description></item></channel></rss>
+There are many ways for a malicious device to accomplish access into a network.</description>
+    </item>
+    
+  </channel>
+</rss>

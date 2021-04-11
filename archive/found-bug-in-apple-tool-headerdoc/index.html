@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    
+<meta charset="UTF-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Found Bug in Apple Tool &#39;HeaderDoc&#39;</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="google-site-verification" content="Crk6W-ckoApRrOZrv23ngLwPPTbzjzfZ4AQPElgS0pw" />
+<meta name="description" content="personal blog of an engineer, musician, and madman" />
+<meta name="robots" content="index, follow">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="preload" type="font/otf" as="font">
+<link rel="stylesheet" href="/css/theme.min.css" type="text/css">
+
+
+<link href="/css/app.min.css" rel="stylesheet" type="text/css">
+
+
+
+  </head>
+  <body >
+    <header id="header" class="shoulders">
+      
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+
+    <a class="navbar-item" href="/">
+      <figure class="image is-32x32 mr-3">
+        <img class="is-rounded" src="/image/logo-profile.png" alt="logo">
+      </figure>
+      ryan jennings
+    </a>
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="#nav">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div id="nav" class="navbar-menu">
+    
+    <div class="navbar-end">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  <a class="navbar-item" href="/posts">
+    <span class="icon is-small mr-3">
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <use xlink:href="/fonts/solid.svg#rss"></use>
+  </svg>
+</span>
+    blog
+  </a>
+
+
+
+
+    
+  <a class="navbar-item" href="/art">
+    <span class="icon is-small mr-3">
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <use xlink:href="/fonts/solid.svg#icons"></use>
+  </svg>
+</span>
+    art
+  </a>
+
+
+
+
+    
+  <a class="navbar-item" href="/things">
+    <span class="icon is-small mr-3">
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <use xlink:href="/fonts/solid.svg#object-ungroup"></use>
+  </svg>
+</span>
+    things
+  </a>
+
+
+
+
+    
+  <a class="navbar-item" href="/about">
+    <span class="icon is-small mr-3">
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <use xlink:href="/fonts/solid.svg#info-circle"></use>
+  </svg>
+</span>
+    about
+  </a>
+
+
+
+
+<a role="button" class="navbar-item themer" href="#">
+  <span class="icon is-small">
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <use xlink:href="/fonts/solid.svg#yin-yang"></use>
+  </svg>
+</span>
+</a>
+
+
+
+    </div>
+    
+  </div>
+</nav>
+
+
+      
+    </header>
+
+    <section id="main" class="abdomen">
+      
+
+  
+<nav class="breadcrumb ml-4 is-small" aria-label="breadcrumbs">
+  <ul>
+    
+
+
+
+
+
+
+
+
+
+<li>
+    <a href="/">Home</a>
+</li>
+
+
+
+
+<li>
+    <a href="/archive/">Blog Archives</a>
+</li>
+
+
+
+
+<li class="is-active">
+    <a href="/archive/found-bug-in-apple-tool-headerdoc/">Found Bug in Apple Tool &#39;HeaderDoc&#39;</a>
+</li>
+
+
+  </ul>
+</nav>
+
+
+
+
+
+  <div class="container">
+
+  
+  <h1 class="title">Found Bug in Apple Tool &#39;HeaderDoc&#39;</h1>
+  
+
+  <div class="content">
+    <p>HeaderDoc is a tool to generate source code documentation for many languages. Recently, I noticed that one of the command line tools &lsquo;gatherheaderdoc&rsquo; was producing a blank output file.  Wasn&rsquo;t sure why at first, but since its just a perl script I delved a little deeper to find the bug.</p>
+<p><strong>EDIT:</strong> bug fixed and gatherheaderdoc is now binary and uneditable</p>
+<p>The cause comes from <strong>line 496</strong> (line 18 below) in the <em>gatherheaderdoc</em> perl script:</p>
+<div class="highlight"><pre style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl">    <span style="color:#fff;font-weight:bold">my</span> @filelist = <span style="color:#fff;font-weight:bold">split</span>(<span style="color:#0ff;font-weight:bold">/\s/</span>, $TOCTemplateFile);
+    <span style="color:#fff;font-weight:bold">foreach</span> <span style="color:#fff;font-weight:bold">my</span> $file (@filelist) {
+            <span style="color:#fff;font-weight:bold">my</span> %used = ();
+
+            <span style="color:#fff;font-weight:bold">my</span> $TOCTemplate = <span style="color:#0ff;font-weight:bold">&#34;&#34;</span>;
+            <span style="color:#fff;font-weight:bold">my</span> $found = <span style="color:#ff0;font-weight:bold">0</span>;
+            <span style="color:#fff;font-weight:bold">my</span> $foundpath = <span style="color:#0ff;font-weight:bold">&#34;&#34;</span>;
+
+            <span style="color:#fff;font-weight:bold">if</span> ($file eq <span style="color:#0ff;font-weight:bold">&#34;HEADERDOC_DEFAULT_INTERNAL_TEMPLATE&#34;</span>) {
+                    $found = <span style="color:#ff0;font-weight:bold">1</span>;
+                    $foundpath = <span style="color:#0ff;font-weight:bold">&#34;n/a&#34;</span>;
+                    $TOCTemplate = default_template();
+            } <span style="color:#fff;font-weight:bold">else</span> {
+                    <span style="color:#fff;font-weight:bold">print</span> STDERR <span style="color:#0ff;font-weight:bold">&#34;Searching for $file\n&#34;</span>;
+                    <span style="color:#007f7f"># this line has a directory instead of file in it</span>
+                    <span style="color:#007f7f"># my @templateFiles = ($devtoolsPreferencesPath.$pathSeparator.$file, $usrPreferencesPath, $systemPreferencesPath.$pathSeparator.$file, $users$</span>
+                    <span style="color:#007f7f"># modified Sep 16, 2012 by Ryan Jennings &lt;c0der78@gmail.com&gt;</span>
+                    <span style="color:#fff;font-weight:bold">my</span> @templateFiles = ($devtoolsPreferencesPath.$pathSeparator.$file, $ usrPreferencesPath.$pathSeparator.$file, $systemPreferencesPath.$pathSeparator.$file, $users$
+                    foreach <span style="color:#fff;font-weight:bold">my</span> $filename (@templateFiles) {
+                            <span style="color:#fff;font-weight:bold">if</span> (<span style="color:#fff;font-weight:bold">open</span>(TOCFILE, <span style="color:#0ff;font-weight:bold">&#34;&lt;$filename&#34;</span>)) {
+                                    $TOCTemplate = <span style="color:#0ff;font-weight:bold">&lt;TOCFILE&gt;</span>;
+                                    <span style="color:#fff;font-weight:bold">close</span>(TOCFILE);
+                                    $found = <span style="color:#ff0;font-weight:bold">1</span>;
+                                    $foundpath = $filename;
+                            }
+                    }
+                    <span style="color:#fff;font-weight:bold">if</span> (!$found) {
+                            <span style="color:#fff;font-weight:bold">die</span>(<span style="color:#0ff;font-weight:bold">&#34;Template file $file not found.\n&#34;</span>);
+                    } <span style="color:#fff;font-weight:bold">else</span> {
+                            <span style="color:#fff;font-weight:bold">print</span> STDERR <span style="color:#0ff;font-weight:bold">&#34;Found at $foundpath\n&#34;</span>;
+                    }
+            }
+            <span style="color:#fff;font-weight:bold">push</span>(@TOCTemplateList, $TOCTemplate);
+            <span style="color:#fff;font-weight:bold">push</span>(@TOCNames, basename($file));
+
+            <span style="color:#fff;font-weight:bold">if</span> ($TOCTemplate =~<span style="color:#0ff;font-weight:bold"> /\$\$\s*typelist/</span>) {
+</code></pre></div>
+  </div>
+
+  
+
+
+
+  
+
+
+
+  </div>
+
+
+    </section>
+
+    <footer id="footer" class="legs">
+      
+
+
+
+
+
+
+
+
+
+<div class="has-text-centered content">
+
+  <div class="is-flex is-align-items-center is-justify-content-center">
+    
+    <div class="has-text-centered m-3">
+      <button id="themer" class="themer" type="button">enlighten</button>
+    </div>
+    <a href="https://github.com/ryjen/ryjen.github.io/issues/new">See an issue?</a> 
+  </div>
+
+  <div class="copyright">
+  © all rights reserved, ryan jennings 
+  </div>
+</div>
+
+
+    </footer>
+
+    
+<script src="/js/vendor.min.js" defer></script>
+<script src="/js/theme.min.js" defer></script>
+
+
+<script src="/js/app.min.js" defer></script>
+
+
+
+
+<script data-goatcounter="https://analytics.micrantha.com/count"
+        async src="//analytics.micrantha.com/count.js"></script>
+
+
+
+
+
+
+  </body>
+</html>
