@@ -8,11 +8,10 @@
 <meta name=google-site-verification content="Crk6W-ckoApRrOZrv23ngLwPPTbzjzfZ4AQPElgS0pw">
 <meta name=description content="personal blog of an engineer, musician, and madman">
 <meta name=robots content="index, follow">
-<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel=preload type=font/otf as=font>
-<link rel=stylesheet href=/css/theme.min.css?t=1635924059168 type=text/css>
-<link href=/css/app.min.css?t=1635924059168 rel=stylesheet type=text/css>
+<link rel=stylesheet href=/css/theme.min.css?t=1637298076719 type=text/css>
+<link href=/css/app.min.css?t=1637298076719 rel=stylesheet type=text/css>
 </head>
-<body>
+<body class=letter>
 <header id=header class=shoulders>
 <nav class=navbar role=navigation aria-label="main navigation">
 <div class=navbar-brand>
@@ -22,7 +21,7 @@
 </figure>
 ryan jennings
 </a>
-<a role=button class=navbar-burger aria-label=menu aria-expanded=false data-target=#nav>
+<a role=button class=navbar-burger aria-label=menu aria-expanded=false data-target=nav>
 <span aria-hidden=true></span>
 <span aria-hidden=true></span>
 <span aria-hidden=true></span>
@@ -75,7 +74,8 @@ about
 <div class=container>
 <h1 class=title>Tech</h1>
 <p>Some tech I keep an eye on or research. My <a href="https://github.com/ryjen?tab=stars">github starred repositories</a> have a more complete list.</p>
-<div class="box m-5 p-5" data-link=https://www.coscreen.co/engineering/posts/memory-safe-programming-kernel>
+<div class="list-item box m-5 p-5">
+<a class=list-item-link href=https://www.coscreen.co/engineering/posts/memory-safe-programming-kernel>
 <div class="header is-flex is-align-items-center">
 <h1 class="title is-5 is-flex-grow-1">
 EBPF
@@ -88,8 +88,10 @@ EBPF
 eBPF programs as a linux kernel sandbox has runtime guaruntees and privileges make for good observability tools. Combined with containers, eBPF programs have interesting capabilities in modern infrastructure.
 </div>
 </div>
+</a>
 </div>
-<div class="box m-5 p-5" data-link=https://en.wikipedia.org/wiki/Progressive_web_application>
+<div class="list-item box m-5 p-5">
+<a class=list-item-link href=https://en.wikipedia.org/wiki/Progressive_web_application>
 <div class="header is-flex is-align-items-center">
 <h1 class="title is-5 is-flex-grow-1">
 Progressive Web Apps / Assembly / Sockets
@@ -102,8 +104,10 @@ Progressive Web Apps / Assembly / Sockets
 Really like what web assembly brings to the web. Add websockets and progressive web app (PWA) services, I can see a lot of potential.
 </div>
 </div>
+</a>
 </div>
-<div class="box m-5 p-5" data-link=https://en.wikipedia.org/wiki/Blockchain>
+<div class="list-item box m-5 p-5">
+<a class=list-item-link href=https://en.wikipedia.org/wiki/Blockchain>
 <div class="header is-flex is-align-items-center">
 <h1 class="title is-5 is-flex-grow-1">
 Blockchain
@@ -116,8 +120,10 @@ Blockchain
 A secure decentralized tech notably used in bitcoin amongst other things. Quite neat what netgineers have done with it. Notably <a href=https://www.cryptokitties.co>cryptokitties</a> (Flow) or <a href=https://audius.co>Audius</a>. <a href=https://www.dctrl.ca/>Local vancouver decentralized club</a> is pretty cool too.
 </div>
 </div>
+</a>
 </div>
-<div class="box m-5 p-5" data-link=https://man7.org/linux/man-pages/man7/namespaces.7.html>
+<div class="list-item box m-5 p-5">
+<a class=list-item-link href=https://man7.org/linux/man-pages/man7/namespaces.7.html>
 <div class="header is-flex is-align-items-center">
 <h1 class="title is-5 is-flex-grow-1">
 Linux Namespaces
@@ -130,8 +136,10 @@ Linux Namespaces
 The Linux namespace additions to the kernel have proved extremely useful. Containerization solutions like <a href=http://docker.com>Docker</a>, <a href=https://podman.io>Podman</a>, <a href=http://linuxcontainers.org>LXC</a>, or <a href=http://katacontainers.io>Kata Containers</a> make deployments and testing highly reproducible. As a lightweight alternative to virtual machines, they effectively reshaped the world of shared infrastructure.
 </div>
 </div>
+</a>
 </div>
-<div class="box m-5 p-5" data-link=https://github.com/sindresorhus/awesome>
+<div class="list-item box m-5 p-5">
+<a class=list-item-link href=https://github.com/sindresorhus/awesome>
 <div class="header is-flex is-align-items-center">
 <h1 class="title is-5 is-flex-grow-1">
 Selfhosted and IaaS
@@ -144,8 +152,10 @@ Selfhosted and IaaS
 Intrastructure as a service has a lot of interesting self-hosted options. It may cost you for a better VPS setup but you could probably run a lot more.
 </div>
 </div>
+</a>
 </div>
-<div class="box m-5 p-5" data-link=http://keybase.io>
+<div class="list-item box m-5 p-5">
+<a class=list-item-link href=http://keybase.io>
 <div class="header is-flex is-align-items-center">
 <h1 class="title is-5 is-flex-grow-1">
 Security Keys
@@ -158,8 +168,9 @@ Security Keys
 Keybase has a nice solution for managing encryption (can always access your PGP key). I personally <a href=https://www.yubico.com/>yubikey</a> for services that support it. Try to sign git commits on projects when I can.
 </div>
 </div>
+</a>
 </div>
-<div class="box m-5 p-5">
+<div class="list-item box m-5 p-5">
 <div class="header is-flex is-align-items-center">
 <h1 class="title is-5 is-flex-grow-1">
 Artificial Intelligence / Machine Learning
@@ -173,7 +184,8 @@ An interesting area to be understandably excited about. The consumer/developer f
 </div>
 </div>
 </div>
-<div class="box m-5 p-5" data-link=https://itsfoss.com/linux-phones/>
+<div class="list-item box m-5 p-5">
+<a class=list-item-link href=https://itsfoss.com/linux-phones/>
 <div class="header is-flex is-align-items-center">
 <h1 class="title is-5 is-flex-grow-1">
 Linux Phones
@@ -186,8 +198,9 @@ Linux Phones
 Will probably get one at some point, it is the only mobile platform I have not worked on. They happen to make great secure laptops with open source hardware too.
 </div>
 </div>
+</a>
 </div>
-<div class="box m-5 p-5">
+<div class="list-item box m-5 p-5">
 <div class="header is-flex is-align-items-center">
 <h1 class="title is-5 is-flex-grow-1">
 Cross Platform Mobile Frameworks
@@ -201,7 +214,8 @@ Cross Platform Mobile Frameworks
 </div>
 </div>
 </div>
-<div class="box m-5 p-5" data-link=https://en.wikipedia.org/wiki/Fuzzing>
+<div class="list-item box m-5 p-5">
+<a class=list-item-link href=https://en.wikipedia.org/wiki/Fuzzing>
 <div class="header is-flex is-align-items-center">
 <h1 class="title is-5 is-flex-grow-1">
 Fuzz Testing
@@ -214,6 +228,7 @@ Fuzz Testing
 A penetration testing technique that is amazing at finding software bugs. Notably, the impressive trophy case of <a href=http://lcamtuf.coredump.cx/afl>AFL</a>.
 </div>
 </div>
+</a>
 </div>
 <nav class="pagination is-centered" role=navigation aria-label=pagination>
 <a class=pagination-next href=/things/tech/page/2/ rel=next>
@@ -248,9 +263,9 @@ A penetration testing technique that is amazing at finding software bugs. Notabl
 </div>
 </div>
 </footer>
-<script src=/js/vendor.min.js?t=1635924059168 defer></script>
-<script src=/js/theme.min.js?t=1635924059168 defer></script>
-<script src=/js/app.min.js?t=1635924059168 defer></script>
+<script src=/js/theme.min.js?t=1637298076719 defer></script>
+<script src=/js/app.min.js?t=1637298076719 defer></script>
+<script>window.goatcounter={path:function(a){return location.host+a}}</script>
 <script data-goatcounter=https://analytics.micrantha.com/count async src=//analytics.micrantha.com/count.js></script>
 </body>
 </html>

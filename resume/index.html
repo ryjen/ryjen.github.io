@@ -8,11 +8,10 @@
 <meta name=google-site-verification content="Crk6W-ckoApRrOZrv23ngLwPPTbzjzfZ4AQPElgS0pw">
 <meta name=description content="personal blog of an engineer, musician, and madman">
 <meta name=robots content="index, follow">
-<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel=preload type=font/otf as=font>
-<link rel=stylesheet href=/css/theme.min.css?t=1635924059013 type=text/css>
-<link href=/css/app.min.css?t=1635924059013 rel=stylesheet type=text/css>
+<link rel=stylesheet href=/css/theme.min.css?t=1637298076608 type=text/css>
+<link href=/css/app.min.css?t=1637298076608 rel=stylesheet type=text/css>
 </head>
-<body>
+<body class=letter>
 <header id=header class=shoulders>
 <nav class=navbar role=navigation aria-label="main navigation">
 <div class=navbar-brand>
@@ -22,7 +21,7 @@
 </figure>
 ryan jennings
 </a>
-<a role=button class=navbar-burger aria-label=menu aria-expanded=false data-target=#nav>
+<a role=button class=navbar-burger aria-label=menu aria-expanded=false data-target=nav>
 <span aria-hidden=true></span>
 <span aria-hidden=true></span>
 <span aria-hidden=true></span>
@@ -75,22 +74,20 @@ about
 <button class="button is-inverted is-ghost is-dark is-small" onclick=App.print()>
 <span class="icon is-small"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#print"/></svg>
 </span>
-<span class=ml-4>
-<small>adjust the paper size to A3</small>
-</span>
 </button>
 </div>
 <div id=resume class="is-flex is-flex-direction-column is-align-items-center">
-<div class="columns sheet pt-4">
-<div class="column sidebar mt-6 pt-5">
+<div class="is-flex sheet pt-4">
+<div class="sidebar mt-2 pt-5">
 <div>
-<h2 class="has-text-centered title is-size-6"><small>Expertise</small></h2>
+<h2 class="has-text-centered title is-size-7"><small>Expertise</small></h2>
 <div class="box is-default expertise">
 <ul>
 <li>React Native</li>
 <li>Redux</li>
 <li>Android Development</li>
 <li>iOS Development</li>
+<li>Clean Architecture</li>
 <li>JavaScript</li>
 <li>Java / Kotlin</li>
 <li>Obj-C / Swift</li>
@@ -143,7 +140,7 @@ Technology,
 </div>
 </div>
 </div>
-<div class="column aside">
+<div class=aside>
 <section class=profile>
 <section class=header>
 <h1 class="name has-text-right title">
@@ -180,9 +177,10 @@ github/ryjen</a>
 </div>
 </section>
 <div class="mt-4 is-default">
-Experienced and educated software development engineer with over 10 years of expertise in
-data systems, mobile applications and testing<span class=no-print>
-(<a href=/summary>more details</a>)</span>.
+No problem too big or too small. Detail oriented and error predictive, a balance of intensity and pragmatic support, of education and experience.
+<span class=no-print>
+(<a href=/summary>more details</a>)
+</span>.
 </div>
 </section>
 <section class="employment mt-4">
@@ -206,7 +204,7 @@ Vancouver, Canada
 </header>
 <div class="content description">
 <ul>
-<li>Assisting with client projects in native Android using latest tools and techniques.</li>
+<li>Assisting with client projects in native Android using latest tools and techniques (Kotlin, Flow, MVVM, LiveData, Clean Architecture).</li>
 </ul>
 </div>
 </div>
@@ -229,12 +227,9 @@ Vancouver, Canada
 </header>
 <div class="content description">
 <ul>
-<li>Successfully developed and tested applications using Python and Postman in an agile
-environment</li>
-<li>Contributed to the release of backend APIs for payments with TD Bank and invoices</li>
+<li>Contracted to help backend team develop APIs for invoicing.</li>
+<li>Helped dockerize components and create staging and test environments in AWS.</li>
 <li>Provided feedback, bugs, design inputs, and documentation, and general experience</li>
-<li>Created staging environment in AWS, configured access, assisted with dockerization</li>
-<li>Developed unit tests, scripts, and a tool to generate templated test data</li>
 </ul>
 </div>
 </div>
@@ -553,9 +548,9 @@ also worked closely with QA to ensure the apps were backed by a full automated t
 </div>
 </div>
 </footer>
-<script src=/js/vendor.min.js?t=1635924059013 defer></script>
-<script src=/js/theme.min.js?t=1635924059013 defer></script>
-<script src=/js/app.min.js?t=1635924059013 defer></script>
+<script src=/js/theme.min.js?t=1637298076608 defer></script>
+<script src=/js/app.min.js?t=1637298076608 defer></script>
+<script>window.goatcounter={path:function(a){return location.host+a}}</script>
 <script data-goatcounter=https://analytics.micrantha.com/count async src=//analytics.micrantha.com/count.js></script>
 </body>
 </html>
