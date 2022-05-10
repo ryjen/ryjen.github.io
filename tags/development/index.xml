@@ -1,3 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>development on Home</title><link>https://ryanjennin.gs/tags/development/</link><description>Recent content in development on Home</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 29 Jul 2021 20:09:25 -0700</lastBuildDate><atom:link href="https://ryanjennin.gs/tags/development/index.xml" rel="self" type="application/rss+xml"/><item><title>Sandbox Demo</title><link>https://ryanjennin.gs/posts/sandcastle-util-demo/</link><pubDate>Thu, 29 Jul 2021 20:09:25 -0700</pubDate><guid>https://ryanjennin.gs/posts/sandcastle-util-demo/</guid><description>A utility from Micrantha for creating reusable isolated development environments.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>development on Home</title>
+    <link>https://ryanjennin.gs/tags/development/</link>
+    <description>Recent content in development on Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 29 Jul 2021 20:09:25 -0700</lastBuildDate><atom:link href="https://ryanjennin.gs/tags/development/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sandbox Demo</title>
+      <link>https://ryanjennin.gs/posts/sandcastle-util-demo/</link>
+      <pubDate>Thu, 29 Jul 2021 20:09:25 -0700</pubDate>
+      
+      <guid>https://ryanjennin.gs/posts/sandcastle-util-demo/</guid>
+      <description>A utility from Micrantha for creating reusable isolated development environments.
 This is basically an easy to use abstraction around docker with some extra perks.
-file synchronization that follows symlinks keep package manager and system dependencies isolated from host reusable state that can also be persisted as a &amp;lsquo;sandcastle&amp;rsquo; for other sandboxes consistent user file permissions with the host better time tracking with taskwarrior timewarrior scripts write it how I would want it (did not like other tools) {{ }} If you have mastered [mouseless programming](https://themouseless.</description></item><item><title>Best Programming Quotes</title><link>https://ryanjennin.gs/posts/best-programming-quotes/</link><pubDate>Tue, 10 Apr 2012 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/best-programming-quotes/</guid><description>Quotes that relate to software engineering always humble me with their laser-like honesty. I&amp;rsquo;ve decided to keep a collection of my favorites here (in no particular order).</description></item></channel></rss>
+ file synchronization that follows symlinks keep package manager and system dependencies isolated from host reusable state that can also be persisted as a &amp;lsquo;sandcastle&amp;rsquo; for other sandboxes consistent user file permissions with the host better time tracking with taskwarrior timewarrior scripts write it how I would want it (did not like other tools)  {{ }} If you have mastered [mouseless programming](https://themouseless.</description>
+    </item>
+    
+    <item>
+      <title>Best Programming Quotes</title>
+      <link>https://ryanjennin.gs/posts/best-programming-quotes/</link>
+      <pubDate>Tue, 10 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/posts/best-programming-quotes/</guid>
+      <description>Quotes that relate to software engineering always humble me with their laser-like honesty. I&amp;rsquo;ve decided to keep a collection of my favorites here (in no particular order).</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,97 +1,233 @@
-<!doctype html><html lang=en-us>
+<!doctype html>
+<html lang="en-us">
+
 <head>
-<meta charset=utf-8>
-<meta http-equiv=x-ua-compatible content="ie=edge">
+  
+<meta charset="UTF-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
 <title>Deploy Docker Registry with Dokku</title>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=color-scheme content="dark light">
-<meta name=google-site-verification content="Crk6W-ckoApRrOZrv23ngLwPPTbzjzfZ4AQPElgS0pw">
-<meta name=description content="personal blog of an engineer, musician, and madman">
-<meta name=robots content="index, follow">
-<link rel=stylesheet href=/css/theme.min.css?t=1643269967999 type=text/css>
-<link href=/css/app.min.css?t=1643269967999 rel=stylesheet type=text/css>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+
+
+<meta name="google-site-verification" content="Crk6W-ckoApRrOZrv23ngLwPPTbzjzfZ4AQPElgS0pw" />
+<meta name="description" content="personal blog of an engineer, musician, and madman" />
+<meta name="robots" content="index, follow">
+
+
+<link rel="stylesheet" href="/css/theme.min.css?t=1652164505306" type="text/css">
+
+
+<link href="/css/app.min.css?t=1652164505306" rel="stylesheet" type="text/css">
+
+
+
 </head>
-<body class=letter>
-<header id=header class=shoulders>
-<nav class=navbar role=navigation aria-label="main navigation">
-<div class=navbar-brand>
-<a class=navbar-item href=/>
-<figure class="image is-32x32 mr-3">
-<img class=is-rounded src=/image/logo-profile.png alt=logo>
-</figure>
-ryan jennings
-</a>
-<a role=button class=navbar-burger aria-label=menu aria-expanded=false data-target=nav>
-<span aria-hidden=true></span>
-<span aria-hidden=true></span>
-<span aria-hidden=true></span>
-</a>
-</div>
-<div id=nav class=navbar-menu>
-<div class=navbar-end>
-<a class=navbar-item href=/posts>
-<span class="icon is-small mr-3"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#rss"/></svg>
+
+<body  class="letter" >
+  <header id="header" class="shoulders">
+    
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+
+    <a class="navbar-item" href="/">
+      <figure class="image is-32x32 mr-3">
+        <img class="is-rounded" src="/image/logo-profile.png" alt="logo">
+      </figure>
+      ryan jennings
+    </a>
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="nav">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div id="nav" class="navbar-menu">
+    
+    <div class="navbar-end">
+      
+
+
+
+
+
+
+
+
+
+
+
+    
+
+  
+
+     
+  <a class="navbar-item" href="/posts">
+    <span class="icon is-small mr-3">
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <use xlink:href="/fonts/solid.svg#rss"></use>
+  </svg>
 </span>
-blog
-</a>
-<a class=navbar-item href=/art>
-<span class="icon is-small mr-3"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#icons"/></svg>
+    blog
+  </a>
+
+
+  
+
+
+
+
+
+    
+
+  
+
+     
+  <a class="navbar-item" href="/art">
+    <span class="icon is-small mr-3">
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <use xlink:href="/fonts/solid.svg#icons"></use>
+  </svg>
 </span>
-art
-</a>
-<a class=navbar-item href=/things>
-<span class="icon is-small mr-3"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#object-ungroup"/></svg>
+    art
+  </a>
+
+
+  
+
+
+
+
+
+    
+
+  
+
+     
+  <a class="navbar-item" href="/things">
+    <span class="icon is-small mr-3">
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <use xlink:href="/fonts/solid.svg#object-ungroup"></use>
+  </svg>
 </span>
-things
-</a>
-<a class=navbar-item href=/about>
-<span class="icon is-small mr-3"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#info-circle"/></svg>
+    things
+  </a>
+
+
+  
+
+
+
+
+
+    
+
+  
+
+     
+  <a class="navbar-item" href="/about">
+    <span class="icon is-small mr-3">
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <use xlink:href="/fonts/solid.svg#info-circle"></use>
+  </svg>
 </span>
-about
-</a>
-<a role=button class="navbar-item themer" href=#>
-<span class="icon is-small"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#yin-yang"/></svg>
+    about
+  </a>
+
+
+  
+
+
+
+
+
+<a role="button" class="navbar-item themer" href="#">
+  <span class="icon is-small">
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <use xlink:href="/fonts/solid.svg#yin-yang"></use>
+  </svg>
 </span>
 </a>
-</div>
-</div>
+
+
+
+    </div>
+    
+  </div>
 </nav>
-</header>
-<section id=main class=abdomen>
-<nav class="breadcrumb ml-4 is-small" aria-label=breadcrumbs>
-<ul>
-<li>
-<a href=/>Home</a>
-</li>
-<li>
-<a href=/archive/>Blog Archives</a>
-</li>
-<li class=is-active>
-<a href=/archive/deploy-docker-registry-in-dokku/>Deploy Docker Registry With Dokku</a>
-</li>
-</ul>
+
+
+    
+  </header>
+
+  <section id="main" class="abdomen">
+    
+
+  
+<nav class="breadcrumb ml-4 is-small" aria-label="breadcrumbs">
+  <ul>
+    
+
+  
+    
+
+  
+    
+
+  
+
+  <li>
+      <a href="/">Home</a>
+  </li>
+
+
+  
+
+  <li>
+      <a href="/archive/">Blog Archives</a>
+  </li>
+
+
+  
+
+  <li class="is-active">
+      <a href="/archive/deploy-docker-registry-in-dokku/">Deploy Docker Registry With Dokku</a>
+  </li>
+
+
+  </ul>
 </nav>
-<div class=container>
-<h1 class=title>Deploy Docker Registry With Dokku</h1>
-<div class=content>
-<h2 id=prerequisites>Prerequisites</h2>
+
+
+
+
+
+  <div class="container">
+
+  
+  <h1 class="title">Deploy Docker Registry With Dokku</h1>
+  
+
+  <div class="content">
+    <h2 id="prerequisites">Prerequisites</h2>
 <p>You&rsquo;ll need to prepare a bit.</p>
 <hr>
 <ol>
 <li>A local path on the server to store registry data. For example: <code>/mydir/registry</code></li>
-<li><a href=https://www.docker.com/community-edition#/download>Docker</a> installed on the client and server machine</li>
-<li><a href=http://dokku.viewdocs.io/dokku/>Dokku</a> installed on the server</li>
+<li><a href="https://www.docker.com/community-edition#/download">Docker</a> installed on the client and server machine</li>
+<li><a href="http://dokku.viewdocs.io/dokku/">Dokku</a> installed on the server</li>
 </ol>
-<h3 id=for-authentication>For Authentication</h3>
+<h3 id="for-authentication">For Authentication</h3>
 <ol>
 <li>httpasswd command is installed</li>
 </ol>
-<h3 id=for-an-external-registry>For an External Registry</h3>
+<h3 id="for-an-external-registry">For an External Registry</h3>
 <ol>
-<li>Dokku <a href=https://github.com/dokku/dokku-letsencrypt>letsencrypt plugin</a> installed</li>
-<li>A working domain name pointing to the dokku app. For example, <em><a href=https://registry.mydomain.com>https://registry.mydomain.com</a></em></li>
+<li>Dokku <a href="https://github.com/dokku/dokku-letsencrypt">letsencrypt plugin</a> installed</li>
+<li>A working domain name pointing to the dokku app. For example, <em><a href="https://registry.mydomain.com">https://registry.mydomain.com</a></em></li>
 </ol>
-<h3 id=create-the-dokku-app>Create the dokku app</h3>
+<h3 id="create-the-dokku-app">Create the dokku app</h3>
 <p>Create the dokku app and retag a pre-existing repository image to it.
 To persist data, a volume is used.</p>
 <hr>
@@ -109,10 +245,10 @@ To persist data, a volume is used.</p>
 <p>Deploy the image to dokku: <code>dokku tags:deploy registry</code></p>
 </li>
 </ol>
-<h5 id=configure-the-app>Configure the app</h5>
+<h5 id="configure-the-app">Configure the app</h5>
 <ol>
 <li>
-<p>Configure the local storage directory for the registry: <code>dokku config:set --no-restart registry REGISTRY_STORAGE_FILESYSTEM_ROOTDIRECTORY="/container/dir/registry"</code></p>
+<p>Configure the local storage directory for the registry: <code>dokku config:set --no-restart registry REGISTRY_STORAGE_FILESYSTEM_ROOTDIRECTORY=&quot;/container/dir/registry&quot;</code></p>
 </li>
 <li>
 <p>Now add an application mount point for the local storage directory: <code>dokku storage:mount registry /mydir/registry:/container/dir/registry</code> <em>(note: the default container location is /var/lib/registry)</em></p>
@@ -124,7 +260,7 @@ To persist data, a volume is used.</p>
 <p>And and a new one pointing to the repository: <code>dokku proxy:ports-add registry 80:5000 5000:5000</code></p>
 </li>
 </ol>
-<h3 id=authorization>Authorization</h3>
+<h3 id="authorization">Authorization</h3>
 <p>Require a valid login to create a repository.</p>
 <hr>
 <ol>
@@ -132,13 +268,13 @@ To persist data, a volume is used.</p>
 <p>Create a directory for authorization data in the local application volume: <code>mkdir -p /mydir/registry/auth</code></p>
 </li>
 <li>
-<p>Create a username/password file: <code>htpasswd -Bn username > /mydir/registry/auth/htpasswd</code> <em>(will prompt for password)</em></p>
+<p>Create a username/password file: <code>htpasswd -Bn username &gt; /mydir/registry/auth/htpasswd</code> <em>(will prompt for password)</em></p>
 </li>
 <li>
-<p>Add configuration variables to dokku registry app: <code>dokku config:set --no-restart registry REGISTRY_AUTH=htpasswd REGISTRY_AUTH_HTPASSWD_REALM="My Registry" REGISTRY_AUTH_HTPASSWD_PATH=/container/dir/registry/auth/htpasswd</code></p>
+<p>Add configuration variables to dokku registry app: <code>dokku config:set --no-restart registry REGISTRY_AUTH=htpasswd REGISTRY_AUTH_HTPASSWD_REALM=&quot;My Registry&quot; REGISTRY_AUTH_HTPASSWD_PATH=/container/dir/registry/auth/htpasswd</code></p>
 </li>
 </ol>
-<h3 id=external-registry>External Registry</h3>
+<h3 id="external-registry">External Registry</h3>
 <p>To allow your registry to be remotely accessible.</p>
 <hr>
 <ol>
@@ -155,7 +291,7 @@ To persist data, a volume is used.</p>
 <p>And add a new port mapping to the repository: <code>dokku proxy:ports-add 443:5000</code></p>
 </li>
 </ol>
-<h3 id=testing>Testing</h3>
+<h3 id="testing">Testing</h3>
 <p>Does it work?</p>
 <hr>
 <ol>
@@ -163,13 +299,13 @@ To persist data, a volume is used.</p>
 <p>Restart the server: <code>dokku ps:restart registry</code></p>
 </li>
 <li>
-<p>You can test it by logging in from a remote machine (or local if not external facing): <code>docker login --username &lt;username> https://registry.mydomain.com</code></p>
+<p>You can test it by logging in from a remote machine (or local if not external facing): <code>docker login --username &lt;username&gt; https://registry.mydomain.com</code></p>
 </li>
 <li>
 <p>Retag an image: <code>docker tag myimage registry.mydomain.com/username/myimage</code> and push it: <code>docker push registry.mydomain.com/username/myimage</code></p>
 </li>
 </ol>
-<h4 id=gotchas>Gotchas</h4>
+<h4 id="gotchas">Gotchas</h4>
 <p>There is always at least one.</p>
 <hr>
 <p>NGINX by default will throw an HTTP 413 error if your image is too big. To fix that we have to disable the max HTTP body size.</p>
@@ -181,7 +317,7 @@ To persist data, a volume is used.</p>
 <p>In any server{} blocks add: <code>client_max_body_size 0;</code> which will disable the max body size limitation.</p>
 </li>
 </ol>
-<h4 id=conclusion>Conclusion</h4>
+<h4 id="conclusion">Conclusion</h4>
 <p>Super easy to get a private docker repository running on dokku. Why would you want to?</p>
 <ol>
 <li>Because you can</li>
@@ -190,25 +326,68 @@ To persist data, a volume is used.</p>
 <li>Control over your data from another country&rsquo;s jurisdiction</li>
 </ol>
 <p>For example, I have a docker image to run weechat with very customized configuration and only usable by me. I only want to run it on my server and attach to it when I need to.</p>
-</div>
-</div>
-</section>
-<footer id=footer class=legs>
+
+  </div>
+
+  
+
+
+
+  
+
+
+
+  </div>
+
+
+  </section>
+
+  <footer id="footer" class="legs">
+    
+
+
+
+
+
+
 <div class="has-text-centered content">
-<div class="is-flex is-align-items-center is-justify-content-center">
-<div class="has-text-centered m-3">
-<button id=themer class=themer type=button>enlighten</button>
+
+  <div class="is-flex is-align-items-center is-justify-content-center">
+    
+      <div class="has-text-centered m-3">
+        <button id="themer" class="themer" type="button">enlighten</button>
+      </div>
+    
+    <a href="https://github.com/ryjen/ryjen.github.io/issues/new">See an issue?</a>
+  </div>
+
+  <div class="copyright">
+    © all rights reserved, ryan jennings
+  </div>
+
 </div>
-<a href=https://github.com/ryjen/ryjen.github.io/issues/new>See an issue?</a>
-</div>
-<div class=copyright>
-© all rights reserved, ryan jennings
-</div>
-</div>
-</footer>
-<script src=/js/theme.min.js?t=1643269967999 defer></script>
-<script src=/js/app.min.js?t=1643269967999 defer></script>
-<script>window.goatcounter={path:function(a){return location.host+a}}</script>
-<script data-goatcounter=https://analytics.micrantha.com/count async src=//analytics.micrantha.com/count.js></script>
+
+  </footer>
+
+  
+<script src="/js/theme.min.js?t=1652164505306" defer></script>
+
+<script src="/js/app.min.js?t=1652164505306" defer></script>
+
+
+
+    <script>
+      window.goatcounter = {
+        path: function(p) { return location.host + p }
+      }
+    </script>
+  <script data-goatcounter="https://analytics.micrantha.com/count"
+          async src="//analytics.micrantha.com/count.js"></script>
+
+
+
+
+
 </body>
+
 </html>

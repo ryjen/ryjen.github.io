@@ -1,90 +1,226 @@
-<!doctype html><html lang=en-us>
+<!doctype html>
+<html lang="en-us">
+
 <head>
-<meta charset=utf-8>
-<meta http-equiv=x-ua-compatible content="ie=edge">
-<title>Hugo + Dokku + Wercker = Goodness</title>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=color-scheme content="dark light">
-<meta name=google-site-verification content="Crk6W-ckoApRrOZrv23ngLwPPTbzjzfZ4AQPElgS0pw">
-<meta name=description content="personal blog of an engineer, musician, and madman">
-<meta name=robots content="index, follow">
-<link rel=stylesheet href=/css/theme.min.css?t=1643269968002 type=text/css>
-<link href=/css/app.min.css?t=1643269968002 rel=stylesheet type=text/css>
+  
+<meta charset="UTF-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Hugo &#43; Dokku &#43; Wercker = Goodness</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+
+
+<meta name="google-site-verification" content="Crk6W-ckoApRrOZrv23ngLwPPTbzjzfZ4AQPElgS0pw" />
+<meta name="description" content="personal blog of an engineer, musician, and madman" />
+<meta name="robots" content="index, follow">
+
+
+<link rel="stylesheet" href="/css/theme.min.css?t=1652164505307" type="text/css">
+
+
+<link href="/css/app.min.css?t=1652164505307" rel="stylesheet" type="text/css">
+
+
+
 </head>
-<body class=letter>
-<header id=header class=shoulders>
-<nav class=navbar role=navigation aria-label="main navigation">
-<div class=navbar-brand>
-<a class=navbar-item href=/>
-<figure class="image is-32x32 mr-3">
-<img class=is-rounded src=/image/logo-profile.png alt=logo>
-</figure>
-ryan jennings
-</a>
-<a role=button class=navbar-burger aria-label=menu aria-expanded=false data-target=nav>
-<span aria-hidden=true></span>
-<span aria-hidden=true></span>
-<span aria-hidden=true></span>
-</a>
-</div>
-<div id=nav class=navbar-menu>
-<div class=navbar-end>
-<a class=navbar-item href=/posts>
-<span class="icon is-small mr-3"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#rss"/></svg>
+
+<body  class="letter" >
+  <header id="header" class="shoulders">
+    
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+
+    <a class="navbar-item" href="/">
+      <figure class="image is-32x32 mr-3">
+        <img class="is-rounded" src="/image/logo-profile.png" alt="logo">
+      </figure>
+      ryan jennings
+    </a>
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="nav">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div id="nav" class="navbar-menu">
+    
+    <div class="navbar-end">
+      
+
+
+
+
+
+
+
+
+
+
+
+    
+
+  
+
+     
+  <a class="navbar-item" href="/posts">
+    <span class="icon is-small mr-3">
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <use xlink:href="/fonts/solid.svg#rss"></use>
+  </svg>
 </span>
-blog
-</a>
-<a class=navbar-item href=/art>
-<span class="icon is-small mr-3"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#icons"/></svg>
+    blog
+  </a>
+
+
+  
+
+
+
+
+
+    
+
+  
+
+     
+  <a class="navbar-item" href="/art">
+    <span class="icon is-small mr-3">
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <use xlink:href="/fonts/solid.svg#icons"></use>
+  </svg>
 </span>
-art
-</a>
-<a class=navbar-item href=/things>
-<span class="icon is-small mr-3"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#object-ungroup"/></svg>
+    art
+  </a>
+
+
+  
+
+
+
+
+
+    
+
+  
+
+     
+  <a class="navbar-item" href="/things">
+    <span class="icon is-small mr-3">
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <use xlink:href="/fonts/solid.svg#object-ungroup"></use>
+  </svg>
 </span>
-things
-</a>
-<a class=navbar-item href=/about>
-<span class="icon is-small mr-3"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#info-circle"/></svg>
+    things
+  </a>
+
+
+  
+
+
+
+
+
+    
+
+  
+
+     
+  <a class="navbar-item" href="/about">
+    <span class="icon is-small mr-3">
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <use xlink:href="/fonts/solid.svg#info-circle"></use>
+  </svg>
 </span>
-about
-</a>
-<a role=button class="navbar-item themer" href=#>
-<span class="icon is-small"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#yin-yang"/></svg>
+    about
+  </a>
+
+
+  
+
+
+
+
+
+<a role="button" class="navbar-item themer" href="#">
+  <span class="icon is-small">
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <use xlink:href="/fonts/solid.svg#yin-yang"></use>
+  </svg>
 </span>
 </a>
-</div>
-</div>
+
+
+
+    </div>
+    
+  </div>
 </nav>
-</header>
-<section id=main class=abdomen>
-<nav class="breadcrumb ml-4 is-small" aria-label=breadcrumbs>
-<ul>
-<li>
-<a href=/>Home</a>
-</li>
-<li>
-<a href=/archive/>Blog Archives</a>
-</li>
-<li class=is-active>
-<a href=/archive/hugo-dokku-wercker-goodness/>Hugo + Dokku + Wercker = Goodness</a>
-</li>
-</ul>
+
+
+    
+  </header>
+
+  <section id="main" class="abdomen">
+    
+
+  
+<nav class="breadcrumb ml-4 is-small" aria-label="breadcrumbs">
+  <ul>
+    
+
+  
+    
+
+  
+    
+
+  
+
+  <li>
+      <a href="/">Home</a>
+  </li>
+
+
+  
+
+  <li>
+      <a href="/archive/">Blog Archives</a>
+  </li>
+
+
+  
+
+  <li class="is-active">
+      <a href="/archive/hugo-dokku-wercker-goodness/">Hugo &#43; Dokku &#43; Wercker = Goodness</a>
+  </li>
+
+
+  </ul>
 </nav>
-<div class=container>
-<h1 class=title>Hugo + Dokku + Wercker = Goodness</h1>
-<div class=content>
-<h2 id=hugohttpgohugoio><a href=http://gohugo.io>Hugo</a></h2>
+
+
+
+
+
+  <div class="container">
+
+  
+  <h1 class="title">Hugo &#43; Dokku &#43; Wercker = Goodness</h1>
+  
+
+  <div class="content">
+    <h2 id="hugohttpgohugoio"><a href="http://gohugo.io">Hugo</a></h2>
 <p>Hugo is a static site generator with many powerful features like archtypes, themes, customization, etc.</p>
-<p>Combined with tools like <a href=http://bower.io>bower</a> and <a href=http://brunch.io>brunch</a> it makes for a pretty powerful app that could be more than a blog.</p>
+<p>Combined with tools like <a href="http://bower.io">bower</a> and <a href="http://brunch.io">brunch</a> it makes for a pretty powerful app that could be more than a blog.</p>
 <p>The workflow is simple - build your assets with brunch, run the hugo generator.
 The end result is a complete static html site you can deploy.</p>
-<h3 id=dokkuhttpdokkuviewdocsiodokku><a href=http://dokku.viewdocs.io/dokku/>Dokku</a></h3>
-<p>Dokku has been great for running multiple small apps on a single <a href=http://digitialocean.com>digitalocean</a> droplet. The best part is its heroku buildpack compatible, so anything you can run on heroku you can deploy to dokku and more.</p>
-<h2 id=werckerhttpwerckercom><a href=http://wercker.com>Wercker</a></h2>
-<p>A continuous integration solution that is quite powerful and free. I&rsquo;m slowly migrating all my <a href=http://travis-ci.org>travisci</a> configurations.</p>
-<p>With a single wercker.yml config file, each git commit one can combine the static site generation and the deploy to dokku. Beautiful!</p>
-<h3 id=requirements>Requirements</h3>
+<h3 id="dokkuhttpdokkuviewdocsiodokku"><a href="http://dokku.viewdocs.io/dokku/">Dokku</a></h3>
+<p>Dokku has been great for running multiple small apps on a single <a href="http://digitialocean.com">digitalocean</a> droplet. The best part is its heroku buildpack compatible, so anything you can run on heroku you can deploy to dokku and more.</p>
+<h2 id="werckerhttpwerckercom"><a href="http://wercker.com">Wercker</a></h2>
+<p>A continuous integration solution that is quite powerful and free.  I&rsquo;m slowly migrating all my <a href="http://travis-ci.org">travisci</a> configurations.</p>
+<p>With a single wercker.yml config file, each git commit one can combine the static site generation and the deploy to dokku.  Beautiful!</p>
+<h3 id="requirements">Requirements</h3>
 <ul>
 <li>add the dokku git repo as a submodule called &ldquo;public&rdquo; which will contain the generated site</li>
 <li>create some dokku git environment variables in wercker config</li>
@@ -92,66 +228,109 @@ The end result is a complete static html site you can deploy.</p>
 <li>add the generated ssh key to the dokku acl list</li>
 </ul>
 <p>The wercker.yml file:</p>
-<div class=highlight><pre tabindex=0 style=color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-YAML data-lang=YAML><span style=font-weight:700>box</span>: digitallyseamless/nodejs-bower-grunt
-<span style=font-weight:700>build</span>:
-  <span style=font-weight:700>steps</span>:
-    - wercker/npm-install@1.1.4
-    - plasticine/bower-install@0.0.4
-    - <span style=font-weight:700>add-to-known-hosts</span>:
-        <span style=font-weight:700>hostname</span>: $GIT_DEPLOY_HOST
-    - <span style=font-weight:700>add-ssh-key</span>:
-        <span style=font-weight:700>keyname</span>: dokku
-    - <span style=font-weight:700>script</span>:
-        <span style=font-weight:700>name</span>: Initialize git submodules
-        <span style=font-weight:700>code</span>: |<span style=color:#0ff;font-weight:700>
-</span><span style=color:#0ff;font-weight:700>            </span>            git submodule update --init --recursive
-    - <span style=font-weight:700>script</span>:
-        <span style=font-weight:700>name</span>: Build assets
-        <span style=font-weight:700>code</span>: ./node_modules/.bin/brunch build
-    - <span style=font-weight:700>arjen/hugo-build</span>:
-        <span style=font-weight:700>version</span>: <span style=color:#0ff;font-weight:700>&#34;0.15&#34;</span>
-<span style=font-weight:700>deploy</span>:
-  <span style=font-weight:700>steps</span>:
-    - <span style=font-weight:700>add-to-known-hosts</span>:
-        <span style=font-weight:700>hostname</span>: $GIT_DEPLOY_HOST
-    - <span style=font-weight:700>add-ssh-key</span>:
-        <span style=font-weight:700>keyname</span>: dokku
-    - <span style=font-weight:700>script</span>:
-        <span style=font-weight:700>name</span>: push to dokku
-        <span style=font-weight:700>code</span>: |<span style=color:#0ff;font-weight:700>
-</span><span style=color:#0ff;font-weight:700>          cd ./public
-</span><span style=color:#0ff;font-weight:700>          git config user.email &#34;$GIT_USER_EMAIL&#34;
-</span><span style=color:#0ff;font-weight:700>          git config user.name &#34;$WERCKER_STARTED_BY&#34;
-</span><span style=color:#0ff;font-weight:700>          git config push.default simple
-</span><span style=color:#0ff;font-weight:700>          git add -A .
-</span><span style=color:#0ff;font-weight:700>          git commit -m &#34;deploy from wercker&#34;
-</span><span style=color:#0ff;font-weight:700>          git push origin HEAD:master</span>          
-</code></pre></div><h4 id=result>Result?</h4>
-<p>Can simply create a post and commit it. Once pushed, it will be deployed live.</p>
-<h4 id=improvements>Improvements?</h4>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-YAML" data-lang="YAML"><span style="display:flex;"><span><span style="font-weight:bold">box</span>: digitallyseamless/nodejs-bower-grunt
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">build</span>:
+</span></span><span style="display:flex;"><span>  <span style="font-weight:bold">steps</span>:
+</span></span><span style="display:flex;"><span>    - wercker/npm-install@1.1.4
+</span></span><span style="display:flex;"><span>    - plasticine/bower-install@0.0.4
+</span></span><span style="display:flex;"><span>    - <span style="font-weight:bold">add-to-known-hosts</span>:
+</span></span><span style="display:flex;"><span>        <span style="font-weight:bold">hostname</span>: $GIT_DEPLOY_HOST
+</span></span><span style="display:flex;"><span>    - <span style="font-weight:bold">add-ssh-key</span>:
+</span></span><span style="display:flex;"><span>        <span style="font-weight:bold">keyname</span>: dokku
+</span></span><span style="display:flex;"><span>    - <span style="font-weight:bold">script</span>:
+</span></span><span style="display:flex;"><span>        <span style="font-weight:bold">name</span>: Initialize git submodules
+</span></span><span style="display:flex;"><span>        <span style="font-weight:bold">code</span>: |<span style="color:#0ff;font-weight:bold">
+</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">            </span>            git submodule update --init --recursive
+</span></span><span style="display:flex;"><span>    - <span style="font-weight:bold">script</span>:
+</span></span><span style="display:flex;"><span>        <span style="font-weight:bold">name</span>: Build assets
+</span></span><span style="display:flex;"><span>        <span style="font-weight:bold">code</span>: ./node_modules/.bin/brunch build
+</span></span><span style="display:flex;"><span>    - <span style="font-weight:bold">arjen/hugo-build</span>:
+</span></span><span style="display:flex;"><span>        <span style="font-weight:bold">version</span>: <span style="color:#0ff;font-weight:bold">&#34;0.15&#34;</span>
+</span></span><span style="display:flex;"><span><span style="font-weight:bold">deploy</span>:
+</span></span><span style="display:flex;"><span>  <span style="font-weight:bold">steps</span>:
+</span></span><span style="display:flex;"><span>    - <span style="font-weight:bold">add-to-known-hosts</span>:
+</span></span><span style="display:flex;"><span>        <span style="font-weight:bold">hostname</span>: $GIT_DEPLOY_HOST
+</span></span><span style="display:flex;"><span>    - <span style="font-weight:bold">add-ssh-key</span>:
+</span></span><span style="display:flex;"><span>        <span style="font-weight:bold">keyname</span>: dokku
+</span></span><span style="display:flex;"><span>    - <span style="font-weight:bold">script</span>:
+</span></span><span style="display:flex;"><span>        <span style="font-weight:bold">name</span>: push to dokku
+</span></span><span style="display:flex;"><span>        <span style="font-weight:bold">code</span>: |<span style="color:#0ff;font-weight:bold">
+</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">          cd ./public
+</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">          git config user.email &#34;$GIT_USER_EMAIL&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">          git config user.name &#34;$WERCKER_STARTED_BY&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">          git config push.default simple
+</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">          git add -A .
+</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">          git commit -m &#34;deploy from wercker&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#0ff;font-weight:bold">          git push origin HEAD:master</span>          
+</span></span></code></pre></div><h4 id="result">Result?</h4>
+<p>Can simply create a post and commit it.  Once pushed, it will be deployed live.</p>
+<h4 id="improvements">Improvements?</h4>
 <ul>
 <li>Create a test suite to run in wercker as well.</li>
 <li>Devise a way to create a blog post on mobile</li>
 </ul>
-</div>
-</div>
-</section>
-<footer id=footer class=legs>
+
+  </div>
+
+  
+
+
+
+  
+
+
+
+  </div>
+
+
+  </section>
+
+  <footer id="footer" class="legs">
+    
+
+
+
+
+
+
 <div class="has-text-centered content">
-<div class="is-flex is-align-items-center is-justify-content-center">
-<div class="has-text-centered m-3">
-<button id=themer class=themer type=button>enlighten</button>
+
+  <div class="is-flex is-align-items-center is-justify-content-center">
+    
+      <div class="has-text-centered m-3">
+        <button id="themer" class="themer" type="button">enlighten</button>
+      </div>
+    
+    <a href="https://github.com/ryjen/ryjen.github.io/issues/new">See an issue?</a>
+  </div>
+
+  <div class="copyright">
+    © all rights reserved, ryan jennings
+  </div>
+
 </div>
-<a href=https://github.com/ryjen/ryjen.github.io/issues/new>See an issue?</a>
-</div>
-<div class=copyright>
-© all rights reserved, ryan jennings
-</div>
-</div>
-</footer>
-<script src=/js/theme.min.js?t=1643269968002 defer></script>
-<script src=/js/app.min.js?t=1643269968002 defer></script>
-<script>window.goatcounter={path:function(a){return location.host+a}}</script>
-<script data-goatcounter=https://analytics.micrantha.com/count async src=//analytics.micrantha.com/count.js></script>
+
+  </footer>
+
+  
+<script src="/js/theme.min.js?t=1652164505307" defer></script>
+
+<script src="/js/app.min.js?t=1652164505307" defer></script>
+
+
+
+    <script>
+      window.goatcounter = {
+        path: function(p) { return location.host + p }
+      }
+    </script>
+  <script data-goatcounter="https://analytics.micrantha.com/count"
+          async src="//analytics.micrantha.com/count.js"></script>
+
+
+
+
+
 </body>
+
 </html>

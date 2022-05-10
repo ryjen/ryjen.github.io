@@ -1,5 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>golang on Home</title><link>https://ryanjennin.gs/tags/golang/</link><description>Recent content in golang on Home</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 29 Jul 2021 20:09:25 -0700</lastBuildDate><atom:link href="https://ryanjennin.gs/tags/golang/index.xml" rel="self" type="application/rss+xml"/><item><title>Sandbox Demo</title><link>https://ryanjennin.gs/posts/sandcastle-util-demo/</link><pubDate>Thu, 29 Jul 2021 20:09:25 -0700</pubDate><guid>https://ryanjennin.gs/posts/sandcastle-util-demo/</guid><description>A utility from Micrantha for creating reusable isolated development environments.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>golang on Home</title>
+    <link>https://ryanjennin.gs/tags/golang/</link>
+    <description>Recent content in golang on Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 29 Jul 2021 20:09:25 -0700</lastBuildDate><atom:link href="https://ryanjennin.gs/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sandbox Demo</title>
+      <link>https://ryanjennin.gs/posts/sandcastle-util-demo/</link>
+      <pubDate>Thu, 29 Jul 2021 20:09:25 -0700</pubDate>
+      
+      <guid>https://ryanjennin.gs/posts/sandcastle-util-demo/</guid>
+      <description>A utility from Micrantha for creating reusable isolated development environments.
 This is basically an easy to use abstraction around docker with some extra perks.
-file synchronization that follows symlinks keep package manager and system dependencies isolated from host reusable state that can also be persisted as a &amp;lsquo;sandcastle&amp;rsquo; for other sandboxes consistent user file permissions with the host better time tracking with taskwarrior timewarrior scripts write it how I would want it (did not like other tools) {{ }} If you have mastered [mouseless programming](https://themouseless.</description></item><item><title>Fortunes on Slack</title><link>https://ryanjennin.gs/posts/fortunes-microservice/</link><pubDate>Mon, 22 Jan 2018 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/fortunes-microservice/</guid><description>view the service homepage
+ file synchronization that follows symlinks keep package manager and system dependencies isolated from host reusable state that can also be persisted as a &amp;lsquo;sandcastle&amp;rsquo; for other sandboxes consistent user file permissions with the host better time tracking with taskwarrior timewarrior scripts write it how I would want it (did not like other tools)  {{ }} If you have mastered [mouseless programming](https://themouseless.</description>
+    </item>
+    
+    <item>
+      <title>Fortunes on Slack</title>
+      <link>https://ryanjennin.gs/posts/fortunes-microservice/</link>
+      <pubDate>Mon, 22 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://ryanjennin.gs/posts/fortunes-microservice/</guid>
+      <description>view the service homepage
 Introduction Have always enjoyed the UNIX fortunes program, ever since I was a wee newbie. If you aren&amp;rsquo;t familiar with it (sad), yes, its like a fortune cookie.
-It can be more technical in nature but not always.</description></item></channel></rss>
+It can be more technical in nature but not always.</description>
+    </item>
+    
+  </channel>
+</rss>

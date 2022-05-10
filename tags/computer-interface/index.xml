@@ -1,2 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>computer interface on Home</title><link>https://ryanjennin.gs/tags/computer-interface/</link><description>Recent content in computer interface on Home</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 19 Jan 2021 15:08:38 -0800</lastBuildDate><atom:link href="https://ryanjennin.gs/tags/computer-interface/index.xml" rel="self" type="application/rss+xml"/><item><title>Alternate Keyboard</title><link>https://ryanjennin.gs/posts/alternate-keyboard/</link><pubDate>Tue, 19 Jan 2021 15:08:38 -0800</pubDate><guid>https://ryanjennin.gs/posts/alternate-keyboard/</guid><description>Decided to switch to using a alternate keyboard layout, not too long ago&amp;hellip;. Well I guess it has been a couple of years now. But I love it.
-Always heard about others using the Dvorak keyboard layout and thought, &amp;ldquo;boy that is really neat, but too much work to change&amp;rdquo;.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>computer interface on Home</title>
+    <link>https://ryanjennin.gs/tags/computer-interface/</link>
+    <description>Recent content in computer interface on Home</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 19 Jan 2021 15:08:38 -0800</lastBuildDate><atom:link href="https://ryanjennin.gs/tags/computer-interface/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Alternate Keyboard</title>
+      <link>https://ryanjennin.gs/posts/alternate-keyboard/</link>
+      <pubDate>Tue, 19 Jan 2021 15:08:38 -0800</pubDate>
+      
+      <guid>https://ryanjennin.gs/posts/alternate-keyboard/</guid>
+      <description>Decided to switch to using a alternate keyboard layout, not too long ago&amp;hellip;. Well I guess it has been a couple of years now. But I love it.
+Always heard about others using the Dvorak keyboard layout and thought, &amp;ldquo;boy that is really neat, but too much work to change&amp;rdquo;.</description>
+    </item>
+    
+  </channel>
+</rss>
