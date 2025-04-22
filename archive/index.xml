@@ -1,9 +1,58 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog Archives on Home</title><link>https://ryanjennin.gs/archive/</link><description>Recent content in Blog Archives on Home</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 19 Feb 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://ryanjennin.gs/archive/index.xml" rel="self" type="application/rss+xml"/><item><title>Deploy Docker Registry with Dokku</title><link>https://ryanjennin.gs/archive/deploy-docker-registry-in-dokku/</link><pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/archive/deploy-docker-registry-in-dokku/</guid><description>Prerequisites You&amp;rsquo;ll need to prepare a bit.
-A local path on the server to store registry data. For example: /mydir/registry Docker installed on the client and server machine Dokku installed on the server For Authentication httpasswd command is installed For an External Registry Dokku letsencrypt plugin installed A working domain name pointing to the dokku app.</description></item><item><title>Microsoft Dev Stack on macOS</title><link>https://ryanjennin.gs/archive/microsoft-dev-stack-macos/</link><pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/archive/microsoft-dev-stack-macos/</guid><description>Gonna evangelize a little bit.
-When Microsoft bought Xamarin, they did not underestimate the power of Xamarin.Forms for building cross platform UIs. Now with the release of Visual Studio for macOS and the Dotnet Core, its looks like its going to stay alive.</description></item><item><title>Hugo + Dokku + Wercker = Goodness</title><link>https://ryanjennin.gs/archive/hugo-dokku-wercker-goodness/</link><pubDate>Wed, 22 Jun 2016 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/archive/hugo-dokku-wercker-goodness/</guid><description>Hugo Hugo is a static site generator with many powerful features like archtypes, themes, customization, etc.
-Combined with tools like bower and brunch it makes for a pretty powerful app that could be more than a blog.
-The workflow is simple - build your assets with brunch, run the hugo generator.</description></item><item><title>c hacking: polymorphing 2</title><link>https://ryanjennin.gs/archive/c-hacking-polymoriphing-2/</link><pubDate>Wed, 02 Dec 2015 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/archive/c-hacking-polymoriphing-2/</guid><description>While working on cparse I found another nifty way to sort of simulate polymorphism.
-cparse Another exercise in futility, a C implementation for the REST api at parse.com. Really the core of it is a web client and an object structure using json.</description></item><item><title>Poor Man's Polymorphism</title><link>https://ryanjennin.gs/archive/poor-man-s-polymorphism/</link><pubDate>Fri, 30 Nov 2012 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/archive/poor-man-s-polymorphism/</guid><description>Found out that C structs can be casted between each other if the field types and ordering are the same. It is not portable code, but you can start too see how and why the virtual table and object oriented programming evolved in c++.</description></item><item><title>Crafting a Game With CraftyJS</title><link>https://ryanjennin.gs/archive/crafting-a-game-with-craftyjs/</link><pubDate>Sat, 17 Nov 2012 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/archive/crafting-a-game-with-craftyjs/</guid><description>Introduction Briefly going to mention a javascript game engine called CraftyJS that I&amp;rsquo;ve been playing with the past couple of days.
-Has the usual suspects like Entity Component System, Collision, Sprite Maps, etc.
-The Project Amos the Alien is a small demo I made.</description></item><item><title>C Sqlite Tricks</title><link>https://ryanjennin.gs/archive/c-sqlite-tricks/</link><pubDate>Tue, 15 May 2012 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/archive/c-sqlite-tricks/</guid><description>Introduction Thought I would share some tricks I use for easy data CRUD&amp;rsquo;s in C. I&amp;rsquo;m using Sqlite here, but could apply to any database.
-Not saying its the best approach at all (nor ryjen/db), this is just how it evolved for me.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blog Archives on Home</title><link>https://ryanjennin.gs/archive/</link><description>Recent content in Blog Archives on Home</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 29 Jul 2021 20:09:25 -0700</lastBuildDate><atom:link href="https://ryanjennin.gs/archive/index.xml" rel="self" type="application/rss+xml"/><item><title>Sandbox Demo</title><link>https://ryanjennin.gs/archive/sandcastle-util-demo/</link><pubDate>Thu, 29 Jul 2021 20:09:25 -0700</pubDate><guid>https://ryanjennin.gs/archive/sandcastle-util-demo/</guid><description>&lt;p>A utility from &lt;a href="https://micrantha.com">Micrantha&lt;/a> for creating &lt;a href="https://hackelia-micrantha.github.io/sandbox/">reusable isolated development
+environments&lt;/a>.&lt;/p>
+&lt;p>This is basically an easy to use abstraction around &lt;a href="https://docker.com">docker&lt;/a> with some extra perks.&lt;/p>
+&lt;ul>
+&lt;li>file synchronization that follows symlinks&lt;/li>
+&lt;li>keep package manager and system dependencies isolated from host&lt;/li>
+&lt;li>reusable state that can also be persisted as a &amp;lsquo;sandcastle&amp;rsquo; for other sandboxes&lt;/li>
+&lt;li>consistent user file permissions with the host&lt;/li>
+&lt;li>better time tracking with &lt;a href="https://taskwarrior.org/">taskwarrior&lt;/a> timewarrior scripts&lt;/li>
+&lt;li>write it how I would want it (did not like other tools)
+
+
+
+ &lt;br>&lt;br>
+ &lt;video controls>
+ &lt;source src="https://ryanjennin.gs/video/sandbox_demo.mp4" type=video/mp4>
+ &lt;/video>
+
+ &lt;br>&lt;br>
+ &lt;/li>
+&lt;/ul>
+&lt;p>If you have mastered &lt;a href="https://themouseless.dev/">mouseless programming&lt;/a> for whatever reason you will like this tool.&lt;/p></description></item><item><title>modd: daemon for reloading</title><link>https://ryanjennin.gs/archive/modd-live-coding/</link><pubDate>Sun, 10 Jan 2021 14:46:43 -0800</pubDate><guid>https://ryanjennin.gs/archive/modd-live-coding/</guid><description>&lt;p>One of my favourite tools now is &lt;a href="https://github.com/cortesi/modd">modd&lt;/a>.&lt;/p>
+&lt;p>Why is it so great? It &lt;strong>does one job, and it does it well&lt;/strong>, in proper unix fashion.&lt;/p>
+&lt;p>Monitoring a file-system and running a daemon that reloads if anything changes.&lt;/p>
+&lt;p>Also in proper Unix fashion, the daemon is sent a configurable &lt;code>SIGHUP&lt;/code> when a file changes.&lt;/p></description></item><item><title>Deploy Docker Registry with Dokku</title><link>https://ryanjennin.gs/archive/deploy-docker-registry-in-dokku/</link><pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/archive/deploy-docker-registry-in-dokku/</guid><description>&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
+&lt;p>You&amp;rsquo;ll need to prepare a bit.&lt;/p>
+&lt;hr>
+&lt;ol>
+&lt;li>A local path on the server to store registry data. For example: &lt;code>/mydir/registry&lt;/code>&lt;/li>
+&lt;li>&lt;a href="https://www.docker.com/community-edition#/download">Docker&lt;/a> installed on the client and server machine&lt;/li>
+&lt;li>&lt;a href="http://dokku.viewdocs.io/dokku/">Dokku&lt;/a> installed on the server&lt;/li>
+&lt;/ol>
+&lt;h3 id="for-authentication">For Authentication&lt;/h3>
+&lt;ol>
+&lt;li>httpasswd command is installed&lt;/li>
+&lt;/ol>
+&lt;h3 id="for-an-external-registry">For an External Registry&lt;/h3>
+&lt;ol>
+&lt;li>Dokku &lt;a href="https://github.com/dokku/dokku-letsencrypt">letsencrypt plugin&lt;/a> installed&lt;/li>
+&lt;li>A working domain name pointing to the dokku app. For example, &lt;em>&lt;a href="https://registry.mydomain.com">https://registry.mydomain.com&lt;/a>&lt;/em>&lt;/li>
+&lt;/ol>
+&lt;h3 id="create-the-dokku-app">Create the dokku app&lt;/h3>
+&lt;p>Create the dokku app and retag a pre-existing repository image to it.
+To persist data, a volume is used.&lt;/p></description></item><item><title>Microsoft Dev Stack on macOS</title><link>https://ryanjennin.gs/archive/microsoft-dev-stack-macos/</link><pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/archive/microsoft-dev-stack-macos/</guid><description>&lt;p>Gonna evangelize a little bit.&lt;/p>
+&lt;p>When &lt;a href="http://microsoft.com">Microsoft&lt;/a> bought Xamarin, they did not underestimate the power of &lt;a href="https://www.xamarin.com/forms">Xamarin.Forms&lt;/a> for building cross platform UIs. Now with the release of Visual Studio for macOS and the Dotnet Core, its looks like its going to stay alive.&lt;/p></description></item><item><title>Hugo + Dokku + Wercker = Goodness</title><link>https://ryanjennin.gs/archive/hugo-dokku-wercker-goodness/</link><pubDate>Wed, 22 Jun 2016 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/archive/hugo-dokku-wercker-goodness/</guid><description>&lt;h2 id="hugo">&lt;a href="http://gohugo.io">Hugo&lt;/a>&lt;/h2>
+&lt;p>Hugo is a static site generator with many powerful features like archtypes, themes, customization, etc.&lt;/p>
+&lt;p>Combined with tools like &lt;a href="http://bower.io">bower&lt;/a> and &lt;a href="http://brunch.io">brunch&lt;/a> it makes for a pretty powerful app that could be more than a blog.&lt;/p>
+&lt;p>The workflow is simple - build your assets with brunch, run the hugo generator.
+The end result is a complete static html site you can deploy.&lt;/p></description></item><item><title>c hacking: polymorphing 2</title><link>https://ryanjennin.gs/archive/c-hacking-polymoriphing-2/</link><pubDate>Wed, 02 Dec 2015 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/archive/c-hacking-polymoriphing-2/</guid><description>&lt;p>While working on &lt;a href="http://github.com/ryjen/cparse">cparse&lt;/a> I found another nifty way to sort of simulate polymorphism.&lt;/p>
+&lt;h1 id="cparse">cparse&lt;/h1>
+&lt;p>Another exercise in futility, a C implementation for the REST api at &lt;a href="http://parse.com">parse.com&lt;/a>. Really the core of it is a web client and an object structure using json.&lt;/p></description></item><item><title>Poor Man's Polymorphism</title><link>https://ryanjennin.gs/archive/poor-man-s-polymorphism/</link><pubDate>Fri, 30 Nov 2012 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/archive/poor-man-s-polymorphism/</guid><description>&lt;p>Found out that C structs can be casted between each other if the &lt;strong>field types and ordering are the same&lt;/strong>. It is not portable code, but you can start too see how and why the virtual table and object oriented programming evolved in c++.&lt;/p></description></item><item><title>Crafting a Game With CraftyJS</title><link>https://ryanjennin.gs/archive/crafting-a-game-with-craftyjs/</link><pubDate>Sat, 17 Nov 2012 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/archive/crafting-a-game-with-craftyjs/</guid><description>&lt;h4 id="introduction">Introduction&lt;/h4>
+&lt;p>Briefly going to mention a javascript game engine called &lt;a href="http://craftyjs.com/">CraftyJS&lt;/a> that I&amp;rsquo;ve been playing with the past couple of days.&lt;/p>
+&lt;p>Has the usual suspects like Entity Component System, Collision, Sprite Maps, etc.&lt;/p>
+&lt;h4 id="the-project">The Project&lt;/h4>
+&lt;p>&lt;a href="https://amos.coda.life">&lt;img src="https://ryanjennin.gs/image/blog/amos_the_alien.png" alt="Amos the Alien">&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://amos.coda.life">Amos the Alien&lt;/a> is a small demo I made.&lt;/p></description></item><item><title>C Sqlite Tricks</title><link>https://ryanjennin.gs/archive/c-sqlite-tricks/</link><pubDate>Tue, 15 May 2012 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/archive/c-sqlite-tricks/</guid><description>&lt;h4 id="introduction">Introduction&lt;/h4>
+&lt;p>Thought I would share some tricks I use for easy data CRUD&amp;rsquo;s in C. I&amp;rsquo;m using Sqlite here, but could apply to any database.&lt;/p>
+&lt;p>Not saying its the best approach at all (nor &lt;a href="https://github.com/ryjen/db">ryjen/db&lt;/a>), this is just how it evolved for me.&lt;/p></description></item></channel></rss>

@@ -1,6 +1,44 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>docker on Home</title><link>https://ryanjennin.gs/tags/docker/</link><description>Recent content in docker on Home</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 29 Jul 2021 20:09:25 -0700</lastBuildDate><atom:link href="https://ryanjennin.gs/tags/docker/index.xml" rel="self" type="application/rss+xml"/><item><title>Sandbox Demo</title><link>https://ryanjennin.gs/posts/sandcastle-util-demo/</link><pubDate>Thu, 29 Jul 2021 20:09:25 -0700</pubDate><guid>https://ryanjennin.gs/posts/sandcastle-util-demo/</guid><description>A utility from Micrantha for creating reusable isolated development environments.
-This is basically an easy to use abstraction around docker with some extra perks.
-file synchronization that follows symlinks keep package manager and system dependencies isolated from host reusable state that can also be persisted as a &amp;lsquo;sandcastle&amp;rsquo; for other sandboxes consistent user file permissions with the host better time tracking with taskwarrior timewarrior scripts write it how I would want it (did not like other tools) {{ }} If you have mastered [mouseless programming](https://themouseless.</description></item><item><title>Deploy Docker Registry with Dokku</title><link>https://ryanjennin.gs/archive/deploy-docker-registry-in-dokku/</link><pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/archive/deploy-docker-registry-in-dokku/</guid><description>Prerequisites You&amp;rsquo;ll need to prepare a bit.
-A local path on the server to store registry data. For example: /mydir/registry Docker installed on the client and server machine Dokku installed on the server For Authentication httpasswd command is installed For an External Registry Dokku letsencrypt plugin installed A working domain name pointing to the dokku app.</description></item><item><title>Fortunes on Slack</title><link>https://ryanjennin.gs/posts/fortunes-microservice/</link><pubDate>Mon, 22 Jan 2018 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/fortunes-microservice/</guid><description>view the service homepage
-Introduction Have always enjoyed the UNIX fortunes program, ever since I was a wee newbie. If you aren&amp;rsquo;t familiar with it (sad), yes, its like a fortune cookie.
-It can be more technical in nature but not always.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docker on Home</title><link>https://ryanjennin.gs/tags/docker/</link><description>Recent content in Docker on Home</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 29 Jul 2021 20:09:25 -0700</lastBuildDate><atom:link href="https://ryanjennin.gs/tags/docker/index.xml" rel="self" type="application/rss+xml"/><item><title>Sandbox Demo</title><link>https://ryanjennin.gs/archive/sandcastle-util-demo/</link><pubDate>Thu, 29 Jul 2021 20:09:25 -0700</pubDate><guid>https://ryanjennin.gs/archive/sandcastle-util-demo/</guid><description>&lt;p>A utility from &lt;a href="https://micrantha.com">Micrantha&lt;/a> for creating &lt;a href="https://hackelia-micrantha.github.io/sandbox/">reusable isolated development
+environments&lt;/a>.&lt;/p>
+&lt;p>This is basically an easy to use abstraction around &lt;a href="https://docker.com">docker&lt;/a> with some extra perks.&lt;/p>
+&lt;ul>
+&lt;li>file synchronization that follows symlinks&lt;/li>
+&lt;li>keep package manager and system dependencies isolated from host&lt;/li>
+&lt;li>reusable state that can also be persisted as a &amp;lsquo;sandcastle&amp;rsquo; for other sandboxes&lt;/li>
+&lt;li>consistent user file permissions with the host&lt;/li>
+&lt;li>better time tracking with &lt;a href="https://taskwarrior.org/">taskwarrior&lt;/a> timewarrior scripts&lt;/li>
+&lt;li>write it how I would want it (did not like other tools)
+
+
+
+ &lt;br>&lt;br>
+ &lt;video controls>
+ &lt;source src="https://ryanjennin.gs/video/sandbox_demo.mp4" type=video/mp4>
+ &lt;/video>
+
+ &lt;br>&lt;br>
+ &lt;/li>
+&lt;/ul>
+&lt;p>If you have mastered &lt;a href="https://themouseless.dev/">mouseless programming&lt;/a> for whatever reason you will like this tool.&lt;/p></description></item><item><title>Deploy Docker Registry with Dokku</title><link>https://ryanjennin.gs/archive/deploy-docker-registry-in-dokku/</link><pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/archive/deploy-docker-registry-in-dokku/</guid><description>&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
+&lt;p>You&amp;rsquo;ll need to prepare a bit.&lt;/p>
+&lt;hr>
+&lt;ol>
+&lt;li>A local path on the server to store registry data. For example: &lt;code>/mydir/registry&lt;/code>&lt;/li>
+&lt;li>&lt;a href="https://www.docker.com/community-edition#/download">Docker&lt;/a> installed on the client and server machine&lt;/li>
+&lt;li>&lt;a href="http://dokku.viewdocs.io/dokku/">Dokku&lt;/a> installed on the server&lt;/li>
+&lt;/ol>
+&lt;h3 id="for-authentication">For Authentication&lt;/h3>
+&lt;ol>
+&lt;li>httpasswd command is installed&lt;/li>
+&lt;/ol>
+&lt;h3 id="for-an-external-registry">For an External Registry&lt;/h3>
+&lt;ol>
+&lt;li>Dokku &lt;a href="https://github.com/dokku/dokku-letsencrypt">letsencrypt plugin&lt;/a> installed&lt;/li>
+&lt;li>A working domain name pointing to the dokku app. For example, &lt;em>&lt;a href="https://registry.mydomain.com">https://registry.mydomain.com&lt;/a>&lt;/em>&lt;/li>
+&lt;/ol>
+&lt;h3 id="create-the-dokku-app">Create the dokku app&lt;/h3>
+&lt;p>Create the dokku app and retag a pre-existing repository image to it.
+To persist data, a volume is used.&lt;/p></description></item><item><title>Fortunes on Slack</title><link>https://ryanjennin.gs/posts/fortunes-microservice/</link><pubDate>Mon, 22 Jan 2018 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/fortunes-microservice/</guid><description>&lt;p>&lt;a href="https://fortunes.micrantha.com">view the service homepage&lt;/a>&lt;/p>
+&lt;h4 id="introduction">Introduction&lt;/h4>
+&lt;p>Have always enjoyed the &lt;a href="https://en.wikipedia.org/wiki/Fortune_%28Unix%29">UNIX fortunes&lt;/a> program, ever since I was a wee &lt;a href="https://en.wikipedia.org/wiki/Newbie">newbie&lt;/a>. If you aren&amp;rsquo;t familiar with it (sad), yes, its like a fortune cookie.&lt;/p>
+&lt;p>It can be more technical in nature but not always. It also has poems, quotations, and if enabled - offensive content.&lt;/p></description></item></channel></rss>

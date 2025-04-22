@@ -1,0 +1,142 @@
+<!doctype html><html lang=en-us><head><meta charset=UTF-8><meta http-equiv=x-ua-compatible content="ie=edge"><title>Friday Frida Hacking without the Why</title>
+<meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="dark light"><meta name=google-site-verification content="Crk6W-ckoApRrOZrv23ngLwPPTbzjzfZ4AQPElgS0pw"><meta name=description content="Web logs of a software development engineer, musician, artist and hockey player."><meta name=robots content="index, follow"><link rel=stylesheet href=/css/theme.min.css type=text/css><link href=/css/app.min.css rel=stylesheet type=text/css></head><body id=dark><header id=header class=shoulders><nav class=navbar role=navigation aria-label="main navigation"><div class=navbar-brand><a class=navbar-item href=/><figure class="image is-32x32 mr-3"><img class=is-rounded src=https://gravatar.com/avatar/7cb4299e74a72928a9f05e8e910f07d5 alt=logo></figure>ryan jennings
+</a><a role=button class=navbar-burger aria-label=menu aria-expanded=false data-target=nav><span aria-hidden=true></span>
+<span aria-hidden=true></span>
+<span aria-hidden=true></span></a></div><div id=nav class=navbar-menu><div class=navbar-end><a class=navbar-item href=/posts><span class="icon is-small mr-3"><svg xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#rss"/></svg>
+</span>blog
+</a><a class=navbar-item href=/art><span class="icon is-small mr-3"><svg xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#icons"/></svg>
+</span>art
+</a><a class=navbar-item href=/things><span class="icon is-small mr-3"><svg xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#object-ungroup"/></svg>
+</span>things
+</a><a class=navbar-item href=/about><span class="icon is-small mr-3"><svg xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#info-circle"/></svg>
+</span>about</a><div class="is-flex is-align-items-center"><a role=button class=navbar-item href=https://github.com/ryjen aria-label=github><span class="icon is-small"><svg xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/brands.svg#github"/></svg>
+</span></a><a role=button class=navbar-item href=/resume aria-label=resume><span class="icon is-small"><svg xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#file"/></svg>
+</span></a><a role=button class="navbar-item themer" href=# aria-label=theme><span class="icon is-small"><svg xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#yin-yang"/></svg></span></a></div></div></div></nav></header><section id=main class=abdomen><div class="container pb-6"><nav class=breadcrumb aria-label=breadcrumbs><ul><li><a href=/>Home</a></li><li><a href=/posts/>Blog</a></li><li class=is-active><a href=/posts/friday-frida-hack/>Friday Frida Hacking Without the Why</a></li></ul></nav></div><div class=container><h1 class=title>Friday Frida Hacking Without the Why</h1><div class=content><p>A brief but somewhat fun introduction to compromising data integrity on an Android
+application. **</p><p>This article will give an overview of setting up a rooted Android emulator,
+installing a tool called Frida, creating Frida scripts to intercept code at runtime,
+and replacing data in an application.</p><h2 id=the-pirate-ship-rooted-emulator>The Pirate Ship: Rooted Emulator</h2><p>Though possible to hack without, having a rooted device or emulator image
+is essential to using frida effectively.</p><p>Frida&rsquo;s tools communicate with a server running on a device to enable hooking
+into code at runtime.</p><p>The modes of operation and installation on devices are:</p><ol><li><p>Injected on the device filesystem (requiring rooted/jailbroken access)</p></li><li><p>Embedded a gadget inside the application (repacking)</p></li></ol><p>Repackaging an application and embedding a frida gadget is possible but can be
+more error prone. Rooting and android emulator is easy and risk free.</p><h3 id=its-magisk>It&rsquo;s Magisk</h3><p><a href=https://github.com/topjohnwu/Magisk>Magisk</a> is common tool used to provide root access in android devices.</p><p>Magisk has a <a href=https://github.com/shakalaca/MagiskOnEmulator>github repository</a>
+for installing on an emulator specifically.
+The instructions are straight forward (some minor manual steps), so in summary:</p><ol><li>backup your emulator <code>ramdisk.img</code></li><li>use the repo to patch the running emulator</li><li>move the resulting patched <code>ramdisk.img</code> back to the emulator location</li></ol><p>You can check that the device has been rooted inside the magisk app or with a root
+check application.</p><h3 id=frida>Frida</h3><p><a href=https://frida.re/>Frida</a> is a suite of tools that provides an API for
+dynamically instrumenting code in native applications.</p><p>Installing frida on the host system is as simple as <code>pip install frida-tools</code>.
+Installing frida server on our rooted device means obtaining a binary for the
+platform architecture, copying and running.</p><p><a href=https://github.com/dineshshetty/FridaLoader>Frida Loader</a> is an android
+application that will manage that for you. Grab the APK from the
+<a href=https://github.com/dineshshetty/FridaLoader/releases/tag/v3>latest release</a>
+and install with <code>adb install</code>.</p><p>When you run the launcher it will give you an option to download,
+install and run the latest and greatest.</p><p>To check the server is functioning first find the device <code>frida-ls-devices</code>
+should return something like:</p><pre tabindex=0><code>Id             Type    Name
+-------------  ------  ---------------------
+local          local   Local System
+emulator-5554  usb     Android Emulator 5554
+socket         remote  Local Socket
+</code></pre><p>To view a list of process on the device use <code>frida-ps -D emulator-5554</code>
+or <code>frida-ps -U</code> for the USB device.</p><h2 id=hooking-treasure-targeting-an-app>Hooking Treasure: Targeting an App</h2><p>Now that we have a rooted device with frida installed, we can install the target
+the app and make sure it&rsquo;s available by checking the package name:</p><p><code>adb shell pm list packages | grep jokeapp</code> (package:com.github.ryjen.jokeapp)</p><p>Note that I am using a development debug build for clarity,
+in reality the app would be install from an app store and may require
+disassembling to find target code.</p><p>Hooking is a Frida scripting API to allow replacing code at runtime.</p><p>Our goal is to intercept and return spoofed data for:</p><ul><li>the network API for a random joke</li><li>saving a joke to the database</li><li>sharing a joke</li></ul><p>As an analogy, I will call these use cases the <strong>3 parrots</strong>.
+They will echo back a message we tell it (reminds me of the hypno-parrot emoji).</p><h3 id=walk-the-plank-write-scripts>Walk the Plank: Write Scripts</h3><p>Writing Frida hooks is easy when you have the source code and a debug build.
+In the real world, you must locate the obfuscated methods after disassembling them.
+The process typically looks as follows:</p><ul><li>Disassemble the application APK in a tool called JADX-GUI</li><li>Scan the resources and code for strings related to the targets
+(service, network, API, client, remote, database, repository, etc.)</li><li>Use Frida to trace execution of target code using regex
+(frida-trace -U -j &lsquo;x4.a!*&rsquo; Jiver)</li><li>Use the application at points of execution to verify and gather more information
+(like parameters)</li><li>Once you have located the target code to hook or have the source code, you can
+start writing scripts to exploit potential vulnerabilities.</li></ul><h3 id=network-parrot->Network Parrot 🦜</h3><p>The following frida script intercepts the network service and returns spoofed data:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=kr>const</span> <span class=nx>Types</span> <span class=o>=</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nx>Service</span><span class=o>:</span> <span class=s2>&#34;com.github.ryjen.jokeapp.data.api.JokeService&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>Response</span><span class=o>:</span> <span class=s2>&#34;com.github.ryjen.jokeapp.data.model.JokeResponse&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>Continuation</span><span class=o>:</span> <span class=s2>&#34;kotlin.coroutines.Continuation&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span><span class=line><span class=cl><span class=nx>Java</span><span class=p>.</span><span class=nx>perform</span><span class=p>(</span><span class=kd>function</span> <span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=kd>var</span> <span class=nx>Service</span> <span class=o>=</span> <span class=nx>Java</span><span class=p>.</span><span class=nx>use</span><span class=p>(</span><span class=nx>Types</span><span class=p>.</span><span class=nx>Service</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=kd>var</span> <span class=nx>Response</span> <span class=o>=</span> <span class=nx>Java</span><span class=p>.</span><span class=nx>use</span><span class=p>(</span><span class=nx>Types</span><span class=p>.</span><span class=nx>Response</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=c1>// Overload a private kotlin suspend function to return a hacked network response
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=nx>Service</span><span class=p>.</span><span class=nx>getRandomJoke</span><span class=p>.</span><span class=nx>overload</span><span class=p>(</span><span class=nx>Types</span><span class=p>.</span><span class=nx>Continuation</span><span class=p>).</span><span class=nx>implementation</span> <span class=o>=</span> <span class=kd>function</span> <span class=p>(</span>
+</span></span><span class=line><span class=cl>    <span class=nx>continuation</span>
+</span></span><span class=line><span class=cl>  <span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=kd>var</span> <span class=nx>actual</span> <span class=o>=</span> <span class=k>this</span><span class=p>.</span><span class=nx>getRandomJoke</span><span class=p>(</span><span class=nx>continuation</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=c1>// suspend functions pass a flag to indicate it will not return
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=k>if</span> <span class=p>(</span><span class=nx>actual</span><span class=p>.</span><span class=nx>toString</span><span class=p>()</span> <span class=o>==</span> <span class=s2>&#34;COROUTINE_SUSPENDED&#34;</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>      <span class=k>return</span> <span class=nx>actual</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=p>}</span>
+</span></span><span class=line><span class=cl>    <span class=c1>// log the actual data
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=nx>actual</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=c1>// return the spoofed data
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=k>return</span> <span class=nx>Response</span><span class=p>.</span><span class=nx>$new</span><span class=p>(</span><span class=s2>&#34;hackID&#34;</span><span class=p>,</span> <span class=s2>&#34;This app is HACKED&#34;</span><span class=p>,</span> <span class=mi>200</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=p>};</span>
+</span></span><span class=line><span class=cl><span class=p>});</span>
+</span></span></code></pre></div><p> </p><p>The basic premise of the code is:</p><ol><li>Define java types used</li><li>Use the java instrumentation to perform the hooking</li><li>Define the java classes in the application binary to use</li><li>Overload the API method in the network service classes</li><li>Log the actual value</li><li>Return the spoofed Response</li></ol><p>Kotlin coroutines internally pass an intrinsic parameter to signal the function
+has suspended instead of returned. In frida we need to handle this by checking
+for <code>COROUTINE_SUSPENDED</code> before performing the overload.</p><p>Running <code>frida -U --no-pause -f com.github.ryjen.jokeapp -l network.js</code> the result
+is the application parrots back the response every network call.</p><p><img src=/image/blog/frida_network.png alt=hacked></p><p>The logging should look something like this in the frida console after 3 refreshes:</p><pre tabindex=0><code>JokeResponse(id=fii3Tv4hFd, joke=Today, my son asked &#34;Can I have a book mark?&#34; and I burst into tears. 11 years old and he still doesn&#39;t know my name is Brian., status=200)
+JokeResponse(id=IeiyIRSnbxc, joke=I applied to be a doorman but didn&#39;t get the job due to lack of experience. That surprised me, I thought it was an entry level position., status=200)
+JokeResponse(id=kOfaUvP7Muc, joke=What did the Dorito farmer say to the other Dorito farmer? Cool Ranch!, status=200)
+</code></pre><h3 id=database-parrot->Database Parrot 🦜</h3><p>When the user adds a favorite joke, we want to hook saving to the database
+to insert spoofed data. The following script accomplishes the task.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=kr>const</span> <span class=nx>Types</span> <span class=o>=</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nx>Joke</span><span class=o>:</span> <span class=s2>&#34;com.github.ryjen.jokeapp.domain.model.Joke&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>Database</span><span class=o>:</span> <span class=s2>&#34;com.github.ryjen.jokeapp.data.repository.joke.JokeRepository&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>Continuation</span><span class=o>:</span> <span class=s2>&#34;kotlin.coroutines.Continuation&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nx>Java</span><span class=p>.</span><span class=nx>perform</span><span class=p>(</span><span class=kd>function</span> <span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=kd>var</span> <span class=nx>Database</span> <span class=o>=</span> <span class=nx>Java</span><span class=p>.</span><span class=nx>use</span><span class=p>(</span><span class=nx>Types</span><span class=p>.</span><span class=nx>Database</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=kd>var</span> <span class=nx>Joke</span> <span class=o>=</span> <span class=nx>Java</span><span class=p>.</span><span class=nx>use</span><span class=p>(</span><span class=nx>Types</span><span class=p>.</span><span class=nx>Joke</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=c1>// Overload a private kotlin suspend function to return a hacked network response
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=nx>Database</span><span class=p>.</span><span class=nx>addFavorite</span><span class=p>.</span><span class=nx>overload</span><span class=p>(</span><span class=nx>Types</span><span class=p>.</span><span class=nx>Joke</span><span class=p>,</span> <span class=nx>Types</span><span class=p>.</span><span class=nx>Continuation</span><span class=p>).</span><span class=nx>implementation</span> <span class=o>=</span>
+</span></span><span class=line><span class=cl>    <span class=kd>function</span> <span class=p>(</span><span class=nx>joke</span><span class=p>,</span> <span class=nx>continuation</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>      <span class=k>if</span> <span class=p>(</span><span class=nx>continuation</span><span class=p>.</span><span class=nx>toString</span><span class=p>()</span> <span class=o>==</span> <span class=s2>&#34;COROUTINE_SUSPENDED&#34;</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>        <span class=k>this</span><span class=p>.</span><span class=nx>addFavorite</span><span class=p>(</span><span class=nx>joke</span><span class=p>,</span> <span class=nx>continuation</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>        <span class=k>return</span> <span class=kc>null</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>      <span class=p>}</span>
+</span></span><span class=line><span class=cl>      <span class=kd>var</span> <span class=nx>spoofed</span> <span class=o>=</span> <span class=nx>Joke</span><span class=p>.</span><span class=nx>$new</span><span class=p>(</span><span class=s2>&#34;jokeID&#34;</span><span class=p>,</span> <span class=s2>&#34;This joke is OWNED&#34;</span><span class=p>,</span> <span class=kc>null</span><span class=p>,</span> <span class=kc>true</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>      <span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=nx>joke</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>      <span class=k>this</span><span class=p>.</span><span class=nx>addFavorite</span><span class=p>(</span><span class=nx>spoofed</span><span class=p>,</span> <span class=nx>continuation</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>      <span class=k>return</span> <span class=kc>null</span><span class=p>;</span> <span class=c1>// kotlin unit
+</span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=p>};</span>
+</span></span><span class=line><span class=cl><span class=p>});</span>
+</span></span></code></pre></div><p> </p><p>The difference here is replacing the method call with a spoofed parameter instead
+of returning one.</p><p>Running <code>frida -U --no-pause -f com.github.ryjen.jokeapp -l network.js</code> and
+saving a joke adds the spoofed joke to the database.</p><p><img src=/image/blog/frida_database.png alt=database></p><p>Again, our logging should log the original data for snooping.</p><pre tabindex=0><code>Joke(id=7p41Lmbpjqc, content=What has three letters and starts with gas? A Car., created=null, isFavorite=true)
+Joke(id=8p49pWvcxAd, content=Every night at 11:11, I make a wish that someone will come fix my broken clock., created=null, isFavorite=true)
+Joke(id=EYo4TCAdUf, content=I tried to write a chemistry joke, but could never get a reaction., created=null, isFavorite=true)
+</code></pre><h3 id=sharing-parrot->Sharing Parrot 🦜</h3><p>When the user shares a joke, we want to intercept and send a hacked response.
+Could be useful to pass private application data to an external resource on the device.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-js data-lang=js><span class=line><span class=cl><span class=kr>const</span> <span class=nx>Types</span> <span class=o>=</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=nx>Share</span><span class=o>:</span> <span class=s2>&#34;com.github.ryjen.jokeapp.ui.components.Share&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nb>String</span><span class=o>:</span> <span class=s2>&#34;java.lang.String&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl>  <span class=nx>Context</span><span class=o>:</span> <span class=s2>&#34;android.content.Context&#34;</span><span class=p>,</span>
+</span></span><span class=line><span class=cl><span class=p>};</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nx>Java</span><span class=p>.</span><span class=nx>perform</span><span class=p>(</span><span class=kd>function</span> <span class=p>()</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=kd>var</span> <span class=nx>Share</span> <span class=o>=</span> <span class=nx>Java</span><span class=p>.</span><span class=nx>use</span><span class=p>(</span><span class=nx>Types</span><span class=p>.</span><span class=nx>Share</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=c1>// A message with a exposed data or an attack link
+</span></span></span><span class=line><span class=cl><span class=c1></span>  <span class=kd>var</span> <span class=nx>spoofed</span> <span class=o>=</span> <span class=s2>&#34;Please visit hacked link https://example.com&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=kd>var</span> <span class=nx>shareText</span> <span class=o>=</span> <span class=nx>Share</span><span class=p>.</span><span class=nx>text</span><span class=p>.</span><span class=nx>overload</span><span class=p>(</span><span class=nx>Types</span><span class=p>.</span><span class=nx>Context</span><span class=p>,</span> <span class=nx>Types</span><span class=p>.</span><span class=nb>String</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=nx>shareText</span><span class=p>.</span><span class=nx>implementation</span> <span class=o>=</span> <span class=kd>function</span> <span class=p>(</span><span class=nx>context</span><span class=p>,</span> <span class=nx>content</span><span class=p>)</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=nx>console</span><span class=p>.</span><span class=nx>log</span><span class=p>(</span><span class=nx>content</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>    <span class=nx>shareText</span><span class=p>.</span><span class=nx>call</span><span class=p>(</span><span class=k>this</span><span class=p>,</span> <span class=nx>context</span><span class=p>,</span> <span class=nx>spoofed</span><span class=p>);</span>
+</span></span><span class=line><span class=cl>  <span class=p>};</span>
+</span></span><span class=line><span class=cl><span class=p>});</span>
+</span></span></code></pre></div><p> </p><p>Running <code>frida -U --no-pause -f com.github.ryjen.jokeapp -l share.js</code> and sharing
+a joke results in the spoofed content shared instead. Logging would show the
+original joke content as expected.</p><p><img src=/image/blog/frida_share.png alt=sharing></p><h2 id=eol-shutdown-conclusion>EOL, Shutdown: Conclusion</h2><p>The best way to avoid hacking by Frida is to 1) avoid rooted mobile devices
+and 2) ensure integrity of the application binary.</p><p>An application distributed via the play store a verification API from
+Google play store is available to add a security layer to user actions.
+Backend checks might be necessary depending on your architecture.</p><p>At the application level some best practices include:</p><ul><li>Adding detection of rooting/jailbreaking</li><li>Verifying the integrity of signing signature</li><li>Verifying the vendor package</li><li>Verifying release builds are not debuggable</li><li>Checking for Frida installs</li><li>Harden network access points</li></ul><p>Enterprise applications requiring extra security should consider a service like
+<a href=https://nowsecure.com>NowSecure</a> provided by the creators of Frida.
+Other options include <a href=https://www.veracode.com/>VeraCode</a>,
+<a href=https://www.microfocus.com/en-us/cyberres/application-security>Fortify</a>, or <a href=https://checkmarx.com/>Checkmarx</a>.</p><p>Dynamic analysis security services (AKA Penetration Testing) run ad-hoc
+per identified risk can keep you ahead of unknown risks.
+Static analysis security services in continuous integration keep developers aware
+of code vulnerabilities.</p><p>As vulnerabilities and mitigations are constantly evolving, an application must
+be pro-active in keeping up to date and knowing its risk factors.</p><p>In summary, there are options to prevent hackers from breaching security at the
+device level and the application level. A service specializing in detection can
+be practical and adaptable in a cybersecurity landscape.</p><hr><p>** DISCLAIMER: This is partially setting up a penetration testing environment.
+Do not use on targets without authorization as you would be potentially breaking
+the law. Bugcrowd has a list of projects accepting testing within limits.</p><h3 id=refs-also>Refs, Also</h3><hr><ul><li><a href=https://developer.android.com/google/play/integrity/overview>Google Play Integrity API</a></li><li><a href=https://owasp.org/www-project-mobile-app-security/>OWASP MAS</a></li><li><a href=https://frida.re/>Frida</a> and <a href=https://codeshare.frida.re>codeshare</a></li><li><a href=https://www.amazon.ca/Beginning-Frida-Learning-Android-JavaScript/dp/B09536W8NH>Beginging Frida</a></li><li><a href=https://github.com/topjohnwu/Magisk>Magisk</a></li><li><a href=https://github.com/dineshshetty/FridaLoader>Frida Loader</a></li><li><a href=https://www.fortinet.com/resources/cyberglossary/cia-triad>CIA</a></li><li><a href=https://www.appsealing.com/jailbreak-detection/>Jailbreak Detection</a></li><li><a href=https://www.appdome.com/mobile-app-security/android-root-detection/>Root Detection</a></li><li><a href=https://www.nowsecure.com>NowSecure</a></li><li><a href=https://github.com/sensepost/objection>Objection</a></li><li><a href=https://github.com/dweinstein/awesome-frida>Awesome Frida</a></li></ul></div></div></section><footer id=footer class=legs><div class="has-text-centered content mt-6 pt-6 pb-6 mb-6"><div class="is-flex is-align-items-center is-justify-content-center is-size-7"><a href=https://github.com/ryjen/ryjen.github.io/issues/new>See an issue?</a>
+&nbsp; | &nbsp;<div class=copyright>© all rights reserved, ryan jennings</div></div></div></footer><script src=/js/theme.min.js defer></script><script src=/js/app.min.js defer></script><script async defer data-website-id=b348cf02-9212-4e45-be35-bd529c1eb47a src=https://analytics.micrantha.com/umami.js></script></body></html>

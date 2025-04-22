@@ -1,56 +1,517 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home</title><link>https://ryanjennin.gs/</link><description>Recent content on Home</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 22 Jul 2022 23:16:18 -0700</lastBuildDate><atom:link href="https://ryanjennin.gs/index.xml" rel="self" type="application/rss+xml"/><item><title>Clean Architecture</title><link>https://ryanjennin.gs/things/books/clean-architecture/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/books/clean-architecture/</guid><description/></item><item><title>Android Apps Security: Mitigate Hacking Attacks</title><link>https://ryanjennin.gs/things/books/android-apps-security/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/books/android-apps-security/</guid><description/></item><item><title>eBPF</title><link>https://ryanjennin.gs/things/tech/ebpf/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/tech/ebpf/</guid><description/></item><item><title>Progressive Web Apps / Assembly / Sockets</title><link>https://ryanjennin.gs/things/tech/webapps/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/tech/webapps/</guid><description/></item><item><title>Swamplands of the Soul</title><link>https://ryanjennin.gs/things/books/swamplands/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/books/swamplands/</guid><description/></item><item><title>Tech</title><link>https://ryanjennin.gs/things/tech-item/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/tech-item/</guid><description/></item><item><title>A New Earth</title><link>https://ryanjennin.gs/things/books/a-new-earth/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/books/a-new-earth/</guid><description/></item><item><title>Blockchain</title><link>https://ryanjennin.gs/things/tech/blockchain/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/tech/blockchain/</guid><description/></item><item><title>Books</title><link>https://ryanjennin.gs/things/books-item/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/books-item/</guid><description/></item><item><title>Linux Namespaces</title><link>https://ryanjennin.gs/things/tech/namespaces/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/tech/namespaces/</guid><description/></item><item><title>Mediations - Marcus Aurelius</title><link>https://ryanjennin.gs/things/books/meditations/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/books/meditations/</guid><description/></item><item><title>Selfhosted and IaaS</title><link>https://ryanjennin.gs/things/tech/selfhosted/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/tech/selfhosted/</guid><description/></item><item><title>The Pragmatic Programmer</title><link>https://ryanjennin.gs/things/books/pragmatic_programmer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/books/pragmatic_programmer/</guid><description/></item><item><title>Security Keys</title><link>https://ryanjennin.gs/things/tech/keybase/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/tech/keybase/</guid><description/></item><item><title>Tao Te Ching</title><link>https://ryanjennin.gs/things/books/tao-te-ting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/books/tao-te-ting/</guid><description/></item><item><title>Artificial Intelligence / Machine Learning</title><link>https://ryanjennin.gs/things/tech/ai-ml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/tech/ai-ml/</guid><description/></item><item><title>Linux Phones</title><link>https://ryanjennin.gs/things/tech/linux-phones/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/tech/linux-phones/</guid><description/></item><item><title>The Cathedral &amp; the Bazaar</title><link>https://ryanjennin.gs/things/books/cathedral_bazaar/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/books/cathedral_bazaar/</guid><description/></item><item><title>Lingering</title><link>https://ryanjennin.gs/art/poems/lingering/</link><pubDate>Fri, 22 Jul 2022 23:16:18 -0700</pubDate><guid>https://ryanjennin.gs/art/poems/lingering/</guid><description>Their perceptions of you and me just linger In the air, in the heads, until they are dead Like revenge or karma Enraging with all its ignorance And sedating with all its care The words, the forms, the actions That&amp;#39;s all they focus on In sane method Of soul insanity To negate your confront.</description></item><item><title>Bag of Mail, Fee Mail</title><link>https://ryanjennin.gs/art/poems/bag-of-mail/</link><pubDate>Fri, 22 Jul 2022 22:57:12 -0700</pubDate><guid>https://ryanjennin.gs/art/poems/bag-of-mail/</guid><description>Women are competitive socially but not physically Yet their narcissism is body based Men are competitive with their bodies but not socially Yet their narcissism is based on social inclusion (in the women&amp;#39;s world) Men are supposed to be all equal (religious pacifier for violence?</description></item><item><title>Settlers</title><link>https://ryanjennin.gs/art/poems/settlers/</link><pubDate>Fri, 22 Jul 2022 11:08:00 +0000</pubDate><guid>https://ryanjennin.gs/art/poems/settlers/</guid><description>Some settle without reason Just cause It&amp;#39;s what others do It&amp;#39;s for the best Just like the rest Some settle with a reason In hard times To survive With underlying Managed discontent Some don&amp;#39;t settle unconsciously Not knowing their motives An undefined need A traumatic symptom To pretend they are normal Some don&amp;#39;t settle consciously With enough social clout And basic fulfillment Knowing the reasons Experienced in their killing joke Could never be it&amp;#39;s just for the money And lie like it&amp;#39;s love As much as I want to Order someone around Like ownership And fullfilling mental roles Even if it is wanted Or exploited just the same too Love is the killing joke for me it seems No woman or man is to me No child or god either.</description></item><item><title>Dis Grunt Led</title><link>https://ryanjennin.gs/art/poems/dis-grunt-led/</link><pubDate>Fri, 22 Jul 2022 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/art/poems/dis-grunt-led/</guid><description>Everything is awesome They try to say (to a programmer) Like some fucking joke For getting them laid. It is their identity Better you create it Than they. Better they make you obsolete With respect To still be accepted In a woman&amp;#39;s lay Like some fucking view You can use to chew Like confidence They portray To put down your pay And take the day To make your anger Unfounded and gay To burn your bridges In an indirect way To make you believe And tease the cheese To laugh at your experience And uncomfortable needs She hates how it is Like a triumph of selfish rights Blinding that what does not exist Like a pimp, or a hairless monkey With money, like a bitch They cannot stand It does not make any sense That they would go for his cents Or anything else they must Make it not matter For what she needs instead of he In a feigned love Of type A stress Alpha-best and B-lose Ex-Plaining the ISO late, son (isolation) Comp-art Mentalize the view For a version of herself That cannot be he The just-ify-ed narcy-cyst Who cannot get upset Only upset your back In kindness Like mocking settlers For not partaking And indulging In an easy life Of easy drugs, Sex and news.</description></item><item><title>Power of Love</title><link>https://ryanjennin.gs/art/poems/power-of-love/</link><pubDate>Sat, 16 Jul 2022 11:11:11 +0000</pubDate><guid>https://ryanjennin.gs/art/poems/power-of-love/</guid><description>To disrupt the scales Of beauty as power To separate power From love To turn away narcissus For compassion To remember what love is with understanding To protect our lonely selves From the world For each other</description></item><item><title>Silence of the Fams</title><link>https://ryanjennin.gs/art/poems/silence-of-the-fams/</link><pubDate>Thu, 14 Jul 2022 05:50:50 +0000</pubDate><guid>https://ryanjennin.gs/art/poems/silence-of-the-fams/</guid><description>Will they ever stop screaming how horrible I am? Will they ever stop lying or horrifying? Will they ever stop pretending, that it&amp;#39;s effortless? Will they ever not have to or have the time? Will they ever stop projecting an ignorant example?</description></item><item><title>Imp Ear, Real</title><link>https://ryanjennin.gs/art/poems/imp-ear-real/</link><pubDate>Tue, 12 Jul 2022 05:00:00 +0000</pubDate><guid>https://ryanjennin.gs/art/poems/imp-ear-real/</guid><description>The SS Enterprise Of the imperialists Is a catch 22 Earthship. They can push you To greatness Or overboard at anytime Befriend you so greatly You will jump Of your own will. Unloyal to my own ship Less than a second class citizen Spoiled to seek safety And eat my cake, true.</description></item><item><title>The Other Side</title><link>https://ryanjennin.gs/art/poems/the-other-side/</link><pubDate>Tue, 12 Jul 2022 05:00:00 +0000</pubDate><guid>https://ryanjennin.gs/art/poems/the-other-side/</guid><description>The other side of life Is Venus 2.0. Eliminating the bad ones To create more heat. They only like the ones like themselves. Only want more Nothing personal, Apparently. The rest are two-headed inbred morons Trying to ruin it All they can say is &amp;#34;We know we are beautiful&amp;#34; And assume the position Of sticking the ass You mean In your face.</description></item><item><title>Star for the Dumb</title><link>https://ryanjennin.gs/art/poems/star-for-the-dumb/</link><pubDate>Sun, 10 Jul 2022 10:10:10 +0000</pubDate><guid>https://ryanjennin.gs/art/poems/star-for-the-dumb/</guid><description>When men are dumb and bored If they have hair They can at least become A media idiot (medidiot) Or pseudo leaders For the dumber to absorb Without much worry To other mens sense of selves Reproductive ability Or holy jesus image Which is what it is all about For the fragile war of self Inside the egg Against the world.</description></item><item><title>Moth of Her</title><link>https://ryanjennin.gs/art/poems/moth-of-her/</link><pubDate>Sun, 10 Jul 2022 10:00:00 +0000</pubDate><guid>https://ryanjennin.gs/art/poems/moth-of-her/</guid><description> She punishes shame For the embarassment to her And the burden of care Like it&amp;#39;s a trade For a rough blame Never seeing the damage Or responsibility In denial of unlove Never questioning the reason She already knows Incorrectly</description></item><item><title>Dead Man's Tell</title><link>https://ryanjennin.gs/art/poems/dead-mans-tell/</link><pubDate>Sun, 10 Jul 2022 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/art/poems/dead-mans-tell/</guid><description>In a world connected like a media show A commercialized profile To fuel the dream that sells Building circles unconsciously Around who are Too bad for men, it&amp;#39;s women and boys that rule that world There is a word for racism Sexism and agism But there no word For discrimination of the ugly?</description></item><item><title>Clean Architecture + Redux + Android</title><link>https://ryanjennin.gs/posts/clean-architucture-redux-compose-flow/</link><pubDate>Wed, 04 May 2022 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/clean-architucture-redux-compose-flow/</guid><description>Have been learning a few new tricks in mobile architecure on the native side.
-Applying the redux pattern to code outside of react has been interesting.
-Jetpack Compose Android compose is a modern declarative toolkit for building user interfaces.
-Compose works with functions and is very much in-line with SwiftUI and React Native.</description></item><item><title>Scouter Demo</title><link>https://ryanjennin.gs/posts/scouter-demo/</link><pubDate>Sat, 14 Aug 2021 00:03:52 -0700</pubDate><guid>https://ryanjennin.gs/posts/scouter-demo/</guid><description>This is a demo for Scouter - a mobile version of &amp;ldquo;I spy with my little eye&amp;rdquo;.
-How it Works You can read the full spec doc, but the gist of it is:
-turn based game take a picture of something scan it using machine learning for clues another player takes a picture to guess based on clues get points for guessing right Clues Clues include:</description></item><item><title>Sandbox Demo</title><link>https://ryanjennin.gs/posts/sandcastle-util-demo/</link><pubDate>Thu, 29 Jul 2021 20:09:25 -0700</pubDate><guid>https://ryanjennin.gs/posts/sandcastle-util-demo/</guid><description>A utility from Micrantha for creating reusable isolated development environments.
-This is basically an easy to use abstraction around docker with some extra perks.
-file synchronization that follows symlinks keep package manager and system dependencies isolated from host reusable state that can also be persisted as a &amp;lsquo;sandcastle&amp;rsquo; for other sandboxes consistent user file permissions with the host better time tracking with taskwarrior timewarrior scripts write it how I would want it (did not like other tools) {{ }} If you have mastered [mouseless programming](https://themouseless.</description></item><item><title>The Mask of Kara</title><link>https://ryanjennin.gs/art/poems/the-mask-of-kara/</link><pubDate>Fri, 04 Jun 2021 20:37:41 -0700</pubDate><guid>https://ryanjennin.gs/art/poems/the-mask-of-kara/</guid><description> Part One: Paranoid Android Gets directed So no thing is affected With a hemaroid Named Floyd And a bowl of debt Full of regret Is that hope I hear? Or denial I fear I love them all But all never enough To be the porridge Of my dreams The flower turns It&amp;#39;s shame invisible In a show of pain For someone else To mend the shell Of the lord of flies It is easy to focus As they cloak us On just one word That is never heard She only has one idea in mind You are going to lose Like you deserve Because most of the world Is better than that still You will get used to it With a dummy you can&amp;#39;t stand Instead of the death of false Coming from both As if somehow the oath Of rejection Will make them safe again Safe again Without men From the fear of loss Or being without a toss Or their connection To their fiction Of the strands of time That cost a dime Part Two: Look for John without bucks Son For the Mask of Kara Is in your eye And you have no one Left to help It became clear as it has always been year after year There is no win with an empty friend only more sin and no way to end Some losses are too great For society to create Much horror Of an easy adorer But what will become Of the total sum After the sadness Does not turn to gladness When she says farewell After a lengthy affair Loud will sound the bell For your fair share It matches your guests In a suit that earns you The greatest of jests In such an evil rue To burn your tree Into the ground Ignored is your plea Joy is never found Part Three: It is not me He cried internally To keep the flow Of letting go Which was only a sign To the keepers of know He was not benign and could not mow If only he had fought It might have bought His ascension Into another dimension At first, it seemed To be too mean And confusing The misusing losing Which only brought Nothing he sought Into a lost decade His soul decayed They still live In their ignorant fun His mind will sour To their attempts at power</description></item><item><title>Eye Division</title><link>https://ryanjennin.gs/art/poems/eye-division/</link><pubDate>Tue, 25 May 2021 09:03:01 -0700</pubDate><guid>https://ryanjennin.gs/art/poems/eye-division/</guid><description>I see the misery division
-Expecting a sense of urgency
-Reinforcing weaknesses
-With opposite strengths
-Wanting their tit for a tat
-Sharing the pain
-For a missing floor
-And make believe ceiling
-I see a joy division
-Avoiding damages done</description></item><item><title>Man-in-the-Middle</title><link>https://ryanjennin.gs/posts/mitm/</link><pubDate>Thu, 18 Feb 2021 11:18:10 -0800</pubDate><guid>https://ryanjennin.gs/posts/mitm/</guid><description>A man-in-the-middle (MITM) attack is a network security attack where a malicious device enters a network and intercepts traffic between nodes or components.
-To accomplish access to a network an attacker needs an entry point.
-There are many ways for a malicious device to accomplish access into a network.</description></item><item><title>Alternate Keyboard</title><link>https://ryanjennin.gs/posts/alternate-keyboard/</link><pubDate>Tue, 19 Jan 2021 15:08:38 -0800</pubDate><guid>https://ryanjennin.gs/posts/alternate-keyboard/</guid><description>Decided to switch to using a alternate keyboard layout, not too long ago&amp;hellip;. Well I guess it has been a couple of years now. But I love it.
-Always heard about others using the Dvorak keyboard layout and thought, &amp;ldquo;boy that is really neat, but too much work to change&amp;rdquo;.</description></item><item><title>Guitar Suite Demos</title><link>https://ryanjennin.gs/posts/old-demos/</link><pubDate>Mon, 11 Jan 2021 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/old-demos/</guid><description>Found an old demo of an App I developed in 2010. Based upon a C++ PALM application, it was written in C#/Xamarin for cross platform.
-Brings back fond memories of hacking away to The Resistance by Muse. We also released a twitter app, a professional calculator and several games.</description></item><item><title>modd: daemon for reloading</title><link>https://ryanjennin.gs/posts/modd-live-coding/</link><pubDate>Sun, 10 Jan 2021 14:46:43 -0800</pubDate><guid>https://ryanjennin.gs/posts/modd-live-coding/</guid><description>One of my favourite tools now is modd.
-Why is it so great? It does one job, and it does it well, in proper unix fashion.
-Monitoring a file-system and running a daemon that reloads if anything changes.
-Also in proper Unix fashion, the daemon is sent a configurable SIGHUP when a file changes.</description></item><item><title>When Things Go Wrong</title><link>https://ryanjennin.gs/art/poems/when-things-go-wrong/</link><pubDate>Wed, 30 Dec 2020 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/art/poems/when-things-go-wrong/</guid><description>I watch them beat you,
-Watch them beat you down.
-There is nothing I can do,
-Brother, just like you.
-So when things go wrong,
-Go wrong with you,
-It hurts me too.
-They say you know,
-You know what to do.</description></item><item><title>Blockchain Mesh Networks</title><link>https://ryanjennin.gs/posts/blockchain-mesh-internet/</link><pubDate>Fri, 18 Sep 2020 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/blockchain-mesh-internet/</guid><description>Using the blockchain mesh network routers allow freedom and payments.
-The underlying core of bitcoin, the blockchain is a system that can be applied to a variety of uses.
-One particular disruptive use, that is not mentioned on the wiki, is mesh networks.</description></item><item><title>Git Notes Storage</title><link>https://ryanjennin.gs/posts/git-notes-as-version-tool-storage/</link><pubDate>Thu, 25 Jun 2020 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/git-notes-as-version-tool-storage/</guid><description>Am working on a project build tool to make repeatable tasks for Micrantha projects easier.
-A module of this tool is automatic versioning using semantic version.
-The versioning The way I wanted the versioning to work is to have thresholds for when a version component auto-increments.</description></item><item><title>Audit</title><link>https://ryanjennin.gs/posts/audit/</link><pubDate>Mon, 27 Jan 2020 22:14:09 -0800</pubDate><guid>https://ryanjennin.gs/posts/audit/</guid><description>Have removed some incomplete content that was incomplete or did not make sense anymore.
-The URL&amp;rsquo;s are now aliased here for reference.</description></item><item><title>Mirroring git with jenkins</title><link>https://ryanjennin.gs/posts/jenkins-git-mirror/</link><pubDate>Fri, 05 Jul 2019 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/jenkins-git-mirror/</guid><description>Introduction For some software development projects, there may be a need to backup or mirror the repository to a different location.
-Jenkins or other continuous integration (CI) can automate this. This log is a brief summary of how in case I need to reproduce.</description></item><item><title>Favourite 'nixisms</title><link>https://ryanjennin.gs/posts/favourite-nixisms/</link><pubDate>Mon, 05 Nov 2018 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/favourite-nixisms/</guid><description>Introduction A log to myself of things I like about Unix type systems. In case I forget why someday.
-Dotfiles files in braille? are they for the blind?
-Dotfiles in Linux are hidden files preceded with a period. Depending on the program, they are used for configuration in your home directory.</description></item><item><title>Mitmproxy and Android</title><link>https://ryanjennin.gs/posts/mitmproxy-and-android/</link><pubDate>Wed, 16 May 2018 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/mitmproxy-and-android/</guid><description>Introduction Debugging network traffic for your app can be useful, and sometimes necessary if the data is not what is expected or inconsistent.
-The Proxy I prefer the open source proxy [mitmproxy](https://mitmproxy.org =300x203). Easy to install on OSX with homebrew.</description></item><item><title>Deploy Docker Registry with Dokku</title><link>https://ryanjennin.gs/archive/deploy-docker-registry-in-dokku/</link><pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/archive/deploy-docker-registry-in-dokku/</guid><description>Prerequisites You&amp;rsquo;ll need to prepare a bit.
-A local path on the server to store registry data. For example: /mydir/registry Docker installed on the client and server machine Dokku installed on the server For Authentication httpasswd command is installed For an External Registry Dokku letsencrypt plugin installed A working domain name pointing to the dokku app.</description></item><item><title>Fortunes on Slack</title><link>https://ryanjennin.gs/posts/fortunes-microservice/</link><pubDate>Mon, 22 Jan 2018 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/fortunes-microservice/</guid><description>view the service homepage
-Introduction Have always enjoyed the UNIX fortunes program, ever since I was a wee newbie. If you aren&amp;rsquo;t familiar with it (sad), yes, its like a fortune cookie.
-It can be more technical in nature but not always.</description></item><item><title>Microsoft Dev Stack on macOS</title><link>https://ryanjennin.gs/archive/microsoft-dev-stack-macos/</link><pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/archive/microsoft-dev-stack-macos/</guid><description>Gonna evangelize a little bit.
-When Microsoft bought Xamarin, they did not underestimate the power of Xamarin.Forms for building cross platform UIs. Now with the release of Visual Studio for macOS and the Dotnet Core, its looks like its going to stay alive.</description></item><item><title>Hugo + Dokku + Wercker = Goodness</title><link>https://ryanjennin.gs/archive/hugo-dokku-wercker-goodness/</link><pubDate>Wed, 22 Jun 2016 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/archive/hugo-dokku-wercker-goodness/</guid><description>Hugo Hugo is a static site generator with many powerful features like archtypes, themes, customization, etc.
-Combined with tools like bower and brunch it makes for a pretty powerful app that could be more than a blog.
-The workflow is simple - build your assets with brunch, run the hugo generator.</description></item><item><title>c hacking: polymorphing 2</title><link>https://ryanjennin.gs/archive/c-hacking-polymoriphing-2/</link><pubDate>Wed, 02 Dec 2015 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/archive/c-hacking-polymoriphing-2/</guid><description>While working on cparse I found another nifty way to sort of simulate polymorphism.
-cparse Another exercise in futility, a C implementation for the REST api at parse.com. Really the core of it is a web client and an object structure using json.</description></item><item><title>Elixir and Phoenix</title><link>https://ryanjennin.gs/posts/elixir-and-phoenix/</link><pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/elixir-and-phoenix/</guid><description>Introduction If you dont know phoenix framework, I&amp;rsquo;d describe it as rails for elixir. If you dont know Elixir I&amp;rsquo;d describe it as a functional language that feels like ruby for erlang.
-If you don&amp;rsquo;t know erlang it has been around a while (open-sourced in 1998) and the virtual machine is designed to be highly fault tolerant and scalable for use in telecoms, banking and instant messaging (WhatsApp).</description></item><item><title>Poor Man's Polymorphism</title><link>https://ryanjennin.gs/archive/poor-man-s-polymorphism/</link><pubDate>Fri, 30 Nov 2012 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/archive/poor-man-s-polymorphism/</guid><description>Found out that C structs can be casted between each other if the field types and ordering are the same. It is not portable code, but you can start too see how and why the virtual table and object oriented programming evolved in c++.</description></item><item><title>Crafting a Game With CraftyJS</title><link>https://ryanjennin.gs/archive/crafting-a-game-with-craftyjs/</link><pubDate>Sat, 17 Nov 2012 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/archive/crafting-a-game-with-craftyjs/</guid><description>Introduction Briefly going to mention a javascript game engine called CraftyJS that I&amp;rsquo;ve been playing with the past couple of days.
-Has the usual suspects like Entity Component System, Collision, Sprite Maps, etc.
-The Project Amos the Alien is a small demo I made.</description></item><item><title>C Sqlite Tricks</title><link>https://ryanjennin.gs/archive/c-sqlite-tricks/</link><pubDate>Tue, 15 May 2012 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/archive/c-sqlite-tricks/</guid><description>Introduction Thought I would share some tricks I use for easy data CRUD&amp;rsquo;s in C. I&amp;rsquo;m using Sqlite here, but could apply to any database.
-Not saying its the best approach at all (nor ryjen/db), this is just how it evolved for me.</description></item><item><title>Best Programming Quotes</title><link>https://ryanjennin.gs/posts/best-programming-quotes/</link><pubDate>Tue, 10 Apr 2012 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/best-programming-quotes/</guid><description>Quotes that relate to software engineering always humble me with their laser-like honesty. I&amp;rsquo;ve decided to keep a collection of my favorites here (in no particular order).</description></item><item><title/><link>https://ryanjennin.gs/scouter/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/scouter/</guid><description>Scouter Alternatively Eye Spy, iSpy, PicPatrol, CamAgent.
-Motivations Mostly to use machine learning and potentially build or strengthen an image classification model.
-It is based on the classic game of &amp;ldquo;I Spy&amp;rdquo; and a good way to discover new things about your environment.</description></item><item><title>About</title><link>https://ryanjennin.gs/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/about/</guid><description>Robert Ryan Jennings
-@ryjen
-A multipotentialite residing in Vancouver area Has an orange tabby cat named Gerty (Gertrude) Enjoys making music (guitar, bass, jazz blues) Loves tech, follows the singularity Reads a lot of psychology and spirituality Plays hockey, hikes, bike rides and kayaks Gertrude "</description></item><item><title>Cracking the Coding Interview</title><link>https://ryanjennin.gs/things/books/cracking-code-interview/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/books/cracking-code-interview/</guid><description/></item><item><title>Cross Platform Mobile Frameworks</title><link>https://ryanjennin.gs/things/tech/mobile-xpf/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/tech/mobile-xpf/</guid><description/></item><item><title>Doodles</title><link>https://ryanjennin.gs/art/doodles/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/art/doodles/</guid><description> Gerty: A Portrait Moth of Her (mother) The Other Side Imp Ear, Real Stardum: Moon Eating Dinosaurus, Rock, Sex Transfusion Droid, Card, Watercolour Greek Upside Down Smile Pi Penelopy: A Rough Trade Clouds, Card, Watercolour Brain Casing, Cracked Freedom of Self Baggage Joker and the Thief Can, but Nada Life for Breakfast Treble Clef: Art in itself Sabateur Happiness in Apocolypse</description></item><item><title>Fuzz Testing</title><link>https://ryanjennin.gs/things/tech/fuzz-testing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/tech/fuzz-testing/</guid><description/></item><item><title>Illusions: Adventures of a Reluctant Messiah</title><link>https://ryanjennin.gs/things/books/illusions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/books/illusions/</guid><description/></item><item><title>Interplanetary File System</title><link>https://ryanjennin.gs/things/tech/interplanetary-fs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/tech/interplanetary-fs/</guid><description/></item><item><title>Music</title><link>https://ryanjennin.gs/art/music/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/art/music/</guid><description>SoundCloud Sheet Music Musescore has some nursery rhymes and xmas carols I re-wrote in minor.</description></item><item><title>Phoenix Framework and Elixir/Erlang</title><link>https://ryanjennin.gs/things/tech/elixer-erlang/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/tech/elixer-erlang/</guid><description/></item><item><title>Poems</title><link>https://ryanjennin.gs/art/poems-item/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/art/poems-item/</guid><description/></item><item><title>Reactive Extensions</title><link>https://ryanjennin.gs/things/tech/reactivex/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/tech/reactivex/</guid><description/></item><item><title>Reactive Extensions</title><link>https://ryanjennin.gs/things/tech/reativext/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/tech/reativext/</guid><description/></item><item><title>resume</title><link>https://ryanjennin.gs/resume/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/resume/</guid><description>Expertise React Native Redux Android iOS Clean Architecture JavaScript Java / Kotlin Obj-C / Swift SQL / JSON Git / JIRA HTML5 / CSS3 Python C# / .NET Shell Scripting GoLang Design Patterns Testing Automation Security C / C++ MVVM / MVC / MVP OOP / SOLID Education Diploma in Computer Systems</description></item><item><title>Skystone / A Dream of Eagles</title><link>https://ryanjennin.gs/things/books/skystone/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/books/skystone/</guid><description/></item><item><title>SRE / DevOps</title><link>https://ryanjennin.gs/things/tech/devops/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/tech/devops/</guid><description/></item><item><title>Summary</title><link>https://ryanjennin.gs/summary/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/summary/</guid><description>Summary of Ryan Jennings Career History, Expertise and Interests Interests Ryan has a strong interest in cross-platform mobile development from his experience in PALM, Windows Phone, Blackberry, iOS, Android, Xamarin and React-Native. He has good knowledge of UX principles and is particularity strong at bridging native platform solutions to cross-platform user interfaces.</description></item><item><title>ThinkPads</title><link>https://ryanjennin.gs/things/tech/thinkpad/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/tech/thinkpad/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home</title><link>https://ryanjennin.gs/</link><description>Recent content on Home</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 16 Apr 2025 18:09:21 -0700</lastBuildDate><atom:link href="https://ryanjennin.gs/index.xml" rel="self" type="application/rss+xml"/><item><title>Clean Architecture</title><link>https://ryanjennin.gs/things/books/clean-architecture/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/books/clean-architecture/</guid><description/></item><item><title>Android Apps Security: Mitigate Hacking Attacks</title><link>https://ryanjennin.gs/things/books/android-apps-security/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/books/android-apps-security/</guid><description/></item><item><title>Beginning Frida</title><link>https://ryanjennin.gs/things/books/begining-frida/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/books/begining-frida/</guid><description/></item><item><title>eBPF</title><link>https://ryanjennin.gs/things/tech/ebpf/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/tech/ebpf/</guid><description/></item><item><title>Progressive Web Apps / Assembly / Sockets</title><link>https://ryanjennin.gs/things/tech/webapps/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/tech/webapps/</guid><description/></item><item><title>Software Industry Blog</title><link>https://ryanjennin.gs/verbage/blog/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/verbage/blog/</guid><description/></item><item><title>Swamplands of the Soul</title><link>https://ryanjennin.gs/things/books/swamplands/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/books/swamplands/</guid><description/></item><item><title>Tech</title><link>https://ryanjennin.gs/things/tech-item/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/tech-item/</guid><description/></item><item><title>A New Earth</title><link>https://ryanjennin.gs/things/books/a-new-earth/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/books/a-new-earth/</guid><description/></item><item><title>Blockchain</title><link>https://ryanjennin.gs/things/tech/blockchain/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/tech/blockchain/</guid><description/></item><item><title>Books</title><link>https://ryanjennin.gs/things/books-item/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/books-item/</guid><description/></item><item><title>Linux Namespaces</title><link>https://ryanjennin.gs/things/tech/namespaces/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/tech/namespaces/</guid><description/></item><item><title>Musings</title><link>https://ryanjennin.gs/verbage/musings/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/verbage/musings/</guid><description/></item><item><title>Mediations - Marcus Aurelius</title><link>https://ryanjennin.gs/things/books/meditations/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/books/meditations/</guid><description/></item><item><title>Selfhosted and IaaS</title><link>https://ryanjennin.gs/things/tech/selfhosted/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/tech/selfhosted/</guid><description/></item><item><title>The Pragmatic Programmer</title><link>https://ryanjennin.gs/things/books/pragmatic_programmer/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/books/pragmatic_programmer/</guid><description/></item><item><title>Security Keys</title><link>https://ryanjennin.gs/things/tech/keybase/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/tech/keybase/</guid><description/></item><item><title>Tao Te Ching</title><link>https://ryanjennin.gs/things/books/tao-te-ting/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/books/tao-te-ting/</guid><description/></item><item><title>Artificial Intelligence / Machine Learning</title><link>https://ryanjennin.gs/things/tech/ai-ml/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/tech/ai-ml/</guid><description/></item><item><title>Linux Phones</title><link>https://ryanjennin.gs/things/tech/linux-phones/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/tech/linux-phones/</guid><description/></item><item><title>The Cathedral &amp; the Bazaar</title><link>https://ryanjennin.gs/things/books/cathedral_bazaar/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/books/cathedral_bazaar/</guid><description/></item><item><title>Mobuild Envuscator</title><link>https://ryanjennin.gs/posts/mobuild-envuscator/</link><pubDate>Wed, 16 Apr 2025 18:09:21 -0700</pubDate><guid>https://ryanjennin.gs/posts/mobuild-envuscator/</guid><description>&lt;p>The top vulnerability for mobile security in OWASP is secret exposure.&lt;/p>
+&lt;p>There are better solution (like &lt;a href="https://appdome.com">AppDome&lt;/a>) but this is a simple one my usage.&lt;/p>
+&lt;p>Can also be combine with a compromised device check framework.&lt;/p>
+&lt;p>&lt;a href="https://medium.com/@rybertjen/mobuild-envuscator-a1277470ccef">See the related Medium article&lt;/a>&lt;/p></description></item><item><title>Software Architecture for Independence</title><link>https://ryanjennin.gs/posts/software-architecture/</link><pubDate>Wed, 16 Apr 2025 12:25:55 -0700</pubDate><guid>https://ryanjennin.gs/posts/software-architecture/</guid><description>&lt;p>&lt;a href="https://medium.com/@rybertjen/software-architecture-for-independence-a617e2278351">See the related article on Medium&lt;/a>.&lt;/p></description></item><item><title>Hockey 2.0</title><link>https://ryanjennin.gs/posts/hockey/</link><pubDate>Thu, 31 Aug 2023 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/hockey/</guid><description>&lt;p>Have learned a few things taking up hockey again at age 40 having not played since age 13.&lt;/p>
+&lt;ol>
+&lt;li>Skating is the funnest thing ever&lt;/li>
+&lt;li>Hockey positioning and physics is an art&lt;/li>
+&lt;li>Adult safe beer leagues and training leagues are great&lt;/li>
+&lt;li>Youtube is a great supplementary coach&lt;/li>
+&lt;li>Culture could be better&lt;/li>
+&lt;li>If you learned as a child, you have an advantage&lt;/li>
+&lt;/ol>
+&lt;h3 id="skating-is-fun">Skating is fun&lt;/h3>
+&lt;p>There is nothing more freeing than whipping around the ice with power,
+grace and efficiency. Has become more efficient since I was kid.&lt;/p></description></item><item><title>AI and Nano</title><link>https://ryanjennin.gs/posts/ai-for-nanotech/</link><pubDate>Sun, 11 Sep 2022 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/ai-for-nanotech/</guid><description>&lt;p>Artificial intelligence (AI) and machine learning (ML) works pretty great for
+a variety of time-saving use cases (my favorite is &lt;a href="https://www.gizmodo.com.au/2022/08/this-woman-created-an-ai-system-to-monitor-her-cats-poop/">monitoring cat poop&lt;/a>)&lt;/p>
+&lt;p>The ultimate goal of AI appears to be &lt;strong>artificial consciousness&lt;/strong> - like an
+Alan Turing avatar friend. Alan Turing, the father of computer science,
+a homosexual man in a time of unacceptance who wanted company in artificial
+life. Saved us from the world war by cracking enemy communication, but still
+ostrisized brutally.&lt;/p></description></item><item><title>Friday Frida Hacking without the Why</title><link>https://ryanjennin.gs/posts/friday-frida-hack/</link><pubDate>Tue, 06 Sep 2022 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/friday-frida-hack/</guid><description>&lt;p>A brief but somewhat fun introduction to compromising data integrity on an Android
+application. **&lt;/p>
+&lt;p>This article will give an overview of setting up a rooted Android emulator,
+installing a tool called Frida, creating Frida scripts to intercept code at runtime,
+and replacing data in an application.&lt;/p></description></item><item><title>Clean Architecture + Redux + Android</title><link>https://ryanjennin.gs/posts/clean-architucture-redux-compose-flow/</link><pubDate>Wed, 04 May 2022 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/clean-architucture-redux-compose-flow/</guid><description>&lt;p>Have been learning a new tricks in mobile architecture on the native side.&lt;/p>
+&lt;p>Applying the redux pattern to android architecture components and MVVM has been interesting.&lt;/p>
+&lt;p>I have written some brief overviews of such things - if talk is cheap and just want the code - check out &lt;a href="https://github.com/ryjen/namegame">namegame&lt;/a> or &lt;a href="https://github.com/ryjen/jokeapp-droid">jokeapp&lt;/a>.&lt;/p></description></item><item><title>Scouter Demo</title><link>https://ryanjennin.gs/posts/scouter-demo/</link><pubDate>Sat, 14 Aug 2021 00:03:52 -0700</pubDate><guid>https://ryanjennin.gs/posts/scouter-demo/</guid><description>&lt;h2 id="edit-minimum-viable-product">EDIT: Minimum Viable Product&lt;/h2>
+&lt;p>A newer version of this project is now &lt;a href="https://github.com/hackelia-micrantha/skouter">open source&lt;/a> and
+would love contributors.&lt;/p>
+&lt;p>I am super bored of mobile and have trouble with the last 20% - but am trying to get into the store at least.
+The &lt;a href="https://github.com/orgs/hackelia-micrantha/projects/3">project management&lt;/a>
+page for &lt;strong>Phase 1&lt;/strong> has:&lt;/p></description></item><item><title>Sandbox Demo</title><link>https://ryanjennin.gs/archive/sandcastle-util-demo/</link><pubDate>Thu, 29 Jul 2021 20:09:25 -0700</pubDate><guid>https://ryanjennin.gs/archive/sandcastle-util-demo/</guid><description>&lt;p>A utility from &lt;a href="https://micrantha.com">Micrantha&lt;/a> for creating &lt;a href="https://hackelia-micrantha.github.io/sandbox/">reusable isolated development
+environments&lt;/a>.&lt;/p>
+&lt;p>This is basically an easy to use abstraction around &lt;a href="https://docker.com">docker&lt;/a> with some extra perks.&lt;/p>
+&lt;ul>
+&lt;li>file synchronization that follows symlinks&lt;/li>
+&lt;li>keep package manager and system dependencies isolated from host&lt;/li>
+&lt;li>reusable state that can also be persisted as a &amp;lsquo;sandcastle&amp;rsquo; for other sandboxes&lt;/li>
+&lt;li>consistent user file permissions with the host&lt;/li>
+&lt;li>better time tracking with &lt;a href="https://taskwarrior.org/">taskwarrior&lt;/a> timewarrior scripts&lt;/li>
+&lt;li>write it how I would want it (did not like other tools)
+
+
+
+ &lt;br>&lt;br>
+ &lt;video controls>
+ &lt;source src="https://ryanjennin.gs/video/sandbox_demo.mp4" type=video/mp4>
+ &lt;/video>
+
+ &lt;br>&lt;br>
+ &lt;/li>
+&lt;/ul>
+&lt;p>If you have mastered &lt;a href="https://themouseless.dev/">mouseless programming&lt;/a> for whatever reason you will like this tool.&lt;/p></description></item><item><title>Man-in-the-Middle</title><link>https://ryanjennin.gs/posts/mitm/</link><pubDate>Thu, 18 Feb 2021 11:18:10 -0800</pubDate><guid>https://ryanjennin.gs/posts/mitm/</guid><description>&lt;p>A man-in-the-middle (MITM) attack is a network security attack where a malicious device enters a network and intercepts traffic between nodes or components.&lt;/p>
+&lt;p>To accomplish access to a network an attacker needs an entry point.&lt;br>
+There are many ways for a malicious device to accomplish access into a network.&lt;/p></description></item><item><title>Mind Full, Ness! Don't Care</title><link>https://ryanjennin.gs/2021/01/21/mind-full-ness-dont-care/</link><pubDate>Thu, 21 Jan 2021 21:58:00 -0800</pubDate><guid>https://ryanjennin.gs/2021/01/21/mind-full-ness-dont-care/</guid><description>&lt;p>Mindfulness.&lt;/p>
+&lt;p>When I first heard the word, my mind said &amp;ldquo;oh, the geniuses that may be have come up with more politically correct word&amp;hellip;. Just like breaking down diagnosis&amp;rsquo;s to something more friendly&amp;rdquo;.&lt;/p>
+&lt;p>Did not think much more about than that, same old, same old.&lt;/p></description></item><item><title>Hard Done By</title><link>https://ryanjennin.gs/2021/01/21/hard-done-by/</link><pubDate>Thu, 21 Jan 2021 15:24:54 -0800</pubDate><guid>https://ryanjennin.gs/2021/01/21/hard-done-by/</guid><description>&lt;p>I am so &amp;ldquo;&lt;strong>hard done by&lt;/strong>&amp;rdquo; (&lt;em>adjective; used, cheated, dejected&lt;/em>).&lt;/p>
+&lt;p>It is like a game of attention, who is the most hard done by?&lt;/p>
+&lt;p>The winner is also the biggest loser, because they are the most hard done by.&lt;/p>
+&lt;p>Don&amp;rsquo;t I get it yet? I am not hard done by. Therefore, I am hard done by.&lt;/p></description></item><item><title>Do All It Y</title><link>https://ryanjennin.gs/2021/01/20/do-all-it-y/</link><pubDate>Wed, 20 Jan 2021 17:56:07 -0800</pubDate><guid>https://ryanjennin.gs/2021/01/20/do-all-it-y/</guid><description>&lt;p>The dualistic nature of things, that appears so often on earth (look for them you will see)&lt;/p>
+&lt;p>Could be based on the polarizing energies of male and female that manifest across mammals and other species.&lt;/p>
+&lt;p>Do you think the universe cares about good and evil for example? A very popular duality.&lt;/p></description></item><item><title>Alternate Keyboard</title><link>https://ryanjennin.gs/posts/alternate-keyboard/</link><pubDate>Tue, 19 Jan 2021 15:08:38 -0800</pubDate><guid>https://ryanjennin.gs/posts/alternate-keyboard/</guid><description>&lt;p>Decided to switch to using a alternate keyboard layout, not too long ago&amp;hellip;. Well I guess it has been a couple of years now. But I love it.&lt;/p>
+&lt;p>Always heard about others using the &lt;a href="https://www.dvorak-keyboard.com/">Dvorak keyboard layout&lt;/a> and thought, &amp;ldquo;boy that is really neat, but too much work to change&amp;rdquo;.&lt;/p></description></item><item><title>Guitar Suite Demos</title><link>https://ryanjennin.gs/posts/old-demos/</link><pubDate>Mon, 11 Jan 2021 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/old-demos/</guid><description>&lt;p>Found an old demo of an App I developed in 2010. Based upon a C++ PALM application, it was written in C#/Xamarin for cross platform.&lt;/p>
+
+
+
+&lt;video controls>
+ &lt;source src="https://ryanjennin.gs/video/GuitarSuiteDevDemo.m4v" type=video/mp4>
+&lt;/video>
+
+&lt;br>&lt;br>
+
+&lt;p>Brings back fond memories of hacking away to &lt;a href="https://en.wikipedia.org/wiki/The_Resistance_(album)">The Resistance&lt;/a> by Muse. We also released a twitter app, a professional calculator and several games.&lt;/p></description></item><item><title>modd: daemon for reloading</title><link>https://ryanjennin.gs/archive/modd-live-coding/</link><pubDate>Sun, 10 Jan 2021 14:46:43 -0800</pubDate><guid>https://ryanjennin.gs/archive/modd-live-coding/</guid><description>&lt;p>One of my favourite tools now is &lt;a href="https://github.com/cortesi/modd">modd&lt;/a>.&lt;/p>
+&lt;p>Why is it so great? It &lt;strong>does one job, and it does it well&lt;/strong>, in proper unix fashion.&lt;/p>
+&lt;p>Monitoring a file-system and running a daemon that reloads if anything changes.&lt;/p>
+&lt;p>Also in proper Unix fashion, the daemon is sent a configurable &lt;code>SIGHUP&lt;/code> when a file changes.&lt;/p></description></item><item><title>Global World Order</title><link>https://ryanjennin.gs/2021/01/09/global-world-order/</link><pubDate>Sat, 09 Jan 2021 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/2021/01/09/global-world-order/</guid><description>&lt;p>After some discussions earlier today regarding legality, countries and the internet, had to jot down some thoughts.&lt;/p>
+&lt;p>The rule of law for governing works at different levels.&lt;/p>
+&lt;p>Am sure you are aware how globalization and the internet have exposed how difficult it is for countries to integrate with each other without some sort of super world organization governing that.&lt;/p></description></item><item><title>Covuck. Pleasantly.</title><link>https://ryanjennin.gs/2021/01/07/covuck.-pleasantly./</link><pubDate>Thu, 07 Jan 2021 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/2021/01/07/covuck.-pleasantly./</guid><description>&lt;p>Aside from being allowed to have no life or interact with people (which is great btw).&lt;/p>
+&lt;p>Something really positive about covid-19&amp;hellip;&lt;/p>
+&lt;p>Is something that drives me wild with love 😍 and passion 😘&lt;/p>
+&lt;p>I am talking about the little extra plumpness to Canadians.&lt;/p></description></item><item><title>Fire with Fire</title><link>https://ryanjennin.gs/2021/01/06/fire-with-fire/</link><pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/2021/01/06/fire-with-fire/</guid><description>&lt;p>Context: American White House Takeover by Protesters (aka racist terrorists)&lt;/p>
+&lt;p>Do you ever notice that whenever humanity gets squeezed, our worst selves make the most noise?&lt;/p>
+&lt;p>The mental-emotional state of the human condition, acting like a virus. And we indirectly like to think we are a part of something.&lt;/p></description></item><item><title>Who are you?</title><link>https://ryanjennin.gs/2021/01/06/who-are-you/</link><pubDate>Wed, 06 Jan 2021 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/2021/01/06/who-are-you/</guid><description>&lt;p>Who are you? Who am I?&lt;/p>
+&lt;p>Are you a body?&lt;/p>
+&lt;p>Are you a thought?&lt;/p>
+&lt;p>Are you more than a pin point in time?&lt;/p>
+&lt;p>If your body degenerates, are you still your body?&lt;/p>
+&lt;p>If your thought changes, are you still your thought?&lt;/p></description></item><item><title>Opinion Wall</title><link>https://ryanjennin.gs/2021/01/01/opinion-wall/</link><pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/2021/01/01/opinion-wall/</guid><description>&lt;ol>
+&lt;li>
+&lt;p>Opinions are also like onions. They can make others cry, or your &amp;ldquo;self&amp;rdquo; when it gets all wrapped in as who you are.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Given the atomic bomb of the &amp;ldquo;pill&amp;rdquo;, I think professional sex workers deserve some rights. Its not that I want to use their service, but it just does not make sense to control peoples bodies when we send people to war. What we do need to control is health. I do not trust, Dating Apps, Pimps or the Porn industry to regulate health. I would rather Health Canada to step in for safety and cleanliness.&lt;/p></description></item><item><title>Questioning the Queue</title><link>https://ryanjennin.gs/2020/12/15/questioning-the-queue/</link><pubDate>Tue, 15 Dec 2020 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/2020/12/15/questioning-the-queue/</guid><description>&lt;p>Do you feel entitled to be a victim of someone or something else?&lt;/p>
+&lt;p>Do you think your mind or the situation generates more suffering?&lt;/p>
+&lt;p>Do you think that you deserve better? That you are overlooked?&lt;/p>
+&lt;p>That your perception of reality is absolute?&lt;/p></description></item><item><title>Mornin 'Mericas.</title><link>https://ryanjennin.gs/2020/11/21/mornin-mericas./</link><pubDate>Sat, 21 Nov 2020 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/2020/11/21/mornin-mericas./</guid><description>&lt;p>Winners and Losers. All of us have probably felt this is true in some level.&lt;/p>
+&lt;p>Its true with men, and the various games in the lives of the different hues of man.&lt;/p>
+&lt;p>Have not read Trumpian literature on the subject but do have my own opinion that is somewhat biased to the loser side.&lt;/p></description></item><item><title>Covac</title><link>https://ryanjennin.gs/2020/11/09/covac/</link><pubDate>Mon, 09 Nov 2020 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/2020/11/09/covac/</guid><description>&lt;p>Am very glad a covid vaccine has a real chance.&lt;/p>
+&lt;p>&amp;ldquo;Little bottle of hope&amp;rdquo; for saving humans and creating prosperity for more (groan, yes, more humans are needed now eh).&lt;/p>
+&lt;p>That being said, I am actually very bitter going back to the new-normal, with a lot of skepticism.&lt;/p></description></item><item><title>The Dreams</title><link>https://ryanjennin.gs/2020/10/31/the-dreams/</link><pubDate>Sat, 31 Oct 2020 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/2020/10/31/the-dreams/</guid><description>&lt;blockquote>
+&lt;p>Life is a like a dream, a background awareness of reality.…. as a nightmare at worst and a delusion at best. You can guide your self down the stream, but you do not know where you are going and you cannot go back.&lt;/p></description></item><item><title>Poly Techs</title><link>https://ryanjennin.gs/2020/10/18/poly-techs/</link><pubDate>Sun, 18 Oct 2020 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/2020/10/18/poly-techs/</guid><description>&lt;p>Politics. Does it matter? Why?&lt;/p>
+&lt;p>It is great that the &lt;strong>human condition is suffering&lt;/strong>, as there is a plethora of issues to take unconscious action on.&lt;/p>
+&lt;p>When it comes down to actionable issues that are most common, it is always &lt;strong>children&lt;/strong>.&lt;/p></description></item><item><title>Indulgence into the past</title><link>https://ryanjennin.gs/2020/10/01/indulgence-into-the-past/</link><pubDate>Thu, 01 Oct 2020 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/2020/10/01/indulgence-into-the-past/</guid><description>&lt;h2 id="hello-world">Hello, World&lt;/h2>
+&lt;p>I am a late bloomer, not finding post-secondary until ~28 years of age.&lt;/p>
+&lt;p>I have survived in catch-up mode for the last ~12 years, but ultimately has left me with many short straws, and no long ones. In my career, education and personal life.&lt;/p></description></item><item><title>Blockchain Mesh Networks</title><link>https://ryanjennin.gs/posts/blockchain-mesh-internet/</link><pubDate>Fri, 18 Sep 2020 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/blockchain-mesh-internet/</guid><description>&lt;p>Using &lt;a href="https://en.wikipedia.org/wiki/Blockchain">the blockchain&lt;/a> mesh network routers allow freedom and payments.&lt;/p>
+&lt;p>The underlying core of bitcoin, the blockchain is a system that can be applied to a variety of uses.&lt;/p>
+&lt;p>One particular disruptive use, that is not mentioned on the wiki, is &lt;strong>mesh networks&lt;/strong>.&lt;/p></description></item><item><title>The Dead Triplets</title><link>https://ryanjennin.gs/2020/09/05/the-dead-triplets/</link><pubDate>Sat, 05 Sep 2020 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/2020/09/05/the-dead-triplets/</guid><description>&lt;p>This post could about music theory and rhythm, such as the triplet guitar riffs in &lt;a href="https://www.youtube.com/watch?v=hxsld16TjSU">invincible&lt;/a>&amp;hellip;&lt;/p>
+&lt;p>But this about a single chapter, in a single &lt;a href="https://www.amazon.ca/dp/0919123740/ref=cm_sw_em_r_mt_dp_OgrvFbQY1J529">book from the swamp&lt;/a>. It is probably already a more influential book than I realize, from which I quote liberally and implicitly.&lt;/p></description></item><item><title>Myths Fading, Direction of Evolution</title><link>https://ryanjennin.gs/2020/07/07/myths-fading-direction-of-evolution/</link><pubDate>Tue, 07 Jul 2020 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/2020/07/07/myths-fading-direction-of-evolution/</guid><description>&lt;p>Remembering a concept from the book &lt;a href="https://www.amazon.com/Sapiens-Humankind-Yuval-Noah-Harari/dp/0062316095">Sapiens&lt;/a> (paraphrasing):&lt;/p>
+&lt;blockquote>
+&lt;p>Ape hierarchy only existed in small groups with a limit (150 or so) with a dominant leader (alpha). This applies to humans as well, but we were able so surpass the threshold with myths and better communication.&lt;/p></description></item><item><title>Git Notes Storage</title><link>https://ryanjennin.gs/posts/git-notes-as-version-tool-storage/</link><pubDate>Thu, 25 Jun 2020 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/git-notes-as-version-tool-storage/</guid><description>&lt;p>Am working on a project build tool to make repeatable tasks for &lt;a href="https://micrantha.com">Micrantha&lt;/a> projects easier.&lt;/p>
+&lt;p>A module of this tool is automatic versioning using &lt;a href="https://semver.org/">semantic version&lt;/a>.&lt;/p>
+&lt;h2 id="the-versioning">The versioning&lt;/h2>
+&lt;p>The way I wanted the versioning to work is to have &lt;strong>thresholds&lt;/strong> for when a version component auto-increments.&lt;/p></description></item><item><title>Audit</title><link>https://ryanjennin.gs/posts/audit/</link><pubDate>Mon, 27 Jan 2020 22:14:09 -0800</pubDate><guid>https://ryanjennin.gs/posts/audit/</guid><description>&lt;p>Have removed some incomplete content that was incomplete or did not make sense anymore.&lt;/p>
+&lt;p>The URL&amp;rsquo;s are now aliased here for reference.&lt;/p></description></item><item><title>12 Bar Blues</title><link>https://ryanjennin.gs/2019/10/02/12-bar-blues/</link><pubDate>Wed, 02 Oct 2019 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/2019/10/02/12-bar-blues/</guid><description>&lt;p>You might have heard of the blues, made famous as a way to make a living in the US for marginalized citizens.&lt;/p>
+&lt;p>The story goes that the French taught the Black community music theory and unlocked a creative juice thirsting for expression.&lt;/p></description></item><item><title>Mirroring git with jenkins</title><link>https://ryanjennin.gs/posts/jenkins-git-mirror/</link><pubDate>Fri, 05 Jul 2019 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/jenkins-git-mirror/</guid><description>&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>For some software development projects, there may be a need to backup or mirror the repository to a different location.&lt;/p>
+&lt;p>Jenkins or other continuous integration (CI) can automate this. This log is a brief summary of how in case I need to reproduce.&lt;/p></description></item><item><title>What I've Learned from 4 Years of Eckhart Tolle</title><link>https://ryanjennin.gs/2019/01/12/what-ive-learned-from-4-years-of-eckhart-tolle/</link><pubDate>Sat, 12 Jan 2019 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/2019/01/12/what-ive-learned-from-4-years-of-eckhart-tolle/</guid><description>&lt;h2 id="major-lessons">Major Lessons&lt;/h2>
+&lt;!-- raw HTML omitted -->
+&lt;p>&lt;a href="https://en.wikipedia.org/wiki/Eckhart_Tolle">Eckhart Tolle&lt;/a> or &lt;strong>ET&lt;/strong> is a unique individual, author and orator. After a suicidal night where he thought &amp;ldquo;I cannot live with myself any longer&amp;rdquo; and recognized the oddity of thought, as if there were two people &amp;ldquo;I&amp;rdquo; and &amp;ldquo;myself&amp;rdquo;. That recognition brought a radical inner transformation and years of intense bliss. He later learned more about what happened to him and became a &amp;ldquo;spiritual teacher&amp;rdquo;.&lt;/p></description></item><item><title>Favourite 'nixisms</title><link>https://ryanjennin.gs/posts/favourite-nixisms/</link><pubDate>Mon, 05 Nov 2018 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/favourite-nixisms/</guid><description>&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>A log to myself of things I like about Unix type systems. In case I forget why someday.&lt;/p>
+&lt;h2 id="dotfiles">Dotfiles&lt;/h2>
+&lt;p>&lt;!-- raw HTML omitted -->files in braille? are they for the blind?&lt;!-- raw HTML omitted -->&lt;/p>
+&lt;p>Dotfiles in Linux are hidden files preceded with a period. Depending on the program, they are used for configuration in your home directory.&lt;/p></description></item><item><title>Mitmproxy and Android</title><link>https://ryanjennin.gs/posts/mitmproxy-and-android/</link><pubDate>Wed, 16 May 2018 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/mitmproxy-and-android/</guid><description>&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>Debugging network traffic for your app can be useful, and sometimes necessary if the data is not what is expected or inconsistent.&lt;/p>
+&lt;h2 id="the-proxy">The Proxy&lt;/h2>
+&lt;p>I prefer the open source proxy [mitmproxy](&lt;a href="https://mitmproxy.org">https://mitmproxy.org&lt;/a> =300x203). Easy to install on OSX with &lt;a href="https://brew.sh">homebrew&lt;/a>.&lt;/p>
+&lt;p>&lt;code>brew install mitmproxy&lt;/code>&lt;/p></description></item><item><title>Deploy Docker Registry with Dokku</title><link>https://ryanjennin.gs/archive/deploy-docker-registry-in-dokku/</link><pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/archive/deploy-docker-registry-in-dokku/</guid><description>&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
+&lt;p>You&amp;rsquo;ll need to prepare a bit.&lt;/p>
+&lt;hr>
+&lt;ol>
+&lt;li>A local path on the server to store registry data. For example: &lt;code>/mydir/registry&lt;/code>&lt;/li>
+&lt;li>&lt;a href="https://www.docker.com/community-edition#/download">Docker&lt;/a> installed on the client and server machine&lt;/li>
+&lt;li>&lt;a href="http://dokku.viewdocs.io/dokku/">Dokku&lt;/a> installed on the server&lt;/li>
+&lt;/ol>
+&lt;h3 id="for-authentication">For Authentication&lt;/h3>
+&lt;ol>
+&lt;li>httpasswd command is installed&lt;/li>
+&lt;/ol>
+&lt;h3 id="for-an-external-registry">For an External Registry&lt;/h3>
+&lt;ol>
+&lt;li>Dokku &lt;a href="https://github.com/dokku/dokku-letsencrypt">letsencrypt plugin&lt;/a> installed&lt;/li>
+&lt;li>A working domain name pointing to the dokku app. For example, &lt;em>&lt;a href="https://registry.mydomain.com">https://registry.mydomain.com&lt;/a>&lt;/em>&lt;/li>
+&lt;/ol>
+&lt;h3 id="create-the-dokku-app">Create the dokku app&lt;/h3>
+&lt;p>Create the dokku app and retag a pre-existing repository image to it.
+To persist data, a volume is used.&lt;/p></description></item><item><title>Fortunes on Slack</title><link>https://ryanjennin.gs/posts/fortunes-microservice/</link><pubDate>Mon, 22 Jan 2018 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/fortunes-microservice/</guid><description>&lt;p>&lt;a href="https://fortunes.micrantha.com">view the service homepage&lt;/a>&lt;/p>
+&lt;h4 id="introduction">Introduction&lt;/h4>
+&lt;p>Have always enjoyed the &lt;a href="https://en.wikipedia.org/wiki/Fortune_%28Unix%29">UNIX fortunes&lt;/a> program, ever since I was a wee &lt;a href="https://en.wikipedia.org/wiki/Newbie">newbie&lt;/a>. If you aren&amp;rsquo;t familiar with it (sad), yes, its like a fortune cookie.&lt;/p>
+&lt;p>It can be more technical in nature but not always. It also has poems, quotations, and if enabled - offensive content.&lt;/p></description></item><item><title>Microsoft Dev Stack on macOS</title><link>https://ryanjennin.gs/archive/microsoft-dev-stack-macos/</link><pubDate>Sun, 27 Nov 2016 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/archive/microsoft-dev-stack-macos/</guid><description>&lt;p>Gonna evangelize a little bit.&lt;/p>
+&lt;p>When &lt;a href="http://microsoft.com">Microsoft&lt;/a> bought Xamarin, they did not underestimate the power of &lt;a href="https://www.xamarin.com/forms">Xamarin.Forms&lt;/a> for building cross platform UIs. Now with the release of Visual Studio for macOS and the Dotnet Core, its looks like its going to stay alive.&lt;/p></description></item><item><title>Hugo + Dokku + Wercker = Goodness</title><link>https://ryanjennin.gs/archive/hugo-dokku-wercker-goodness/</link><pubDate>Wed, 22 Jun 2016 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/archive/hugo-dokku-wercker-goodness/</guid><description>&lt;h2 id="hugo">&lt;a href="http://gohugo.io">Hugo&lt;/a>&lt;/h2>
+&lt;p>Hugo is a static site generator with many powerful features like archtypes, themes, customization, etc.&lt;/p>
+&lt;p>Combined with tools like &lt;a href="http://bower.io">bower&lt;/a> and &lt;a href="http://brunch.io">brunch&lt;/a> it makes for a pretty powerful app that could be more than a blog.&lt;/p>
+&lt;p>The workflow is simple - build your assets with brunch, run the hugo generator.
+The end result is a complete static html site you can deploy.&lt;/p></description></item><item><title>c hacking: polymorphing 2</title><link>https://ryanjennin.gs/archive/c-hacking-polymoriphing-2/</link><pubDate>Wed, 02 Dec 2015 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/archive/c-hacking-polymoriphing-2/</guid><description>&lt;p>While working on &lt;a href="http://github.com/ryjen/cparse">cparse&lt;/a> I found another nifty way to sort of simulate polymorphism.&lt;/p>
+&lt;h1 id="cparse">cparse&lt;/h1>
+&lt;p>Another exercise in futility, a C implementation for the REST api at &lt;a href="http://parse.com">parse.com&lt;/a>. Really the core of it is a web client and an object structure using json.&lt;/p></description></item><item><title>Elixir and Phoenix</title><link>https://ryanjennin.gs/posts/elixir-and-phoenix/</link><pubDate>Wed, 09 Sep 2015 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/elixir-and-phoenix/</guid><description>&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;!-- raw HTML omitted -->
+&lt;p>If you dont know &lt;a href="http://phoenixframework.org">phoenix&lt;/a> framework, I&amp;rsquo;d describe it as rails for elixir. If you dont know &lt;a href="http://elixir-lang.org">Elixir&lt;/a> I&amp;rsquo;d describe it as a &lt;a href="https://en.wikipedia.org/wiki/Functional_programming">functional&lt;/a> language that feels like ruby for &lt;a href="http://erlang.org">erlang&lt;/a>.&lt;/p>
+&lt;p>If you don&amp;rsquo;t know erlang it has been around a while (open-sourced in 1998) and the virtual machine is designed to be highly fault tolerant and scalable for use in telecoms, banking and instant messaging (WhatsApp).&lt;/p></description></item><item><title>Poor Man's Polymorphism</title><link>https://ryanjennin.gs/archive/poor-man-s-polymorphism/</link><pubDate>Fri, 30 Nov 2012 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/archive/poor-man-s-polymorphism/</guid><description>&lt;p>Found out that C structs can be casted between each other if the &lt;strong>field types and ordering are the same&lt;/strong>. It is not portable code, but you can start too see how and why the virtual table and object oriented programming evolved in c++.&lt;/p></description></item><item><title>Crafting a Game With CraftyJS</title><link>https://ryanjennin.gs/archive/crafting-a-game-with-craftyjs/</link><pubDate>Sat, 17 Nov 2012 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/archive/crafting-a-game-with-craftyjs/</guid><description>&lt;h4 id="introduction">Introduction&lt;/h4>
+&lt;p>Briefly going to mention a javascript game engine called &lt;a href="http://craftyjs.com/">CraftyJS&lt;/a> that I&amp;rsquo;ve been playing with the past couple of days.&lt;/p>
+&lt;p>Has the usual suspects like Entity Component System, Collision, Sprite Maps, etc.&lt;/p>
+&lt;h4 id="the-project">The Project&lt;/h4>
+&lt;p>&lt;a href="https://amos.coda.life">&lt;img src="https://ryanjennin.gs/image/blog/amos_the_alien.png" alt="Amos the Alien">&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://amos.coda.life">Amos the Alien&lt;/a> is a small demo I made.&lt;/p></description></item><item><title>C Sqlite Tricks</title><link>https://ryanjennin.gs/archive/c-sqlite-tricks/</link><pubDate>Tue, 15 May 2012 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/archive/c-sqlite-tricks/</guid><description>&lt;h4 id="introduction">Introduction&lt;/h4>
+&lt;p>Thought I would share some tricks I use for easy data CRUD&amp;rsquo;s in C. I&amp;rsquo;m using Sqlite here, but could apply to any database.&lt;/p>
+&lt;p>Not saying its the best approach at all (nor &lt;a href="https://github.com/ryjen/db">ryjen/db&lt;/a>), this is just how it evolved for me.&lt;/p></description></item><item><title>Best Programming Quotes</title><link>https://ryanjennin.gs/posts/best-programming-quotes/</link><pubDate>Tue, 10 Apr 2012 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/best-programming-quotes/</guid><description>&lt;p>Quotes that relate to software engineering always humble me with their laser-like honesty.
+I&amp;rsquo;ve decided to keep a collection of my favorites here (in no particular order).&lt;/p>
+&lt;!-- raw HTML omitted --></description></item><item><title/><link>https://ryanjennin.gs/scouter/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/scouter/</guid><description>&lt;h1 id="scouter">Scouter&lt;/h1>
+&lt;p>Alternatively Eye Spy, iSpy, PicPatrol, CamAgent.&lt;/p>
+&lt;h2 id="motivations">Motivations&lt;/h2>
+&lt;p>Mostly to use machine learning and potentially build or strengthen an image classification model.&lt;/p>
+&lt;p>It is based on the classic game of &amp;ldquo;I Spy&amp;rdquo; and a good way to discover new things about your environment.&lt;/p></description></item><item><title>About</title><link>https://ryanjennin.gs/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/about/</guid><description>&lt;div id="about">
+ &lt;div class="card">
+ &lt;div class="card-content">
+ &lt;div class="media">
+ &lt;div class="media-left">
+ &lt;img
+ class="is-rounded mr-5"
+ alt="kayaking"
+ width="310"
+ height="310"
+ src="https://ryanjennin.gs/image/about/kayaking.webp"
+ />
+ &lt;/div>
+ &lt;div class="media-content">
+ &lt;p class="title is-4">(Robert) Ryan Jennings&lt;/p>
+ &lt;p class="subtitle is-6">@ryjen | @rybertjen | @entrobert&lt;/p>
+ &lt;ul class="is-size-6">
+ &lt;li>
+ A
+ &lt;a href="https://en.wikipedia.org/wiki/Multipotentiality"
+ >multipotentialite&lt;/a
+ >
+ residing in North Vancouver, British Columbia
+ &lt;/li>
+	 &lt;li>Cismale, hetero, middle aged, minimalist&lt;/li>
+	 &lt;li>Singleton, animal parent&lt;/li>
+ &lt;li>
+ Enjoys
+ &lt;a href="https://soundcloud.com/entrobert/sets/favs"
+ >making music&lt;/a
+ >
+ (guitar, bass, jazz blues)
+ &lt;/li>
+ &lt;li>Technologist, software engineer, follows the singularity&lt;/li>
+ &lt;li>Reads psychology and spirituality&lt;/li>
+ &lt;li>Plays hockey, hikes, bike rides and kayaks&lt;/li>
+ &lt;/ul>
+ &lt;/div>
+ &lt;/div>
+ &lt;/div>
+ &lt;div class="card-footer">
+ 
+ 
+ &lt;a role="button" class="card-footer-item" href="https://github.com/ryjen" aria-label="github">
+ &lt;span class="icon is-medium">
+ &lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ &lt;use xlink:href="https://ryanjennin.gs/fonts/brands.svg#github">&lt;/use>
+ &lt;/svg>
+ &lt;/span>
+ 
+ 
+ &lt;/a>
+ 
+ &lt;a role="button" class="card-footer-item" href="https://www.goodreads.com/ryjen" aria-label="goodreads">
+ &lt;span class="icon is-medium">
+ &lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ &lt;use xlink:href="https://ryanjennin.gs/fonts/brands.svg#goodreads">&lt;/use>
+ &lt;/svg>
+ &lt;/span>
+ 
+ 
+ &lt;/a>
+ 
+ &lt;a role="button" class="card-footer-item" href="https://keybase.io/ryjen" aria-label="keybase">
+ &lt;span class="icon is-medium">
+ &lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ &lt;use xlink:href="https://ryanjennin.gs/fonts/brands.svg#keybase">&lt;/use>
+ &lt;/svg>
+ &lt;/span>
+ 
+ 
+ &lt;/a>
+ 
+ &lt;a role="button" class="card-footer-item" href="https://linkedin.com/in/ryjen" aria-label="linkedin">
+ &lt;span class="icon is-medium">
+ &lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ &lt;use xlink:href="https://ryanjennin.gs/fonts/brands.svg#linkedin">&lt;/use>
+ &lt;/svg>
+ &lt;/span>
+ 
+ 
+ &lt;/a>
+ 
+ &lt;a role="button" class="card-footer-item" href="https://paypal.me/micrantha" aria-label="paypal">
+ &lt;span class="icon is-medium">
+ &lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ &lt;use xlink:href="https://ryanjennin.gs/fonts/brands.svg#paypal">&lt;/use>
+ &lt;/svg>
+ &lt;/span>
+ 
+ 
+ &lt;/a>
+ 
+ &lt;a role="button" class="card-footer-item" href="https://soundcloud.com/entrobert/sets/favs" aria-label="soundcloud">
+ &lt;span class="icon is-medium">
+ &lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ &lt;use xlink:href="https://ryanjennin.gs/fonts/brands.svg#soundcloud">&lt;/use>
+ &lt;/svg>
+ &lt;/span>
+ 
+ 
+ &lt;/a>
+ 
+ 
+ &lt;a role="button" class="card-footer-item" href="mailto://robert@ryanjennin.gs" aria-label="email">
+ &lt;span class="icon is-medium">
+ &lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ &lt;use xlink:href="https://ryanjennin.gs/fonts/solid.svg#at">&lt;/use>
+ &lt;/svg>
+ &lt;/span>
+ &lt;/a>
+ 
+
+ &lt;a
+ role="button"
+ class="card-footer-item"
+ href="https://ryanjennin.gs/resume"
+ aria-label="resume"
+ >
+ &lt;span class="icon is-medium">
+ &lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ &lt;use xlink:href="https://ryanjennin.gs/fonts/solid.svg#file">&lt;/use>
+ &lt;/svg>
+ &lt;/span>
+
+ &lt;/a>
+ &lt;/div>
+ &lt;/div>
+
+ &lt;br />&lt;br />
+
+ &lt;div class="card">
+ &lt;div class="card-content">
+ &lt;div class="media">
+ &lt;div class="media-content has-text-right">
+ &lt;p class="title is-4">Gertrude "Gerty" Jennings&lt;/p></description></item><item><title>Cracking the Coding Interview</title><link>https://ryanjennin.gs/things/books/cracking-code-interview/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/books/cracking-code-interview/</guid><description/></item><item><title>Cross Platform Mobile Frameworks</title><link>https://ryanjennin.gs/things/tech/mobile-xpf/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/tech/mobile-xpf/</guid><description/></item><item><title>Drawings</title><link>https://ryanjennin.gs/art/doodles/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/art/doodles/</guid><description>&lt;div id="doodles">
+
+ &lt;div class="slider">
+
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/gerty.jpg" />
+ &lt;div>Gerty: A Portrait&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/portrait.jpg" />
+ &lt;div>Portrait (Ana Kao version)&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/rose.jpg" />
+ &lt;div>Rose Blades&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/flowoman.jpg" />
+ &lt;div>Flow Woman&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/osteriches.jpg" />
+ &lt;div>Osterich Tribe&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/owl.jpg" />
+ &lt;div>Owl of Me (Me-Owl)&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/osterich.jpg" />
+ &lt;div>Osterich Portrait&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/quacker.jpg" />
+ &lt;div>Crumby Quacker&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/gerty2.jpg" />
+ &lt;div>Gertrude: Don&amp;#39;t be Rude&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/stunt-ark.jpg" />
+ &lt;div>Stuntman Missing Noah&amp;#39;s Ark&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/mother.jpg" />
+ &lt;div>Moth of Her (mother)&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/stardum.jpg" />
+ &lt;div>Stardum: Moon Eating&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/black-flower.jpg" />
+ &lt;div>Black Hole Brain Flower&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/dino-rock-sex.jpg" />
+ &lt;div>Dinosaurus, Rock, Sex Transfusion&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/droid.png" />
+ &lt;div>Droid, Card, Watercolour&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/pi.png" />
+ &lt;div>Greek Upside Down Smile Pi&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/penelopy.jpg" />
+ &lt;div>Penelopy: A Rough Trade&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/clouds.png" />
+ &lt;div>Clouds, Card, Watercolour&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/bones.jpg" />
+ &lt;div>Brain Casing, Cracked&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/enlightenment.png" />
+ &lt;div>Freedom of Self Baggage&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/joker.png" />
+ &lt;div>Joker and the Thief&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/ca-nada.jpg" />
+ &lt;div>Can, but Nada&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/crapola.png" />
+ &lt;div>Life for Breakfast&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/treble.jpg" />
+ &lt;div>Treble Clef: Art in itself&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/sabateur.jpg" />
+ &lt;div>Sabateur&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/apocolypse.jpg" />
+ &lt;div>Happiness in Apocolypse&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/venus.jpg" />
+ &lt;div>The Other Side&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/imperial.jpg" />
+ &lt;div>Imp Ear, Real&lt;/div>
+ &lt;/div>
+ 
+
+ &lt;/div>
+
+ &lt;div class="controls is-flex is-justify-content-center">
+ &lt;div id="prev" class="mx-4">&lt;span class="icon is-small">
+ &lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ &lt;use xlink:href="https://ryanjennin.gs/fonts/solid.svg#backward">&lt;/use>
+ &lt;/svg>
+&lt;/span>&lt;/div>
+ &lt;div id="pause" class="mx-4">&lt;span class="icon is-small">
+ &lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ &lt;use xlink:href="https://ryanjennin.gs/fonts/solid.svg#pause">&lt;/use>
+ &lt;/svg>
+&lt;/span>&lt;/div>
+ &lt;div id="play" class="mx-4 is-hidden">&lt;span class="icon is-small">
+ &lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ &lt;use xlink:href="https://ryanjennin.gs/fonts/solid.svg#play">&lt;/use>
+ &lt;/svg>
+&lt;/span>&lt;/div>
+ &lt;div id="next" class="mx-4">&lt;span class="icon is-small">
+ &lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ &lt;use xlink:href="https://ryanjennin.gs/fonts/solid.svg#forward">&lt;/use>
+ &lt;/svg>
+&lt;/span>&lt;/div>
+ &lt;/div>
+&lt;/div></description></item><item><title>Fuzz Testing</title><link>https://ryanjennin.gs/things/tech/fuzz-testing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/tech/fuzz-testing/</guid><description/></item><item><title>Illusions: Adventures of a Reluctant Messiah</title><link>https://ryanjennin.gs/things/books/illusions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/books/illusions/</guid><description/></item><item><title>Interplanetary File System</title><link>https://ryanjennin.gs/things/tech/interplanetary-fs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/tech/interplanetary-fs/</guid><description/></item><item><title>Music</title><link>https://ryanjennin.gs/art/music/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/art/music/</guid><description>&lt;h2 id="soundcloud">SoundCloud&lt;/h2>
+&lt;iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/287033462&amp;amp;auto_play=false&amp;amp;hide_related=true&amp;amp;show_comments=true&amp;amp;show_user=false&amp;amp;show_reposts=false">&lt;/iframe>
+
+
+&lt;h2 id="videos">Videos&lt;/h2>
+&lt;iframe
+ width="560"
+ height="315"
+ src="https://www.youtube.com/embed/videoseries?si=EtHHcGl1Yq6r9lBs&amp;amp;list=PLGnrsXaBOMZ7ksa0HdjbiBx13F7PapIwY"
+ title="YouTube video player"
+ frameborder="0"
+ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+ allowfullscreen
+>&lt;/iframe>
+
+&lt;h2 id="sheet-music">Sheet Music&lt;/h2>
+&lt;p>&lt;a href="https://musescore.com/entrobert?share=copy_link">Musescore&lt;/a> has some nursery
+rhymes and xmas carols I re-wrote in minor.&lt;/p>
+&lt;h2 id="meatspace-live">Meatspace (live)&lt;/h2>
+&lt;p>You can sometimes find me at the &amp;ldquo;Vancouver Jazzy Jams Community&amp;rdquo; at
+Trinity-Grace United Church on Sundays.&lt;/p></description></item><item><title>Phoenix Framework and Elixir/Erlang</title><link>https://ryanjennin.gs/things/tech/elixer-erlang/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/tech/elixer-erlang/</guid><description/></item><item><title>Reactive Extensions</title><link>https://ryanjennin.gs/things/tech/reativext/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/tech/reativext/</guid><description/></item><item><title>resume</title><link>https://ryanjennin.gs/resume/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/resume/</guid><description>&lt;iframe
+ id="resume"
+ src="https://ryanjennin.gs/docs/resume-jennings-ryan.pdf"
+ width="100%"
+ height="100%"
+>
+ &lt;a
+ href="https://docs.google.com/viewer?url=https://ryanjennin.gs/docs/resume-jennings-ryan.pdf&amp;embedded=true"
+ >View Resume&lt;/a
+ >
+&lt;/iframe></description></item><item><title>Skystone / A Dream of Eagles</title><link>https://ryanjennin.gs/things/books/skystone/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/books/skystone/</guid><description/></item><item><title>SRE / DevOps</title><link>https://ryanjennin.gs/things/tech/devops/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/tech/devops/</guid><description/></item><item><title>Summary</title><link>https://ryanjennin.gs/summary/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/summary/</guid><description>&lt;div class="resume p-6" id="summary">
+ &lt;h1 class="title">Summary of Ryan Jennings&lt;/h1>
+ &lt;h2 class="subtitle is-size-5 mt-2">Career History, Expertise and Interests&lt;/h2>
+
+ &lt;div class="interests">
+ &lt;h2 class="is-size-4 mt-4">Interests&lt;/h2>
+
+ &lt;p>Ryan has a strong interest in cross-platform mobile development from his experience in PALM, Windows Phone,
+ Blackberry, iOS, Android, Xamarin and React-Native.
+ He has good knowledge of UX principles and is particularity strong at bridging native platform solutions to
+ cross-platform user interfaces.&lt;/p></description></item><item><title>ThinkPads</title><link>https://ryanjennin.gs/things/tech/thinkpad/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/tech/thinkpad/</guid><description/></item></channel></rss>

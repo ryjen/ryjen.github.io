@@ -1,3 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>development on Home</title><link>https://ryanjennin.gs/tags/development/</link><description>Recent content in development on Home</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 29 Jul 2021 20:09:25 -0700</lastBuildDate><atom:link href="https://ryanjennin.gs/tags/development/index.xml" rel="self" type="application/rss+xml"/><item><title>Sandbox Demo</title><link>https://ryanjennin.gs/posts/sandcastle-util-demo/</link><pubDate>Thu, 29 Jul 2021 20:09:25 -0700</pubDate><guid>https://ryanjennin.gs/posts/sandcastle-util-demo/</guid><description>A utility from Micrantha for creating reusable isolated development environments.
-This is basically an easy to use abstraction around docker with some extra perks.
-file synchronization that follows symlinks keep package manager and system dependencies isolated from host reusable state that can also be persisted as a &amp;lsquo;sandcastle&amp;rsquo; for other sandboxes consistent user file permissions with the host better time tracking with taskwarrior timewarrior scripts write it how I would want it (did not like other tools) {{ }} If you have mastered [mouseless programming](https://themouseless.</description></item><item><title>Best Programming Quotes</title><link>https://ryanjennin.gs/posts/best-programming-quotes/</link><pubDate>Tue, 10 Apr 2012 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/best-programming-quotes/</guid><description>Quotes that relate to software engineering always humble me with their laser-like honesty. I&amp;rsquo;ve decided to keep a collection of my favorites here (in no particular order).</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Development on Home</title><link>https://ryanjennin.gs/tags/development/</link><description>Recent content in Development on Home</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 29 Jul 2021 20:09:25 -0700</lastBuildDate><atom:link href="https://ryanjennin.gs/tags/development/index.xml" rel="self" type="application/rss+xml"/><item><title>Sandbox Demo</title><link>https://ryanjennin.gs/archive/sandcastle-util-demo/</link><pubDate>Thu, 29 Jul 2021 20:09:25 -0700</pubDate><guid>https://ryanjennin.gs/archive/sandcastle-util-demo/</guid><description>&lt;p>A utility from &lt;a href="https://micrantha.com">Micrantha&lt;/a> for creating &lt;a href="https://hackelia-micrantha.github.io/sandbox/">reusable isolated development
+environments&lt;/a>.&lt;/p>
+&lt;p>This is basically an easy to use abstraction around &lt;a href="https://docker.com">docker&lt;/a> with some extra perks.&lt;/p>
+&lt;ul>
+&lt;li>file synchronization that follows symlinks&lt;/li>
+&lt;li>keep package manager and system dependencies isolated from host&lt;/li>
+&lt;li>reusable state that can also be persisted as a &amp;lsquo;sandcastle&amp;rsquo; for other sandboxes&lt;/li>
+&lt;li>consistent user file permissions with the host&lt;/li>
+&lt;li>better time tracking with &lt;a href="https://taskwarrior.org/">taskwarrior&lt;/a> timewarrior scripts&lt;/li>
+&lt;li>write it how I would want it (did not like other tools)
+
+
+
+ &lt;br>&lt;br>
+ &lt;video controls>
+ &lt;source src="https://ryanjennin.gs/video/sandbox_demo.mp4" type=video/mp4>
+ &lt;/video>
+
+ &lt;br>&lt;br>
+ &lt;/li>
+&lt;/ul>
+&lt;p>If you have mastered &lt;a href="https://themouseless.dev/">mouseless programming&lt;/a> for whatever reason you will like this tool.&lt;/p></description></item><item><title>Best Programming Quotes</title><link>https://ryanjennin.gs/posts/best-programming-quotes/</link><pubDate>Tue, 10 Apr 2012 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/best-programming-quotes/</guid><description>&lt;p>Quotes that relate to software engineering always humble me with their laser-like honesty.
+I&amp;rsquo;ve decided to keep a collection of my favorites here (in no particular order).&lt;/p>
+&lt;!-- raw HTML omitted --></description></item></channel></rss>

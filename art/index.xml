@@ -1,1 +1,191 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Art on Home</title><link>https://ryanjennin.gs/art/</link><description>Recent content in Art on Home</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 22 Jul 2022 23:16:18 -0700</lastBuildDate><atom:link href="https://ryanjennin.gs/art/index.xml" rel="self" type="application/rss+xml"/><item><title>Doodles</title><link>https://ryanjennin.gs/art/doodles/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/art/doodles/</guid><description> Gerty: A Portrait Moth of Her (mother) The Other Side Imp Ear, Real Stardum: Moon Eating Dinosaurus, Rock, Sex Transfusion Droid, Card, Watercolour Greek Upside Down Smile Pi Penelopy: A Rough Trade Clouds, Card, Watercolour Brain Casing, Cracked Freedom of Self Baggage Joker and the Thief Can, but Nada Life for Breakfast Treble Clef: Art in itself Sabateur Happiness in Apocolypse</description></item><item><title>Music</title><link>https://ryanjennin.gs/art/music/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/art/music/</guid><description>SoundCloud Sheet Music Musescore has some nursery rhymes and xmas carols I re-wrote in minor.</description></item><item><title>Poems</title><link>https://ryanjennin.gs/art/poems-item/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/art/poems-item/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Art on Home</title><link>https://ryanjennin.gs/art/</link><description>Recent content in Art on Home</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://ryanjennin.gs/art/index.xml" rel="self" type="application/rss+xml"/><item><title>Drawings</title><link>https://ryanjennin.gs/art/doodles/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/art/doodles/</guid><description>&lt;div id="doodles">
+
+ &lt;div class="slider">
+
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/gerty.jpg" />
+ &lt;div>Gerty: A Portrait&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/portrait.jpg" />
+ &lt;div>Portrait (Ana Kao version)&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/rose.jpg" />
+ &lt;div>Rose Blades&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/flowoman.jpg" />
+ &lt;div>Flow Woman&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/osteriches.jpg" />
+ &lt;div>Osterich Tribe&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/owl.jpg" />
+ &lt;div>Owl of Me (Me-Owl)&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/osterich.jpg" />
+ &lt;div>Osterich Portrait&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/quacker.jpg" />
+ &lt;div>Crumby Quacker&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/gerty2.jpg" />
+ &lt;div>Gertrude: Don&amp;#39;t be Rude&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/stunt-ark.jpg" />
+ &lt;div>Stuntman Missing Noah&amp;#39;s Ark&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/mother.jpg" />
+ &lt;div>Moth of Her (mother)&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/stardum.jpg" />
+ &lt;div>Stardum: Moon Eating&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/black-flower.jpg" />
+ &lt;div>Black Hole Brain Flower&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/dino-rock-sex.jpg" />
+ &lt;div>Dinosaurus, Rock, Sex Transfusion&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/droid.png" />
+ &lt;div>Droid, Card, Watercolour&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/pi.png" />
+ &lt;div>Greek Upside Down Smile Pi&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/penelopy.jpg" />
+ &lt;div>Penelopy: A Rough Trade&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/clouds.png" />
+ &lt;div>Clouds, Card, Watercolour&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/bones.jpg" />
+ &lt;div>Brain Casing, Cracked&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/enlightenment.png" />
+ &lt;div>Freedom of Self Baggage&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/joker.png" />
+ &lt;div>Joker and the Thief&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/ca-nada.jpg" />
+ &lt;div>Can, but Nada&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/crapola.png" />
+ &lt;div>Life for Breakfast&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/treble.jpg" />
+ &lt;div>Treble Clef: Art in itself&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/sabateur.jpg" />
+ &lt;div>Sabateur&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/apocolypse.jpg" />
+ &lt;div>Happiness in Apocolypse&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/venus.jpg" />
+ &lt;div>The Other Side&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/imperial.jpg" />
+ &lt;div>Imp Ear, Real&lt;/div>
+ &lt;/div>
+ 
+
+ &lt;/div>
+
+ &lt;div class="controls is-flex is-justify-content-center">
+ &lt;div id="prev" class="mx-4">&lt;span class="icon is-small">
+ &lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ &lt;use xlink:href="https://ryanjennin.gs/fonts/solid.svg#backward">&lt;/use>
+ &lt;/svg>
+&lt;/span>&lt;/div>
+ &lt;div id="pause" class="mx-4">&lt;span class="icon is-small">
+ &lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ &lt;use xlink:href="https://ryanjennin.gs/fonts/solid.svg#pause">&lt;/use>
+ &lt;/svg>
+&lt;/span>&lt;/div>
+ &lt;div id="play" class="mx-4 is-hidden">&lt;span class="icon is-small">
+ &lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ &lt;use xlink:href="https://ryanjennin.gs/fonts/solid.svg#play">&lt;/use>
+ &lt;/svg>
+&lt;/span>&lt;/div>
+ &lt;div id="next" class="mx-4">&lt;span class="icon is-small">
+ &lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ &lt;use xlink:href="https://ryanjennin.gs/fonts/solid.svg#forward">&lt;/use>
+ &lt;/svg>
+&lt;/span>&lt;/div>
+ &lt;/div>
+&lt;/div></description></item><item><title>Music</title><link>https://ryanjennin.gs/art/music/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/art/music/</guid><description>&lt;h2 id="soundcloud">SoundCloud&lt;/h2>
+&lt;iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/287033462&amp;amp;auto_play=false&amp;amp;hide_related=true&amp;amp;show_comments=true&amp;amp;show_user=false&amp;amp;show_reposts=false">&lt;/iframe>
+
+
+&lt;h2 id="videos">Videos&lt;/h2>
+&lt;iframe
+ width="560"
+ height="315"
+ src="https://www.youtube.com/embed/videoseries?si=EtHHcGl1Yq6r9lBs&amp;amp;list=PLGnrsXaBOMZ7ksa0HdjbiBx13F7PapIwY"
+ title="YouTube video player"
+ frameborder="0"
+ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+ allowfullscreen
+>&lt;/iframe>
+
+&lt;h2 id="sheet-music">Sheet Music&lt;/h2>
+&lt;p>&lt;a href="https://musescore.com/entrobert?share=copy_link">Musescore&lt;/a> has some nursery
+rhymes and xmas carols I re-wrote in minor.&lt;/p>
+&lt;h2 id="meatspace-live">Meatspace (live)&lt;/h2>
+&lt;p>You can sometimes find me at the &amp;ldquo;Vancouver Jazzy Jams Community&amp;rdquo; at
+Trinity-Grace United Church on Sundays.&lt;/p></description></item></channel></rss>

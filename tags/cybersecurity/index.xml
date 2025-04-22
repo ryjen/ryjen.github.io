@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cybersecurity on Home</title><link>https://ryanjennin.gs/tags/cybersecurity/</link><description>Recent content in Cybersecurity on Home</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 06 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ryanjennin.gs/tags/cybersecurity/index.xml" rel="self" type="application/rss+xml"/><item><title>Friday Frida Hacking without the Why</title><link>https://ryanjennin.gs/posts/friday-frida-hack/</link><pubDate>Tue, 06 Sep 2022 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/friday-frida-hack/</guid><description>&lt;p>A brief but somewhat fun introduction to compromising data integrity on an Android
+application. **&lt;/p>
+&lt;p>This article will give an overview of setting up a rooted Android emulator,
+installing a tool called Frida, creating Frida scripts to intercept code at runtime,
+and replacing data in an application.&lt;/p></description></item></channel></rss>
