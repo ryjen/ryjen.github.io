@@ -17,7 +17,7 @@ environments&lt;/a>.&lt;/p>
  &lt;/video>
 
  &lt;br>&lt;br>
- &lt;/li>
+&lt;/li>
 &lt;/ul>
 &lt;p>If you have mastered &lt;a href="https://themouseless.dev/">mouseless programming&lt;/a> for whatever reason you will like this tool.&lt;/p></description></item><item><title>modd: daemon for reloading</title><link>https://ryanjennin.gs/archive/modd-live-coding/</link><pubDate>Sun, 10 Jan 2021 14:46:43 -0800</pubDate><guid>https://ryanjennin.gs/archive/modd-live-coding/</guid><description>&lt;p>One of my favourite tools now is &lt;a href="https://github.com/cortesi/modd">modd&lt;/a>.&lt;/p>
 &lt;p>Why is it so great? It &lt;strong>does one job, and it does it well&lt;/strong>, in proper unix fashion.&lt;/p>

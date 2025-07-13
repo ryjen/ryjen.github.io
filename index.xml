@@ -48,7 +48,7 @@ environments&lt;/a>.&lt;/p>
  &lt;/video>
 
  &lt;br>&lt;br>
- &lt;/li>
+&lt;/li>
 &lt;/ul>
 &lt;p>If you have mastered &lt;a href="https://themouseless.dev/">mouseless programming&lt;/a> for whatever reason you will like this tool.&lt;/p></description></item><item><title>Man-in-the-Middle</title><link>https://ryanjennin.gs/posts/mitm/</link><pubDate>Thu, 18 Feb 2021 11:18:10 -0800</pubDate><guid>https://ryanjennin.gs/posts/mitm/</guid><description>&lt;p>A man-in-the-middle (MITM) attack is a network security attack where a malicious device enters a network and intercepts traffic between nodes or components.&lt;/p>
 &lt;p>To accomplish access to a network an attacker needs an entry point.&lt;br>
