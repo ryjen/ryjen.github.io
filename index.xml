@@ -275,11 +275,12 @@ I&amp;rsquo;ve decided to keep a collection of my favorites here (in no particul
  
  
  &lt;a role="button" class="card-footer-item" href="mailto://robert@ryanjennin.gs" aria-label="email">
- &lt;span class="icon is-medium">
+ &lt;span class="icon is-medium mr-2 ">
  &lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
  &lt;use xlink:href="https://ryanjennin.gs/fonts/solid.svg#at">&lt;/use>
  &lt;/svg>
  &lt;/span>
+ 
  &lt;/a>
  
 
@@ -484,26 +485,30 @@ I&amp;rsquo;ve decided to keep a collection of my favorites here (in no particul
  &lt;/div>
 
  &lt;div class="controls is-flex is-justify-content-center">
- &lt;div id="prev" class="mx-4">&lt;span class="icon is-small">
+ &lt;div id="prev" class="mx-4">&lt;span class="icon is-small mr-2 ">
  &lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
  &lt;use xlink:href="https://ryanjennin.gs/fonts/solid.svg#backward">&lt;/use>
  &lt;/svg>
-&lt;/span>&lt;/div>
- &lt;div id="pause" class="mx-4">&lt;span class="icon is-small">
+&lt;/span>
+&lt;/div>
+ &lt;div id="pause" class="mx-4">&lt;span class="icon is-small mr-2 ">
  &lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
  &lt;use xlink:href="https://ryanjennin.gs/fonts/solid.svg#pause">&lt;/use>
  &lt;/svg>
-&lt;/span>&lt;/div>
- &lt;div id="play" class="mx-4 is-hidden">&lt;span class="icon is-small">
+&lt;/span>
+&lt;/div>
+ &lt;div id="play" class="mx-4 is-hidden">&lt;span class="icon is-small mr-2 ">
  &lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
  &lt;use xlink:href="https://ryanjennin.gs/fonts/solid.svg#play">&lt;/use>
  &lt;/svg>
-&lt;/span>&lt;/div>
- &lt;div id="next" class="mx-4">&lt;span class="icon is-small">
+&lt;/span>
+&lt;/div>
+ &lt;div id="next" class="mx-4">&lt;span class="icon is-small mr-2 ">
  &lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
  &lt;use xlink:href="https://ryanjennin.gs/fonts/solid.svg#forward">&lt;/use>
  &lt;/svg>
-&lt;/span>&lt;/div>
+&lt;/span>
+&lt;/div>
  &lt;/div>
 &lt;/div></description></item><item><title>Fuzz Testing</title><link>https://ryanjennin.gs/things/tech/fuzz-testing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/tech/fuzz-testing/</guid><description/></item><item><title>Illusions: Adventures of a Reluctant Messiah</title><link>https://ryanjennin.gs/things/books/illusions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/books/illusions/</guid><description/></item><item><title>Interplanetary File System</title><link>https://ryanjennin.gs/things/tech/interplanetary-fs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/tech/interplanetary-fs/</guid><description/></item><item><title>Music</title><link>https://ryanjennin.gs/art/music/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/art/music/</guid><description>&lt;h2 id="soundcloud">SoundCloud&lt;/h2>
 &lt;iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/287033462&amp;amp;auto_play=false&amp;amp;hide_related=true&amp;amp;show_comments=true&amp;amp;show_user=false&amp;amp;show_reposts=false">&lt;/iframe>
