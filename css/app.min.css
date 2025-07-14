@@ -1,4 +1,4 @@
-#about .card img{border-radius:.5em}
+#about .card{box-shadow:none}#about .card img{border-radius:.5em}
 #intro .hero{max-width:100%;position:relative}#intro .hero a,#intro .hero a:visited{color:inherit}#intro .hero .hero-body{z-index:10}#intro .hero-body{padding:3rem 1.5rem}#intro .media{align-items:center}
 .column img.profile{height:13rem}
 .row{display:flex;width:"100%"}.row .column{width:"50%"}

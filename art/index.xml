@@ -4,13 +4,23 @@
 
  
  &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/lake.jpg" />
+ &lt;div>Lake Scene&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
  &lt;img src="https://ryanjennin.gs/image/doodles/gerty.jpg" />
  &lt;div>Gerty: A Portrait&lt;/div>
  &lt;/div>
  
  &lt;div class="slide">
- &lt;img src="https://ryanjennin.gs/image/doodles/portrait.jpg" />
- &lt;div>Portrait (Ana Kao version)&lt;/div>
+ &lt;img src="https://ryanjennin.gs/image/doodles/flowoman.jpg" />
+ &lt;div>Flow Woman&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/naked-dream.jpg" />
+ &lt;div>Naked Dream&lt;/div>
  &lt;/div>
  
  &lt;div class="slide">
@@ -19,8 +29,13 @@
  &lt;/div>
  
  &lt;div class="slide">
- &lt;img src="https://ryanjennin.gs/image/doodles/flowoman.jpg" />
- &lt;div>Flow Woman&lt;/div>
+ &lt;img src="https://ryanjennin.gs/image/doodles/heart-spirals.jpg" />
+ &lt;div>Heart Spirals&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/tendrils.jpg" />
+ &lt;div>Amphibian Hand Hair&lt;/div>
  &lt;/div>
  
  &lt;div class="slide">
@@ -49,6 +64,16 @@
  &lt;/div>
  
  &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/birch.jpg" />
+ &lt;div>Birch Bark&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/worm-cells.jpg" />
+ &lt;div>Worm Cells&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
  &lt;img src="https://ryanjennin.gs/image/doodles/stunt-ark.jpg" />
  &lt;div>Stuntman Missing Noah&amp;#39;s Ark&lt;/div>
  &lt;/div>
@@ -74,6 +99,11 @@
  &lt;/div>
  
  &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/cube.jpg" />
+ &lt;div>Cube Glaze&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
  &lt;img src="https://ryanjennin.gs/image/doodles/droid.png" />
  &lt;div>Droid, Card, Watercolour&lt;/div>
  &lt;/div>
@@ -81,6 +111,11 @@
  &lt;div class="slide">
  &lt;img src="https://ryanjennin.gs/image/doodles/pi.png" />
  &lt;div>Greek Upside Down Smile Pi&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/logs.jpg" />
+ &lt;div>Logs&lt;/div>
  &lt;/div>
  
  &lt;div class="slide">
@@ -96,11 +131,6 @@
  &lt;div class="slide">
  &lt;img src="https://ryanjennin.gs/image/doodles/bones.jpg" />
  &lt;div>Brain Casing, Cracked&lt;/div>
- &lt;/div>
- 
- &lt;div class="slide">
- &lt;img src="https://ryanjennin.gs/image/doodles/enlightenment.png" />
- &lt;div>Freedom of Self Baggage&lt;/div>
  &lt;/div>
  
  &lt;div class="slide">
@@ -124,11 +154,6 @@
  &lt;/div>
  
  &lt;div class="slide">
- &lt;img src="https://ryanjennin.gs/image/doodles/sabateur.jpg" />
- &lt;div>Sabateur&lt;/div>
- &lt;/div>
- 
- &lt;div class="slide">
  &lt;img src="https://ryanjennin.gs/image/doodles/apocolypse.jpg" />
  &lt;div>Happiness in Apocolypse&lt;/div>
  &lt;/div>
@@ -141,6 +166,11 @@
  &lt;div class="slide">
  &lt;img src="https://ryanjennin.gs/image/doodles/imperial.jpg" />
  &lt;div>Imp Ear, Real&lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="slide">
+ &lt;img src="https://ryanjennin.gs/image/doodles/portrait.jpg" />
+ &lt;div>Portrait (Ana Kao version)&lt;/div>
  &lt;/div>
  
 
