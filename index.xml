@@ -511,23 +511,12 @@ I&amp;rsquo;ve decided to keep a collection of my favorites here (in no particul
 &lt;iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/287033462&amp;amp;auto_play=false&amp;amp;hide_related=true&amp;amp;show_comments=true&amp;amp;show_user=false&amp;amp;show_reposts=false">&lt;/iframe>
 
 
-&lt;h2 id="videos">Videos&lt;/h2>
-&lt;iframe
- width="560"
- height="315"
- src="https://www.youtube.com/embed/videoseries?si=EtHHcGl1Yq6r9lBs&amp;amp;list=PLGnrsXaBOMZ7ksa0HdjbiBx13F7PapIwY"
- title="YouTube video player"
- frameborder="0"
- allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
- allowfullscreen
->&lt;/iframe>
-
 &lt;h2 id="sheet-music">Sheet Music&lt;/h2>
 &lt;p>&lt;a href="https://musescore.com/entrobert?share=copy_link">Musescore&lt;/a> has some nursery
 rhymes and xmas carols I re-wrote in minor.&lt;/p>
 &lt;h2 id="meatspace-live">Meatspace (live)&lt;/h2>
-&lt;p>You can sometimes find me at the &amp;ldquo;Vancouver Jazzy Jams Community&amp;rdquo; at
-Trinity-Grace United Church on Sundays.&lt;/p></description></item><item><title>Phoenix Framework and Elixir/Erlang</title><link>https://ryanjennin.gs/things/tech/elixer-erlang/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/tech/elixer-erlang/</guid><description/></item><item><title>Reactive Extensions</title><link>https://ryanjennin.gs/things/tech/reativext/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/tech/reativext/</guid><description/></item><item><title>resume</title><link>https://ryanjennin.gs/resume/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/resume/</guid><description>&lt;iframe
+&lt;p>My interests since 2017 have been upgrading my jazz and theory and have not bothered to record with analog.&lt;/p>
+&lt;p>Songs from my set to record:&lt;/p></description></item><item><title>Phoenix Framework and Elixir/Erlang</title><link>https://ryanjennin.gs/things/tech/elixer-erlang/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/tech/elixer-erlang/</guid><description/></item><item><title>Reactive Extensions</title><link>https://ryanjennin.gs/things/tech/reativext/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/tech/reativext/</guid><description/></item><item><title>resume</title><link>https://ryanjennin.gs/resume/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/resume/</guid><description>&lt;iframe
  id="resume"
  src="https://ryanjennin.gs/docs/resume-jennings-ryan.pdf"
  width="100%"
