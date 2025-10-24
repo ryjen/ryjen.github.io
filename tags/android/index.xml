@@ -2,9 +2,7 @@
 application. **&lt;/p>
 &lt;p>This article will give an overview of setting up a rooted Android emulator,
 installing a tool called Frida, creating Frida scripts to intercept code at runtime,
-and replacing data in an application.&lt;/p></description></item><item><title>Clean Architecture + Redux + Android</title><link>https://ryanjennin.gs/posts/clean-architucture-redux-compose-flow/</link><pubDate>Wed, 04 May 2022 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/clean-architucture-redux-compose-flow/</guid><description>&lt;p>Have been learning a new tricks in mobile architecture on the native side.&lt;/p>
-&lt;p>Applying the redux pattern to android architecture components and MVVM has been interesting.&lt;/p>
-&lt;p>I have written some brief overviews of such things - if talk is cheap and just want the code - check out &lt;a href="https://github.com/ryjen/namegame">namegame&lt;/a> or &lt;a href="https://github.com/ryjen/jokeapp-droid">jokeapp&lt;/a>.&lt;/p></description></item><item><title>Scouter Demo</title><link>https://ryanjennin.gs/posts/scouter-demo/</link><pubDate>Sat, 14 Aug 2021 00:03:52 -0700</pubDate><guid>https://ryanjennin.gs/posts/scouter-demo/</guid><description>&lt;h2 id="edit-minimum-viable-product">EDIT: Minimum Viable Product&lt;/h2>
+and replacing data in an application.&lt;/p></description></item><item><title>Scouter Demo</title><link>https://ryanjennin.gs/posts/scouter-demo/</link><pubDate>Sat, 14 Aug 2021 00:03:52 -0700</pubDate><guid>https://ryanjennin.gs/posts/scouter-demo/</guid><description>&lt;h2 id="edit-minimum-viable-product">EDIT: Minimum Viable Product&lt;/h2>
 &lt;p>A newer version of this project is now &lt;a href="https://github.com/hackelia-micrantha/skouter">open source&lt;/a> and
 would love contributors.&lt;/p>
 &lt;p>I am super bored of mobile and have trouble with the last 20% - but am trying to get into the store at least.
