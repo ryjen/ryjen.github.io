@@ -1,16 +1,30 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Programming on Home</title><link>https://ryanjennin.gs/tags/programming/</link><description>Recent content in Programming on Home</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 06 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ryanjennin.gs/tags/programming/index.xml" rel="self" type="application/rss+xml"/><item><title>Friday Frida Hacking without the Why</title><link>https://ryanjennin.gs/posts/friday-frida-hack/</link><pubDate>Tue, 06 Sep 2022 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/friday-frida-hack/</guid><description>&lt;p>A brief but somewhat fun introduction to compromising data integrity on an Android
-application. **&lt;/p>
-&lt;p>This article will give an overview of setting up a rooted Android emulator,
-installing a tool called Frida, creating Frida scripts to intercept code at runtime,
-and replacing data in an application.&lt;/p></description></item><item><title>Scouter Demo</title><link>https://ryanjennin.gs/posts/scouter-demo/</link><pubDate>Sat, 14 Aug 2021 00:03:52 -0700</pubDate><guid>https://ryanjennin.gs/posts/scouter-demo/</guid><description>&lt;h2 id="edit-minimum-viable-product">EDIT: Minimum Viable Product&lt;/h2>
-&lt;p>A newer version of this project is now &lt;a href="https://github.com/hackelia-micrantha/skouter">open source&lt;/a> and
-would love contributors.&lt;/p>
-&lt;p>I am super bored of mobile and have trouble with the last 20% - but am trying to get into the store at least.
-The &lt;a href="https://github.com/orgs/hackelia-micrantha/projects/3">project management&lt;/a>
-page for &lt;strong>Phase 1&lt;/strong> has:&lt;/p></description></item><item><title>c hacking: polymorphing 2</title><link>https://ryanjennin.gs/archive/c-hacking-polymoriphing-2/</link><pubDate>Wed, 02 Dec 2015 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/archive/c-hacking-polymoriphing-2/</guid><description>&lt;p>While working on &lt;a href="http://github.com/ryjen/cparse">cparse&lt;/a> I found another nifty way to sort of simulate polymorphism.&lt;/p>
-&lt;h1 id="cparse">cparse&lt;/h1>
-&lt;p>Another exercise in futility, a C implementation for the REST api at &lt;a href="http://parse.com">parse.com&lt;/a>. Really the core of it is a web client and an object structure using json.&lt;/p></description></item><item><title>Poor Man's Polymorphism</title><link>https://ryanjennin.gs/archive/poor-man-s-polymorphism/</link><pubDate>Fri, 30 Nov 2012 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/archive/poor-man-s-polymorphism/</guid><description>&lt;p>Found out that C structs can be casted between each other if the &lt;strong>field types and ordering are the same&lt;/strong>. It is not portable code, but you can start too see how and why the virtual table and object oriented programming evolved in c++.&lt;/p></description></item><item><title>C Sqlite Tricks</title><link>https://ryanjennin.gs/archive/c-sqlite-tricks/</link><pubDate>Tue, 15 May 2012 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/archive/c-sqlite-tricks/</guid><description>&lt;h4 id="introduction">Introduction&lt;/h4>
-&lt;p>Thought I would share some tricks I use for easy data CRUD&amp;rsquo;s in C. I&amp;rsquo;m using Sqlite here, but could apply to any database.&lt;/p>
-&lt;p>Not saying its the best approach at all (nor &lt;a href="https://github.com/ryjen/db">ryjen/db&lt;/a>), this is just how it evolved for me.&lt;/p></description></item><item><title>Best Programming Quotes</title><link>https://ryanjennin.gs/posts/best-programming-quotes/</link><pubDate>Tue, 10 Apr 2012 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/best-programming-quotes/</guid><description>&lt;p>Quotes that relate to software engineering always humble me with their laser-like honesty.
-I&amp;rsquo;ve decided to keep a collection of my favorites here (in no particular order).&lt;/p>
-&lt;!-- raw HTML omitted --></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Programming on Home</title><link>https://ryanjennin.gs/tags/programming/</link><description>Recent content in Programming on Home</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 06 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://ryanjennin.gs/tags/programming/index.xml" rel="self" type="application/rss+xml"/><item><title>Friday Frida Hacking without the Why</title><link>https://ryanjennin.gs/posts/friday-frida-hack/</link><pubDate>Tue, 06 Sep 2022 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/friday-frida-hack/</guid><description>&lt;p&gt;This is a short, practical introduction to dynamic instrumentation with Frida on
+Android. The goal is not to glorify breaking apps, but to show how easily a
+pentest device can change client behavior and why production systems should
+assume that client input is untrusted.&lt;/p&gt;</description></item><item><title>Eyespie (formerly Scouter)</title><link>https://ryanjennin.gs/posts/scouter-demo/</link><pubDate>Sat, 14 Aug 2021 00:03:52 -0700</pubDate><guid>https://ryanjennin.gs/posts/scouter-demo/</guid><description>&lt;p&gt;Eyespie (formerly Scouter) is a mobile version of the game “I Spy.” It started as a prototype, went
+through multiple rewrites, and is now evolving through an
+&lt;a href="https://github.com/hackelia-micrantha/skouter"&gt;open source&lt;/a&gt; project.&lt;/p&gt;
+&lt;p&gt;The &lt;a href="https://github.com/orgs/hackelia-micrantha/projects/3"&gt;project management&lt;/a&gt;
+page tracks the current sprint and roadmap.&lt;/p&gt;
+
+
+
+&lt;br&gt;&lt;div class="is-centered"&gt;
+&lt;video controls&gt;
+
+ &lt;source src="https://ryanjennin.gs/video/scouter-demo.mp4" type=video/mp4&gt;
+&lt;/video&gt;
+
+&lt;/div&gt;&lt;br&gt;
+
+&lt;h2 id="the-use-case"&gt;The Use Case&lt;/h2&gt;
+&lt;p&gt;The core loop is supposed to be simple: one player captures an image, the app generates clues,
+and another player tries to find the matching object or scene. It is a social,
+low‑friction game that can run in a park, on a road trip, or on a hike with no
+reliable connection.&lt;/p&gt;</description></item><item><title>c hacking: polymorphing 2</title><link>https://ryanjennin.gs/archive/c-hacking-polymoriphing-2/</link><pubDate>Wed, 02 Dec 2015 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/archive/c-hacking-polymoriphing-2/</guid><description>&lt;p&gt;While working on &lt;a href="http://github.com/ryjen/cparse"&gt;cparse&lt;/a&gt; I found another nifty way to sort of simulate polymorphism.&lt;/p&gt;
+&lt;h1 id="cparse"&gt;cparse&lt;/h1&gt;
+&lt;p&gt;Another exercise in futility, a C implementation for the REST api at &lt;a href="http://parse.com"&gt;parse.com&lt;/a&gt;. Really the core of it is a web client and an object structure using json.&lt;/p&gt;</description></item><item><title>Poor Man's Polymorphism</title><link>https://ryanjennin.gs/archive/poor-man-s-polymorphism/</link><pubDate>Fri, 30 Nov 2012 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/archive/poor-man-s-polymorphism/</guid><description>&lt;p&gt;Found out that C structs can be casted between each other if the &lt;strong&gt;field types and ordering are the same&lt;/strong&gt;. It is not portable code, but you can start too see how and why the virtual table and object oriented programming evolved in c++.&lt;/p&gt;</description></item><item><title>C Sqlite Tricks</title><link>https://ryanjennin.gs/archive/c-sqlite-tricks/</link><pubDate>Tue, 15 May 2012 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/archive/c-sqlite-tricks/</guid><description>&lt;h4 id="introduction"&gt;Introduction&lt;/h4&gt;
+&lt;p&gt;Thought I would share some tricks I use for easy data CRUD&amp;rsquo;s in C. I&amp;rsquo;m using Sqlite here, but could apply to any database.&lt;/p&gt;
+&lt;p&gt;Not saying its the best approach at all (nor &lt;a href="https://github.com/ryjen/db"&gt;ryjen/db&lt;/a&gt;), this is just how it evolved for me.&lt;/p&gt;</description></item><item><title>Best Programming Quotes</title><link>https://ryanjennin.gs/posts/best-programming-quotes/</link><pubDate>Tue, 10 Apr 2012 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/best-programming-quotes/</guid><description>&lt;p&gt;Quotes that relate to software engineering always humble me with their laser-like honesty.
+I&amp;rsquo;ve decided to keep a collection of my favorites here (in no particular order).&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;</description></item></channel></rss>

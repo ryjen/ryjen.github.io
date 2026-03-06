@@ -1,27 +1,30 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Dokku on Home</title><link>https://ryanjennin.gs/tags/dokku/</link><description>Recent content in Dokku on Home</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 19 Feb 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://ryanjennin.gs/tags/dokku/index.xml" rel="self" type="application/rss+xml"/><item><title>Deploy Docker Registry with Dokku</title><link>https://ryanjennin.gs/archive/deploy-docker-registry-in-dokku/</link><pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/archive/deploy-docker-registry-in-dokku/</guid><description>&lt;h2 id="prerequisites">Prerequisites&lt;/h2>
-&lt;p>You&amp;rsquo;ll need to prepare a bit.&lt;/p>
-&lt;hr>
-&lt;ol>
-&lt;li>A local path on the server to store registry data. For example: &lt;code>/mydir/registry&lt;/code>&lt;/li>
-&lt;li>&lt;a href="https://www.docker.com/community-edition#/download">Docker&lt;/a> installed on the client and server machine&lt;/li>
-&lt;li>&lt;a href="http://dokku.viewdocs.io/dokku/">Dokku&lt;/a> installed on the server&lt;/li>
-&lt;/ol>
-&lt;h3 id="for-authentication">For Authentication&lt;/h3>
-&lt;ol>
-&lt;li>httpasswd command is installed&lt;/li>
-&lt;/ol>
-&lt;h3 id="for-an-external-registry">For an External Registry&lt;/h3>
-&lt;ol>
-&lt;li>Dokku &lt;a href="https://github.com/dokku/dokku-letsencrypt">letsencrypt plugin&lt;/a> installed&lt;/li>
-&lt;li>A working domain name pointing to the dokku app. For example, &lt;em>&lt;a href="https://registry.mydomain.com">https://registry.mydomain.com&lt;/a>&lt;/em>&lt;/li>
-&lt;/ol>
-&lt;h3 id="create-the-dokku-app">Create the dokku app&lt;/h3>
-&lt;p>Create the dokku app and retag a pre-existing repository image to it.
-To persist data, a volume is used.&lt;/p></description></item><item><title>Fortunes on Slack</title><link>https://ryanjennin.gs/posts/fortunes-microservice/</link><pubDate>Mon, 22 Jan 2018 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/fortunes-microservice/</guid><description>&lt;p>&lt;a href="https://fortunes.micrantha.com">view the service homepage&lt;/a>&lt;/p>
-&lt;h4 id="introduction">Introduction&lt;/h4>
-&lt;p>Have always enjoyed the &lt;a href="https://en.wikipedia.org/wiki/Fortune_%28Unix%29">UNIX fortunes&lt;/a> program, ever since I was a wee &lt;a href="https://en.wikipedia.org/wiki/Newbie">newbie&lt;/a>. If you aren&amp;rsquo;t familiar with it (sad), yes, its like a fortune cookie.&lt;/p>
-&lt;p>It can be more technical in nature but not always. It also has poems, quotations, and if enabled - offensive content.&lt;/p></description></item><item><title>Hugo + Dokku + Wercker = Goodness</title><link>https://ryanjennin.gs/archive/hugo-dokku-wercker-goodness/</link><pubDate>Wed, 22 Jun 2016 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/archive/hugo-dokku-wercker-goodness/</guid><description>&lt;h2 id="hugo">&lt;a href="http://gohugo.io">Hugo&lt;/a>&lt;/h2>
-&lt;p>Hugo is a static site generator with many powerful features like archtypes, themes, customization, etc.&lt;/p>
-&lt;p>Combined with tools like &lt;a href="http://bower.io">bower&lt;/a> and &lt;a href="http://brunch.io">brunch&lt;/a> it makes for a pretty powerful app that could be more than a blog.&lt;/p>
-&lt;p>The workflow is simple - build your assets with brunch, run the hugo generator.
-The end result is a complete static html site you can deploy.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Dokku on Home</title><link>https://ryanjennin.gs/tags/dokku/</link><description>Recent content in Dokku on Home</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 19 Feb 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://ryanjennin.gs/tags/dokku/index.xml" rel="self" type="application/rss+xml"/><item><title>Deploy Docker Registry with Dokku</title><link>https://ryanjennin.gs/archive/deploy-docker-registry-in-dokku/</link><pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/archive/deploy-docker-registry-in-dokku/</guid><description>&lt;h2 id="prerequisites"&gt;Prerequisites&lt;/h2&gt;
+&lt;p&gt;You&amp;rsquo;ll need to prepare a bit.&lt;/p&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li&gt;A local path on the server to store registry data. For example: &lt;code&gt;/mydir/registry&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.docker.com/community-edition#/download"&gt;Docker&lt;/a&gt; installed on the client and server machine&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://dokku.viewdocs.io/dokku/"&gt;Dokku&lt;/a&gt; installed on the server&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="for-authentication"&gt;For Authentication&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;httpasswd command is installed&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="for-an-external-registry"&gt;For an External Registry&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Dokku &lt;a href="https://github.com/dokku/dokku-letsencrypt"&gt;letsencrypt plugin&lt;/a&gt; installed&lt;/li&gt;
+&lt;li&gt;A working domain name pointing to the dokku app. For example, &lt;em&gt;&lt;a href="https://registry.mydomain.com"&gt;https://registry.mydomain.com&lt;/a&gt;&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="create-the-dokku-app"&gt;Create the dokku app&lt;/h3&gt;
+&lt;p&gt;Create the dokku app and retag a pre-existing repository image to it.
+To persist data, a volume is used.&lt;/p&gt;</description></item><item><title>Fortunes on Slack</title><link>https://ryanjennin.gs/posts/fortunes-microservice/</link><pubDate>Mon, 22 Jan 2018 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/fortunes-microservice/</guid><description>&lt;p&gt;&lt;a href="https://fortunes.micrantha.com"&gt;view the service homepage&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id="introduction"&gt;Introduction&lt;/h4&gt;
+&lt;p&gt;I have loved the UNIX &lt;a href="https://en.wikipedia.org/wiki/Fortune_%28Unix%29"&gt;fortune&lt;/a&gt;
+command since the late 90s. It has lived in my terminal for decades, dropping
+random quotes, jokes, and poems at exactly the right moments.&lt;/p&gt;
+&lt;p&gt;At some point I realized I was constantly copy‑pasting fortunes into chats. So
+I decided to build a tiny microservice that could serve fortunes on demand.&lt;/p&gt;</description></item><item><title>Hugo + Dokku + Wercker = Goodness</title><link>https://ryanjennin.gs/archive/hugo-dokku-wercker-goodness/</link><pubDate>Wed, 22 Jun 2016 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/archive/hugo-dokku-wercker-goodness/</guid><description>&lt;h2 id="hugo"&gt;&lt;a href="http://gohugo.io"&gt;Hugo&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Hugo is a static site generator with many powerful features like archtypes, themes, customization, etc.&lt;/p&gt;
+&lt;p&gt;Combined with tools like &lt;a href="http://bower.io"&gt;bower&lt;/a&gt; and &lt;a href="http://brunch.io"&gt;brunch&lt;/a&gt; it makes for a pretty powerful app that could be more than a blog.&lt;/p&gt;
+&lt;p&gt;The workflow is simple - build your assets with brunch, run the hugo generator.
+The end result is a complete static html site you can deploy.&lt;/p&gt;</description></item></channel></rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Containerization on Home</title><link>https://ryanjennin.gs/categories/containerization/</link><description>Recent content in Containerization on Home</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Mon, 19 Feb 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://ryanjennin.gs/categories/containerization/index.xml" rel="self" type="application/rss+xml"/><item><title>Deploy Docker Registry with Dokku</title><link>https://ryanjennin.gs/archive/deploy-docker-registry-in-dokku/</link><pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/archive/deploy-docker-registry-in-dokku/</guid><description>&lt;h2 id="prerequisites"&gt;Prerequisites&lt;/h2&gt;
+&lt;p&gt;You&amp;rsquo;ll need to prepare a bit.&lt;/p&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li&gt;A local path on the server to store registry data. For example: &lt;code&gt;/mydir/registry&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.docker.com/community-edition#/download"&gt;Docker&lt;/a&gt; installed on the client and server machine&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://dokku.viewdocs.io/dokku/"&gt;Dokku&lt;/a&gt; installed on the server&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="for-authentication"&gt;For Authentication&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;httpasswd command is installed&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="for-an-external-registry"&gt;For an External Registry&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Dokku &lt;a href="https://github.com/dokku/dokku-letsencrypt"&gt;letsencrypt plugin&lt;/a&gt; installed&lt;/li&gt;
+&lt;li&gt;A working domain name pointing to the dokku app. For example, &lt;em&gt;&lt;a href="https://registry.mydomain.com"&gt;https://registry.mydomain.com&lt;/a&gt;&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="create-the-dokku-app"&gt;Create the dokku app&lt;/h3&gt;
+&lt;p&gt;Create the dokku app and retag a pre-existing repository image to it.
+To persist data, a volume is used.&lt;/p&gt;</description></item></channel></rss>

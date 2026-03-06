@@ -1,25 +1,28 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Golang on Home</title><link>https://ryanjennin.gs/tags/golang/</link><description>Recent content in Golang on Home</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 29 Jul 2021 20:09:25 -0700</lastBuildDate><atom:link href="https://ryanjennin.gs/tags/golang/index.xml" rel="self" type="application/rss+xml"/><item><title>Sandbox Demo</title><link>https://ryanjennin.gs/archive/sandcastle-util-demo/</link><pubDate>Thu, 29 Jul 2021 20:09:25 -0700</pubDate><guid>https://ryanjennin.gs/archive/sandcastle-util-demo/</guid><description>&lt;p>A utility from &lt;a href="https://micrantha.com">Micrantha&lt;/a> for creating &lt;a href="https://hackelia-micrantha.github.io/sandbox/">reusable isolated development
-environments&lt;/a>.&lt;/p>
-&lt;p>This is basically an easy to use abstraction around &lt;a href="https://docker.com">docker&lt;/a> with some extra perks.&lt;/p>
-&lt;ul>
-&lt;li>file synchronization that follows symlinks&lt;/li>
-&lt;li>keep package manager and system dependencies isolated from host&lt;/li>
-&lt;li>reusable state that can also be persisted as a &amp;lsquo;sandcastle&amp;rsquo; for other sandboxes&lt;/li>
-&lt;li>consistent user file permissions with the host&lt;/li>
-&lt;li>better time tracking with &lt;a href="https://taskwarrior.org/">taskwarrior&lt;/a> timewarrior scripts&lt;/li>
-&lt;li>write it how I would want it (did not like other tools)
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Golang on Home</title><link>https://ryanjennin.gs/tags/golang/</link><description>Recent content in Golang on Home</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 29 Jul 2021 20:09:25 -0700</lastBuildDate><atom:link href="https://ryanjennin.gs/tags/golang/index.xml" rel="self" type="application/rss+xml"/><item><title>Sandbox Demo</title><link>https://ryanjennin.gs/archive/sandcastle-util-demo/</link><pubDate>Thu, 29 Jul 2021 20:09:25 -0700</pubDate><guid>https://ryanjennin.gs/archive/sandcastle-util-demo/</guid><description>&lt;p&gt;A utility from &lt;a href="https://micrantha.com"&gt;Micrantha&lt;/a&gt; for creating &lt;a href="https://hackelia-micrantha.github.io/sandbox/"&gt;reusable isolated development
+environments&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This is basically an easy to use abstraction around &lt;a href="https://docker.com"&gt;docker&lt;/a&gt; with some extra perks.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;file synchronization that follows symlinks&lt;/li&gt;
+&lt;li&gt;keep package manager and system dependencies isolated from host&lt;/li&gt;
+&lt;li&gt;reusable state that can also be persisted as a &amp;lsquo;sandcastle&amp;rsquo; for other sandboxes&lt;/li&gt;
+&lt;li&gt;consistent user file permissions with the host&lt;/li&gt;
+&lt;li&gt;better time tracking with &lt;a href="https://taskwarrior.org/"&gt;taskwarrior&lt;/a&gt; timewarrior scripts&lt;/li&gt;
+&lt;li&gt;write it how I would want it (did not like other tools)
 
 
 
- &lt;br>&lt;br>
- &lt;video controls>
- &lt;source src="https://ryanjennin.gs/video/sandbox_demo.mp4" type=video/mp4>
- &lt;/video>
+ &lt;br&gt;&lt;br&gt;
+ &lt;video controls&gt;
+ &lt;source src="https://ryanjennin.gs/video/sandbox_demo.mp4" type=video/mp4&gt;
+ &lt;/video&gt;
 
- &lt;br>&lt;br>
-&lt;/li>
-&lt;/ul>
-&lt;p>If you have mastered &lt;a href="https://themouseless.dev/">mouseless programming&lt;/a> for whatever reason you will like this tool.&lt;/p></description></item><item><title>Fortunes on Slack</title><link>https://ryanjennin.gs/posts/fortunes-microservice/</link><pubDate>Mon, 22 Jan 2018 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/fortunes-microservice/</guid><description>&lt;p>&lt;a href="https://fortunes.micrantha.com">view the service homepage&lt;/a>&lt;/p>
-&lt;h4 id="introduction">Introduction&lt;/h4>
-&lt;p>Have always enjoyed the &lt;a href="https://en.wikipedia.org/wiki/Fortune_%28Unix%29">UNIX fortunes&lt;/a> program, ever since I was a wee &lt;a href="https://en.wikipedia.org/wiki/Newbie">newbie&lt;/a>. If you aren&amp;rsquo;t familiar with it (sad), yes, its like a fortune cookie.&lt;/p>
-&lt;p>It can be more technical in nature but not always. It also has poems, quotations, and if enabled - offensive content.&lt;/p></description></item></channel></rss>
+ &lt;br&gt;&lt;br&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you have mastered &lt;a href="https://themouseless.dev/"&gt;mouseless programming&lt;/a&gt; for whatever reason you will like this tool.&lt;/p&gt;</description></item><item><title>Fortunes on Slack</title><link>https://ryanjennin.gs/posts/fortunes-microservice/</link><pubDate>Mon, 22 Jan 2018 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/posts/fortunes-microservice/</guid><description>&lt;p&gt;&lt;a href="https://fortunes.micrantha.com"&gt;view the service homepage&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id="introduction"&gt;Introduction&lt;/h4&gt;
+&lt;p&gt;I have loved the UNIX &lt;a href="https://en.wikipedia.org/wiki/Fortune_%28Unix%29"&gt;fortune&lt;/a&gt;
+command since the late 90s. It has lived in my terminal for decades, dropping
+random quotes, jokes, and poems at exactly the right moments.&lt;/p&gt;
+&lt;p&gt;At some point I realized I was constantly copy‑pasting fortunes into chats. So
+I decided to build a tiny microservice that could serve fortunes on demand.&lt;/p&gt;</description></item></channel></rss>
