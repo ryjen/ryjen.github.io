@@ -20,4 +20,16 @@
 <a class="tag is-rounded" href=/posts/index.xml>RSS</a>
 <a class="tag is-rounded" href=https://micrantha.com target=_blank rel=noopener>Micrantha</a></nav><nav aria-label="Footer social links" class=footer-links-row><a class="tag is-rounded" href=https://github.com/ryjen target=_blank rel=noopener>GitHub</a>
 <a class="tag is-rounded" href=https://linkedin.com/in/ryjen target=_blank rel=noopener>LinkedIn</a>
-<a class="tag is-rounded" href=mailto:robert@ryanjennin.gs>Email</a></nav></div><div class="is-flex is-align-items-center is-justify-content-center"><div class="has-text-centered m-3"><button id=themer class=themer type=button>enlighten</button></div><a href=https://github.com/ryjen/ryjen.github.io/issues/new>See an issue?</a></div><div class=copyright>© all rights reserved, ryan jennings</div></div></footer><script src=/js/theme.min.7c1eff3f1f59e3b54cae5b62e5067b4c345d8e3aa0cdc63b4603bef4a6f0265c69d96d33de479ebf0864f94863f80a201f8a6e376884b755d000e0c2bc816283.js defer integrity="sha512-fB7/Px9Z47VMrlti5QZ7TDRdjjqgzcY7RgO+9KbwJlxp2W0z3keevwhk+Uhj+AogH4puN2iEt1XQAODCvIFigw==" crossorigin=anonymous></script><script src=/js/app.min.8d7b0ff1e9dedb9b99ae9aebcff7a1df095ca253aca2935f11e537a183c4f8ff62c422f04666076b5e0e8ec348bb19dab62427dd750be7adcd7eacbf82dbc06a.js defer integrity="sha512-jXsP8ene25uZrprrz/eh3wlcolOsopNfEeU3oYPE+P9ixCLwRmYHa14OjsNIuxnatiQn3XUL563Nfqy/gtvAag==" crossorigin=anonymous></script></body></html>
+<a class="tag is-rounded" href=mailto:robert@ryanjennin.gs>Email</a></nav></div><div class="is-flex is-align-items-center is-justify-content-center"><div class="has-text-centered m-3"><button id=themer class=themer type=button>enlighten</button></div><a href=https://github.com/ryjen/ryjen.github.io/issues/new>See an issue?</a></div><div class=copyright>© all rights reserved, ryan jennings</div></div></footer><script src=/js/theme.min.7c1eff3f1f59e3b54cae5b62e5067b4c345d8e3aa0cdc63b4603bef4a6f0265c69d96d33de479ebf0864f94863f80a201f8a6e376884b755d000e0c2bc816283.js defer integrity="sha512-fB7/Px9Z47VMrlti5QZ7TDRdjjqgzcY7RgO+9KbwJlxp2W0z3keevwhk+Uhj+AogH4puN2iEt1XQAODCvIFigw==" crossorigin=anonymous></script><script type=module>
+  const mermaidBlocks = document.querySelectorAll(".mermaid");
+  if (mermaidBlocks.length > 0) {
+    const { default: mermaid } = await import("https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs");
+    mermaid.initialize({
+      securityLevel: "loose",
+      theme: document.body.classList.contains("dark") ? "dark" : "default",
+    });
+    await mermaid.run({
+      nodes: mermaidBlocks,
+    });
+  }
+</script><script src=/js/app.min.8d7b0ff1e9dedb9b99ae9aebcff7a1df095ca253aca2935f11e537a183c4f8ff62c422f04666076b5e0e8ec348bb19dab62427dd750be7adcd7eacbf82dbc06a.js defer integrity="sha512-jXsP8ene25uZrprrz/eh3wlcolOsopNfEeU3oYPE+P9ixCLwRmYHa14OjsNIuxnatiQn3XUL563Nfqy/gtvAag==" crossorigin=anonymous></script></body></html>
