@@ -52,7 +52,17 @@ The end result is a complete static html site you can deploy.&lt;/p&gt;</descrip
 &lt;p&gt;Briefly going to mention a javascript game engine called &lt;a href="http://craftyjs.com/"&gt;CraftyJS&lt;/a&gt; that I&amp;rsquo;ve been playing with the past couple of days.&lt;/p&gt;
 &lt;p&gt;Has the usual suspects like Entity Component System, Collision, Sprite Maps, etc.&lt;/p&gt;
 &lt;h4 id="the-project"&gt;The Project&lt;/h4&gt;
-&lt;p&gt;&lt;a href="https://amos.coda.life"&gt;&lt;img src="https://ryanjennin.gs/image/blog/amos_the_alien.png" alt="Amos the Alien"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://amos.coda.life"&gt;Amos the Alien&lt;/a&gt; is a small demo I made.&lt;/p&gt;</description></item><item><title>C Sqlite Tricks</title><link>https://ryanjennin.gs/archive/c-sqlite-tricks/</link><pubDate>Tue, 15 May 2012 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/archive/c-sqlite-tricks/</guid><description>&lt;h4 id="introduction"&gt;Introduction&lt;/h4&gt;
+&lt;p&gt;&lt;a href="https://amos.coda.life"&gt;&lt;picture&gt;
+ &lt;source type="image/webp" srcset="https://ryanjennin.gs/image/blog/amos_the_alien_hu_c1b16c1c1617f74e.webp 400w" sizes="(min-width: 900px) 820px, 100vw"&gt;
+ &lt;img
+ src="https://ryanjennin.gs/image/blog/amos_the_alien_hu_a7ec257f287cc915.png"
+ srcset="https://ryanjennin.gs/image/blog/amos_the_alien_hu_a7ec257f287cc915.png 400w"
+ sizes="(min-width: 900px) 820px, 100vw"
+ alt="Amos the Alien"
+ width="400"
+ height="302"
+ loading="lazy"
+ decoding="async" class="content-image"&gt;
+ &lt;/picture&gt;&lt;/a&gt;&lt;/p&gt;</description></item><item><title>C Sqlite Tricks</title><link>https://ryanjennin.gs/archive/c-sqlite-tricks/</link><pubDate>Tue, 15 May 2012 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/archive/c-sqlite-tricks/</guid><description>&lt;h4 id="introduction"&gt;Introduction&lt;/h4&gt;
 &lt;p&gt;Thought I would share some tricks I use for easy data CRUD&amp;rsquo;s in C. I&amp;rsquo;m using Sqlite here, but could apply to any database.&lt;/p&gt;
 &lt;p&gt;Not saying its the best approach at all (nor &lt;a href="https://github.com/ryjen/db"&gt;ryjen/db&lt;/a&gt;), this is just how it evolved for me.&lt;/p&gt;</description></item></channel></rss>

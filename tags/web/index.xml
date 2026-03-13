@@ -3,5 +3,15 @@
 &lt;p&gt;Briefly going to mention a javascript game engine called &lt;a href="http://craftyjs.com/"&gt;CraftyJS&lt;/a&gt; that I&amp;rsquo;ve been playing with the past couple of days.&lt;/p&gt;
 &lt;p&gt;Has the usual suspects like Entity Component System, Collision, Sprite Maps, etc.&lt;/p&gt;
 &lt;h4 id="the-project"&gt;The Project&lt;/h4&gt;
-&lt;p&gt;&lt;a href="https://amos.coda.life"&gt;&lt;img src="https://ryanjennin.gs/image/blog/amos_the_alien.png" alt="Amos the Alien"&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://amos.coda.life"&gt;Amos the Alien&lt;/a&gt; is a small demo I made.&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;&lt;a href="https://amos.coda.life"&gt;&lt;picture&gt;
+ &lt;source type="image/webp" srcset="https://ryanjennin.gs/image/blog/amos_the_alien_hu_c1b16c1c1617f74e.webp 400w" sizes="(min-width: 900px) 820px, 100vw"&gt;
+ &lt;img
+ src="https://ryanjennin.gs/image/blog/amos_the_alien_hu_a7ec257f287cc915.png"
+ srcset="https://ryanjennin.gs/image/blog/amos_the_alien_hu_a7ec257f287cc915.png 400w"
+ sizes="(min-width: 900px) 820px, 100vw"
+ alt="Amos the Alien"
+ width="400"
+ height="302"
+ loading="lazy"
+ decoding="async" class="content-image"&gt;
+ &lt;/picture&gt;&lt;/a&gt;&lt;/p&gt;</description></item></channel></rss>
