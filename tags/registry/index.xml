@@ -4,7 +4,7 @@
 &lt;ol&gt;
 &lt;li&gt;A local path on the server to store registry data. For example: &lt;code&gt;/mydir/registry&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://www.docker.com/community-edition#/download"&gt;Docker&lt;/a&gt; installed on the client and server machine&lt;/li&gt;
-&lt;li&gt;&lt;a href="http://dokku.viewdocs.io/dokku/"&gt;Dokku&lt;/a&gt; installed on the server&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dokku.com/docs/"&gt;Dokku&lt;/a&gt; installed on the server&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h3 id="for-authentication"&gt;For Authentication&lt;/h3&gt;
 &lt;ol&gt;
