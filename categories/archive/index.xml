@@ -21,6 +21,7 @@ The end result is a complete static html site you can deploy.&lt;/p&gt;</descrip
  alt="Amos the Alien"
  width="400"
  height="302"
+ 
  loading="lazy"
  decoding="async" class="content-image"&gt;
  &lt;/picture&gt;&lt;/a&gt;&lt;/p&gt;</description></item><item><title>C Sqlite Tricks</title><link>https://ryanjennin.gs/archive/c-sqlite-tricks/</link><pubDate>Tue, 15 May 2012 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/archive/c-sqlite-tricks/</guid><description>&lt;h4 id="introduction"&gt;Introduction&lt;/h4&gt;

@@ -96,6 +96,7 @@ The end result is a complete static html site you can deploy.&lt;/p&gt;</descrip
  alt="Amos the Alien"
  width="400"
  height="302"
+ 
  loading="lazy"
  decoding="async" class="content-image"&gt;
  &lt;/picture&gt;&lt;/a&gt;&lt;/p&gt;</description></item><item><title>C Sqlite Tricks</title><link>https://ryanjennin.gs/archive/c-sqlite-tricks/</link><pubDate>Tue, 15 May 2012 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/archive/c-sqlite-tricks/</guid><description>&lt;h4 id="introduction"&gt;Introduction&lt;/h4&gt;
@@ -108,174 +109,548 @@ The end result is a complete static html site you can deploy.&lt;/p&gt;</descrip
 
  &lt;div class="slider"&gt;
 
- 
  &lt;div class="slide"&gt;
- &lt;img src="https://ryanjennin.gs/image/doodles/lake.jpg?1774123043" /&gt;
+ &lt;picture&gt;
+ &lt;source type="image/webp" srcset="https://ryanjennin.gs/image/doodles/lake_hu_2c6d5672899b8e30.webp 960w, https://ryanjennin.gs/image/doodles/lake_hu_e75d755235eddb25.webp 2122w" sizes="(min-width: 900px) 820px, 100vw"&gt;
+ &lt;img
+ src="https://ryanjennin.gs/image/doodles/lake_hu_cfac88ba6d4c4972.jpg"
+ srcset="https://ryanjennin.gs/image/doodles/lake_hu_879bc50e8d3e142c.jpg 960w, https://ryanjennin.gs/image/doodles/lake_hu_cfac88ba6d4c4972.jpg 2122w"
+ sizes="(min-width: 900px) 820px, 100vw"
+ alt="Lake Scene"
+ width="2122"
+ height="1482"
+ fetchpriority="high"
+ loading="eager"
+ decoding="async"&gt;
+ &lt;/picture&gt;
  &lt;div&gt;Lake Scene&lt;/div&gt;
  &lt;/div&gt;
- 
  &lt;div class="slide"&gt;
- &lt;img src="https://ryanjennin.gs/image/doodles/gerty.jpg?1774123043" /&gt;
+ &lt;picture&gt;
+ &lt;source type="image/webp" srcset="https://ryanjennin.gs/image/doodles/gerty_hu_c7e4161d75e02403.webp 960w, https://ryanjennin.gs/image/doodles/gerty_hu_7d5550a26044615a.webp 3024w" sizes="(min-width: 900px) 820px, 100vw"&gt;
+ &lt;img
+ src="https://ryanjennin.gs/image/doodles/gerty_hu_fda5d68ce0b20899.jpg"
+ srcset="https://ryanjennin.gs/image/doodles/gerty_hu_ca4822a1b037e15d.jpg 960w, https://ryanjennin.gs/image/doodles/gerty_hu_fda5d68ce0b20899.jpg 3024w"
+ sizes="(min-width: 900px) 820px, 100vw"
+ alt="Gerty: A Portrait"
+ width="3024"
+ height="3721"
+ 
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
  &lt;div&gt;Gerty: A Portrait&lt;/div&gt;
  &lt;/div&gt;
- 
  &lt;div class="slide"&gt;
- &lt;img src="https://ryanjennin.gs/image/doodles/flowoman.jpg?1774123043" /&gt;
+ &lt;picture&gt;
+ &lt;source type="image/webp" srcset="https://ryanjennin.gs/image/doodles/flowoman_hu_21c594c92a611a70.webp 960w, https://ryanjennin.gs/image/doodles/flowoman_hu_224337903137d22c.webp 1000w" sizes="(min-width: 900px) 820px, 100vw"&gt;
+ &lt;img
+ src="https://ryanjennin.gs/image/doodles/flowoman_hu_f7931ab8af55d934.jpg"
+ srcset="https://ryanjennin.gs/image/doodles/flowoman_hu_c2e19d63cec5cc4e.jpg 960w, https://ryanjennin.gs/image/doodles/flowoman_hu_f7931ab8af55d934.jpg 1000w"
+ sizes="(min-width: 900px) 820px, 100vw"
+ alt="Flow Woman"
+ width="1000"
+ height="2016"
+ 
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
  &lt;div&gt;Flow Woman&lt;/div&gt;
  &lt;/div&gt;
- 
  &lt;div class="slide"&gt;
- &lt;img src="https://ryanjennin.gs/image/doodles/rose.jpg?1774123043" /&gt;
+ &lt;picture&gt;
+ &lt;source type="image/webp" srcset="https://ryanjennin.gs/image/doodles/rose_hu_cf7dd36029b3a025.webp 960w, https://ryanjennin.gs/image/doodles/rose_hu_c5c593696c207c7d.webp 1000w" sizes="(min-width: 900px) 820px, 100vw"&gt;
+ &lt;img
+ src="https://ryanjennin.gs/image/doodles/rose_hu_f40fe79f311a8698.jpg"
+ srcset="https://ryanjennin.gs/image/doodles/rose_hu_530aadf4be07d618.jpg 960w, https://ryanjennin.gs/image/doodles/rose_hu_f40fe79f311a8698.jpg 1000w"
+ sizes="(min-width: 900px) 820px, 100vw"
+ alt="Rose Blades"
+ width="1000"
+ height="1896"
+ 
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
  &lt;div&gt;Rose Blades&lt;/div&gt;
  &lt;/div&gt;
- 
  &lt;div class="slide"&gt;
- &lt;img src="https://ryanjennin.gs/image/doodles/heart-spirals.jpg?1774123043" /&gt;
+ &lt;picture&gt;
+ &lt;source type="image/webp" srcset="https://ryanjennin.gs/image/doodles/heart-spirals_hu_55911090bbe59d27.webp 382w" sizes="(min-width: 900px) 820px, 100vw"&gt;
+ &lt;img
+ src="https://ryanjennin.gs/image/doodles/heart-spirals_hu_5736bf405ec6de4a.jpg"
+ srcset="https://ryanjennin.gs/image/doodles/heart-spirals_hu_5736bf405ec6de4a.jpg 382w"
+ sizes="(min-width: 900px) 820px, 100vw"
+ alt="Heart Spirals"
+ width="382"
+ height="452"
+ 
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
  &lt;div&gt;Heart Spirals&lt;/div&gt;
  &lt;/div&gt;
- 
  &lt;div class="slide"&gt;
- &lt;img src="https://ryanjennin.gs/image/doodles/tendrils.jpg?1774123043" /&gt;
+ &lt;picture&gt;
+ &lt;source type="image/webp" srcset="https://ryanjennin.gs/image/doodles/tendrils_hu_6117fe2e08a789aa.webp 960w, https://ryanjennin.gs/image/doodles/tendrils_hu_632eb43dfb119c47.webp 1848w" sizes="(min-width: 900px) 820px, 100vw"&gt;
+ &lt;img
+ src="https://ryanjennin.gs/image/doodles/tendrils_hu_ab877820d981d075.jpg"
+ srcset="https://ryanjennin.gs/image/doodles/tendrils_hu_516323a885010ef9.jpg 960w, https://ryanjennin.gs/image/doodles/tendrils_hu_ab877820d981d075.jpg 1848w"
+ sizes="(min-width: 900px) 820px, 100vw"
+ alt="Amphibian Hand Hair"
+ width="1848"
+ height="1700"
+ 
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
  &lt;div&gt;Amphibian Hand Hair&lt;/div&gt;
  &lt;/div&gt;
- 
  &lt;div class="slide"&gt;
- &lt;img src="https://ryanjennin.gs/image/doodles/osteriches.jpg?1774123043" /&gt;
+ &lt;picture&gt;
+ &lt;source type="image/webp" srcset="https://ryanjennin.gs/image/doodles/osteriches_hu_a75ceefaeebadd09.webp 960w, https://ryanjennin.gs/image/doodles/osteriches_hu_603438db21e4cdeb.webp 1800w" sizes="(min-width: 900px) 820px, 100vw"&gt;
+ &lt;img
+ src="https://ryanjennin.gs/image/doodles/osteriches_hu_e932effa1c15485c.jpg"
+ srcset="https://ryanjennin.gs/image/doodles/osteriches_hu_bfd22edb42b454ad.jpg 960w, https://ryanjennin.gs/image/doodles/osteriches_hu_e932effa1c15485c.jpg 1800w"
+ sizes="(min-width: 900px) 820px, 100vw"
+ alt="Osterich Tribe"
+ width="1800"
+ height="1086"
+ 
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
  &lt;div&gt;Osterich Tribe&lt;/div&gt;
  &lt;/div&gt;
- 
  &lt;div class="slide"&gt;
- &lt;img src="https://ryanjennin.gs/image/doodles/owl.jpg?1774123043" /&gt;
+ &lt;picture&gt;
+ &lt;source type="image/webp" srcset="https://ryanjennin.gs/image/doodles/owl_hu_32494e13cfad3a53.webp 960w, https://ryanjennin.gs/image/doodles/owl_hu_c37f1ae2b3f58d62.webp 2117w" sizes="(min-width: 900px) 820px, 100vw"&gt;
+ &lt;img
+ src="https://ryanjennin.gs/image/doodles/owl_hu_eca05e4839bedb42.jpg"
+ srcset="https://ryanjennin.gs/image/doodles/owl_hu_edae230c0aeaa5b1.jpg 960w, https://ryanjennin.gs/image/doodles/owl_hu_eca05e4839bedb42.jpg 2117w"
+ sizes="(min-width: 900px) 820px, 100vw"
+ alt="Owl of Me (Me-Owl)"
+ width="2117"
+ height="2822"
+ 
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
  &lt;div&gt;Owl of Me (Me-Owl)&lt;/div&gt;
  &lt;/div&gt;
- 
  &lt;div class="slide"&gt;
- &lt;img src="https://ryanjennin.gs/image/doodles/osterich.jpg?1774123043" /&gt;
+ &lt;picture&gt;
+ &lt;source type="image/webp" srcset="https://ryanjennin.gs/image/doodles/osterich_hu_1b39855d29b74789.webp 960w, https://ryanjennin.gs/image/doodles/osterich_hu_f0aac94bed447a7a.webp 1200w" sizes="(min-width: 900px) 820px, 100vw"&gt;
+ &lt;img
+ src="https://ryanjennin.gs/image/doodles/osterich_hu_36bc0051b5f43cea.jpg"
+ srcset="https://ryanjennin.gs/image/doodles/osterich_hu_fd8e45e8317473cd.jpg 960w, https://ryanjennin.gs/image/doodles/osterich_hu_36bc0051b5f43cea.jpg 1200w"
+ sizes="(min-width: 900px) 820px, 100vw"
+ alt="Osterich Portrait"
+ width="1200"
+ height="1837"
+ 
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
  &lt;div&gt;Osterich Portrait&lt;/div&gt;
  &lt;/div&gt;
- 
  &lt;div class="slide"&gt;
- &lt;img src="https://ryanjennin.gs/image/doodles/quacker.jpg?1774123043" /&gt;
+ &lt;picture&gt;
+ &lt;source type="image/webp" srcset="https://ryanjennin.gs/image/doodles/quacker_hu_2031da9632dffc9c.webp 960w, https://ryanjennin.gs/image/doodles/quacker_hu_5775ff38c749be7b.webp 1000w" sizes="(min-width: 900px) 820px, 100vw"&gt;
+ &lt;img
+ src="https://ryanjennin.gs/image/doodles/quacker_hu_52c9e91f6b6e0012.jpg"
+ srcset="https://ryanjennin.gs/image/doodles/quacker_hu_d97cbccce07cdbd1.jpg 960w, https://ryanjennin.gs/image/doodles/quacker_hu_52c9e91f6b6e0012.jpg 1000w"
+ sizes="(min-width: 900px) 820px, 100vw"
+ alt="Crumby Quacker"
+ width="1000"
+ height="1333"
+ 
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
  &lt;div&gt;Crumby Quacker&lt;/div&gt;
  &lt;/div&gt;
- 
  &lt;div class="slide"&gt;
- &lt;img src="https://ryanjennin.gs/image/doodles/gerty2.jpg?1774123043" /&gt;
+ &lt;picture&gt;
+ &lt;source type="image/webp" srcset="https://ryanjennin.gs/image/doodles/gerty2_hu_b3e061b4b430dc24.webp 960w, https://ryanjennin.gs/image/doodles/gerty2_hu_db8462e003043f1b.webp 1000w" sizes="(min-width: 900px) 820px, 100vw"&gt;
+ &lt;img
+ src="https://ryanjennin.gs/image/doodles/gerty2_hu_72b6f60816969800.jpg"
+ srcset="https://ryanjennin.gs/image/doodles/gerty2_hu_8260186bbde3e045.jpg 960w, https://ryanjennin.gs/image/doodles/gerty2_hu_72b6f60816969800.jpg 1000w"
+ sizes="(min-width: 900px) 820px, 100vw"
+ alt="Gertrude: Don&amp;#39;t be Rude"
+ width="1000"
+ height="750"
+ 
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
  &lt;div&gt;Gertrude: Don&amp;#39;t be Rude&lt;/div&gt;
  &lt;/div&gt;
- 
  &lt;div class="slide"&gt;
- &lt;img src="https://ryanjennin.gs/image/doodles/birch.jpg?1774123043" /&gt;
+ &lt;picture&gt;
+ &lt;source type="image/webp" srcset="https://ryanjennin.gs/image/doodles/birch_hu_c4d5f1c77466c95a.webp 960w, https://ryanjennin.gs/image/doodles/birch_hu_4eb7ee3d3d9c9555.webp 1588w" sizes="(min-width: 900px) 820px, 100vw"&gt;
+ &lt;img
+ src="https://ryanjennin.gs/image/doodles/birch_hu_bcb1729f1581373.jpg"
+ srcset="https://ryanjennin.gs/image/doodles/birch_hu_56707ffb2a47501f.jpg 960w, https://ryanjennin.gs/image/doodles/birch_hu_bcb1729f1581373.jpg 1588w"
+ sizes="(min-width: 900px) 820px, 100vw"
+ alt="Birch Bark"
+ width="1588"
+ height="1980"
+ 
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
  &lt;div&gt;Birch Bark&lt;/div&gt;
  &lt;/div&gt;
- 
  &lt;div class="slide"&gt;
- &lt;img src="https://ryanjennin.gs/image/doodles/worm-cells.jpg?1774123043" /&gt;
+ &lt;picture&gt;
+ &lt;source type="image/webp" srcset="https://ryanjennin.gs/image/doodles/worm-cells_hu_858519c977ebc6ee.webp 960w, https://ryanjennin.gs/image/doodles/worm-cells_hu_40b6e37016f7d62c.webp 1654w" sizes="(min-width: 900px) 820px, 100vw"&gt;
+ &lt;img
+ src="https://ryanjennin.gs/image/doodles/worm-cells_hu_84baf9127a471a1b.jpg"
+ srcset="https://ryanjennin.gs/image/doodles/worm-cells_hu_614cba110eaf638b.jpg 960w, https://ryanjennin.gs/image/doodles/worm-cells_hu_84baf9127a471a1b.jpg 1654w"
+ sizes="(min-width: 900px) 820px, 100vw"
+ alt="Worm Cells"
+ width="1654"
+ height="1900"
+ 
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
  &lt;div&gt;Worm Cells&lt;/div&gt;
  &lt;/div&gt;
- 
  &lt;div class="slide"&gt;
- &lt;img src="https://ryanjennin.gs/image/doodles/stunt-ark.jpg?1774123043" /&gt;
+ &lt;picture&gt;
+ &lt;source type="image/webp" srcset="https://ryanjennin.gs/image/doodles/stunt-ark_hu_834de910535d70a6.webp 960w, https://ryanjennin.gs/image/doodles/stunt-ark_hu_d4e62cd310b1eb82.webp 2000w" sizes="(min-width: 900px) 820px, 100vw"&gt;
+ &lt;img
+ src="https://ryanjennin.gs/image/doodles/stunt-ark_hu_9b4d65dc2197b742.jpg"
+ srcset="https://ryanjennin.gs/image/doodles/stunt-ark_hu_671df27a63ab7bf8.jpg 960w, https://ryanjennin.gs/image/doodles/stunt-ark_hu_9b4d65dc2197b742.jpg 2000w"
+ sizes="(min-width: 900px) 820px, 100vw"
+ alt="Stuntman Missing Noah&amp;#39;s Ark"
+ width="2000"
+ height="1410"
+ 
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
  &lt;div&gt;Stuntman Missing Noah&amp;#39;s Ark&lt;/div&gt;
  &lt;/div&gt;
- 
  &lt;div class="slide"&gt;
- &lt;img src="https://ryanjennin.gs/image/doodles/mother.jpg?1774123043" /&gt;
+ &lt;picture&gt;
+ &lt;source type="image/webp" srcset="https://ryanjennin.gs/image/doodles/mother_hu_e7dfd6ef973bd636.webp 960w, https://ryanjennin.gs/image/doodles/mother_hu_b23dd0b01873912e.webp 1000w" sizes="(min-width: 900px) 820px, 100vw"&gt;
+ &lt;img
+ src="https://ryanjennin.gs/image/doodles/mother_hu_72feaae9c70cebb7.jpg"
+ srcset="https://ryanjennin.gs/image/doodles/mother_hu_bc3b8c490bbda01b.jpg 960w, https://ryanjennin.gs/image/doodles/mother_hu_72feaae9c70cebb7.jpg 1000w"
+ sizes="(min-width: 900px) 820px, 100vw"
+ alt="Moth of Her (mother)"
+ width="1000"
+ height="1333"
+ 
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
  &lt;div&gt;Moth of Her (mother)&lt;/div&gt;
  &lt;/div&gt;
- 
  &lt;div class="slide"&gt;
- &lt;img src="https://ryanjennin.gs/image/doodles/stardum.jpg?1774123043" /&gt;
+ &lt;picture&gt;
+ &lt;source type="image/webp" srcset="https://ryanjennin.gs/image/doodles/stardum_hu_2667ad3980f301a.webp 960w, https://ryanjennin.gs/image/doodles/stardum_hu_bd1c8c6a275067ba.webp 1062w" sizes="(min-width: 900px) 820px, 100vw"&gt;
+ &lt;img
+ src="https://ryanjennin.gs/image/doodles/stardum_hu_1fbf6d8294049d80.jpg"
+ srcset="https://ryanjennin.gs/image/doodles/stardum_hu_41773d0695714114.jpg 960w, https://ryanjennin.gs/image/doodles/stardum_hu_1fbf6d8294049d80.jpg 1062w"
+ sizes="(min-width: 900px) 820px, 100vw"
+ alt="Stardum: Moon Eating"
+ width="1062"
+ height="1001"
+ 
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
  &lt;div&gt;Stardum: Moon Eating&lt;/div&gt;
  &lt;/div&gt;
- 
  &lt;div class="slide"&gt;
- &lt;img src="https://ryanjennin.gs/image/doodles/black-flower.jpg?1774123043" /&gt;
+ &lt;picture&gt;
+ &lt;source type="image/webp" srcset="https://ryanjennin.gs/image/doodles/black-flower_hu_27af85ae9a509a68.webp 960w, https://ryanjennin.gs/image/doodles/black-flower_hu_93c91193a7438e9.webp 2117w" sizes="(min-width: 900px) 820px, 100vw"&gt;
+ &lt;img
+ src="https://ryanjennin.gs/image/doodles/black-flower_hu_932ff9a91fb1e559.jpg"
+ srcset="https://ryanjennin.gs/image/doodles/black-flower_hu_31cdfb016d6131d1.jpg 960w, https://ryanjennin.gs/image/doodles/black-flower_hu_932ff9a91fb1e559.jpg 2117w"
+ sizes="(min-width: 900px) 820px, 100vw"
+ alt="Black Hole Brain Flower"
+ width="2117"
+ height="2822"
+ 
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
  &lt;div&gt;Black Hole Brain Flower&lt;/div&gt;
  &lt;/div&gt;
- 
  &lt;div class="slide"&gt;
- &lt;img src="https://ryanjennin.gs/image/doodles/dino-rock-sex.jpg?1774123043" /&gt;
+ &lt;picture&gt;
+ &lt;source type="image/webp" srcset="https://ryanjennin.gs/image/doodles/dino-rock-sex_hu_7ddf9d5987fec1bd.webp 874w" sizes="(min-width: 900px) 820px, 100vw"&gt;
+ &lt;img
+ src="https://ryanjennin.gs/image/doodles/dino-rock-sex_hu_9eaab9c19c7d08c7.jpg"
+ srcset="https://ryanjennin.gs/image/doodles/dino-rock-sex_hu_9eaab9c19c7d08c7.jpg 874w"
+ sizes="(min-width: 900px) 820px, 100vw"
+ alt="Dinosaurus, Rock, Sex Transfusion"
+ width="874"
+ height="2240"
+ 
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
  &lt;div&gt;Dinosaurus, Rock, Sex Transfusion&lt;/div&gt;
  &lt;/div&gt;
- 
  &lt;div class="slide"&gt;
- &lt;img src="https://ryanjennin.gs/image/doodles/cube.jpg?1774123043" /&gt;
+ &lt;picture&gt;
+ &lt;source type="image/webp" srcset="https://ryanjennin.gs/image/doodles/cube_hu_78d70edac8fc9a31.webp 960w, https://ryanjennin.gs/image/doodles/cube_hu_3cdb99200a749e13.webp 1862w" sizes="(min-width: 900px) 820px, 100vw"&gt;
+ &lt;img
+ src="https://ryanjennin.gs/image/doodles/cube_hu_57a607be1bb8c877.jpg"
+ srcset="https://ryanjennin.gs/image/doodles/cube_hu_b1b342e44dfa7684.jpg 960w, https://ryanjennin.gs/image/doodles/cube_hu_57a607be1bb8c877.jpg 1862w"
+ sizes="(min-width: 900px) 820px, 100vw"
+ alt="Cube Glaze"
+ width="1862"
+ height="1690"
+ 
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
  &lt;div&gt;Cube Glaze&lt;/div&gt;
  &lt;/div&gt;
- 
  &lt;div class="slide"&gt;
- &lt;img src="https://ryanjennin.gs/image/doodles/droid.png?1774123043" /&gt;
+ &lt;picture&gt;
+ &lt;source type="image/webp" srcset="https://ryanjennin.gs/image/doodles/droid_hu_af91d4d5c984f2c3.webp 529w" sizes="(min-width: 900px) 820px, 100vw"&gt;
+ &lt;img
+ src="https://ryanjennin.gs/image/doodles/droid_hu_bae1b994f42e7f40.png"
+ srcset="https://ryanjennin.gs/image/doodles/droid_hu_bae1b994f42e7f40.png 529w"
+ sizes="(min-width: 900px) 820px, 100vw"
+ alt="Droid, Card, Watercolour"
+ width="529"
+ height="736"
+ 
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
  &lt;div&gt;Droid, Card, Watercolour&lt;/div&gt;
  &lt;/div&gt;
- 
  &lt;div class="slide"&gt;
- &lt;img src="https://ryanjennin.gs/image/doodles/pi.png?1774123043" /&gt;
+ &lt;picture&gt;
+ &lt;source type="image/webp" srcset="https://ryanjennin.gs/image/doodles/pi_hu_da8baa8c1d94a7e5.webp 651w" sizes="(min-width: 900px) 820px, 100vw"&gt;
+ &lt;img
+ src="https://ryanjennin.gs/image/doodles/pi_hu_24fd18ab02e2613e.png"
+ srcset="https://ryanjennin.gs/image/doodles/pi_hu_24fd18ab02e2613e.png 651w"
+ sizes="(min-width: 900px) 820px, 100vw"
+ alt="Greek Upside Down Smile Pi"
+ width="651"
+ height="675"
+ 
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
  &lt;div&gt;Greek Upside Down Smile Pi&lt;/div&gt;
  &lt;/div&gt;
- 
  &lt;div class="slide"&gt;
- &lt;img src="https://ryanjennin.gs/image/doodles/logs.jpg?1774123043" /&gt;
+ &lt;picture&gt;
+ &lt;source type="image/webp" srcset="https://ryanjennin.gs/image/doodles/logs_hu_9383cae4082edf58.webp 960w, https://ryanjennin.gs/image/doodles/logs_hu_fe936d9f02d1dc1.webp 2086w" sizes="(min-width: 900px) 820px, 100vw"&gt;
+ &lt;img
+ src="https://ryanjennin.gs/image/doodles/logs_hu_6675225a2606883d.jpg"
+ srcset="https://ryanjennin.gs/image/doodles/logs_hu_81864a689e5c12cd.jpg 960w, https://ryanjennin.gs/image/doodles/logs_hu_6675225a2606883d.jpg 2086w"
+ sizes="(min-width: 900px) 820px, 100vw"
+ alt="Logs"
+ width="2086"
+ height="1508"
+ 
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
  &lt;div&gt;Logs&lt;/div&gt;
  &lt;/div&gt;
- 
  &lt;div class="slide"&gt;
- &lt;img src="https://ryanjennin.gs/image/doodles/penelopy.jpg?1774123043" /&gt;
+ &lt;picture&gt;
+ &lt;source type="image/webp" srcset="https://ryanjennin.gs/image/doodles/penelopy_hu_318670ea9a64c485.webp 960w, https://ryanjennin.gs/image/doodles/penelopy_hu_5c25ce43ca1706f6.webp 2819w" sizes="(min-width: 900px) 820px, 100vw"&gt;
+ &lt;img
+ src="https://ryanjennin.gs/image/doodles/penelopy_hu_ec59eb401303a76e.jpg"
+ srcset="https://ryanjennin.gs/image/doodles/penelopy_hu_4c7edb188c105667.jpg 960w, https://ryanjennin.gs/image/doodles/penelopy_hu_ec59eb401303a76e.jpg 2819w"
+ sizes="(min-width: 900px) 820px, 100vw"
+ alt="Penelopy: A Rough Trade"
+ width="2819"
+ height="3782"
+ 
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
  &lt;div&gt;Penelopy: A Rough Trade&lt;/div&gt;
  &lt;/div&gt;
- 
  &lt;div class="slide"&gt;
- &lt;img src="https://ryanjennin.gs/image/doodles/naked-dream.jpg?1774123043" /&gt;
+ &lt;picture&gt;
+ &lt;source type="image/webp" srcset="https://ryanjennin.gs/image/doodles/naked-dream_hu_e949f338ace819f9.webp 960w, https://ryanjennin.gs/image/doodles/naked-dream_hu_74e71f86df433191.webp 1022w" sizes="(min-width: 900px) 820px, 100vw"&gt;
+ &lt;img
+ src="https://ryanjennin.gs/image/doodles/naked-dream_hu_81e809dcdd696cfc.jpg"
+ srcset="https://ryanjennin.gs/image/doodles/naked-dream_hu_f65d88848be0c71.jpg 960w, https://ryanjennin.gs/image/doodles/naked-dream_hu_81e809dcdd696cfc.jpg 1022w"
+ sizes="(min-width: 900px) 820px, 100vw"
+ alt="&amp;#39;arnie from the (Tan) Club"
+ width="1022"
+ height="3078"
+ 
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
  &lt;div&gt;&amp;#39;arnie from the (Tan) Club&lt;/div&gt;
  &lt;/div&gt;
- 
  &lt;div class="slide"&gt;
- &lt;img src="https://ryanjennin.gs/image/doodles/clouds.png?1774123043" /&gt;
+ &lt;picture&gt;
+ &lt;source type="image/webp" srcset="https://ryanjennin.gs/image/doodles/clouds_hu_c4e072efccf87a6e.webp 559w" sizes="(min-width: 900px) 820px, 100vw"&gt;
+ &lt;img
+ src="https://ryanjennin.gs/image/doodles/clouds_hu_a7c49d08711b064b.png"
+ srcset="https://ryanjennin.gs/image/doodles/clouds_hu_a7c49d08711b064b.png 559w"
+ sizes="(min-width: 900px) 820px, 100vw"
+ alt="Clouds, Card, Watercolour"
+ width="559"
+ height="765"
+ 
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
  &lt;div&gt;Clouds, Card, Watercolour&lt;/div&gt;
  &lt;/div&gt;
- 
  &lt;div class="slide"&gt;
- &lt;img src="https://ryanjennin.gs/image/doodles/bones.jpg?1774123043" /&gt;
+ &lt;picture&gt;
+ &lt;source type="image/webp" srcset="https://ryanjennin.gs/image/doodles/bones_hu_1871868614618d9a.webp 715w" sizes="(min-width: 900px) 820px, 100vw"&gt;
+ &lt;img
+ src="https://ryanjennin.gs/image/doodles/bones_hu_d5660103635245ff.jpg"
+ srcset="https://ryanjennin.gs/image/doodles/bones_hu_d5660103635245ff.jpg 715w"
+ sizes="(min-width: 900px) 820px, 100vw"
+ alt="Brain Casing, Cracked"
+ width="715"
+ height="997"
+ 
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
  &lt;div&gt;Brain Casing, Cracked&lt;/div&gt;
  &lt;/div&gt;
- 
  &lt;div class="slide"&gt;
- &lt;img src="https://ryanjennin.gs/image/doodles/joker.png?1774123043" /&gt;
+ &lt;picture&gt;
+ &lt;source type="image/webp" srcset="https://ryanjennin.gs/image/doodles/joker_hu_525aa3d09f878b31.webp 428w" sizes="(min-width: 900px) 820px, 100vw"&gt;
+ &lt;img
+ src="https://ryanjennin.gs/image/doodles/joker_hu_c345aefa34008740.png"
+ srcset="https://ryanjennin.gs/image/doodles/joker_hu_c345aefa34008740.png 428w"
+ sizes="(min-width: 900px) 820px, 100vw"
+ alt="Joker and the Thief"
+ width="428"
+ height="586"
+ 
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
  &lt;div&gt;Joker and the Thief&lt;/div&gt;
  &lt;/div&gt;
- 
  &lt;div class="slide"&gt;
- &lt;img src="https://ryanjennin.gs/image/doodles/ca-nada.jpg?1774123043" /&gt;
+ &lt;picture&gt;
+ &lt;source type="image/webp" srcset="https://ryanjennin.gs/image/doodles/ca-nada_hu_e6a73ffc2f35a7ea.webp 960w, https://ryanjennin.gs/image/doodles/ca-nada_hu_ed2f551395049e4e.webp 2033w" sizes="(min-width: 900px) 820px, 100vw"&gt;
+ &lt;img
+ src="https://ryanjennin.gs/image/doodles/ca-nada_hu_afa3643faac83778.jpg"
+ srcset="https://ryanjennin.gs/image/doodles/ca-nada_hu_47c73fa8a4fa624e.jpg 960w, https://ryanjennin.gs/image/doodles/ca-nada_hu_afa3643faac83778.jpg 2033w"
+ sizes="(min-width: 900px) 820px, 100vw"
+ alt="Can, but Nada"
+ width="2033"
+ height="1354"
+ 
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
  &lt;div&gt;Can, but Nada&lt;/div&gt;
  &lt;/div&gt;
- 
  &lt;div class="slide"&gt;
- &lt;img src="https://ryanjennin.gs/image/doodles/crapola.png?1774123043" /&gt;
+ &lt;picture&gt;
+ &lt;source type="image/webp" srcset="https://ryanjennin.gs/image/doodles/crapola_hu_b75792e9c6d799db.webp 588w" sizes="(min-width: 900px) 820px, 100vw"&gt;
+ &lt;img
+ src="https://ryanjennin.gs/image/doodles/crapola_hu_53b12952369e213.png"
+ srcset="https://ryanjennin.gs/image/doodles/crapola_hu_53b12952369e213.png 588w"
+ sizes="(min-width: 900px) 820px, 100vw"
+ alt="Life for Breakfast"
+ width="588"
+ height="880"
+ 
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
  &lt;div&gt;Life for Breakfast&lt;/div&gt;
  &lt;/div&gt;
- 
  &lt;div class="slide"&gt;
- &lt;img src="https://ryanjennin.gs/image/doodles/treble.jpg?1774123043" /&gt;
+ &lt;picture&gt;
+ &lt;source type="image/webp" srcset="https://ryanjennin.gs/image/doodles/treble_hu_7ec948f072b79f29.webp 670w" sizes="(min-width: 900px) 820px, 100vw"&gt;
+ &lt;img
+ src="https://ryanjennin.gs/image/doodles/treble_hu_bed158221fd30f9d.jpg"
+ srcset="https://ryanjennin.gs/image/doodles/treble_hu_bed158221fd30f9d.jpg 670w"
+ sizes="(min-width: 900px) 820px, 100vw"
+ alt="Treble Clef: Art in itself"
+ width="670"
+ height="1153"
+ 
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
  &lt;div&gt;Treble Clef: Art in itself&lt;/div&gt;
  &lt;/div&gt;
- 
  &lt;div class="slide"&gt;
- &lt;img src="https://ryanjennin.gs/image/doodles/apocolypse.jpg?1774123043" /&gt;
+ &lt;picture&gt;
+ &lt;source type="image/webp" srcset="https://ryanjennin.gs/image/doodles/apocolypse_hu_186793543e092ec1.webp 960w, https://ryanjennin.gs/image/doodles/apocolypse_hu_2222e8aaf254710d.webp 2876w" sizes="(min-width: 900px) 820px, 100vw"&gt;
+ &lt;img
+ src="https://ryanjennin.gs/image/doodles/apocolypse_hu_a59ef29815a5d691.jpg"
+ srcset="https://ryanjennin.gs/image/doodles/apocolypse_hu_ba2713aab9c8cc47.jpg 960w, https://ryanjennin.gs/image/doodles/apocolypse_hu_a59ef29815a5d691.jpg 2876w"
+ sizes="(min-width: 900px) 820px, 100vw"
+ alt="Happiness in Apocolypse"
+ width="2876"
+ height="2454"
+ 
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
  &lt;div&gt;Happiness in Apocolypse&lt;/div&gt;
  &lt;/div&gt;
- 
  &lt;div class="slide"&gt;
- &lt;img src="https://ryanjennin.gs/image/doodles/venus.jpg?1774123043" /&gt;
+ &lt;picture&gt;
+ &lt;source type="image/webp" srcset="https://ryanjennin.gs/image/doodles/venus_hu_3f8c4a0caa109259.webp 960w, https://ryanjennin.gs/image/doodles/venus_hu_8c2a8dab9d9f1ff3.webp 1000w" sizes="(min-width: 900px) 820px, 100vw"&gt;
+ &lt;img
+ src="https://ryanjennin.gs/image/doodles/venus_hu_509e4b602fdfcc96.jpg"
+ srcset="https://ryanjennin.gs/image/doodles/venus_hu_9cc1ce8af29923b3.jpg 960w, https://ryanjennin.gs/image/doodles/venus_hu_509e4b602fdfcc96.jpg 1000w"
+ sizes="(min-width: 900px) 820px, 100vw"
+ alt="The Other Side"
+ width="1000"
+ height="1333"
+ 
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
  &lt;div&gt;The Other Side&lt;/div&gt;
  &lt;/div&gt;
- 
  &lt;div class="slide"&gt;
- &lt;img src="https://ryanjennin.gs/image/doodles/imperial.jpg?1774123043" /&gt;
+ &lt;picture&gt;
+ &lt;source type="image/webp" srcset="https://ryanjennin.gs/image/doodles/imperial_hu_803d0036be28381b.webp 960w, https://ryanjennin.gs/image/doodles/imperial_hu_3a742a619388ead6.webp 1000w" sizes="(min-width: 900px) 820px, 100vw"&gt;
+ &lt;img
+ src="https://ryanjennin.gs/image/doodles/imperial_hu_cbb65af8ef8d56e2.jpg"
+ srcset="https://ryanjennin.gs/image/doodles/imperial_hu_f1c745051c5d6286.jpg 960w, https://ryanjennin.gs/image/doodles/imperial_hu_cbb65af8ef8d56e2.jpg 1000w"
+ sizes="(min-width: 900px) 820px, 100vw"
+ alt="Imp Ear, Real"
+ width="1000"
+ height="858"
+ 
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
  &lt;div&gt;Imp Ear, Real&lt;/div&gt;
  &lt;/div&gt;
- 
  &lt;div class="slide"&gt;
- &lt;img src="https://ryanjennin.gs/image/doodles/portrait.jpg?1774123043" /&gt;
+ &lt;picture&gt;
+ &lt;source type="image/webp" srcset="https://ryanjennin.gs/image/doodles/portrait_hu_eb2e6e6a6b528351.webp 960w, https://ryanjennin.gs/image/doodles/portrait_hu_a682ff72dd2bb3c2.webp 1000w" sizes="(min-width: 900px) 820px, 100vw"&gt;
+ &lt;img
+ src="https://ryanjennin.gs/image/doodles/portrait_hu_eec6ccb99b4223ca.jpg"
+ srcset="https://ryanjennin.gs/image/doodles/portrait_hu_47103eab5f16a6a4.jpg 960w, https://ryanjennin.gs/image/doodles/portrait_hu_eec6ccb99b4223ca.jpg 1000w"
+ sizes="(min-width: 900px) 820px, 100vw"
+ alt="Portrait (Ana Kao version)"
+ width="1000"
+ height="1241"
+ 
+ loading="lazy"
+ decoding="async"&gt;
+ &lt;/picture&gt;
  &lt;div&gt;Portrait (Ana Kao version)&lt;/div&gt;
  &lt;/div&gt;
  
@@ -308,16 +683,23 @@ The end result is a complete static html site you can deploy.&lt;/p&gt;</descrip
 &lt;/span&gt;
 &lt;/div&gt;
  &lt;/div&gt;
-&lt;/div&gt;</description></item><item><title>Fuzz Testing</title><link>https://ryanjennin.gs/things/tech/fuzz-testing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/tech/fuzz-testing/</guid><description/></item><item><title>Illusions: Adventures of a Reluctant Messiah</title><link>https://ryanjennin.gs/things/books/illusions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/books/illusions/</guid><description/></item><item><title>Interplanetary File System</title><link>https://ryanjennin.gs/things/tech/interplanetary-fs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/tech/interplanetary-fs/</guid><description/></item><item><title>Music</title><link>https://ryanjennin.gs/art/music/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/art/music/</guid><description>&lt;h2 id="soundcloud"&gt;SoundCloud&lt;/h2&gt;
-&lt;iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/287033462&amp;amp;auto_play=false&amp;amp;hide_related=true&amp;amp;show_comments=true&amp;amp;show_user=false&amp;amp;show_reposts=false"&gt;&lt;/iframe&gt;
-
+&lt;/div&gt;</description></item><item><title>Fuzz Testing</title><link>https://ryanjennin.gs/things/tech/fuzz-testing/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/tech/fuzz-testing/</guid><description/></item><item><title>Illusions: Adventures of a Reluctant Messiah</title><link>https://ryanjennin.gs/things/books/illusions/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/books/illusions/</guid><description/></item><item><title>Interplanetary File System</title><link>https://ryanjennin.gs/things/tech/interplanetary-fs/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/tech/interplanetary-fs/</guid><description/></item><item><title>Music</title><link>https://ryanjennin.gs/art/music/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/art/music/</guid><description>&lt;p&gt;This page is a loose home for recordings, sketches, and a few arrangements that
+have survived long enough to stay in rotation.&lt;/p&gt;
+&lt;h2 id="soundcloud"&gt;SoundCloud&lt;/h2&gt;
+&lt;iframe
+ width="100%"
+ height="450"
+ scrolling="no"
+ frameborder="no"
+ loading="lazy"
+ referrerpolicy="strict-origin-when-cross-origin"
+ title="SoundCloud playlist"
+ src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/287033462&amp;amp;auto_play=false&amp;amp;hide_related=true&amp;amp;show_comments=true&amp;amp;show_user=false&amp;amp;show_reposts=false"
+&gt;&lt;/iframe&gt;
 
 &lt;h2 id="sheet-music"&gt;Sheet Music&lt;/h2&gt;
-&lt;p&gt;&lt;a href="https://musescore.com/entrobert?share=copy_link"&gt;Musescore&lt;/a&gt; has some nursery
-rhymes and xmas carols I re-wrote in minor.&lt;/p&gt;
-&lt;h2 id="meatspace-live"&gt;Meatspace (live)&lt;/h2&gt;
-&lt;p&gt;My interests since 2017 have been upgrading my jazz and theory and have not bothered to record with analog.&lt;/p&gt;
-&lt;p&gt;Songs from my set to record:&lt;/p&gt;</description></item><item><title>Phoenix Framework and Elixir/Erlang</title><link>https://ryanjennin.gs/things/tech/elixer-erlang/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/tech/elixer-erlang/</guid><description/></item><item><title>Reactive Extensions</title><link>https://ryanjennin.gs/things/tech/reativext/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/tech/reativext/</guid><description/></item><item><title>Skystone / A Dream of Eagles</title><link>https://ryanjennin.gs/things/books/skystone/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/books/skystone/</guid><description/></item><item><title>SRE / DevOps</title><link>https://ryanjennin.gs/things/tech/devops/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/tech/devops/</guid><description/></item><item><title>Summary</title><link>https://ryanjennin.gs/summary/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/summary/</guid><description>&lt;div class="resume p-6" id="summary"&gt;
+&lt;p&gt;&lt;a href="https://musescore.com/entrobert?share=copy_link"&gt;MuseScore&lt;/a&gt; has a small set of
+nursery rhymes and Christmas carols that I rearranged into minor keys.&lt;/p&gt;</description></item><item><title>Phoenix Framework and Elixir/Erlang</title><link>https://ryanjennin.gs/things/tech/elixer-erlang/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/tech/elixer-erlang/</guid><description/></item><item><title>Reactive Extensions</title><link>https://ryanjennin.gs/things/tech/reativext/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/tech/reativext/</guid><description/></item><item><title>Skystone / A Dream of Eagles</title><link>https://ryanjennin.gs/things/books/skystone/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/books/skystone/</guid><description/></item><item><title>SRE / DevOps</title><link>https://ryanjennin.gs/things/tech/devops/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/things/tech/devops/</guid><description/></item><item><title>Summary</title><link>https://ryanjennin.gs/summary/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ryanjennin.gs/summary/</guid><description>&lt;div class="resume p-6" id="summary"&gt;
  &lt;h1 class="title"&gt;Summary of Ryan Jennings&lt;/h1&gt;
  &lt;h2 class="subtitle is-size-5 mt-2"&gt;Career History, Expertise and Interests&lt;/h2&gt;
 
