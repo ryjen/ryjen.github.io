@@ -1,0 +1,154 @@
+<!doctype html><html lang=en-us><head><meta charset=UTF-8><meta http-equiv=x-ua-compatible content="ie=edge"><title>Dubnium: A Super Server That Stays Understandable | Robert Ryan Jennings</title><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="dark light"><link rel=canonical href=https://ryanjennin.gs/posts/dubnium-super-server/><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link rel=preload as=style href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;family=JetBrains+Mono:wght@400;600&amp;family=Source+Sans+3:wght@400;500;600&amp;display=swap"><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;family=JetBrains+Mono:wght@400;600&amp;family=Source+Sans+3:wght@400;500;600&amp;display=swap" media=print onload='this.media="all"'><noscript><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;family=JetBrains+Mono:wght@400;600&amp;family=Source+Sans+3:wght@400;500;600&amp;display=swap"></noscript><script>(()=>{const n=document.documentElement,t="light",s="dark";let e=t;try{e=localStorage.getItem("theme")}catch{}e!==t&&e!==s&&(e=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches?s:t),n.dataset.theme=e,n.style.colorScheme=e})()</script><meta name=google-site-verification content="Crk6W-ckoApRrOZrv23ngLwPPTbzjzfZ4AQPElgS0pw"><meta name=description content="Dubnium is a NixOS-based personal super server built to stay legible: safe defaults, explicit modes, layered mutability, local AI boundaries, and an optional …"><meta name=robots content="index, follow"><meta property="og:title" content="Dubnium: A Super Server That Stays Understandable"><meta property="og:description" content="Dubnium is a NixOS-based personal super server built to stay legible: safe defaults, explicit modes, layered mutability, local AI boundaries, and an optional …"><meta property="og:type" content="article"><meta property="og:url" content="https://ryanjennin.gs/posts/dubnium-super-server/"><meta property="og:image" content="https://ryanjennin.gs/image/blog/dubnium.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Dubnium: A Super Server That Stays Understandable"><meta name=twitter:description content="Dubnium is a NixOS-based personal super server built to stay legible: safe defaults, explicit modes, layered mutability, local AI boundaries, and an optional …"><meta name=twitter:image content="https://ryanjennin.gs/image/blog/dubnium.png"><script type=application/ld+json>{"@context":"https://schema.org","@graph":[{"@id":"https://ryanjennin.gs/posts/dubnium-super-server/#webpage","@type":"WebPage","about":{"@id":"https://ryanjennin.gs/posts/dubnium-super-server/#article"},"description":"Dubnium is a NixOS-based personal super server built to stay legible: safe defaults, explicit modes, layered mutability, local AI boundaries, and an optional lab surface.","isPartOf":{"@id":"https://ryanjennin.gs/#website"},"name":"Dubnium: A Super Server That Stays Understandable","url":"https://ryanjennin.gs/posts/dubnium-super-server/"},{"@id":"https://ryanjennin.gs/posts/dubnium-super-server/#article","@type":"BlogPosting","author":{"@id":"https://ryanjennin.gs/#person"},"dateModified":"2026-06-29T00:00:00Z","datePublished":"2026-06-29T00:00:00Z","description":"Dubnium is a NixOS-based personal super server built to stay legible: safe defaults, explicit modes, layered mutability, local AI boundaries, and an optional lab surface.","headline":"Dubnium: A Super Server That Stays Understandable","image":"https://ryanjennin.gs/image/blog/dubnium.png","inLanguage":"en-us","isPartOf":{"@id":"https://ryanjennin.gs/#website"},"keywords":"dubnium, nixos, local-ai, homelab, automation, security, hyprland, k3s, tailscale","mainEntityOfPage":{"@id":"https://ryanjennin.gs/posts/dubnium-super-server/#webpage"},"publisher":{"@id":"https://ryanjennin.gs/#person"},"url":"https://ryanjennin.gs/posts/dubnium-super-server/"},{"@id":"https://ryanjennin.gs/#person","@type":"Person","description":"Web logs of a software development engineer, musician, artist and hockey player.","image":"https://gravatar.com/avatar/7cb4299e74a72928a9f05e8e910f07d5","name":"Robert Ryan Jennings","sameAs":["https://github.com/ryjen","https://linkedin.com/in/ryjen","https://soundcloud.com/entrobert/sets/favs","https://www.goodreads.com/ryjen"],"url":"https://ryanjennin.gs/about/"}]}</script><link rel=stylesheet href=/css/theme.min.css type=text/css><link href=/css/app.min.7ef5b9a8ddaa341aea893d0669783b5819729bf7a5c8be50ddc397c10878a7cc2ff4bdad1047c4fa336feca83371438446c546cedeaf1351959d3ad9da68293f.css rel=stylesheet type=text/css integrity="sha512-fvW5qN2qNBrqiT0GaXg7WBlym/elyL5Q3cOXwQh4p8wv9L2tEEfE+jNv7KgzcUOERsVGzt6vE1GVnTrZ2mgpPw==" crossorigin=anonymous><style>html[data-theme=dark] body{background-color:#002b36;color:#fdf6e3!important}html[data-theme=dark] body a{color:#268bd2}html[data-theme=dark] body .icon{fill:#fdf6e3;stroke:#fdf6e3}html[data-theme=dark] body .box,html[data-theme=dark] body .card{background-color:#073642}html[data-theme=dark] body code,html[data-theme=dark] body pre{background-color:#657b83;color:#002b36}html[data-theme=dark] body hr{background-color:#657b83}</style></head><body><script>(function(){var s,t="light",n="dark",e=null;try{e=window.localStorage.getItem("theme")}catch{e=null}s=e||(window.matchMedia("(prefers-color-scheme: dark)").matches?n:t),document.body.classList.remove(t,n),document.body.classList.add(s)})()</script><a class=skip-link href=#main>Skip to main content</a><header id=header class=shoulders><nav class=navbar role=navigation aria-label="main navigation"><div class=navbar-brand><a class=navbar-item href=/><figure class="image is-32x32"><img class=is-rounded src=https://gravatar.com/avatar/7cb4299e74a72928a9f05e8e910f07d5 alt width=32 height=32></figure><span class=navbar-brand-title>robert ryan jennings</span>
+</a><button type=button class=navbar-burger aria-label="Open main navigation" aria-expanded=false aria-controls=nav data-target=nav>
+<span aria-hidden=true></span>
+<span aria-hidden=true></span>
+<span aria-hidden=true></span></button></div><div id=nav class=navbar-menu><div class=navbar-end><a class="navbar-item mr-3" href=/posts><span class="icon is-small mr-2"><svg xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#rss"/></svg>
+</span>blog
+</a><a class="navbar-item mr-3" href=/art><span class="icon is-small mr-2"><svg xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#icons"/></svg>
+</span>art
+</a><a class="navbar-item mr-3" href=/things><span class="icon is-small mr-2"><svg xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#object-ungroup"/></svg>
+</span>things
+</a><a class="navbar-item mr-3" href=/about><span class="icon is-small mr-2"><svg xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#circle-info"/></svg>
+</span>about
+</a><button type=button class="navbar-item themer" aria-label="Use dark theme" aria-pressed=false>
+<span class="icon theme-icon" aria-hidden=true><svg xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#yin-yang"/></svg></span></button></div></div></nav></header><main id=main class=abdomen tabindex=-1><nav class="breadcrumb ml-4 is-small" aria-label=breadcrumbs><ul><li><a href=/>Home</a></li><li><a href=/posts/>Blog</a></li><li class=is-active><a href=/posts/dubnium-super-server/ aria-current=page>Dubnium: A Super Server That Stays Understandable</a></li></ul></nav><div class=container><header class="article-header mb-5"><h1 class=title>Dubnium: A Super Server That Stays Understandable</h1><p class="article-meta is-size-7"><span>By Robert Ryan Jennings</span>
+<span>Published Jun 29, 2026 12:00AM</span>
+<span>9 min read</span></p><div class="tags mb-3"><a class="tag is-rounded" href=/categories/software-engineering>software engineering</a>
+<a class="tag is-rounded" href=/categories/infrastructure>infrastructure</a>
+<a class="tag is-rounded" href=/categories/artificial-intelligence>artificial intelligence</a></div><div class="tags mb-0"><a class="tag is-rounded" href=/tags/dubnium>dubnium</a>
+<a class="tag is-rounded" href=/tags/nixos>nixos</a>
+<a class="tag is-rounded" href=/tags/local-ai>local-ai</a>
+<a class="tag is-rounded" href=/tags/homelab>homelab</a>
+<a class="tag is-rounded" href=/tags/automation>automation</a>
+<a class="tag is-rounded" href=/tags/security>security</a>
+<a class="tag is-rounded" href=/tags/hyprland>hyprland</a>
+<a class="tag is-rounded" href=/tags/k3s>k3s</a>
+<a class="tag is-rounded" href=/tags/tailscale>tailscale</a></div></header><div class=tts-controls data-tts-controls hidden><button type=button class="button is-small" data-tts-toggle data-tts-target=post-content>
+Read this post to me</button><p class=tts-status data-tts-status aria-live=polite></p></div><figure class="article-hero mb-5"><picture><source type=image/webp srcset="/image/blog/dubnium_hu_a1017ff95bbdd08f.webp 480w, /image/blog/dubnium_hu_72c03211bca49b7b.webp 960w, /image/blog/dubnium_hu_49da2613ff3600e5.webp 1440w, /image/blog/dubnium_hu_fb525da74572fb1f.webp 1536w" sizes="(min-width: 900px) 820px, 100vw"><img src=/image/blog/dubnium_hu_642967f63e9bec72.png srcset="/image/blog/dubnium_hu_9c6b4446e6552b3a.png 480w, /image/blog/dubnium_hu_885b2c150ff6d8c.png 960w, /image/blog/dubnium_hu_435c0aecf77421bc.png 1440w, /image/blog/dubnium_hu_642967f63e9bec72.png 1536w" sizes="(min-width: 900px) 820px, 100vw" alt="Dubnium: A Super Server That Stays Understandable" width=1536 height=1024 fetchpriority=high loading=eager decoding=async class=article-hero-image></picture></figure><div class="content article-content" id=post-content data-tts-content><h1 id=dubnium-a-super-server-that-stays-understandable>Dubnium: A Super Server That Stays Understandable</h1><p>A machine that does everything usually explains nothing.</p><p>That failure mode is what Dubnium is trying to avoid.</p><p>Dubnium is one NixOS machine that can be a workstation, a local AI node, an
+automation host, a secure remote access point, and, when needed, the base for
+an experimental lab.</p><p>That usually ends in accretion: random daemons, forgotten ports, shell history
+as documentation, and a system that only makes sense to whoever last touched
+it.</p><p>Dubnium is an anti-sludge project.</p><p>It is closer to a personal distro than a homelab box: an opinionated system
+shape for local AI, developer work, explicit operating modes, and optional
+experimentation without letting any one of those roles consume the whole
+machine.</p><p>The project comes from a few specific frustrations: supply-chain trust erosion,
+watching disks slowly disappear into OS bloat, and the familiar experience of a
+machine becoming stronger while also becoming less reproducible. Once a system
+cannot be rebuilt with confidence, every upgrade starts feeling like a wager.</p><h2 id=common-scenarios>Common scenarios</h2><p>The most common Dubnium scenario is not exotic. It is ordinary desktop work
+that turns into remote compute.</p><p>I might be doing development work at my desk, switch the machine into compute
+mode, then leave with a laptop and keep using local AI over Tailscale from a
+library. The heavy models, runtimes, and GPU posture stay on the home machine.
+The laptop stays thin.</p><p>The second common scenario is background work: CareerOps automations, research
+collection, scheduled jobs, and bounded workflows that should keep running
+without turning the host into an opaque automation box.</p><p>Another common scenario is project-local development through a dedicated shell.
+The project gets the tools, dependencies, and environment it needs. The host
+does not slowly become the project.</p><p>Those scenarios sound different, but they need the same thing: one machine,
+multiple postures, explicit boundaries.</p><h2 id=the-core-idea>The core idea</h2><p>The most important distinction in Dubnium is also the easiest one to blur:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>Mode    = what the machine is doing right now
+</span></span><span class=line><span class=cl>Profile = what the machine is capable of doing
+</span></span></code></pre></div><p>That sounds like bookkeeping. It is not.</p><p>Once those collapse, <code>desktop</code> stops meaning a current posture. It starts
+quietly meaning a GUI, personal config, background automation, model services,
+and whatever else happened to get installed. <code>compute</code> stops meaning a runtime
+state and starts meaning an entire bundle of assumptions.</p><p>Dubnium keeps the split explicit.</p><p>Profiles define what can exist. Modes define what is active now. Services stay
+operator choices.</p><div class=mermaid>flowchart TD
+P[Profiles / Capabilities\ngraphical, studio, ai, compute]
+M[Runtime Mode\ndesktop or compute]
+S[Explicit Services\nLLM server, scheduler, gateway, cluster]
+P --> M
+P --> S
+M --> S</div><p>That is how one machine can do a lot without turning mysterious.</p><h2 id=why-nixos-matters>Why NixOS matters</h2><p>Without NixOS, Dubnium would already be landfill.</p><p>The machine has too many responsibilities to live on habit alone. Packages,
+users, services, hardware assumptions, desktop components, AI runtimes, and
+network posture all need one declared spine.</p><p>NixOS provides exactly that: a reviewable source of truth for a machine that is
+bigger than a workstation and smaller than a platform.</p><p>AI helps build and iterate on that shape faster.</p><p>NixOS is what stops the result from dissolving into improvisation.</p><h2 id=default-must-be-boring>Default must be boring</h2><p>The default state of personal infrastructure is not elegance. It is accretion.</p><p>So Dubnium starts with a simple rule: the base install should be safe, useful,
+and boring.</p><p>That means:</p><ul><li>no secrets required to get a healthy baseline system</li><li>no surprise network exposure</li><li>no model-serving daemon required just to boot a workstation</li><li>no hidden scheduler, runner, or workflow engine smuggled in as &ldquo;convenience&rdquo;</li></ul><p>The machine should work as a workstation first.</p><p>Power is opt-in.</p><p>That boundary matters more than any individual feature because it determines
+whether the system stays governable as it grows.</p><h2 id=declarative-systems-need-a-writable-edge>Declarative systems need a writable edge</h2><p>This is where many otherwise good systems become annoying.</p><p>Purely declarative configuration is excellent for servers. Development machines
+are messier. Editors write state. CLIs update config. AI tools expect mutable
+provider files. Desktop software assumes writable directories.</p><p>If everything points into the Nix store, the system is pure and obnoxious.
+If everything is mutable, the machine drifts.</p><p>Dubnium handles that with layered mutability:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>generated base config
+</span></span><span class=line><span class=cl>+ writable local overrides
+</span></span><span class=line><span class=cl>+ promoted custom fragments
+</span></span><span class=line><span class=cl>+ runtime state outside managed config
+</span></span></code></pre></div><p>That is why <code>configctl</code> exists at all.</p><p>More than a helper command, it is the boundary that makes a declared system
+behave like a usable workstation.</p><h2 id=one-machine-multiple-postures>One machine, multiple postures</h2><p>Dubnium is not always the same machine.</p><p>Sometimes it is an interactive desktop.
+Sometimes it is a throughput-oriented compute node.
+Sometimes it needs to bias toward studio work, lower latency, or fewer
+background distractions.</p><p>Mode matters for exactly that reason.</p><p>Capability is not posture. Installed is not active. Present is not permitted.</p><p>This is the difference between a machine that has several roles and a machine
+that has become a pile of unresolved intentions.</p><h2 id=a-small-control-surface>A small control surface</h2><p>Dubnium stays legible by keeping its control surface narrow.</p><ul><li><code>modectl</code> changes runtime posture</li><li><code>dubctl</code> changes persistent capability state</li><li><code>configctl</code> manages the writable edge of the declared system</li></ul><p>Each tool has one job.</p><p><code>modectl</code> should not quietly rewrite long-term configuration. <code>dubctl</code> should
+not become a generic orchestration layer. <code>configctl</code> should not turn into a
+second dotfiles manager.</p><div class=mermaid>flowchart LR
+M[modectl\nchange runtime posture]
+D[dubctl\nchange persistent capability state]
+C[configctl\nmanage writable config edge]
+H[Dubnium Host]
+M --> H
+D --> H
+C --> H</div><p>When a system starts growing command surfaces faster than capabilities, it is
+usually hiding complexity rather than controlling it.</p><blockquote><p>use developer shells for projects<br>install deliberately for the system<br>expose and automate securely<br>rebuild and redeploy confidently</p></blockquote><h2 id=machine-vs-user>Machine vs User</h2><p>The separation between the machine and the person matters.</p><p>The system flake owns the host: NixOS modules, services, workloads, installer
+behavior, AI integration, mode control, and system policy.</p><p>The <a href=https://github.com/ryjen/dotfiles>dotfiles repo</a> owns the user layer:
+Home Manager, Hyprland, Waybar, shell and editor tooling, wrappers, and local
+workflow ergonomics.</p><p>That split is not aesthetic. It keeps machine policy from collapsing into user
+preference.</p><p>Mix them and the whole thing turns personal and brittle. Separate them and both
+layers can evolve without confusing each other.</p><h2 id=the-desktop-is-not-the-machine>The desktop is not the machine</h2><p>Hyprland is not there just to look nice.</p><p>Dubnium needs a desktop because it is still a workstation, but the desktop
+cannot consume the identity of the host. It is one runtime surface, not the
+machine itself.</p><p>The GUI should expose useful state: current mode, service health, GPU pressure,
+memory pressure, network state, recovery information.</p><p>It should help the operator see the machine, not distract from it.</p><p>A desktop is not the machine. It is one way of standing in front of it.</p><h2 id=local-ai-only-works-if-the-layers-stay-separate>Local AI only works if the layers stay separate</h2><p>Local AI becomes dangerous when convenience outruns boundaries.</p><p>Dubnium needs different AI usage profiles for different kinds of work:</p><ul><li>local assist for quick prompts, summaries, shell help, and small coding tasks</li><li>automation for bounded scheduled or event-driven work</li><li>governed agentic work with memory, audit, approval, and replay</li><li>escalation to stronger local or hosted models when the small path is not enough</li></ul><p>That only works if the layers remain distinct.</p><p>A model runtime is not a control plane. A gateway is not governance. Memory is
+not authority. Automation is not permission.</p><p>The goal is not local-model purity. The goal is choice under policy.</p><div class=mermaid>flowchart LR
+U[Clients and Automation]
+CP[AI Control Plane]
+R[Optional Routing Layer]
+MR[Model Runtime]
+MEM[Memory Service]
+GOV[Policy / Approval / Audit]
+U --> CP
+CP --> R
+R --> MR
+CP --> MEM
+GOV --> CP
+GOV --> MEM</div><p>Memory also has to stay humble.</p><p>Persistent memory is useful because small models improve when they stop waking
+up blank, but a memory store should retrieve candidates, not silently
+manufacture truth. Source code, runbooks, ADRs, and human decisions still
+outrank stale context with confidence.</p><h2 id=automation-needs-owners>Automation needs owners</h2><p>Automation is where personal infrastructure becomes either powerful or
+unattended.</p><p>Dubnium works best when ownership stays clear:</p><ul><li>timers trigger work</li><li>the scheduler owns local jobs</li><li>n8n orchestrates workflows</li><li>GitHub Actions owns repo-governed mutation</li><li>AI control planes handle reasoning within the selected profile</li><li>governance owns approval and audit</li></ul><p>That layering is the difference between automation and a machine that quietly
+starts making decisions no one assigned to it.</p><h2 id=reachable-does-not-mean-public>Reachable does not mean public</h2><p>Dubnium should be reachable.</p><p>Most of its services should stay private.</p><p>Local runtimes and gateways should bind to localhost by default, with Tailscale
+or LAN exposure only when deliberately enabled. That matters because these
+surfaces may expose local files, provider credentials, prompt context, agent
+execution, or expensive compute.</p><p>The rule is simple: bind locally, expose deliberately, document the assumption.</p><h2 id=hyperion-is-the-environment-layer>Hyperion is the environment layer</h2><p><a href=https://hyperion.micrantha.com>Project Hyperion</a> is the experimental surface
+that sits on top of Dubnium.</p><p>Hyperion is where Micrantha gets rebuildable, reproducible staging and
+development environments above the host.</p><p>Here k3s, FluxCD, GitOps, secrets management, health checks, rollbacks, and
+ingress become useful.</p><p>Not because every personal machine needs Kubernetes, but because some ideas do
+not become real until they can be deployed, restarted, observed, upgraded, and
+recovered.</p><p>That is a deliberate constraint: lower cost, lower complexity, and fewer local
+operational responsibilities at a point where time and priorities are
+elsewhere.</p><p>Dubnium provides the host.</p><p>Hyperion provides the environment layer.</p><p>Keeping that boundary intact is what lets experimentation stay ambitious without
+making the base machine fragile.</p><h2 id=rebuildability-is-the-standard>Rebuildability is the standard</h2><p>A super server that cannot be rebuilt is not infrastructure.</p><p>It is a pet with backups.</p><p>Dubnium should be deployable onto different machines without turning the old
+machine into a sacred artifact.</p><p>That means separating the portable system shape from the machine-specific edge.
+Hardware detection changes per box. The host definition should not.</p><p>It also means treating local AI bring-up as part of reconstruction, not as a
+manual afterthought. If the machine is supposed to be an AI-capable host, then
+runtime enablement and model seeding belong in the rebuild story together.</p><p>The reconstruction path looks more like this: installer, hardware detection,
+host config, user layer adoption, private network rejoin, local AI runtime and
+model seed reconcile, and explicit service enablement.</p><div class=mermaid>flowchart LR
+I[Installer]
+HW[Hardware Detection\nper-machine specifics]
+HC[Host Config\nshared system shape]
+UC[User Layer Adoption]
+NET[Private Network Rejoin]
+AI[Local AI Runtime +\nModel Seed Reconcile]
+SVC[Explicit Service Enablement]
+I --> HW --> HC --> UC --> NET --> AI --> SVC</div><p>The target is reconstruction, not preservation.</p><h2 id=the-point>The point</h2><p>Powerful local infrastructure usually becomes opaque.</p><p>Dubnium is an attempt to build the opposite: a machine that can do several
+serious jobs without losing the ability to explain itself.</p><p>Power is easy to accumulate.</p><p>Reproducibility is the harder discipline.</p><h2 id=references>References</h2><h3 id=project>Project</h3><ul><li><a href=https://dubnium.micrantha.com>Dubnium docs</a></li><li><a href=https://github.com/ryjen/dotfiles>Dotfiles repo</a></li><li><a href=https://hyperion.micrantha.com>Project Hyperion</a></li></ul><h3 id=system>System</h3><ul><li><a href=https://nixos.org/manual/nixos/stable/>NixOS Manual</a></li><li><a href=https://home-manager.dev/>Home Manager</a></li></ul><h3 id=ai-and-agents>AI and agents</h3><ul><li><a href=https://modelcontextprotocol.io/introduction>Model Context Protocol Introduction</a></li><li><a href=https://www.anthropic.com/engineering/building-effective-agents>Anthropic: Building effective agents</a></li><li><a href=https://arxiv.org/abs/2310.08560>MemGPT: Towards LLMs as Operating Systems</a></li></ul><h3 id=automation>Automation</h3><ul><li><a href=https://man7.org/linux/man-pages/man5/systemd.timer.5.html>systemd.timer(5)</a></li><li><a href=https://docs.n8n.io/build-your-first-workflow.md>n8n: Build your first workflow</a></li></ul><h3 id=access-and-environments>Access and environments</h3><ul><li><a href=https://tailscale.com/docs/concepts/what-is-tailscale>What is Tailscale?</a></li><li><a href=https://fluxcd.io/flux/concepts/>Flux Core Concepts</a></li><li><a href=https://opengitops.dev/>OpenGitOps Principles</a></li></ul></div></div></main><footer id=footer class=legs><div class="has-text-centered content"><div class=footer-links><nav aria-label="Footer quick links" class=footer-links-row><a class="tag is-rounded" href=/archive>Archive</a>
+<a class="tag is-rounded" href=/posts/index.xml>RSS</a>
+<a class="tag is-rounded" href=https://micrantha.com target=_blank rel=noopener>Micrantha</a></nav><nav aria-label="Footer social links" class=footer-links-row><a class="tag is-rounded" href=https://github.com/ryjen target=_blank rel=noopener>GitHub</a>
+<a class="tag is-rounded" href=https://linkedin.com/in/ryjen target=_blank rel=noopener>LinkedIn</a>
+<a class="tag is-rounded" href=mailto:robert@ryanjennin.gs>Email</a></nav></div><div class="is-flex is-align-items-center is-justify-content-center footer-actions"><div class=footer-theme-toggle><button class=themer type=button aria-label="Use dark theme" aria-pressed=false>
+<span class="icon theme-icon" aria-hidden=true><svg xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#yin-yang"/></svg></span></button></div><a href=mailto:robert@ryanjennin.gs>Report a Site Issue</a></div><div class=copyright>© all rights reserved, ryan jennings</div></div></footer><script src=/js/theme.bundle.min.f02a1da3d31fa34d2ca1bdf7075abe44699f1546cc5b0c25d6e8981ea5671c4b0dfa24545d495449c7de8ba0c83f6d22535ffb2705a834f1ef10c00e3273c034.js defer integrity="sha512-8Codo9Mfo00sob33B1q+RGmfFUbMWwwl1uiYHqVnHEsN+iRUXUlUScfei6DIP20iU1/7JwWoNPHvEMAOMnPANA==" crossorigin=anonymous></script><script type=module>
+  const mermaidBlocks = document.querySelectorAll(".mermaid");
+  if (mermaidBlocks.length > 0) {
+    const { default: mermaid } = await import("https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs");
+    mermaid.initialize({
+      securityLevel: "loose",
+      theme: document.body.classList.contains("dark") ? "dark" : "default",
+    });
+    await mermaid.run({
+      nodes: mermaidBlocks,
+    });
+  }
+</script><script src=/js/tts.min.bdfb85e4ba900c01c13f9c8b9b0420422af9e965fcf1f02143ee1bf48b3629ed8c7f23ade7e5840f34718ff9d61ec5f637fc471806c4f40c11095cacea05c8b7.js defer integrity="sha512-vfuF5LqQDAHBP5yLmwQgQir56WX88fAhQ+4b9Is2Ke2MfyOt5+WEDzRxj/nWHsX2N/xHGAbE9AwRCVys6gXItw==" crossorigin=anonymous></script></body></html>
