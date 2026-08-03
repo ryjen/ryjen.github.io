@@ -1,0 +1,171 @@
+<!doctype html><html lang=en-us><head><meta charset=UTF-8><meta http-equiv=x-ua-compatible content="ie=edge"><title>Building Dubnium: An Agentic Orchestrator | Robert Ryan Jennings</title><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="dark light"><link rel=canonical href=https://ryanjennin.gs/posts/dubnium-agentic-orchestrator/><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link rel=preload as=style href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;family=JetBrains+Mono:wght@400;600&amp;family=Source+Sans+3:wght@400;500;600&amp;display=swap"><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;family=JetBrains+Mono:wght@400;600&amp;family=Source+Sans+3:wght@400;500;600&amp;display=swap" media=print onload='this.media="all"'><noscript><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;family=JetBrains+Mono:wght@400;600&amp;family=Source+Sans+3:wght@400;500;600&amp;display=swap"></noscript><script>(()=>{const n=document.documentElement,t="light",s="dark";let e=t;try{e=localStorage.getItem("theme")}catch{}e!==t&&e!==s&&(e=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches?s:t),n.dataset.theme=e,n.style.colorScheme=e})()</script><meta name=google-site-verification content="Crk6W-ckoApRrOZrv23ngLwPPTbzjzfZ4AQPElgS0pw"><meta name=description content="How Dubnium is evolving from local model serving into a governed agentic control plane with a supervisor gateway, bounded memory, specialist routing, and …"><meta name=robots content="index, follow"><meta property="og:title" content="Building Dubnium: An Agentic Orchestrator"><meta property="og:description" content="How Dubnium is evolving from local model serving into a governed agentic control plane with a supervisor gateway, bounded memory, specialist routing, and …"><meta property="og:type" content="article"><meta property="og:url" content="https://ryanjennin.gs/posts/dubnium-agentic-orchestrator/"><meta property="og:image" content="https://ryanjennin.gs/image/blog/dubnium.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Building Dubnium: An Agentic Orchestrator"><meta name=twitter:description content="How Dubnium is evolving from local model serving into a governed agentic control plane with a supervisor gateway, bounded memory, specialist routing, and …"><meta name=twitter:image content="https://ryanjennin.gs/image/blog/dubnium.png"><script type=application/ld+json>{"@context":"https://schema.org","@graph":[{"@id":"https://ryanjennin.gs/posts/dubnium-agentic-orchestrator/#webpage","@type":"WebPage","about":{"@id":"https://ryanjennin.gs/posts/dubnium-agentic-orchestrator/#article"},"description":"How Dubnium is evolving from local model serving into a governed agentic control plane with a supervisor gateway, bounded memory, specialist routing, and deterministic execution boundaries.","isPartOf":{"@id":"https://ryanjennin.gs/#website"},"name":"Building Dubnium: An Agentic Orchestrator","url":"https://ryanjennin.gs/posts/dubnium-agentic-orchestrator/"},{"@id":"https://ryanjennin.gs/posts/dubnium-agentic-orchestrator/#article","@type":"BlogPosting","author":{"@id":"https://ryanjennin.gs/#person"},"dateModified":"2026-07-13T00:00:00Z","datePublished":"2026-07-13T00:00:00Z","description":"How Dubnium is evolving from local model serving into a governed agentic control plane with a supervisor gateway, bounded memory, specialist routing, and deterministic execution boundaries.","headline":"Building Dubnium: An Agentic Orchestrator","image":"https://ryanjennin.gs/image/blog/dubnium.png","inLanguage":"en-us","isPartOf":{"@id":"https://ryanjennin.gs/#website"},"keywords":"dubnium, local-ai, agents, orchestration, llm, memory, governance, nixos","mainEntityOfPage":{"@id":"https://ryanjennin.gs/posts/dubnium-agentic-orchestrator/#webpage"},"publisher":{"@id":"https://ryanjennin.gs/#person"},"url":"https://ryanjennin.gs/posts/dubnium-agentic-orchestrator/"},{"@id":"https://ryanjennin.gs/#person","@type":"Person","description":"Web logs of a software development engineer, musician, artist and hockey player.","image":"https://gravatar.com/avatar/7cb4299e74a72928a9f05e8e910f07d5","name":"Robert Ryan Jennings","sameAs":["https://github.com/ryjen","https://linkedin.com/in/ryjen","https://soundcloud.com/entrobert/sets/favs","https://www.goodreads.com/ryjen"],"url":"https://ryanjennin.gs/about/"}]}</script><link rel=stylesheet href=/css/theme.min.css type=text/css><link href=/css/app.min.43817f4742040ec9b7876076353d9b257bebd4babad7106573e362f32260b1fd7a9f9ffe4595e07a1214585b94457795d011f37a75c6c596f0bc8c68d0fe0a38.css rel=stylesheet type=text/css integrity="sha512-Q4F/R0IEDsm3h2B2NT2bJXvr1Lq61xBlc+Ni8yJgsf16n5/+RZXgehIUWFuURXeV0BHzenXGxZbwvIxo0P4KOA==" crossorigin=anonymous><style>html[data-theme=dark] body{background-color:#002b36;color:#fdf6e3!important}html[data-theme=dark] body a{color:#268bd2}html[data-theme=dark] body .icon{fill:#fdf6e3;stroke:#fdf6e3}html[data-theme=dark] body .box,html[data-theme=dark] body .card{background-color:#073642}html[data-theme=dark] body code,html[data-theme=dark] body pre{background-color:#657b83;color:#002b36}html[data-theme=dark] body hr{background-color:#657b83}</style></head><body><script>(function(){var s,t="light",n="dark",e=null;try{e=window.localStorage.getItem("theme")}catch{e=null}s=e||(window.matchMedia("(prefers-color-scheme: dark)").matches?n:t),document.body.classList.remove(t,n),document.body.classList.add(s)})()</script><a class=skip-link href=#main>Skip to main content</a><header id=header class=shoulders><nav class=navbar role=navigation aria-label="main navigation"><div class=navbar-brand><a class=navbar-item href=/><figure class="image is-32x32"><img class=is-rounded src=https://gravatar.com/avatar/7cb4299e74a72928a9f05e8e910f07d5 alt width=32 height=32></figure><span class=navbar-brand-title>robert ryan jennings</span>
+</a><button type=button class=navbar-burger aria-label="Open main navigation" aria-expanded=false aria-controls=nav data-target=nav>
+<span aria-hidden=true></span>
+<span aria-hidden=true></span>
+<span aria-hidden=true></span></button></div><div id=nav class=navbar-menu><div class=navbar-end><a class="navbar-item mr-3" href=/posts><span class="icon is-small mr-2"><svg xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#rss"/></svg>
+</span>blog
+</a><a class="navbar-item mr-3" href=/art><span class="icon is-small mr-2"><svg xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#icons"/></svg>
+</span>art
+</a><a class="navbar-item mr-3" href=/things><span class="icon is-small mr-2"><svg xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#object-ungroup"/></svg>
+</span>things
+</a><a class="navbar-item mr-3" href=/about><span class="icon is-small mr-2"><svg xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#circle-info"/></svg>
+</span>about
+</a><button type=button class="navbar-item themer" aria-label="Use dark theme" aria-pressed=false>
+<span class="icon theme-icon" aria-hidden=true><svg xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#yin-yang"/></svg></span></button></div></div></nav></header><main id=main class=abdomen tabindex=-1><nav class="breadcrumb ml-4 is-small" aria-label=breadcrumbs><ul><li><a href=/>Home</a></li><li><a href=/posts/>Blog</a></li><li class=is-active><a href=/posts/dubnium-agentic-orchestrator/ aria-current=page>Building Dubnium: An Agentic Orchestrator</a></li></ul></nav><div class=container><header class="article-header mb-5"><h1 class=title>Building Dubnium: An Agentic Orchestrator</h1><p class="article-meta is-size-7"><span>By Robert Ryan Jennings</span>
+<span>Published Jul 13, 2026 12:00AM</span>
+<span>8 min read</span></p><div class="tags mb-3"><a class="tag is-rounded" href=/categories/software-engineering>software engineering</a>
+<a class="tag is-rounded" href=/categories/artificial-intelligence>artificial intelligence</a>
+<a class="tag is-rounded" href=/categories/infrastructure>infrastructure</a></div><div class="tags mb-0"><a class="tag is-rounded" href=/tags/dubnium>dubnium</a>
+<a class="tag is-rounded" href=/tags/local-ai>local-ai</a>
+<a class="tag is-rounded" href=/tags/agents>agents</a>
+<a class="tag is-rounded" href=/tags/orchestration>orchestration</a>
+<a class="tag is-rounded" href=/tags/llm>llm</a>
+<a class="tag is-rounded" href=/tags/memory>memory</a>
+<a class="tag is-rounded" href=/tags/governance>governance</a>
+<a class="tag is-rounded" href=/tags/nixos>nixos</a></div></header><figure class="article-image mb-5"><picture><source type=image/webp srcset="/image/blog/dubnium_hu_a1017ff95bbdd08f.webp 480w, /image/blog/dubnium_hu_72c03211bca49b7b.webp 960w, /image/blog/dubnium_hu_49da2613ff3600e5.webp 1440w, /image/blog/dubnium_hu_fb525da74572fb1f.webp 1536w" sizes="(min-width: 900px) 860px, 100vw"><img src=/image/blog/dubnium_hu_642967f63e9bec72.png srcset="/image/blog/dubnium_hu_9c6b4446e6552b3a.png 480w, /image/blog/dubnium_hu_885b2c150ff6d8c.png 960w, /image/blog/dubnium_hu_435c0aecf77421bc.png 1440w, /image/blog/dubnium_hu_642967f63e9bec72.png 1536w" sizes="(min-width: 900px) 860px, 100vw" alt="Building Dubnium: An Agentic Orchestrator" width=1536 height=1024 fetchpriority=high loading=eager decoding=async class=article-image-img></picture></figure><div class=tts-controls data-tts-controls hidden><button type=button class="button is-small" data-tts-toggle data-tts-target=post-content>
+Read this post to me</button><p class=tts-status data-tts-status aria-live=polite></p></div><div class="content article-content" id=post-content data-tts-content><h1 id=building-dubnium-an-agentic-orchestrator>Building Dubnium: An Agentic Orchestrator</h1><p>This is the second post in the <a href=/series/dubnium/>Dubnium series</a>, about my
+NixOS-based local AI workstation. The first post described the host itself:
+profiles, runtime modes, model serving, service boundaries, and rebuildability:
+<a href=/posts/dubnium-super-server/>Building Dubnium: A Super Workstation With Modes</a>.</p><p>This post moves one layer higher.</p><p>Running a local language model is straightforward compared with deciding which
+model should receive a task, what memory it may see, which tools it may propose,
+what effects it may cause, and how the result can be explained afterward.</p><p>That surrounding system is the agentic control plane.</p><p>The goal is not one all-powerful autonomous agent. It is controlled delegation:
+models may reason and propose, while deterministic components retain authority.</p><h2 id=a-model-server-is-not-an-agentic-system>A model server is not an agentic system</h2><p>A basic local stack looks like this:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>client -&gt; model server -&gt; model
+</span></span></code></pre></div><p>That is enough for chat, coding assistance, and an OpenAI-compatible endpoint.
+It stops being enough when the system needs:</p><ul><li>persistent and scoped memory</li><li>specialist models</li><li>tool use</li><li>scheduled or event-driven work</li><li>approval boundaries</li><li>resource-aware routing</li><li>lifecycle state and evidence</li><li>recovery from partial failure</li></ul><p>At that point, the model runtime is one component rather than the system itself.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>request
+</span></span><span class=line><span class=cl>  -&gt; normalize
+</span></span><span class=line><span class=cl>  -&gt; plan
+</span></span><span class=line><span class=cl>  -&gt; govern
+</span></span><span class=line><span class=cl>  -&gt; execute bounded capabilities
+</span></span><span class=line><span class=cl>  -&gt; evaluate
+</span></span><span class=line><span class=cl>  -&gt; act
+</span></span><span class=line><span class=cl>  -&gt; audit and learn
+</span></span></code></pre></div><p>Most of the difficult problems are around the model, not inside it.</p><h2 id=the-component-model>The component model</h2><p>Dubnium now uses explicit names because terms such as <em>supervisor</em>, <em>gateway</em>,
+and <em>orchestrator</em> otherwise collapse several different responsibilities.</p><div class=mermaid>flowchart TD
+C[Clients\nCLI, editor, n8n, scheduler]
+G[Supervisor Gateway\nOpenAI-compatible API]
+O[Supervisor Orchestrator\nrun lifecycle and context]
+P[Policy Engine\ndeterministic disposition]
+M[Memory Context Service\nbounded context packs]
+R[Specialist Router\nsemantic routing and preflight]
+S[Specialist Runtime Service\ncatalog and lifecycle]
+SR[Specialist Runtime\nbounded model server]
+T[Tool Execution Gateway\napproved effects]
+L[Run Ledger\nlifecycle and audit state]
+RT[Supervisor Runtime\nllama-server]
+A[Supervisor Agent\nlogical model role]
+C --> G --> O
+O --> P
+O --> M
+O --> R --> S --> SR
+O --> T
+O --> L
+O --> RT --> A</div><p>The distinctions are structural, not cosmetic.</p><h3 id=supervisor-gateway>Supervisor Gateway</h3><p>The <strong>Supervisor Gateway</strong> is the external transport boundary. It is intended to
+provide the stable OpenAI-compatible API that clients target.</p><p>It owns concerns such as:</p><ul><li>request handling and streaming</li><li>caller identity and request IDs</li><li>actor, workspace, session, and memory-mode validation</li><li>error translation and rate limiting</li><li>controlled remote exposure</li></ul><p>The target client-facing model alias is <code>supervisor</code>. The raw model runtime keeps
+the alias <code>local</code> as a debug and bypass path.</p><h3 id=supervisor-orchestrator>Supervisor Orchestrator</h3><p>The <strong>Supervisor Orchestrator</strong> governs an individual run behind the gateway.
+It owns:</p><ul><li>lifecycle progression</li><li>context assembly and token budgeting</li><li>policy invocation</li><li>specialist delegation and synthesis</li><li>tool-intent mediation</li><li>run-ledger records</li><li>governed memory-write proposals</li></ul><p>The gateway exposes the API. The orchestrator governs the run.</p><p>The orchestrator does not need to be a separate daemon. The first implementation
+is intentionally consolidated as reusable in-process logic so HTTP clients,
+scheduled jobs, and n8n workflows can eventually use the same contract.</p><h3 id=supervisor-runtime-and-supervisor-agent>Supervisor Runtime and Supervisor Agent</h3><p>The <strong>Supervisor Runtime</strong> is the long-running inference process. Today that is
+the existing <code>llama-server.service</code> on <code>127.0.0.1:8000</code>.</p><p>The <strong>Supervisor Agent</strong> is a logical role executed by that runtime. It may:</p><ul><li>interpret requests</li><li>propose plans</li><li>propose delegation</li><li>evaluate specialist output</li><li>synthesize a response</li></ul><p>It has no direct authority over memory, tools, policy, or process lifecycle.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>runtime = process
+</span></span><span class=line><span class=cl>agent   = role
+</span></span></code></pre></div><p>Keeping those concepts separate means the model can change without redefining
+the authority model.</p><h2 id=models-propose-policy-disposes>Models propose; policy disposes</h2><p>The core rule is deliberately simple:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>indeterminate models may propose
+</span></span><span class=line><span class=cl>determinate policy disposes
+</span></span></code></pre></div><p>The supervisor and specialists may propose plans, memory access, tool intents,
+and actions. The Policy Engine decides whether each proposal is:</p><ul><li>allowed</li><li>denied</li><li>constrained</li><li>approval-gated</li><li>redacted</li><li>record-only</li></ul><p>Workflow-specific rules may narrow central policy, but must not weaken it.</p><p>This prevents prompt text from becoming the security boundary.</p><h2 id=specialists-receive-work-not-authority>Specialists receive work, not authority</h2><p>Specialists are useful when a task benefits from a materially different model,
+context size, prompt contract, or isolated runtime.</p><p>Examples include:</p><ul><li>long-context document analysis</li><li>code or security review</li><li>structured extraction</li><li>low-latency classification</li><li>independent evaluation</li></ul><p>But specialists should not become autonomous peers with ambient access.</p><p>The intended boundary is:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>Supervisor Orchestrator
+</span></span><span class=line><span class=cl>  -&gt; Specialist Router
+</span></span><span class=line><span class=cl>      -&gt; Specialist Runtime Service
+</span></span><span class=line><span class=cl>          -&gt; Specialist Runtime
+</span></span></code></pre></div><p>The <strong>Specialist Router</strong> performs deterministic semantic routing and preflight.
+The <strong>Specialist Runtime Service</strong> owns the stable lifecycle contract:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>catalog + acquire/run + release/stop + status
+</span></span></code></pre></div><p>A specialist receives a bounded task and approved context. It does not call
+memory, tools, or other specialists directly.</p><p>The service contract accepts logical specialist kinds. It must not accept
+model-provided executable paths, shell fragments, arbitrary ports, credentials,
+or model paths.</p><p>The first implementation may invoke specialists inside the same runtime or
+through bounded external calls. Separate services are an optimization for
+isolation and lifecycle control, not a prerequisite for the architecture.</p><h2 id=artifacts-profiles-and-roles>Artifacts, profiles, and roles</h2><p>A model name does not describe how it should run.</p><p>The same weights behave differently depending on:</p><ul><li>quantization</li><li>context size</li><li>KV-cache format</li><li>batch and micro-batch size</li><li>GPU allocation</li><li>concurrency</li><li>prompt contract</li><li>timeout and resource limits</li></ul><p>Dubnium therefore distinguishes:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>model artifact
+</span></span><span class=line><span class=cl>    !=
+</span></span><span class=line><span class=cl>runtime profile
+</span></span><span class=line><span class=cl>    !=
+</span></span><span class=line><span class=cl>agent role
+</span></span></code></pre></div><p>For example:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>qwen3-14b-q4-default
+</span></span><span class=line><span class=cl>- artifact: Qwen3 14B Q4_K_M
+</span></span><span class=line><span class=cl>- context: 24,576
+</span></span><span class=line><span class=cl>- GPU: primary AI GPU
+</span></span><span class=line><span class=cl>- parallelism: 1
+</span></span><span class=line><span class=cl>- KV cache: q8_0
+</span></span></code></pre></div><p>A runtime profile describes execution. A role describes participation in a run.
+The same profile might serve a supervisor role today and a bounded specialist
+role later.</p><h2 id=memory-is-a-classified-lifecycle-subsystem>Memory is a classified lifecycle subsystem</h2><p>Persistent memory is not a larger prompt and it is not the workflow database.</p><p>Dubnium distinguishes three layers:</p><table><thead><tr><th>Layer</th><th>Question</th><th>Examples</th></tr></thead><tbody><tr><td>Operational memory</td><td>What am I doing?</td><td>active context, plans, tool output, checkpoints</td></tr><tr><td>Knowledge memory</td><td>What do I know?</td><td>reviewed facts, decisions, preferences, lessons</td></tr><tr><td>Canonical knowledge</td><td>What is project truth?</td><td>versioned docs, ADRs, runbooks, specs</td></tr></tbody></table><p>Canonical knowledge outranks memory records. Workflow state remains owned by the
+scheduler, n8n, task runtime, or Run Ledger until selected outputs are promoted.</p><p>The memory service already provides bounded retrieval contracts. Current filters
+include scope, sensitivity, TTL, rejection status, and verification requirements.
+The important output is a source-attributed <strong>context pack</strong>, not unrestricted
+access to the store.</p><div class=mermaid>flowchart LR
+O[Supervisor Orchestrator]
+P[Policy decision]
+M[Memory Context Service]
+C[Bounded context pack]
+R[Supervisor Runtime]
+O --> P --> M --> C --> R</div><p>The control plane declares purpose and scope. Governance evaluates access. The
+memory service mechanically filters and records retrieval. The orchestrator
+assembles the final prompt.</p><p>Memory is useful evidence. It is not authority.</p><h2 id=tool-use-has-one-execution-boundary>Tool use has one execution boundary</h2><p>A model proposing a repository change does not imply permission to modify the
+repository.</p><p>The <strong>Tool Execution Gateway</strong> is the only component allowed to perform approved
+external effects. It owns:</p><ul><li>capability enforcement</li><li>argument constraints</li><li>credential injection</li><li>MCP and tool invocation</li><li>mutation execution</li><li>effect-result records</li></ul><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>specialist or supervisor proposes tool intent
+</span></span><span class=line><span class=cl>  -&gt; Policy Engine disposes
+</span></span><span class=line><span class=cl>      -&gt; Tool Execution Gateway performs or denies
+</span></span><span class=line><span class=cl>          -&gt; result returns for evaluation
+</span></span></code></pre></div><p>This gives tool use one auditable chokepoint and keeps secrets out of prompts and
+specialist runtimes.</p><h2 id=the-run-ledger-is-not-memory>The Run Ledger is not memory</h2><p>Agentic execution needs a canonical record of what happened.</p><p>The <strong>Run Ledger</strong> records lifecycle events keyed by <code>run_id</code>, including:</p><ul><li>stage transitions</li><li>policy dispositions</li><li>specialist handoffs</li><li>tool requests and results</li><li>approvals</li><li>externally visible effects</li><li>failures and evidence</li></ul><p>The first backend can be ephemeral. An append-only event log is the next useful
+step when resumability and replay become necessary.</p><p>Selected outcomes may later be projected into knowledge memory, but memory is not
+the primary execution-state store.</p><h2 id=resource-policy-remains-outside-the-model>Resource policy remains outside the model</h2><p>Dubnium is still a workstation with finite hardware. Its active mode establishes
+resource policy.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>desktop
+</span></span><span class=line><span class=cl>- preserve interactive responsiveness
+</span></span><span class=line><span class=cl>- keep local inference bounded
+</span></span><span class=line><span class=cl>- limit specialist concurrency
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>compute
+</span></span><span class=line><span class=cl>- make both GPUs available
+</span></span><span class=line><span class=cl>- allow larger or parallel workloads
+</span></span><span class=line><span class=cl>- prioritize throughput
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>studio-local
+</span></span><span class=line><span class=cl>- prioritize interactive and audio latency
+</span></span><span class=line><span class=cl>- constrain background AI work
+</span></span></code></pre></div><p>The orchestrator may choose among allowed profiles, defer work, or reject a
+request. It must not override the host mode because a model considers its task
+important.</p><p>Capability requests should describe intent rather than hard-code a model:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-yaml data-lang=yaml><span class=line><span class=cl><span class=nt>capability</span><span class=p>:</span><span class=w> </span><span class=l>code-review</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=nt>minimum-context</span><span class=p>:</span><span class=w> </span><span class=m>32768</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=nt>latency-class</span><span class=p>:</span><span class=w> </span><span class=l>background</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=nt>memory-scope</span><span class=p>:</span><span class=w> </span><span class=l>repository</span><span class=w>
+</span></span></span><span class=line><span class=cl><span class=nt>required-tools</span><span class=p>:</span><span class=w> </span><span class=p>[</span><span class=l>git-read]</span><span class=w>
+</span></span></span></code></pre></div><p>Routing can then evolve without changing every client.</p><h2 id=what-exists-today>What exists today</h2><p>The architecture is not a claim that every component is already deployed.</p><p>Dubnium already has:</p><ul><li>the raw Supervisor Runtime through <code>llama-server.service</code></li><li>named local model profiles</li><li>GPU-aware runtime modes</li><li>the memory API and context-pack contract</li><li>scoped memory filtering and retrieval records</li><li>systemd-managed services and localhost-first network policy</li><li>Headroom as an optional context compressor</li><li>Plano as an optional model-routing facade</li><li>accepted component terminology and lifecycle specifications</li></ul><p>The next implementation layers are:</p><ol><li><code>supervisor-gateway.service</code> on <code>127.0.0.1:8080</code></li><li>the in-process Supervisor Orchestrator</li><li>central Policy Engine integration</li><li>specialist routing and runtime lifecycle</li><li>the Tool Execution Gateway</li><li>an ephemeral Run Ledger followed by a durable event log</li><li>governed memory writes and learning projections</li></ol><p>The target shape is service-oriented, but v1 should remain operationally small:
+one gateway process, internal control-plane modules, the existing inference and
+memory services, and bounded adapters where separation is justified.</p><h2 id=where-anthesis-fits>Where Anthesis fits</h2><p>Dubnium is the execution environment. Anthesis is one possible governance system
+for deterministic policy, approvals, evidence, provenance, and memory envelopes.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>Dubnium: where agentic work runs
+</span></span><span class=line><span class=cl>Anthesis: under what authority it runs
+</span></span></code></pre></div><p>Dubnium must not require Anthesis specifically. The boundaries should support
+other policy engines. But Anthesis is the place where I am exploring the deeper
+question: how can autonomous systems remain attributable, least-privileged,
+auditable, and resistant to bypass?</p><h2 id=the-larger-lesson>The larger lesson</h2><p>The interesting part of local AI is no longer whether a model can run on the
+available hardware.</p><p>The interesting part is whether the surrounding system remains understandable
+as delegation increases.</p><p>That requires:</p><ul><li>explicit component ownership</li><li>deterministic policy</li><li>scoped memory</li><li>bounded specialists</li><li>one effectful execution gateway</li><li>durable evidence</li><li>resource-aware operation</li><li>a recovery model</li></ul><p>The objective is not maximum autonomy.</p><p>It is controlled delegation.</p><p>The next post, <a href=/posts/dubnium-agentic-scheduling/>Building Dubnium: Scheduling Agentic Work</a>,
+looks at how Dubnium schedules agentic work without turning its small,
+auditable timer substrate into a hidden workflow engine.</p></div><aside class=series-card aria-labelledby=series-card-title><p class=series-label>Series</p><h2 class="title is-5 series-card-title" id=series-card-title><a href=/series/dubnium/>Dubnium</a></h2><p class=is-size-7>Part 2 · 3 essays in this series</p><div class="series-nav-links mt-4"><a class="button is-small is-rounded is-light" href=/posts/dubnium-super-server/>Previous: Building Dubnium: A Super Workstation With Modes</a>
+<a class="button is-small is-rounded" href=/posts/dubnium-agentic-scheduling/>Next: Building Dubnium: Scheduling Agentic Work</a></div><ol class=series-post-list><li><a href=/posts/dubnium-super-server/>Building Dubnium: A Super Workstation With Modes</a></li><li class=is-current><a href=/posts/dubnium-agentic-orchestrator/>Building Dubnium: An Agentic Orchestrator</a></li><li><a href=/posts/dubnium-agentic-scheduling/>Building Dubnium: Scheduling Agentic Work</a></li></ol></aside></div></main><footer id=footer class=legs><div class="has-text-centered content"><div class=footer-links><nav aria-label="Footer quick links" class=footer-links-row><a class="tag is-rounded" href=/archive>Archive</a>
+<a class="tag is-rounded" href=/posts/index.xml>RSS</a>
+<a class="tag is-rounded" href=https://micrantha.com target=_blank rel=noopener>Micrantha</a></nav><nav aria-label="Footer social links" class=footer-links-row><a class="tag is-rounded" href=https://github.com/ryjen target=_blank rel=noopener>GitHub</a>
+<a class="tag is-rounded" href=https://linkedin.com/in/ryjen target=_blank rel=noopener>LinkedIn</a>
+<a class="tag is-rounded" href=mailto:robert@ryanjennin.gs>Email</a></nav></div><div class="is-flex is-align-items-center is-justify-content-center footer-actions"><div class=footer-theme-toggle><button class=themer type=button aria-label="Use dark theme" aria-pressed=false>
+<span class="icon theme-icon" aria-hidden=true><svg xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#yin-yang"/></svg></span></button></div><a href=mailto:robert@ryanjennin.gs>Report a Site Issue</a></div><div class=copyright>© all rights reserved, ryan jennings</div></div></footer><script src=/js/theme.bundle.min.f02a1da3d31fa34d2ca1bdf7075abe44699f1546cc5b0c25d6e8981ea5671c4b0dfa24545d495449c7de8ba0c83f6d22535ffb2705a834f1ef10c00e3273c034.js defer integrity="sha512-8Codo9Mfo00sob33B1q+RGmfFUbMWwwl1uiYHqVnHEsN+iRUXUlUScfei6DIP20iU1/7JwWoNPHvEMAOMnPANA==" crossorigin=anonymous></script><script type=module>
+  const mermaidBlocks = document.querySelectorAll(".mermaid");
+  if (mermaidBlocks.length > 0) {
+    const { default: mermaid } = await import("https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs");
+    mermaid.initialize({
+      securityLevel: "loose",
+      theme: document.body.classList.contains("dark") ? "dark" : "default",
+    });
+    await mermaid.run({
+      nodes: mermaidBlocks,
+    });
+  }
+</script><script src=/js/tts.min.bdfb85e4ba900c01c13f9c8b9b0420422af9e965fcf1f02143ee1bf48b3629ed8c7f23ade7e5840f34718ff9d61ec5f637fc471806c4f40c11095cacea05c8b7.js defer integrity="sha512-vfuF5LqQDAHBP5yLmwQgQir56WX88fAhQ+4b9Is2Ke2MfyOt5+WEDzRxj/nWHsX2N/xHGAbE9AwRCVys6gXItw==" crossorigin=anonymous></script></body></html>

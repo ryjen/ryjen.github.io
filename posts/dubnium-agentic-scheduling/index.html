@@ -1,0 +1,247 @@
+<!doctype html><html lang=en-us><head><meta charset=UTF-8><meta http-equiv=x-ua-compatible content="ie=edge"><title>Building Dubnium: Scheduling Agentic Work | Robert Ryan Jennings</title><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="dark light"><link rel=canonical href=https://ryanjennin.gs/posts/dubnium-agentic-scheduling/><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link rel=preload as=style href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;family=JetBrains+Mono:wght@400;600&amp;family=Source+Sans+3:wght@400;500;600&amp;display=swap"><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;family=JetBrains+Mono:wght@400;600&amp;family=Source+Sans+3:wght@400;500;600&amp;display=swap" media=print onload='this.media="all"'><noscript><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;family=JetBrains+Mono:wght@400;600&amp;family=Source+Sans+3:wght@400;500;600&amp;display=swap"></noscript><script>(()=>{const n=document.documentElement,t="light",s="dark";let e=t;try{e=localStorage.getItem("theme")}catch{}e!==t&&e!==s&&(e=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches?s:t),n.dataset.theme=e,n.style.colorScheme=e})()</script><meta name=google-site-verification content="Crk6W-ckoApRrOZrv23ngLwPPTbzjzfZ4AQPElgS0pw"><meta name=description content="How Dubnium uses declarative schedules, systemd timers, workflow dispatch, and a separate agentic control plane without turning the scheduler into a hidden …"><meta name=robots content="index, follow"><meta property="og:title" content="Building Dubnium: Scheduling Agentic Work"><meta property="og:description" content="How Dubnium uses declarative schedules, systemd timers, workflow dispatch, and a separate agentic control plane without turning the scheduler into a hidden …"><meta property="og:type" content="article"><meta property="og:url" content="https://ryanjennin.gs/posts/dubnium-agentic-scheduling/"><meta property="og:image" content="https://ryanjennin.gs/image/blog/dubnium.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Building Dubnium: Scheduling Agentic Work"><meta name=twitter:description content="How Dubnium uses declarative schedules, systemd timers, workflow dispatch, and a separate agentic control plane without turning the scheduler into a hidden …"><meta name=twitter:image content="https://ryanjennin.gs/image/blog/dubnium.png"><script type=application/ld+json>{"@context":"https://schema.org","@graph":[{"@id":"https://ryanjennin.gs/posts/dubnium-agentic-scheduling/#webpage","@type":"WebPage","about":{"@id":"https://ryanjennin.gs/posts/dubnium-agentic-scheduling/#article"},"description":"How Dubnium uses declarative schedules, systemd timers, workflow dispatch, and a separate agentic control plane without turning the scheduler into a hidden workflow engine.","isPartOf":{"@id":"https://ryanjennin.gs/#website"},"name":"Building Dubnium: Scheduling Agentic Work","url":"https://ryanjennin.gs/posts/dubnium-agentic-scheduling/"},{"@id":"https://ryanjennin.gs/posts/dubnium-agentic-scheduling/#article","@type":"BlogPosting","author":{"@id":"https://ryanjennin.gs/#person"},"dateModified":"2026-07-13T00:00:00Z","datePublished":"2026-07-13T00:00:00Z","description":"How Dubnium uses declarative schedules, systemd timers, workflow dispatch, and a separate agentic control plane without turning the scheduler into a hidden workflow engine.","headline":"Building Dubnium: Scheduling Agentic Work","image":"https://ryanjennin.gs/image/blog/dubnium.png","inLanguage":"en-us","isPartOf":{"@id":"https://ryanjennin.gs/#website"},"keywords":"dubnium, local-ai, agents, scheduling, automation, systemd, workflows, governance","mainEntityOfPage":{"@id":"https://ryanjennin.gs/posts/dubnium-agentic-scheduling/#webpage"},"publisher":{"@id":"https://ryanjennin.gs/#person"},"url":"https://ryanjennin.gs/posts/dubnium-agentic-scheduling/"},{"@id":"https://ryanjennin.gs/#person","@type":"Person","description":"Web logs of a software development engineer, musician, artist and hockey player.","image":"https://gravatar.com/avatar/7cb4299e74a72928a9f05e8e910f07d5","name":"Robert Ryan Jennings","sameAs":["https://github.com/ryjen","https://linkedin.com/in/ryjen","https://soundcloud.com/entrobert/sets/favs","https://www.goodreads.com/ryjen"],"url":"https://ryanjennin.gs/about/"}]}</script><link rel=stylesheet href=/css/theme.min.css type=text/css><link href=/css/app.min.43817f4742040ec9b7876076353d9b257bebd4babad7106573e362f32260b1fd7a9f9ffe4595e07a1214585b94457795d011f37a75c6c596f0bc8c68d0fe0a38.css rel=stylesheet type=text/css integrity="sha512-Q4F/R0IEDsm3h2B2NT2bJXvr1Lq61xBlc+Ni8yJgsf16n5/+RZXgehIUWFuURXeV0BHzenXGxZbwvIxo0P4KOA==" crossorigin=anonymous><style>html[data-theme=dark] body{background-color:#002b36;color:#fdf6e3!important}html[data-theme=dark] body a{color:#268bd2}html[data-theme=dark] body .icon{fill:#fdf6e3;stroke:#fdf6e3}html[data-theme=dark] body .box,html[data-theme=dark] body .card{background-color:#073642}html[data-theme=dark] body code,html[data-theme=dark] body pre{background-color:#657b83;color:#002b36}html[data-theme=dark] body hr{background-color:#657b83}</style></head><body><script>(function(){var s,t="light",n="dark",e=null;try{e=window.localStorage.getItem("theme")}catch{e=null}s=e||(window.matchMedia("(prefers-color-scheme: dark)").matches?n:t),document.body.classList.remove(t,n),document.body.classList.add(s)})()</script><a class=skip-link href=#main>Skip to main content</a><header id=header class=shoulders><nav class=navbar role=navigation aria-label="main navigation"><div class=navbar-brand><a class=navbar-item href=/><figure class="image is-32x32"><img class=is-rounded src=https://gravatar.com/avatar/7cb4299e74a72928a9f05e8e910f07d5 alt width=32 height=32></figure><span class=navbar-brand-title>robert ryan jennings</span>
+</a><button type=button class=navbar-burger aria-label="Open main navigation" aria-expanded=false aria-controls=nav data-target=nav>
+<span aria-hidden=true></span>
+<span aria-hidden=true></span>
+<span aria-hidden=true></span></button></div><div id=nav class=navbar-menu><div class=navbar-end><a class="navbar-item mr-3" href=/posts><span class="icon is-small mr-2"><svg xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#rss"/></svg>
+</span>blog
+</a><a class="navbar-item mr-3" href=/art><span class="icon is-small mr-2"><svg xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#icons"/></svg>
+</span>art
+</a><a class="navbar-item mr-3" href=/things><span class="icon is-small mr-2"><svg xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#object-ungroup"/></svg>
+</span>things
+</a><a class="navbar-item mr-3" href=/about><span class="icon is-small mr-2"><svg xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#circle-info"/></svg>
+</span>about
+</a><button type=button class="navbar-item themer" aria-label="Use dark theme" aria-pressed=false>
+<span class="icon theme-icon" aria-hidden=true><svg xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#yin-yang"/></svg></span></button></div></div></nav></header><main id=main class=abdomen tabindex=-1><nav class="breadcrumb ml-4 is-small" aria-label=breadcrumbs><ul><li><a href=/>Home</a></li><li><a href=/posts/>Blog</a></li><li class=is-active><a href=/posts/dubnium-agentic-scheduling/ aria-current=page>Building Dubnium: Scheduling Agentic Work</a></li></ul></nav><div class=container><header class="article-header mb-5"><h1 class=title>Building Dubnium: Scheduling Agentic Work</h1><p class="article-meta is-size-7"><span>By Robert Ryan Jennings</span>
+<span>Published Jul 13, 2026 12:00AM</span>
+<span>10 min read</span></p><div class="tags mb-3"><a class="tag is-rounded" href=/categories/software-engineering>software engineering</a>
+<a class="tag is-rounded" href=/categories/artificial-intelligence>artificial intelligence</a>
+<a class="tag is-rounded" href=/categories/infrastructure>infrastructure</a></div><div class="tags mb-0"><a class="tag is-rounded" href=/tags/dubnium>dubnium</a>
+<a class="tag is-rounded" href=/tags/local-ai>local-ai</a>
+<a class="tag is-rounded" href=/tags/agents>agents</a>
+<a class="tag is-rounded" href=/tags/scheduling>scheduling</a>
+<a class="tag is-rounded" href=/tags/automation>automation</a>
+<a class="tag is-rounded" href=/tags/systemd>systemd</a>
+<a class="tag is-rounded" href=/tags/workflows>workflows</a>
+<a class="tag is-rounded" href=/tags/governance>governance</a></div></header><figure class="article-image mb-5"><picture><source type=image/webp srcset="/image/blog/dubnium_hu_a1017ff95bbdd08f.webp 480w, /image/blog/dubnium_hu_72c03211bca49b7b.webp 960w, /image/blog/dubnium_hu_49da2613ff3600e5.webp 1440w, /image/blog/dubnium_hu_fb525da74572fb1f.webp 1536w" sizes="(min-width: 900px) 860px, 100vw"><img src=/image/blog/dubnium_hu_642967f63e9bec72.png srcset="/image/blog/dubnium_hu_9c6b4446e6552b3a.png 480w, /image/blog/dubnium_hu_885b2c150ff6d8c.png 960w, /image/blog/dubnium_hu_435c0aecf77421bc.png 1440w, /image/blog/dubnium_hu_642967f63e9bec72.png 1536w" sizes="(min-width: 900px) 860px, 100vw" alt="Building Dubnium: Scheduling Agentic Work" width=1536 height=1024 fetchpriority=high loading=eager decoding=async class=article-image-img></picture></figure><div class=tts-controls data-tts-controls hidden><button type=button class="button is-small" data-tts-toggle data-tts-target=post-content>
+Read this post to me</button><p class=tts-status data-tts-status aria-live=polite></p></div><div class="content article-content" id=post-content data-tts-content><h1 id=building-dubnium-scheduling-agentic-work>Building Dubnium: Scheduling Agentic Work</h1><p>This is the third post in the <a href=/series/dubnium/>Dubnium series</a>, about my
+NixOS-based local AI workstation.</p><p>The first post described the machine. The second,
+<a href=/posts/dubnium-agentic-orchestrator/>Building Dubnium: An Agentic Orchestrator</a>,
+described the agentic control plane: the Supervisor Gateway, Supervisor
+Orchestrator, policy, memory, specialists, tools, and run evidence.</p><p>The next problem is time.</p><p>How should agentic work begin when no human is present?</p><p>The tempting answer is to put a model call in cron.</p><p>That is also how a small automation grows into an opaque workflow with ambient
+credentials, unclear ownership, and no reliable recovery path.</p><p>Dubnium takes a narrower approach:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>scheduler: declares and triggers when bounded work starts
+</span></span><span class=line><span class=cl>workflow layer: coordinates multi-step work
+</span></span><span class=line><span class=cl>agentic control plane: reasons within policy
+</span></span><span class=line><span class=cl>run ledger: records agentic lifecycle and effect evidence
+</span></span><span class=line><span class=cl>executor: performs approved effects
+</span></span></code></pre></div><p>The scheduler is intentionally not the orchestrator.</p><h2 id=cron-is-useful-because-it-is-small>Cron is useful because it is small</h2><p>Cron and systemd timers are good at answering one question:</p><blockquote><p>Should this command start now?</p></blockquote><p>They are auditable, observable, and already integrated into the host lifecycle.
+For local maintenance, that is often all the architecture required.</p><div class=mermaid>flowchart LR
+T[systemd timer]
+S[oneshot service]
+J[journald]
+T --> S --> J</div><p>Examples include:</p><ul><li>cache cleanup</li><li>model-seed reconciliation</li><li>health snapshots</li><li>local index maintenance</li><li>periodic status generation</li></ul><p>The mistake is not using timers. The mistake is asking them to own workflow
+policy, memory, approvals, semantic retries, and agentic reasoning.</p><p>A timer should trigger work. It should not become the work.</p><h2 id=the-dubnium-scheduler-boundary>The Dubnium scheduler boundary</h2><p>Dubnium&rsquo;s current scheduler is a local host substrate built on declarative Nix
+configuration, systemd timers, and oneshot services.</p><p>Its default posture is deliberately conservative:</p><ul><li>disabled by default</li><li>no network listener required for timer execution</li><li>no implicit n8n enablement</li><li>no implicit GitHub runner enablement</li><li>absolute packaged commands rather than mutable shell fragments</li><li>explicit executor boundaries for repository mutation</li><li>runtime secrets outside the Nix store</li></ul><p>A simple local task looks like this:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-nix data-lang=nix><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=n>dubnium</span><span class=o>.</span><span class=n>scheduler</span> <span class=o>=</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=n>enable</span> <span class=o>=</span> <span class=no>true</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=n>jobs</span><span class=o>.</span><span class=n>daily-status</span> <span class=o>=</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>      <span class=n>command</span> <span class=o>=</span> <span class=s2>&#34;/run/current-system/sw/bin/dubnium-daily-status&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>      <span class=n>onCalendar</span> <span class=o>=</span> <span class=s2>&#34;daily&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>      <span class=n>persistent</span> <span class=o>=</span> <span class=no>true</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>      <span class=n>user</span> <span class=o>=</span> <span class=s2>&#34;root&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>      <span class=n>group</span> <span class=o>=</span> <span class=s2>&#34;root&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>      <span class=n>workingDirectory</span> <span class=o>=</span> <span class=s2>&#34;/var/lib/dubnium/scheduler/daily-status&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>      <span class=n>mutatesRepositories</span> <span class=o>=</span> <span class=no>false</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=p>};</span>
+</span></span><span class=line><span class=cl>  <span class=p>};</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><p>The durable schedule lives in Nix. The timer materializes at rebuild time. The
+service runs inside the host&rsquo;s normal systemd and journald boundaries.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>declarative schedule
+</span></span><span class=line><span class=cl>  -&gt; Dubnium scheduler module
+</span></span><span class=line><span class=cl>      -&gt; systemd timer
+</span></span><span class=line><span class=cl>          -&gt; systemd oneshot service
+</span></span></code></pre></div><p>This keeps the source of truth reviewable and reconstructable.</p><h2 id=the-scheduler-api-is-operational-not-canonical>The scheduler API is operational, not canonical</h2><p>Dubnium also has a localhost scheduler API and corresponding <code>dubctl schedule</code>
+commands.</p><p>The runtime surface supports:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>GET  /schedules
+</span></span><span class=line><span class=cl>GET  /schedules/{id}
+</span></span><span class=line><span class=cl>POST /schedules/{id}/trigger
+</span></span><span class=line><span class=cl>POST /schedules/{id}/pause
+</span></span><span class=line><span class=cl>POST /schedules/{id}/resume
+</span></span><span class=line><span class=cl>GET  /schedules/{id}/history
+</span></span><span class=line><span class=cl>GET  /healthz
+</span></span></code></pre></div><p>The CLI mirrors those operations:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>dubctl schedule list
+</span></span><span class=line><span class=cl>dubctl schedule show &lt;id&gt;
+</span></span><span class=line><span class=cl>dubctl schedule trigger &lt;id&gt;
+</span></span><span class=line><span class=cl>dubctl schedule pause &lt;id&gt;
+</span></span><span class=line><span class=cl>dubctl schedule resume &lt;id&gt;
+</span></span><span class=line><span class=cl>dubctl schedule history &lt;id&gt;
+</span></span></code></pre></div><p>This API is an operator control surface. It may inspect materialized schedules,
+start a declared service, mask or unmask a timer, and expose recent
+journald-backed history.</p><p>It must not create hidden durable schedules that compete with Nix declarations.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>Schedules are declared durably.
+</span></span><span class=line><span class=cl>Execution happens through a declared boundary.
+</span></span><span class=line><span class=cl>Runtime control is operational, not canonical.
+</span></span></code></pre></div><h2 id=one-clock-several-ownership-boundaries>One clock, several ownership boundaries</h2><p>Not every scheduled task should execute locally.</p><table><thead><tr><th>Concern</th><th>Owner</th></tr></thead><tbody><tr><td>Local timed execution</td><td>Dubnium scheduler and systemd</td></tr><tr><td>Multi-step workflow orchestration</td><td>n8n or another workflow executor</td></tr><tr><td>Repository-governed mutation</td><td>GitHub Actions and an approved runner</td></tr><tr><td>Agentic reasoning and context assembly</td><td>Supervisor Orchestrator</td></tr><tr><td>Policy and approval contracts</td><td>Anthesis or another governance tool</td></tr><tr><td>Agentic lifecycle and effect evidence</td><td>Run Ledger</td></tr><tr><td>Approved external effects</td><td>bounded executor or Tool Execution Gateway</td></tr></tbody></table><p>The timer may start the path, but ownership transfers at explicit boundaries.</p><div class=mermaid>flowchart TD
+T[systemd timer]
+S[Dubnium scheduler]
+L[bounded local task]
+D[workflow dispatch]
+N[n8n]
+G[GitHub Actions]
+R[self-hosted runner]
+O[Supervisor Orchestrator]
+P[Policy and approval]
+E[Tool Execution Gateway]
+RL[Run Ledger]
+T --> S
+S --> L
+S --> D
+D --> N
+D --> G --> R
+N --> O
+O --> P --> E
+O --> RL
+E --> RL</div><p>The central design rule is:</p><blockquote><p>Scheduled agentic work must enter the same orchestration and governance path
+as interactive agentic work.</p></blockquote><p>The scheduler should not grow its own model client, memory retrieval, prompt
+library, credentials, or semantic retry engine.</p><h2 id=local-task-or-workflow-dispatch>Local task or workflow dispatch?</h2><p>The shared scheduling contract has two execution classes.</p><h3 id=local-task>Local task</h3><p>Use a local task when the work is bounded, host-local, and naturally expressed as
+a systemd-managed oneshot command.</p><p>Examples include health checks, cache cleanup, model-file reconciliation, local
+index compaction, and snapshot generation.</p><h3 id=workflow-dispatch>Workflow dispatch</h3><p>Use workflow dispatch when the schedule should start another orchestrator or
+executor.</p><p>Examples include:</p><ul><li>starting an n8n workflow</li><li>dispatching a GitHub Actions workflow</li><li>beginning an approval-bearing automation path</li><li>submitting work to the Supervisor Orchestrator</li></ul><p>A target declarative shape looks like this:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-nix data-lang=nix><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=n>id</span> <span class=o>=</span> <span class=s2>&#34;weekly-docs-review&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=n>owner</span> <span class=o>=</span> <span class=s2>&#34;docs-automation&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=n>kind</span> <span class=o>=</span> <span class=s2>&#34;workflow-dispatch&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=n>onCalendar</span> <span class=o>=</span> <span class=s2>&#34;Sun 18:00&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=n>dispatch</span> <span class=o>=</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=n>backend</span> <span class=o>=</span> <span class=s2>&#34;github-actions&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>target</span> <span class=o>=</span> <span class=s2>&#34;docs-review.yml&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>payloadFile</span> <span class=o>=</span> <span class=s2>&#34;/run/secrets/docs-review-dispatch.json&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=p>};</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=n>executorBoundary</span> <span class=o>=</span> <span class=s2>&#34;github-runner&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=n>mutatesRepositories</span> <span class=o>=</span> <span class=no>true</span><span class=p>;</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><p>This workflow-dispatch object is a target contract rather than a claim that every
+field is already implemented. The timer remains small. The receiving system owns
+the richer workflow.</p><h2 id=repository-mutation-belongs-to-the-repository>Repository mutation belongs to the repository</h2><p>A scheduled task that commits, pushes, opens a pull request, or publishes an
+artifact crosses a stronger trust boundary than a local health check.</p><p>Dubnium requires repository-mutating jobs to declare that fact and name an
+executor boundary.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-nix data-lang=nix><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>  <span class=n>dubnium</span><span class=o>.</span><span class=n>scheduler</span><span class=o>.</span><span class=n>jobs</span><span class=o>.</span><span class=n>career-digest</span> <span class=o>=</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=n>command</span> <span class=o>=</span> <span class=s2>&#34;/run/current-system/sw/bin/career-digest&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>onCalendar</span> <span class=o>=</span> <span class=s2>&#34;Mon..Fri 08:30&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>mutatesRepositories</span> <span class=o>=</span> <span class=no>true</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>executorBoundary</span> <span class=o>=</span> <span class=s2>&#34;github-runner&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>    <span class=n>environmentFile</span> <span class=o>=</span> <span class=s2>&#34;/run/secrets/career-digest.env&#34;</span><span class=p>;</span>
+</span></span><span class=line><span class=cl>  <span class=p>};</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span></code></pre></div><p>The current boundary choices are:</p><table><thead><tr><th>Boundary</th><th>Meaning</th></tr></thead><tbody><tr><td><code>local</code></td><td>bounded host-local execution</td></tr><tr><td><code>github-runner</code></td><td>repository-governed execution through GitHub Actions</td></tr><tr><td><code>n8n</code></td><td>workflow orchestration through n8n</td></tr></tbody></table><p>The declaration records intent. It does not silently enable n8n, register a
+runner, or prove that a command delegates correctly.</p><p>For repository mutation, GitHub Actions should normally own workflow policy and
+produce a reviewable pull request rather than allowing a timer script to push
+directly.</p><h2 id=scheduling-agentic-work>Scheduling agentic work</h2><p>Agentic work adds uncertainty, memory access, tool proposals, and possible side
+effects. That belongs above the scheduler boundary.</p><div class=mermaid>sequenceDiagram
+participant T as systemd timer
+participant S as Dubnium scheduler
+participant O as Supervisor Orchestrator
+participant M as Memory Context Service
+participant P as Policy Engine
+participant X as Tool Execution Gateway
+participant L as Run Ledger
+T->>S: trigger declared dispatch
+S->>O: submit bounded task envelope
+O->>M: request scoped context pack
+M-->>O: source-attributed context
+O->>P: submit plan and tool intents
+P-->>O: allow, constrain, deny, or require approval
+O->>X: perform approved effect
+X-->>L: record effect result and evidence
+O-->>L: record lifecycle and policy dispositions</div><p>The scheduler decides that a declared occurrence should begin. The Supervisor
+Orchestrator owns normalization, planning, policy invocation, specialist routing,
+evaluation, and synthesis.</p><p>The Run Ledger, not scheduler timer metadata or memory, is the future canonical
+record for the agentic lifecycle.</p><h2 id=richer-state-belongs-above-the-timer-substrate>Richer state belongs above the timer substrate</h2><p>A production workflow may need:</p><ul><li>logical run identity</li><li>deduplication and event coalescing</li><li>concurrency control</li><li>retries with semantic boundaries</li><li>deadlines and expiry</li><li>approval waiting</li><li>resumability</li><li>step-level evidence</li></ul><p>Those are real requirements, but assigning all of them to the local scheduler
+would turn it into the general workflow engine that the architecture explicitly
+avoids.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>systemd / Dubnium scheduler
+</span></span><span class=line><span class=cl>  -&gt; timer materialization, local triggering, pause/resume, recent history
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>n8n
+</span></span><span class=line><span class=cl>  -&gt; integration workflows, forms, waiting states, human routing
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>GitHub Actions
+</span></span><span class=line><span class=cl>  -&gt; repository workflow state, retries, artifacts, mutation policy
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>Supervisor Orchestrator + Run Ledger
+</span></span><span class=line><span class=cl>  -&gt; agentic run identity, lifecycle, policy records, specialist handoffs,
+</span></span><span class=line><span class=cl>     tool effects, evaluation, future replay and resumption
+</span></span></code></pre></div><p>The system may later share common run-envelope and evidence contracts across
+these layers. That does not require one scheduler to own them all.</p><h2 id=retries-are-not-one-thing>Retries are not one thing</h2><p>A timer retry, model retry, tool retry, workflow retry, and complete job replay
+have different safety properties.</p><p>A failed read-only model request may be safe to retry. A successful email send
+followed by a lost acknowledgement is not.</p><p>The relevant execution owner needs enough evidence to distinguish work that never
+began, inference that failed before an effect, a repeatable read-only operation,
+a completed effect with a missing acknowledgement, and a partially completed
+workflow.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>retryable operation
+</span></span><span class=line><span class=cl>  -&gt; stable idempotency key
+</span></span><span class=line><span class=cl>  -&gt; bounded attempts
+</span></span><span class=line><span class=cl>  -&gt; backoff and deadline
+</span></span><span class=line><span class=cl>  -&gt; prior-result record
+</span></span><span class=line><span class=cl>  -&gt; side-effect classification
+</span></span></code></pre></div><p>The local scheduler should report service failure clearly. The workflow or
+agentic execution layer should decide whether semantic replay is safe.</p><h2 id=approval-is-not-a-timer-feature>Approval is not a timer feature</h2><p>A scheduled analysis may discover a mutation that should not happen unattended.
+The correct result is often an approval request rather than success or failure.</p><p>The policy or governance layer defines the exact proposed action and approval
+envelope. The workflow layer persists the waiting state and expiry. The bounded
+executor performs only the approved effect. The Run Ledger records the lifecycle,
+disposition, approval, and resulting effect evidence.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>scheduled trigger
+</span></span><span class=line><span class=cl>  -&gt; analysis
+</span></span><span class=line><span class=cl>  -&gt; proposed bounded action
+</span></span><span class=line><span class=cl>  -&gt; policy disposition
+</span></span><span class=line><span class=cl>  -&gt; approval if required
+</span></span><span class=line><span class=cl>  -&gt; bounded execution
+</span></span><span class=line><span class=cl>  -&gt; run-ledger evidence
+</span></span></code></pre></div><p>An approval should authorize one specific action with fixed parameters, target,
+evidence, and expiry. It should not grant a general period of model authority.</p><h2 id=event-driven-work-uses-the-same-boundaries>Event-driven work uses the same boundaries</h2><p>Not all work begins on a clock. Events may come from GitHub, n8n, filesystem
+watchers, memory ingestion, service health transitions, or a previous workflow.</p><p>The source may differ, but the boundary should remain stable:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>event source
+</span></span><span class=line><span class=cl>  -&gt; normalize and deduplicate in the owning workflow layer
+</span></span><span class=line><span class=cl>  -&gt; submit bounded work
+</span></span><span class=line><span class=cl>  -&gt; Supervisor Orchestrator
+</span></span><span class=line><span class=cl>  -&gt; policy and approved execution
+</span></span><span class=line><span class=cl>  -&gt; Run Ledger
+</span></span></code></pre></div><p>A filesystem watcher does not become a privileged agent because it can notice a
+change. Observation and authority remain separate.</p><h2 id=memory-maintenance-is-scheduled-memory-authority-is-not>Memory maintenance is scheduled; memory authority is not</h2><p>The scheduler may trigger operational memory jobs such as expiry scans,
+embedding refresh, index compaction, backup verification, or ingestion dispatch.</p><p>But memory access and promotion remain governed operations. A scheduled job
+should not silently promote active planning context into durable knowledge.
+Operational memory, curated knowledge memory, and canonical project documentation
+have different authority and lifecycle rules.</p><p>The timer starts maintenance. The memory service enforces mechanical filters.
+The control plane declares purpose and scope. Governance decides access and
+promotion.</p><h2 id=secrets-and-exposure>Secrets and exposure</h2><p>Dubnium keeps the defaults narrow:</p><ul><li>timer execution does not require a network listener</li><li>the scheduler API binds to <code>127.0.0.1</code></li><li>n8n is opt-in and local by default</li><li>GitHub runner registration is explicit</li><li>secrets live under runtime paths such as <code>/run/secrets/...</code></li><li>generated Nix-store files contain no tokens</li><li>external exposure requires a separate documented policy</li></ul><p>A local scheduler should not become a remote arbitrary-command API.</p><h2 id=a-practical-example-careerops-today>A practical example: CareerOps today</h2><p>CareerOps spans several existing boundaries.</p><div class=mermaid>sequenceDiagram
+participant T as scheduled trigger
+participant S as Dubnium scheduler
+participant G as GitHub Actions
+participant R as self-hosted runner
+participant A as raw local model endpoint
+participant P as reviewable artifacts
+T->>S: start declared workflow dispatch
+S->>G: workflow_dispatch
+G->>R: run repository-defined workflow
+R->>A: request local model analysis
+A-->>R: proposed resume overlay
+R->>P: render and publish DOCX and PDF artifacts</div><p>The timer owns time. GitHub owns the repository workflow. The runner owns local
+execution of trusted jobs. The raw local endpoint currently provides bounded
+inference. The result remains reviewable before a human applies.</p><p>The target evolution is to replace the direct model call with the Supervisor
+Gateway and Orchestrator so memory, policy, specialist routing, and Run Ledger
+evidence use the same control-plane contract as other agentic work.</p><p>No layer needs to become universally privileged.</p><h2 id=what-exists-today>What exists today</h2><p>Dubnium already has:</p><ul><li>declarative scheduler jobs</li><li>systemd timer and oneshot materialization</li><li>per-job working directories</li><li>explicit repository-mutation declarations</li><li>executor-boundary metadata</li><li>localhost scheduler runtime API</li><li><code>dubctl schedule</code> inspection and control</li><li>n8n as an opt-in workflow boundary</li><li>self-hosted GitHub runner support</li><li>documented automation ownership rules</li></ul><p>The next useful integration work is:</p><ol><li>add first-class declarative workflow-dispatch objects</li><li>route agentic dispatches into the Supervisor Orchestrator contract</li><li>share actor, task, scope, and evidence envelopes across boundaries</li><li>connect the future Run Ledger to agentic runs</li><li>make approval and effect evidence visible through operator tooling</li><li>retain Nix as the source of truth for durable host schedules</li></ol><h2 id=the-larger-lesson>The larger lesson</h2><p>Scheduling autonomy is not mainly a calendar problem.</p><p>It is an ownership problem.</p><p>A durable system needs to explain:</p><ul><li>who declared the schedule</li><li>which layer triggered it</li><li>which system owned the workflow</li><li>which model or specialist proposed an action</li><li>which policy authorized it</li><li>which executor performed it</li><li>where lifecycle and effect evidence were recorded</li></ul><p>Dubnium&rsquo;s answer is not a universal scheduler.</p><p>It is a layered system where timers remain small, workflow engines remain
+explicit, repository mutation stays repository-governed, and agentic work passes
+through the same policy and execution boundaries whether a human or a clock
+started it. The full sequence is collected on the <a href=/series/dubnium/>Dubnium series page</a>.</p></div><aside class=series-card aria-labelledby=series-card-title><p class=series-label>Series</p><h2 class="title is-5 series-card-title" id=series-card-title><a href=/series/dubnium/>Dubnium</a></h2><p class=is-size-7>Part 3 · 3 essays in this series</p><div class="series-nav-links mt-4"><a class="button is-small is-rounded is-light" href=/posts/dubnium-agentic-orchestrator/>Previous: Building Dubnium: An Agentic Orchestrator</a></div><ol class=series-post-list><li><a href=/posts/dubnium-super-server/>Building Dubnium: A Super Workstation With Modes</a></li><li><a href=/posts/dubnium-agentic-orchestrator/>Building Dubnium: An Agentic Orchestrator</a></li><li class=is-current><a href=/posts/dubnium-agentic-scheduling/>Building Dubnium: Scheduling Agentic Work</a></li></ol></aside></div></main><footer id=footer class=legs><div class="has-text-centered content"><div class=footer-links><nav aria-label="Footer quick links" class=footer-links-row><a class="tag is-rounded" href=/archive>Archive</a>
+<a class="tag is-rounded" href=/posts/index.xml>RSS</a>
+<a class="tag is-rounded" href=https://micrantha.com target=_blank rel=noopener>Micrantha</a></nav><nav aria-label="Footer social links" class=footer-links-row><a class="tag is-rounded" href=https://github.com/ryjen target=_blank rel=noopener>GitHub</a>
+<a class="tag is-rounded" href=https://linkedin.com/in/ryjen target=_blank rel=noopener>LinkedIn</a>
+<a class="tag is-rounded" href=mailto:robert@ryanjennin.gs>Email</a></nav></div><div class="is-flex is-align-items-center is-justify-content-center footer-actions"><div class=footer-theme-toggle><button class=themer type=button aria-label="Use dark theme" aria-pressed=false>
+<span class="icon theme-icon" aria-hidden=true><svg xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#yin-yang"/></svg></span></button></div><a href=mailto:robert@ryanjennin.gs>Report a Site Issue</a></div><div class=copyright>© all rights reserved, ryan jennings</div></div></footer><script src=/js/theme.bundle.min.f02a1da3d31fa34d2ca1bdf7075abe44699f1546cc5b0c25d6e8981ea5671c4b0dfa24545d495449c7de8ba0c83f6d22535ffb2705a834f1ef10c00e3273c034.js defer integrity="sha512-8Codo9Mfo00sob33B1q+RGmfFUbMWwwl1uiYHqVnHEsN+iRUXUlUScfei6DIP20iU1/7JwWoNPHvEMAOMnPANA==" crossorigin=anonymous></script><script type=module>
+  const mermaidBlocks = document.querySelectorAll(".mermaid");
+  if (mermaidBlocks.length > 0) {
+    const { default: mermaid } = await import("https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs");
+    mermaid.initialize({
+      securityLevel: "loose",
+      theme: document.body.classList.contains("dark") ? "dark" : "default",
+    });
+    await mermaid.run({
+      nodes: mermaidBlocks,
+    });
+  }
+</script><script src=/js/tts.min.bdfb85e4ba900c01c13f9c8b9b0420422af9e965fcf1f02143ee1bf48b3629ed8c7f23ade7e5840f34718ff9d61ec5f637fc471806c4f40c11095cacea05c8b7.js defer integrity="sha512-vfuF5LqQDAHBP5yLmwQgQir56WX88fAhQ+4b9Is2Ke2MfyOt5+WEDzRxj/nWHsX2N/xHGAbE9AwRCVys6gXItw==" crossorigin=anonymous></script></body></html>
