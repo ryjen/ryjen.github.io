@@ -13,7 +13,7 @@
 </a><button type=button class="navbar-item themer" aria-label="Use dark theme" aria-pressed=false>
 <span class="icon theme-icon" aria-hidden=true><svg xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#yin-yang"/></svg></span></button></div></div></nav></header><main id=main class=abdomen tabindex=-1><nav class="breadcrumb ml-4 is-small" aria-label=breadcrumbs><ul><li><a href=/>Home</a></li><li><a href=/posts/>Blog</a></li><li class=is-active><a href=/posts/sovereignty-having-an-exit/ aria-current=page>Sovereignty Is Having an Exit</a></li></ul></nav><div class=container><header class="article-header mb-5"><h1 class=title>Sovereignty Is Having an Exit</h1><p class="article-meta is-size-7"><span>By Robert Ryan Jennings</span>
 <span>Published Sep 15, 2026 10:00AM</span>
-<span>8 min read</span></p><div class="tags mb-3"><a class="tag is-rounded" href=/categories/software-engineering>software engineering</a>
+<span>10 min read</span></p><div class="tags mb-3"><a class="tag is-rounded" href=/categories/software-engineering>software engineering</a>
 <a class="tag is-rounded" href=/categories/infrastructure>infrastructure</a>
 <a class="tag is-rounded" href=/categories/security>security</a></div><div class="tags mb-0"><a class="tag is-rounded" href=/tags/self-hosting>self-hosting</a>
 <a class="tag is-rounded" href=/tags/sovereignty>sovereignty</a>
@@ -49,7 +49,9 @@ to what sits behind something most people experience simply as an inbox.</p><p>F
 <a href=https://proton.me/about>Proton</a> is one option I like. It is Swiss rather than
 Canadian, but that still provides useful diversification from the large
 American platforms. ISP mail can also be a reasonable, deliberately boring
-alternative.</p><p>The important part is not that every service be Canadian or self-hosted. It is
+alternative, but an address tied to an internet provider is harder to take with
+me when I switch providers. Using an address on a domain I control lets me move
+mail hosting without asking everyone to learn a new address.</p><p>The important part is not that every service be Canadian or self-hosted. It is
 that no single provider becomes impossible to replace.</p><h2 id=dns-and-regulation-both-help>DNS and regulation both help</h2><p>I currently use <a href=https://www.cloudflare.com/dns/>Cloudflare</a> for DNS because it
 is reliable and convenient, although I could also run an authoritative
 <a href=https://www.isc.org/bind/>BIND</a> server myself. What matters more is that I
@@ -74,7 +76,11 @@ portable. An independent Forgejo instance can remain a mirror or alternate
 origin, and emerging Canadian projects such as
 <a href=https://connexxia.ca/en>CanForge</a> may eventually provide another option.
 Connexxia currently presents CanForge as part of its upcoming Sovereign One
-stack, so I see it as promising rather than a mature replacement today.</p><p>The point is not to avoid GitHub. It is to avoid making GitHub the only place
+stack, so I see it as promising rather than a mature replacement today.</p><p>A Git mirror preserves the repository and its history, including tracked CI
+workflow files, but not the whole forge. Issues, access permissions, CI secrets,
+runners, release assets, and project metadata need separate exports, backups,
+or a migration plan. A portable repository is necessary, but it is not a
+complete recovery strategy.</p><p>The point is not to avoid GitHub. It is to avoid making GitHub the only place
 the work can exist.</p><h2 id=rebuildability-matters>Rebuildability matters</h2><p>My current home infrastructure is centred around a machine I call
 <a href=/series/dubnium/>Dubnium</a>. The hardware itself is not especially important. I
 started with relatively inexpensive parts, and I expect the machine to change as
@@ -83,7 +89,9 @@ eventually become several machines.</p><p>That is exactly why I care about decla
 described with <a href=https://nixos.org/>NixOS</a>, so the useful asset is less the
 current box than the ability to reproduce its behaviour on different hardware.
 The goal is for Dubnium&rsquo;s hardware to evolve without making the current machine
-itself part of the architecture.</p><p>I think of sovereignty in four layers:</p><div class=mermaid>flowchart TB
+itself part of the architecture. Declarative configuration is a starting point,
+not proof of recovery: periodically restoring data and bringing a service up on
+another machine or provider is how I can test whether an exit actually works.</p><p>I think of sovereignty in four layers:</p><div class=mermaid>flowchart TB
 Data["Data: can I move it?"] --> Service["Service: can I replace the provider?"]
 Service --> Machine["Machine: can I rebuild it?"]
 Machine --> Authority["Authority: can I change who controls it?"]</div><p>That same approach works for smaller services. Scheduled jobs, automation, CI
@@ -127,8 +135,19 @@ local control may not be enough.</p><p>The same reasoning applies to network acc
 <a href=https://tailscale.com/>Tailscale</a> today because it works very well, while
 keeping the underlying system portable enough that I could move toward
 self-hosted <a href=https://netbird.io/>NetBird</a>, plain
-<a href=https://www.wireguard.com/>WireGuard</a>, or another control plane if necessary.</p><p>I am also interested in a simple policy switch for public infrastructure:</p><table><thead><tr><th>Mode</th><th>Purpose</th></tr></thead><tbody><tr><td>Global</td><td>Normal public access</td></tr><tr><td>Canada only</td><td>Coarse geographic reduction of exposed surface</td></tr><tr><td>Private only</td><td>Administrative or private-mesh access only</td></tr></tbody></table><p>A Canada-only mode would be a coarse firewall policy, not authentication.
-GeoIP is too imprecise for identity, but the mode could still reduce exposed
+<a href=https://www.wireguard.com/>WireGuard</a>, or another control plane if necessary.</p><h3 id=network-access-is-another-exit>Network access is another exit</h3><p>VPNs fit the same principle because access is a dependency too. A private VPN
+lets me administer services without exposing every service publicly. A
+commercial browsing VPN changes the network carrying my traffic and the
+operator I trust; neither gives me control over the destination service.</p><table><thead><tr><th>VPN use</th><th>What it contributes</th><th>Remaining dependency</th></tr></thead><tbody><tr><td>Commercial browsing VPN</td><td>Hides my source IP from destinations and encrypts the hop from my device to the VPN endpoint.</td><td>The VPN operator can see connection metadata; accounts and cookies can still identify me. HTTPS still protects web content beyond the VPN endpoint.</td></tr><tr><td>Private VPN or mesh</td><td>Connects devices and limits which services need public exposure.</td><td>Device identity, access policies, coordination, and a recovery path if access fails.</td></tr><tr><td>Self-hosted VPN</td><td>Puts the endpoint and its configuration under my control.</td><td>Hosting, reachability, patching, and key management remain my responsibility.</td></tr></tbody></table><p>Tailscale encrypts device-to-device traffic, while its hosted coordination
+service helps devices discover each other and manage identity and policy.
+Established connections can often continue through a coordination outage, but
+onboarding, key changes, policy updates, and some reconnection paths still
+depend on that service. For sovereignty, the test is whether I can replace the
+coordination dependency or recover access another way—not just whether the
+traffic is encrypted.</p><p>I am also interested in a simple policy switch for public infrastructure:</p><table><thead><tr><th>Mode</th><th>Purpose</th></tr></thead><tbody><tr><td>Global</td><td>Normal public access</td></tr><tr><td>Canada only</td><td>Coarse geographic reduction of exposed surface</td></tr><tr><td>Private only</td><td>Administrative or private-mesh access only</td></tr></tbody></table><p>A Canada-only mode would be a coarse firewall policy, not authentication.
+GeoIP sees the apparent source of a connection, not where the person is: someone
+outside Canada could use a Canadian VPN exit or a compromised Canadian host.
+It is too imprecise for identity, but the mode could still reduce exposed
 network surface and provide a contingency control that belongs to infrastructure
 I operate rather than to a VPN or cloud provider.</p><h2 id=consumer-technology-is-harder>Consumer technology is harder</h2><p>Phones are one of the more difficult areas. BlackBerry is gone, and some
 European Linux phones are appealing, but Apple makes very good hardware and
