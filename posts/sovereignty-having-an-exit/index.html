@@ -13,7 +13,7 @@
 </a><button type=button class="navbar-item themer" aria-label="Use dark theme" aria-pressed=false>
 <span class="icon theme-icon" aria-hidden=true><svg xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#yin-yang"/></svg></span></button></div></div></nav></header><main id=main class=abdomen tabindex=-1><nav class="breadcrumb ml-4 is-small" aria-label=breadcrumbs><ul><li><a href=/>Home</a></li><li><a href=/posts/>Blog</a></li><li class=is-active><a href=/posts/sovereignty-having-an-exit/ aria-current=page>Sovereignty Is Having an Exit</a></li></ul></nav><div class=container><header class="article-header mb-5"><h1 class=title>Sovereignty Is Having an Exit</h1><p class="article-meta is-size-7"><span>By Robert Ryan Jennings</span>
 <span>Published Sep 15, 2026 10:00AM</span>
-<span>11 min read</span></p><div class="tags mb-3"><a class="tag is-rounded" href=/categories/software-engineering>software engineering</a>
+<span>14 min read</span></p><div class="tags mb-3"><a class="tag is-rounded" href=/categories/software-engineering>software engineering</a>
 <a class="tag is-rounded" href=/categories/infrastructure>infrastructure</a>
 <a class="tag is-rounded" href=/categories/security>security</a></div><div class="tags mb-0"><a class="tag is-rounded" href=/tags/self-hosting>self-hosting</a>
 <a class="tag is-rounded" href=/tags/sovereignty>sovereignty</a>
@@ -121,40 +121,59 @@ on cost, capability, privacy, and latency.</p><p>A smaller specialist model may 
 narrow task than the general model coordinating the work. More importantly,
 switching the supervisor does not require replacing the rest of the system.
 That is a more practical form of AI sovereignty for me than insisting
-everything must run locally.</p><p>I am also exploring Polar Grid, loosely comparable to
-<a href=https://setiathome.berkeley.edu/>SETI@home</a> for AI: spare GPUs contributed to
-a shared inference network rather than all compute being concentrated inside a
-few providers. There are hard problems around privacy, trust, verification,
-model distribution, latency, and malicious nodes, so I do not treat that as a
-solved alternative. It is another possible execution target for specialist
-workloads.</p><h2 id=sovereignty-can-exist-at-more-than-one-scale>Sovereignty can exist at more than one scale</h2><p>One thing Dubnium has made clearer to me is that sovereignty does not have to
+everything must run locally.</p><h2 id=sovereignty-can-exist-at-more-than-one-scale>Sovereignty can exist at more than one scale</h2><p>One thing Dubnium has made clearer to me is that sovereignty does not have to
 mean one person operating every service alone.</p><p>At the personal scale, Dubnium is a rebuildable workstation and AI control
-plane. The direction of the project is increasingly about boundaries rather than
-ownership for its own sake: the Supervisor Gateway is intended to be the only
-component that talks directly to raw model runtimes; the Capability Gateway
-separates a proposed effect from authorization and execution; Anthesis owns the
-exact policy decision; and current roadmap work covers multi-user isolation,
-client workstations, provider-neutral AI, and independently recoverable state.</p><p>That architecture changes the question from &ldquo;is this local?&rdquo; to &ldquo;who is allowed
-to do what, where can the workload move, and what survives when one dependency
-disappears?&rdquo;</p><p>There is also a useful community scale between a personal workstation and a
+plane. More and more, I care about the boundaries inside it rather than local
+ownership for its own sake: model access is separated from host effects,
+authorization is separated from execution, and credentials can stay with the
+smallest component that actually needs them.</p><p>That changes the question from &ldquo;is this local?&rdquo; to &ldquo;who is allowed to do what,
+where can the workload move, and what survives when one dependency disappears?&rdquo;</p><p>There is also a useful community scale between a personal workstation and a
 hyperscale provider. Vancouver&rsquo;s <a href=https://news.z-space.ca/zai/>Z-Space Local AI
-Collective</a> is an early example: members pool
-resources to operate locally hosted AI infrastructure, access models through a
-shared gateway, experiment with community knowledge systems, and keep inference
-in Vancouver. It is still a prototype rather than proof that every governance
-or security problem is solved, but the model matters. Shared infrastructure can
-be locally operated without requiring every participant to own a GPU server.</p><p>That suggests a spectrum rather than a binary choice:</p><div class=mermaid>flowchart LR
-P["Personal\nDubnium / local services"] --> C["Community\nshared local infrastructure"]
+Collective</a> is an early place-based example:
+members pool resources to operate locally hosted AI infrastructure, access
+models through a shared gateway, experiment with community knowledge systems,
+and keep inference in Vancouver. It is still a prototype rather than proof that
+every governance or security problem is solved, but the model matters. Shared
+infrastructure can be locally operated without requiring every participant to
+own a GPU server.</p><p>I am also exploring a complementary model I call Polar Grid. Instead of
+concentrating the shared hardware in one place, participants could contribute
+spare GPUs to a distributed inference network, loosely comparable to
+<a href=https://setiathome.berkeley.edu/>SETI@home</a> for AI. That introduces harder
+questions around privacy, trust, verification, model distribution, latency, and
+malicious nodes, so I do not treat it as a solved architecture. But it extends
+the same sovereignty idea: community compute can be federated as well as
+co-located.</p><p>That suggests a spectrum rather than a binary choice:</p><div class=mermaid>flowchart LR
+P["Personal\nDubnium / local services"] --> C["Community\nZ-Space + Polar Grid"]
 C --> R["Regional / national\nCanadian providers"]
 R --> G["Global providers"]</div><p>The sovereign property is not the box on the left. It is the ability to choose
 the appropriate scale for a workload without surrendering the ability to move
-again later.</p><p>Dubnium&rsquo;s current provider work reinforces that point. One active qualification
-thread uses <a href=https://augureai.ca/>Augure</a> as a concrete test case: a Canadian
-AI provider can improve residency and jurisdictional fit, but &ldquo;Canadian&rdquo; is not
-treated as sufficient evidence by itself. Inference location, retention,
-subprocessors, cross-border failover, and contractual guarantees still have to
-be checked. Local-first and Canada-first are useful policies only when their
-actual trust boundaries are visible.</p><h2 id=location-is-not-the-same-as-control>Location is not the same as control</h2><p>A Canadian data centre is useful, but it does not automatically mean Canadian
+again later.</p><h3 id=credentials-are-part-of-sovereignty>Credentials are part of sovereignty</h3><p>There is another sovereignty benefit to keeping the AI control plane local:
+credentials can stay out of places that do not need them.</p><p>Desktop Commander is a concrete example. Its bounded project container can work
+inside a mount such as <code>/home/ryjen/Projects</code>: inspect a repository, edit files,
+run repository-defined tests, and prepare a candidate change. That local
+filesystem authority does not mean the container should also inherit my
+interactive SSH agent, private keys, broad GitHub tokens, or host-control
+sockets.</p><p>The next step in Dubnium is to separate local repository mutation from remote
+repository authority:</p><div class=mermaid>flowchart LR
+MODEL["Model provider\nlocal or hosted"] --> SUP["Local Supervisor Gateway"]
+SUP --> DC["Desktop Commander\nbounded project container"]
+DC --> WT["Local worktree\nedit + test + diff"]
+DC --> REQ["Typed repository request"]
+REQ --> GATE["Governed gateway / repository broker"]
+GATE --> POLICY["Exact policy decision"]
+POLICY --> WORKER["Narrow host worker"]
+WORKER --> GH["GitHub / remote forge"]
+CRED["Repo-scoped credential"] --> WORKER</div><p>The useful security property is that the model and the project container do not
+need the effective remote credential. In that design, a push, pull-request
+mutation, issue update, merge, or other consequential remote operation would be
+performed by a narrow host-side worker using an exact repository identity and a
+short-lived, repo-scoped credential. The credential would never have to enter
+the model context, the project worktree, the container environment, or a
+forwarded <code>SSH_AUTH_SOCK</code>.</p><p>That makes the local Supervisor Gateway useful even when the selected model is
+hosted elsewhere. The sovereignty comes from keeping model selection, execution,
+authorization, and credential custody as separate replaceable boundaries.
+Changing the model provider should not silently change who can mutate a
+repository.</p><h2 id=location-is-not-the-same-as-control>Location is not the same as control</h2><p>A Canadian data centre is useful, but it does not automatically mean Canadian
 sovereignty. A foreign company can operate servers in Canada and keep the data
 physically here. That solves a residency problem, but it does not necessarily
 solve a control problem.</p><p>Under normal conditions, contracts and privacy rules matter. Under abnormal
@@ -162,7 +181,11 @@ conditions, including sanctions, emergency powers, or war, practical control
 can matter more than residency. The server being in Toronto does not change who
 ultimately controls the company.</p><table><thead><tr><th>Question</th><th>Concern</th></tr></thead><tbody><tr><td>Where is the data?</td><td>Residency</td></tr><tr><td>Who can ultimately control it?</td><td>Sovereignty</td></tr></tbody></table><p>For ordinary workloads, residency may be enough. For infrastructure that needs
 to remain available through geopolitical disruption, local storage without
-local control may not be enough.</p><p>The same reasoning applies to network access. I use
+local control may not be enough.</p><p>A current Dubnium provider-qualification thread uses
+<a href=https://augureai.ca/>Augure</a> as a concrete test case. A Canadian AI provider
+can improve residency and jurisdictional fit, but &ldquo;Canadian&rdquo; is not sufficient
+evidence by itself. Inference location, retention, subprocessors, cross-border
+failover, and contractual guarantees still have to be checked.</p><p>The same reasoning applies to network access. I use
 <a href=https://tailscale.com/>Tailscale</a> today because it works very well, while
 keeping the underlying system portable enough that I could move toward
 self-hosted <a href=https://netbird.io/>NetBird</a>, plain
@@ -180,14 +203,50 @@ GeoIP sees the apparent source of a connection, not where the person is: someone
 outside Canada could use a Canadian VPN exit or a compromised Canadian host.
 It is too imprecise for identity, but the mode could still reduce exposed
 network surface and provide a contingency control that belongs to infrastructure
-I operate rather than to a VPN or cloud provider.</p><h2 id=where-i-ended-up>Where I ended up</h2><p>My first period of self-hosting was mostly about ownership. Then I moved away
+I operate rather than to a VPN or cloud provider.</p><h3 id=disconnected-communication-is-another-exit>Disconnected communication is another exit</h3><p>The internet itself is also a dependency.</p><p>I have been thinking about <a href=https://meshtastic.org/>Meshtastic</a> as a fallback
+communications layer. It can carry low-bandwidth traffic over LoRa without cell
+towers or an internet connection, including encrypted channel traffic when the
+participants share the appropriate keys.</p><p>Meshtastic now publishes packages for
+<a href=https://openwrt.meshtastic.org/>OpenWrt-supported routers</a>. The package does
+not turn an ordinary Wi-Fi router into a LoRa radio; the Linux host still needs
+compatible LoRa hardware. But an OpenWrt node with a radio could bridge local
+Wi-Fi or Ethernet services to a low-bandwidth mesh.</p><p>LoRa airtime is scarce, so this is not a replacement internet. &ldquo;Large message&rdquo;
+here means something larger than a single mesh packet, not bulk file transfer.
+The interesting property is that the message can survive intermittent
+connectivity and arrive in pieces without losing its identity.</p><p>Meshtastic is already experimenting with some of those primitives. Its
+<a href=https://github.com/meshtastic/protobufs/blob/master/meshtastic/portnums.proto>Store & Forward++ port</a>
+is specifically described for Native Linux nodes as providing a &ldquo;Git-style
+chain of messages.&rdquo; The current
+<a href=https://github.com/meshtastic/protobufs/blob/master/meshtastic/mesh.proto>protobuf</a>
+defines message, commit, and root hashes, chain queries and link requests, plus
+first-half and second-half fragment messages. That is useful precedent, but it
+is not yet a general large-object transport.</p><p>For a larger distributed message, I would put another layer above the radio:</p><div class=mermaid>flowchart TD
+M["Large signed message"] --> S["Split into chunks"]
+S --> H["Content-address chunks"]
+H --> MAN["Signed manifest / Merkle root"]
+MAN --> A["Nodes cache different pieces"]
+A --> R["Recipient gathers enough pieces"]
+R --> V["Reconstruct + verify root/signature"]</div><p>The manifest could identify the author, ordering, chunk hashes, expiry, and
+perhaps an erasure-coding profile. Nodes would forward pieces opportunistically;
+the recipient could verify the reconstructed object without trusting any
+individual relay.</p><p>The useful idea from blockchains is not mining or global consensus. It is
+cryptographic linkage: hashes make substitution visible and a signed root binds
+the pieces to one object and author. Content addressing can also deduplicate
+pieces. A Merkle DAG or hash-linked log is a better fit here than a conventional
+blockchain.</p><p>The IETF <a href=https://www.rfc-editor.org/rfc/rfc9171.html>Bundle Protocol</a> provides
+the mature precedent: a delay-tolerant, store-carry-forward overlay for
+intermittent links with fragmentation and reassembly. Meshtastic could be one
+constrained transport underneath that architecture.</p><p>As a sovereignty property, the appeal is graceful degradation: communication
+can fall back from the global internet, to local IP, to low-bandwidth radio,
+while message identity and integrity remain stable.</p><h2 id=where-i-ended-up>Where I ended up</h2><p>My first period of self-hosting was mostly about ownership. Then I moved away
 from it because reliability mattered more. Now I care more about optionality.</p><p>Some dependencies are much harder to replace than others. Phones are an obvious
 example: Apple and Google provide capable ecosystems, while alternatives still
 involve meaningful trade-offs. Not every category needs a perfect sovereign
 replacement; I mainly need to know which dependencies are acceptable and which
 ones require a credible exit.</p><p>I want data I can move, backups I can restore, machines I can rebuild, domains I
 control, services behind interfaces I can replace, AI roles I can move between
-providers, and network policies I can change myself.</p><p>I will self-host where that makes sense and use commercial services where they
+providers, credentials held only where they are needed, and communications that
+can degrade gracefully when ordinary infrastructure disappears.</p><p>I will self-host where that makes sense and use commercial services where they
 are better at the job, including American services when they are genuinely the
 best option. The important part is making sure convenience does not quietly
 become dependence.</p></div><aside class=series-card aria-labelledby=series-card-title><p class=series-label>Series</p><h2 class="title is-5 series-card-title" id=series-card-title><a href=/series/after-scarcity-before-sovereignty/>After Scarcity, Before Sovereignty</a></h2><p class=is-size-7>Part 1 · 3 essays in this series</p><div class="series-nav-links mt-4"><a class="button is-small is-rounded" href=/posts/what-if-work-became-optional/>Next: What If Work Became Optional?</a></div><ol class=series-post-list><li class=is-current><a href=/posts/sovereignty-having-an-exit/>Sovereignty Is Having an Exit</a></li><li><a href=/posts/what-if-work-became-optional/>What If Work Became Optional?</a></li><li><a href=/posts/globalization-and-the-problem-of-exit/>Globalization and the Problem of Exit</a></li></ol></aside></div></main><footer id=footer class=legs><div class="has-text-centered content"><div class=footer-links><nav aria-label="Footer quick links" class=footer-links-row><a class="tag is-rounded" href=/archive>Archive</a>
