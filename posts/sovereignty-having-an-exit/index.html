@@ -13,7 +13,7 @@
 </a><button type=button class="navbar-item themer" aria-label="Use dark theme" aria-pressed=false>
 <span class="icon theme-icon" aria-hidden=true><svg xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#yin-yang"/></svg></span></button></div></div></nav></header><main id=main class=abdomen tabindex=-1><nav class="breadcrumb ml-4 is-small" aria-label=breadcrumbs><ul><li><a href=/>Home</a></li><li><a href=/posts/>Blog</a></li><li class=is-active><a href=/posts/sovereignty-having-an-exit/ aria-current=page>Sovereignty Is Having an Exit</a></li></ul></nav><div class=container><header class="article-header mb-5"><h1 class=title>Sovereignty Is Having an Exit</h1><p class="article-meta is-size-7"><span>By Robert Ryan Jennings</span>
 <span>Published Sep 15, 2026 10:00AM</span>
-<span>10 min read</span></p><div class="tags mb-3"><a class="tag is-rounded" href=/categories/software-engineering>software engineering</a>
+<span>11 min read</span></p><div class="tags mb-3"><a class="tag is-rounded" href=/categories/software-engineering>software engineering</a>
 <a class="tag is-rounded" href=/categories/infrastructure>infrastructure</a>
 <a class="tag is-rounded" href=/categories/security>security</a></div><div class="tags mb-0"><a class="tag is-rounded" href=/tags/self-hosting>self-hosting</a>
 <a class="tag is-rounded" href=/tags/sovereignty>sovereignty</a>
@@ -127,7 +127,34 @@ a shared inference network rather than all compute being concentrated inside a
 few providers. There are hard problems around privacy, trust, verification,
 model distribution, latency, and malicious nodes, so I do not treat that as a
 solved alternative. It is another possible execution target for specialist
-workloads.</p><h2 id=location-is-not-the-same-as-control>Location is not the same as control</h2><p>A Canadian data centre is useful, but it does not automatically mean Canadian
+workloads.</p><h2 id=sovereignty-can-exist-at-more-than-one-scale>Sovereignty can exist at more than one scale</h2><p>One thing Dubnium has made clearer to me is that sovereignty does not have to
+mean one person operating every service alone.</p><p>At the personal scale, Dubnium is a rebuildable workstation and AI control
+plane. The direction of the project is increasingly about boundaries rather than
+ownership for its own sake: the Supervisor Gateway is intended to be the only
+component that talks directly to raw model runtimes; the Capability Gateway
+separates a proposed effect from authorization and execution; Anthesis owns the
+exact policy decision; and current roadmap work covers multi-user isolation,
+client workstations, provider-neutral AI, and independently recoverable state.</p><p>That architecture changes the question from &ldquo;is this local?&rdquo; to &ldquo;who is allowed
+to do what, where can the workload move, and what survives when one dependency
+disappears?&rdquo;</p><p>There is also a useful community scale between a personal workstation and a
+hyperscale provider. Vancouver&rsquo;s <a href=https://news.z-space.ca/zai/>Z-Space Local AI
+Collective</a> is an early example: members pool
+resources to operate locally hosted AI infrastructure, access models through a
+shared gateway, experiment with community knowledge systems, and keep inference
+in Vancouver. It is still a prototype rather than proof that every governance
+or security problem is solved, but the model matters. Shared infrastructure can
+be locally operated without requiring every participant to own a GPU server.</p><p>That suggests a spectrum rather than a binary choice:</p><div class=mermaid>flowchart LR
+P["Personal\nDubnium / local services"] --> C["Community\nshared local infrastructure"]
+C --> R["Regional / national\nCanadian providers"]
+R --> G["Global providers"]</div><p>The sovereign property is not the box on the left. It is the ability to choose
+the appropriate scale for a workload without surrendering the ability to move
+again later.</p><p>Dubnium&rsquo;s current provider work reinforces that point. One active qualification
+thread uses <a href=https://augureai.ca/>Augure</a> as a concrete test case: a Canadian
+AI provider can improve residency and jurisdictional fit, but &ldquo;Canadian&rdquo; is not
+treated as sufficient evidence by itself. Inference location, retention,
+subprocessors, cross-border failover, and contractual guarantees still have to
+be checked. Local-first and Canada-first are useful policies only when their
+actual trust boundaries are visible.</p><h2 id=location-is-not-the-same-as-control>Location is not the same as control</h2><p>A Canadian data centre is useful, but it does not automatically mean Canadian
 sovereignty. A foreign company can operate servers in Canada and keep the data
 physically here. That solves a residency problem, but it does not necessarily
 solve a control problem.</p><p>Under normal conditions, contracts and privacy rules matter. Under abnormal
