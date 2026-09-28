@@ -13,7 +13,7 @@
 </a><button type=button class="navbar-item themer" aria-label="Use dark theme" aria-pressed=false>
 <span class="icon theme-icon" aria-hidden=true><svg xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#yin-yang"/></svg></span></button></div></div></nav></header><main id=main class=abdomen tabindex=-1><nav class="breadcrumb ml-4 is-small" aria-label=breadcrumbs><ul><li><a href=/>Home</a></li><li><a href=/posts/>Blog</a></li><li class=is-active><a href=/posts/sovereignty-having-an-exit/ aria-current=page>Sovereignty Is Having an Exit</a></li></ul></nav><div class=container><header class="article-header mb-5"><h1 class=title>Sovereignty Is Having an Exit</h1><p class="article-meta is-size-7"><span>By Robert Ryan Jennings</span>
 <span>Published Sep 15, 2026 10:00AM</span>
-<span>14 min read</span></p><div class="tags mb-3"><a class="tag is-rounded" href=/categories/software-engineering>software engineering</a>
+<span>16 min read</span></p><div class="tags mb-3"><a class="tag is-rounded" href=/categories/software-engineering>software engineering</a>
 <a class="tag is-rounded" href=/categories/infrastructure>infrastructure</a>
 <a class="tag is-rounded" href=/categories/security>security</a></div><div class="tags mb-0"><a class="tag is-rounded" href=/tags/self-hosting>self-hosting</a>
 <a class="tag is-rounded" href=/tags/sovereignty>sovereignty</a>
@@ -121,7 +121,28 @@ on cost, capability, privacy, and latency.</p><p>A smaller specialist model may 
 narrow task than the general model coordinating the work. More importantly,
 switching the supervisor does not require replacing the rest of the system.
 That is a more practical form of AI sovereignty for me than insisting
-everything must run locally.</p><h2 id=sovereignty-can-exist-at-more-than-one-scale>Sovereignty can exist at more than one scale</h2><p>One thing Dubnium has made clearer to me is that sovereignty does not have to
+everything must run locally.</p><p>I am interested in moving more of my current ChatGPT usage toward
+<a href=https://augureai.ca/>Augure</a>, but that migration exposes an important limit to
+the idea of provider portability. Replacing an API endpoint is much easier than
+replacing an integrated product.</p><p>Model quality is one part of that. Augure provides its own Canadian-hosted
+models and an OpenAI-compatible API, which makes experimentation comparatively
+cheap, but compatibility at the protocol level does not guarantee equivalent
+reasoning quality across the work I actually do. Coding, architecture review,
+research, long-context synthesis, and agentic tool use all need to be evaluated
+against representative tasks rather than assumed from a model label or
+benchmark.</p><p>The product ecosystem is at least as important. ChatGPT is useful to me not only
+because of the model, but because it can work across services such as Gmail,
+Google Calendar, and GitHub in the same environment. I have not yet found
+documented Augure equivalents for those integrations. Recreating them myself
+would move some dependency from the model provider back into my own
+infrastructure, but it would also create engineering, authentication,
+authorization, maintenance, and security work that the hosted product currently
+absorbs.</p><p>That makes this a migration rather than a switch. I can move bounded workloads
+first, especially ones that already pass through my own supervisor or an
+OpenAI-compatible API, while retaining ChatGPT where model quality or integrated
+tooling still provides a meaningful advantage. The sovereign outcome is not
+that every workload ends up with a Canadian provider. It is that those
+dependencies become visible, testable, and progressively easier to replace.</p><h2 id=sovereignty-can-exist-at-more-than-one-scale>Sovereignty can exist at more than one scale</h2><p>One thing Dubnium has made clearer to me is that sovereignty does not have to
 mean one person operating every service alone.</p><p>At the personal scale, Dubnium is a rebuildable workstation and AI control
 plane. More and more, I care about the boundaries inside it rather than local
 ownership for its own sake: model access is separated from host effects,
@@ -147,7 +168,17 @@ P["Personal\nDubnium / local services"] --> C["Community\nZ-Space + Polar Grid"]
 C --> R["Regional / national\nCanadian providers"]
 R --> G["Global providers"]</div><p>The sovereign property is not the box on the left. It is the ability to choose
 the appropriate scale for a workload without surrendering the ability to move
-again later.</p><h3 id=credentials-are-part-of-sovereignty>Credentials are part of sovereignty</h3><p>There is another sovereignty benefit to keeping the AI control plane local:
+again later.</p><p>There is a national ecosystem dimension too. The
+<a href=https://linuxassociation.ca/government-relations.php>Linux Association of Canada</a>
+lists open-source procurement, open standards, and digital sovereignty among
+its government-relations objectives. In September 2026 it also reported
+<a href=https://linuxassociation.ca/news/57/>more than 5,300 downloads</a> from its
+Canadian open-source software library. A download count is not proof of
+sovereignty, but it does show practical use of a Canadian open-source ecosystem
+alongside the policy discussion. Open-source software can contribute to
+sovereignty because source availability and open standards can make systems
+easier to inspect, reproduce, and move, but those properties still depend on
+licensing, documentation, data portability, and operational capability.</p><h3 id=credentials-are-part-of-sovereignty>Credentials are part of sovereignty</h3><p>There is another sovereignty benefit to keeping the AI control plane local:
 credentials can stay out of places that do not need them.</p><p>Desktop Commander is a concrete example. Its bounded project container can work
 inside a mount such as <code>/home/ryjen/Projects</code>: inspect a repository, edit files,
 run repository-defined tests, and prepare a candidate change. That local
