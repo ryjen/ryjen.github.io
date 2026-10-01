@@ -1,0 +1,185 @@
+<!doctype html><html lang=en-us><head><meta charset=UTF-8><meta http-equiv=x-ua-compatible content="ie=edge"><title>From AI-Native SDLC to Governed Software Delivery | Robert Ryan Jennings</title><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="dark light"><link rel=canonical href=https://ryanjennin.gs/posts/ai-native-sdlc-governed-software-delivery/><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link rel=preload as=style href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;family=JetBrains+Mono:wght@400;600&amp;family=Source+Sans+3:wght@400;500;600&amp;display=swap"><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;family=JetBrains+Mono:wght@400;600&amp;family=Source+Sans+3:wght@400;500;600&amp;display=swap" media=print onload='this.media="all"'><noscript><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;family=JetBrains+Mono:wght@400;600&amp;family=Source+Sans+3:wght@400;500;600&amp;display=swap"></noscript><script>(()=>{const n=document.documentElement,t="light",s="dark";let e=t;try{e=localStorage.getItem("theme")}catch{}e!==t&&e!==s&&(e=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches?s:t),n.dataset.theme=e,n.style.colorScheme=e})()</script><meta name=google-site-verification content="Crk6W-ckoApRrOZrv23ngLwPPTbzjzfZ4AQPElgS0pw"><meta name=description content="The AI-native SDLC gets the bottleneck shift right. My own architecture pushes the idea further: generated artifacts are cheap, but trusted acceptance and …"><meta name=robots content="index, follow"><meta property="og:title" content="From AI-Native SDLC to Governed Software Delivery"><meta property="og:description" content="The AI-native SDLC gets the bottleneck shift right. My own architecture pushes the idea further: generated artifacts are cheap, but trusted acceptance and …"><meta property="og:type" content="article"><meta property="og:url" content="https://ryanjennin.gs/posts/ai-native-sdlc-governed-software-delivery/"><meta property="og:site_name" content="Robert Ryan Jennings"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://ryanjennin.gs/image/blog/ai-native-sdlc-governed-software-delivery.webp"><meta property="article:published_time" content="2026-10-01T00:00:00Z"><meta property="article:modified_time" content="2026-10-01T00:00:00Z"><meta property="article:tag" content="ai"><meta property="article:tag" content="agents"><meta property="article:tag" content="software-engineering"><meta property="article:tag" content="sdlc"><meta property="article:tag" content="governance"><meta property="article:tag" content="security"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="From AI-Native SDLC to Governed Software Delivery"><meta name=twitter:description content="The AI-native SDLC gets the bottleneck shift right. My own architecture pushes the idea further: generated artifacts are cheap, but trusted acceptance and …"><meta name=twitter:image content="https://ryanjennin.gs/image/blog/ai-native-sdlc-governed-software-delivery.webp"><script type=application/ld+json>{"@context":"https://schema.org","@graph":[{"@id":"https://ryanjennin.gs/posts/ai-native-sdlc-governed-software-delivery/#webpage","@type":"WebPage","about":{"@id":"https://ryanjennin.gs/posts/ai-native-sdlc-governed-software-delivery/#article"},"description":"The AI-native SDLC gets the bottleneck shift right. My own architecture pushes the idea further: generated artifacts are cheap, but trusted acceptance and authorized effects must remain explicit.","isPartOf":{"@id":"https://ryanjennin.gs/#website"},"name":"From AI-Native SDLC to Governed Software Delivery","url":"https://ryanjennin.gs/posts/ai-native-sdlc-governed-software-delivery/"},{"@id":"https://ryanjennin.gs/posts/ai-native-sdlc-governed-software-delivery/#article","@type":"BlogPosting","author":{"@id":"https://ryanjennin.gs/#person"},"dateModified":"2026-10-01T00:00:00Z","datePublished":"2026-10-01T00:00:00Z","description":"The AI-native SDLC gets the bottleneck shift right. My own architecture pushes the idea further: generated artifacts are cheap, but trusted acceptance and authorized effects must remain explicit.","headline":"From AI-Native SDLC to Governed Software Delivery","image":"https://ryanjennin.gs/image/blog/ai-native-sdlc-governed-software-delivery.webp","inLanguage":"en-us","isPartOf":{"@id":"https://ryanjennin.gs/#website"},"keywords":"ai, agents, software-engineering, sdlc, governance, security","mainEntityOfPage":{"@id":"https://ryanjennin.gs/posts/ai-native-sdlc-governed-software-delivery/#webpage"},"publisher":{"@id":"https://ryanjennin.gs/#person"},"url":"https://ryanjennin.gs/posts/ai-native-sdlc-governed-software-delivery/"},{"@id":"https://ryanjennin.gs/#person","@type":"Person","description":"Web logs of a software development engineer, musician, artist and hockey player.","image":"https://gravatar.com/avatar/7cb4299e74a72928a9f05e8e910f07d5","name":"Robert Ryan Jennings","sameAs":["https://github.com/ryjen","https://linkedin.com/in/ryjen","https://soundcloud.com/entrobert/sets/favs","https://www.goodreads.com/ryjen"],"url":"https://ryanjennin.gs/about/"}]}</script><link rel=stylesheet href=/css/theme.min.css type=text/css><link href=/css/app.min.5948f18cb0512f9e8929b6c3e292384ce0fa8d2338d0cd897f01949b9dbbeefbb32bb4aad6feff68f356aa0240adab109af0d414d1e513336a4bd16f8060699a.css rel=stylesheet type=text/css integrity="sha512-WUjxjLBRL56JKbbD4pI4TOD6jSM40M2JfwGUm5277vuzK7Sq1v7/aPNWqgJArasQmvDUFNHlEzNqS9FvgGBpmg==" crossorigin=anonymous><style>html[data-theme=dark] body{background-color:#002b36;color:#fdf6e3!important}html[data-theme=dark] body a{color:#268bd2}html[data-theme=dark] body .icon{fill:#fdf6e3;stroke:#fdf6e3}html[data-theme=dark] body .box,html[data-theme=dark] body .card{background-color:#073642}html[data-theme=dark] body code,html[data-theme=dark] body pre{background-color:#657b83;color:#002b36}html[data-theme=dark] body hr{background-color:#657b83}</style></head><body><script>(function(){var s,t="light",n="dark",e=null;try{e=window.localStorage.getItem("theme")}catch{e=null}s=e||(window.matchMedia("(prefers-color-scheme: dark)").matches?n:t),document.body.classList.remove(t,n),document.body.classList.add(s)})()</script><a class=skip-link href=#main>Skip to main content</a><header id=header class=shoulders><nav class=navbar role=navigation aria-label="main navigation"><div class=navbar-brand><a class=navbar-item href=/><figure class="image is-32x32"><img class=is-rounded src=https://gravatar.com/avatar/7cb4299e74a72928a9f05e8e910f07d5 alt width=32 height=32></figure><span class=navbar-brand-title>robert ryan jennings</span>
+</a><button type=button class=navbar-burger aria-label="Open main navigation" aria-expanded=false aria-controls=nav data-target=nav>
+<span aria-hidden=true></span>
+<span aria-hidden=true></span>
+<span aria-hidden=true></span></button></div><div id=nav class=navbar-menu><div class=navbar-end><a class="navbar-item mr-3" href=/posts><span class="icon is-small mr-2"><svg xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#rss"/></svg>
+</span>blog
+</a><a class="navbar-item mr-3" href=/art><span class="icon is-small mr-2"><svg xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#icons"/></svg>
+</span>art
+</a><a class="navbar-item mr-3" href=/things><span class="icon is-small mr-2"><svg xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#object-ungroup"/></svg>
+</span>things
+</a><a class="navbar-item mr-3" href=/about><span class="icon is-small mr-2"><svg xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#circle-info"/></svg>
+</span>about
+</a><button type=button class="navbar-item themer" aria-label="Use dark theme" aria-pressed=false>
+<span class="icon theme-icon" aria-hidden=true><svg xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#yin-yang"/></svg></span></button></div></div></nav></header><main id=main class=abdomen tabindex=-1><nav class="breadcrumb ml-4 is-small" aria-label=breadcrumbs><ul><li><a href=/>Home</a></li><li><a href=/posts/>Blog</a></li><li class=is-active><a href=/posts/ai-native-sdlc-governed-software-delivery/ aria-current=page>From AI-Native SDLC to Governed Software Delivery</a></li></ul></nav><div class=container><header class="article-header mb-5"><h1 class=title>From AI-Native SDLC to Governed Software Delivery</h1><p class="article-meta is-size-7"><span>By Robert Ryan Jennings</span>
+<span>Published Oct 1, 2026 12:00AM</span>
+<span>9 min read</span></p><div class="tags mb-3"><a class="tag is-rounded" href=/categories/software-engineering>software engineering</a>
+<a class="tag is-rounded" href=/categories/artificial-intelligence>artificial intelligence</a>
+<a class="tag is-rounded" href=/categories/security>security</a></div><div class="tags mb-0"><a class="tag is-rounded" href=/tags/ai>ai</a>
+<a class="tag is-rounded" href=/tags/agents>agents</a>
+<a class="tag is-rounded" href=/tags/software-engineering>software-engineering</a>
+<a class="tag is-rounded" href=/tags/sdlc>sdlc</a>
+<a class="tag is-rounded" href=/tags/governance>governance</a>
+<a class="tag is-rounded" href=/tags/security>security</a></div></header><figure class="article-image mb-5"><picture><source type=image/webp srcset="/image/blog/ai-native-sdlc-governed-software-delivery_hu_3c798f83bfb4f249.webp 480w, /image/blog/ai-native-sdlc-governed-software-delivery_hu_78684ffb0920fc34.webp 960w, /image/blog/ai-native-sdlc-governed-software-delivery_hu_d553142007ba9b2d.webp 1440w, /image/blog/ai-native-sdlc-governed-software-delivery_hu_dd476aac4744fd4e.webp 1672w" sizes="(min-width: 900px) 860px, 100vw"><img src=/image/blog/ai-native-sdlc-governed-software-delivery_hu_13562b4bfb7a240e.webp srcset="/image/blog/ai-native-sdlc-governed-software-delivery_hu_4bf2d3f2268c24a1.webp 480w, /image/blog/ai-native-sdlc-governed-software-delivery_hu_6e3f91f285600702.webp 960w, /image/blog/ai-native-sdlc-governed-software-delivery_hu_1bb64689237ded78.webp 1440w, /image/blog/ai-native-sdlc-governed-software-delivery_hu_13562b4bfb7a240e.webp 1672w" sizes="(min-width: 900px) 860px, 100vw" alt="From AI-Native SDLC to Governed Software Delivery" width=1672 height=941 fetchpriority=high loading=eager decoding=async class=article-image-img></picture></figure><div class=tts-controls data-tts-controls hidden><button type=button class="button is-small" data-tts-toggle data-tts-target=post-content>
+Read this post to me</button><p class=tts-status data-tts-status aria-live=polite></p></div><div class="content article-content" id=post-content data-tts-content><p>Andre Kaminski&rsquo;s <em>The AI-Native Software Development Lifecycle</em> puts a useful
+name around a change I have been feeling in my own engineering work: once AI can
+produce code, tests, documentation, migrations, and implementation alternatives
+quickly, <strong>implementation is no longer the obvious organizing constraint of the
+software-development lifecycle</strong>.</p><p>That does not make engineering easier. It moves the bottleneck.</p><p>The scarce resource becomes confidence: knowing that a proposed change matches
+intent, respects architecture and policy, is independently verified, and is
+actually authorized to affect the system.</p><p>That is where the book&rsquo;s framing overlaps strongly with the architecture I have
+been building across Anthesis, Dubnium, Invokrum, Keylix, and the
+agent-delivery playbook.</p><p>But there is also an important difference.</p><p>The book is intentionally somewhat absolutist. Saying that traditional software
+development has &ldquo;died&rdquo; is useful rhetoric because it forces the scale of the
+change into view. I do not read it literally.</p><p>Traditional SDLC and product-development models are still useful. What changes
+is where they sit.</p><p>At the <strong>macro level</strong>, the overall delivery system becomes AI-native: work is
+decomposed, routed to specialists, executed in bounded loops, verified, governed,
+and assembled into a larger outcome.</p><p>At the <strong>micro level</strong>, an individual specialist may still use a very traditional
+lifecycle inside its prompt or execution loop:</p><div class=mermaid>flowchart TD
+Macro[AI-native macro lifecycle]
+Macro --> S1[Software specialist]
+Macro --> S2[Investigation specialist]
+Macro --> S3[Product specialist]
+Macro --> S4[Security specialist]
+S1 --> L1[Requirements -> Design -> Implement -> Test]
+S2 --> L2[Discover -> Hypothesize -> Experiment -> Evaluate]
+S3 --> L3[Problem -> Options -> Prototype -> Validate]
+S4 --> L4[Threat model -> Control -> Verify -> Report]
+L1 --> Integrate[Governed integration + acceptance]
+L2 --> Integrate
+L3 --> Integrate
+L4 --> Integrate</div><p>Those patterns did not become wrong. They became composable subroutines.</p><p>The distinction I find most useful is therefore:</p><blockquote><p><strong>AI-native macro, traditional micro.</strong></p></blockquote><p>A mature agentic system can preserve decades of useful engineering and product
+practice inside specialist loops without requiring the entire organization to be
+structured around the assumption that humans manually execute every lifecycle
+stage.</p><p>The AI-native SDLC is primarily a <strong>lifecycle and organizational model</strong>. My
+work increasingly treats AI-native development as an <strong>authority and evidence
+problem</strong> as well.</p><h2 id=where-i-agree>Where I agree</h2><p>The traditional delivery model is implicitly organized around expensive human
+implementation:</p><div class=mermaid>flowchart LR
+R[Requirements] --> D[Design]
+D --> H[Human implementation]
+H --> V[Review]
+V --> T[Test]
+T --> P[Deploy]</div><p>When implementation becomes cheap, the surrounding work becomes relatively more
+important:</p><div class=mermaid>flowchart LR
+I[Intent] --> C[Constraints + architecture]
+C --> G[Machine-assisted implementation]
+G --> V[Independent verification]
+V --> A[Acceptance]
+A --> O[Deployment + observation]</div><p>This matches how I already try to work with coding agents:</p><ol><li>define the problem, constraints, and expected evidence;</li><li>let a model propose or implement a bounded change;</li><li>inspect the diff rather than trusting the explanation;</li><li>run tests, static analysis, builds, and security checks;</li><li>feed failures back into another bounded iteration;</li><li>accept the change only when the evidence supports it.</li></ol><p>The useful mental model is:</p><blockquote><p><strong>Generation is cheap. Trustworthy acceptance is expensive.</strong></p></blockquote><p>That is a much better optimization target than &ldquo;how many lines of code can an
+agent write?&rdquo;</p><p>It also explains why traditional lifecycle discipline still matters inside the
+system. If one specialist is implementing a bounded component, the familiar
+sequence of requirements, design, implementation, tests, and review can still be
+exactly the right local control loop. The difference is that the outer system can
+instantiate, compose, repeat, or replace that loop dynamically rather than making
+it the shape of the entire delivery organization.</p><h2 id=where-my-architecture-goes-further>Where my architecture goes further</h2><p>A lifecycle model can say that an agent should implement a task and that quality
+gates should verify it. A production control architecture also has to answer
+questions such as:</p><ul><li>Which agent is this?</li><li>On whose behalf is it acting?</li><li>Which repository, branch, tool, or environment may it touch?</li><li>Which exact operation was authorized?</li><li>Is the evidence about the same candidate that will be merged or deployed?</li><li>Has anything policy-relevant changed since approval?</li><li>Can a verifier accidentally grant authority?</li><li>Can an agent promote its own output into trusted memory or policy?</li><li>What happens when a repair loop keeps failing?</li></ul><p>Those questions are the difference between <strong>AI-assisted workflow</strong> and
+<strong>governed actuation</strong>.</p><p>The architecture I am converging on looks closer to this:</p><div class=mermaid>flowchart TD
+H[Human intent] --> B[Bounded task / specification]
+B --> S[Agent or specialist]
+S --> C[Proposed change]
+S --> CL[Claims]
+C --> V[Independent verification]
+CL --> V
+V --> E[Attributable evidence]
+E --> P[Policy evaluation]
+P -->|reject / escalate| X[Stop or obtain more input]
+P -->|approve exact effect| G[Capability boundary]
+G --> M[Commit / merge / deploy / publish / mutate]
+M --> O[Observation + audit]</div><p>The key distinction is that several things which are often collapsed into
+&ldquo;agent autonomy&rdquo; remain separate.</p><h3 id=evidence-is-not-authority>Evidence is not authority</h3><p>A passing test, a successful security check, or a model saying &ldquo;this looks
+correct&rdquo; is evidence.</p><p>It is not permission.</p><p>Anthesis is intended to interpret evidence through policy and approval rules.
+The verifier does not get to promote its own result into authorization.</p><h3 id=identity-is-not-inherited-implicitly>Identity is not inherited implicitly</h3><p>An agent should not simply inherit the full authority of the human who launched
+it.</p><p>Keylix and related identity work treat agents and execution components as
+distinct principals where practical, with attributable credentials and bounded
+delegation.</p><p>That matters as soon as an agent can do more than edit a scratch buffer.</p><h3 id=capabilities-bound-effects>Capabilities bound effects</h3><p>The most consequential boundary is not model inference. It is mutation.</p><p>Reading a repository and proposing a patch is relatively low-risk. Committing,
+signing, merging, deploying, publishing, deleting, rotating credentials, or
+changing policy are qualitatively different operations.</p><p>Dubnium&rsquo;s orchestration and capability-gateway work therefore tries to keep
+reasoning separate from effect authority.</p><p>The agent can ask.</p><p>The boundary decides whether the effect is allowed.</p><h3 id=verification-must-bind-to-the-exact-candidate>Verification must bind to the exact candidate</h3><p>&ldquo;Tests passed&rdquo; is not useful evidence if the tested artifact is not exactly the
+artifact that will be merged or deployed.</p><p>The workflow therefore needs provenance and exact-subject binding:</p><div class=mermaid>flowchart TD
+A[Candidate A]
+A --> T[Tests]
+A --> S[Security checks]
+A --> R[Review]
+T --> E[Evidence for A]
+S --> E
+R --> E
+E --> Z[Authorization for A]
+Z --> F[Effect on A]</div><p>If the candidate changes, relevant evidence and authorization may need to be
+re-established.</p><h3 id=learning-is-also-a-governed-effect>Learning is also a governed effect</h3><p>Agent memory is another place where authority can quietly leak.</p><p>A failed agent run should not be able to write &ldquo;the correct way to do this&rdquo; into
+trusted project knowledge merely because it reached a conclusion.</p><p>I increasingly treat learning as a promotion pipeline:</p><div class=mermaid>flowchart LR
+O[Observation] --> C[Candidate lesson]
+C --> R[Review / verification]
+R --> G[Governed promotion]
+G --> K[Trusted persistent knowledge]</div><p>This is the same separation-of-duties principle applied to memory.</p><h2 id=how-the-projects-divide-the-problem>How the projects divide the problem</h2><p>The pieces are intentionally separate rather than becoming one giant
+&ldquo;AI platform&rdquo;:</p><ul><li><strong>agent-delivery-playbook</strong> defines the vendor-neutral workflow, trust model,
+evidence expectations, risk tiers, and enforcement mapping.</li><li><strong>Dubnium</strong> owns local orchestration, model/runtime boundaries, specialists,
+scheduling, and bounded execution paths.</li><li><strong>Anthesis</strong> focuses on policy, approvals, evidence interpretation,
+provenance, and governed decisions.</li><li><strong>Invokrum</strong> provides portable invocation and execution-evidence contracts.</li><li><strong>Keylix</strong> handles identity and security properties such as sender binding.</li><li>Capability gateways sit at the boundary where a proposal becomes a mutable
+operation.</li></ul><p>That split is deliberate. Orchestration should not silently become policy.
+Verification should not become authorization. A portable evidence schema should
+not become the executor. A model should not become the security boundary.</p><h2 id=the-resulting-workflow>The resulting workflow</h2><p>The practical workflow is therefore slightly stricter than the generic
+AI-native SDLC:</p><div class=mermaid>flowchart LR
+S[Specify] --> C[Constrain]
+C --> G[Generate]
+G --> I[Inspect]
+I --> V[Verify]
+V --> E[Collect evidence]
+E --> P[Evaluate policy]
+P --> A[Approve where required]
+A --> Z[Authorize exact capability]
+Z --> M[Mutate]
+M --> O[Observe]
+O --> L[Governed learning promotion]
+L --> S</div><p>Humans do not need to manually perform every step. In fact, the point is to
+automate more of them.</p><p>But automation should remove mechanical work without erasing the distinctions
+that make the result trustworthy.</p><h2 id=a-small-ai-role-taxonomy>A small AI-role taxonomy</h2><p>&ldquo;AI&rdquo; is now broad enough that it often hides more than it explains. I find it
+useful to separate a few kinds of work:</p><table><thead><tr><th>Term</th><th>Primary focus</th></tr></thead><tbody><tr><td><strong>AI Research</strong></td><td>New models, algorithms, architectures, and learning methods</td></tr><tr><td><strong>ML / Data Science</strong></td><td>Statistical modeling, experiments, inference, and evaluation</td></tr><tr><td><strong>AI Engineering</strong></td><td>Production AI systems, inference, agents, evals, reliability, and observability</td></tr><tr><td><strong>Applied AI</strong></td><td>Applying AI to concrete product, workflow, or domain problems</td></tr><tr><td><strong>AI Platform / Governance</strong></td><td>Identity, capabilities, policy, provenance, audit, orchestration, and organizational controls</td></tr><tr><td><strong>Business AI</strong></td><td>Commercial and operational applications such as sales, support, product operations, and decision support</td></tr></tbody></table><p>These overlap. They are not credentials or status levels; they are useful labels
+for the primary problem being solved.</p><p>My own work currently sits mostly at the intersection of <strong>Applied AI, AI
+Engineering, and AI Platform / Governance</strong>, with software architecture and
+security cutting across all three.</p><p>That distinction matters because simply <em>using</em> an AI system is not the same as
+engineering one, just as using a database does not make every application role
+database engineering.</p><h2 id=another-abstraction-layer>Another abstraction layer</h2><p>There is another way I think about this transition.</p><p>Software development has repeatedly moved upward through layers of abstraction:</p><div class=mermaid>flowchart LR
+A[Assembly / machine-level instructions] --> B[Programming languages]
+B --> C[Compiler + runtime]
+C --> D[AI intent / prompts]
+D --> E[Governance + verification]</div><p>Assembly did not disappear when higher-level languages arrived. It became a
+lower-level implementation detail most programmers rarely manipulate directly.</p><p>Likewise, programming languages and compilers do not disappear in an AI-native
+workflow. They become another execution layer beneath a higher-level interface
+based increasingly on intent, constraints, prompts, context, and delegated
+tasks.</p><p>But there is an important difference.</p><p>A compiler is expected to be deterministic with respect to its input and
+language semantics. An AI system is probabilistic, context-sensitive, and often
+capable of invoking tools or causing side effects.</p><p>So the next abstraction layer cannot be just:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>natural language -&gt; code
+</span></span></code></pre></div><p>It needs to be closer to:</p><div class=mermaid>flowchart LR
+I[Intent / prompt] --> A[AI / agent]
+A --> C[Candidate artifact or action]
+C --> V[Verification]
+V --> P[Policy + governance]
+P --> E[Authorized effect]</div><p>That is why governance is not an optional wrapper around AI-assisted
+development. It plays part of the role that type systems, compilers, runtimes,
+test systems, and operating-system boundaries have played at earlier abstraction
+layers: constraining what a more expressive interface is allowed to turn into.</p><p>The analogy is not exact, but it captures the direction:</p><blockquote><p><strong>assembly -> programming language/compiler -> AI/prompts/governance</strong></p></blockquote><p>Each layer raises the level at which humans express intent. Each lower layer
+still matters. And each increase in expressive power needs a corresponding
+control system beneath it.</p><h2 id=the-deeper-shift>The deeper shift</h2><p>The interesting consequence of AI-native development is not that programmers
+type less code.</p><p>It is that <strong>software engineering becomes increasingly concerned with the
+control system around code generation</strong>.</p><p>The engineering questions move from:</p><blockquote><p>Can we produce this implementation?</p></blockquote><p>toward:</p><blockquote><p>Can we establish, cheaply and repeatedly, that this is the implementation we
+intended, that it satisfies the required properties, and that the actor
+applying it has exactly the authority needed to do so?</p></blockquote><p>That is the part of the AI-native transition I find most interesting.</p><p>The code generator may eventually become almost interchangeable.</p><p>The architecture that decides what to trust, what to permit, and what evidence
+is sufficient will not.</p><h2 id=references>References</h2><ul><li>Andre Kaminski, <em>The AI-Native Software Development Lifecycle</em></li><li><a href=https://www.linkedin.com/posts/andrekaminski_i-just-published-a-new-book-it-started-activity-7404505199597252608-che8>Andre Kaminski&rsquo;s announcement of the book</a></li><li><a href=https://theainativeproject.org/ai-software-development-lifecycle/>AI Software Development Lifecycle</a></li></ul></div></div></main><footer id=footer class=legs><div class="has-text-centered content"><div class=footer-links><nav aria-label="Footer quick links" class=footer-links-row><a class="tag is-rounded" href=/archive>Archive</a>
+<a class="tag is-rounded" href=/posts/index.xml>RSS</a>
+<a class="tag is-rounded" href=https://micrantha.com target=_blank rel=noopener>Micrantha</a></nav><nav aria-label="Footer social links" class=footer-links-row><a class="tag is-rounded" href=https://github.com/ryjen target=_blank rel=noopener>GitHub</a>
+<a class="tag is-rounded" href=https://linkedin.com/in/ryjen target=_blank rel=noopener>LinkedIn</a>
+<a class="tag is-rounded" href=mailto:robert@ryanjennin.gs>Email</a></nav></div><div class="is-flex is-align-items-center is-justify-content-center footer-actions"><div class=footer-theme-toggle><button class=themer type=button aria-label="Use dark theme" aria-pressed=false>
+<span class="icon theme-icon" aria-hidden=true><svg xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#yin-yang"/></svg></span></button></div><a href=mailto:robert@ryanjennin.gs>Report a Site Issue</a></div><div class=copyright>© all rights reserved, ryan jennings</div></div></footer><script src=/js/theme.bundle.min.f02a1da3d31fa34d2ca1bdf7075abe44699f1546cc5b0c25d6e8981ea5671c4b0dfa24545d495449c7de8ba0c83f6d22535ffb2705a834f1ef10c00e3273c034.js defer integrity="sha512-8Codo9Mfo00sob33B1q+RGmfFUbMWwwl1uiYHqVnHEsN+iRUXUlUScfei6DIP20iU1/7JwWoNPHvEMAOMnPANA==" crossorigin=anonymous></script><script type=module>
+  const mermaidBlocks = document.querySelectorAll(".mermaid");
+  if (mermaidBlocks.length > 0) {
+    const { default: mermaid } = await import("https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs");
+    mermaid.initialize({
+      securityLevel: "loose",
+      theme: document.body.classList.contains("dark") ? "dark" : "default",
+    });
+    await mermaid.run({
+      nodes: mermaidBlocks,
+    });
+  }
+</script><script src=/js/tts.min.bdfb85e4ba900c01c13f9c8b9b0420422af9e965fcf1f02143ee1bf48b3629ed8c7f23ade7e5840f34718ff9d61ec5f637fc471806c4f40c11095cacea05c8b7.js defer integrity="sha512-vfuF5LqQDAHBP5yLmwQgQir56WX88fAhQ+4b9Is2Ke2MfyOt5+WEDzRxj/nWHsX2N/xHGAbE9AwRCVys6gXItw==" crossorigin=anonymous></script></body></html>
