@@ -1,0 +1,231 @@
+<!doctype html><html lang=en-us><head><meta charset=UTF-8><meta http-equiv=x-ua-compatible content="ie=edge"><title>BMAD and Micrantha: Workflow Discipline on a Governed Substrate | Robert Ryan Jennings</title><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="dark light"><link rel=canonical href=https://ryanjennin.gs/posts/bmad-and-micrantha/><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link rel=preload as=style href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;family=JetBrains+Mono:wght@400;600&amp;family=Source+Sans+3:wght@400;500;600&amp;display=swap"><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;family=JetBrains+Mono:wght@400;600&amp;family=Source+Sans+3:wght@400;500;600&amp;display=swap" media=print onload='this.media="all"'><noscript><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;family=JetBrains+Mono:wght@400;600&amp;family=Source+Sans+3:wght@400;500;600&amp;display=swap"></noscript><script>(()=>{const n=document.documentElement,t="light",s="dark";let e=t;try{e=localStorage.getItem("theme")}catch{}e!==t&&e!==s&&(e=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches?s:t),n.dataset.theme=e,n.style.colorScheme=e})()</script><meta name=google-site-verification content="Crk6W-ckoApRrOZrv23ngLwPPTbzjzfZ4AQPElgS0pw"><meta name=description content="BMAD and Micrantha converge on several autonomous-development mechanics, but differ in where context, identity, authority, durable state, repository truth, and …"><meta name=robots content="index, follow"><meta property="og:title" content="BMAD and Micrantha: Workflow Discipline on a Governed Substrate"><meta property="og:description" content="BMAD and Micrantha converge on several autonomous-development mechanics, but differ in where context, identity, authority, durable state, repository truth, and …"><meta property="og:type" content="article"><meta property="og:url" content="https://ryanjennin.gs/posts/bmad-and-micrantha/"><meta property="og:site_name" content="Robert Ryan Jennings"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://ryanjennin.gs/image/blog/bmad-and-micrantha-cover.webp"><meta property="article:published_time" content="2026-10-01T00:00:00Z"><meta property="article:modified_time" content="2026-10-01T00:00:00Z"><meta property="article:tag" content="ai"><meta property="article:tag" content="agents"><meta property="article:tag" content="software-engineering"><meta property="article:tag" content="sdlc"><meta property="article:tag" content="governance"><meta property="article:tag" content="bmad"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="BMAD and Micrantha: Workflow Discipline on a Governed Substrate"><meta name=twitter:description content="BMAD and Micrantha converge on several autonomous-development mechanics, but differ in where context, identity, authority, durable state, repository truth, and …"><meta name=twitter:image content="https://ryanjennin.gs/image/blog/bmad-and-micrantha-cover.webp"><script type=application/ld+json>{"@context":"https://schema.org","@graph":[{"@id":"https://ryanjennin.gs/posts/bmad-and-micrantha/#webpage","@type":"WebPage","about":{"@id":"https://ryanjennin.gs/posts/bmad-and-micrantha/#article"},"description":"BMAD and Micrantha converge on several autonomous-development mechanics, but differ in where context, identity, authority, durable state, repository truth, and evidence live.","isPartOf":{"@id":"https://ryanjennin.gs/#website"},"name":"BMAD and Micrantha: Workflow Discipline on a Governed Substrate","url":"https://ryanjennin.gs/posts/bmad-and-micrantha/"},{"@id":"https://ryanjennin.gs/posts/bmad-and-micrantha/#article","@type":"BlogPosting","author":{"@id":"https://ryanjennin.gs/#person"},"dateModified":"2026-10-01T00:00:00Z","datePublished":"2026-10-01T00:00:00Z","description":"BMAD and Micrantha converge on several autonomous-development mechanics, but differ in where context, identity, authority, durable state, repository truth, and evidence live.","headline":"BMAD and Micrantha: Workflow Discipline on a Governed Substrate","image":"https://ryanjennin.gs/image/blog/bmad-and-micrantha-cover.webp","inLanguage":"en-us","isPartOf":{"@id":"https://ryanjennin.gs/#website"},"keywords":"ai, agents, software-engineering, sdlc, governance, bmad","mainEntityOfPage":{"@id":"https://ryanjennin.gs/posts/bmad-and-micrantha/#webpage"},"publisher":{"@id":"https://ryanjennin.gs/#person"},"url":"https://ryanjennin.gs/posts/bmad-and-micrantha/"},{"@id":"https://ryanjennin.gs/#person","@type":"Person","description":"Web logs of a software development engineer, musician, artist and hockey player.","image":"https://gravatar.com/avatar/7cb4299e74a72928a9f05e8e910f07d5","name":"Robert Ryan Jennings","sameAs":["https://github.com/ryjen","https://linkedin.com/in/ryjen","https://soundcloud.com/entrobert/sets/favs","https://www.goodreads.com/ryjen"],"url":"https://ryanjennin.gs/about/"}]}</script><link rel=stylesheet href=/css/theme.min.css type=text/css><link href=/css/app.min.5948f18cb0512f9e8929b6c3e292384ce0fa8d2338d0cd897f01949b9dbbeefbb32bb4aad6feff68f356aa0240adab109af0d414d1e513336a4bd16f8060699a.css rel=stylesheet type=text/css integrity="sha512-WUjxjLBRL56JKbbD4pI4TOD6jSM40M2JfwGUm5277vuzK7Sq1v7/aPNWqgJArasQmvDUFNHlEzNqS9FvgGBpmg==" crossorigin=anonymous><style>html[data-theme=dark] body{background-color:#002b36;color:#fdf6e3!important}html[data-theme=dark] body a{color:#268bd2}html[data-theme=dark] body .icon{fill:#fdf6e3;stroke:#fdf6e3}html[data-theme=dark] body .box,html[data-theme=dark] body .card{background-color:#073642}html[data-theme=dark] body code,html[data-theme=dark] body pre{background-color:#657b83;color:#002b36}html[data-theme=dark] body hr{background-color:#657b83}</style></head><body><script>(function(){var s,t="light",n="dark",e=null;try{e=window.localStorage.getItem("theme")}catch{e=null}s=e||(window.matchMedia("(prefers-color-scheme: dark)").matches?n:t),document.body.classList.remove(t,n),document.body.classList.add(s)})()</script><a class=skip-link href=#main>Skip to main content</a><header id=header class=shoulders><nav class=navbar role=navigation aria-label="main navigation"><div class=navbar-brand><a class=navbar-item href=/><figure class="image is-32x32"><img class=is-rounded src=https://gravatar.com/avatar/7cb4299e74a72928a9f05e8e910f07d5 alt width=32 height=32></figure><span class=navbar-brand-title>robert ryan jennings</span>
+</a><button type=button class=navbar-burger aria-label="Open main navigation" aria-expanded=false aria-controls=nav data-target=nav>
+<span aria-hidden=true></span>
+<span aria-hidden=true></span>
+<span aria-hidden=true></span></button></div><div id=nav class=navbar-menu><div class=navbar-end><a class="navbar-item mr-3" href=/posts><span class="icon is-small mr-2"><svg xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#rss"/></svg>
+</span>blog
+</a><a class="navbar-item mr-3" href=/art><span class="icon is-small mr-2"><svg xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#icons"/></svg>
+</span>art
+</a><a class="navbar-item mr-3" href=/things><span class="icon is-small mr-2"><svg xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#object-ungroup"/></svg>
+</span>things
+</a><a class="navbar-item mr-3" href=/about><span class="icon is-small mr-2"><svg xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#circle-info"/></svg>
+</span>about
+</a><button type=button class="navbar-item themer" aria-label="Use dark theme" aria-pressed=false>
+<span class="icon theme-icon" aria-hidden=true><svg xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#yin-yang"/></svg></span></button></div></div></nav></header><main id=main class=abdomen tabindex=-1><nav class="breadcrumb ml-4 is-small" aria-label=breadcrumbs><ul><li><a href=/>Home</a></li><li><a href=/posts/>Blog</a></li><li class=is-active><a href=/posts/bmad-and-micrantha/ aria-current=page>BMAD and Micrantha: Workflow Discipline on a Governed Substrate</a></li></ul></nav><div class=container><header class="article-header mb-5"><h1 class=title>BMAD and Micrantha: Workflow Discipline on a Governed Substrate</h1><p class="article-meta is-size-7"><span>By Robert Ryan Jennings</span>
+<span>Published Oct 1, 2026 12:00AM</span>
+<span>9 min read</span></p><div class="tags mb-3"><a class="tag is-rounded" href=/categories/software-engineering>software engineering</a>
+<a class="tag is-rounded" href=/categories/artificial-intelligence>artificial intelligence</a>
+<a class="tag is-rounded" href=/categories/security>security</a></div><div class="tags mb-0"><a class="tag is-rounded" href=/tags/ai>ai</a>
+<a class="tag is-rounded" href=/tags/agents>agents</a>
+<a class="tag is-rounded" href=/tags/software-engineering>software-engineering</a>
+<a class="tag is-rounded" href=/tags/sdlc>sdlc</a>
+<a class="tag is-rounded" href=/tags/governance>governance</a>
+<a class="tag is-rounded" href=/tags/bmad>bmad</a></div></header><figure class="article-image mb-5"><picture><source type=image/webp srcset="/image/blog/bmad-and-micrantha-cover_hu_6f415640e5a9c15e.webp 480w, /image/blog/bmad-and-micrantha-cover_hu_96da73644c555e91.webp 960w, /image/blog/bmad-and-micrantha-cover_hu_c3cef077455490b1.webp 1440w, /image/blog/bmad-and-micrantha-cover_hu_58d93ca76f2c980a.webp 1731w" sizes="(min-width: 900px) 860px, 100vw"><img src=/image/blog/bmad-and-micrantha-cover_hu_ca2d15c11bb03fe6.webp srcset="/image/blog/bmad-and-micrantha-cover_hu_d530eacfb0d65ff2.webp 480w, /image/blog/bmad-and-micrantha-cover_hu_c3eaa7a3e348e420.webp 960w, /image/blog/bmad-and-micrantha-cover_hu_4d014e4197f3c292.webp 1440w, /image/blog/bmad-and-micrantha-cover_hu_ca2d15c11bb03fe6.webp 1731w" sizes="(min-width: 900px) 860px, 100vw" alt="BMAD and Micrantha: Workflow Discipline on a Governed Substrate" width=1731 height=909 fetchpriority=high loading=eager decoding=async class=article-image-img></picture></figure><div class=tts-controls data-tts-controls hidden><button type=button class="button is-small" data-tts-toggle data-tts-target=post-content>
+Read this post to me</button><p class=tts-status data-tts-status aria-live=polite></p></div><div class="content article-content" id=post-content data-tts-content><p>I recently reviewed <a href=https://github.com/bmad-code-org/BMAD-METHOD>BMAD Method</a>
+against the agentic software-delivery architecture I have been building across
+Micrantha.</p><p>The interesting result is not just that they overlap. Micrantha&rsquo;s components
+appear to accommodate BMAD coherently despite never being designed around it.</p><p>BMAD emphasizes structured planning, bounded implementation units, durable
+handoffs, specialized agents, verification, and explicit workflow state. Its
+unattended build model is particularly sensible: one worker handles one bounded
+unit and reports a terminal result, while an orchestrator decides what happens
+next.</p><p>That is close to the model I have arrived at for long-running agent work:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>Run = Goal + Context + Policy + State + Evidence + Budget
+</span></span></code></pre></div><p>A graph, ticket tree, workflow, or state machine may organize a particular run,
+but none is the first-class abstraction. They are possible projections of
+context and current state.</p><p>The major difference is <strong>where those responsibilities live</strong>.</p><h2 id=similar-mechanics-different-boundaries>Similar mechanics, different boundaries</h2><p>BMAD is increasingly more than prompt convention. Its unattended tooling
+includes deterministic orchestration, resumable state, bounded retries and
+gates, and workspace isolation.</p><p>Micrantha goes one level lower by separating those concerns into independently
+owned components and sources of truth.</p><table><thead><tr><th>Concern</th><th>BMAD emphasis</th><th>Micrantha owner</th></tr></thead><tbody><tr><td>Work decomposition</td><td>Stories, plans, workflows</td><td>Project context and SDLC contracts</td></tr><tr><td>Effective context</td><td>Project context and customization</td><td>Invokrum</td></tr><tr><td>Reasoning/orchestration</td><td>Worker + orchestrator</td><td>Dubnium Supervisor</td></tr><tr><td>Model access</td><td>Host/provider integration</td><td>Supervisor Gateway</td></tr><tr><td>Tool/effect mediation</td><td>Host tooling</td><td>Capability / Operator Gateway</td></tr><tr><td>Durable runtime state</td><td>Loop/run state</td><td>Memory API</td></tr><tr><td>Identity and delegation</td><td>Host/session identity</td><td>Keylix</td></tr><tr><td>Policy and authorization</td><td>Workflow/host integration</td><td>Anthesis + Keylix</td></tr><tr><td>Repository topology and state</td><td>Build/VCS workflow</td><td>Repora</td></tr><tr><td>Mutable execution state</td><td>Worktree/environment</td><td>Sandcastle</td></tr><tr><td>Verification</td><td>BMAD/TEA workflows</td><td>Testule</td></tr></tbody></table><p>Conceptually:</p><div class=mermaid>flowchart TD
+B["BMAD<br>methodology + development context"]
+B --> I["Invokrum<br>exact effective context"]
+I --> S["Dubnium Supervisor<br>reasoning + orchestration"]
+S --> SG["Supervisor Gateway<br>model boundary"]
+S --> CG["Capability / Operator Gateway<br>effect boundary"]
+S --> M["Memory API<br>durable runtime state"]
+CG --> K["Keylix<br>identity + delegation + proof"]
+K --> A["Anthesis<br>policy + approval + authorization"]
+A --> R["Repora<br>repository truth + controlled effects"]
+A --> SC["Sandcastle<br>workspace lineage"]
+A --> T["Testule<br>verification evidence"]</div><p>BMAD can contribute methodology, decomposition, and development context that
+tell an agent what work makes sense next. That does not mean the workflow itself
+automatically becomes the identity, authority, source of truth, or execution
+boundary for everything that follows.</p><h2 id=the-accidental-fit-is-the-interesting-part>The accidental fit is the interesting part</h2><p>None of this was designed around BMAD.</p><p>Invokrum emerged because effective context composition needed deterministic
+identity. Keylix emerged because actors, delegated authority, and protected
+effects need authenticated identity rather than self-asserted role metadata.
+Anthesis emerged because authenticated identity still does not imply that an
+effect is authorized.</p><p>Dubnium grew into the runtime around supervision, model access, capability
+mediation, scheduling, recovery, and durable state through the Memory API.
+Repora emerged because repositories themselves needed an explicit model:
+identity, topology, canonical endpoints, observed state, desired state, plans,
+reconciliation, and controlled mutation.</p><p>Sandcastle addresses mutable execution state and lineage. Testule addresses
+portable verification requirements and evidence.</p><p>Only afterward did I place BMAD beside the architecture and notice how cleanly
+the responsibilities lined up.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>independently motivated components
+</span></span><span class=line><span class=cl>              ↓
+</span></span><span class=line><span class=cl>      explicit responsibility boundaries
+</span></span><span class=line><span class=cl>              ↓
+</span></span><span class=line><span class=cl> third-party workflow happens to fit
+</span></span><span class=line><span class=cl>              ↓
+</span></span><span class=line><span class=cl> evidence that the abstractions may compose
+</span></span></code></pre></div><p>That is more interesting than deliberate compatibility.</p><p>It suggests the boundaries may be at roughly the right level: BMAD fits because
+the abstractions are general, not because Micrantha contains BMAD-specific
+knowledge.</p><p>That is not proof that the architecture is correct, but it is a useful
+architectural signal.</p><h3 id=a-second-accidental-fit-strengthens-the-signal>A second accidental fit strengthens the signal</h3><p>Reviewing <a href=https://github.com/github/spec-kit>GitHub Spec Kit</a> afterward made
+that signal stronger.</p><p>BMAD and Spec Kit organize software delivery differently. BMAD leans toward
+roles, workflows, bounded stories, handoffs, and specialized engineering agents.
+Spec Kit leans toward specifications, plans, tasks, artifact analysis, and
+convergence.</p><p>Yet both can map onto essentially the same Micrantha boundaries.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>BMAD                              Spec Kit
+</span></span><span class=line><span class=cl>roles / stories / workflows       specs / plans / tasks
+</span></span><span class=line><span class=cl>TEA / review                      analyze / converge
+</span></span><span class=line><span class=cl>              \                  /
+</span></span><span class=line><span class=cl>               development intent
+</span></span><span class=line><span class=cl>                       ↓
+</span></span><span class=line><span class=cl>                   Invokrum
+</span></span><span class=line><span class=cl>                       ↓
+</span></span><span class=line><span class=cl>               Dubnium Supervisor
+</span></span><span class=line><span class=cl>                       ↓
+</span></span><span class=line><span class=cl>              governed capabilities
+</span></span><span class=line><span class=cl>                       ↓
+</span></span><span class=line><span class=cl>               Keylix + Anthesis
+</span></span><span class=line><span class=cl>                       ↓
+</span></span><span class=line><span class=cl>         Repora / Sandcastle / Testule
+</span></span></code></pre></div><p>That matters because the architecture is no longer merely compatible with one
+external methodology. Two independently designed approaches to agentic software
+development can occupy the methodology layer without requiring the underlying
+identity, authority, state, repository, or evidence models to change.</p><p>The stronger hypothesis is therefore that <strong>software-development methodology is
+replaceable context above the control substrate</strong>.</p><h3 id=micrantha-has-a-native-methodology-stack-too>Micrantha has a native methodology stack too</h3><p>That does not mean Micrantha has no methodology of its own.</p><p>Its native comparable stack is deliberately smaller than BMAD or Spec Kit:
+<strong>RFCs, QART, and ADRs</strong>.</p><ul><li><strong>RFCs</strong> make a proposed architecture explicit enough to challenge before it
+quietly becomes infrastructure.</li><li><strong>QART</strong> makes the consequential choice explicit: Questions, Alternatives,
+Recommendation, and Trade-offs.</li><li><strong>ADRs</strong> preserve the architectural decision that was actually taken, including
+its rationale and consequences.</li></ul><p>They are related, but not a mandatory linear workflow. QART can appear inside an
+RFC, before one, or during review. An ADR normally records a decision after the
+relevant design space has been explored.</p><p>Conceptually:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>BMAD                   Spec Kit                Micrantha-native
+</span></span><span class=line><span class=cl>roles / stories        specs / plans           RFCs
+</span></span><span class=line><span class=cl>workflows              tasks                   QART
+</span></span><span class=line><span class=cl>TEA / review           analyze / converge      ADRs
+</span></span><span class=line><span class=cl>       \                    |                    /
+</span></span><span class=line><span class=cl>                  development intent
+</span></span><span class=line><span class=cl>                           ↓
+</span></span><span class=line><span class=cl>                       Invokrum
+</span></span><span class=line><span class=cl>                exact effective context
+</span></span></code></pre></div><p>I keep wishing more of the early AI systems, agent frameworks, and tool
+architectures had started as RFCs.</p><p>Maybe RFCs are a relic of an earlier Internet culture. If so, I want the relic
+back. They force assumptions, alternatives, risks, and unresolved questions into
+the open before a proposal quietly becomes infrastructure; ADRs preserve what
+was actually decided and why.</p><p>That matters even more in AI, where a prompt format can become a protocol, a
+tool declaration an execution model, or an agent role an identity and authority
+boundary before anyone has really named the decision.</p><p>The distinctions matter:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>proposal
+</span></span><span class=line><span class=cl>   !=
+</span></span><span class=line><span class=cl>decision
+</span></span><span class=line><span class=cl>   !=
+</span></span><span class=line><span class=cl>implementation
+</span></span><span class=line><span class=cl>   !=
+</span></span><span class=line><span class=cl>evidence
+</span></span><span class=line><span class=cl>   !=
+</span></span><span class=line><span class=cl>authority
+</span></span></code></pre></div><p>Code can show what survived. RFCs, QART analysis, and ADRs preserve why the
+system took that shape in the first place.</p><p>That gives Micrantha a small native design-and-decision discipline without
+making it the control plane. RFCs, QARTs, ADRs, BMAD, and Spec Kit can all
+contribute intent. Invokrum still determines the exact effective context, and
+none of those artifacts can grant themselves execution authority.</p><h2 id=where-micrantha-goes-further>Where Micrantha goes further</h2><p>Some of BMAD&rsquo;s current design discussions touch exactly the class of problems
+Micrantha tries to make explicit: <a href=https://github.com/bmad-code-org/BMAD-METHOD/issues/2849>attributable resumed and parallel
+runs</a>, <a href=https://github.com/bmad-code-org/BMAD-METHOD/issues/3000>explicit
+repository targeting</a>,
+<a href=https://github.com/bmad-code-org/BMAD-METHOD/issues/3001>visible and approval-aware persistent
+customization</a>, and
+<a href=https://github.com/bmad-code-org/BMAD-METHOD/issues/2863>reliable memory
+persistence</a>.</p><p>These are not uniquely BMAD problems. They are symptoms of the transition from
+an agent that suggests work to a system that performs consequential work.</p><p>Repora is a good example. The problem is not simply choosing the correct working
+directory before running Git. The stronger model is:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>project / repository topology
+</span></span><span class=line><span class=cl>          ↓
+</span></span><span class=line><span class=cl>authoritative repository identity
+</span></span><span class=line><span class=cl>          ↓
+</span></span><span class=line><span class=cl>exact observed state
+</span></span><span class=line><span class=cl>          ↓
+</span></span><span class=line><span class=cl>desired state
+</span></span><span class=line><span class=cl>          ↓
+</span></span><span class=line><span class=cl>deterministic plan
+</span></span><span class=line><span class=cl>          ↓
+</span></span><span class=line><span class=cl>fresh precondition check
+</span></span><span class=line><span class=cl>          ↓
+</span></span><span class=line><span class=cl>controlled effect
+</span></span><span class=line><span class=cl>          ↓
+</span></span><span class=line><span class=cl>verified resulting state
+</span></span></code></pre></div><p>Repora is therefore not just a safer Git wrapper. It is intended to be a source
+of truth for repository relationships and repository-control state, with
+mutation derived from that model rather than inferred from whatever checkout an
+agent happens to occupy.</p><p>Authorization follows the same pattern.</p><p>A model claiming to be an approved worker is not enough. The principal must be
+authenticated and delegation constrained through Keylix, and the requested
+effect must still satisfy Anthesis policy and approval.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>claimed actor / role
+</span></span><span class=line><span class=cl>        ↓
+</span></span><span class=line><span class=cl>Keylix identity + delegation
+</span></span><span class=line><span class=cl>        ↓
+</span></span><span class=line><span class=cl>exact requested effect
+</span></span><span class=line><span class=cl>        ↓
+</span></span><span class=line><span class=cl>Anthesis policy + approval
+</span></span><span class=line><span class=cl>        ↓
+</span></span><span class=line><span class=cl>authorized capability
+</span></span></code></pre></div><p>The same distinction applies to workflow declarations themselves. A project
+file may declare a command, hook, validation step, or required workflow
+transition. That declaration can be legitimate development intent, but it does
+not by itself grant permission to perform the effect.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>workflow says &#34;run X&#34;
+</span></span><span class=line><span class=cl>         ≠
+</span></span><span class=line><span class=cl>authority to run X
+</span></span></code></pre></div><p>The declaration can inform the Supervisor. Capability and effect admission still
+belong to the runtime and governance boundary.</p><p>Persistent guidance is similarly not simply written and subsequently trusted.
+Persistence is not promotion. Identity is not authority. Evidence is not
+authority. And runtime state is not whatever the model currently remembers.</p><h2 id=bmad-still-has-patterns-worth-borrowing>BMAD still has patterns worth borrowing</h2><p>There are BMAD ideas worth carrying back into Micrantha.</p><p>Workflow depth scales with task size rather than forcing every change through
+heavyweight ceremony. Project context is deliberately focused on things agents
+cannot reliably rediscover. Worker/orchestrator separation is explicit.</p><p>BMAD&rsquo;s Test Engineering Architect work is especially interesting. TEA focuses
+on testing strategy, risk, traceability, NFR assessment, and quality gates,
+while Testule is developing a lower-level portable requirement and evidence
+substrate.</p><p>A plausible composition is:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>BMAD TEA
+</span></span><span class=line><span class=cl>  decides what should be tested
+</span></span><span class=line><span class=cl>            ↓
+</span></span><span class=line><span class=cl>        Testule
+</span></span><span class=line><span class=cl>  represents requirements
+</span></span><span class=line><span class=cl>            ↓
+</span></span><span class=line><span class=cl>native test / analysis tools
+</span></span><span class=line><span class=cl>            ↓
+</span></span><span class=line><span class=cl>normalized Evidence
+</span></span></code></pre></div><p>That is complementary rather than competitive.</p><p>Spec Kit adds another useful methodology-layer idea: make convergence explicit.
+Its <code>converge</code> command uses a compact vocabulary for differences between
+stated intent and implementation: <strong>missing, partial, contradicts, and
+unrequested</strong>.</p><p>That classification is useful precisely because it does not have to decide
+severity, root cause, priority, or authorization. It describes the relationship
+between intent and implementation; the rest of the system still decides what
+that difference means and what, if anything, is allowed to happen next.</p><h2 id=bmad-as-a-workload>BMAD as a workload</h2><p>The stronger experiment is therefore not replacing Micrantha with BMAD.</p><p>It is running BMAD <strong>through</strong> Micrantha.</p><div class=mermaid>flowchart LR
+B["BMAD<br>method + context"] --> I["Invokrum"]
+I --> D["Dubnium Supervisor"]
+D --> M["Memory API"]
+D --> G["Governed gateways"]
+G --> K["Keylix"]
+K --> A["Anthesis"]
+A --> E["Repora / Sandcastle / Testule"]</div><p>If that works, BMAD supplies software-development methodology and context
+without needing to become the trusted identity, authorization,
+repository-control, state-management, or verification substrate.</p><p>That also means BMAD does not need to absorb all of Micrantha to benefit from
+it.</p><p>BMAD starts from <strong>software-development workflow</strong> and increasingly adds the
+deterministic machinery needed to make autonomous development practical.</p><p>Micrantha starts from <strong>context, explicit sources of truth, authenticated
+identity, bounded authority, durable state, provenance, reproducibility, and
+failure containment</strong>, then allows different workflows to operate across them.</p><p>The convergence is real, but so is the distinction.</p><p>BMAD is building a better autonomous development workflow.</p><p>Micrantha is increasingly building a substrate on which BMAD, Spec Kit, and
+future autonomous-development methodologies can be treated as <strong>replaceable
+clients rather than trusted control planes</strong>.</p><p>The design target is not a particular workflow graph or agent methodology.
+Those can change.</p><p>The target is an autonomous software-delivery system in which <strong>goal, context,
+identity, authority, durable memory, repository truth, execution, and evidence
+remain independently identifiable and governable even when the reasoning and
+workflow are probabilistic</strong>.</p></div></div></main><footer id=footer class=legs><div class="has-text-centered content"><div class=footer-links><nav aria-label="Footer quick links" class=footer-links-row><a class="tag is-rounded" href=/archive>Archive</a>
+<a class="tag is-rounded" href=/posts/index.xml>RSS</a>
+<a class="tag is-rounded" href=https://micrantha.com target=_blank rel=noopener>Micrantha</a></nav><nav aria-label="Footer social links" class=footer-links-row><a class="tag is-rounded" href=https://github.com/ryjen target=_blank rel=noopener>GitHub</a>
+<a class="tag is-rounded" href=https://linkedin.com/in/ryjen target=_blank rel=noopener>LinkedIn</a>
+<a class="tag is-rounded" href=mailto:robert@ryanjennin.gs>Email</a></nav></div><div class="is-flex is-align-items-center is-justify-content-center footer-actions"><div class=footer-theme-toggle><button class=themer type=button aria-label="Use dark theme" aria-pressed=false>
+<span class="icon theme-icon" aria-hidden=true><svg xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#yin-yang"/></svg></span></button></div><a href=mailto:robert@ryanjennin.gs>Report a Site Issue</a></div><div class=copyright>© all rights reserved, ryan jennings</div></div></footer><script src=/js/theme.bundle.min.f02a1da3d31fa34d2ca1bdf7075abe44699f1546cc5b0c25d6e8981ea5671c4b0dfa24545d495449c7de8ba0c83f6d22535ffb2705a834f1ef10c00e3273c034.js defer integrity="sha512-8Codo9Mfo00sob33B1q+RGmfFUbMWwwl1uiYHqVnHEsN+iRUXUlUScfei6DIP20iU1/7JwWoNPHvEMAOMnPANA==" crossorigin=anonymous></script><script type=module>
+  const mermaidBlocks = document.querySelectorAll(".mermaid");
+  if (mermaidBlocks.length > 0) {
+    const { default: mermaid } = await import("https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs");
+    mermaid.initialize({
+      securityLevel: "loose",
+      theme: document.body.classList.contains("dark") ? "dark" : "default",
+    });
+    await mermaid.run({
+      nodes: mermaidBlocks,
+    });
+  }
+</script><script src=/js/tts.min.bdfb85e4ba900c01c13f9c8b9b0420422af9e965fcf1f02143ee1bf48b3629ed8c7f23ade7e5840f34718ff9d61ec5f637fc471806c4f40c11095cacea05c8b7.js defer integrity="sha512-vfuF5LqQDAHBP5yLmwQgQir56WX88fAhQ+4b9Is2Ke2MfyOt5+WEDzRxj/nWHsX2N/xHGAbE9AwRCVys6gXItw==" crossorigin=anonymous></script></body></html>
