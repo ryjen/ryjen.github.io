@@ -13,7 +13,7 @@
 </a><button type=button class="navbar-item themer" aria-label="Use dark theme" aria-pressed=false>
 <span class="icon theme-icon" aria-hidden=true><svg xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#yin-yang"/></svg></span></button></div></div></nav></header><main id=main class=abdomen tabindex=-1><nav class="breadcrumb ml-4 is-small" aria-label=breadcrumbs><ul><li><a href=/>Home</a></li><li><a href=/posts/>Blog</a></li><li class=is-active><a href=/posts/ai-native-sdlc-governed-software-delivery/ aria-current=page>From AI-Native SDLC to Governed Software Delivery</a></li></ul></nav><div class=container><header class="article-header mb-5"><h1 class=title>From AI-Native SDLC to Governed Software Delivery</h1><p class="article-meta is-size-7"><span>By Robert Ryan Jennings</span>
 <span>Published Oct 1, 2026 12:00AM</span>
-<span>9 min read</span></p><div class="tags mb-3"><a class="tag is-rounded" href=/categories/software-engineering>software engineering</a>
+<span>10 min read</span></p><div class="tags mb-3"><a class="tag is-rounded" href=/categories/software-engineering>software engineering</a>
 <a class="tag is-rounded" href=/categories/artificial-intelligence>artificial intelligence</a>
 <a class="tag is-rounded" href=/categories/security>security</a></div><div class="tags mb-0"><a class="tag is-rounded" href=/tags/ai>ai</a>
 <a class="tag is-rounded" href=/tags/agents>agents</a>
@@ -21,7 +21,7 @@
 <a class="tag is-rounded" href=/tags/sdlc>sdlc</a>
 <a class="tag is-rounded" href=/tags/governance>governance</a>
 <a class="tag is-rounded" href=/tags/security>security</a></div></header><figure class="article-image mb-5"><picture><source type=image/webp srcset="/image/blog/ai-native-sdlc-governed-software-delivery_hu_3c798f83bfb4f249.webp 480w, /image/blog/ai-native-sdlc-governed-software-delivery_hu_78684ffb0920fc34.webp 960w, /image/blog/ai-native-sdlc-governed-software-delivery_hu_d553142007ba9b2d.webp 1440w, /image/blog/ai-native-sdlc-governed-software-delivery_hu_dd476aac4744fd4e.webp 1672w" sizes="(min-width: 900px) 860px, 100vw"><img src=/image/blog/ai-native-sdlc-governed-software-delivery_hu_13562b4bfb7a240e.webp srcset="/image/blog/ai-native-sdlc-governed-software-delivery_hu_4bf2d3f2268c24a1.webp 480w, /image/blog/ai-native-sdlc-governed-software-delivery_hu_6e3f91f285600702.webp 960w, /image/blog/ai-native-sdlc-governed-software-delivery_hu_1bb64689237ded78.webp 1440w, /image/blog/ai-native-sdlc-governed-software-delivery_hu_13562b4bfb7a240e.webp 1672w" sizes="(min-width: 900px) 860px, 100vw" alt="From AI-Native SDLC to Governed Software Delivery" width=1672 height=941 fetchpriority=high loading=eager decoding=async class=article-image-img></picture></figure><div class=tts-controls data-tts-controls hidden><button type=button class="button is-small" data-tts-toggle data-tts-target=post-content>
-Read this post to me</button><p class=tts-status data-tts-status aria-live=polite></p></div><div class="content article-content" id=post-content data-tts-content><p>Andre Kaminski&rsquo;s <em>The AI-Native Software Development Lifecycle</em> puts a useful
+Read this post to me</button><p class=tts-status data-tts-status aria-live=polite></p></div><div class="content article-content" id=post-content data-tts-content><p>Andre Kaminski&rsquo;s <a href="https://www.amazon.com/s?k=The+AI-Native+Software+Development+Lifecycle+Andre+Kaminski"><em>The AI-Native Software Development Lifecycle</em></a> puts a useful
 name around a change I have been feeling in my own engineering work: once AI can
 produce code, tests, documentation, migrations, and implementation alternatives
 quickly, <strong>implementation is no longer the obvious organizing constraint of the
@@ -51,7 +51,7 @@ L3 --> Integrate
 L4 --> Integrate</div><p>Those patterns did not become wrong. They became composable subroutines.</p><p>The distinction I find most useful is therefore:</p><blockquote><p><strong>AI-native macro, traditional micro.</strong></p></blockquote><p>A mature agentic system can preserve decades of useful engineering and product
 practice inside specialist loops without requiring the entire organization to be
 structured around the assumption that humans manually execute every lifecycle
-stage.</p><p>The AI-native SDLC is primarily a <strong>lifecycle and organizational model</strong>. My
+stage.</p><p>The <a href=https://theainativeproject.org/ai-software-development-lifecycle/>AI-native SDLC</a> is primarily a <strong>lifecycle and organizational model</strong>. My
 work increasingly treats AI-native development as an <strong>authority and evidence
 problem</strong> as well.</p><h2 id=where-i-agree>Where I agree</h2><p>The traditional delivery model is implicitly organized around expensive human
 implementation:</p><div class=mermaid>flowchart LR
@@ -66,7 +66,17 @@ C --> G[Machine-assisted implementation]
 G --> V[Independent verification]
 V --> A[Acceptance]
 A --> O[Deployment + observation]</div><p>This matches how I already try to work with coding agents:</p><ol><li>define the problem, constraints, and expected evidence;</li><li>let a model propose or implement a bounded change;</li><li>inspect the diff rather than trusting the explanation;</li><li>run tests, static analysis, builds, and security checks;</li><li>feed failures back into another bounded iteration;</li><li>accept the change only when the evidence supports it.</li></ol><p>The useful mental model is:</p><blockquote><p><strong>Generation is cheap. Trustworthy acceptance is expensive.</strong></p></blockquote><p>That is a much better optimization target than &ldquo;how many lines of code can an
-agent write?&rdquo;</p><p>It also explains why traditional lifecycle discipline still matters inside the
+agent write?&rdquo;</p><p>Kiro&rsquo;s <a href=https://kiro.dev/topics/frontier-engineering/><em>Frontier Engineering</em></a>
+principles independently land on several of the same operational conclusions:
+engineers increasingly architect intent rather than type implementation, codebases
+need to be legible to agents, feedback should be executable and fast, and trust
+should be placed in enforced boundaries rather than in the agent itself. Its
+strongest contribution for me is not the productivity rhetoric but the systems
+framing around constrained autonomy and continuously improving the surrounding
+agent harness.</p><p>I treat that as practitioner evidence of an emerging engineering pattern, not as
+empirical validation. Kiro does not publish enough methodology on those pages to
+support its stronger quantitative productivity claims, so I would not use them as
+evidence for the magnitude of the shift.</p><p>It also explains why traditional lifecycle discipline still matters inside the
 system. If one specialist is implementing a bounded component, the familiar
 sequence of requirements, design, implementation, tests, and review can still be
 exactly the right local control loop. The difference is that the outer system can
@@ -165,7 +175,7 @@ type less code.</p><p>It is that <strong>software engineering becomes increasing
 control system around code generation</strong>.</p><p>The engineering questions move from:</p><blockquote><p>Can we produce this implementation?</p></blockquote><p>toward:</p><blockquote><p>Can we establish, cheaply and repeatedly, that this is the implementation we
 intended, that it satisfies the required properties, and that the actor
 applying it has exactly the authority needed to do so?</p></blockquote><p>That is the part of the AI-native transition I find most interesting.</p><p>The code generator may eventually become almost interchangeable.</p><p>The architecture that decides what to trust, what to permit, and what evidence
-is sufficient will not.</p><h2 id=references>References</h2><ul><li>Andre Kaminski, <em>The AI-Native Software Development Lifecycle</em></li><li><a href=https://www.linkedin.com/posts/andrekaminski_i-just-published-a-new-book-it-started-activity-7404505199597252608-che8>Andre Kaminski&rsquo;s announcement of the book</a></li><li><a href=https://theainativeproject.org/ai-software-development-lifecycle/>AI Software Development Lifecycle</a></li></ul></div></div></main><footer id=footer class=legs><div class="has-text-centered content"><div class=footer-links><nav aria-label="Footer quick links" class=footer-links-row><a class="tag is-rounded" href=/archive>Archive</a>
+is sufficient will not.</p></div></div></main><footer id=footer class=legs><div class="has-text-centered content"><div class=footer-links><nav aria-label="Footer quick links" class=footer-links-row><a class="tag is-rounded" href=/archive>Archive</a>
 <a class="tag is-rounded" href=/posts/index.xml>RSS</a>
 <a class="tag is-rounded" href=https://micrantha.com target=_blank rel=noopener>Micrantha</a></nav><nav aria-label="Footer social links" class=footer-links-row><a class="tag is-rounded" href=https://github.com/ryjen target=_blank rel=noopener>GitHub</a>
 <a class="tag is-rounded" href=https://linkedin.com/in/ryjen target=_blank rel=noopener>LinkedIn</a>
