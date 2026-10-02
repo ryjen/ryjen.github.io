@@ -13,7 +13,7 @@
 </a><button type=button class="navbar-item themer" aria-label="Use dark theme" aria-pressed=false>
 <span class="icon theme-icon" aria-hidden=true><svg xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#yin-yang"/></svg></span></button></div></div></nav></header><main id=main class=abdomen tabindex=-1><nav class="breadcrumb ml-4 is-small" aria-label=breadcrumbs><ul><li><a href=/>Home</a></li><li><a href=/posts/>Blog</a></li><li class=is-active><a href=/posts/bmad-and-micrantha/ aria-current=page>BMAD and Micrantha: Workflow Discipline on a Governed Substrate</a></li></ul></nav><div class=container><header class="article-header mb-5"><h1 class=title>BMAD and Micrantha: Workflow Discipline on a Governed Substrate</h1><p class="article-meta is-size-7"><span>By Robert Ryan Jennings</span>
 <span>Published Oct 1, 2026 12:00AM</span>
-<span>9 min read</span></p><div class="tags mb-3"><a class="tag is-rounded" href=/categories/software-engineering>software engineering</a>
+<span>8 min read</span></p><div class="tags mb-3"><a class="tag is-rounded" href=/categories/software-engineering>software engineering</a>
 <a class="tag is-rounded" href=/categories/artificial-intelligence>artificial intelligence</a>
 <a class="tag is-rounded" href=/categories/security>security</a></div><div class="tags mb-0"><a class="tag is-rounded" href=/tags/ai>ai</a>
 <a class="tag is-rounded" href=/tags/agents>agents</a>
@@ -70,43 +70,24 @@ the abstractions are general, not because Micrantha contains BMAD-specific
 knowledge.</p><p>That is not proof that the architecture is correct, but it is a useful
 architectural signal.</p><h3 id=a-second-accidental-fit-strengthens-the-signal>A second accidental fit strengthens the signal</h3><p>Reviewing <a href=https://github.com/github/spec-kit>GitHub Spec Kit</a> afterward made
 that signal stronger.</p><p>BMAD and Spec Kit organize software delivery differently. BMAD leans toward
-roles, workflows, bounded stories, handoffs, and specialized engineering agents.
-Spec Kit leans toward specifications, plans, tasks, artifact analysis, and
-convergence.</p><p>Yet both can map onto essentially the same Micrantha boundaries.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>BMAD                              Spec Kit
-</span></span><span class=line><span class=cl>roles / stories / workflows       specs / plans / tasks
-</span></span><span class=line><span class=cl>TEA / review                      analyze / converge
-</span></span><span class=line><span class=cl>              \                  /
-</span></span><span class=line><span class=cl>               development intent
-</span></span><span class=line><span class=cl>                       ↓
-</span></span><span class=line><span class=cl>                   Invokrum
-</span></span><span class=line><span class=cl>                       ↓
-</span></span><span class=line><span class=cl>               Dubnium Supervisor
-</span></span><span class=line><span class=cl>                       ↓
-</span></span><span class=line><span class=cl>              governed capabilities
-</span></span><span class=line><span class=cl>                       ↓
-</span></span><span class=line><span class=cl>               Keylix + Anthesis
-</span></span><span class=line><span class=cl>                       ↓
-</span></span><span class=line><span class=cl>         Repora / Sandcastle / Testule
-</span></span></code></pre></div><p>That matters because the architecture is no longer merely compatible with one
-external methodology. Two independently designed approaches to agentic software
-development can occupy the methodology layer without requiring the underlying
-identity, authority, state, repository, or evidence models to change.</p><p>The stronger hypothesis is therefore that <strong>software-development methodology is
-replaceable context above the control substrate</strong>.</p><h3 id=micrantha-has-a-native-methodology-stack-too>Micrantha has a native methodology stack too</h3><p>That does not mean Micrantha has no methodology of its own.</p><p>Its native comparable stack is deliberately smaller than BMAD or Spec Kit:
+roles, workflows, bounded stories, and specialized agents; Spec Kit toward
+specifications, plans, tasks, analysis, and convergence. Yet both map onto
+essentially the same Micrantha boundaries.</p><p>That suggests <strong>software-development methodology can remain replaceable context
+above the control substrate</strong> rather than being baked into identity, authority,
+durable state, repository truth, or evidence.</p><h3 id=micrantha-has-a-native-methodology-stack-too>Micrantha has a native methodology stack too</h3><p>That does not mean Micrantha has no methodology of its own.</p><p>Its native comparable stack is deliberately smaller than BMAD or Spec Kit:
 <strong>RFCs, QART, and ADRs</strong>.</p><ul><li><strong>RFCs</strong> make a proposed architecture explicit enough to challenge before it
 quietly becomes infrastructure.</li><li><strong>QART</strong> makes the consequential choice explicit: Questions, Alternatives,
 Recommendation, and Trade-offs.</li><li><strong>ADRs</strong> preserve the architectural decision that was actually taken, including
 its rationale and consequences.</li></ul><p>They are related, but not a mandatory linear workflow. QART can appear inside an
 RFC, before one, or during review. An ADR normally records a decision after the
-relevant design space has been explored.</p><p>Conceptually:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>BMAD                   Spec Kit                Micrantha-native
-</span></span><span class=line><span class=cl>roles / stories        specs / plans           RFCs
-</span></span><span class=line><span class=cl>workflows              tasks                   QART
-</span></span><span class=line><span class=cl>TEA / review           analyze / converge      ADRs
-</span></span><span class=line><span class=cl>       \                    |                    /
-</span></span><span class=line><span class=cl>                  development intent
-</span></span><span class=line><span class=cl>                           ↓
-</span></span><span class=line><span class=cl>                       Invokrum
-</span></span><span class=line><span class=cl>                exact effective context
-</span></span></code></pre></div><p>I keep wishing more of the early AI systems, agent frameworks, and tool
+relevant design space has been explored.</p><p>Conceptually:</p><div class=mermaid>flowchart TB
+M["Micrantha-native<br>RFCs<br>QART<br>ADRs"]
+B["BMAD<br>roles / stories<br>workflows<br>TEA / review"]
+S["Spec Kit<br>specs / plans<br>tasks<br>analyze / converge"]
+M --> I["Development intent"]
+B --> I
+S --> I
+I --> V["Invokrum<br>exact effective context"]</div><p>I keep wishing more of the early AI systems, agent frameworks, and tool
 architectures had started as RFCs.</p><p>Maybe RFCs are a relic of an earlier Internet culture. If so, I want the relic
 back. They force assumptions, alternatives, risks, and unresolved questions into
 the open before a proposal quietly becomes infrastructure; ADRs preserve what
@@ -202,7 +183,7 @@ K --> A["Anthesis"]
 A --> E["Repora / Sandcastle / Testule"]</div><p>If that works, BMAD supplies software-development methodology and context
 without needing to become the trusted identity, authorization,
 repository-control, state-management, or verification substrate.</p><p>That also means BMAD does not need to absorb all of Micrantha to benefit from
-it.</p><p>BMAD starts from <strong>software-development workflow</strong> and increasingly adds the
+it.</p><h2 id=replaceable-methodology-governed-substrate>Replaceable methodology, governed substrate</h2><p>BMAD starts from <strong>software-development workflow</strong> and increasingly adds the
 deterministic machinery needed to make autonomous development practical.</p><p>Micrantha starts from <strong>context, explicit sources of truth, authenticated
 identity, bounded authority, durable state, provenance, reproducibility, and
 failure containment</strong>, then allows different workflows to operate across them.</p><p>The convergence is real, but so is the distinction.</p><p>BMAD is building a better autonomous development workflow.</p><p>Micrantha is increasingly building a substrate on which BMAD, Spec Kit, and
