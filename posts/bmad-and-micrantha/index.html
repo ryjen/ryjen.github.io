@@ -13,7 +13,7 @@
 </a><button type=button class="navbar-item themer" aria-label="Use dark theme" aria-pressed=false>
 <span class="icon theme-icon" aria-hidden=true><svg xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#yin-yang"/></svg></span></button></div></div></nav></header><main id=main class=abdomen tabindex=-1><nav class="breadcrumb ml-4 is-small" aria-label=breadcrumbs><ul><li><a href=/>Home</a></li><li><a href=/posts/>Blog</a></li><li class=is-active><a href=/posts/bmad-and-micrantha/ aria-current=page>BMAD and Micrantha: Workflow Discipline on a Governed Substrate</a></li></ul></nav><div class=container><header class="article-header mb-5"><h1 class=title>BMAD and Micrantha: Workflow Discipline on a Governed Substrate</h1><p class="article-meta is-size-7"><span>By Robert Ryan Jennings</span>
 <span>Published Oct 1, 2026 12:00AM</span>
-<span>9 min read</span></p><div class="tags mb-3"><a class="tag is-rounded" href=/categories/software-engineering>software engineering</a>
+<span>8 min read</span></p><div class="tags mb-3"><a class="tag is-rounded" href=/categories/software-engineering>software engineering</a>
 <a class="tag is-rounded" href=/categories/artificial-intelligence>artificial intelligence</a>
 <a class="tag is-rounded" href=/categories/security>security</a></div><div class="tags mb-0"><a class="tag is-rounded" href=/tags/ai>ai</a>
 <a class="tag is-rounded" href=/tags/agents>agents</a>
@@ -21,17 +21,19 @@
 <a class="tag is-rounded" href=/tags/sdlc>sdlc</a>
 <a class="tag is-rounded" href=/tags/governance>governance</a>
 <a class="tag is-rounded" href=/tags/bmad>bmad</a></div></header><figure class="article-image mb-5"><picture><source type=image/webp srcset="/image/blog/bmad-and-micrantha-cover_hu_6f415640e5a9c15e.webp 480w, /image/blog/bmad-and-micrantha-cover_hu_96da73644c555e91.webp 960w, /image/blog/bmad-and-micrantha-cover_hu_c3cef077455490b1.webp 1440w, /image/blog/bmad-and-micrantha-cover_hu_58d93ca76f2c980a.webp 1731w" sizes="(min-width: 900px) 860px, 100vw"><img src=/image/blog/bmad-and-micrantha-cover_hu_ca2d15c11bb03fe6.webp srcset="/image/blog/bmad-and-micrantha-cover_hu_d530eacfb0d65ff2.webp 480w, /image/blog/bmad-and-micrantha-cover_hu_c3eaa7a3e348e420.webp 960w, /image/blog/bmad-and-micrantha-cover_hu_4d014e4197f3c292.webp 1440w, /image/blog/bmad-and-micrantha-cover_hu_ca2d15c11bb03fe6.webp 1731w" sizes="(min-width: 900px) 860px, 100vw" alt="BMAD and Micrantha: Workflow Discipline on a Governed Substrate" width=1731 height=909 fetchpriority=high loading=eager decoding=async class=article-image-img></picture></figure><div class=tts-controls data-tts-controls hidden><button type=button class="button is-small" data-tts-toggle data-tts-target=post-content>
-Read this post to me</button><p class=tts-status data-tts-status aria-live=polite></p></div><div class="content article-content" id=post-content data-tts-content><p>I recently reviewed <a href=https://github.com/bmad-code-org/BMAD-METHOD>BMAD Method</a>
-against the agentic software-delivery architecture I have been building across
-<a href=https://github.com/hackelia-micrantha/.github>Micrantha</a>.</p><p>The interesting result is not just that they overlap. Micrantha&rsquo;s components
-appear to accommodate BMAD coherently despite never being designed around it.</p><p>BMAD emphasizes structured planning, bounded implementation units, durable
+Read this post to me</button><p class=tts-status data-tts-status aria-live=polite></p></div><div class="content article-content" id=post-content data-tts-content><p>I have been aware of <a href=https://github.com/bmad-code-org/BMAD-METHOD>BMAD Method</a>
+and <a href=https://github.com/github/spec-kit>GitHub Spec Kit</a> for some time. I
+recently went back and reviewed them against the agentic software-delivery
+architecture I have been building across
+<a href=https://github.com/hackelia-micrantha/.github>Micrantha</a>.</p><p>They line up surprisingly well even though Micrantha was not designed around
+either one.</p><p>BMAD emphasizes structured planning, bounded implementation units, durable
 handoffs, specialized agents, verification, and explicit workflow state. Its
-unattended build model is particularly sensible: one worker handles one bounded
+unattended build model uses a pattern I also like: one worker handles one bounded
 unit and reports a terminal result, while an orchestrator decides what happens
-next.</p><p>That is close to the model I have arrived at for long-running agent work:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>Run = Goal + Context + Policy + State + Evidence + Budget
+next.</p><p>That maps closely to how I think about long-running agent work:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>Run = Goal + Context + Policy + State + Evidence + Budget
 </span></span></code></pre></div><p>A graph, ticket tree, workflow, or state machine may organize a particular run,
 but none is the first-class abstraction. They are possible projections of
-context and current state.</p><p>The major difference is <strong>where those responsibilities live</strong>.</p><h2 id=similar-mechanics-different-boundaries>Similar mechanics, different boundaries</h2><p>BMAD is increasingly more than prompt convention. Its unattended tooling
+context and current state.</p><p>The main difference is <strong>where those responsibilities live</strong>.</p><h2 id=similar-mechanics-different-boundaries>Similar mechanics, different boundaries</h2><p>BMAD is increasingly more than prompt convention. Its unattended tooling
 includes deterministic orchestration, resumable state, bounded retries and
 gates, and workspace isolation.</p><p>Micrantha goes one level lower by separating those concerns into independently
 owned components and sources of truth.</p><table><thead><tr><th>Concern</th><th>BMAD emphasis</th><th>Micrantha owner</th></tr></thead><tbody><tr><td>Work decomposition</td><td>Stories, plans, workflows</td><td>Project context and SDLC contracts</td></tr><tr><td>Effective context</td><td>Project context and customization</td><td><a href=https://github.com/hackelia-micrantha/invokrum-community>Invokrum</a></td></tr><tr><td>Reasoning/orchestration</td><td>Worker + orchestrator</td><td><a href=https://github.com/hackelia-micrantha/dubnium-community>Dubnium Supervisor</a></td></tr><tr><td>Model access</td><td>Host/provider integration</td><td><a href=https://github.com/hackelia-micrantha/dubnium-community>Supervisor Gateway</a></td></tr><tr><td>Tool/effect mediation</td><td>Host tooling</td><td><a href=https://github.com/hackelia-micrantha/dubnium-community>Capability / Operator Gateway</a></td></tr><tr><td>Execution / run state</td><td>Loop/run state</td><td><a href=https://github.com/hackelia-micrantha/dubnium-community>Dubnium Workflow Runtime / scheduler</a></td></tr><tr><td>Durable context and learned memory</td><td>Persistent memory and customization</td><td><a href=https://github.com/hackelia-micrantha/dubnium-community>Dubnium Memory System</a></td></tr><tr><td>Identity and delegation</td><td>Host/session identity</td><td><a href=https://github.com/hackelia-micrantha/keylix-community>Keylix</a></td></tr><tr><td>Policy and authorization</td><td>Workflow/host integration</td><td><a href=https://github.com/hackelia-micrantha/anthesis-community>Anthesis</a> + <a href=https://github.com/hackelia-micrantha/keylix-community>Keylix</a></td></tr><tr><td>Repository topology and state</td><td>Build/VCS workflow</td><td><a href=https://github.com/hackelia-micrantha/repora>Repora</a></td></tr><tr><td>Mutable execution state</td><td>Worktree/environment</td><td><a href=https://github.com/hackelia-micrantha/sandcastle-community>Sandcastle</a></td></tr><tr><td>Verification</td><td>BMAD/TEA workflows</td><td><a href=https://github.com/hackelia-micrantha/testule-community>Testule</a></td></tr></tbody></table><p>The linked repositories are the public or community entry points for those
@@ -51,36 +53,36 @@ A --> SC["Sandcastle<br>workspace lineage"]
 A --> T["Testule<br>verification evidence"]</div><p>BMAD can contribute methodology, decomposition, and development context that
 tell an agent what work makes sense next. That does not mean the workflow itself
 automatically becomes the identity, authority, source of truth, or execution
-boundary for everything that follows.</p><h2 id=the-accidental-fit-is-the-interesting-part>The accidental fit is the interesting part</h2><p>None of this was designed around BMAD.</p><p>Invokrum emerged because effective context composition needed deterministic
-identity. Keylix emerged because actors, delegated authority, and protected
-effects need authenticated identity rather than self-asserted role metadata.
-Anthesis emerged because authenticated identity still does not imply that an
-effect is authorized.</p><p>Dubnium grew into the runtime around supervision, model access, capability
-mediation, scheduling, recovery, durable run state, and a separate memory
-subsystem. The Workflow Runtime and scheduler own structured execution state;
-the Memory System owns durable context, retrieval, lifecycle, and learning.
-Repora emerged because repositories themselves needed an explicit model:
-identity, topology, canonical endpoints, observed state, desired state, plans,
-reconciliation, and controlled mutation.</p><p>Sandcastle addresses mutable execution state and lineage. Testule addresses
-portable verification requirements and evidence.</p><p>Only afterward did I place BMAD beside the architecture and notice how cleanly
-the responsibilities lined up.</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>independently motivated components
-</span></span><span class=line><span class=cl>              ↓
-</span></span><span class=line><span class=cl>      explicit responsibility boundaries
-</span></span><span class=line><span class=cl>              ↓
-</span></span><span class=line><span class=cl> third-party workflow happens to fit
-</span></span><span class=line><span class=cl>              ↓
-</span></span><span class=line><span class=cl> evidence that the abstractions may compose
-</span></span></code></pre></div><p>That is more interesting than deliberate compatibility.</p><p>It suggests the boundaries may be at roughly the right level: BMAD fits because
-the abstractions are general, not because Micrantha contains BMAD-specific
-knowledge.</p><p>That is not proof that the architecture is correct, but it is a useful
-architectural signal.</p><h3 id=a-second-accidental-fit-strengthens-the-signal>A second accidental fit strengthens the signal</h3><p>Reviewing <a href=https://github.com/github/spec-kit>GitHub Spec Kit</a> afterward made
-that signal stronger.</p><p>BMAD and Spec Kit organize software delivery differently. BMAD leans toward
-roles, workflows, bounded stories, and specialized agents; Spec Kit toward
-specifications, plans, tasks, analysis, and convergence. Yet both map onto
-essentially the same Micrantha boundaries.</p><p>That suggests <strong>software-development methodology can remain replaceable context
-above the control substrate</strong> rather than being baked into identity, authority,
-durable state, repository truth, or evidence.</p><h3 id=micrantha-has-a-native-methodology-stack-too>Micrantha has a native methodology stack too</h3><p>That does not mean Micrantha has no methodology of its own.</p><p>Its native comparable stack is deliberately smaller than BMAD or Spec Kit:
-<strong>RFCs, QART, and ADRs</strong>.</p><ul><li><strong>RFCs</strong> make a proposed architecture explicit enough to challenge before it
+boundary for everything that follows.</p><h2 id=why-bmad-fits>Why BMAD fits</h2><p>None of this was designed around BMAD, but the fit is not magic and it was not
+injected later by AI. The component boundaries were already there.</p><p>Micrantha&rsquo;s agentic work started with a practical question: <strong>if an AI can take
+actions, how are those actions governed?</strong> That pushed identity, authority,
+approval, evidence, attribution, bypass resistance, and the exact requested
+effect into the architecture early. Anthesis came from that problem; it is a
+control surface for governed agentic effects, not an agent framework.</p><p>Micrantha was also designed around
+<a href=https://github.com/hackelia-micrantha/.github/blob/main/docs/architecture/repository-catalogue.md#unix-composability>Unix-style composability</a>.
+Its
+<a href=https://github.com/hackelia-micrantha/.github/blob/main/docs/standards/cli-interoperability.md>CLI interoperability standard</a>
+favors narrow interfaces, structured machine output, useful exit semantics,
+explicit mutation boundaries, and contracts that work for people, scripts, and
+supervisors.</p><p>That matters here. The tools are meant to work together without becoming one
+monolith, and to remain replaceable where their contracts allow it.</p><p>The rest of the split followed from specific needs. Invokrum owns effective
+context. Keylix handles identity, delegation, and proof. Dubnium owns runtime
+supervision, execution state, and memory. Repora models repository truth.
+Sandcastle handles mutable workspace state and lineage. Testule represents
+portable verification requirements and evidence.</p><p>I had known about BMAD while Micrantha was evolving, but it was not the template
+for these boundaries. Revisiting BMAD against the current architecture made the
+fit much easier to see. There is no BMAD-specific compatibility layer hiding in
+Micrantha; BMAD can fit because the existing interfaces give a workflow somewhere
+sensible to plug in without also making it the identity provider, policy engine,
+memory system, repository authority, or effect boundary.</p><p>That does not prove the architecture is right. It does show that an independently
+designed workflow can use the boundaries without those boundaries being rewritten
+around it.</p><h3 id=spec-kit-fits-too>Spec Kit fits too</h3><p>I revisited Spec Kit in the same pass. It organizes delivery differently: BMAD
+leans toward roles, workflows, bounded stories, and specialized agents; Spec Kit
+toward specifications, plans, tasks, analysis, and convergence.</p><p>Both still fit above the same Micrantha boundaries. That is the useful part:
+<strong>software-development methodology can remain replaceable context above the
+control substrate</strong> instead of being baked into identity, authority, durable
+state, repository truth, or evidence.</p><h3 id=micrantha-has-a-native-methodology-stack-too>Micrantha has a native methodology stack too</h3><p>Micrantha still has a smaller native design discipline: <strong>RFCs, QART, and
+ADRs</strong>.</p><ul><li><strong>RFCs</strong> make a proposed architecture explicit enough to challenge before it
 quietly becomes infrastructure.</li><li><strong>QART</strong> makes the consequential choice explicit: Questions, Alternatives,
 Recommendation, and Trade-offs.</li><li><strong>ADRs</strong> preserve the architectural decision that was actually taken, including
 its rationale and consequences.</li></ul><p>They are related, but not a mandatory linear workflow. QART can appear inside an
@@ -96,9 +98,9 @@ I --> V["Invokrum<br>exact effective context"]</div><p>I keep wishing more of th
 architectures had started as RFCs.</p><p>Maybe RFCs are a relic of an earlier Internet culture. If so, I want the relic
 back. They force assumptions, alternatives, risks, and unresolved questions into
 the open before a proposal quietly becomes infrastructure; ADRs preserve what
-was actually decided and why.</p><p>That matters even more in AI, where a prompt format can become a protocol, a
-tool declaration an execution model, or an agent role an identity and authority
-boundary before anyone has really named the decision.</p><p>The distinctions matter:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>proposal
+was actually decided and why.</p><p>That matters in AI because a prompt format can become a protocol, a tool
+declaration an execution model, or an agent role an authority boundary before
+the decision has really been named.</p><p>I want those distinctions to stay visible:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>proposal
 </span></span><span class=line><span class=cl>   !=
 </span></span><span class=line><span class=cl>decision
 </span></span><span class=line><span class=cl>   !=
@@ -107,43 +109,29 @@ boundary before anyone has really named the decision.</p><p>The distinctions mat
 </span></span><span class=line><span class=cl>evidence
 </span></span><span class=line><span class=cl>   !=
 </span></span><span class=line><span class=cl>authority
-</span></span></code></pre></div><p>Code can show what survived. RFCs, QART analysis, and ADRs preserve why the
-system took that shape in the first place.</p><p>That gives Micrantha a small native design-and-decision discipline without
-making it the control plane. RFCs, QARTs, ADRs, BMAD, and Spec Kit can all
-contribute intent. Invokrum still determines the exact effective context, and
-none of those artifacts can grant themselves execution authority.</p><h2 id=where-micrantha-goes-further>Where Micrantha goes further</h2><p>Some of BMAD&rsquo;s current design discussions touch exactly the class of problems
-Micrantha tries to make explicit: <a href=https://github.com/bmad-code-org/BMAD-METHOD/issues/2849>attributable resumed and parallel
+</span></span></code></pre></div><p>Code shows what survived. RFCs, QART analysis, and ADRs preserve why.</p><p>RFCs, QARTs, ADRs, BMAD, and Spec Kit can all contribute intent. Invokrum still
+determines the effective context, and none of those artifacts can grant
+themselves execution authority.</p><h2 id=where-micrantha-goes-further>Where Micrantha goes further</h2><p>Some of BMAD&rsquo;s current design discussions touch problems Micrantha also cares
+about: <a href=https://github.com/bmad-code-org/BMAD-METHOD/issues/2849>attributable resumed and parallel
 runs</a>, <a href=https://github.com/bmad-code-org/BMAD-METHOD/issues/3000>explicit
 repository targeting</a>,
 <a href=https://github.com/bmad-code-org/BMAD-METHOD/issues/3001>visible and approval-aware persistent
 customization</a>, and
 <a href=https://github.com/bmad-code-org/BMAD-METHOD/issues/2863>reliable memory
-persistence</a>.</p><p>These are not uniquely BMAD problems. They are symptoms of the transition from
-an agent that suggests work to a system that performs consequential work.</p><p>The broader Micrantha pattern is to pull assumptions out of the workflow and give
-them explicit owners.</p><p><strong>Invokrum does that for context.</strong> Effective context can be composed, identified,
-and reproduced rather than being whatever happened to accumulate in a session.</p><p><strong>Dubnium separates run state from memory.</strong> The Workflow Runtime and scheduler
-own structured execution state needed for resume, retry, and recovery. The
-<strong>Memory System</strong> handles durable context and learning: classification,
-summarization, scoped retrieval, lifecycle metadata, and policy-aware access.</p><p>Its <strong>Memory Steward</strong> adds an agentic curation layer. It can identify and rank
-memory candidates, detect conflicts and staleness, and recommend summarization,
-promotion, rejection, supersession, or archival. Those recommendations remain
-advisory: governance decides whether a candidate may be accessed or promoted,
-and canonical project truth still belongs in versioned artifacts.</p><p><strong>Keylix and Anthesis do it for authority.</strong> Keylix establishes principal
-identity, delegation, and proof; Anthesis evaluates policy and approval. A
-workflow reaching an &ldquo;approved&rdquo; step is not itself authorization to perform an
-effect.</p><p><strong>Repora does it for repository truth.</strong> Repository identity, topology, observed
-state, desired state, and controlled mutation come from an explicit model rather
-than whichever checkout an agent happens to occupy.</p><p><strong>Sandcastle, Testule, and the capability boundary do it for execution and
-verification.</strong> Mutable work carries lineage, verification produces attributable
-evidence, and effect admission remains a separate decision.</p><p>The same distinction applies to learning: persistence is not promotion. A lesson
-captured from a run can become candidate guidance without silently becoming
-trusted project knowledge.</p><p>The recurring principle is:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>context        != memory
-</span></span><span class=line><span class=cl>identity       != authority
-</span></span><span class=line><span class=cl>evidence       != permission
+persistence</a>.</p><p>These become harder once an agent moves from suggesting work to performing it.</p><p>Micrantha&rsquo;s approach is to keep several boundaries separate. Dubnium&rsquo;s Workflow
+Runtime owns resumable execution state; its Memory System owns durable context
+and learning. Keylix establishes identity and delegation while Anthesis decides
+whether an effect is authorized. Repora models repository identity, topology,
+observed state, desired state, and controlled mutation instead of trusting the
+checkout an agent happens to occupy. Sandcastle keeps mutable workspace state
+and lineage explicit, and Testule keeps verification evidence separate from
+authority.</p><p>The distinctions are deliberate:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>context         != memory
+</span></span><span class=line><span class=cl>identity        != authority
+</span></span><span class=line><span class=cl>evidence        != permission
 </span></span><span class=line><span class=cl>workflow intent != effect authority
-</span></span><span class=line><span class=cl>persistence    != promotion
-</span></span></code></pre></div><p>Micrantha goes further less by adding one bigger workflow than by making those
-boundaries independently representable and enforceable.</p><h2 id=what-micrantha-can-borrow>What Micrantha can borrow</h2><p>The comparison is useful in the other direction too. BMAD and Spec Kit both have
+</span></span><span class=line><span class=cl>persistence     != promotion
+</span></span></code></pre></div><p>Micrantha is not trying to solve those problems by making one larger workflow.
+It gives them separate owners and contracts.</p><h2 id=what-micrantha-can-borrow>What Micrantha can borrow</h2><p>The comparison is useful in the other direction too. BMAD and Spec Kit both have
 methodology-level ideas worth adopting without turning either methodology into
 the control substrate.</p><h3 id=from-bmad>From BMAD</h3><p>BMAD scales workflow depth with task size rather than forcing every change
 through heavyweight ceremony. Its project context is deliberately focused on
@@ -167,25 +155,14 @@ Testule is developing a lower-level portable requirement and evidence substrate.
 </span></span><span class=line><span class=cl>native test / analysis tools
 </span></span><span class=line><span class=cl>            ↓
 </span></span><span class=line><span class=cl>normalized Evidence
-</span></span></code></pre></div><p>That is complementary rather than competitive.</p><h3 id=from-spec-kit>From Spec Kit</h3><p>Spec Kit makes convergence after implementation explicit rather than assuming
+</span></span></code></pre></div><p>That is a clean division of responsibility.</p><h3 id=from-spec-kit>From Spec Kit</h3><p>Spec Kit makes convergence after implementation explicit rather than assuming
 that implementation means completion. Its <code>converge</code> workflow classifies gaps
 between intent and implementation as <strong>missing, partial, contradicts, or
 unrequested</strong>, then keeps remediation traceable back to the specification.</p><p>That vocabulary is useful because it describes the relationship between intent
-and implementation without collapsing into severity, priority, root cause, or
-authorization.</p><p>Micrantha can borrow that convergence discipline while keeping the boundaries
-separate:</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-text data-lang=text><span class=line><span class=cl>stated intent
-</span></span><span class=line><span class=cl>      ↓
-</span></span><span class=line><span class=cl>implemented state
-</span></span><span class=line><span class=cl>      ↓
-</span></span><span class=line><span class=cl>classified gap
-</span></span><span class=line><span class=cl>      ↓
-</span></span><span class=line><span class=cl>traceable remediation candidate
-</span></span><span class=line><span class=cl>      ↓
-</span></span><span class=line><span class=cl>verification + policy + authorized effect
-</span></span></code></pre></div><p>The common lesson is that methodology should improve how work is shaped,
-reviewed, and converged. It should not have to become the identity provider,
-memory system, policy engine, repository source of truth, or effect boundary in
-order to do that.</p><h2 id=bmad-as-a-workload>BMAD as a workload</h2><p>The stronger experiment is therefore not replacing Micrantha with BMAD.</p><p>It is running BMAD <strong>through</strong> Micrantha.</p><div class=mermaid>flowchart LR
+and implementation without also deciding severity, priority, root cause, or
+authorization. Micrantha can borrow that convergence discipline while keeping
+those decisions elsewhere.</p><h2 id=bmad-as-a-workload>BMAD as a workload</h2><p>The experiment I want to try is running BMAD <strong>through</strong> Micrantha rather than
+replacing Micrantha with it.</p><div class=mermaid>flowchart LR
 B["BMAD<br>method + context"] --> I["Invokrum"]
 I --> D["Dubnium Supervisor"]
 D --> W["Workflow Runtime / scheduler"]
@@ -193,19 +170,14 @@ D --> M["Memory System"]
 D --> G["Governed gateways"]
 G --> K["Keylix"]
 K --> A["Anthesis"]
-A --> E["Repora / Sandcastle / Testule"]</div><p>If that works, BMAD supplies software-development methodology and context
-without needing to become the trusted identity, authorization,
-repository-control, state-management, or verification substrate.</p><p>That also means BMAD does not need to absorb all of Micrantha to benefit from
-it.</p><h2 id=replaceable-methodology-governed-substrate>Replaceable methodology, governed substrate</h2><p>BMAD starts from <strong>software-development workflow</strong> and increasingly adds the
-deterministic machinery needed to make autonomous development practical.</p><p>Micrantha starts from <strong>context, explicit sources of truth, authenticated
-identity, bounded authority, durable state, provenance, reproducibility, and
-failure containment</strong>, then allows different workflows to operate across them.</p><p>The convergence is real, but so is the distinction.</p><p>BMAD is building a better autonomous development workflow.</p><p>Micrantha is increasingly building a substrate on which BMAD, Spec Kit, and
-future autonomous-development methodologies can be treated as <strong>replaceable
-clients rather than trusted control planes</strong>.</p><p>The design target is not a particular workflow graph or agent methodology.
-Those can change.</p><p>The target is an autonomous software-delivery system in which <strong>goal, context,
-identity, authority, durable memory, repository truth, execution, and evidence
-remain independently identifiable and governable even when the reasoning and
-workflow are probabilistic</strong>.</p></div></div></main><footer id=footer class=legs><div class="has-text-centered content"><div class=footer-links><nav aria-label="Footer quick links" class=footer-links-row><a class="tag is-rounded" href=/archive>Archive</a>
+A --> E["Repora / Sandcastle / Testule"]</div><p>In that arrangement BMAD supplies methodology and development context. It does
+not need to own identity, authorization, repository control, runtime state, or
+verification.</p><h2 id=replaceable-methodology-governed-substrate>Replaceable methodology, governed substrate</h2><p>BMAD starts with software-development workflow. Micrantha&rsquo;s agentic work started
+with a different question: <strong>how do I govern what an AI is allowed to do?</strong></p><p>That difference explains much of the architecture. Micrantha keeps context,
+identity, authority, state, repository truth, execution, and evidence behind
+separate, interoperable contracts. BMAD or Spec Kit can provide methodology
+without becoming the control plane.</p><p>That is the result I care about: the workflow can change without requiring the
+governance and execution boundaries to change with it.</p></div></div></main><footer id=footer class=legs><div class="has-text-centered content"><div class=footer-links><nav aria-label="Footer quick links" class=footer-links-row><a class="tag is-rounded" href=/archive>Archive</a>
 <a class="tag is-rounded" href=/posts/index.xml>RSS</a>
 <a class="tag is-rounded" href=https://micrantha.com target=_blank rel=noopener>Micrantha</a></nav><nav aria-label="Footer social links" class=footer-links-row><a class="tag is-rounded" href=https://github.com/ryjen target=_blank rel=noopener>GitHub</a>
 <a class="tag is-rounded" href=https://linkedin.com/in/ryjen target=_blank rel=noopener>LinkedIn</a>
