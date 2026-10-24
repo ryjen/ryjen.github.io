@@ -1,4 +1,4 @@
-<!doctype html><html lang=en-us><head><meta charset=UTF-8><meta http-equiv=x-ua-compatible content="ie=edge"><title>Software Architecture for Independence | Robert Ryan Jennings</title><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="dark light"><link rel=canonical href=https://ryanjennin.gs/posts/software-architecture/><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link rel=preload as=style href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;family=JetBrains+Mono:wght@400;600&amp;family=Source+Sans+3:wght@400;500;600&amp;display=swap"><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;family=JetBrains+Mono:wght@400;600&amp;family=Source+Sans+3:wght@400;500;600&amp;display=swap" media=print onload='this.media="all"'><noscript><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;family=JetBrains+Mono:wght@400;600&amp;family=Source+Sans+3:wght@400;500;600&amp;display=swap"></noscript><script>(()=>{const n=document.documentElement,t="light",s="dark";let e=t;try{e=localStorage.getItem("theme")}catch{}e!==t&&e!==s&&(e=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches?s:t),n.dataset.theme=e,n.style.colorScheme=e})()</script><meta name=google-site-verification content="Crk6W-ckoApRrOZrv23ngLwPPTbzjzfZ4AQPElgS0pw"><meta name=description content="A note pointing to my Medium article on software architecture, control, and engineering independence."><meta name=robots content="index, follow"><meta property="og:title" content="Software Architecture for Independence"><meta property="og:description" content="A note pointing to my Medium article on software architecture, control, and engineering independence."><meta property="og:type" content="article"><meta property="og:url" content="https://ryanjennin.gs/posts/software-architecture/"><meta property="og:site_name" content="Robert Ryan Jennings"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://ryanjennin.gs/image/logo.png"><meta property="article:published_time" content="2025-04-16T12:25:55-07:00"><meta property="article:modified_time" content="2025-04-16T12:25:55-07:00"><meta property="article:tag" content="software architecture"><meta property="article:tag" content="ai"><meta property="article:tag" content="security"><meta property="article:tag" content="mobile"><meta property="article:tag" content="redux"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Software Architecture for Independence"><meta name=twitter:description content="A note pointing to my Medium article on software architecture, control, and engineering independence."><meta name=twitter:image content="https://ryanjennin.gs/image/logo.png"><script type=application/ld+json>{"@context":"https://schema.org","@graph":[{"@id":"https://ryanjennin.gs/posts/software-architecture/#webpage","@type":"WebPage","about":{"@id":"https://ryanjennin.gs/posts/software-architecture/#article"},"description":"A note pointing to my Medium article on software architecture, control, and engineering independence.","isPartOf":{"@id":"https://ryanjennin.gs/#website"},"name":"Software Architecture for Independence","url":"https://ryanjennin.gs/posts/software-architecture/"},{"@id":"https://ryanjennin.gs/posts/software-architecture/#article","@type":"BlogPosting","author":{"@id":"https://ryanjennin.gs/#person"},"dateModified":"2025-04-16T12:25:55-07:00","datePublished":"2025-04-16T12:25:55-07:00","description":"A note pointing to my Medium article on software architecture, control, and engineering independence.","headline":"Software Architecture for Independence","inLanguage":"en-us","isPartOf":{"@id":"https://ryanjennin.gs/#website"},"keywords":"software architecture, ai, security, mobile, redux","mainEntityOfPage":{"@id":"https://ryanjennin.gs/posts/software-architecture/#webpage"},"publisher":{"@id":"https://ryanjennin.gs/#person"},"url":"https://ryanjennin.gs/posts/software-architecture/"},{"@id":"https://ryanjennin.gs/#person","@type":"Person","description":"Web logs of a software development engineer, musician, artist and hockey player.","image":"https://gravatar.com/avatar/7cb4299e74a72928a9f05e8e910f07d5","name":"Robert Ryan Jennings","sameAs":["https://github.com/ryjen","https://linkedin.com/in/ryjen","https://soundcloud.com/entrobert/sets/favs","https://www.goodreads.com/ryjen"],"url":"https://ryanjennin.gs/about/"}]}</script><link rel=stylesheet href=/css/theme.min.css type=text/css><link href=/css/app.min.5948f18cb0512f9e8929b6c3e292384ce0fa8d2338d0cd897f01949b9dbbeefbb32bb4aad6feff68f356aa0240adab109af0d414d1e513336a4bd16f8060699a.css rel=stylesheet type=text/css integrity="sha512-WUjxjLBRL56JKbbD4pI4TOD6jSM40M2JfwGUm5277vuzK7Sq1v7/aPNWqgJArasQmvDUFNHlEzNqS9FvgGBpmg==" crossorigin=anonymous><style>html[data-theme=dark] body{background-color:#002b36;color:#fdf6e3!important}html[data-theme=dark] body a{color:#268bd2}html[data-theme=dark] body .icon{fill:#fdf6e3;stroke:#fdf6e3}html[data-theme=dark] body .box,html[data-theme=dark] body .card{background-color:#073642}html[data-theme=dark] body code,html[data-theme=dark] body pre{background-color:#657b83;color:#002b36}html[data-theme=dark] body hr{background-color:#657b83}</style></head><body><script>(function(){var s,t="light",n="dark",e=null;try{e=window.localStorage.getItem("theme")}catch{e=null}s=e||(window.matchMedia("(prefers-color-scheme: dark)").matches?n:t),document.body.classList.remove(t,n),document.body.classList.add(s)})()</script><a class=skip-link href=#main>Skip to main content</a><header id=header class=shoulders><nav class=navbar role=navigation aria-label="main navigation"><div class=navbar-brand><a class=navbar-item href=/><figure class="image is-32x32"><img class=is-rounded src=https://gravatar.com/avatar/7cb4299e74a72928a9f05e8e910f07d5 alt width=32 height=32></figure><span class=navbar-brand-title>robert ryan jennings</span>
+<!doctype html><html lang=en-us><head><meta charset=UTF-8><meta http-equiv=x-ua-compatible content="ie=edge"><title>Software Architecture for Independence | Robert Ryan Jennings</title><meta name=viewport content="width=device-width,initial-scale=1"><meta name=color-scheme content="dark light"><link rel=canonical href=https://ryanjennin.gs/posts/software-architecture/><link rel=preconnect href=https://fonts.googleapis.com><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link rel=preload as=style href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;family=JetBrains+Mono:wght@400;600&amp;family=Source+Sans+3:wght@400;500;600&amp;display=swap"><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;family=JetBrains+Mono:wght@400;600&amp;family=Source+Sans+3:wght@400;500;600&amp;display=swap" media=print onload='this.media="all"'><noscript><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;family=JetBrains+Mono:wght@400;600&amp;family=Source+Sans+3:wght@400;500;600&amp;display=swap"></noscript><script>(()=>{const n=document.documentElement,t="light",s="dark";let e=t;try{e=localStorage.getItem("theme")}catch{}e!==t&&e!==s&&(e=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches?s:t),n.dataset.theme=e,n.style.colorScheme=e})()</script><meta name=google-site-verification content="Crk6W-ckoApRrOZrv23ngLwPPTbzjzfZ4AQPElgS0pw"><meta name=description content="Why Clean Architecture, SOLID, explicit boundaries, and testable contracts help systems absorb change without surrendering control."><meta name=robots content="index, follow"><meta property="og:title" content="Software Architecture for Independence"><meta property="og:description" content="Why Clean Architecture, SOLID, explicit boundaries, and testable contracts help systems absorb change without surrendering control."><meta property="og:type" content="article"><meta property="og:url" content="https://ryanjennin.gs/posts/software-architecture/"><meta property="og:site_name" content="Robert Ryan Jennings"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://ryanjennin.gs/image/logo.png"><meta property="article:published_time" content="2025-04-17T12:25:55-07:00"><meta property="article:modified_time" content="2026-10-23T00:00:00Z"><meta property="article:tag" content="software architecture"><meta property="article:tag" content="clean architecture"><meta property="article:tag" content="solid"><meta property="article:tag" content="ai"><meta property="article:tag" content="security"><meta property="article:tag" content="mobile"><meta property="article:tag" content="redux"><meta name=twitter:card content="summary_large_image"><meta name=twitter:title content="Software Architecture for Independence"><meta name=twitter:description content="Why Clean Architecture, SOLID, explicit boundaries, and testable contracts help systems absorb change without surrendering control."><meta name=twitter:image content="https://ryanjennin.gs/image/logo.png"><script type=application/ld+json>{"@context":"https://schema.org","@graph":[{"@id":"https://ryanjennin.gs/posts/software-architecture/#webpage","@type":"WebPage","about":{"@id":"https://ryanjennin.gs/posts/software-architecture/#article"},"description":"Why Clean Architecture, SOLID, explicit boundaries, and testable contracts help systems absorb change without surrendering control.","isPartOf":{"@id":"https://ryanjennin.gs/#website"},"name":"Software Architecture for Independence","url":"https://ryanjennin.gs/posts/software-architecture/"},{"@id":"https://ryanjennin.gs/posts/software-architecture/#article","@type":"BlogPosting","author":{"@id":"https://ryanjennin.gs/#person"},"dateModified":"2026-10-23T00:00:00Z","datePublished":"2025-04-17T12:25:55-07:00","description":"Why Clean Architecture, SOLID, explicit boundaries, and testable contracts help systems absorb change without surrendering control.","headline":"Software Architecture for Independence","inLanguage":"en-us","isPartOf":{"@id":"https://ryanjennin.gs/#website"},"keywords":"software architecture, clean architecture, solid, ai, security, mobile, redux","mainEntityOfPage":{"@id":"https://ryanjennin.gs/posts/software-architecture/#webpage"},"publisher":{"@id":"https://ryanjennin.gs/#person"},"url":"https://ryanjennin.gs/posts/software-architecture/"},{"@id":"https://ryanjennin.gs/#person","@type":"Person","description":"Web logs of a software development engineer, musician, artist and hockey player.","image":"https://gravatar.com/avatar/7cb4299e74a72928a9f05e8e910f07d5","name":"Robert Ryan Jennings","sameAs":["https://github.com/ryjen","https://linkedin.com/in/ryjen","https://soundcloud.com/entrobert/sets/favs","https://www.goodreads.com/ryjen"],"url":"https://ryanjennin.gs/about/"}]}</script><link rel=stylesheet href=/css/theme.min.css type=text/css><link href=/css/app.min.5948f18cb0512f9e8929b6c3e292384ce0fa8d2338d0cd897f01949b9dbbeefbb32bb4aad6feff68f356aa0240adab109af0d414d1e513336a4bd16f8060699a.css rel=stylesheet type=text/css integrity="sha512-WUjxjLBRL56JKbbD4pI4TOD6jSM40M2JfwGUm5277vuzK7Sq1v7/aPNWqgJArasQmvDUFNHlEzNqS9FvgGBpmg==" crossorigin=anonymous><style>html[data-theme=dark] body{background-color:#002b36;color:#fdf6e3!important}html[data-theme=dark] body a{color:#268bd2}html[data-theme=dark] body .icon{fill:#fdf6e3;stroke:#fdf6e3}html[data-theme=dark] body .box,html[data-theme=dark] body .card{background-color:#073642}html[data-theme=dark] body code,html[data-theme=dark] body pre{background-color:#657b83;color:#002b36}html[data-theme=dark] body hr{background-color:#657b83}</style></head><body><script>(function(){var s,t="light",n="dark",e=null;try{e=window.localStorage.getItem("theme")}catch{e=null}s=e||(window.matchMedia("(prefers-color-scheme: dark)").matches?n:t),document.body.classList.remove(t,n),document.body.classList.add(s)})()</script><a class=skip-link href=#main>Skip to main content</a><header id=header class=shoulders><nav class=navbar role=navigation aria-label="main navigation"><div class=navbar-brand><a class=navbar-item href=/><figure class="image is-32x32"><img class=is-rounded src=https://gravatar.com/avatar/7cb4299e74a72928a9f05e8e910f07d5 alt width=32 height=32></figure><span class=navbar-brand-title>robert ryan jennings</span>
 </a><button type=button class=navbar-burger aria-label="Open main navigation" aria-expanded=false aria-controls=nav data-target=nav>
 <span aria-hidden=true></span>
 <span aria-hidden=true></span>
@@ -14,24 +14,267 @@
 </span>about
 </a><button type=button class="navbar-item themer" aria-label="Use dark theme" aria-pressed=false>
 <span class="icon theme-icon" aria-hidden=true><svg xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="/fonts/solid.svg#yin-yang"/></svg></span></button></div></div></nav></header><main id=main class=abdomen tabindex=-1><nav class="breadcrumb ml-4 is-small" aria-label=breadcrumbs><ul><li><a href=/>Home</a></li><li><a href=/posts/>Blog</a></li><li class=is-active><a href=/posts/software-architecture/ aria-current=page>Software Architecture for Independence</a></li></ul></nav><div class=container><header class="article-header mb-5"><h1 class=title>Software Architecture for Independence</h1><p class="article-meta is-size-7"><span>By Robert Ryan Jennings</span>
-<span>Published Apr 16, 2025 12:25PM</span>
-<span>1 min read</span></p><div class="tags mb-3"><a class="tag is-rounded" href=/categories/software-engineering>software engineering</a></div><div class="tags mb-0"><a class="tag is-rounded" href=/tags/software-architecture>software architecture</a>
+<span>Published Apr 17, 2025 12:25PM</span>
+<span>18 min read</span>
+<span>Updated Oct 23, 2026 12:00AM</span></p><div class="tags mb-3"><a class="tag is-rounded" href=/categories/software-engineering>software engineering</a></div><div class="tags mb-0"><a class="tag is-rounded" href=/tags/software-architecture>software architecture</a>
+<a class="tag is-rounded" href=/tags/clean-architecture>clean architecture</a>
+<a class="tag is-rounded" href=/tags/solid>solid</a>
 <a class="tag is-rounded" href=/tags/ai>ai</a>
 <a class="tag is-rounded" href=/tags/security>security</a>
 <a class="tag is-rounded" href=/tags/mobile>mobile</a>
 <a class="tag is-rounded" href=/tags/redux>redux</a></div></header><div class=tts-controls data-tts-controls hidden><button type=button class="button is-small" data-tts-toggle data-tts-target=post-content>
-Read this post to me</button><p class=tts-status data-tts-status aria-live=polite></p></div><div class="content article-content" id=post-content data-tts-content><p>If you want the deeper version, the related Medium article is
-<a href=https://medium.com/@rybertjen/software-architecture-for-independence-a617e2278351>Software Architecture for Independence</a>.</p><p>For adjacent thinking on AI-assisted delivery, see
-<a href=/posts/ai-sdlc/>AI SDLC: automating the grind</a>.
-For the security governance layer that shows up once AI starts touching delivery,
-see <a href=/posts/threat-modeling-ai-engineering-coprocessor/>Threat Modeling AI as an Engineering Coprocessor</a>.
-For how architectural discipline degrades in real organizations over time, see
-<a href=/posts/legacy-system-insights/>Legacy System Insights</a>.
-For a concrete example of keeping trust anchored in backend architecture rather
-than untrusted clients, see
-<a href=/posts/modern-mobile-hardening/>Modern Mobile Hardening</a>.</p><p>The perspective behind this note comes from shipping and maintaining software in
-environments where control, change velocity, and security boundaries mattered
-more than framework preference.</p><hr><h2 id=author-background>Author Background</h2><ul><li><a href=https://linkedin.com/in/ryjen>LinkedIn: Ryan Jennings</a> for the professional background behind the architectural perspective in this note.</li></ul></div></div></main><footer id=footer class=legs><div class="has-text-centered content"><div class=footer-links><nav aria-label="Footer quick links" class=footer-links-row><a class="tag is-rounded" href=/archive>Archive</a>
+Read this post to me</button><p class=tts-status data-tts-status aria-live=polite></p></div><div class="content article-content" id=post-content data-tts-content><p><em>Originally published on <a href=https://medium.com/@rybertjen/software-architecture-for-independence-a617e2278351>Medium</a> on April 17, 2025. <strong>Edited October 23, 2026</strong> for clarity, technical accuracy, and lessons from production systems and independent engineering projects. The <a href=https://medium.com/@rybertjen/software-architecture-for-independence-a617e2278351>original article</a> includes illustrations not yet reproduced locally.</em></p><p>The value of software architecture is not measured by the number of layers,
+interfaces, or design patterns in a system. It is measured by how much change
+the system can absorb without disturbing unrelated behavior.</p><p>A user interface will change. A database or external API may be replaced.
+A third-party library will be upgraded. Requirements, security assumptions,
+teams, and delivery constraints also change. Architecture cannot eliminate
+that uncertainty, but it can determine how far each change propagates.</p><p><strong>Independence is the goal. Layers, use cases, SOLID principles, and design
+patterns are techniques for achieving it—not goals in themselves.</strong></p><p>This article looks at those techniques and where I have found them useful in
+mobile applications, legacy modernization, security-sensitive systems, and
+more recently AI-assisted development. It also covers where abstraction becomes
+an expense rather than a benefit.</p><h2 id=contents>Contents</h2><ol><li><a href=#1-the-cost-of-change>The Cost of Change</a></li><li><a href=#2-clean-architecture-fundamentals>Clean Architecture Fundamentals</a></li><li><a href=#3-applying-boundaries>Applying Boundaries</a></li><li><a href=#4-refactoring-and-modernization>Refactoring and Modernization</a></li><li><a href=#5-design-patterns-and-their-limits>Design Patterns and Their Limits</a></li><li><a href=#6-mobile-and-presentation-architectures>Mobile and Presentation Architectures</a></li><li><a href=#7-ai-as-a-replaceable-untrusted-component>AI as a Replaceable, Untrusted Component</a></li><li><a href=#8-conventions-reviews-and-testing>Conventions, Reviews, and Testing</a></li><li><a href=#9-security-and-data-lifecycles>Security and Data Lifecycles</a></li><li><a href=#10-conclusion>Conclusion</a></li><li><a href=#11-references>References</a></li></ol><h2 id=1-the-cost-of-change>1. The Cost of Change</h2><p>The familiar <a href=https://en.wikipedia.org/wiki/Project_management_triangle>project management triangle</a>
+describes tensions among scope, time, and cost, with quality affected by
+how the work is managed. It is a planning model, not a law that precisely
+limits teams to optimizing two variables.</p><p>Architecture influences these trade-offs by changing the <em>cost of a change</em>.
+A feature that can be implemented and tested in one bounded component is
+usually easier to estimate than one that touches navigation, business rules,
+persistence, and several remote services at once.</p><p>Good boundaries can make it easier to:</p><ul><li>Change an external implementation without rewriting business policy.</li><li>Develop independent features without coordinating every modification.</li><li>Test important behavior without bringing up the entire application.</li><li>Diagnose regressions at a known contract or ownership boundary.</li><li>Transfer knowledge through consistent interfaces and conventions.</li></ul><p>There is a cost on the other side of the ledger. Each abstraction introduces
+another concept, contract, and potential source of indirection. Splitting a
+small feature into six packages will not necessarily make it more maintainable.
+The relevant question is whether the boundary isolates a meaningful source of
+change, complexity, or risk.</p><p>I saw the leverage of reuse in product work at QuickMobile/Cvent, where a
+configurable conference framework supported many event-specific experiences.
+A change to shared platform behavior could benefit more than one event,
+rather than becoming another client-specific fix. That leverage depended
+on keeping the common framework distinct from event configuration.</p><h2 id=2-clean-architecture-fundamentals>2. Clean Architecture Fundamentals</h2><p><a href=https://www.oreilly.com/library/view/clean-architecture-a/9780134494272/>Clean Architecture</a>
+offers a way to organize software around policies that are important to the
+application rather than the tools used to implement them.</p><p>It is useful to think of two different ways to divide a system:</p><ul><li><strong>Horizontally:</strong> responsibilities such as presentation, application
+coordination, domain policy, and infrastructure.</li><li><strong>Vertically:</strong> features or use cases such as authentication, retrieving a
+document, synchronizing a change, or generating a report.</li></ul><p>A layer is a logical boundary. It may correspond to a package or module, but
+folders alone do not enforce it. A use case is a bounded operation that
+coordinates the responsibilities necessary to achieve an outcome.</p><p>The central rule concerns <strong>source-code dependencies</strong>: policy should not
+need to import a specific database driver, UI framework, or remote service SDK
+to express itself.</p><p>For example, a domain-facing use case can require a session store contract.
+An infrastructure adapter implements that contract using a particular
+storage mechanism. At runtime, the use case calls outward through the
+interface; at source level, the infrastructure implementation depends inward
+on the contract.</p><p>That distinction matters. <strong>Runtime data flow and source dependency
+direction are not the same thing.</strong></p><p>The <a href=https://medium.com/@rybertjen/software-architecture-for-independence-a617e2278351>original Medium article</a>
+includes diagrams for layers and use cases.</p><h3 id=21-solid-principles>2.1 SOLID Principles</h3><p>SOLID provides useful review questions for individual units of code and
+their relationships. It does not prescribe a package layout or require every
+class to have an interface.</p><p>Consider an authentication feature whose policy must work with different
+identity providers, session stores, and user interfaces.</p><p><strong>Single Responsibility Principle (SRP)</strong></p><p>A module should have one principal reason to change, understood in terms of
+the people or concerns that own its requirements. Credential verification,
+presentation rendering, and analytics reporting need not be maintained as one
+unit simply because they all happen during login.</p><p><strong>Open-Closed Principle (OCP)</strong></p><p>A well-chosen extension point can accommodate a new authentication provider
+without repeatedly changing the core login policy. That does not mean code
+should never be modified. The goal is to protect stable behavior from the
+kinds of variation the design genuinely expects.</p><p><strong>Liskov Substitution Principle (LSP)</strong></p><p>An implementation must preserve the behavioral contract expected by callers.
+If a token-validation adapter silently treats expired credentials as valid,
+it is not a safe substitute for another adapter that rejects them—even when
+both implement the same method signature. Error behavior and invariants are
+part of substitutability.</p><p><strong>Interface Segregation Principle (ISP)</strong></p><p>Clients should depend on the capabilities they need, not a large interface
+containing unrelated operations. A login use case that needs to verify a
+credential should not have to depend on an identity-provider administration
+API as well.</p><p><strong>Dependency Inversion Principle (DIP)</strong></p><p>High-level policy and low-level adapters should depend on appropriate
+abstractions rather than having high-level policy tied to an SDK or database.
+Dependency injection can assemble the implementations, but injection is a
+mechanism—not the principle itself.</p><p>Applied together, these ideas make change more local and tests more focused.
+Applied indiscriminately, they produce layers of interfaces that never
+isolate anything meaningful.</p><h2 id=3-applying-boundaries>3. Applying Boundaries</h2><h3 id=31-packaging-by-layer-feature-or-component>3.1 Packaging by Layer, Feature, or Component</h3><p>Packaging is a tool for expressing ownership and dependencies.</p><p><strong>Package by layer</strong> is approachable in a smaller application, but a single
+feature can require edits across many directories.</p><p><strong>Package by feature</strong> keeps related presentation, application, and domain
+behavior closer together. Shared contracts still need deliberate ownership
+so that features do not become mutually dependent.</p><p><strong>Ports and adapters (hexagonal architecture)</strong> emphasizes a policy core and
+interfaces for outside interactions. UI, database, network, and AI provider
+implementations can be adapters around those ports. Hexagonal architecture
+is not merely a particular folder layout.</p><p><strong>Package by component</strong> gives independently usable components explicit
+public APIs, often with internal layering. It is useful when a component has
+a clear release or reuse boundary.</p><p>These approaches can coexist. A feature-oriented application may use ports
+and adapters internally and package reusable platform capabilities as
+components. The structure should reveal how the system changes and who
+owns those changes.</p><h3 id=32-boundaries-need-contracts>3.2 Boundaries Need Contracts</h3><p>An interface is not automatically a boundary. A useful contract specifies
+more than method names: inputs, outputs, invariants, error semantics,
+ownership, side effects, and compatibility assumptions.</p><p>That is especially important across network and persistence boundaries.
+At ePACT, mobile/backend work involved relational backend storage, SQLite
+and JSON-based client models, and change-only synchronization. The important
+architectural seam was the data contract between heterogeneous stores—not
+forcing each tier to use the same persistence representation.</p><p>A boundary is valuable when it prevents an implementation detail from
+leaking into a caller&rsquo;s assumptions. A leaky repository that returns
+database-specific records throughout a domain does not buy much
+independence, even if it has an interface.</p><h3 id=33-keep-details-in-their-place>3.3 Keep Details in Their Place</h3><p>Some recurring examples:</p><ul><li><strong>Data is significant; its storage provider is a detail.</strong></li><li><strong>User experience is significant; its rendering framework is a detail.</strong></li><li><strong>Business behavior is significant; a particular middleware library is a detail.</strong></li><li><strong>An AI-assisted capability may be significant; its model vendor is a detail.</strong></li></ul><p>This does not mean all details are cheap to replace. A database&rsquo;s consistency
+model or a model&rsquo;s context limitations can shape what the application can
+guarantee. Independence comes from making such assumptions explicit and
+confining them—not pretending they do not exist.</p><h3 id=34-humble-objects-and-testability>3.4 Humble Objects and Testability</h3><p>The <a href=https://martinfowler.com/bliki/HumbleObject.html>Humble Object pattern</a>
+separates difficult-to-test integration or presentation mechanics from
+deterministic behavior that can be tested directly.</p><p>A view can be deliberately simple: render state and forward user intent.
+A presenter or view model prepares that state and makes decisions that
+can be exercised without a real device or UI framework.</p><p>The goal is not to move every line out of the view. It is to keep complex
+policy and state transformations out of places where testing requires
+unnecessary framework machinery.</p><h2 id=4-refactoring-and-modernization>4. Refactoring and Modernization</h2><p>A clean design on a blank page is easier than improving a system with real
+users, production dependencies, undocumented behavior, and delivery
+deadlines. In practice, the second problem matters more.</p><h3 id=41-the-scout-rule-with-a-destination>4.1 The Scout Rule, With a Destination</h3><p>Leave code better than you found it—but make &ldquo;better&rdquo; consistent with the
+system&rsquo;s direction. A well-intended cleanup that introduces a new
+architectural convention for one file can make the codebase less coherent.</p><p>A useful incremental sequence is:</p><ol><li>Identify a risky or frequently changing behavior.</li><li>Record the existing contract and observable outcomes.</li><li>Introduce a seam around that behavior.</li><li>Change one implementation behind the seam.</li><li>Compare results, test the boundary, and observe production behavior.</li><li>Remove transitional complexity only when the replacement is proven.</li></ol><p>This is compatible with the strangler pattern, partial boundaries, and
+progressive migration. It avoids needing a complete rewrite before any
+improvement becomes useful.</p><h3 id=42-lessons-from-authentication-and-asynchronous-state>4.2 Lessons From Authentication and Asynchronous State</h3><p>In a retirement-services mobile application at Manulife, the authentication
+path had accumulated RxJS, Redux thunks, and Promise-based work alongside
+state-management and view concerns. The biggest issue was not simply the
+choice of tools. It was determining which operation owned a side effect,
+when state was read, and what happened when asynchronous work completed
+out of order.</p><p>The practical modernization sequence was to simplify the high-risk login
+state path, define more consistent state-access and ordering rules, and
+introduce stronger boundaries incrementally.</p><p>This revealed an important distinction: <strong>structural separation is not
+enough if runtime behavior still crosses ownership boundaries unpredictably.</strong>
+An architecture also needs explicit invariants around concurrency,
+cancellation, state freshness, and side effects.</p><p>The work did not replace every asynchronous mechanism with one framework or
+complete a wholesale Clean Architecture rewrite. The useful outcome was a
+more disciplined direction for evolving the existing system.</p><h3 id=43-prototype-compare-then-migrate>4.3 Prototype, Compare, Then Migrate</h3><p>A separate analytics modernization effort at Manulife exposed another
+failure mode. Authentication-derived context, analytics mappings, and
+asynchronous events were entangled. The risk was not only incorrect metrics:
+stale authenticated context could also cross a privacy boundary.</p><p>I prototyped a replacement using Redux and asynchronous thunks, with tests
+comparing its generated analytics data against the existing implementation.
+That was a way to evaluate correctness and reduce migration risk before
+replacing the live path.</p><p>The prototype was <strong>not merged into the production application</strong>. Some
+colleagues adapted aspects of the work, but competing delivery priorities
+prevented the proposed migration from becoming the product&rsquo;s canonical
+implementation.</p><p>That is part of the architectural lesson: a technically sound migration
+still needs organizational capacity, a credible rollout plan, and an
+incentive to adopt it. Tests reduce uncertainty; they do not allocate time
+or make the business case.</p><h3 id=44-when-a-rewrite-is-appropriate>4.4 When a Rewrite Is Appropriate</h3><p>A rewrite can be justified when the existing structure prevents safe
+evolution and incremental migration is demonstrably more expensive.
+But &ldquo;the architecture would be cleaner from scratch&rdquo; is not enough.</p><p>Before choosing one, assess feature parity, hidden integrations,
+operational behavior, data migration, security regressions, rollback
+options, and the cost of maintaining two implementations in parallel.</p><p>The preference is not <em>never rewrite</em>. It is <strong>preserve verifiable
+behavior and choose the smallest migration that changes the economics of
+further work</strong>.</p><p>For more on these organizational constraints, see
+<a href=/posts/legacy-system-insights/>Legacy System Insights</a>.</p><h2 id=5-design-patterns-and-their-limits>5. Design Patterns and Their Limits</h2><p>Patterns provide vocabulary for recurring structural and behavioral
+problems. Factory, Adapter, Facade, Strategy, Observer, and Command can all
+help communicate intent. They are not an architecture by themselves.</p><p>A <strong>repository</strong> is useful when a use case needs domain-oriented data access
+without depending on the database schema, HTTP client, or persistence
+lifecycle. Its value comes from the stable contract and mapping—not merely
+from the class name &ldquo;Repository.&rdquo;</p><p>A <strong>strategy</strong> is useful where a policy selects among interchangeable
+behaviors, such as supported authentication methods. The interface must
+still define what errors, retries, and security decisions mean across
+implementations.</p><p>A <strong>chain of responsibility</strong> can compose validation or request-processing
+steps, but the order, short-circuit behavior, and fail-closed defaults must
+be explicit. Authorization should not become an accidental consequence of
+which handler happened to run.</p><h3 id=51-singleton-versus-lifetime-management>5.1 Singleton Versus Lifetime Management</h3><p>A global singleton locator can hide dependencies, complicate isolation in
+tests, and introduce shared mutable-state or concurrency problems. A
+singleton <em>lifetime</em> managed by dependency injection is different: its
+dependencies remain visible and the object can still be replaced in tests.</p><p>The question is not whether there is exactly one instance. It is whether
+callers depend on a hidden global implementation and whether shared state
+has well-defined ownership.</p><p>Abstractions and patterns should earn their place. An adapter for one SDK
+that is unlikely to change may be sufficient; a generalized provider
+framework with plugin discovery, reflection, and elaborate lifecycle
+management may be unnecessary.</p><h2 id=6-mobile-and-presentation-architectures>6. Mobile and Presentation Architectures</h2><p>Presentation frameworks evolve quickly. The most durable distinction is
+between application policy and how a platform displays state or invokes
+that policy.</p><p><strong>MVC</strong> assigns responsibilities to model, view, and controller, but large
+controllers can become difficult to maintain when they absorb unrelated
+application logic. Extracting use cases is one way to avoid that outcome.</p><p><strong>MVVM</strong> exposes state and actions through a view model. A view model can
+adapt domain results for display without making presentation state itself
+the source of business truth.</p><p><strong>Redux-style unidirectional data flow</strong> can give state transitions a
+clearer ownership model, with actions, reducers, selectors, and effects.
+It does not require every application to put state in exactly the same
+layer, nor does it automatically prevent race conditions. Async work still
+needs a policy for reading current state and applying results.</p><p>On <strong>iOS</strong>, VIPER and <a href=https://www.pointfree.co/>The Composable Architecture</a>
+offer different decompositions of responsibilities and state flow. On
+<strong>Android</strong>, MVI-style designs are common, alongside MVVM and other
+approaches. None is a universal platform standard that substitutes for
+the underlying dependency and behavioral contracts.</p><p>At OpenArchive, introducing SwiftUI and Jetpack Compose alongside
+Clean/SOLID design work was an opportunity to separate platform rendering
+from privacy-oriented application concerns. The useful boundary was not
+&ldquo;SwiftUI versus Compose&rdquo;; it was which behavior could remain testable and
+consistent despite the platform differences.</p><p>Mobile also has unavoidable platform-specific capabilities: biometrics,
+camera, local storage, notifications, background execution, and network
+availability. They are important capabilities, but their APIs can be kept
+behind explicit adapters where doing so protects meaningful application
+behavior.</p><h3 id=61-network-boundaries-are-harder-than-package-boundaries>6.1 Network Boundaries Are Harder Than Package Boundaries</h3><p>A mobile application&rsquo;s trust boundary extends through APIs, authentication
+state, and remote services. For a legacy application that uses authenticated
+WebViews, a native UI boundary alone cannot resolve token expiry, data
+ownership, or injected-JavaScript coupling.</p><p>A backend-for-frontend (BFF) can become a practical modernization seam
+between native clients and older backend services. It can stabilize API
+contracts while backend internals evolve, although it adds another service
+to operate and secure.</p><p>This was relevant to the Manulife mobile environment, where client-side
+authentication and backend integration had to coexist with legacy WebView
+experiences. An API boundary was a more realistic path toward independence
+than waiting for every legacy dependency to disappear.</p><h2 id=7-ai-as-a-replaceable-untrusted-component>7. AI as a Replaceable, Untrusted Component</h2><p>AI adds a new kind of implementation detail: one that can produce useful
+output without necessarily being deterministic or trustworthy.</p><p>The architectural argument for independent model providers still applies.
+A use case can request inference through an interface while an adapter
+handles a hosted or local model, prompt formatting, response parsing, and
+provider-specific errors.</p><p>But model portability is only one concern. A model output should not
+automatically become an authorization decision, a filesystem mutation,
+or an instruction to execute code.</p><h3 id=71-separate-advice-from-authority>7.1 Separate Advice From Authority</h3><p>In independent projects such as Anthesis, Dubnium, and related engineering
+tools, I have been exploring and implementing a recurring pattern:</p><ol><li>A use case identifies an operation and assembles scoped context.</li><li>A model or deterministic rule proposes an action or result.</li><li>Deterministic validation checks schema, scope, identity, and invariants.</li><li>Policy and explicit approval determine whether execution is permitted.</li><li>A constrained executor performs the authorized operation.</li><li>Evidence records what was requested, approved, executed, and verified.</li></ol><p>These are project-level engineering patterns, not a claim that one unified
+enterprise platform has been deployed.</p><p>The distinction follows Clean Architecture&rsquo;s original premise: <strong>an
+external intelligence component may influence application behavior
+without owning the application&rsquo;s authority.</strong></p><h3 id=72-context-is-also-a-boundary>7.2 Context Is Also a Boundary</h3><p>Prompts, retrieved documents, model identity, and conversation history
+all influence an inference result. Treat them as inputs with provenance
+and scope, not as invisible ambient state.</p><p>Retrieval and context assembly can use local files, databases, or vector
+search, but the originating data still requires access controls, lifetime
+rules, and validation. A prompt retrieved from a remote source must not
+silently expand the permissions of the tool that consumes it.</p><p>A local model can help with offline availability or data residency. It
+does not by itself make a workflow secure: tool authority, prompt
+injection, sensitive-data flow, and model failure remain design
+problems.</p><p>For the security perspective, see
+<a href=/posts/threat-modeling-ai-engineering-coprocessor/>Threat Modeling AI as an Engineering Coprocessor</a>.</p><h2 id=8-conventions-reviews-and-testing>8. Conventions, Reviews, and Testing</h2><p>Architecture is sustained by conventions that developers can understand
+and tools can check. It weakens when every feature invents a different
+way to cross a boundary.</p><p>Useful conventions cover dependency direction, interface ownership,
+error handling, naming, data mapping, state transitions, and where
+side effects are allowed.</p><h3 id=81-example-dependency-rules>8.1 Example Dependency Rules</h3><p>A simple set of constraints might be:</p><ul><li>Domain policy imports neither presentation nor infrastructure code.</li><li>Application use cases coordinate policy through defined ports.</li><li>Infrastructure adapters implement ports and can depend on inward contracts.</li><li>Presentation maps user intent and renders results; business rules do not
+require a particular view framework.</li><li>Features expose narrow contracts rather than reaching into one another&rsquo;s
+internal state.</li></ul><p>These are <strong>source dependency</strong> rules, not a claim that runtime requests or
+responses move through the system in only one direction.</p><p>Package boundaries and import checks can help enforce the constraints,
+but engineering judgment is still needed when an abstraction starts
+leaking implementation details.</p><h3 id=82-a-practical-test-pyramid>8.2 A Practical Test Pyramid</h3><p>The objective is to detect regressions at the least expensive meaningful
+boundary, not to maximize mock counts.</p><ul><li><strong>Unit tests</strong> exercise deterministic domain rules and state transitions.</li><li><strong>Integration tests</strong> verify real mappings, persistence adapters, API
+contracts, and error behavior across subsystems.</li><li><strong>End-to-end tests</strong> cover a smaller number of critical user journeys,
+especially authentication, synchronization, and recovery.</li></ul><p>Dependency injection helps substitute controlled collaborators where
+appropriate. But an implementation that passes hundreds of mocked unit
+tests while its real database adapter is broken is not independently
+verifiable in any useful sense.</p><p>At Manulife and OpenArchive, cleaner architectural seams were part of
+improving unit testability and planning balanced validation across unit,
+integration, and end-to-end levels. That should not be confused with a
+claim that every tier of a full automated test pyramid was deployed in CI.</p><h3 id=83-reviews-preserve-the-architecture>8.3 Reviews Preserve the Architecture</h3><p>A review should ask more than whether code follows style rules:</p><ul><li>Does the change respect ownership and dependency direction?</li><li>Are concurrency and data lifecycle assumptions explicit?</li><li>Is the new abstraction justified by a real source of variation?</li><li>Can the behavior be verified at a relevant boundary?</li><li>Does the change improve the system&rsquo;s long-term ability to evolve?</li></ul><p>In engineering teams I have found code review, focused walkthroughs,
+and shared design conventions useful for communicating these decisions.
+A small, reviewable migration with evidence usually travels farther
+than a large architectural proposal that no one has time to absorb.</p><h2 id=9-security-and-data-lifecycles>9. Security and Data Lifecycles</h2><p>Clean Architecture can support security by making trust boundaries and
+control placement visible. It does <strong>not</strong> automatically provide
+confidentiality, integrity, availability, least privilege, or
+non-repudiation.</p><p>A dependency boundary is not necessarily a trust boundary. A package
+interface in one process does not isolate credentials from compromised
+code executing with the same authority. Controls must exist where data
+and authority actually cross trust boundaries.</p><p>Secure design principles such as <strong>least privilege, defense in depth,
+fail-safe defaults, complete mediation, and economy of mechanism</strong> need
+implementation and verification, not just well-named layers.</p><h3 id=91-data-in-transit-at-rest-and-in-use>9.1 Data in Transit, at Rest, and in Use</h3><p>Data changes risk as it moves:</p><ul><li><strong>In transit:</strong> authenticate endpoints and protect the communication
+channel; validate and minimize what crosses the boundary.</li><li><strong>At rest:</strong> manage access, retention, encryption where appropriate,
+backups, and deletion.</li><li><strong>In use:</strong> treat cached credentials, mutable state, concurrent access,
+and logs as part of the data&rsquo;s exposure surface.</li></ul><p>Mapping domain data into presentation state is a useful privacy control
+when it prevents unnecessary fields from reaching a UI or telemetry
+system. It is not a replacement for backend authorization.</p><h3 id=92-authentication-state-is-not-just-ui-state>9.2 Authentication State Is Not Just UI State</h3><p>The Manulife analytics example illustrates why state ownership matters
+to security. If asynchronous operations carry stale authenticated-user
+context into a later unauthenticated session, a seemingly ordinary
+analytics event can become a privacy defect.</p><p>More predictable state transitions and explicit mapping boundaries make
+that risk easier to reason about and test. They do not guarantee that
+every event is correct; integration tests, security review, and runtime
+validation still matter.</p><p>Likewise, a mobile app that invokes a remote service should not be the
+final authority over entitlements, token validity, or protected server
+resources. Client-side checks may improve usability, but security
+decisions need enforcement at an appropriate trusted boundary.</p><p>For more concrete client-side security concerns, see
+<a href=/posts/modern-mobile-hardening/>Modern Mobile Hardening</a>.</p><h2 id=10-conclusion>10. Conclusion</h2><p>Software architecture is a discipline of choosing what should remain
+stable when everything around it changes.</p><p>Clean Architecture, SOLID, use cases, and design patterns give us useful
+ways to describe those choices. Their value comes from controlling
+coupling, localizing change, making behavior testable, and giving teams
+a shared understanding of ownership.</p><p>Experience with long-lived systems adds qualifications that are easy to
+miss in a diagram: asynchronous state can defeat a tidy package
+structure; a rewrite can be technically sound and still fail to be
+adopted; a model abstraction can preserve portability while introducing
+new execution risks; and a clean interface alone cannot enforce
+security.</p><p>The right design is not the one with the most abstraction. It is the
+one with <strong>boundaries worth maintaining</strong>, contracts that can be
+verified, and a migration path that remains practical under real
+constraints.</p><h2 id=11-references>11. References</h2><ul><li>Martin, R. C. <em>Clean Architecture: A Craftsman&rsquo;s Guide to Software
+Structure and Design</em>. Prentice Hall, 2017.</li><li>Martin, R. C. <a href=https://cleancoder.com/>Clean Coder</a> and related
+writings on SOLID and software structure.</li><li>Fowler, M. <a href=https://martinfowler.com/bliki/HumbleObject.html>Humble Object</a>.</li><li>Paul, M. (2014). <em>Official (ISC)² Guide to the CSSLP CBK</em>, 2nd ed. Sybex.</li><li><a href=https://medium.com/@rybertjen/software-architecture-for-independence-a617e2278351>Original Medium article and diagrams</a>.</li></ul><hr><h2 id=related-on-this-blog>Related on This Blog</h2><ul><li><a href=/posts/ai-sdlc/>AI SDLC: automating the grind</a></li><li><a href=/posts/threat-modeling-ai-engineering-coprocessor/>Threat Modeling AI as an Engineering Coprocessor</a></li><li><a href=/posts/legacy-system-insights/>Legacy System Insights</a></li><li><a href=/posts/modern-mobile-hardening/>Modern Mobile Hardening</a></li></ul><h2 id=author-background>Author Background</h2><ul><li><a href=https://linkedin.com/in/ryjen>LinkedIn: Ryan Jennings</a></li></ul></div></div></main><footer id=footer class=legs><div class="has-text-centered content"><div class=footer-links><nav aria-label="Footer quick links" class=footer-links-row><a class="tag is-rounded" href=/archive>Archive</a>
 <a class="tag is-rounded" href=/posts/index.xml>RSS</a>
 <a class="tag is-rounded" href=https://micrantha.com target=_blank rel=noopener>Micrantha</a></nav><nav aria-label="Footer social links" class=footer-links-row><a class="tag is-rounded" href=https://github.com/ryjen target=_blank rel=noopener>GitHub</a>
 <a class="tag is-rounded" href=https://linkedin.com/in/ryjen target=_blank rel=noopener>LinkedIn</a>
