@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="830" viewBox="0 0 420 830" role="img" aria-labelledby="mobileTitle mobileDesc">
+<title id="mobileTitle">Software Architecture for Independence — mobile cover</title>
+<desc id="mobileDesc">A mobile-format editorial cover with large text: stable core policy and four replaceable adapters labeled UI, API, storage and AI.</desc>
+<defs><marker id="tip" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M1 1L9 5L1 9" fill="none" stroke="#4D6774" stroke-width="2"/></marker></defs>
+<rect width="420" height="830" rx="18" fill="#E8F0ED"/>
+<g font-family="Arial,Helvetica,sans-serif">
+<rect x="24" y="28" width="65" height="5" rx="2" fill="#93ABB0"/>
+<text x="24" y="68" font-size="17" font-weight="700" letter-spacing="1.4" fill="#4D6774">SOFTWARE ENGINEERING</text>
+<text x="24" y="135" font-size="54" font-weight="700" fill="#243B4A">Software</text>
+<text x="24" y="195" font-size="49" font-weight="700" fill="#243B4A">Architecture</text>
+<text x="24" y="244" font-size="35" font-weight="700" fill="#243B4A">for Independence</text>
+<text x="24" y="296" font-size="25" fill="#4D6774">Stable policy.</text>
+<text x="24" y="329" font-size="25" fill="#4D6774">Replaceable details.</text>
+<path d="M24 359H396" stroke="#93ABB0" stroke-width="2"/>
+<rect x="16" y="385" width="388" height="430" rx="24" fill="#FCFDFB" stroke="#CEDBD8" stroke-width="2"/>
+<text x="34" y="420" font-size="17" font-weight="700" fill="#4D6774" letter-spacing="1.1">REPLACEABLE ADAPTERS</text>
+<g fill="none" stroke="#4D6774" stroke-width="3" marker-end="url(#tip)">
+<path d="M105 509L158 566"/>
+<path d="M315 509L263 566"/>
+<path d="M105 744L158 683"/>
+<path d="M315 744L263 683"/>
+</g>
+<g fill="#243B4A" text-anchor="middle">
+<rect x="30" y="451" width="157" height="62" rx="16" fill="#DCECF0" stroke="#93ABB0" stroke-width="2"/>
+<text x="109" y="490" font-size="25" font-weight="700">UI</text>
+<rect x="233" y="451" width="157" height="62" rx="16" fill="#F6E6D5" stroke="#93ABB0" stroke-width="2"/>
+<text x="312" y="490" font-size="25" font-weight="700">API</text>
+<rect x="97" y="565" width="226" height="119" rx="20" fill="#DFEDE4" stroke="#93ABB0" stroke-width="2"/>
+<text x="210" y="607" font-size="26" font-weight="700">CORE POLICY</text>
+<text x="210" y="638" font-size="21" fill="#4D6774">Use cases + ports</text>
+<rect x="30" y="743" width="157" height="62" rx="16" fill="#E9E4F1" stroke="#93ABB0" stroke-width="2"/>
+<text x="109" y="781" font-size="24" font-weight="700">STORAGE</text>
+<rect x="233" y="743" width="157" height="62" rx="16" fill="#DCECF0" stroke="#93ABB0" stroke-width="2"/>
+<text x="312" y="781" font-size="25" font-weight="700">AI</text>
+</g></g></svg>
